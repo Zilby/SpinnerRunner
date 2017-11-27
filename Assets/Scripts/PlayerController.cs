@@ -7,11 +7,23 @@ using UnityEngine;
 /// </summary>
 public class PlayerController : MonoBehaviour {
 
+	/// <summary>
+	/// The primary player on screen. 
+	/// </summary>
 	public static PlayerController primaryPlayer;
+	/// <summary>
+	/// The secondary player on the edge of the screen for looping. 
+	/// </summary>
 	public static PlayerController secondaryPlayer;
 
+	/// <summary>
+	/// The direction the player is currently rotating. 
+	/// True if right (clockwise), false if left (counterclockwise). 
+	/// </summary>
 	private static bool rotation = true;
-
+	/// <summary>
+	/// The rotation speed.
+	/// </summary>
 	const float rotationSpeed = 5;
 
 	void Start () {
@@ -31,6 +43,10 @@ public class PlayerController : MonoBehaviour {
 		StartCoroutine(Loop());
 	}
 
+	/// <summary>
+	/// Sets the currently rotating direction.
+	/// </summary>
+	/// <param name="right">Sets to rotate right if true, left if false.</param>
 	private void Rotate(bool right) {
 		rotation = right;
 	}
@@ -41,6 +57,9 @@ public class PlayerController : MonoBehaviour {
 	}
 
 
+	/// <summary>
+	/// Accepts input for the player. 
+	/// </summary>
 	private void AcceptInput() {
 		if (Input.GetKeyDown(KeyCode.J))
 		{
