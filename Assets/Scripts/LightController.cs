@@ -4,22 +4,37 @@ using UnityEngine;
 
 public class LightController : MonoBehaviour {
 
+	/// <summary>
+	/// The particle material.
+	/// </summary>
 	public Material particleMat;
 
+	/// <summary>
+	/// The increment at which the colors change. 
+	/// </summary>
 	private const float increment = 0.5f / 255f;
-	private Light light;
+	/// <summary>
+	/// The main light for the scene. 
+	/// </summary>
+	private Light mainLight;
+	/// <summary>
+	/// Whether or not the current rgb value is increasing or decreasing. 
+	/// </summary>
 	private bool increasing = true;
+	/// <summary>
+	/// The current color of the scene. 
+	/// </summary>
 	private Color currentColor = Color.red;
 
 	private void Start()
 	{
-		light = GetComponent<Light>();
+		mainLight = GetComponent<Light>();
 	}
+
 
 	void Update() {
 		ChangeColor();
-		light.color = currentColor;
-		particleMat.SetColor("_Color", currentColor);
+		AssignColors();
 	}
 
 
@@ -91,5 +106,14 @@ public class LightController : MonoBehaviour {
 		currentColor = new Color(r >= 0 ? r : currentColor.r, 
 		                         g >= 0 ? g : currentColor.g, 
 		                         b >= 0 ? b : currentColor.b);
+	}
+
+
+	/// <summary>
+	/// Assigns the colors to the appropriate objects. 
+	/// </summary>
+	private void AssignColors() {
+		mainLight.color = currentColor;
+		particleMat.SetColor("_Color", currentColor);
 	}
 }
