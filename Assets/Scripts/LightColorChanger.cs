@@ -29,12 +29,24 @@ public class LightColorChanger : MonoBehaviour {
 	private void Start()
 	{
 		mainLight = GetComponent<Light>();
+		StartCoroutine(Brighten());
 	}
 
 
 	void Update() {
 		ChangeColor();
 		AssignColors();
+	}
+
+
+	private IEnumerator Brighten()
+	{
+		mainLight.intensity = 0;
+		while (mainLight.intensity < 4)
+		{
+			mainLight.intensity += 0.05f;
+			yield return new WaitForEndOfFrame();
+		}
 	}
 
 
