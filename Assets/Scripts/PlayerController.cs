@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,6 +7,11 @@ using UnityEngine;
 /// Used for controlling all aspects of the player controlled sphere. 
 /// </summary>
 public class PlayerController : MonoBehaviour {
+
+	/// <summary>
+	/// Event to be called to boost rotation.
+	/// </summary>
+	public static Action Boost;
 
 	/// <summary>
 	/// The primary player on screen. 
@@ -20,7 +26,7 @@ public class PlayerController : MonoBehaviour {
 	/// The direction the player is currently rotating. 
 	/// True if right (clockwise), false if left (counterclockwise). 
 	/// </summary>
-	private static bool rotation = true;
+	private static bool rotateRight = true;
 	/// <summary>
 	/// The rotation speed.
 	/// </summary>
@@ -37,12 +43,13 @@ public class PlayerController : MonoBehaviour {
 	/// </summary>
 	public static bool Rotation
 	{
-		get { return rotation; }
-		set { rotation = value; }
+		get { return rotateRight; }
+		set { rotateRight = value; }
 	}
 
 
 	void Start () {
+		Boost += BoostRotation;
 		if (primaryPlayer == null)
 		{
 			primaryPlayer = this;
@@ -82,11 +89,11 @@ public class PlayerController : MonoBehaviour {
 		{
 			if (Input.GetKeyDown(KeyCode.J))
 			{
-				rotation = false;
+				rotateRight = false;
 			}
 			else if (Input.GetKeyDown(KeyCode.K))
 			{
-				rotation = true;
+				rotateRight = true;
 			}
 			if (Input.GetKeyDown(KeyCode.Space))
 			{
@@ -103,7 +110,7 @@ public class PlayerController : MonoBehaviour {
 		for (;;)
 		{
 			float actualRotation = ROTATION_SPEED + boostedRotation;
-			transform.Rotate(0, 0, rotation ? -actualRotation : actualRotation);
+			transform.Rotate(0, 0, rotateRight ? -actualRotation : actualRotation);
 			boostedRotation = Mathf.Abs(boostedRotation) - 0.3f;
 			yield return new WaitForEndOfFrame();
 		}

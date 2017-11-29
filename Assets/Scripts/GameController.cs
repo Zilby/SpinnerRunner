@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -12,11 +13,10 @@ public class GameController : MonoBehaviour {
 	public List<GameObject> obstaclePrefabs;
 	public List<GameObject> coinPrefabs;
 
-	public delegate void endGameEvent();
 	/// <summary>
 	/// Event to be called when ending the game. 
 	/// </summary>
-	public static endGameEvent EndGame;
+	public static Action EndGame;
 
 	/// <summary>
 	/// The rate at which the game moves upwards. 
@@ -26,7 +26,7 @@ public class GameController : MonoBehaviour {
 	/// <summary>
 	/// The rate at which prefabs spawn.
 	/// </summary>
-	const float SPAWN_RATE = 1.5F;
+	private float spawnRate = 0F;
 
 	/// <summary>
 	/// Whether or not the game has ended. 
@@ -96,7 +96,7 @@ public class GameController : MonoBehaviour {
 		while(!GameOver)
 		{
 			Spawn();
-			yield return new WaitForSeconds(SPAWN_RATE);
+			yield return new WaitForSeconds(spawnRate);
 		}
 	}
 
@@ -115,17 +115,22 @@ public class GameController : MonoBehaviour {
 	/// </summary>
 	private void Spawn()
 	{
-		AssignPrefabType();
+		GameObject g;
 		switch (currentPrefab)
 		{
 			case PrefabType.Wall:
-				spawnedPrefabs.Add(Instantiate(wallPrefabs[Random.Range(0, wallPrefabs.Count)], new Vector3(0.0f, transform.position.y, 0.0f), Quaternion.identity));
+				spawnRate = 1.5F; // make sure walls get spaced apart
+				g = Instantiate(wallPrefabs[UnityEngine.Random.Range(0, wallPrefabs.Count)], new Vector3(0.0f, transform.position.y, 0.0f), Quaternion.identity);
+				g.transform.localScale = new Vector3(UnityEngine.Random.Range(0, 2) == 0 ? -1 : 1, 1, 1);
+				spawnedPrefabs.Add(g);
 				break;
 			case PrefabType.Obstacle:
-				spawnedPrefabs.Add(Instantiate(obstaclePrefabs[Random.Range(0, obstaclePrefabs.Count)], new Vector3(0.0f, transform.position.y, 0.0f), Quaternion.identity));
+				g = Instantiate(obstaclePrefabs[UnityEngine.Random.Range(0, obstaclePrefabs.Count)], new Vector3(UnityEngine.Random.Range(-1, 2) * 1.5f, transform.position.y + 10.0f, 0.0f), Quaternion.identity);
+				g.GetComponent<Obstacle>().rotateRight = UnityEngine.Random.Range(0, 2) == 0;
+				spawnedPrefabs.Add(g);
 				break;
 			case PrefabType.Coin:
-				spawnedPrefabs.Add(Instantiate(coinPrefabs[Random.Range(0, coinPrefabs.Count)], new Vector3(0.0f, transform.position.y, 0.0f), Quaternion.identity));
+				spawnedPrefabs.Add(Instantiate(coinPrefabs[UnityEngine.Random.Range(0, coinPrefabs.Count)], new Vector3(0.0f, transform.position.y, 0.0f), Quaternion.identity));
 				break;
 			default:
 				Debug.LogError("Unnasigned currentPrefab type.");
@@ -134,10 +139,11 @@ public class GameController : MonoBehaviour {
 		--typeCount;
 		if(spawnedPrefabs.Count > 8)
 		{
-			GameObject g = spawnedPrefabs[0];
+			g = spawnedPrefabs[0];
 			spawnedPrefabs.RemoveAt(0);
 			Destroy(g);
 		}
+		AssignPrefabType();
 	}
 
 
@@ -146,22 +152,26 @@ public class GameController : MonoBehaviour {
 	/// </summary>
 	private void AssignPrefabType()
 	{
-		if (typeCount == 0)
+		if (typeCount <= 0)
 		{
-			int r = Random.Range(0, 3);
-			if (true) //r == 0)
+			int r = UnityEngine.Random.Range(0, 3);
+			if (r == 0)
 			{
 				currentPrefab = PrefabType.Wall;
-				typeCount = Random.Range(0, 5);
+				typeCount = UnityEngine.Random.Range(0, 5);
 			}
-			else if (r == 1)
+			else // if (r == 1)
 			{
 				currentPrefab = PrefabType.Obstacle;
+				typeCount = UnityEngine.Random.Range(0, 5);
+				spawnRate = 0.75F;
 			}
+			/*
 			else
 			{
 				currentPrefab = PrefabType.Coin;
 			}
+			*/
 		}
 	}
 }
