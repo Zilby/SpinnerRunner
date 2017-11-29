@@ -12,6 +12,9 @@ public class Wall : MonoBehaviour {
 		CollisionEvent();
 	}
 
+	/// <summary>
+	/// Called when this object collides with any other. 
+	/// </summary>
 	protected virtual void CollisionEvent()
 	{
 		GameController.EndGame();

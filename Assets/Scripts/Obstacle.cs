@@ -27,6 +27,9 @@ public class Obstacle : Wall {
 		StartCoroutine(Rotate());
 	}
 
+	/// <summary>
+	/// Called when this obstacle collides with any other object. 
+	/// </summary>
 	protected override void CollisionEvent()
 	{
 		if (PlayerController.Rotation != rotateRight)

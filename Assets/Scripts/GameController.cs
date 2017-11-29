@@ -119,7 +119,8 @@ public class GameController : MonoBehaviour {
 		switch (currentPrefab)
 		{
 			case PrefabType.Wall:
-				spawnRate = 1.5F; // make sure walls get spaced apart
+				// make sure walls get spaced apart
+				spawnRate = 1.5F; 
 				g = Instantiate(wallPrefabs[UnityEngine.Random.Range(0, wallPrefabs.Count)], new Vector3(0.0f, transform.position.y, 0.0f), Quaternion.identity);
 				g.transform.localScale = new Vector3(UnityEngine.Random.Range(0, 2) == 0 ? -1 : 1, 1, 1);
 				spawnedPrefabs.Add(g);
