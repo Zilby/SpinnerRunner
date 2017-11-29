@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LightController : MonoBehaviour {
+public class LightColorChanger : MonoBehaviour {
 
 	/// <summary>
 	/// The particle material.
@@ -12,7 +12,7 @@ public class LightController : MonoBehaviour {
 	/// <summary>
 	/// The increment at which the colors change. 
 	/// </summary>
-	private const float increment = 0.5f / 255f;
+	private const float INCREMENT = 0.5f / 255f;
 	/// <summary>
 	/// The main light for the scene. 
 	/// </summary>
@@ -44,14 +44,14 @@ public class LightController : MonoBehaviour {
 	private void ChangeColor() {
 		if (currentColor.r >= 1.0f) {
 			if (increasing) {
-				SetColor(b: currentColor.b + increment);
+				SetColor(b: currentColor.b + INCREMENT);
 				if (currentColor.b >= 1.0f)
 				{
-					SetColor(r: 1.0f - increment);
+					SetColor(r: 1.0f - INCREMENT);
 					increasing = !increasing;
 				}
 			} else {
-				SetColor(g: currentColor.g - increment);
+				SetColor(g: currentColor.g - INCREMENT);
 				if (currentColor.g <= 0.01f)
 				{
 					increasing = !increasing;
@@ -62,16 +62,16 @@ public class LightController : MonoBehaviour {
 		{
 			if (increasing)
 			{
-				SetColor(r: currentColor.r + increment);
+				SetColor(r: currentColor.r + INCREMENT);
 				if (currentColor.r >= 1.0f)
 				{
-					SetColor(g: 1.0f - increment);
+					SetColor(g: 1.0f - INCREMENT);
 					increasing = !increasing;
 				}
 			}
 			else
 			{
-				SetColor(b: currentColor.b - increment);
+				SetColor(b: currentColor.b - INCREMENT);
 				if (currentColor.b <= 0.01f)
 				{
 					increasing = !increasing;
@@ -80,16 +80,16 @@ public class LightController : MonoBehaviour {
 		} else {
 			if (increasing)
 			{
-				SetColor(g: currentColor.g + increment);
+				SetColor(g: currentColor.g + INCREMENT);
 				if (currentColor.g >= 1.0f)
 				{
-					SetColor(b: 1.0f - increment);
+					SetColor(b: 1.0f - INCREMENT);
 					increasing = !increasing;
 				}
 			}
 			else
 			{
-				SetColor(r: currentColor.r - increment);
+				SetColor(r: currentColor.r - INCREMENT);
 				if (currentColor.r <= 0.3f)
 				{
 					increasing = !increasing;

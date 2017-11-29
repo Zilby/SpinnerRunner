@@ -24,7 +24,23 @@ public class PlayerController : MonoBehaviour {
 	/// <summary>
 	/// The rotation speed.
 	/// </summary>
-	const float rotationSpeed = 5;
+	const float ROTATION_SPEED = 5;
+
+	/// <summary>
+	/// The speed of the player's boosted rotation. 
+	/// </summary>
+	private float boostedRotation = 0;
+
+	/// <summary>
+	/// The direction the player is currently rotating. 
+	/// True if right (clockwise), false if left (counterclockwise). 
+	/// </summary>
+	public static bool Rotation
+	{
+		get { return rotation; }
+		set { rotation = value; }
+	}
+
 
 	void Start () {
 		if (primaryPlayer == null)
@@ -43,14 +59,6 @@ public class PlayerController : MonoBehaviour {
 		StartCoroutine(Loop());
 	}
 
-	/// <summary>
-	/// Sets the currently rotating direction.
-	/// </summary>
-	/// <param name="right">Sets to rotate right if true, left if false.</param>
-	private void Rotate(bool right) {
-		rotation = right;
-	}
-
 
 	private void Update() {
 		AcceptInput();
@@ -58,16 +66,32 @@ public class PlayerController : MonoBehaviour {
 
 
 	/// <summary>
+	/// Boosts the rate of rotation of the player. 
+	/// </summary>
+	public void BoostRotation()
+	{
+		boostedRotation = 8.0f;
+	}
+
+
+	/// <summary>
 	/// Accepts input for the player. 
 	/// </summary>
 	private void AcceptInput() {
-		if (Input.GetKeyDown(KeyCode.J))
+		if (!GameController.GameOver)
 		{
-			rotation = false;
-		}
-		else if (Input.GetKeyDown(KeyCode.K))
-		{
-			rotation = true;
+			if (Input.GetKeyDown(KeyCode.J))
+			{
+				rotation = false;
+			}
+			else if (Input.GetKeyDown(KeyCode.K))
+			{
+				rotation = true;
+			}
+			if (Input.GetKeyDown(KeyCode.Space))
+			{
+				BoostRotation();
+			}
 		}
 	}
 
@@ -78,7 +102,9 @@ public class PlayerController : MonoBehaviour {
 	private IEnumerator Rotate() {
 		for (;;)
 		{
-			transform.Rotate(0, 0, rotation ? -rotationSpeed : rotationSpeed);
+			float actualRotation = ROTATION_SPEED + boostedRotation;
+			transform.Rotate(0, 0, rotation ? -actualRotation : actualRotation);
+			boostedRotation = Mathf.Abs(boostedRotation) - 0.3f;
 			yield return new WaitForEndOfFrame();
 		}
 	}
@@ -89,7 +115,7 @@ public class PlayerController : MonoBehaviour {
 	/// </summary>
 	private IEnumerator Move()
 	{
-		for (;;)
+		while (!GameController.GameOver)
 		{
 			float x = Input.GetAxis("Horizontal");
 			transform.position = new Vector3(transform.position.x + x / 3.0f, transform.position.y, transform.position.z);
@@ -102,7 +128,8 @@ public class PlayerController : MonoBehaviour {
 	/// Loops the player around the camera.
 	/// </summary>
 	private IEnumerator Loop() {
-		for (;;) {
+		while (!GameController.GameOver)
+		{ 
 			if (primaryPlayer == this)
 			{
 				float absPrimaryX = Mathf.Abs(primaryPlayer.transform.position.x);
