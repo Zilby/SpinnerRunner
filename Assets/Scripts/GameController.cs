@@ -49,7 +49,7 @@ public class GameController : MonoBehaviour {
 	/// <returns></returns>
 	private IEnumerator Ascend()
 	{
-		for (;;)
+		while(!GameOver)
 		{
 			transform.position = Vector3.MoveTowards(transform.position,
 				new Vector3(transform.position.x, transform.position.y + 1.0f, transform.position.z),

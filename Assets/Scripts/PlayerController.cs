@@ -154,4 +154,16 @@ public class PlayerController : MonoBehaviour {
 			yield return new WaitForFixedUpdate();
 		}
 	}
+
+
+	private void OnCollisionEnter2D(Collision2D collision)
+	{
+		print("here please for the love of god");
+	}
+
+
+	private void OnTriggerEnter2D(Collider2D collision)
+	{
+		Debug.LogError("here");
+	}
 }
