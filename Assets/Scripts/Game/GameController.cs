@@ -20,6 +20,11 @@ public class GameController : MonoBehaviour {
 	public static Action EndGame;
 
 	/// <summary>
+	/// The player's current score. 
+	/// </summary>
+	public static int score;
+
+	/// <summary>
 	/// The rate at which the game moves upwards. 
 	/// </summary>
 	const float MOVE_SPEED = 3.0F;
@@ -33,6 +38,11 @@ public class GameController : MonoBehaviour {
 	/// The increment that the timescale progresses at. 
 	/// </summary>
 	const float PROGRESSION_INCREMENT = 0.02F;
+
+	/// <summary>
+	/// The rate at which the score progresses. 
+	/// </summary>
+	const float SCORE_RATE = 800.0f;
 
 	/// <summary>
 	/// The rate at which prefabs spawn.
@@ -50,6 +60,8 @@ public class GameController : MonoBehaviour {
 	private float currentTimescale = 0.8f;
 
 	private Stopwatch speedTimer;
+
+	private Stopwatch scoreTimer;
 
 	/// <summary>
 	/// Whether or not the game has ended. 
@@ -89,6 +101,7 @@ public class GameController : MonoBehaviour {
 		StartCoroutine(Ascend());
 		StartCoroutine(SpawnObstacles());
 		StartCoroutine(IncrementTimeScale());
+		StartCoroutine(IncrementScore());
 	}
 
 
@@ -165,13 +178,21 @@ public class GameController : MonoBehaviour {
 				break;
 		}
 		--typeCount;
-		if(spawnedPrefabs.Count > 16)
+		KillOldObstacles();
+		AssignPrefabType();
+	}
+
+
+	/// <summary>
+	/// Kills old obstacles to make sure that they get despawned. 
+	/// </summary>
+	private void KillOldObstacles() {
+		while (spawnedPrefabs.Count > 20)
 		{
-			g = spawnedPrefabs[0];
+			GameObject g = spawnedPrefabs[0];
 			spawnedPrefabs.RemoveAt(0);
 			Destroy(g);
 		}
-		AssignPrefabType();
 	}
 
 
@@ -234,6 +255,26 @@ public class GameController : MonoBehaviour {
 			currentTimescale += PROGRESSION_INCREMENT;
 			SetTimescale();
 			speedTimer.Reset();
+		}
+	}
+
+
+	/// <summary>
+	/// Increments the score as the game progresses. 
+	/// </summary>
+	private IEnumerator IncrementScore()
+	{
+		score = 0;
+		scoreTimer = new Stopwatch();
+		while (!GameOver)
+		{
+			scoreTimer.Start();
+			while (scoreTimer.ElapsedMilliseconds < SCORE_RATE)
+			{
+				yield return new WaitForEndOfFrame();
+			}
+			score += 1;
+			scoreTimer.Reset();
 		}
 	}
 

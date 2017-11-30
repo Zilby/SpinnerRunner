@@ -15,7 +15,7 @@ public class Obstacle : Wall {
 	/// <summary>
 	/// The rotation speed.
 	/// </summary>
-	const float ROTATION_SPEED = 7;
+	const float ROTATION_SPEED = 5;
 
 	/// <summary>
 	/// The speed of the obstacle's boosted rotation. 
