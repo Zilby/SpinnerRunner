@@ -14,6 +14,11 @@ public class PlayerController : MonoBehaviour {
 	public static Action Boost;
 
 	/// <summary>
+	/// Event called on death. 
+	/// </summary>
+	public static Action Die;
+
+	/// <summary>
 	/// The primary player on screen. 
 	/// </summary>
 	public static PlayerController primaryPlayer;
@@ -21,6 +26,11 @@ public class PlayerController : MonoBehaviour {
 	/// The secondary player on the edge of the screen for looping. 
 	/// </summary>
 	public static PlayerController secondaryPlayer;
+
+	/// <summary>
+	/// Particles spawned on player death. 
+	/// </summary>
+	public GameObject deathParticles;
 
 	/// <summary>
 	/// The direction the player is currently rotating. 
@@ -50,6 +60,7 @@ public class PlayerController : MonoBehaviour {
 
 	void Start () {
 		Boost += BoostRotation;
+		Die += DDDDestruction;
 		if (primaryPlayer == null)
 		{
 			primaryPlayer = this;
@@ -82,6 +93,15 @@ public class PlayerController : MonoBehaviour {
 
 
 	/// <summary>
+	/// Kills the player. 
+	/// </summary>
+	public void DDDDestruction() {
+		transform.GetChild(0).gameObject.SetActive(false);
+		Instantiate(deathParticles, transform);
+	}
+
+
+	/// <summary>
 	/// Accepts input for the player. 
 	/// </summary>
 	private void AcceptInput() {
@@ -107,7 +127,7 @@ public class PlayerController : MonoBehaviour {
 	/// Rotates this instance of the player.
 	/// </summary>
 	private IEnumerator Rotate() {
-		for (;;)
+		while (!GameController.GameOver)
 		{
 			float actualRotation = ROTATION_SPEED + boostedRotation;
 			transform.Rotate(0, 0, rotateRight ? -actualRotation : actualRotation);
@@ -160,17 +180,5 @@ public class PlayerController : MonoBehaviour {
 			}
 			yield return new WaitForFixedUpdate();
 		}
-	}
-
-
-	private void OnCollisionEnter2D(Collision2D collision)
-	{
-		print("here please for the love of god");
-	}
-
-
-	private void OnTriggerEnter2D(Collider2D collision)
-	{
-		Debug.LogError("here");
 	}
 }

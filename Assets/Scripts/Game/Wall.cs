@@ -18,5 +18,6 @@ public class Wall : MonoBehaviour {
 	protected virtual void CollisionEvent()
 	{
 		GameController.EndGame();
+		PlayerController.Die();
 	}
 }

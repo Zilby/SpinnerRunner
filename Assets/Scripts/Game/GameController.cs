@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using UnityEngine;
 
 /// <summary>
@@ -24,6 +25,16 @@ public class GameController : MonoBehaviour {
 	const float MOVE_SPEED = 3.0F;
 
 	/// <summary>
+	/// The rate at which the timescale progresses. 
+	/// </summary>
+	const float PROGRESSION_RATE = 10000.0f;
+
+	/// <summary>
+	/// The increment that the timescale progresses at. 
+	/// </summary>
+	const float PROGRESSION_INCREMENT = 0.02F;
+
+	/// <summary>
 	/// The rate at which prefabs spawn.
 	/// </summary>
 	private float spawnRate = 0F;
@@ -32,6 +43,13 @@ public class GameController : MonoBehaviour {
 	/// Whether or not the game has ended. 
 	/// </summary>
 	private static bool gameOver = false;
+
+	/// <summary>
+	/// The current timescale.
+	/// </summary>
+	private float currentTimescale = 0.8f;
+
+	private Stopwatch speedTimer;
 
 	/// <summary>
 	/// Whether or not the game has ended. 
@@ -65,10 +83,12 @@ public class GameController : MonoBehaviour {
 
 	private void Start()
 	{
+		SetTimescale();
 		spawnedPrefabs = new List<GameObject>();
 		EndGame += FinishGame;
 		StartCoroutine(Ascend());
 		StartCoroutine(SpawnObstacles());
+		StartCoroutine(IncrementTimeScale());
 	}
 
 
@@ -126,19 +146,26 @@ public class GameController : MonoBehaviour {
 				spawnedPrefabs.Add(g);
 				break;
 			case PrefabType.Obstacle:
-				g = Instantiate(obstaclePrefabs[UnityEngine.Random.Range(0, obstaclePrefabs.Count)], new Vector3(UnityEngine.Random.Range(-1, 2) * 1.5f, transform.position.y + 10.0f, 0.0f), Quaternion.identity);
-				g.GetComponent<Obstacle>().rotateRight = UnityEngine.Random.Range(0, 2) == 0;
-				spawnedPrefabs.Add(g);
+				float bad = SpawnObstacle();
+				float bad2 = bad;
+				if (UnityEngine.Random.Range(0, 2) == 0)
+				{
+					bad2 = SpawnObstacle(bad);
+				}
+				if (UnityEngine.Random.Range(0, 3) == 0)
+				{
+					SpawnObstacle(bad, bad2);
+				}
 				break;
 			case PrefabType.Coin:
 				spawnedPrefabs.Add(Instantiate(coinPrefabs[UnityEngine.Random.Range(0, coinPrefabs.Count)], new Vector3(0.0f, transform.position.y, 0.0f), Quaternion.identity));
 				break;
 			default:
-				Debug.LogError("Unnasigned currentPrefab type.");
+				UnityEngine.Debug.LogError("Unnasigned currentPrefab type.");
 				break;
 		}
 		--typeCount;
-		if(spawnedPrefabs.Count > 8)
+		if(spawnedPrefabs.Count > 16)
 		{
 			g = spawnedPrefabs[0];
 			spawnedPrefabs.RemoveAt(0);
@@ -146,6 +173,23 @@ public class GameController : MonoBehaviour {
 		}
 		AssignPrefabType();
 	}
+
+
+	/// <summary>
+	/// Spawns the an obstacle at a random location that is not the given location.
+	/// </summary>
+	/// <returns>The location of the obstacle.</returns>
+	private float SpawnObstacle(float badLocation = -1, float badLocation2 = -1) {
+		float location = badLocation;
+		while(location == badLocation || location == badLocation2) {
+			location = UnityEngine.Random.Range(-2, 3);
+		}
+		GameObject g = Instantiate(obstaclePrefabs[UnityEngine.Random.Range(0, obstaclePrefabs.Count)], new Vector3(location * 1.0f, transform.position.y + 10.0f, 0.0f), Quaternion.identity);
+		g.GetComponent<Obstacle>().rotateRight = UnityEngine.Random.Range(0, 2) == 0;
+		spawnedPrefabs.Add(g);
+		return location;
+	}
+
 
 
 	/// <summary>
@@ -174,5 +218,32 @@ public class GameController : MonoBehaviour {
 			}
 			*/
 		}
+	}
+
+
+	/// <summary>
+	/// Increments the time scale as the game progresses. 
+	/// </summary>
+	private IEnumerator IncrementTimeScale() {
+		speedTimer = new Stopwatch();
+		while (!GameOver && Time.timeScale < 1.5f) {
+			speedTimer.Start();
+			while (speedTimer.ElapsedMilliseconds < PROGRESSION_RATE) {
+				yield return new WaitForEndOfFrame();
+			}
+			currentTimescale += PROGRESSION_INCREMENT;
+			SetTimescale();
+			speedTimer.Reset();
+		}
+	}
+
+
+	/// <summary>
+	/// Sets the current timescale.
+	/// </summary>
+	private void SetTimescale() {
+		Time.timeScale = currentTimescale;
+		Time.fixedDeltaTime = 0.02F * currentTimescale;
+		print(currentTimescale);
 	}
 }
