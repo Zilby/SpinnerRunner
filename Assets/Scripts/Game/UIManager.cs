@@ -73,6 +73,8 @@ public class UIManager : MonoBehaviour {
 		blur.enabled = true;
 		score.gameObject.SetActive(false);
 		scoreEnd.text = "score: " + GameController.score;
+		Utils.HighScore = Mathf.Max(Utils.HighScore, GameController.score);
+		Utils.Save();
 		GameController.pauseEvent();
 	}
 
