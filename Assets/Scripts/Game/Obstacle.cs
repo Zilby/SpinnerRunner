@@ -15,17 +15,32 @@ public class Obstacle : Wall {
 	/// <summary>
 	/// The rotation speed.
 	/// </summary>
-	const float ROTATION_SPEED = 5;
+	protected const float ROTATION_SPEED = 5.0f;
+	/// <summary>
+	/// The boosted rotation speed.
+	/// </summary>
+	protected const float BOOSTED_SPEED = 8.0f;
+	/// <summary>
+	/// How much the score increments when the player passes through. 
+	/// </summary>
+	protected int SCORE_INCREMENT = 5;
 
 	/// <summary>
 	/// The speed of the obstacle's boosted rotation. 
 	/// </summary>
-	private float boostedRotation = 0;
+	protected float boostedRotation = 0;
 
-	private void Start()
+
+	protected virtual int ScoreIncrement {
+		get { return SCORE_INCREMENT;  }
+	}
+
+
+	protected void Start()
 	{
 		StartCoroutine(Rotate());
 	}
+
 
 	/// <summary>
 	/// Called when this obstacle collides with any other object. 
@@ -36,25 +51,36 @@ public class Obstacle : Wall {
 		{
 			base.CollisionEvent();
 		}
-		else
+		else if (boostedRotation < 0.1f)
 		{
 			BoostRotation();
+			IncrementScore();
 			PlayerController.Boost();
 		}
 	}
 
+
 	/// <summary>
 	/// Boosts the rate of rotation of this obstacle. 
 	/// </summary>
-	public void BoostRotation()
+	protected void BoostRotation()
 	{
-		boostedRotation = 8.0f;
+		boostedRotation = BOOSTED_SPEED;
 	}
+
+
+	/// <summary>
+	/// Increments the score.
+	/// </summary>
+	protected void IncrementScore() {
+		GameController.score += ScoreIncrement;
+	}
+
 
 	/// <summary>
 	/// Rotates this obstacle.
 	/// </summary>
-	private IEnumerator Rotate()
+	protected IEnumerator Rotate()
 	{
 		for (;;)
 		{

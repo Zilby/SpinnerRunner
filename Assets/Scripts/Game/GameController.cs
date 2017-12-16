@@ -30,14 +30,14 @@ public class GameController : MonoBehaviour {
 	const float MOVE_SPEED = 3.0F;
 
 	/// <summary>
-	/// The rate at which the timescale progresses. 
+	/// The delay between the timescale progressions. 
 	/// </summary>
-	const float PROGRESSION_RATE = 10000.0f;
+	const float PROGRESSION_DELAY = 5000.0f;
 
 	/// <summary>
 	/// The increment that the timescale progresses at. 
 	/// </summary>
-	const float PROGRESSION_INCREMENT = 0.02F;
+	const float PROGRESSION_INCREMENT = 0.015F;
 
 	/// <summary>
 	/// The rate at which the score progresses. 
@@ -159,26 +159,39 @@ public class GameController : MonoBehaviour {
 				spawnedPrefabs.Add(g);
 				break;
 			case PrefabType.Obstacle:
-				float bad = SpawnObstacle();
-				float bad2 = bad;
+				List<float> badLocations = new List<float>();
+				badLocations.Add(SpawnPrefab(obstaclePrefabs, badLocations));
 				if (UnityEngine.Random.Range(0, 2) == 0)
 				{
-					bad2 = SpawnObstacle(bad);
+					badLocations.Add(SpawnPrefab(obstaclePrefabs, badLocations));
 				}
 				if (UnityEngine.Random.Range(0, 3) == 0)
 				{
-					SpawnObstacle(bad, bad2);
+					badLocations.Add(SpawnPrefab(obstaclePrefabs, badLocations));
 				}
 				break;
 			case PrefabType.Coin:
-				spawnedPrefabs.Add(Instantiate(coinPrefabs[UnityEngine.Random.Range(0, coinPrefabs.Count)], new Vector3(0.0f, transform.position.y, 0.0f), Quaternion.identity));
+				badLocations = new List<float>();
+				badLocations.Add(SpawnPrefab(coinPrefabs, badLocations));
+				if (UnityEngine.Random.Range(0, 2) == 0)
+				{
+					badLocations.Add(SpawnPrefab(coinPrefabs, badLocations));
+				}
+				if (UnityEngine.Random.Range(0, 3) == 0)
+				{
+					badLocations.Add(SpawnPrefab(coinPrefabs, badLocations));
+				}
+				if (UnityEngine.Random.Range(0, 3) == 0)
+				{
+					badLocations.Add(SpawnPrefab(coinPrefabs, badLocations));
+				}
 				break;
 			default:
 				UnityEngine.Debug.LogError("Unnasigned currentPrefab type.");
 				break;
 		}
 		--typeCount;
-		KillOldObstacles();
+		KillOldPrefabs();
 		AssignPrefabType();
 	}
 
@@ -186,7 +199,7 @@ public class GameController : MonoBehaviour {
 	/// <summary>
 	/// Kills old obstacles to make sure that they get despawned. 
 	/// </summary>
-	private void KillOldObstacles() {
+	private void KillOldPrefabs() {
 		while (spawnedPrefabs.Count > 20)
 		{
 			GameObject g = spawnedPrefabs[0];
@@ -197,15 +210,24 @@ public class GameController : MonoBehaviour {
 
 
 	/// <summary>
-	/// Spawns the an obstacle at a random location that is not the given location.
+	/// Spawns a prefab at a random location that is not the given location.
 	/// </summary>
-	/// <returns>The location of the obstacle.</returns>
-	private float SpawnObstacle(float badLocation = -1, float badLocation2 = -1) {
-		float location = badLocation;
-		while(location == badLocation || location == badLocation2) {
+	/// <returns>The location of the prefab.</returns>
+	private float SpawnPrefab(List<GameObject> prefabs, List<float> badLocations) 
+	{
+		bool badLocation = true;
+		float location = 0.0f;
+		while (badLocation) {
 			location = UnityEngine.Random.Range(-2, 3);
+			badLocation = false;
+			foreach (float f in badLocations) {
+				if (location == f) {
+					badLocation = true;
+					break;
+				}
+			}
 		}
-		GameObject g = Instantiate(obstaclePrefabs[UnityEngine.Random.Range(0, obstaclePrefabs.Count)], new Vector3(location * 1.0f, transform.position.y + 10.0f, 0.0f), Quaternion.identity);
+		GameObject g = Instantiate(prefabs[UnityEngine.Random.Range(0, prefabs.Count)], new Vector3(location * 1.0f, transform.position.y + 10.0f, 0.0f), Quaternion.identity);
 		g.GetComponent<Obstacle>().rotateRight = UnityEngine.Random.Range(0, 2) == 0;
 		spawnedPrefabs.Add(g);
 		return location;
@@ -220,24 +242,24 @@ public class GameController : MonoBehaviour {
 	{
 		if (typeCount <= 0)
 		{
-			int r = UnityEngine.Random.Range(0, 3);
-			if (r == 0)
+			int r = UnityEngine.Random.Range(0, 5);
+			if (r == 0 || r == 1)
 			{
 				currentPrefab = PrefabType.Wall;
 				typeCount = UnityEngine.Random.Range(0, 5);
 			}
-			else // if (r == 1)
+			else if (r == 2 || r == 3)
 			{
 				currentPrefab = PrefabType.Obstacle;
 				typeCount = UnityEngine.Random.Range(0, 5);
 				spawnRate = 0.75F;
 			}
-			/*
 			else
 			{
 				currentPrefab = PrefabType.Coin;
+				typeCount = UnityEngine.Random.Range(0, 5);
+				spawnRate = 0.75F;
 			}
-			*/
 		}
 	}
 
@@ -249,7 +271,7 @@ public class GameController : MonoBehaviour {
 		speedTimer = new Stopwatch();
 		while (!GameOver && Time.timeScale < 1.5f) {
 			speedTimer.Start();
-			while (speedTimer.ElapsedMilliseconds < PROGRESSION_RATE) {
+			while (speedTimer.ElapsedMilliseconds < PROGRESSION_DELAY) {
 				yield return new WaitForEndOfFrame();
 			}
 			currentTimescale += PROGRESSION_INCREMENT;
