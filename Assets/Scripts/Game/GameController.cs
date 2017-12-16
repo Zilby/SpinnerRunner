@@ -7,7 +7,8 @@ using UnityEngine;
 /// <summary>
 /// Controls the game elements. 
 /// </summary>
-public class GameController : MonoBehaviour {
+public class GameController : MonoBehaviour
+{
 
 	[Header("Prefabs")]
 	public List<GameObject> wallPrefabs;
@@ -17,7 +18,12 @@ public class GameController : MonoBehaviour {
 	/// <summary>
 	/// Event to be called when ending the game. 
 	/// </summary>
-	public static Action EndGame;
+	public static Action endEvent;
+
+	/// <summary>
+	/// Event to be called when pausing the game. 
+	/// </summary>
+	public static Action pauseEvent;
 
 	/// <summary>
 	/// The player's current score. 
@@ -47,20 +53,26 @@ public class GameController : MonoBehaviour {
 	/// <summary>
 	/// The rate at which prefabs spawn.
 	/// </summary>
-	private float spawnRate = 0F;
+	private float spawnRate;
 
 	/// <summary>
 	/// Whether or not the game has ended. 
 	/// </summary>
-	private static bool gameOver = false;
+	private static bool gameOver;
 
 	/// <summary>
 	/// The current timescale.
 	/// </summary>
-	private float currentTimescale = 0.8f;
+	private float currentTimescale;
 
+	/// <summary>
+	/// Used for incrementing timescale. 
+	/// </summary>
 	private Stopwatch speedTimer;
 
+	/// <summary>
+	/// Used for incrementing score. 
+	/// </summary>
 	private Stopwatch scoreTimer;
 
 	/// <summary>
@@ -73,8 +85,8 @@ public class GameController : MonoBehaviour {
 
 	private enum PrefabType
 	{
-		Wall, 
-		Obstacle, 
+		Wall,
+		Obstacle,
 		Coin,
 	}
 
@@ -86,18 +98,29 @@ public class GameController : MonoBehaviour {
 	/// <summary>
 	/// The number of the type of prefab being spawned. 
 	/// </summary>
-	private int typeCount = 0;
+	private int typeCount;
 
 	/// <summary>
 	/// The list of currently active prefabs in the scene. 
 	/// </summary>
 	private List<GameObject> spawnedPrefabs;
 
+
+	private void Awake()
+	{
+		currentTimescale = 0.8f;
+		spawnRate = 0F;
+		typeCount = 0;
+		gameOver = false;
+		SetTimescale();
+	}
+
+
 	private void Start()
 	{
-		SetTimescale();
 		spawnedPrefabs = new List<GameObject>();
-		EndGame += FinishGame;
+		endEvent = FinishGame;
+		pauseEvent = Pause;
 		StartCoroutine(Ascend());
 		StartCoroutine(SpawnObstacles());
 		StartCoroutine(IncrementTimeScale());
@@ -111,11 +134,14 @@ public class GameController : MonoBehaviour {
 	/// <returns></returns>
 	private IEnumerator Ascend()
 	{
-		while(!GameOver)
+		while (!GameOver)
 		{
-			transform.position = Vector3.MoveTowards(transform.position,
-				new Vector3(transform.position.x, transform.position.y + 1.0f, transform.position.z),
-				MOVE_SPEED * Time.fixedDeltaTime);
+			if (Time.timeScale != 0.0f)
+			{
+				transform.position = Vector3.MoveTowards(transform.position,
+					new Vector3(transform.position.x, transform.position.y + 1.0f, transform.position.z),
+					MOVE_SPEED * Time.fixedDeltaTime);
+			}
 			yield return new WaitForEndOfFrame();
 		}
 	}
@@ -126,20 +152,21 @@ public class GameController : MonoBehaviour {
 	/// </summary>
 	private IEnumerator SpawnObstacles()
 	{
-		while(!GameOver)
+		while (!GameOver)
 		{
 			Spawn();
 			yield return new WaitForSeconds(spawnRate);
 		}
 	}
 
-	
+
 	/// <summary>
 	/// Finishes all tasks before ending the game. 
 	/// </summary>
 	private void FinishGame()
 	{
 		gameOver = true;
+		UIManager.gameOverEvent();
 	}
 
 
@@ -153,7 +180,7 @@ public class GameController : MonoBehaviour {
 		{
 			case PrefabType.Wall:
 				// make sure walls get spaced apart
-				spawnRate = 1.5F; 
+				spawnRate = 1.5F;
 				g = Instantiate(wallPrefabs[UnityEngine.Random.Range(0, wallPrefabs.Count)], new Vector3(0.0f, transform.position.y, 0.0f), Quaternion.identity);
 				g.transform.localScale = new Vector3(UnityEngine.Random.Range(0, 2) == 0 ? -1 : 1, 1, 1);
 				spawnedPrefabs.Add(g);
@@ -199,7 +226,8 @@ public class GameController : MonoBehaviour {
 	/// <summary>
 	/// Kills old obstacles to make sure that they get despawned. 
 	/// </summary>
-	private void KillOldPrefabs() {
+	private void KillOldPrefabs()
+	{
 		while (spawnedPrefabs.Count > 20)
 		{
 			GameObject g = spawnedPrefabs[0];
@@ -213,15 +241,18 @@ public class GameController : MonoBehaviour {
 	/// Spawns a prefab at a random location that is not the given location.
 	/// </summary>
 	/// <returns>The location of the prefab.</returns>
-	private float SpawnPrefab(List<GameObject> prefabs, List<float> badLocations) 
+	private float SpawnPrefab(List<GameObject> prefabs, List<float> badLocations)
 	{
 		bool badLocation = true;
 		float location = 0.0f;
-		while (badLocation) {
+		while (badLocation)
+		{
 			location = UnityEngine.Random.Range(-2, 3);
 			badLocation = false;
-			foreach (float f in badLocations) {
-				if (location == f) {
+			foreach (float f in badLocations)
+			{
+				if (location == f)
+				{
 					badLocation = true;
 					break;
 				}
@@ -267,11 +298,14 @@ public class GameController : MonoBehaviour {
 	/// <summary>
 	/// Increments the time scale as the game progresses. 
 	/// </summary>
-	private IEnumerator IncrementTimeScale() {
+	private IEnumerator IncrementTimeScale()
+	{
 		speedTimer = new Stopwatch();
-		while (!GameOver && Time.timeScale < 1.5f) {
+		while (!GameOver && Time.timeScale < 1.5f)
+		{
 			speedTimer.Start();
-			while (speedTimer.ElapsedMilliseconds < PROGRESSION_DELAY) {
+			while (speedTimer.ElapsedMilliseconds < PROGRESSION_DELAY)
+			{
 				yield return new WaitForEndOfFrame();
 			}
 			currentTimescale += PROGRESSION_INCREMENT;
@@ -304,9 +338,28 @@ public class GameController : MonoBehaviour {
 	/// <summary>
 	/// Sets the current timescale.
 	/// </summary>
-	private void SetTimescale() {
+	private void SetTimescale()
+	{
 		Time.timeScale = currentTimescale;
 		Time.fixedDeltaTime = 0.02F * currentTimescale;
 		print(currentTimescale);
+	}
+
+
+	private void Pause()
+	{
+		if (Time.timeScale != 0.0f)
+		{
+			scoreTimer.Stop();
+			speedTimer.Stop();
+			Time.timeScale = 0.0f;
+			Time.fixedDeltaTime = 0.0f;
+		}
+		else
+		{
+			scoreTimer.Start();
+			speedTimer.Start();
+			SetTimescale();
+		}
 	}
 }

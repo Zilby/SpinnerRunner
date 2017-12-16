@@ -70,6 +70,14 @@ public class PlayerController : MonoBehaviour {
 		}
 	}
 
+
+	private void OnDestroy()
+	{
+		Boost -= BoostRotation;
+		Die -= DDDDestruction;
+	}
+
+
 	private void OnEnable()
 	{
 		StartCoroutine(Rotate());
