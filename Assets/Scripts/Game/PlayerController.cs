@@ -75,6 +75,8 @@ public class PlayerController : MonoBehaviour {
 	{
 		Boost -= BoostRotation;
 		Die -= DDDDestruction;
+		primaryPlayer = null;
+		secondaryPlayer = null;
 	}
 
 
@@ -115,6 +117,7 @@ public class PlayerController : MonoBehaviour {
 	private void AcceptInput() {
 		if (!GameController.GameOver)
 		{
+#if UNITY_EDITOR
 			if (Input.GetKeyDown(KeyCode.J))
 			{
 				rotateRight = false;
@@ -127,6 +130,7 @@ public class PlayerController : MonoBehaviour {
 			{
 				BoostRotation();
 			}
+#endif
 		}
 	}
 

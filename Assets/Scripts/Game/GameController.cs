@@ -111,7 +111,6 @@ public class GameController : MonoBehaviour
 		currentTimescale = 0.8f;
 		spawnRate = 0F;
 		typeCount = 0;
-		gameOver = false;
 		SetTimescale();
 	}
 
@@ -361,5 +360,10 @@ public class GameController : MonoBehaviour
 			speedTimer.Start();
 			SetTimescale();
 		}
+	}
+
+	private void OnDestroy()
+	{
+		gameOver = false;
 	}
 }
