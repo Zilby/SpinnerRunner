@@ -342,7 +342,7 @@ public class GameController : MonoBehaviour
 	{
 		Time.timeScale = currentTimescale;
 		Time.fixedDeltaTime = 0.02F * currentTimescale;
-		print(currentTimescale);
+		UnityEngine.Debug.Log(currentTimescale);
 	}
 
 

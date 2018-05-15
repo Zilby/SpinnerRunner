@@ -104,8 +104,8 @@ public class PlayerController : MonoBehaviour {
 	/// Kills the player. 
 	/// </summary>
 	public void DDDDestruction() {
-		transform.GetChild(0).gameObject.SetActive(false);
-		Instantiate(deathParticles, transform);
+		Instantiate(deathParticles, transform.position, transform.rotation);
+		gameObject.SetActive(false);
 	}
 
 
@@ -168,18 +168,20 @@ public class PlayerController : MonoBehaviour {
 			if (primaryPlayer == this)
 			{
 				float absPrimaryX = Mathf.Abs(primaryPlayer.transform.position.x);
-				if (absPrimaryX < 2.0f)
+				float width = Camera.main.ViewportToWorldPoint(Vector3.right).x * 2f; //5.6f;
+				const float cutoff = 0.8f;
+				if (absPrimaryX < (width / 2) - cutoff)
 				{
 					secondaryPlayer.gameObject.SetActive(false);
 				}
 				else if (!secondaryPlayer.gameObject.activeInHierarchy)
 				{
 
-					secondaryPlayer.transform.position = new Vector3((5.6f - absPrimaryX) * -1 * (primaryPlayer.transform.position.x / absPrimaryX),
+					secondaryPlayer.transform.position = new Vector3((width - absPrimaryX) * -1 * (primaryPlayer.transform.position.x / absPrimaryX),
 																	 transform.position.y, transform.position.z);
 					secondaryPlayer.gameObject.SetActive(true);
 				}
-				else if (absPrimaryX > 2.8f)
+				else if (absPrimaryX > (width / 2))
 				{
 					PlayerController temp = primaryPlayer;
 					primaryPlayer = secondaryPlayer;
