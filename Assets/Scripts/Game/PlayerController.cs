@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using InControl;
 
 /// <summary>
 /// Used for controlling all aspects of the player controlled sphere. 
@@ -131,6 +132,14 @@ public class PlayerController : MonoBehaviour {
 				BoostRotation();
 			}
 #endif
+			if (InputManager.ActiveDevice.Action1.WasPressed)
+			{
+				rotateRight = false;
+			}
+			else if (InputManager.ActiveDevice.Action2.WasPressed)
+			{
+				rotateRight = true;
+			}
 		}
 	}
 
