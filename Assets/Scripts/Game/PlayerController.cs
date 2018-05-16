@@ -7,7 +7,8 @@ using InControl;
 /// <summary>
 /// Used for controlling all aspects of the player controlled sphere. 
 /// </summary>
-public class PlayerController : MonoBehaviour {
+public class PlayerController : MonoBehaviour
+{
 
 	/// <summary>
 	/// Event to be called to boost rotation.
@@ -59,13 +60,16 @@ public class PlayerController : MonoBehaviour {
 	}
 
 
-	void Start () {
+	void Start()
+	{
 		Boost += BoostRotation;
 		Die += DDDDestruction;
 		if (primaryPlayer == null)
 		{
 			primaryPlayer = this;
-		} else {
+		}
+		else
+		{
 			secondaryPlayer = this;
 			gameObject.SetActive(false);
 		}
@@ -89,7 +93,8 @@ public class PlayerController : MonoBehaviour {
 	}
 
 
-	private void Update() {
+	private void Update()
+	{
 		AcceptInput();
 	}
 
@@ -106,7 +111,8 @@ public class PlayerController : MonoBehaviour {
 	/// <summary>
 	/// Kills the player. 
 	/// </summary>
-	public void DDDDestruction() {
+	public void DDDDestruction()
+	{
 		Instantiate(deathParticles, transform.position, transform.rotation);
 		gameObject.SetActive(false);
 	}
@@ -115,7 +121,8 @@ public class PlayerController : MonoBehaviour {
 	/// <summary>
 	/// Accepts input for the player. 
 	/// </summary>
-	private void AcceptInput() {
+	private void AcceptInput()
+	{
 		if (!GameController.GameOver)
 		{
 #if UNITY_EDITOR
@@ -147,7 +154,8 @@ public class PlayerController : MonoBehaviour {
 	/// <summary>
 	/// Rotates this instance of the player.
 	/// </summary>
-	private IEnumerator Rotate() {
+	private IEnumerator Rotate()
+	{
 		while (!GameController.GameOver)
 		{
 			float actualRotation = ROTATION_SPEED + boostedRotation;
@@ -165,8 +173,12 @@ public class PlayerController : MonoBehaviour {
 	{
 		while (!GameController.GameOver)
 		{
+#if UNITY_EDITOR
 			float x = Input.GetAxis("Horizontal");
-			transform.position = new Vector3(transform.position.x + x / 3.0f, transform.position.y, transform.position.z);
+#else
+			float x = Input.acceleration.x;
+#endif
+			transform.position = new Vector3(transform.position.x + x / 2.0f, transform.position.y, transform.position.z);
 			yield return new WaitForFixedUpdate();
 		}
 	}

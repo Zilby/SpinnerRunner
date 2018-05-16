@@ -120,31 +120,20 @@ public class GameController : MonoBehaviour
 		spawnedPrefabs = new List<GameObject>();
 		endEvent = FinishGame;
 		pauseEvent = Pause;
-		StartCoroutine(Ascend());
 		StartCoroutine(SpawnObstacles());
 		StartCoroutine(IncrementTimeScale());
 		StartCoroutine(IncrementScore());
 	}
 
-
-	/// <summary>
-	/// Moves the environment upwards. 
-	/// </summary>
-	/// <returns></returns>
-	private IEnumerator Ascend()
+	private void Update()
 	{
-		while (!GameOver)
+		if (!gameOver)
 		{
-			if (Time.timeScale != 0.0f)
-			{
-				transform.position = Vector3.MoveTowards(transform.position,
+			transform.position = Vector3.MoveTowards(transform.position,
 					new Vector3(transform.position.x, transform.position.y + 1.0f, transform.position.z),
 					MOVE_SPEED * Time.fixedDeltaTime);
-			}
-			yield return new WaitForEndOfFrame();
 		}
 	}
-
 
 	/// <summary>
 	/// Spawns obstacles at the current spawn rate. 
@@ -305,7 +294,7 @@ public class GameController : MonoBehaviour
 			speedTimer.Start();
 			while (speedTimer.ElapsedMilliseconds < PROGRESSION_DELAY)
 			{
-				yield return new WaitForEndOfFrame();
+				yield return new WaitForFixedUpdate();
 			}
 			currentTimescale += PROGRESSION_INCREMENT;
 			SetTimescale();
@@ -326,7 +315,7 @@ public class GameController : MonoBehaviour
 			scoreTimer.Start();
 			while (scoreTimer.ElapsedMilliseconds < SCORE_RATE)
 			{
-				yield return new WaitForEndOfFrame();
+				yield return new WaitForFixedUpdate();
 			}
 			score += 1;
 			scoreTimer.Reset();
