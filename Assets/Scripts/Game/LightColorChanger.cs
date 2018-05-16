@@ -10,9 +10,20 @@ public class LightColorChanger : MonoBehaviour {
 	public Material particleMat;
 
 	/// <summary>
-	/// The increment at which the colors change. 
+	/// The increment at which the colors change at the ends of the spectrum. 
 	/// </summary>
-	private const float INCREMENT = 0.5f / 255f;
+	private const float SLOW_INCREMENT = 0.05f / 255f;
+
+	/// <summary>
+	/// The increment at which the colors change close to the ends of the spectrum. 
+	/// </summary>
+	private const float INCREMENT = 0.15f / 255f;
+
+	/// <summary>
+	/// The increment at which the colors change when in the middle of the spectrum. 
+	/// </summary>
+	private const float RAPID_INCREMENT = 2.5f / 255f;
+
 	/// <summary>
 	/// The main light for the scene. 
 	/// </summary>
@@ -54,16 +65,28 @@ public class LightColorChanger : MonoBehaviour {
 	/// Changes the current color.
 	/// </summary>
 	private void ChangeColor() {
+		float increment = RAPID_INCREMENT;
+		if((currentColor.r < 0.3 && currentColor.g < 0.3) ||
+		  (currentColor.r < 0.3 && currentColor.b < 0.3) ||
+		   (currentColor.g < 0.3 && currentColor.b < 0.3)) {
+			increment = INCREMENT;
+		}
+		if ((currentColor.r < 0.1 && currentColor.g < 0.1) ||
+		  (currentColor.r < 0.1 && currentColor.b < 0.1) ||
+		   (currentColor.g < 0.1 && currentColor.b < 0.1))
+		{
+			increment = SLOW_INCREMENT;
+		}
 		if (currentColor.r >= 1.0f) {
 			if (increasing) {
-				SetColor(b: currentColor.b + INCREMENT);
+				SetColor(Color.blue, currentColor.b + increment);
 				if (currentColor.b >= 1.0f)
 				{
-					SetColor(r: 1.0f - INCREMENT);
+					SetColor(Color.red, 1.0f - increment);
 					increasing = !increasing;
 				}
 			} else {
-				SetColor(g: currentColor.g - INCREMENT);
+				SetColor(Color.green, currentColor.g - increment);
 				if (currentColor.g <= 0.01f)
 				{
 					increasing = !increasing;
@@ -74,16 +97,16 @@ public class LightColorChanger : MonoBehaviour {
 		{
 			if (increasing)
 			{
-				SetColor(r: currentColor.r + INCREMENT);
+				SetColor(Color.red, currentColor.r + increment);
 				if (currentColor.r >= 1.0f)
 				{
-					SetColor(g: 1.0f - INCREMENT);
+					SetColor(Color.green, 1.0f - increment);
 					increasing = !increasing;
 				}
 			}
 			else
 			{
-				SetColor(b: currentColor.b - INCREMENT);
+				SetColor(Color.blue, currentColor.b - increment);
 				if (currentColor.b <= 0.01f)
 				{
 					increasing = !increasing;
@@ -92,17 +115,17 @@ public class LightColorChanger : MonoBehaviour {
 		} else {
 			if (increasing)
 			{
-				SetColor(g: currentColor.g + INCREMENT);
+				SetColor(Color.green, currentColor.g + increment);
 				if (currentColor.g >= 1.0f)
 				{
-					SetColor(b: 1.0f - INCREMENT);
+					SetColor(Color.blue, 1.0f - increment);
 					increasing = !increasing;
 				}
 			}
 			else
 			{
-				SetColor(r: currentColor.r - INCREMENT);
-				if (currentColor.r <= 0.3f)
+				SetColor(Color.red, currentColor.r - increment);
+				if (currentColor.r <= 0.01f)
 				{
 					increasing = !increasing;
 				}
@@ -111,13 +134,58 @@ public class LightColorChanger : MonoBehaviour {
 	}
 
 
+	private void IncrementColors(Color c, float increment) 
+	{
+		if (increasing)
+		{
+			Color c2 = c == Color.red ? Color.blue : c == Color.green ? Color.red : Color.blue;
+			float val = GetColorValue(currentColor, c2);
+			SetColor(c2, val + increment);
+			if (val + increment >= 1.0f)
+			{
+				SetColor(c, 0.99f);
+				increasing = !increasing;
+			}
+		}
+		else
+		{
+			Color c2 = c == Color.red ? Color.green : c == Color.green ? Color.blue : Color.red;
+			float val = GetColorValue(currentColor, c2);
+			SetColor(c2, val - increment);
+			if (val - increment <= 0.01f)
+			{
+				increasing = !increasing;
+			}
+		}
+	}
+
+
 	/// <summary>
-	/// Sets the current color to the given values.
+	/// Sets the current color' to the given values.
 	/// </summary>
-	private void SetColor(float r = -1, float g = -1, float b = -1) {
-		currentColor = new Color(r >= 0 ? r : currentColor.r, 
-		                         g >= 0 ? g : currentColor.g, 
-		                         b >= 0 ? b : currentColor.b);
+	private void SetColor(Color c, float f) {
+		currentColor = new Color(Mathf.Clamp(c == Color.red ? f : currentColor.r, 0f, 1f), 
+		                         Mathf.Clamp(c == Color.green ? f : currentColor.g, 0f, 1f), 
+		                         Mathf.Clamp(c == Color.blue ? f : currentColor.b, 0f, 1f));
+	}
+
+
+	/// <summary>
+	/// Gets the component of the given color given the color value given. 
+	/// </summary>
+	/// <returns>The color value.</returns>
+	private float GetColorValue(Color c, Color val) {
+		if(val == Color.red) {
+			return c.r;
+		}
+		else if (val == Color.green)
+		{
+			return c.g;
+		}
+		else
+		{
+			return c.b;
+		}
 	}
 
 
