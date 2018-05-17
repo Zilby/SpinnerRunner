@@ -67,7 +67,7 @@ public class UIManager : MonoBehaviour {
 
 
 	private IEnumerator EndGame() {
-		yield return new WaitForSeconds(1.0f);
+		yield return new WaitForSecondsRealtime(1.6f);
 		isPaused = !isPaused;
 		gameOver.SetActive(true);
 		blur.enabled = true;

@@ -13,13 +13,21 @@ public class Obstacle : Wall {
 	/// </summary>
 	public bool rotateRight;
 	/// <summary>
+	/// The desired rotation.
+	/// </summary>
+	protected float desiredRot;
+	/// <summary>
+	/// Damp for lerp. 
+	/// </summary>
+	protected float damping = 10;
+	/// <summary>
 	/// The rotation speed.
 	/// </summary>
 	protected const float ROTATION_SPEED = 5.0f;
 	/// <summary>
 	/// The boosted rotation speed.
 	/// </summary>
-	protected const float BOOSTED_SPEED = 8.0f;
+	protected const float BOOSTED_SPEED = 9.0f;
 	/// <summary>
 	/// How much the score increments when the player passes through. 
 	/// </summary>
@@ -39,6 +47,7 @@ public class Obstacle : Wall {
 	protected void Start()
 	{
 		rotateRight = Random.Range(0, 2) == 0;
+		desiredRot = transform.eulerAngles.z;
 		StartCoroutine(Rotate());
 	}
 
@@ -86,7 +95,10 @@ public class Obstacle : Wall {
 		for (;;)
 		{
 			float actualRotation = ROTATION_SPEED + boostedRotation;
-			transform.Rotate(0, 0, rotateRight ? -actualRotation : actualRotation);
+			desiredRot += rotateRight ? -actualRotation : actualRotation;
+			var desiredRotQ = Quaternion.Euler(transform.eulerAngles.x, transform.eulerAngles.y, desiredRot);
+			transform.rotation = Quaternion.Lerp(transform.rotation, desiredRotQ, Time.deltaTime * damping);
+
 			boostedRotation = Mathf.Abs(boostedRotation) - 0.3f;
 			yield return new WaitForEndOfFrame();
 		}

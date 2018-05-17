@@ -45,6 +45,16 @@ public class PlayerController : MonoBehaviour
 	const float ROTATION_SPEED = 5;
 
 	/// <summary>
+	/// The desired rotation.
+	/// </summary>
+	protected float desiredRot;
+
+	/// <summary>
+	/// Damp for lerp. 
+	/// </summary>
+	protected float damping = 30;
+
+	/// <summary>
 	/// The speed of the player's boosted rotation. 
 	/// </summary>
 	private float boostedRotation = 0;
@@ -73,6 +83,7 @@ public class PlayerController : MonoBehaviour
 			secondaryPlayer = this;
 			gameObject.SetActive(false);
 		}
+		desiredRot = transform.eulerAngles.z;
 	}
 
 
@@ -159,7 +170,9 @@ public class PlayerController : MonoBehaviour
 		while (!GameController.GameOver)
 		{
 			float actualRotation = ROTATION_SPEED + boostedRotation;
-			transform.Rotate(0, 0, rotateRight ? -actualRotation : actualRotation);
+			desiredRot += rotateRight ? -actualRotation : actualRotation;
+			var desiredRotQ = Quaternion.Euler(transform.eulerAngles.x, transform.eulerAngles.y, desiredRot);
+			transform.rotation = Quaternion.Lerp(transform.rotation, desiredRotQ, Time.deltaTime * damping);
 			boostedRotation = Mathf.Abs(boostedRotation) - 0.3f;
 			yield return new WaitForEndOfFrame();
 		}
