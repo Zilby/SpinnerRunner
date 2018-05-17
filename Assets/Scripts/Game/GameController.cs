@@ -31,24 +31,14 @@ public class GameController : MonoBehaviour
 	public static int score;
 
 	/// <summary>
-	/// The rate at which the game moves upwards. 
+	/// The delay between the speed progressions. 
 	/// </summary>
-	const float MOVE_SPEED = 0.3f;
+	const float PROGRESSION_DELAY = 10000.0f;
 
 	/// <summary>
-	/// The spawn increment.
+	/// The increment that the movement speed progresses at. 
 	/// </summary>
-	const float SPAWN_INCREMENT = 0.01f;
-
-	/// <summary>
-	/// The delay between the timescale progressions. 
-	/// </summary>
-	const float PROGRESSION_DELAY = 3000.0f;
-
-	/// <summary>
-	/// The increment that the timescale progresses at. 
-	/// </summary>
-	const float PROGRESSION_INCREMENT = 0.015F;
+	const float PROGRESSION_INCREMENT = 1.05f;
 
 	/// <summary>
 	/// The rate at which the score progresses. 
@@ -56,9 +46,19 @@ public class GameController : MonoBehaviour
 	const float SCORE_RATE = 800.0f;
 
 	/// <summary>
-	/// The rate at which prefabs spawn.
+	/// The rate at which the game moves upwards. 
 	/// </summary>
-	private float spawnRate;
+	private float moveSpeed = 0.4f;
+
+	/// <summary>
+	/// The distance at which prefabs spawn.
+	/// </summary>
+	private float spawnDistance;
+
+	/// <summary>
+	/// The location of the last prefab spawn. 
+	/// </summary>
+	private Vector3 lastSpawn;
 
 	/// <summary>
 	/// Whether or not the game has ended. 
@@ -115,8 +115,9 @@ public class GameController : MonoBehaviour
 
 	private void Awake()
 	{
-		currentTimescale = 0.8f;
-		spawnRate = 0F;
+		currentTimescale = 1.0f;
+		spawnDistance = 0F;
+		lastSpawn = transform.position;
 		typeCount = 0;
 		SetTimescale();
 	}
@@ -127,7 +128,7 @@ public class GameController : MonoBehaviour
 		spawnedPrefabs = new List<GameObject>();
 		endEvent = FinishGame;
 		pauseEvent = Pause;
-		StartCoroutine(IncrementTimeScale());
+		StartCoroutine(IncrementSpeed());
 		StartCoroutine(IncrementScore());
 	}
 
@@ -135,14 +136,10 @@ public class GameController : MonoBehaviour
 	{
 		if (!gameOver)
 		{
-			/* transform.position = 
-			 * Vector3.MoveTowards(transform.position, new Vector3(transform.position.x, 
-			 * transform.position.y + 1.0f, transform.position.z),	MOVE_SPEED * Time.fixedDeltaTime);
-			 */
 			transform.position =
 				Vector3.SmoothDamp(transform.position,
 								   new Vector3(transform.position.x, transform.position.y + 1.0f, transform.position.z),
-								   ref velocity, MOVE_SPEED);
+				                   ref velocity, moveSpeed, Mathf.Infinity, Time.deltaTime);
 		}
 	}
 
@@ -152,26 +149,23 @@ public class GameController : MonoBehaviour
 	}
 
 	/// <summary>
-	/// Spawns obstacles at the current spawn rate. 
+	/// Spawns obstacles based on the distance from the last spawn. 
 	/// </summary>
 	private void SpawnObstacles()
 	{
-		if (spawnRate < 0 && !gameOver)
+		if (Vector3.Distance(lastSpawn, transform.position) > spawnDistance)
 		{
+			lastSpawn = transform.position;
 			Spawn();
 			switch(currentPrefab) {
 				case PrefabType.Wall:
 					// make sure walls get spaced apart
-					spawnRate = 1.0f;
+					spawnDistance = 6.0f;
 					break;
 				default:
-					spawnRate = 0.5f;
+					spawnDistance = 3.0f;
 					break;
 			}
-		}
-		else
-		{
-			spawnRate -= SPAWN_INCREMENT;
 		}
 	}
 
@@ -191,11 +185,10 @@ public class GameController : MonoBehaviour
 	/// </summary>
 	private void Spawn()
 	{
-		GameObject g;
 		switch (currentPrefab)
 		{
 			case PrefabType.Wall:
-				g = Instantiate(wallPrefabs[UnityEngine.Random.Range(0, wallPrefabs.Count)], new Vector3(0.0f, transform.position.y, 0.0f), Quaternion.identity);
+				GameObject g = Instantiate(wallPrefabs[UnityEngine.Random.Range(0, wallPrefabs.Count)], new Vector3(0.0f, transform.position.y, 0.0f), Quaternion.identity);
 				g.transform.localScale = new Vector3(UnityEngine.Random.Range(0, 2) == 0 ? -1 : 1, 1, 1);
 				spawnedPrefabs.Add(g);
 				break;
@@ -307,20 +300,20 @@ public class GameController : MonoBehaviour
 
 
 	/// <summary>
-	/// Increments the time scale as the game progresses. 
+	/// Increments the speed as the game progresses. 
 	/// </summary>
-	private IEnumerator IncrementTimeScale()
+	private IEnumerator IncrementSpeed()
 	{
 		speedTimer = new Stopwatch();
-		while (!GameOver && Time.timeScale < 1.5f)
+		while (!GameOver)
 		{
 			speedTimer.Start();
 			while (speedTimer.ElapsedMilliseconds < PROGRESSION_DELAY)
 			{
 				yield return new WaitForFixedUpdate();
 			}
-			currentTimescale += PROGRESSION_INCREMENT;
-			SetTimescale();
+			moveSpeed /= PROGRESSION_INCREMENT;
+			print(moveSpeed);
 			speedTimer.Reset();
 		}
 	}

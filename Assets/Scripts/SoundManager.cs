@@ -2,12 +2,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 /// <summary>
 /// Manages all in-game sounds.
 /// </summary>
 public class SoundManager : MonoBehaviour
 {
+	public delegate AudioMixer MixEvent();
+	public static MixEvent GetMix;
+
 	public static Action SpinEvent;
 
 	public static Action CoinEvent;
@@ -15,6 +19,8 @@ public class SoundManager : MonoBehaviour
 	public static Action DeathEvent;
 
 	public static Action ClickEvent;
+
+	public AudioMixer mix;
 
 	/// <summary>
 	/// The list of sound clips. 
@@ -44,12 +50,17 @@ public class SoundManager : MonoBehaviour
 			CoinEvent = delegate { PlaySFX(1); };
 			DeathEvent = delegate { PlaySFX(2); };
 			ClickEvent = delegate { PlaySFX(3); };
+			GetMix = GetMixer;
+			PlaySong(0);
 		} else
 		{
 			Destroy(gameObject);
 		}
 	}
 
+	private AudioMixer GetMixer() {
+		return mix;
+	}
 
 	/// <summary>
 	/// Plays a sound effect from the list. 

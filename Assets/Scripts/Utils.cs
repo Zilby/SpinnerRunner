@@ -112,6 +112,13 @@ public static class Utils
 		MyData data = new MyData();
 
 		data.highScore = highScore;
+		AudioMixer mix = SoundManager.GetMix();
+		mix.GetFloat("Master", out master);
+		data.master = master;
+		mix.GetFloat("Master", out music);
+		data.music = music;
+		mix.GetFloat("Master", out soundfx);
+		data.soundfx = soundfx;
 		bf.Serialize(file, data);
 		file.Close();
 	}
@@ -121,7 +128,7 @@ public static class Utils
 	/// Loads the game.
 	/// </summary>
 	/// <param name="mix">The main audio mixer.</param>
-	public static void Load(AudioMixer mix)
+	public static void Load()
 	{
 #if UNITY_EDITOR
 		if (File.Exists(Application.persistentDataPath + "/bladeSavedInfoEditor.zlb"))
@@ -139,6 +146,7 @@ public static class Utils
 #endif
 
 			highScore = data.highScore;
+			AudioMixer mix = SoundManager.GetMix();
 			master = data.master;
 			mix.SetFloat("Master", master);
 			music = data.music;

@@ -8,8 +8,6 @@ using TMPro;
 
 public class MenuManager : MonoBehaviour {
 
-	public AudioMixer mix;
-
 	[Header("Main")]
 	public GameObject main;
 	public Button play;
@@ -24,7 +22,7 @@ public class MenuManager : MonoBehaviour {
 	void Start () {
 		Utils.Reset();
 		Utils.Loaded = false;
-		Utils.Load(mix);
+		Utils.Load();
 		score.text = Utils.HighScore.ToString();
 		play.onClick.AddListener(LoadGame);
 		highScores.onClick.AddListener(AlternateScreens);
