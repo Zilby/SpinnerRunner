@@ -156,7 +156,7 @@ public class GameController : MonoBehaviour
 	/// </summary>
 	private void SpawnObstacles()
 	{
-		if (spawnRate < 0)
+		if (spawnRate < 0 && !gameOver)
 		{
 			Spawn();
 			switch(currentPrefab) {

@@ -23,11 +23,11 @@ public class Obstacle : Wall {
 	/// <summary>
 	/// The rotation speed.
 	/// </summary>
-	protected const float ROTATION_SPEED = 5.0f;
+	protected const float ROTATION_SPEED = 300.0f;
 	/// <summary>
 	/// The boosted rotation speed.
 	/// </summary>
-	protected const float BOOSTED_SPEED = 9.0f;
+	protected const float BOOSTED_SPEED = 500.0f;
 	/// <summary>
 	/// How much the score increments when the player passes through. 
 	/// </summary>
@@ -95,11 +95,11 @@ public class Obstacle : Wall {
 		for (;;)
 		{
 			float actualRotation = ROTATION_SPEED + boostedRotation;
-			desiredRot += rotateRight ? -actualRotation : actualRotation;
+			desiredRot += (rotateRight ? -actualRotation : actualRotation) * Time.deltaTime;
 			var desiredRotQ = Quaternion.Euler(transform.eulerAngles.x, transform.eulerAngles.y, desiredRot);
 			transform.rotation = Quaternion.Lerp(transform.rotation, desiredRotQ, Time.deltaTime * damping);
 
-			boostedRotation = Mathf.Abs(boostedRotation) - 0.3f;
+			boostedRotation = Mathf.Abs(boostedRotation) - 15f;
 			yield return new WaitForEndOfFrame();
 		}
 	}

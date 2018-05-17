@@ -42,7 +42,12 @@ public class PlayerController : MonoBehaviour
 	/// <summary>
 	/// The rotation speed.
 	/// </summary>
-	const float ROTATION_SPEED = 5;
+	const float ROTATION_SPEED = 300f;
+
+	/// <summary>
+	/// The boosted rotation speed.
+	/// </summary>
+	protected const float BOOSTED_SPEED = 500f;
 
 	/// <summary>
 	/// The desired rotation.
@@ -115,7 +120,7 @@ public class PlayerController : MonoBehaviour
 	/// </summary>
 	public void BoostRotation()
 	{
-		boostedRotation = 8.0f;
+		boostedRotation = BOOSTED_SPEED;
 	}
 
 
@@ -170,10 +175,10 @@ public class PlayerController : MonoBehaviour
 		while (!GameController.GameOver)
 		{
 			float actualRotation = ROTATION_SPEED + boostedRotation;
-			desiredRot += rotateRight ? -actualRotation : actualRotation;
+			desiredRot += (rotateRight ? -actualRotation : actualRotation) * Time.deltaTime;
 			var desiredRotQ = Quaternion.Euler(transform.eulerAngles.x, transform.eulerAngles.y, desiredRot);
 			transform.rotation = Quaternion.Lerp(transform.rotation, desiredRotQ, Time.deltaTime * damping);
-			boostedRotation = Mathf.Abs(boostedRotation) - 0.3f;
+			boostedRotation = Mathf.Abs(boostedRotation) - 15f;
 			yield return new WaitForEndOfFrame();
 		}
 	}
