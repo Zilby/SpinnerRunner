@@ -47,7 +47,7 @@ public class PlayerController : MonoBehaviour
 	/// <summary>
 	/// The boosted rotation speed.
 	/// </summary>
-	protected const float BOOSTED_SPEED = 500f;
+	protected const float BOOSTED_SPEED = 550f;
 
 	/// <summary>
 	/// The desired rotation.
@@ -178,7 +178,7 @@ public class PlayerController : MonoBehaviour
 			desiredRot += (rotateRight ? -actualRotation : actualRotation) * Time.deltaTime;
 			var desiredRotQ = Quaternion.Euler(transform.eulerAngles.x, transform.eulerAngles.y, desiredRot);
 			transform.rotation = Quaternion.Lerp(transform.rotation, desiredRotQ, Time.deltaTime * damping);
-			boostedRotation = Mathf.Abs(boostedRotation) - 15f;
+			boostedRotation = Mathf.Abs(boostedRotation) - (750f * Time.deltaTime);
 			yield return new WaitForEndOfFrame();
 		}
 	}
