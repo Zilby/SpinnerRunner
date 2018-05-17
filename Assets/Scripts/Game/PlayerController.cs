@@ -120,6 +120,7 @@ public class PlayerController : MonoBehaviour
 	/// </summary>
 	public void BoostRotation()
 	{
+		SoundManager.SpinEvent();
 		boostedRotation = BOOSTED_SPEED;
 	}
 
@@ -130,6 +131,7 @@ public class PlayerController : MonoBehaviour
 	public void DDDDestruction()
 	{
 		Instantiate(deathParticles, transform.position, transform.rotation);
+		SoundManager.DeathEvent();
 		gameObject.SetActive(false);
 	}
 

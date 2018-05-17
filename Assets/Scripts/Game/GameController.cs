@@ -353,13 +353,12 @@ public class GameController : MonoBehaviour
 	{
 		Time.timeScale = currentTimescale;
 		Time.fixedDeltaTime = 0.02F * currentTimescale;
-		UnityEngine.Debug.Log(currentTimescale);
 	}
 
 
 	private void Pause()
 	{
-		if (Time.timeScale != 0.0f)
+		if (Time.timeScale != 0.0f || gameOver)
 		{
 			scoreTimer.Stop();
 			speedTimer.Stop();

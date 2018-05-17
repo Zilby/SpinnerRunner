@@ -57,6 +57,7 @@ public class Coin : Obstacle {
 			transform.localScale = originalScale * (newDistance + ((distance - newDistance) / 3)) / distance; 
 			yield return new WaitForEndOfFrame();
 		}
+		SoundManager.CoinEvent();
 		IncrementScore();
 		Destroy(gameObject);
 	}
