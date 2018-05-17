@@ -38,6 +38,7 @@ public class Obstacle : Wall {
 
 	protected void Start()
 	{
+		rotateRight = Random.Range(0, 2) == 0;
 		StartCoroutine(Rotate());
 	}
 

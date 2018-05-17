@@ -120,7 +120,6 @@ public class GameController : MonoBehaviour
 		spawnedPrefabs = new List<GameObject>();
 		endEvent = FinishGame;
 		pauseEvent = Pause;
-		StartCoroutine(SpawnObstacles());
 		StartCoroutine(IncrementTimeScale());
 		StartCoroutine(IncrementScore());
 	}
@@ -135,15 +134,32 @@ public class GameController : MonoBehaviour
 		}
 	}
 
+	private void FixedUpdate()
+	{
+		SpawnObstacles();
+	}
+
 	/// <summary>
 	/// Spawns obstacles at the current spawn rate. 
 	/// </summary>
-	private IEnumerator SpawnObstacles()
+	private void SpawnObstacles()
 	{
-		while (!GameOver)
+		if (spawnRate < 0)
 		{
 			Spawn();
-			yield return new WaitForSeconds(spawnRate);
+			switch(currentPrefab) {
+				case PrefabType.Wall:
+					// make sure walls get spaced apart
+					spawnRate = 1.0f;
+					break;
+				default:
+					spawnRate = 0.5f;
+					break;
+			}
+		}
+		else
+		{
+			spawnRate -= 0.015f;
 		}
 	}
 
@@ -167,8 +183,6 @@ public class GameController : MonoBehaviour
 		switch (currentPrefab)
 		{
 			case PrefabType.Wall:
-				// make sure walls get spaced apart
-				spawnRate = 1.5F;
 				g = Instantiate(wallPrefabs[UnityEngine.Random.Range(0, wallPrefabs.Count)], new Vector3(0.0f, transform.position.y, 0.0f), Quaternion.identity);
 				g.transform.localScale = new Vector3(UnityEngine.Random.Range(0, 2) == 0 ? -1 : 1, 1, 1);
 				spawnedPrefabs.Add(g);
@@ -247,7 +261,6 @@ public class GameController : MonoBehaviour
 			}
 		}
 		GameObject g = Instantiate(prefabs[UnityEngine.Random.Range(0, prefabs.Count)], new Vector3(location * 1.0f, transform.position.y + 10.0f, 0.0f), Quaternion.identity);
-		g.GetComponent<Obstacle>().rotateRight = UnityEngine.Random.Range(0, 2) == 0;
 		spawnedPrefabs.Add(g);
 		return location;
 	}
@@ -271,13 +284,11 @@ public class GameController : MonoBehaviour
 			{
 				currentPrefab = PrefabType.Obstacle;
 				typeCount = UnityEngine.Random.Range(0, 5);
-				spawnRate = 0.75F;
 			}
 			else
 			{
 				currentPrefab = PrefabType.Coin;
 				typeCount = UnityEngine.Random.Range(0, 5);
-				spawnRate = 0.75F;
 			}
 		}
 	}
