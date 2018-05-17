@@ -46,11 +46,15 @@ public class Coin : Obstacle {
 	/// Causes the coin to fly towards the score and then destroy itself. 
 	/// </summary>
 	protected virtual IEnumerator FlyAway() {
-		Vector3 flyLocation = Camera.main.ViewportToWorldPoint(new Vector3(0.1f, 0.94f, Camera.main.nearClipPlane));
-		while (transform.localScale.x > 0.37f) {
-			flyLocation = Camera.main.ViewportToWorldPoint(new Vector3(0.1f, 0.94f, Camera.main.nearClipPlane));
+		Vector3 flyLocation = Camera.main.ViewportToWorldPoint(new Vector3(0.1f, 0.94f, -Camera.main.transform.position.z));
+		float distance = Vector3.Distance(flyLocation, transform.position);
+		float newDistance = distance;
+		Vector3 originalScale = transform.localScale;
+		while (newDistance > 0.1f) {
+			flyLocation = Camera.main.ViewportToWorldPoint(new Vector3(0.1f, 0.94f, -Camera.main.transform.position.z));
 			transform.position = Vector3.MoveTowards(transform.position, new Vector3(flyLocation.x, flyLocation.y, transform.position.z), FLY_SPEED * Time.deltaTime);
-			transform.localScale = transform.localScale * 0.97f;
+			newDistance = Vector3.Distance(flyLocation, transform.position);
+			transform.localScale = originalScale * (newDistance + ((distance - newDistance) / 3)) / distance; 
 			yield return new WaitForEndOfFrame();
 		}
 		IncrementScore();
