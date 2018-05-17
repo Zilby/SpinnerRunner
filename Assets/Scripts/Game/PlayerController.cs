@@ -42,12 +42,12 @@ public class PlayerController : MonoBehaviour
 	/// <summary>
 	/// The rotation speed.
 	/// </summary>
-	const float ROTATION_SPEED = 300f;
+	const float ROTATION_SPEED = 200f;
 
 	/// <summary>
 	/// The boosted rotation speed.
 	/// </summary>
-	protected const float BOOSTED_SPEED = 550f;
+	protected const float BOOSTED_SPEED = 500f;
 
 	/// <summary>
 	/// The desired rotation.

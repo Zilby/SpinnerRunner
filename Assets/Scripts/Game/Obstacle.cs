@@ -23,11 +23,11 @@ public class Obstacle : Wall {
 	/// <summary>
 	/// The rotation speed.
 	/// </summary>
-	protected const float ROTATION_SPEED = 300.0f;
+	protected const float ROTATION_SPEED = 200.0f;
 	/// <summary>
 	/// The boosted rotation speed.
 	/// </summary>
-	protected const float BOOSTED_SPEED = 550.0f;
+	protected const float BOOSTED_SPEED = 500.0f;
 	/// <summary>
 	/// How much the score increments when the player passes through. 
 	/// </summary>
