@@ -14,7 +14,6 @@ public class UIManager : MonoBehaviour {
 
 	[Header("GeneralReferences")]
 	public TextMeshProUGUI score;
-	public BlurOptimized blur;
 
 	[Header("PauseElements")]
 	public GameObject paused;
@@ -34,6 +33,8 @@ public class UIManager : MonoBehaviour {
 
 	private bool isPaused;
 
+	private BlurOptimized blur;
+
 
 	private void Awake()
 	{
@@ -45,6 +46,7 @@ public class UIManager : MonoBehaviour {
 		menu.onClick.AddListener(Menu);
 		menu2.onClick.AddListener(Menu);
 		again.onClick.AddListener(Again);
+		blur = Camera.main.GetComponent<BlurOptimized>();
 	}
 
 	private void Update()

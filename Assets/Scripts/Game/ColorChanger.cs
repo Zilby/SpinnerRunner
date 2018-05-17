@@ -110,9 +110,12 @@ public class ColorChanger : MonoBehaviour
 	/// </summary>
 	private void AssignColors()
 	{
+		/*
 		Texture2D tex = new Texture2D(1, 1);
 		tex.SetPixel(0,0,currentColor);
 		tex.Apply();
 		mat.SetTexture("_MainTex", tex);
+		*/
+		mat.SetColor("_Color", currentColor);
 	}
 }
