@@ -32,7 +32,7 @@ public class ColorChanger : MonoBehaviour
 		float r = 0f;
 		while (r < 1f)
 		{
-			r += 0.01f;
+			r += 0.02f;
 			SetColor(Color.red, r);
 			AssignColors();
 			yield return new WaitForEndOfFrame();

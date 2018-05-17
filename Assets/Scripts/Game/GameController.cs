@@ -33,12 +33,17 @@ public class GameController : MonoBehaviour
 	/// <summary>
 	/// The rate at which the game moves upwards. 
 	/// </summary>
-	const float MOVE_SPEED = 3.0F;
+	const float MOVE_SPEED = 0.3f;
+
+	/// <summary>
+	/// The spawn increment.
+	/// </summary>
+	const float SPAWN_INCREMENT = 0.01f;
 
 	/// <summary>
 	/// The delay between the timescale progressions. 
 	/// </summary>
-	const float PROGRESSION_DELAY = 5000.0f;
+	const float PROGRESSION_DELAY = 3000.0f;
 
 	/// <summary>
 	/// The increment that the timescale progresses at. 
@@ -105,6 +110,8 @@ public class GameController : MonoBehaviour
 	/// </summary>
 	private List<GameObject> spawnedPrefabs;
 
+	private Vector3 velocity = Vector3.zero;
+
 
 	private void Awake()
 	{
@@ -128,9 +135,14 @@ public class GameController : MonoBehaviour
 	{
 		if (!gameOver)
 		{
-			transform.position = Vector3.MoveTowards(transform.position,
-					new Vector3(transform.position.x, transform.position.y + 1.0f, transform.position.z),
-					MOVE_SPEED * Time.fixedDeltaTime);
+			/* transform.position = 
+			 * Vector3.MoveTowards(transform.position, new Vector3(transform.position.x, 
+			 * transform.position.y + 1.0f, transform.position.z),	MOVE_SPEED * Time.fixedDeltaTime);
+			 */
+			transform.position =
+				Vector3.SmoothDamp(transform.position,
+								   new Vector3(transform.position.x, transform.position.y + 1.0f, transform.position.z),
+								   ref velocity, MOVE_SPEED);
 		}
 	}
 
@@ -159,7 +171,7 @@ public class GameController : MonoBehaviour
 		}
 		else
 		{
-			spawnRate -= 0.015f;
+			spawnRate -= SPAWN_INCREMENT;
 		}
 	}
 
