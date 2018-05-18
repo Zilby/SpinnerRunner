@@ -139,7 +139,7 @@ public class GameController : MonoBehaviour
 			transform.position =
 				Vector3.SmoothDamp(transform.position,
 								   new Vector3(transform.position.x, transform.position.y + 1.0f, transform.position.z),
-				                   ref velocity, moveSpeed, Mathf.Infinity, Time.deltaTime);
+				                   ref velocity, moveSpeed, Mathf.Infinity, Time.smoothDeltaTime);
 		}
 	}
 

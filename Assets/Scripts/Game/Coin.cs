@@ -55,7 +55,7 @@ public class Coin : Obstacle {
 		Vector3 originalScale = transform.localScale;
 		while (newDistance > 0.1f) {
 			flyLocation = Camera.main.ViewportToWorldPoint(new Vector3(0.1f, 0.94f, -Camera.main.transform.position.z));
-			transform.position = Vector3.MoveTowards(transform.position, new Vector3(flyLocation.x, flyLocation.y, transform.position.z), FLY_SPEED * Time.deltaTime);
+			transform.position = Vector3.MoveTowards(transform.position, new Vector3(flyLocation.x, flyLocation.y, transform.position.z), FLY_SPEED * Time.smoothDeltaTime);
 			newDistance = Vector3.Distance(flyLocation, transform.position);
 			transform.localScale = originalScale * (newDistance + ((distance - newDistance) / 3)) / distance; 
 			yield return new WaitForEndOfFrame();

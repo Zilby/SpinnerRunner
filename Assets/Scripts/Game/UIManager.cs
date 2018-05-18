@@ -161,6 +161,8 @@ public class UIManager : MonoBehaviour {
 
 
 	private void Menu() {
+		Time.timeScale = 1.0f;
+		Time.fixedDeltaTime = 0.02F * Time.timeScale;
 		SceneManager.LoadScene("Menu");
 	}
 

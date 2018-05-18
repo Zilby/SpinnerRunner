@@ -24,7 +24,7 @@ public class MenuSpinner : MonoBehaviour {
 	{
 		for (;;)
 		{
-			transform.Rotate(0, 0, -ROTATION_SPEED * Time.deltaTime);
+			transform.Rotate(0, 0, -ROTATION_SPEED * Time.smoothDeltaTime);
 			yield return new WaitForEndOfFrame();
 		}
 	}
