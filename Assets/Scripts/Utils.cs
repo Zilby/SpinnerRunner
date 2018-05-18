@@ -8,13 +8,14 @@ using UnityEngine.UI;
 using UnityEngine.Audio;
 using InControl;
 using System.Runtime.InteropServices;
+using System.Runtime.Serialization;
 
 /// <summary>
 /// Keeps track of all permanent data used across games.
 /// </summary>
 public static class Utils
 {
-	
+
 #if UNITY_IPHONE
 
 	// On iOS plugins are statically linked into
@@ -29,19 +30,19 @@ public static class Utils
        [DllImport ("PluginName")]
     
 #endif
-	private static extern bool PluginFunction();
+	private static extern bool _IsMusicPlaying();
 
 	private static int highScore = 0;
 
 	public static int HighScore
 	{
-		get 
-		{ 
-			return highScore; 
+		get
+		{
+			return highScore;
 		}
 		set
-		{ 
-			highScore = value; 
+		{
+			highScore = value;
 		}
 	}
 
@@ -131,11 +132,9 @@ public static class Utils
 
 		data.highScore = highScore;
 		AudioMixer mix = SoundManager.GetMix();
-		mix.GetFloat("Master", out master);
-		data.master = master;
-		mix.GetFloat("Master", out music);
+		mix.GetFloat("Music", out music);
+		mix.GetFloat("SoundFX", out soundfx);
 		data.music = music;
-		mix.GetFloat("Master", out soundfx);
 		data.soundfx = soundfx;
 		bf.Serialize(file, data);
 		file.Close();
@@ -151,10 +150,12 @@ public static class Utils
 #if UNITY_EDITOR
 		if (File.Exists(Application.persistentDataPath + "/bladeSavedInfoEditor.zlb"))
 		{
-			BinaryFormatter bf = new BinaryFormatter();
-			FileStream file = File.Open(Application.persistentDataPath + "/bladeSavedInfoEditor.zlb", FileMode.Open);
-			MyData data = (MyData)bf.Deserialize(file);
-			file.Close();
+			try
+			{
+				BinaryFormatter bf = new BinaryFormatter();
+				FileStream file = File.Open(Application.persistentDataPath + "/bladeSavedInfoEditor.zlb", FileMode.Open);
+				MyData data = (MyData)bf.Deserialize(file);
+				file.Close();
 #else
 		if (File.Exists (Application.persistentDataPath + "/bladeSavedInfo.zlb")) {
 			BinaryFormatter bf = new BinaryFormatter ();
@@ -162,17 +163,24 @@ public static class Utils
 			MyData data = (MyData)bf.Deserialize (file);
 			file.Close ();
 #endif
-#if UNITY_IPHONE
+				AudioMixer mix = SoundManager.GetMix();
+				highScore = data.highScore;
+				music = data.music;
+				soundfx = data.soundfx;
 
+#if UNITY_IPHONE && !UNITY_EDITOR
+			if (_IsMusicPlaying()) {
+				music = -80.0f;
+			}
 #endif
-			highScore = data.highScore;
-			AudioMixer mix = SoundManager.GetMix();
-			master = data.master;
-			mix.SetFloat("Master", master);
-			music = data.music;
-			mix.SetFloat("Music", music);
-			soundfx = data.soundfx;
-			mix.SetFloat("SoundFX", soundfx);
+
+				mix.SetFloat("Music", music);
+				mix.SetFloat("SoundFX", soundfx);
+			}
+			catch (SerializationException e)
+			{
+				Debug.Log("Save Parsing Error: " + e);
+			}
 		}
 		loaded = true;
 	}
@@ -185,7 +193,6 @@ public static class Utils
 	class MyData
 	{
 		public int highScore;
-		public float master;
 		public float music;
 		public float soundfx;
 	}
