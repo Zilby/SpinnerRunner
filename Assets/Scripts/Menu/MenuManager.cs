@@ -23,8 +23,6 @@ public class MenuManager : MonoBehaviour {
 		Utils.Reset();
 		Utils.Loaded = false;
 		Utils.Load();
-		Debug.Log(Utils.Master);
-		Debug.Log(Utils.Music);
 		score.text = Utils.HighScore.ToString();
 		play.onClick.AddListener(LoadGame);
 		highScores.onClick.AddListener(AlternateScreens);
