@@ -12,6 +12,9 @@ public class SoundManager : MonoBehaviour
 	public delegate AudioMixer MixEvent();
 	public static MixEvent GetMix;
 
+	public delegate void MixerToggleEvent(bool active, string type);
+	public static MixerToggleEvent MixerToggle;
+
 	public static Action SpinEvent;
 
 	public static Action CoinEvent;
@@ -40,7 +43,7 @@ public class SoundManager : MonoBehaviour
 	private AudioSource[] aS;
 
 
-	private void Awake ()
+	private void Awake()
 	{
 		if (SpinEvent == null)
 		{
@@ -51,21 +54,24 @@ public class SoundManager : MonoBehaviour
 			DeathEvent = delegate { PlaySFX(2); };
 			ClickEvent = delegate { PlaySFX(3); };
 			GetMix = GetMixer;
+			MixerToggle = ToggleMixer;
 			PlaySong(0);
-		} else
+		}
+		else
 		{
 			Destroy(gameObject);
 		}
 	}
 
-	private AudioMixer GetMixer() {
+	private AudioMixer GetMixer()
+	{
 		return mix;
 	}
 
 	/// <summary>
 	/// Plays a sound effect from the list. 
 	/// </summary>
-	private void PlaySFX (int i)
+	private void PlaySFX(int i)
 	{
 		aS[0].clip = sounds[i];
 		aS[0].Play();
@@ -74,9 +80,16 @@ public class SoundManager : MonoBehaviour
 	/// <summary>
 	/// Plays a given song of index i in music.
 	/// </summary>
-	private void PlaySong (int i)
+	private void PlaySong(int i)
 	{
 		aS[1].clip = music[i];
 		aS[1].Play();
+	}
+
+	private void ToggleMixer(bool active, string type)
+	{
+		float val = active ? -80f : 0f;
+		mix.SetFloat(type, val);
+		Utils.Save();
 	}
 }
