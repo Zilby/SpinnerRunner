@@ -34,6 +34,13 @@ public static class Utils
 
 	private static int highScore = 0;
 
+#if UNITY_EDITOR
+	private static string path = "/bladeSavedInfoEditor.zlb";
+#else
+	private static string path = "/bladeSavedInfo.zlb";
+#endif
+
+
 	/// <summary>
 	/// The current user high score. 
 	/// </summary>
@@ -135,11 +142,7 @@ public static class Utils
 	public static void Save()
 	{
 		BinaryFormatter bf = new BinaryFormatter();
-#if UNITY_EDITOR
-		FileStream file = File.Create(Application.persistentDataPath + "/bladeSavedInfoEditor.zlb");
-#else
-		FileStream file = File.Create(Application.persistentDataPath + "/bladeSavedInfo.zlb");
-#endif
+		FileStream file = File.Create(Application.persistentDataPath + path);
 		MyData data = new MyData();
 
 		data.highScore = highScore;
@@ -159,31 +162,24 @@ public static class Utils
 	/// <param name="mix">The main audio mixer.</param>
 	public static void Load()
 	{
-#if UNITY_EDITOR
-		if (File.Exists(Application.persistentDataPath + "/bladeSavedInfoEditor.zlb"))
+		if (File.Exists(Application.persistentDataPath + path))
 		{
 			try
 			{
 				BinaryFormatter bf = new BinaryFormatter();
-				FileStream file = File.Open(Application.persistentDataPath + "/bladeSavedInfoEditor.zlb", FileMode.Open);
+				FileStream file = File.Open(Application.persistentDataPath + path, FileMode.Open);
 				MyData data = (MyData)bf.Deserialize(file);
 				file.Close();
-#else
-		if (File.Exists (Application.persistentDataPath + "/bladeSavedInfo.zlb")) {
-			BinaryFormatter bf = new BinaryFormatter ();
-			FileStream file = File.Open (Application.persistentDataPath + "/bladeSavedInfo.zlb", FileMode.Open);
-			MyData data = (MyData)bf.Deserialize (file);
-			file.Close ();
-#endif
+
 				AudioMixer mix = SoundManager.GetMix();
 				highScore = data.highScore;
 				music = data.music;
 				soundfx = data.soundfx;
 
 #if UNITY_IPHONE && !UNITY_EDITOR
-			if (_IsMusicPlaying()) {
-				music = -80.0f;
-			}
+				if (_IsMusicPlaying()) {
+					music = -80.0f;
+				}
 #endif
 
 				mix.SetFloat("Music", music);
