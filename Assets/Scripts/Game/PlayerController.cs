@@ -39,10 +39,16 @@ public class PlayerController : MonoBehaviour
 	/// True if right (clockwise), false if left (counterclockwise). 
 	/// </summary>
 	private static bool rotateRight = true;
+
 	/// <summary>
 	/// The rotation speed.
 	/// </summary>
 	const float ROTATION_SPEED = 200f;
+
+	/// <summary>
+	/// The movement speed of the player. 
+	/// </summary>
+	const float MOVE_SPEED = 20f;
 
 	/// <summary>
 	/// The boosted rotation speed.
@@ -198,8 +204,8 @@ public class PlayerController : MonoBehaviour
 #else
 			float x = Input.acceleration.x;
 #endif
-			transform.position = new Vector3(transform.position.x + x / 2.0f, transform.position.y, transform.position.z);
-			yield return new WaitForFixedUpdate();
+			transform.position = new Vector3(transform.position.x + ((x * MOVE_SPEED) * Time.deltaTime), transform.position.y, transform.position.z);
+			yield return new WaitForEndOfFrame();
 		}
 	}
 
