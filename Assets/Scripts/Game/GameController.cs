@@ -134,7 +134,7 @@ public class GameController : MonoBehaviour
 
 	private void Update()
 	{
-		if (!gameOver)
+		if (!gameOver && currentTimescale > 0)
 		{
 			transform.position =
 				Vector3.SmoothDamp(transform.position,

@@ -97,7 +97,7 @@ public class Obstacle : Wall {
 		for (;;)
 		{
 			float actualRotation = ROTATION_SPEED + boostedRotation;
-			desiredRot += (rotateRight ? -actualRotation : actualRotation) * Time.smoothDeltaTime;
+			desiredRot += (rotateRight ? -actualRotation : actualRotation) * Time.smoothDeltaTime * Time.timeScale;
 			var desiredRotQ = Quaternion.Euler(transform.eulerAngles.x, transform.eulerAngles.y, desiredRot);
 			transform.rotation = Quaternion.Lerp(transform.rotation, desiredRotQ, Time.smoothDeltaTime * damping);
 

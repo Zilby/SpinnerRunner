@@ -183,7 +183,7 @@ public class PlayerController : MonoBehaviour
 		while (!GameController.GameOver)
 		{
 			float actualRotation = ROTATION_SPEED + boostedRotation;
-			desiredRot += (rotateRight ? -actualRotation : actualRotation) * Time.smoothDeltaTime;
+			desiredRot += (rotateRight ? -actualRotation : actualRotation) * Time.smoothDeltaTime * Time.timeScale;
 			var desiredRotQ = Quaternion.Euler(transform.eulerAngles.x, transform.eulerAngles.y, desiredRot);
 			transform.rotation = Quaternion.Lerp(transform.rotation, desiredRotQ, Time.smoothDeltaTime * damping);
 			boostedRotation = Mathf.Abs(boostedRotation) - (750f * Time.smoothDeltaTime);
@@ -204,7 +204,7 @@ public class PlayerController : MonoBehaviour
 #else
 			float x = Input.acceleration.x;
 #endif
-			transform.position = new Vector3(transform.position.x + ((x * MOVE_SPEED) * Time.smoothDeltaTime), transform.position.y, transform.position.z);
+			transform.position = new Vector3(transform.position.x + ((x * MOVE_SPEED) * Time.smoothDeltaTime * Time.timeScale), transform.position.y, transform.position.z);
 			yield return new WaitForEndOfFrame();
 		}
 	}
