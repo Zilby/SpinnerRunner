@@ -9,12 +9,14 @@ using TMPro;
 /// <summary>
 /// Manages the menu and its UI. 
 /// </summary>
-public class MenuManager : MonoBehaviour {
+public class MenuManager : MonoBehaviour
+{
 
 	[Header("Main")]
 	public GameObject main;
 	public Button play;
 	public Button highScores;
+	public Button credits;
 	public Button sound;
 	public Button music;
 
@@ -23,13 +25,18 @@ public class MenuManager : MonoBehaviour {
 	public Button menu;
 	public TextMeshProUGUI score;
 
+	[Header("Credits")]
+	public GameObject creditsPage;
+	public Button menu2;
+
 	private GameObject musicOn;
 	private GameObject musicOff;
 	private GameObject soundOn;
 	private GameObject soundOff;
 
 	// Use this for initialization
-	void Start () {
+	void Start()
+	{
 		Utils.Reset();
 		Utils.Loaded = false;
 		Utils.Load();
@@ -47,22 +54,26 @@ public class MenuManager : MonoBehaviour {
 
 		score.text = Utils.HighScore.ToString();
 		play.onClick.AddListener(LoadGame);
-		highScores.onClick.AddListener(AlternateScreens);
+		highScores.onClick.AddListener(delegate { AlternateScreens(scores); });
+		credits.onClick.AddListener(delegate { AlternateScreens(creditsPage); });
 		sound.onClick.AddListener(ToggleSound);
 		music.onClick.AddListener(ToggleMusic);
-		menu.onClick.AddListener(AlternateScreens);
+		menu.onClick.AddListener(delegate { AlternateScreens(scores); });
+		menu2.onClick.AddListener(delegate { AlternateScreens(creditsPage); });
 	}
-	
-	private void LoadGame() {
+
+	private void LoadGame()
+	{
 		SceneManager.LoadScene("Game");
 	}
 
-	private void AlternateScreens() {
+	private void AlternateScreens(GameObject g)
+	{
 		main.SetActive(!main.activeSelf);
-		scores.SetActive(!scores.activeSelf);
+		g.SetActive(!g.activeSelf);
 	}
 
-	private void ToggleSound() 
+	private void ToggleSound()
 	{
 		bool active = soundOn.activeInHierarchy;
 		soundOn.SetActive(!active);
