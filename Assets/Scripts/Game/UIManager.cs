@@ -20,6 +20,8 @@ public class UIManager : MonoBehaviour {
 	public Button pause;
 	public Button resume;
 	public Button menu;
+	public Button sound;
+	public Button music;
 
 	[Header("GameOverElements")]
 	public GameObject gameOver;
@@ -31,6 +33,11 @@ public class UIManager : MonoBehaviour {
 
 	public static Action gameOverEvent;
 
+	private GameObject musicOn;
+	private GameObject musicOff;
+	private GameObject soundOn;
+	private GameObject soundOff;
+
 	private bool isPaused;
 
 	private BlurOptimized blur;
@@ -41,11 +48,24 @@ public class UIManager : MonoBehaviour {
 		isPaused = false;
 		pauseEvent = Pause;
 		gameOverEvent = GameOver;
+
+		musicOn = music.transform.GetChild(1).gameObject;
+		musicOff = music.transform.GetChild(2).gameObject;
+		soundOn = sound.transform.GetChild(1).gameObject;
+		soundOff = sound.transform.GetChild(2).gameObject;
+
+		musicOn.SetActive(Utils.Music >= 0);
+		musicOff.SetActive(Utils.Music < 0);
+		soundOn.SetActive(Utils.Soundfx >= 0);
+		soundOff.SetActive(Utils.Soundfx < 0);
+
 		pause.onClick.AddListener(Pause);
 		resume.onClick.AddListener(Pause);
 		menu.onClick.AddListener(Menu);
 		menu2.onClick.AddListener(Menu);
 		again.onClick.AddListener(Again);
+		sound.onClick.AddListener(ToggleSound);
+		music.onClick.AddListener(ToggleMusic);
 		blur = Camera.main.GetComponent<BlurOptimized>();
 	}
 
@@ -89,5 +109,23 @@ public class UIManager : MonoBehaviour {
 
 	private void Menu() {
 		SceneManager.LoadScene("Menu");
+	}
+
+	private void ToggleSound()
+	{
+		bool active = soundOn.activeInHierarchy;
+		soundOn.SetActive(!active);
+		soundOff.SetActive(active);
+
+		SoundManager.MixerToggle(active, "SoundFX");
+	}
+
+	private void ToggleMusic()
+	{
+		bool active = musicOn.activeInHierarchy;
+		musicOn.SetActive(!active);
+		musicOff.SetActive(active);
+
+		SoundManager.MixerToggle(active, "Music");
 	}
 }
