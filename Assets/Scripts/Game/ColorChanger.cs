@@ -2,8 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Changes the color of a given material over time. 
+/// </summary>
 public class ColorChanger : MonoBehaviour
 {
+	/// <summary>
+	/// The material whose color will be changed. 
+	/// </summary>
 	public Material mat;
 
 	/// <summary>
@@ -26,7 +32,9 @@ public class ColorChanger : MonoBehaviour
 		StartCoroutine(ChangeColors());
 	}
 
-
+	/// <summary>
+	/// Changes the colors of the main material over time (also fades them in at start). 
+	/// </summary>
 	private IEnumerator ChangeColors()
 	{
 		float r = 0f;
@@ -45,7 +53,9 @@ public class ColorChanger : MonoBehaviour
 		}
 	}
 
-
+	/// <summary>
+	/// Increments the colors based on their current values. 
+	/// </summary>
 	private void IncrementColors()
 	{
 		Color c1, c2, c3;

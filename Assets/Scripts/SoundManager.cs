@@ -12,7 +12,7 @@ public class SoundManager : MonoBehaviour
 	public delegate AudioMixer MixEvent();
 	public static MixEvent GetMix;
 
-	public delegate void MixerToggleEvent(bool active, string type);
+	public delegate void MixerToggleEvent(bool active, string track);
 	public static MixerToggleEvent MixerToggle;
 
 	public static Action SpinEvent;
@@ -63,6 +63,9 @@ public class SoundManager : MonoBehaviour
 		}
 	}
 
+	/// <summary>
+	/// Gets the main audio mixer. 
+	/// </summary>
 	private AudioMixer GetMixer()
 	{
 		return mix;
@@ -86,10 +89,13 @@ public class SoundManager : MonoBehaviour
 		aS[1].Play();
 	}
 
-	private void ToggleMixer(bool active, string type)
+	/// <summary>
+	/// Toggles whether the given mixer track is active. 
+	/// </summary>
+	private void ToggleMixer(bool active, string track)
 	{
 		float val = active ? -80f : 0f;
-		mix.SetFloat(type, val);
+		mix.SetFloat(track, val);
 		Utils.Save();
 	}
 }

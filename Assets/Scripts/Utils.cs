@@ -34,6 +34,9 @@ public static class Utils
 
 	private static int highScore = 0;
 
+	/// <summary>
+	/// The current user high score. 
+	/// </summary>
 	public static int HighScore
 	{
 		get
@@ -48,6 +51,9 @@ public static class Utils
 
 	private static float master;
 
+	/// <summary>
+	/// The master mixer track. 
+	/// </summary>
 	public static float Master
 	{
 		get
@@ -63,6 +69,9 @@ public static class Utils
 
 	private static float music;
 
+	/// <summary>
+	/// The music mixer track. 
+	/// </summary>
 	public static float Music
 	{
 		get
@@ -78,6 +87,9 @@ public static class Utils
 
 	private static float soundfx;
 
+	/// <summary>
+	/// The soundfx mixer track. 
+	/// </summary>
 	public static float Soundfx
 	{
 		get

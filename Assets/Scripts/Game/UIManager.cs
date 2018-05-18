@@ -13,20 +13,64 @@ using UnityEngine.SceneManagement;
 public class UIManager : MonoBehaviour {
 
 	[Header("GeneralReferences")]
+
+	/// <summary>
+	/// The score text. 
+	/// </summary>
 	public TextMeshProUGUI score;
 
 	[Header("PauseElements")]
+
+	/// <summary>
+	/// The main paused screen game object. 
+	/// </summary>
 	public GameObject paused;
+
+	/// <summary>
+	/// The pause button. 
+	/// </summary>
 	public Button pause;
+
+	/// <summary>
+	/// The resume game button.
+	/// </summary>
 	public Button resume;
+
+	/// <summary>
+	/// The menu button. 
+	/// </summary>
 	public Button menu;
+
+	/// <summary>
+	/// The sound toggle. 
+	/// </summary>
 	public Button sound;
+
+	/// <summary>
+	/// The music toggle. 
+	/// </summary>
 	public Button music;
 
 	[Header("GameOverElements")]
+
+	/// <summary>
+	/// The game over screen gameobject. 
+	/// </summary>
 	public GameObject gameOver;
+
+	/// <summary>
+	/// The ending score text. 
+	/// </summary>
 	public TextMeshProUGUI scoreEnd;
+
+	/// <summary>
+	/// The play again button. 
+	/// </summary>
 	public Button again;
+
+	/// <summary>
+	/// The go to menu button. 
+	/// </summary>
 	public Button menu2;
 
 	public static Action pauseEvent;
@@ -74,6 +118,9 @@ public class UIManager : MonoBehaviour {
 		score.text = GameController.score.ToString();
 	}
 
+	/// <summary>
+	/// Toggles the UI pause menu. 
+	/// </summary>
 	private void Pause() {
 		isPaused = !isPaused;
 		paused.SetActive(isPaused);
@@ -82,12 +129,18 @@ public class UIManager : MonoBehaviour {
 		GameController.pauseEvent();
 	}
 
+	/// <summary>
+	/// Starts the end game sequence. 
+	/// </summary>
 	private void GameOver() {
 		pause.gameObject.SetActive(false);
 		StartCoroutine(EndGame());
 	}
 
-
+	/// <summary>
+	/// Sets up the end game UI. 
+	/// </summary>
+	/// <returns>The game.</returns>
 	private IEnumerator EndGame() {
 		yield return new WaitForSecondsRealtime(1.6f);
 		isPaused = !isPaused;

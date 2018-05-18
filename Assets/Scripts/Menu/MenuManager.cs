@@ -6,6 +6,9 @@ using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
 using TMPro;
 
+/// <summary>
+/// Manages the menu and its UI. 
+/// </summary>
 public class MenuManager : MonoBehaviour {
 
 	[Header("Main")]

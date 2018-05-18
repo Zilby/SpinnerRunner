@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Class that represents a coin in-game. 
+/// </summary>
 public class Coin : Obstacle {
 
 	/// <summary>

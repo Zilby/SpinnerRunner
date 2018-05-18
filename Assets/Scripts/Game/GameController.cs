@@ -348,7 +348,9 @@ public class GameController : MonoBehaviour
 		Time.fixedDeltaTime = 0.02F * currentTimescale;
 	}
 
-
+	/// <summary>
+	/// Pauses the game. 
+	/// </summary>
 	private void Pause()
 	{
 		if (Time.timeScale != 0.0f || gameOver)

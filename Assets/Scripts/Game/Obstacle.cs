@@ -38,7 +38,9 @@ public class Obstacle : Wall {
 	/// </summary>
 	protected float boostedRotation = 0;
 
-
+	/// <summary>
+	/// How much the score is incremented when the player hits this obstacle and survives. 
+	/// </summary>
 	protected virtual int ScoreIncrement {
 		get { return SCORE_INCREMENT;  }
 	}
