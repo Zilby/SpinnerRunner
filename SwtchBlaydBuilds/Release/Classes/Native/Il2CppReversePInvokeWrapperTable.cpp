@@ -7,15 +7,19 @@
 #endif
 
 
-#include "class-internals.h"
+#include "il2cpp-class-internals.h"
 #include "codegen/il2cpp-codegen.h"
 
 
 
 
 
-extern "C" void DEFAULT_CALL ReversePInvokeWrapper_ICadeNative_OnStateChanged_m1738380691(int32_t ___state0);
+
+
+
+
+extern "C" void DEFAULT_CALL ReversePInvokeWrapper_ICadeNative_OnStateChanged_m2729542186(int32_t ___state0);
 extern const Il2CppMethodPointer g_ReversePInvokeWrapperPointers[1] = 
 {
-	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_ICadeNative_OnStateChanged_m1738380691),
+	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_ICadeNative_OnStateChanged_m2729542186),
 };

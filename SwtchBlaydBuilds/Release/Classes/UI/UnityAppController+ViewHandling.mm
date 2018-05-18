@@ -11,6 +11,7 @@
 #include "UI/ActivityIndicator.h"
 #include "UI/SplashScreen.h"
 #include "UI/Keyboard.h"
+#include <utility>
 
 extern bool _skipPresent;
 extern bool _unityAppReady;
@@ -18,7 +19,7 @@ extern bool _unityAppReady;
 
 @implementation UnityAppController (ViewHandling)
 
-#if !UNITY_TVOS
+#if UNITY_SUPPORT_ROTATION
 // special case for when we DO know the app orientation, but dont get it through normal mechanism (UIViewController orientation handling)
 // how can this happen:
 // 1. On startup: ios is not sending "change orientation" notifications on startup (but rather we "start" in correct one already)
@@ -38,21 +39,17 @@ extern bool _unityAppReady;
     return [[UnityView alloc] initFromMainScreen];
 }
 
-#if UNITY_TVOS
-- (UIViewController*)createUnityViewControllerForTVOS
+- (UIViewController*)createUnityViewControllerDefault
 {
-    UnityDefaultTVViewController* controller = [[UnityDefaultTVViewController alloc] init];
+    UnityDefaultViewController* ret = [[UnityDefaultViewController alloc] init];
+#if PLATFORM_TVOS
     // This enables game controller use in on-screen keyboard
-    controller.controllerUserInteractionEnabled = YES;
-    return controller;
+    ret.controllerUserInteractionEnabled = YES;
+#endif
+    return ret;
 }
 
-#else
-- (UIViewController*)createAutorotatingUnityViewController
-{
-    return [[UnityDefaultViewController alloc] init];
-}
-
+#if UNITY_SUPPORT_ROTATION
 - (UIViewController*)createUnityViewControllerForOrientation:(UIInterfaceOrientation)orient
 {
     switch (orient)
@@ -67,12 +64,38 @@ extern bool _unityAppReady;
     return nil;
 }
 
-- (UIViewController*)createRootViewControllerForOrientation:(UIInterfaceOrientation)orientation
+#endif
+
+- (UIViewController*)createRootViewController
 {
-    NSAssert(orientation != 0, @"Bad UIInterfaceOrientation provided");
-    if (_viewControllerForOrientation[orientation] == nil)
-        _viewControllerForOrientation[orientation] = [self createUnityViewControllerForOrientation: orientation];
-    return _viewControllerForOrientation[orientation];
+    UIViewController* ret = nil;
+    if (!UNITY_SUPPORT_ROTATION || UnityShouldAutorotate())
+    {
+        if (_viewControllerForOrientation[0] == nil)
+            _viewControllerForOrientation[0] = [self createUnityViewControllerDefault];
+        ret = _viewControllerForOrientation[0];
+    }
+
+#if UNITY_SUPPORT_ROTATION
+    if (ret == nil)
+    {
+        UIInterfaceOrientation orientation = ConvertToIosScreenOrientation((ScreenOrientation)UnityRequestedScreenOrientation());
+        ret = [self createRootViewControllerForOrientation: orientation];
+    }
+
+    if (_curOrientation == UIInterfaceOrientationUnknown)
+        [self updateAppOrientation: ConvertToIosScreenOrientation(UIViewControllerOrientation(ret))];
+#endif
+    return ret;
+}
+
+#if UNITY_SUPPORT_ROTATION
+- (UIViewController*)createSecondaryAutorotatingViewController
+{
+    if (_secondaryAutorotatingViewController == nil)
+        _secondaryAutorotatingViewController = [self createUnityViewControllerDefault];
+    std::swap(_viewControllerForOrientation[0], _secondaryAutorotatingViewController);
+    return _viewControllerForOrientation[0];
 }
 
 #endif
@@ -85,61 +108,17 @@ extern bool _unityAppReady;
     return topController;
 }
 
-- (UIViewController*)createRootViewController
-{
-#if UNITY_TVOS
-    return [self createUnityViewControllerForTVOS];
-#else
-    UIViewController* ret = nil;
-    if (UnityShouldAutorotate())
-    {
-        if (_viewControllerForOrientation[0] == nil)
-            _viewControllerForOrientation[0] = [self createAutorotatingUnityViewController];
-        ret = _viewControllerForOrientation[0];
-    }
-    else
-    {
-        UIInterfaceOrientation orientation = ConvertToIosScreenOrientation((ScreenOrientation)UnityRequestedScreenOrientation());
-        ret = [self createRootViewControllerForOrientation: orientation];
-    }
-
-    if (_curOrientation == UIInterfaceOrientationUnknown)
-        [self updateAppOrientation: ConvertToIosScreenOrientation(UIViewControllerOrientation(ret))];
-
-    return ret;
-#endif
-}
-
 - (void)willStartWithViewController:(UIViewController*)controller
 {
     _unityView.contentScaleFactor   = UnityScreenScaleFactor([UIScreen mainScreen]);
     _unityView.autoresizingMask     = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
 
     _rootController.view = _rootView = _unityView;
-#if !UNITY_TVOS
-    _rootController.wantsFullScreenLayout = TRUE;
-#endif
 }
 
 - (void)willTransitionToViewController:(UIViewController*)toController fromViewController:(UIViewController*)fromController
 {
 }
-
-#if !UNITY_TVOS
-- (void)interfaceWillChangeOrientationTo:(UIInterfaceOrientation)toInterfaceOrientation
-{
-    UIInterfaceOrientation fromInterfaceOrientation = _curOrientation;
-
-    _curOrientation = toInterfaceOrientation;
-    [_unityView willRotateToOrientation: toInterfaceOrientation fromOrientation: fromInterfaceOrientation];
-}
-
-- (void)interfaceDidChangeOrientationFrom:(UIInterfaceOrientation)fromInterfaceOrientation
-{
-    [_unityView didRotate];
-}
-
-#endif
 
 - (UIView*)createSnapshotView
 {
@@ -186,9 +165,11 @@ extern bool _unityAppReady;
     HideSplashScreen();
 
     // make sure that we start up with correctly created/inited rendering surface
-    // NB: recreateGLESSurface won't go into rendering because _unityAppReady is false
+    // NB: recreateRenderingSurface won't go into rendering because _unityAppReady is false
+#if UNITY_SUPPORT_ROTATION
     [self checkOrientationRequest];
-    [_unityView recreateGLESSurface];
+#endif
+    [_unityView recreateRenderingSurface];
 
     // UI hierarchy
     [_window addSubview: _rootView];
@@ -222,15 +203,91 @@ extern bool _unityAppReady;
 {
     [self willTransitionToViewController: vc fromViewController: _rootController];
 
-    // first hide window and remove view hierarchy
+    // first: hide window and remove view hierarchy
     _window.hidden = YES; _rootController.view = nil; _window.rootViewController = nil;
-    // second assign new root controller (and view hierarchy with that) and show it
+    // second: assign new root controller (and view hierarchy with that) and show it
     _rootController = _window.rootViewController = vc; _rootController.view = _rootView; _window.hidden = NO;
-    // third layout subviews to finalize size changes
+    // third: restore window as key and layout subviews to finalize size changes
+    [_window makeKeyAndVisible];
     [_window layoutSubviews];
 }
 
-#if !UNITY_TVOS
+#if UNITY_SUPPORT_ROTATION
+- (void)interfaceWillChangeOrientationTo:(UIInterfaceOrientation)toInterfaceOrientation
+{
+    UIInterfaceOrientation fromInterfaceOrientation = _curOrientation;
+
+    _curOrientation = toInterfaceOrientation;
+    [_unityView willRotateToOrientation: toInterfaceOrientation fromOrientation: fromInterfaceOrientation];
+}
+
+- (void)interfaceDidChangeOrientationFrom:(UIInterfaceOrientation)fromInterfaceOrientation
+{
+    [_unityView didRotate];
+}
+
+#endif
+
+@end
+
+
+#if UNITY_SUPPORT_ROTATION
+
+@implementation UnityAppController (OrientationSupport)
+- (UIViewController*)createRootViewControllerForOrientation:(UIInterfaceOrientation)orientation
+{
+    NSAssert(orientation != 0, @"Bad UIInterfaceOrientation provided");
+    if (_viewControllerForOrientation[orientation] == nil)
+        _viewControllerForOrientation[orientation] = [self createUnityViewControllerForOrientation: orientation];
+    return _viewControllerForOrientation[orientation];
+}
+
+- (bool)isCurrentInterfaceOrientationEnabled
+{
+    NSUInteger supportedOrientMask = EnabledAutorotationInterfaceOrientations();
+    NSUInteger currOrientMask = (1 << _curOrientation);
+    return (supportedOrientMask & currOrientMask) != 0;
+}
+
+- (void)forceAutorotatingControllerToRefreshEnabledOrientationsIfNeeded
+{
+    if (!UnityShouldAutorotate())
+        return;
+
+    if (![self isCurrentInterfaceOrientationEnabled])
+    {
+        // if the current orientation is disabled, attemptRotationToDeviceOrientation
+        // does nothing because we're trying to rotate the view controller away from
+        // the current device orientation
+        [self transitionToViewController: [self createSecondaryAutorotatingViewController]];
+    }
+    else
+        [UIViewController attemptRotationToDeviceOrientation];
+}
+
+- (void)checkOrientationRequest
+{
+    if (UnityHasOrientationRequest())
+    {
+        if (UnityShouldAutorotate())
+        {
+            if (_rootController != _viewControllerForOrientation[0])
+            {
+                [self transitionToViewController: [self createRootViewController]];
+                [UIViewController attemptRotationToDeviceOrientation];
+            }
+            else
+                [self forceAutorotatingControllerToRefreshEnabledOrientationsIfNeeded];
+        }
+        else
+        {
+            ScreenOrientation requestedOrient = (ScreenOrientation)UnityRequestedScreenOrientation();
+            [self orientInterface: ConvertToIosScreenOrientation(requestedOrient)];
+        }
+        UnityOrientationRequestWasCommitted();
+    }
+}
+
 - (void)orientInterface:(UIInterfaceOrientation)orient
 {
     if (_curOrientation == orient && _rootController != _viewControllerForOrientation[0])
@@ -257,41 +314,11 @@ extern bool _unityAppReady;
     [KeyboardDelegate FinishReorientation];
 }
 
-// it is kept only for backward compatibility
 - (void)orientUnity:(UIInterfaceOrientation)orient
 {
     [self orientInterface: orient];
 }
 
-#endif
-
-#if UNITY_IOS
-- (void)checkOrientationRequest
-{
-    if (UnityHasOrientationRequest())
-    {
-        if (UnityShouldAutorotate())
-        {
-            if (_rootController != _viewControllerForOrientation[0])
-            {
-                [self transitionToViewController: [self createRootViewController]];
-                [UIViewController attemptRotationToDeviceOrientation];
-            }
-        }
-        else
-        {
-            ScreenOrientation requestedOrient = (ScreenOrientation)UnityRequestedScreenOrientation();
-            [self orientUnity: ConvertToIosScreenOrientation(requestedOrient)];
-        }
-        UnityOrientationRequestWasCommitted();
-    }
-}
-
-#else
-- (void)checkOrientationRequest
-{
-}
-
-#endif
-
 @end
+
+#endif

@@ -18,7 +18,7 @@
 //      #if !defined(UNITY_4_5_0) || UNITY_VERSION < UNITY_4_5_0
 //  is equivalent to saying unity trampoline version is pre-4.5.0
 
-#define UNITY_VERSION 563
+#define UNITY_VERSION 201730
 
 // known unity versions
 #define UNITY_4_2_0 420
@@ -41,4 +41,6 @@
 #define UNITY_5_4_0 540
 #define UNITY_5_5_0 550
 #define UNITY_5_6_0 560
-#define UNITY_5_6_3 563
+#define UNITY_2017_1_0 201710
+#define UNITY_2017_2_0 201720
+#define UNITY_2017_3_0 201730

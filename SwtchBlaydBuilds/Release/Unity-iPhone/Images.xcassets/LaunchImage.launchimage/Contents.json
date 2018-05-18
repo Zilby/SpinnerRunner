@@ -68,6 +68,24 @@
 		},
 		{
 			"extent" : "full-screen",
+			"filename" : "Default-Portrait-2436h.png",
+			"idiom" : "iphone",
+			"minimum-system-version" : "11.0",
+			"orientation" : "portrait",
+			"scale" : "3x",
+			"subtype" : "2436h"
+		},
+		{
+			"extent" : "full-screen",
+			"filename" : "Default-Landscape-2436h.png",
+			"idiom" : "iphone",
+			"minimum-system-version" : "11.0",
+			"orientation" : "landscape",
+			"scale" : "3x",
+			"subtype" : "2436h"
+		},
+		{
+			"extent" : "full-screen",
 			"filename" : "Default-Portrait.png",
 			"idiom" : "ipad",
 			"orientation" : "portrait",
