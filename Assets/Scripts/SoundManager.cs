@@ -67,7 +67,8 @@ public class SoundManager : MonoBehaviour
 	/// </summary>
 	private void PlaySFX (int i)
 	{
-		aS[0].PlayOneShot(sounds[i]);
+		aS[0].clip = sounds[i];
+		aS[0].Play();
 	}
 
 	/// <summary>

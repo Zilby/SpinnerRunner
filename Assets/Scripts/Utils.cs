@@ -7,12 +7,30 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Audio;
 using InControl;
+using System.Runtime.InteropServices;
 
 /// <summary>
 /// Keeps track of all permanent data used across games.
 /// </summary>
 public static class Utils
 {
+	
+#if UNITY_IPHONE
+
+	// On iOS plugins are statically linked into
+	// the executable, so we have to use __Internal as the
+	// library name.
+	[DllImport("__Internal")]
+
+#else
+
+       // Other platforms load plugins dynamically, so pass the name
+       // of the plugin's dynamic library.
+       [DllImport ("PluginName")]
+    
+#endif
+	private static extern bool PluginFunction();
+
 	private static int highScore = 0;
 
 	public static int HighScore
@@ -144,7 +162,9 @@ public static class Utils
 			MyData data = (MyData)bf.Deserialize (file);
 			file.Close ();
 #endif
+#if UNITY_IPHONE
 
+#endif
 			highScore = data.highScore;
 			AudioMixer mix = SoundManager.GetMix();
 			master = data.master;
