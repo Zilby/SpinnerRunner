@@ -22,15 +22,23 @@ public static class Utils
 	// the executable, so we have to use __Internal as the
 	// library name.
 	[DllImport("__Internal")]
-
-#else
-
-       // Other platforms load plugins dynamically, so pass the name
-       // of the plugin's dynamic library.
-       [DllImport ("PluginName")]
-    
-#endif
 	private static extern bool _IsMusicPlaying();
+#elif UNITY_ANDROID
+	private static bool _IsMusicPlaying()
+	{
+		const string AUDIO_SERVICE = "audio";
+		AndroidJavaClass unityClass = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
+		AndroidJavaObject unityActivity = unityClass.GetStatic<AndroidJavaObject>("currentActivity");
+		AndroidJavaObject unityContext = unityActivity.Call<AndroidJavaObject>("getApplicationContext");
+
+		bool mIsPlaying;
+		using (AndroidJavaObject audioManager = unityContext.Call<AndroidJavaObject>("getSystemService", AUDIO_SERVICE))
+		{
+			mIsPlaying = audioManager.Call<bool>("isMusicActive");
+		}
+		return mIsPlaying;
+	}
+#endif
 
 	private static int highScore = 0;
 
@@ -176,7 +184,7 @@ public static class Utils
 				music = data.music;
 				soundfx = data.soundfx;
 
-#if UNITY_IPHONE && !UNITY_EDITOR
+#if (UNITY_IPHONE || UNITY_ANDROID) && !UNITY_EDITOR
 				if (_IsMusicPlaying()) {
 					music = -80.0f;
 				}
@@ -192,7 +200,6 @@ public static class Utils
 		}
 		loaded = true;
 	}
-
 
 	/// <summary>
 	/// For saving/loading data. 
