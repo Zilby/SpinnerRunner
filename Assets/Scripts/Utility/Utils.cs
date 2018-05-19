@@ -164,7 +164,8 @@ public static class Utils
 
 		data.highScore = highScore;
 		// Set true for tutorial every time. 
-		data.tutorial = tutorial; //true; 
+		//data.tutorial = true;
+		data.tutorial = tutorial;
 		AudioMixer mix = SoundManager.GetMix();
 		mix.GetFloat("Music", out music);
 		mix.GetFloat("SoundFX", out soundfx);
