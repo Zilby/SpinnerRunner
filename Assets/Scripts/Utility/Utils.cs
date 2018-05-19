@@ -42,6 +42,11 @@ public static class Utils
 
 	private static int highScore = 0;
 
+	private static bool tutorial = true;
+
+	// whether or not this has been loaded
+	private static bool loaded;
+
 #if UNITY_EDITOR
 	private static string path = "/bladeSavedInfoEditor.zlb";
 #else
@@ -118,13 +123,6 @@ public static class Utils
 		}
 	}
 
-	// whether or not this has been loaded
-	private static bool loaded;
-
-
-
-
-
 	/// <summary>
 	/// Whether or not data has been loaded yet. 
 	/// </summary>
@@ -136,11 +134,22 @@ public static class Utils
 
 
 	/// <summary>
+	/// Whether or not the tutorial should play. 
+	/// </summary>
+	public static bool Tutorial
+	{
+		get { return tutorial; }
+		set { tutorial = value; }
+	}
+
+
+	/// <summary>
 	/// Resets all game data.
 	/// </summary>
 	public static void Reset()
 	{
 		highScore = 0;
+		tutorial = true;
 	}
 
 
@@ -154,6 +163,8 @@ public static class Utils
 		MyData data = new MyData();
 
 		data.highScore = highScore;
+		// make sure to change back. 
+		data.tutorial = true; //tutorial
 		AudioMixer mix = SoundManager.GetMix();
 		mix.GetFloat("Music", out music);
 		mix.GetFloat("SoundFX", out soundfx);
@@ -181,6 +192,7 @@ public static class Utils
 
 				AudioMixer mix = SoundManager.GetMix();
 				highScore = data.highScore;
+				tutorial = data.tutorial;
 				music = data.music;
 				soundfx = data.soundfx;
 
@@ -208,6 +220,7 @@ public static class Utils
 	class MyData
 	{
 		public int highScore;
+		public bool tutorial;
 		public float music;
 		public float soundfx;
 	}

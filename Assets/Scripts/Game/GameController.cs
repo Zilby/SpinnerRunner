@@ -128,8 +128,17 @@ public class GameController : MonoBehaviour
 		spawnedPrefabs = new List<GameObject>();
 		endEvent = FinishGame;
 		pauseEvent = Pause;
-		StartCoroutine(IncrementSpeed());
-		StartCoroutine(IncrementScore());
+		score = 0;
+		if (!Utils.Tutorial)
+		{
+			StartCoroutine(IncrementSpeed());
+			StartCoroutine(IncrementScore());
+			StartCoroutine(SpawnObstacles());
+		}
+		else
+		{
+			StartCoroutine(Tutorial());
+		}
 	}
 
 	private void Update()
@@ -139,33 +148,33 @@ public class GameController : MonoBehaviour
 			transform.position =
 				Vector3.SmoothDamp(transform.position,
 								   new Vector3(transform.position.x, transform.position.y + 1.0f, transform.position.z),
-				                   ref velocity, moveSpeed, Mathf.Infinity, Time.smoothDeltaTime);
+								   ref velocity, moveSpeed, Mathf.Infinity, Time.smoothDeltaTime);
 		}
-	}
-
-	private void FixedUpdate()
-	{
-		SpawnObstacles();
 	}
 
 	/// <summary>
 	/// Spawns obstacles based on the distance from the last spawn. 
 	/// </summary>
-	private void SpawnObstacles()
+	private IEnumerator SpawnObstacles()
 	{
-		if (Vector3.Distance(lastSpawn, transform.position) > spawnDistance)
+		while (!gameOver)
 		{
-			lastSpawn = transform.position;
-			Spawn();
-			switch(currentPrefab) {
-				case PrefabType.Wall:
-					// make sure walls get spaced apart
-					spawnDistance = 6.0f;
-					break;
-				default:
-					spawnDistance = 3.0f;
-					break;
+			if (Vector3.Distance(lastSpawn, transform.position) > spawnDistance)
+			{
+				lastSpawn = transform.position;
+				Spawn();
+				switch (currentPrefab)
+				{
+					case PrefabType.Wall:
+						// make sure walls get spaced apart
+						spawnDistance = 6.0f;
+						break;
+					default:
+						spawnDistance = 3.0f;
+						break;
+				}
 			}
+			yield return new WaitForFixedUpdate();
 		}
 	}
 
@@ -324,7 +333,6 @@ public class GameController : MonoBehaviour
 	/// </summary>
 	private IEnumerator IncrementScore()
 	{
-		score = 0;
 		scoreTimer = new Stopwatch();
 		while (!GameOver)
 		{
@@ -355,17 +363,106 @@ public class GameController : MonoBehaviour
 	{
 		if (Time.timeScale != 0.0f || gameOver)
 		{
-			scoreTimer.Stop();
-			speedTimer.Stop();
+			if (!Utils.Tutorial)
+			{
+				scoreTimer.Stop();
+				speedTimer.Stop();
+			}
 			Time.timeScale = 0.0f;
 			Time.fixedDeltaTime = 0.0f;
 		}
 		else
 		{
-			scoreTimer.Start();
-			speedTimer.Start();
+			if (!Utils.Tutorial)
+			{
+				scoreTimer.Start();
+				speedTimer.Start();
+			}
 			SetTimescale();
 		}
+	}
+
+	/// <summary>
+	/// Controls the tutorial sequence. 
+	/// </summary>
+	private IEnumerator Tutorial()
+	{
+		yield return new WaitForSeconds(1f);
+		while (UIManager.getTutorialIndex() < 5)
+		{
+			yield return UIManager.tutorialText();
+			int i = UIManager.getTutorialIndex();
+			if (i == 2)
+			{
+				GameObject g = Instantiate(wallPrefabs[0], new Vector3(0.0f, transform.position.y, 0.0f), Quaternion.identity);
+				spawnedPrefabs.Add(g);
+				yield return new WaitForSeconds(2.5f);
+				g = Instantiate(wallPrefabs[1], new Vector3(0.0f, transform.position.y, 0.0f), Quaternion.identity);
+				spawnedPrefabs.Add(g);
+				yield return new WaitForSeconds(2.5f);
+				g = Instantiate(wallPrefabs[1], new Vector3(0.0f, transform.position.y, 0.0f), Quaternion.identity);
+				g.transform.localScale = new Vector3(-1, 1, 1);
+				spawnedPrefabs.Add(g);
+				yield return new WaitForSeconds(6);
+			}
+			else if (i == 4)
+			{
+				for (int j = -2; j < 3; ++j)
+				{
+					GameObject g = Instantiate(obstaclePrefabs[0], new Vector3(j * 1.0f, transform.position.y + 10.0f, 0.0f), Quaternion.identity);
+					g.GetComponent<Obstacle>().RotateRight = true;
+					spawnedPrefabs.Add(g);
+				}
+				yield return new WaitForSeconds(2.5f);
+				for (int j = -2; j < 3; ++j)
+				{
+					GameObject g = Instantiate(obstaclePrefabs[0], new Vector3(j * 1.0f, transform.position.y + 10.0f, 0.0f), Quaternion.identity);
+					g.GetComponent<Obstacle>().RotateRight = false;
+					spawnedPrefabs.Add(g);
+				}
+				yield return new WaitForSeconds(2.5f);
+				for (int j = -2; j < 3; ++j)
+				{
+					GameObject g = Instantiate(obstaclePrefabs[0], new Vector3(j * 1.0f, transform.position.y + 10.0f, 0.0f), Quaternion.identity);
+					g.GetComponent<Obstacle>().RotateRight = true;
+					spawnedPrefabs.Add(g);
+				}
+				yield return new WaitForSeconds(6);
+			}
+			else if (i == 5)
+			{
+				for (int j = -2; j < 1; ++j)
+				{
+					GameObject g = Instantiate(coinPrefabs[0], new Vector3(j * 1.0f, transform.position.y + 10.0f, 0.0f), Quaternion.identity);
+					g.GetComponent<Obstacle>().RotateRight = false;
+					spawnedPrefabs.Add(g);
+				}
+				yield return new WaitForSeconds(2.5f);
+				for (int j = 0; j < 3; ++j)
+				{
+					GameObject g = Instantiate(coinPrefabs[0], new Vector3(j * 1.0f, transform.position.y + 10.0f, 0.0f), Quaternion.identity);
+					g.GetComponent<Obstacle>().RotateRight = true;
+					spawnedPrefabs.Add(g);
+				}
+				yield return new WaitForSeconds(2.5f);
+				for (int j = -1; j < 2; ++j)
+				{
+					GameObject g = Instantiate(coinPrefabs[0], new Vector3(j * 1.0f, transform.position.y + 10.0f, 0.0f), Quaternion.identity);
+					g.GetComponent<Obstacle>().RotateRight = false;
+					spawnedPrefabs.Add(g);
+				}
+				yield return new WaitForSeconds(6);
+			}
+			else
+			{
+				yield return new WaitForSeconds(0.3f);
+			}
+		}
+		Utils.Tutorial = false;
+		Utils.Save();
+		StartCoroutine(IncrementSpeed());
+		StartCoroutine(IncrementScore());
+		StartCoroutine(SpawnObstacles());
 	}
 
 	private void OnDestroy()

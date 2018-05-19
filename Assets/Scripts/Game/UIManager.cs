@@ -73,9 +73,19 @@ public class UIManager : MonoBehaviour {
 	/// </summary>
 	public Button menu2;
 
+	[Header("TutorialElements")]
+
+	public GameObject tutorial;
+
 	public static Action pauseEvent;
 
 	public static Action gameOverEvent;
+
+	public delegate IEnumerator TutorialEvent();
+	public static TutorialEvent tutorialText;
+
+	public delegate int TutorialIndexEvent();
+	public static TutorialIndexEvent getTutorialIndex;
 
 	private GameObject musicOn;
 	private GameObject musicOff;
@@ -86,12 +96,17 @@ public class UIManager : MonoBehaviour {
 
 	private BlurOptimized blur;
 
+	private FadeableUI[] tutorialTexts;
+	private int tutorialIndex;
+
 
 	private void Awake()
 	{
 		isPaused = false;
 		pauseEvent = Pause;
 		gameOverEvent = GameOver;
+		tutorialText = TutorialText;
+		getTutorialIndex = GetTutorialIndex;
 
 		musicOn = music.transform.GetChild(1).gameObject;
 		musicOff = music.transform.GetChild(2).gameObject;
@@ -111,6 +126,8 @@ public class UIManager : MonoBehaviour {
 		sound.onClick.AddListener(ToggleSound);
 		music.onClick.AddListener(ToggleMusic);
 		blur = Camera.main.GetComponent<BlurOptimized>();
+		tutorialTexts = tutorial.GetComponentsInChildren<FadeableUI>();
+		tutorialIndex = 0;
 	}
 
 	private void Update()
@@ -127,6 +144,20 @@ public class UIManager : MonoBehaviour {
 		blur.enabled = isPaused;
 		pause.gameObject.SetActive(!isPaused);
 		GameController.pauseEvent();
+	}
+
+	private IEnumerator TutorialText() 
+	{
+		tutorialTexts[tutorialIndex].SelfFadeIn();
+		float duration = 7;
+		yield return new WaitForSeconds(duration);
+		tutorialTexts[tutorialIndex].SelfFadeOut();
+		tutorialIndex++;
+	}
+
+	private int GetTutorialIndex()
+	{
+		return tutorialIndex;
 	}
 
 	/// <summary>

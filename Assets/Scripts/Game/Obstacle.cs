@@ -5,13 +5,9 @@ using UnityEngine;
 /// <summary>
 /// Controls obstacle collisions and rotations. 
 /// </summary>
-public class Obstacle : Wall {
+public class Obstacle : Wall
+{
 
-	/// <summary>
-	/// The direction the obstacle rotates. 
-	/// True if right (clockwise), false if left (counterclockwise). 
-	/// </summary>
-	public bool rotateRight;
 	/// <summary>
 	/// The desired rotation.
 	/// </summary>
@@ -39,16 +35,37 @@ public class Obstacle : Wall {
 	protected float boostedRotation = 0;
 
 	/// <summary>
+	/// The direction the obstacle rotates. 
+	/// True if right (clockwise), false if left (counterclockwise). 
+	/// </summary>
+	protected bool rotateRight;
+
+	protected bool assignedRotation = false;
+
+	/// <summary>
 	/// How much the score is incremented when the player hits this obstacle and survives. 
 	/// </summary>
-	protected virtual int ScoreIncrement {
-		get { return SCORE_INCREMENT;  }
+	protected virtual int ScoreIncrement
+	{
+		get { return SCORE_INCREMENT; }
+	}
+
+	public bool RotateRight
+	{
+		set
+		{
+			rotateRight = value;
+			assignedRotation = true;
+		}
 	}
 
 
 	protected void Start()
 	{
-		rotateRight = Random.Range(0, 2) == 0;
+		if (!assignedRotation)
+		{
+			rotateRight = Random.Range(0, 2) == 0;
+		}
 		desiredRot = transform.eulerAngles.z;
 		StartCoroutine(Rotate());
 	}
@@ -84,7 +101,8 @@ public class Obstacle : Wall {
 	/// <summary>
 	/// Increments the score.
 	/// </summary>
-	protected void IncrementScore() {
+	protected void IncrementScore()
+	{
 		GameController.score += ScoreIncrement;
 	}
 
