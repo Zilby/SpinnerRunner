@@ -458,6 +458,8 @@ extern "C" void UnknownDeviceControl_t1734602596_marshal_pinvoke_cleanup(void* m
 extern const RuntimeType UnknownDeviceControl_t1734602596_0_0_0;
 extern "C" void DelegatePInvokeWrapper_MixerToggleEvent_t51642240();
 extern const RuntimeType MixerToggleEvent_t51642240_0_0_0;
+extern "C" void DelegatePInvokeWrapper_TutorialIndexEvent_t2761694374();
+extern const RuntimeType TutorialIndexEvent_t2761694374_0_0_0;
 extern "C" void Settings_t3016786575_marshal_pinvoke(void* managedStructure, void* marshaledStructure);
 extern "C" void Settings_t3016786575_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 extern "C" void Settings_t3016786575_marshal_pinvoke_cleanup(void* marshaledStructure);
@@ -522,7 +524,7 @@ extern "C" void Settings_t1354494600_marshal_pinvoke(void* managedStructure, voi
 extern "C" void Settings_t1354494600_marshal_pinvoke_back(void* marshaledStructure, void* managedStructure);
 extern "C" void Settings_t1354494600_marshal_pinvoke_cleanup(void* marshaledStructure);
 extern const RuntimeType Settings_t1354494600_0_0_0;
-extern Il2CppInteropData g_Il2CppInteropData[141] = 
+extern Il2CppInteropData g_Il2CppInteropData[142] = 
 {
 	{ NULL, Context_t1744531130_marshal_pinvoke, Context_t1744531130_marshal_pinvoke_back, Context_t1744531130_marshal_pinvoke_cleanup, NULL, NULL, &Context_t1744531130_0_0_0 } /* Mono.Globalization.Unicode.SimpleCollator/Context */,
 	{ NULL, Escape_t3294788190_marshal_pinvoke, Escape_t3294788190_marshal_pinvoke_back, Escape_t3294788190_marshal_pinvoke_cleanup, NULL, NULL, &Escape_t3294788190_0_0_0 } /* Mono.Globalization.Unicode.SimpleCollator/Escape */,
@@ -648,6 +650,7 @@ extern Il2CppInteropData g_Il2CppInteropData[141] =
 	{ NULL, NativeInputOptions_t2607421693_marshal_pinvoke, NativeInputOptions_t2607421693_marshal_pinvoke_back, NativeInputOptions_t2607421693_marshal_pinvoke_cleanup, NULL, NULL, &NativeInputOptions_t2607421693_0_0_0 } /* InControl.NativeInputOptions */,
 	{ NULL, UnknownDeviceControl_t1734602596_marshal_pinvoke, UnknownDeviceControl_t1734602596_marshal_pinvoke_back, UnknownDeviceControl_t1734602596_marshal_pinvoke_cleanup, NULL, NULL, &UnknownDeviceControl_t1734602596_0_0_0 } /* InControl.UnknownDeviceControl */,
 	{ DelegatePInvokeWrapper_MixerToggleEvent_t51642240, NULL, NULL, NULL, NULL, NULL, &MixerToggleEvent_t51642240_0_0_0 } /* SoundManager/MixerToggleEvent */,
+	{ DelegatePInvokeWrapper_TutorialIndexEvent_t2761694374, NULL, NULL, NULL, NULL, NULL, &TutorialIndexEvent_t2761694374_0_0_0 } /* UIManager/TutorialIndexEvent */,
 	{ NULL, Settings_t3016786575_marshal_pinvoke, Settings_t3016786575_marshal_pinvoke_back, Settings_t3016786575_marshal_pinvoke_cleanup, NULL, NULL, &Settings_t3016786575_0_0_0 } /* UnityEngine.PostProcessing.AmbientOcclusionModel/Settings */,
 	{ NULL, BloomSettings_t2599855122_marshal_pinvoke, BloomSettings_t2599855122_marshal_pinvoke_back, BloomSettings_t2599855122_marshal_pinvoke_cleanup, NULL, NULL, &BloomSettings_t2599855122_0_0_0 } /* UnityEngine.PostProcessing.BloomModel/BloomSettings */,
 	{ NULL, LensDirtSettings_t3693422705_marshal_pinvoke, LensDirtSettings_t3693422705_marshal_pinvoke_back, LensDirtSettings_t3693422705_marshal_pinvoke_cleanup, NULL, NULL, &LensDirtSettings_t3693422705_0_0_0 } /* UnityEngine.PostProcessing.BloomModel/LensDirtSettings */,

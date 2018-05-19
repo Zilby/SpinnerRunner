@@ -3803,6 +3803,11 @@ extern Il2CppGenericClass GenericComparer_1_t3393866614_GenericClass;
 extern Il2CppGenericClass IComparer_1_t2651532253_GenericClass;
 extern Il2CppGenericClass DefaultComparer_t3544837403_GenericClass;
 extern Il2CppGenericClass Comparison_1_t1172197953_GenericClass;
+extern Il2CppGenericClass IEnumerator_1_t1150985997_GenericClass;
+extern Il2CppGenericClass InternalEnumerator_1_t1625479646_GenericClass;
+extern Il2CppGenericClass IList_1_t2533735312_GenericClass;
+extern Il2CppGenericClass ICollection_1_t3546567763_GenericClass;
+extern Il2CppGenericClass IEnumerable_1_t3993235714_GenericClass;
 extern Il2CppGenericClass List_1_t857997111_GenericClass;
 extern Il2CppGenericClass IEnumerator_1_t4113460133_GenericClass;
 extern Il2CppGenericClass InternalEnumerator_1_t292986486_GenericClass;
@@ -4132,7 +4137,7 @@ extern Il2CppGenericClass IOrderedEnumerable_1_t1123171142_GenericClass;
 
 
 
-extern Il2CppGenericClass* const s_Il2CppGenericTypes[4107] = 
+extern Il2CppGenericClass* const s_Il2CppGenericTypes[4112] = 
 {
 	&IEnumerator_1_t3512676632_GenericClass,
 	&InternalEnumerator_1_t3987170281_GenericClass,
@@ -7917,6 +7922,11 @@ extern Il2CppGenericClass* const s_Il2CppGenericTypes[4107] =
 	&IComparer_1_t2651532253_GenericClass,
 	&DefaultComparer_t3544837403_GenericClass,
 	&Comparison_1_t1172197953_GenericClass,
+	&IEnumerator_1_t1150985997_GenericClass,
+	&InternalEnumerator_1_t1625479646_GenericClass,
+	&IList_1_t2533735312_GenericClass,
+	&ICollection_1_t3546567763_GenericClass,
+	&IEnumerable_1_t3993235714_GenericClass,
 	&List_1_t857997111_GenericClass,
 	&IEnumerator_1_t4113460133_GenericClass,
 	&InternalEnumerator_1_t292986486_GenericClass,

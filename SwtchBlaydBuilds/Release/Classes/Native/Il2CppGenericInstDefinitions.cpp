@@ -525,6 +525,7 @@ extern const Il2CppType Vector3U5BU5D_t1718750761_0_0_0;
 extern const Il2CppType IList_1_t1242665951_0_0_0;
 extern const Il2CppType ICollection_1_t2255498402_0_0_0;
 extern const Il2CppType IEnumerable_1_t2702166353_0_0_0;
+extern const Il2CppType FadeableUI_t718415529_0_0_0;
 extern const Il2CppType AudioClip_t3680889665_0_0_0;
 extern const Il2CppType AudioSource_t3935305588_0_0_0;
 extern const Il2CppType DefaultExecutionOrder_t3059642329_0_0_0;
@@ -572,6 +573,7 @@ extern const Il2CppType BoxCollider_t1640800422_0_0_0;
 extern const Il2CppType Rigidbody_t3916780224_0_0_0;
 extern const Il2CppType TMP_SpriteAnimator_t2836635477_0_0_0;
 extern const Il2CppType StandaloneInputModule_t2760469101_0_0_0;
+extern const Il2CppType Obstacle_t162511623_0_0_0;
 extern const Il2CppType ICadeDeviceManager_t451636877_0_0_0;
 extern const Il2CppType UnityInputDeviceManager_t1658775872_0_0_0;
 extern const Il2CppType NativeInputDeviceManager_t1361677247_0_0_0;
@@ -733,6 +735,7 @@ extern const Il2CppType Component_GetComponents_m3213858047_gp_0_0_0_0;
 extern const Il2CppType GameObject_GetComponentInChildren_m2670866854_gp_0_0_0_0;
 extern const Il2CppType GameObject_GetComponents_m965402322_gp_0_0_0_0;
 extern const Il2CppType GameObject_GetComponentsInChildren_m740063143_gp_0_0_0_0;
+extern const Il2CppType GameObject_GetComponentsInChildren_m2169540399_gp_0_0_0_0;
 extern const Il2CppType GameObject_GetComponentsInParent_m823960623_gp_0_0_0_0;
 extern const Il2CppType NoAllocHelpers_SafeLength_m3904382575_gp_0_0_0_0;
 extern const Il2CppType Object_FindObjectsOfType_m329972044_gp_0_0_0_0;
@@ -2311,6 +2314,8 @@ static const RuntimeType* GenInst_ICollection_1_t2255498402_0_0_0_Types[] = { (&
 extern const Il2CppGenericInst GenInst_ICollection_1_t2255498402_0_0_0 = { 1, GenInst_ICollection_1_t2255498402_0_0_0_Types };
 static const RuntimeType* GenInst_IEnumerable_1_t2702166353_0_0_0_Types[] = { (&IEnumerable_1_t2702166353_0_0_0) };
 extern const Il2CppGenericInst GenInst_IEnumerable_1_t2702166353_0_0_0 = { 1, GenInst_IEnumerable_1_t2702166353_0_0_0_Types };
+static const RuntimeType* GenInst_FadeableUI_t718415529_0_0_0_Types[] = { (&FadeableUI_t718415529_0_0_0) };
+extern const Il2CppGenericInst GenInst_FadeableUI_t718415529_0_0_0 = { 1, GenInst_FadeableUI_t718415529_0_0_0_Types };
 static const RuntimeType* GenInst_AudioClip_t3680889665_0_0_0_Types[] = { (&AudioClip_t3680889665_0_0_0) };
 extern const Il2CppGenericInst GenInst_AudioClip_t3680889665_0_0_0 = { 1, GenInst_AudioClip_t3680889665_0_0_0_Types };
 static const RuntimeType* GenInst_AudioSource_t3935305588_0_0_0_Types[] = { (&AudioSource_t3935305588_0_0_0) };
@@ -2409,6 +2414,8 @@ static const RuntimeType* GenInst_TMP_SpriteAnimator_t2836635477_0_0_0_Types[] =
 extern const Il2CppGenericInst GenInst_TMP_SpriteAnimator_t2836635477_0_0_0 = { 1, GenInst_TMP_SpriteAnimator_t2836635477_0_0_0_Types };
 static const RuntimeType* GenInst_StandaloneInputModule_t2760469101_0_0_0_Types[] = { (&StandaloneInputModule_t2760469101_0_0_0) };
 extern const Il2CppGenericInst GenInst_StandaloneInputModule_t2760469101_0_0_0 = { 1, GenInst_StandaloneInputModule_t2760469101_0_0_0_Types };
+static const RuntimeType* GenInst_Obstacle_t162511623_0_0_0_Types[] = { (&Obstacle_t162511623_0_0_0) };
+extern const Il2CppGenericInst GenInst_Obstacle_t162511623_0_0_0 = { 1, GenInst_Obstacle_t162511623_0_0_0_Types };
 static const RuntimeType* GenInst_ICadeDeviceManager_t451636877_0_0_0_Types[] = { (&ICadeDeviceManager_t451636877_0_0_0) };
 extern const Il2CppGenericInst GenInst_ICadeDeviceManager_t451636877_0_0_0 = { 1, GenInst_ICadeDeviceManager_t451636877_0_0_0_Types };
 static const RuntimeType* GenInst_UnityInputDeviceManager_t1658775872_0_0_0_Types[] = { (&UnityInputDeviceManager_t1658775872_0_0_0) };
@@ -2847,6 +2854,8 @@ static const RuntimeType* GenInst_GameObject_GetComponents_m965402322_gp_0_0_0_0
 extern const Il2CppGenericInst GenInst_GameObject_GetComponents_m965402322_gp_0_0_0_0 = { 1, GenInst_GameObject_GetComponents_m965402322_gp_0_0_0_0_Types };
 static const RuntimeType* GenInst_GameObject_GetComponentsInChildren_m740063143_gp_0_0_0_0_Types[] = { (&GameObject_GetComponentsInChildren_m740063143_gp_0_0_0_0) };
 extern const Il2CppGenericInst GenInst_GameObject_GetComponentsInChildren_m740063143_gp_0_0_0_0 = { 1, GenInst_GameObject_GetComponentsInChildren_m740063143_gp_0_0_0_0_Types };
+static const RuntimeType* GenInst_GameObject_GetComponentsInChildren_m2169540399_gp_0_0_0_0_Types[] = { (&GameObject_GetComponentsInChildren_m2169540399_gp_0_0_0_0) };
+extern const Il2CppGenericInst GenInst_GameObject_GetComponentsInChildren_m2169540399_gp_0_0_0_0 = { 1, GenInst_GameObject_GetComponentsInChildren_m2169540399_gp_0_0_0_0_Types };
 static const RuntimeType* GenInst_GameObject_GetComponentsInParent_m823960623_gp_0_0_0_0_Types[] = { (&GameObject_GetComponentsInParent_m823960623_gp_0_0_0_0) };
 extern const Il2CppGenericInst GenInst_GameObject_GetComponentsInParent_m823960623_gp_0_0_0_0 = { 1, GenInst_GameObject_GetComponentsInParent_m823960623_gp_0_0_0_0_Types };
 static const RuntimeType* GenInst_NoAllocHelpers_SafeLength_m3904382575_gp_0_0_0_0_Types[] = { (&NoAllocHelpers_SafeLength_m3904382575_gp_0_0_0_0) };
@@ -2995,7 +3004,7 @@ static const RuntimeType* GenInst_PostProcessingComponentCommandBuffer_1_t295733
 extern const Il2CppGenericInst GenInst_PostProcessingComponentCommandBuffer_1_t2957336540_gp_0_0_0_0 = { 1, GenInst_PostProcessingComponentCommandBuffer_1_t2957336540_gp_0_0_0_0_Types };
 static const RuntimeType* GenInst_PostProcessingComponentRenderTexture_1_t3518545612_gp_0_0_0_0_Types[] = { (&PostProcessingComponentRenderTexture_1_t3518545612_gp_0_0_0_0) };
 extern const Il2CppGenericInst GenInst_PostProcessingComponentRenderTexture_1_t3518545612_gp_0_0_0_0 = { 1, GenInst_PostProcessingComponentRenderTexture_1_t3518545612_gp_0_0_0_0_Types };
-extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[1090] = 
+extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[1093] = 
 {
 	&GenInst_RuntimeObject_0_0_0,
 	&GenInst_Int32_t2950945753_0_0_0,
@@ -3745,6 +3754,7 @@ extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[1090] =
 	&GenInst_IList_1_t1242665951_0_0_0,
 	&GenInst_ICollection_1_t2255498402_0_0_0,
 	&GenInst_IEnumerable_1_t2702166353_0_0_0,
+	&GenInst_FadeableUI_t718415529_0_0_0,
 	&GenInst_AudioClip_t3680889665_0_0_0,
 	&GenInst_AudioSource_t3935305588_0_0_0,
 	&GenInst_DefaultExecutionOrder_t3059642329_0_0_0,
@@ -3794,6 +3804,7 @@ extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[1090] =
 	&GenInst_Rigidbody_t3916780224_0_0_0,
 	&GenInst_TMP_SpriteAnimator_t2836635477_0_0_0,
 	&GenInst_StandaloneInputModule_t2760469101_0_0_0,
+	&GenInst_Obstacle_t162511623_0_0_0,
 	&GenInst_ICadeDeviceManager_t451636877_0_0_0,
 	&GenInst_UnityInputDeviceManager_t1658775872_0_0_0,
 	&GenInst_NativeInputDeviceManager_t1361677247_0_0_0,
@@ -4013,6 +4024,7 @@ extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[1090] =
 	&GenInst_GameObject_GetComponentInChildren_m2670866854_gp_0_0_0_0,
 	&GenInst_GameObject_GetComponents_m965402322_gp_0_0_0_0,
 	&GenInst_GameObject_GetComponentsInChildren_m740063143_gp_0_0_0_0,
+	&GenInst_GameObject_GetComponentsInChildren_m2169540399_gp_0_0_0_0,
 	&GenInst_GameObject_GetComponentsInParent_m823960623_gp_0_0_0_0,
 	&GenInst_NoAllocHelpers_SafeLength_m3904382575_gp_0_0_0_0,
 	&GenInst_Object_FindObjectsOfType_m329972044_gp_0_0_0_0,

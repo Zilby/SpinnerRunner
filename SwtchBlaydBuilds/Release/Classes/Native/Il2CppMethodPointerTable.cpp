@@ -9945,6 +9945,7 @@ extern "C" void CanvasGroup_get_alpha_m2918269489 ();
 extern "C" void CanvasGroup_set_alpha_m4032573 ();
 extern "C" void CanvasGroup_get_interactable_m1362547832 ();
 extern "C" void CanvasGroup_get_blocksRaycasts_m1805542303 ();
+extern "C" void CanvasGroup_set_blocksRaycasts_m3675023212 ();
 extern "C" void CanvasGroup_get_ignoreParentGroups_m865591534 ();
 extern "C" void CanvasGroup_IsRaycastLocationValid_m2128397950 ();
 extern "C" void CanvasRenderer_SetColor_m3072996306 ();
@@ -13180,13 +13181,35 @@ extern "C" void ExampleWheelController__ctor_m2274916630 ();
 extern "C" void ExampleWheelController_Start_m2673603706 ();
 extern "C" void ExampleWheelController_Update_m20543390 ();
 extern "C" void Uniforms__cctor_m281730618 ();
+extern "C" void FadeableUI__ctor_m2668781435 ();
+extern "C" void FadeableUI_get_IsVisible_m3952130035 ();
+extern "C" void FadeableUI_set_IsVisible_m2598787169 ();
+extern "C" void FadeableUI_get_CanvasGroup_m3058550369 ();
+extern "C" void FadeableUI_get_IsFading_m3464185821 ();
+extern "C" void FadeableUI_Show_m4253489861 ();
+extern "C" void FadeableUI_Hide_m3904057795 ();
+extern "C" void FadeableUI_FadeIn_m2612915454 ();
+extern "C" void FadeableUI_FadeOut_m499996957 ();
+extern "C" void FadeableUI_SelfFadeIn_m3826988539 ();
+extern "C" void FadeableUI_SelfFadeOut_m4279970973 ();
+extern "C" void U3CFadeInU3Ec__Iterator0__ctor_m3536826891 ();
+extern "C" void U3CFadeInU3Ec__Iterator0_MoveNext_m3882771785 ();
+extern "C" void U3CFadeInU3Ec__Iterator0_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m2067672412 ();
+extern "C" void U3CFadeInU3Ec__Iterator0_System_Collections_IEnumerator_get_Current_m1487393265 ();
+extern "C" void U3CFadeInU3Ec__Iterator0_Dispose_m4155391623 ();
+extern "C" void U3CFadeInU3Ec__Iterator0_Reset_m3683041803 ();
+extern "C" void U3CFadeOutU3Ec__Iterator1__ctor_m3904119430 ();
+extern "C" void U3CFadeOutU3Ec__Iterator1_MoveNext_m1987236241 ();
+extern "C" void U3CFadeOutU3Ec__Iterator1_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m4127450150 ();
+extern "C" void U3CFadeOutU3Ec__Iterator1_System_Collections_IEnumerator_get_Current_m2811221576 ();
+extern "C" void U3CFadeOutU3Ec__Iterator1_Dispose_m2494352749 ();
+extern "C" void U3CFadeOutU3Ec__Iterator1_Reset_m1711590081 ();
 extern "C" void GameController__ctor_m1587060996 ();
 extern "C" void GameController_get_GameOver_m864402210 ();
 extern "C" void GameController_Awake_m4256893697 ();
 extern "C" void GameController_Start_m1173294274 ();
 extern "C" void GameController_Update_m217025042 ();
-extern "C" void GameController_FixedUpdate_m3076172417 ();
-extern "C" void GameController_SpawnObstacles_m3323729403 ();
+extern "C" void GameController_SpawnObstacles_m2245409312 ();
 extern "C" void GameController_FinishGame_m41918646 ();
 extern "C" void GameController_Spawn_m512494792 ();
 extern "C" void GameController_KillOldPrefabs_m1963576648 ();
@@ -13196,19 +13219,32 @@ extern "C" void GameController_IncrementSpeed_m3500125153 ();
 extern "C" void GameController_IncrementScore_m3723399698 ();
 extern "C" void GameController_SetTimescale_m291605623 ();
 extern "C" void GameController_Pause_m2774576428 ();
+extern "C" void GameController_Tutorial_m2620562631 ();
 extern "C" void GameController_OnDestroy_m1186977408 ();
-extern "C" void U3CIncrementScoreU3Ec__Iterator1__ctor_m758831276 ();
-extern "C" void U3CIncrementScoreU3Ec__Iterator1_MoveNext_m1447468411 ();
-extern "C" void U3CIncrementScoreU3Ec__Iterator1_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m183371035 ();
-extern "C" void U3CIncrementScoreU3Ec__Iterator1_System_Collections_IEnumerator_get_Current_m3007807213 ();
-extern "C" void U3CIncrementScoreU3Ec__Iterator1_Dispose_m3008305908 ();
-extern "C" void U3CIncrementScoreU3Ec__Iterator1_Reset_m3731073236 ();
-extern "C" void U3CIncrementSpeedU3Ec__Iterator0__ctor_m1058445743 ();
-extern "C" void U3CIncrementSpeedU3Ec__Iterator0_MoveNext_m2377410925 ();
-extern "C" void U3CIncrementSpeedU3Ec__Iterator0_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m882872547 ();
-extern "C" void U3CIncrementSpeedU3Ec__Iterator0_System_Collections_IEnumerator_get_Current_m1467452071 ();
-extern "C" void U3CIncrementSpeedU3Ec__Iterator0_Dispose_m853690862 ();
-extern "C" void U3CIncrementSpeedU3Ec__Iterator0_Reset_m4142238143 ();
+extern "C" void U3CIncrementScoreU3Ec__Iterator2__ctor_m1122226513 ();
+extern "C" void U3CIncrementScoreU3Ec__Iterator2_MoveNext_m3673791866 ();
+extern "C" void U3CIncrementScoreU3Ec__Iterator2_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m969584125 ();
+extern "C" void U3CIncrementScoreU3Ec__Iterator2_System_Collections_IEnumerator_get_Current_m3958308031 ();
+extern "C" void U3CIncrementScoreU3Ec__Iterator2_Dispose_m1644251727 ();
+extern "C" void U3CIncrementScoreU3Ec__Iterator2_Reset_m4094468473 ();
+extern "C" void U3CIncrementSpeedU3Ec__Iterator1__ctor_m695050506 ();
+extern "C" void U3CIncrementSpeedU3Ec__Iterator1_MoveNext_m836200849 ();
+extern "C" void U3CIncrementSpeedU3Ec__Iterator1_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m2956446473 ();
+extern "C" void U3CIncrementSpeedU3Ec__Iterator1_System_Collections_IEnumerator_get_Current_m2131526370 ();
+extern "C" void U3CIncrementSpeedU3Ec__Iterator1_Dispose_m2782395047 ();
+extern "C" void U3CIncrementSpeedU3Ec__Iterator1_Reset_m760986334 ();
+extern "C" void U3CSpawnObstaclesU3Ec__Iterator0__ctor_m553810189 ();
+extern "C" void U3CSpawnObstaclesU3Ec__Iterator0_MoveNext_m3664549260 ();
+extern "C" void U3CSpawnObstaclesU3Ec__Iterator0_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m2767302003 ();
+extern "C" void U3CSpawnObstaclesU3Ec__Iterator0_System_Collections_IEnumerator_get_Current_m2146977165 ();
+extern "C" void U3CSpawnObstaclesU3Ec__Iterator0_Dispose_m1137150649 ();
+extern "C" void U3CSpawnObstaclesU3Ec__Iterator0_Reset_m1563688817 ();
+extern "C" void U3CTutorialU3Ec__Iterator3__ctor_m481269364 ();
+extern "C" void U3CTutorialU3Ec__Iterator3_MoveNext_m1086847978 ();
+extern "C" void U3CTutorialU3Ec__Iterator3_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m1731060478 ();
+extern "C" void U3CTutorialU3Ec__Iterator3_System_Collections_IEnumerator_get_Current_m1324970830 ();
+extern "C" void U3CTutorialU3Ec__Iterator3_Dispose_m146174626 ();
+extern "C" void U3CTutorialU3Ec__Iterator3_Reset_m3877184824 ();
 extern "C" void AirFloWiredPS3MacProfile__ctor_m2100808558 ();
 extern "C" void AirFloWiredPS3ProfileWin__ctor_m1516659725 ();
 extern "C" void AmazonFireTVProfile__ctor_m560779571 ();
@@ -14782,6 +14818,7 @@ extern "C" void PlayerManager_RemovePlayer_m2411003063 ();
 extern "C" void PlayerManager_OnGUI_m3830045231 ();
 extern "C" void Obstacle__ctor_m1962423779 ();
 extern "C" void Obstacle_get_ScoreIncrement_m3125328382 ();
+extern "C" void Obstacle_set_RotateRight_m1794690016 ();
 extern "C" void Obstacle_Start_m770163199 ();
 extern "C" void Obstacle_CollisionEvent_m3762330098 ();
 extern "C" void Obstacle_BoostRotation_m3458981888 ();
@@ -15094,18 +15131,34 @@ extern "C" void UIManager__ctor_m873742767 ();
 extern "C" void UIManager_Awake_m2672258407 ();
 extern "C" void UIManager_Update_m1085197836 ();
 extern "C" void UIManager_Pause_m3506297 ();
+extern "C" void UIManager_TutorialText_m4049406688 ();
+extern "C" void UIManager_GetTutorialIndex_m2865479528 ();
 extern "C" void UIManager_GameOver_m2557360450 ();
 extern "C" void UIManager_EndGame_m842108960 ();
 extern "C" void UIManager_Again_m1464829569 ();
 extern "C" void UIManager_Menu_m2505861666 ();
 extern "C" void UIManager_ToggleSound_m721688333 ();
 extern "C" void UIManager_ToggleMusic_m2085928914 ();
-extern "C" void U3CEndGameU3Ec__Iterator0__ctor_m681854072 ();
-extern "C" void U3CEndGameU3Ec__Iterator0_MoveNext_m1752901743 ();
-extern "C" void U3CEndGameU3Ec__Iterator0_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m397439477 ();
-extern "C" void U3CEndGameU3Ec__Iterator0_System_Collections_IEnumerator_get_Current_m4193510721 ();
-extern "C" void U3CEndGameU3Ec__Iterator0_Dispose_m3809222242 ();
-extern "C" void U3CEndGameU3Ec__Iterator0_Reset_m32994400 ();
+extern "C" void U3CEndGameU3Ec__Iterator1__ctor_m318458835 ();
+extern "C" void U3CEndGameU3Ec__Iterator1_MoveNext_m3856148592 ();
+extern "C" void U3CEndGameU3Ec__Iterator1_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m1503229631 ();
+extern "C" void U3CEndGameU3Ec__Iterator1_System_Collections_IEnumerator_get_Current_m2011873951 ();
+extern "C" void U3CEndGameU3Ec__Iterator1_Dispose_m313659123 ();
+extern "C" void U3CEndGameU3Ec__Iterator1_Reset_m234249167 ();
+extern "C" void U3CTutorialTextU3Ec__Iterator0__ctor_m235950051 ();
+extern "C" void U3CTutorialTextU3Ec__Iterator0_MoveNext_m3998291496 ();
+extern "C" void U3CTutorialTextU3Ec__Iterator0_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m2770863853 ();
+extern "C" void U3CTutorialTextU3Ec__Iterator0_System_Collections_IEnumerator_get_Current_m3903343651 ();
+extern "C" void U3CTutorialTextU3Ec__Iterator0_Dispose_m1235429092 ();
+extern "C" void U3CTutorialTextU3Ec__Iterator0_Reset_m3247075472 ();
+extern "C" void TutorialEvent__ctor_m2951284281 ();
+extern "C" void TutorialEvent_Invoke_m1624340065 ();
+extern "C" void TutorialEvent_BeginInvoke_m770908100 ();
+extern "C" void TutorialEvent_EndInvoke_m1501373449 ();
+extern "C" void TutorialIndexEvent__ctor_m3918939237 ();
+extern "C" void TutorialIndexEvent_Invoke_m2540924088 ();
+extern "C" void TutorialIndexEvent_BeginInvoke_m2867448086 ();
+extern "C" void TutorialIndexEvent_EndInvoke_m2198286244 ();
 extern "C" void AmbientOcclusionComponent__ctor_m2762306729 ();
 extern "C" void AmbientOcclusionComponent_get_occlusionSource_m1472233290 ();
 extern "C" void AmbientOcclusionComponent_get_ambientOnlySupported_m1960066013 ();
@@ -15432,6 +15485,8 @@ extern "C" void Utils_get_Soundfx_m2606066325 ();
 extern "C" void Utils_set_Soundfx_m1826620856 ();
 extern "C" void Utils_get_Loaded_m214041120 ();
 extern "C" void Utils_set_Loaded_m1611615705 ();
+extern "C" void Utils_get_Tutorial_m4060733273 ();
+extern "C" void Utils_set_Tutorial_m1113891504 ();
 extern "C" void Utils_Reset_m3405874451 ();
 extern "C" void Utils_Save_m1051100566 ();
 extern "C" void Utils_Load_m2291863489 ();
@@ -15452,7 +15507,7 @@ extern "C" void VirtualDeviceExample_U3COnEnableU3Em__0_m2301732750 ();
 extern "C" void Wall__ctor_m559063296 ();
 extern "C" void Wall_OnTriggerEnter2D_m1456502492 ();
 extern "C" void Wall_CollisionEvent_m1948758426 ();
-extern const Il2CppMethodPointer g_MethodPointers[15434] = 
+extern const Il2CppMethodPointer g_MethodPointers[15489] = 
 {
 	Locale_GetText_m3374010885,
 	Locale_GetText_m1601577974,
@@ -25381,6 +25436,7 @@ extern const Il2CppMethodPointer g_MethodPointers[15434] =
 	CanvasGroup_set_alpha_m4032573,
 	CanvasGroup_get_interactable_m1362547832,
 	CanvasGroup_get_blocksRaycasts_m1805542303,
+	CanvasGroup_set_blocksRaycasts_m3675023212,
 	CanvasGroup_get_ignoreParentGroups_m865591534,
 	CanvasGroup_IsRaycastLocationValid_m2128397950,
 	CanvasRenderer_SetColor_m3072996306,
@@ -28616,13 +28672,35 @@ extern const Il2CppMethodPointer g_MethodPointers[15434] =
 	ExampleWheelController_Start_m2673603706,
 	ExampleWheelController_Update_m20543390,
 	Uniforms__cctor_m281730618,
+	FadeableUI__ctor_m2668781435,
+	FadeableUI_get_IsVisible_m3952130035,
+	FadeableUI_set_IsVisible_m2598787169,
+	FadeableUI_get_CanvasGroup_m3058550369,
+	FadeableUI_get_IsFading_m3464185821,
+	FadeableUI_Show_m4253489861,
+	FadeableUI_Hide_m3904057795,
+	FadeableUI_FadeIn_m2612915454,
+	FadeableUI_FadeOut_m499996957,
+	FadeableUI_SelfFadeIn_m3826988539,
+	FadeableUI_SelfFadeOut_m4279970973,
+	U3CFadeInU3Ec__Iterator0__ctor_m3536826891,
+	U3CFadeInU3Ec__Iterator0_MoveNext_m3882771785,
+	U3CFadeInU3Ec__Iterator0_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m2067672412,
+	U3CFadeInU3Ec__Iterator0_System_Collections_IEnumerator_get_Current_m1487393265,
+	U3CFadeInU3Ec__Iterator0_Dispose_m4155391623,
+	U3CFadeInU3Ec__Iterator0_Reset_m3683041803,
+	U3CFadeOutU3Ec__Iterator1__ctor_m3904119430,
+	U3CFadeOutU3Ec__Iterator1_MoveNext_m1987236241,
+	U3CFadeOutU3Ec__Iterator1_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m4127450150,
+	U3CFadeOutU3Ec__Iterator1_System_Collections_IEnumerator_get_Current_m2811221576,
+	U3CFadeOutU3Ec__Iterator1_Dispose_m2494352749,
+	U3CFadeOutU3Ec__Iterator1_Reset_m1711590081,
 	GameController__ctor_m1587060996,
 	GameController_get_GameOver_m864402210,
 	GameController_Awake_m4256893697,
 	GameController_Start_m1173294274,
 	GameController_Update_m217025042,
-	GameController_FixedUpdate_m3076172417,
-	GameController_SpawnObstacles_m3323729403,
+	GameController_SpawnObstacles_m2245409312,
 	GameController_FinishGame_m41918646,
 	GameController_Spawn_m512494792,
 	GameController_KillOldPrefabs_m1963576648,
@@ -28632,19 +28710,32 @@ extern const Il2CppMethodPointer g_MethodPointers[15434] =
 	GameController_IncrementScore_m3723399698,
 	GameController_SetTimescale_m291605623,
 	GameController_Pause_m2774576428,
+	GameController_Tutorial_m2620562631,
 	GameController_OnDestroy_m1186977408,
-	U3CIncrementScoreU3Ec__Iterator1__ctor_m758831276,
-	U3CIncrementScoreU3Ec__Iterator1_MoveNext_m1447468411,
-	U3CIncrementScoreU3Ec__Iterator1_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m183371035,
-	U3CIncrementScoreU3Ec__Iterator1_System_Collections_IEnumerator_get_Current_m3007807213,
-	U3CIncrementScoreU3Ec__Iterator1_Dispose_m3008305908,
-	U3CIncrementScoreU3Ec__Iterator1_Reset_m3731073236,
-	U3CIncrementSpeedU3Ec__Iterator0__ctor_m1058445743,
-	U3CIncrementSpeedU3Ec__Iterator0_MoveNext_m2377410925,
-	U3CIncrementSpeedU3Ec__Iterator0_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m882872547,
-	U3CIncrementSpeedU3Ec__Iterator0_System_Collections_IEnumerator_get_Current_m1467452071,
-	U3CIncrementSpeedU3Ec__Iterator0_Dispose_m853690862,
-	U3CIncrementSpeedU3Ec__Iterator0_Reset_m4142238143,
+	U3CIncrementScoreU3Ec__Iterator2__ctor_m1122226513,
+	U3CIncrementScoreU3Ec__Iterator2_MoveNext_m3673791866,
+	U3CIncrementScoreU3Ec__Iterator2_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m969584125,
+	U3CIncrementScoreU3Ec__Iterator2_System_Collections_IEnumerator_get_Current_m3958308031,
+	U3CIncrementScoreU3Ec__Iterator2_Dispose_m1644251727,
+	U3CIncrementScoreU3Ec__Iterator2_Reset_m4094468473,
+	U3CIncrementSpeedU3Ec__Iterator1__ctor_m695050506,
+	U3CIncrementSpeedU3Ec__Iterator1_MoveNext_m836200849,
+	U3CIncrementSpeedU3Ec__Iterator1_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m2956446473,
+	U3CIncrementSpeedU3Ec__Iterator1_System_Collections_IEnumerator_get_Current_m2131526370,
+	U3CIncrementSpeedU3Ec__Iterator1_Dispose_m2782395047,
+	U3CIncrementSpeedU3Ec__Iterator1_Reset_m760986334,
+	U3CSpawnObstaclesU3Ec__Iterator0__ctor_m553810189,
+	U3CSpawnObstaclesU3Ec__Iterator0_MoveNext_m3664549260,
+	U3CSpawnObstaclesU3Ec__Iterator0_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m2767302003,
+	U3CSpawnObstaclesU3Ec__Iterator0_System_Collections_IEnumerator_get_Current_m2146977165,
+	U3CSpawnObstaclesU3Ec__Iterator0_Dispose_m1137150649,
+	U3CSpawnObstaclesU3Ec__Iterator0_Reset_m1563688817,
+	U3CTutorialU3Ec__Iterator3__ctor_m481269364,
+	U3CTutorialU3Ec__Iterator3_MoveNext_m1086847978,
+	U3CTutorialU3Ec__Iterator3_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m1731060478,
+	U3CTutorialU3Ec__Iterator3_System_Collections_IEnumerator_get_Current_m1324970830,
+	U3CTutorialU3Ec__Iterator3_Dispose_m146174626,
+	U3CTutorialU3Ec__Iterator3_Reset_m3877184824,
 	AirFloWiredPS3MacProfile__ctor_m2100808558,
 	AirFloWiredPS3ProfileWin__ctor_m1516659725,
 	AmazonFireTVProfile__ctor_m560779571,
@@ -30218,6 +30309,7 @@ extern const Il2CppMethodPointer g_MethodPointers[15434] =
 	PlayerManager_OnGUI_m3830045231,
 	Obstacle__ctor_m1962423779,
 	Obstacle_get_ScoreIncrement_m3125328382,
+	Obstacle_set_RotateRight_m1794690016,
 	Obstacle_Start_m770163199,
 	Obstacle_CollisionEvent_m3762330098,
 	Obstacle_BoostRotation_m3458981888,
@@ -30530,18 +30622,34 @@ extern const Il2CppMethodPointer g_MethodPointers[15434] =
 	UIManager_Awake_m2672258407,
 	UIManager_Update_m1085197836,
 	UIManager_Pause_m3506297,
+	UIManager_TutorialText_m4049406688,
+	UIManager_GetTutorialIndex_m2865479528,
 	UIManager_GameOver_m2557360450,
 	UIManager_EndGame_m842108960,
 	UIManager_Again_m1464829569,
 	UIManager_Menu_m2505861666,
 	UIManager_ToggleSound_m721688333,
 	UIManager_ToggleMusic_m2085928914,
-	U3CEndGameU3Ec__Iterator0__ctor_m681854072,
-	U3CEndGameU3Ec__Iterator0_MoveNext_m1752901743,
-	U3CEndGameU3Ec__Iterator0_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m397439477,
-	U3CEndGameU3Ec__Iterator0_System_Collections_IEnumerator_get_Current_m4193510721,
-	U3CEndGameU3Ec__Iterator0_Dispose_m3809222242,
-	U3CEndGameU3Ec__Iterator0_Reset_m32994400,
+	U3CEndGameU3Ec__Iterator1__ctor_m318458835,
+	U3CEndGameU3Ec__Iterator1_MoveNext_m3856148592,
+	U3CEndGameU3Ec__Iterator1_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m1503229631,
+	U3CEndGameU3Ec__Iterator1_System_Collections_IEnumerator_get_Current_m2011873951,
+	U3CEndGameU3Ec__Iterator1_Dispose_m313659123,
+	U3CEndGameU3Ec__Iterator1_Reset_m234249167,
+	U3CTutorialTextU3Ec__Iterator0__ctor_m235950051,
+	U3CTutorialTextU3Ec__Iterator0_MoveNext_m3998291496,
+	U3CTutorialTextU3Ec__Iterator0_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m2770863853,
+	U3CTutorialTextU3Ec__Iterator0_System_Collections_IEnumerator_get_Current_m3903343651,
+	U3CTutorialTextU3Ec__Iterator0_Dispose_m1235429092,
+	U3CTutorialTextU3Ec__Iterator0_Reset_m3247075472,
+	TutorialEvent__ctor_m2951284281,
+	TutorialEvent_Invoke_m1624340065,
+	TutorialEvent_BeginInvoke_m770908100,
+	TutorialEvent_EndInvoke_m1501373449,
+	TutorialIndexEvent__ctor_m3918939237,
+	TutorialIndexEvent_Invoke_m2540924088,
+	TutorialIndexEvent_BeginInvoke_m2867448086,
+	TutorialIndexEvent_EndInvoke_m2198286244,
 	AmbientOcclusionComponent__ctor_m2762306729,
 	AmbientOcclusionComponent_get_occlusionSource_m1472233290,
 	AmbientOcclusionComponent_get_ambientOnlySupported_m1960066013,
@@ -30868,6 +30976,8 @@ extern const Il2CppMethodPointer g_MethodPointers[15434] =
 	Utils_set_Soundfx_m1826620856,
 	Utils_get_Loaded_m214041120,
 	Utils_set_Loaded_m1611615705,
+	Utils_get_Tutorial_m4060733273,
+	Utils_set_Tutorial_m1113891504,
 	Utils_Reset_m3405874451,
 	Utils_Save_m1051100566,
 	Utils_Load_m2291863489,

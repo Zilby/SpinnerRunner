@@ -19,8 +19,8 @@
 #include "il2cpp-object-internals.h"
 
 
-// InControl.NativeProfile.LogitechF710ModeXWindowsNativeProfile
-struct LogitechF710ModeXWindowsNativeProfile_t2815703866;
+// InControl.NativeProfile.LogitechF710ModeDWindowsNativeProfile
+struct LogitechF710ModeDWindowsNativeProfile_t2234735030;
 // InControl.NativeInputDeviceProfile
 struct NativeInputDeviceProfile_t2018902418;
 // InControl.InputDeviceProfile
@@ -37,6 +37,8 @@ struct InputControlMapping_t3750691495;
 struct InputControlSource_t3317494335;
 // InControl.InputControlMapping[]
 struct InputControlMappingU5BU5D_t2585457374;
+// InControl.NativeProfile.LogitechF710ModeXWindowsNativeProfile
+struct LogitechF710ModeXWindowsNativeProfile_t2815703866;
 // InControl.NativeProfile.LogitechG920RacingWheelMacProfile
 struct LogitechG920RacingWheelMacProfile_t2346673367;
 // InControl.NativeProfile.Xbox360DriverMacProfile
@@ -233,14 +235,12 @@ struct NVidiaShield2016AndroidProfile_t2262321597;
 struct NVidiaShield2017AndroidProfile_t45566397;
 // InControl.NVidiaShieldWin10Profile
 struct NVidiaShieldWin10Profile_t818366377;
-// InControl.NVidiaShieldWinProfile
-struct NVidiaShieldWinProfile_t1670138565;
 // System.Char[]
 struct CharU5BU5D_t3528271667;
-// InControl.InputRange[]
-struct InputRangeU5BU5D_t1647641753;
 // System.Collections.Generic.HashSet`1<System.Type>
 struct HashSet_1_t1048894234;
+// InControl.InputRange[]
+struct InputRangeU5BU5D_t1647641753;
 // InControl.NativeInputDeviceMatcher[]
 struct NativeInputDeviceMatcherU5BU5D_t19578164;
 
@@ -251,33 +251,36 @@ extern RuntimeClass* InputControlMappingU5BU5D_t2585457374_il2cpp_TypeInfo_var;
 extern RuntimeClass* InputControlMapping_t3750691495_il2cpp_TypeInfo_var;
 extern RuntimeClass* InputRange_t919983432_il2cpp_TypeInfo_var;
 extern const RuntimeMethod* Nullable_1__ctor_m590836141_RuntimeMethod_var;
-extern String_t* _stringLiteral1007679;
-extern String_t* _stringLiteral860175413;
+extern String_t* _stringLiteral2326558473;
+extern String_t* _stringLiteral1987819657;
 extern String_t* _stringLiteral773292389;
+extern String_t* _stringLiteral3452614648;
 extern String_t* _stringLiteral3452614623;
 extern String_t* _stringLiteral3452614622;
-extern String_t* _stringLiteral3452614648;
 extern String_t* _stringLiteral3452614647;
 extern String_t* _stringLiteral2732895816;
 extern String_t* _stringLiteral718575221;
+extern String_t* _stringLiteral157069623;
+extern String_t* _stringLiteral2900257707;
 extern String_t* _stringLiteral1167841337;
 extern String_t* _stringLiteral2707270972;
 extern String_t* _stringLiteral1976569017;
 extern String_t* _stringLiteral3316441220;
-extern String_t* _stringLiteral1413084728;
-extern String_t* _stringLiteral3664352337;
-extern String_t* _stringLiteral1785679853;
-extern String_t* _stringLiteral2406406317;
 extern String_t* _stringLiteral1743244449;
 extern String_t* _stringLiteral1970191823;
 extern String_t* _stringLiteral1101173484;
 extern String_t* _stringLiteral549368750;
-extern String_t* _stringLiteral157069623;
-extern String_t* _stringLiteral2900257707;
+extern String_t* _stringLiteral1413084728;
+extern String_t* _stringLiteral3664352337;
+extern String_t* _stringLiteral1785679853;
+extern String_t* _stringLiteral2406406317;
 extern String_t* _stringLiteral2965878800;
 extern String_t* _stringLiteral3390605944;
 extern String_t* _stringLiteral3685310677;
 extern String_t* _stringLiteral1456567208;
+extern const uint32_t LogitechF710ModeDWindowsNativeProfile__ctor_m1963456993_MetadataUsageId;
+extern String_t* _stringLiteral1007679;
+extern String_t* _stringLiteral860175413;
 extern const uint32_t LogitechF710ModeXWindowsNativeProfile__ctor_m1013445725_MetadataUsageId;
 extern String_t* _stringLiteral3126377117;
 extern String_t* _stringLiteral2664787474;
@@ -588,7 +591,6 @@ extern const uint32_t NVidiaShield2017AndroidProfile__ctor_m412663595_MetadataUs
 extern String_t* _stringLiteral3039863629;
 extern String_t* _stringLiteral2031582478;
 extern const uint32_t NVidiaShieldWin10Profile__ctor_m2158594688_MetadataUsageId;
-extern const uint32_t NVidiaShieldWinProfile__ctor_m2348413918_MetadataUsageId;
 
 struct StringU5BU5D_t1281789340;
 struct NativeInputDeviceMatcherU5BU5D_t19578164;
@@ -1298,211 +1300,6 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // INPUTDEVICESTYLE_T1725670786_H
-#ifndef NULLABLE_1_T1172541239_H
-#define NULLABLE_1_T1172541239_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Nullable`1<InControl.NativeDeviceTransportType>
-struct  Nullable_1_t1172541239 
-{
-public:
-	// T System.Nullable`1::value
-	uint16_t ___value_0;
-	// System.Boolean System.Nullable`1::has_value
-	bool ___has_value_1;
-
-public:
-	inline static int32_t get_offset_of_value_0() { return static_cast<int32_t>(offsetof(Nullable_1_t1172541239, ___value_0)); }
-	inline uint16_t get_value_0() const { return ___value_0; }
-	inline uint16_t* get_address_of_value_0() { return &___value_0; }
-	inline void set_value_0(uint16_t value)
-	{
-		___value_0 = value;
-	}
-
-	inline static int32_t get_offset_of_has_value_1() { return static_cast<int32_t>(offsetof(Nullable_1_t1172541239, ___has_value_1)); }
-	inline bool get_has_value_1() const { return ___has_value_1; }
-	inline bool* get_address_of_has_value_1() { return &___has_value_1; }
-	inline void set_has_value_1(bool value)
-	{
-		___has_value_1 = value;
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // NULLABLE_1_T1172541239_H
-#ifndef INPUTRANGE_T919983432_H
-#define INPUTRANGE_T919983432_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// InControl.InputRange
-struct  InputRange_t919983432 
-{
-public:
-	// System.Single InControl.InputRange::Value0
-	float ___Value0_11;
-	// System.Single InControl.InputRange::Value1
-	float ___Value1_12;
-	// InControl.InputRangeType InControl.InputRange::Type
-	int32_t ___Type_13;
-
-public:
-	inline static int32_t get_offset_of_Value0_11() { return static_cast<int32_t>(offsetof(InputRange_t919983432, ___Value0_11)); }
-	inline float get_Value0_11() const { return ___Value0_11; }
-	inline float* get_address_of_Value0_11() { return &___Value0_11; }
-	inline void set_Value0_11(float value)
-	{
-		___Value0_11 = value;
-	}
-
-	inline static int32_t get_offset_of_Value1_12() { return static_cast<int32_t>(offsetof(InputRange_t919983432, ___Value1_12)); }
-	inline float get_Value1_12() const { return ___Value1_12; }
-	inline float* get_address_of_Value1_12() { return &___Value1_12; }
-	inline void set_Value1_12(float value)
-	{
-		___Value1_12 = value;
-	}
-
-	inline static int32_t get_offset_of_Type_13() { return static_cast<int32_t>(offsetof(InputRange_t919983432, ___Type_13)); }
-	inline int32_t get_Type_13() const { return ___Type_13; }
-	inline int32_t* get_address_of_Type_13() { return &___Type_13; }
-	inline void set_Type_13(int32_t value)
-	{
-		___Type_13 = value;
-	}
-};
-
-struct InputRange_t919983432_StaticFields
-{
-public:
-	// InControl.InputRange InControl.InputRange::None
-	InputRange_t919983432  ___None_0;
-	// InControl.InputRange InControl.InputRange::MinusOneToOne
-	InputRange_t919983432  ___MinusOneToOne_1;
-	// InControl.InputRange InControl.InputRange::OneToMinusOne
-	InputRange_t919983432  ___OneToMinusOne_2;
-	// InControl.InputRange InControl.InputRange::ZeroToOne
-	InputRange_t919983432  ___ZeroToOne_3;
-	// InControl.InputRange InControl.InputRange::ZeroToMinusOne
-	InputRange_t919983432  ___ZeroToMinusOne_4;
-	// InControl.InputRange InControl.InputRange::OneToZero
-	InputRange_t919983432  ___OneToZero_5;
-	// InControl.InputRange InControl.InputRange::MinusOneToZero
-	InputRange_t919983432  ___MinusOneToZero_6;
-	// InControl.InputRange InControl.InputRange::ZeroToNegativeInfinity
-	InputRange_t919983432  ___ZeroToNegativeInfinity_7;
-	// InControl.InputRange InControl.InputRange::ZeroToPositiveInfinity
-	InputRange_t919983432  ___ZeroToPositiveInfinity_8;
-	// InControl.InputRange InControl.InputRange::Everything
-	InputRange_t919983432  ___Everything_9;
-	// InControl.InputRange[] InControl.InputRange::TypeToRange
-	InputRangeU5BU5D_t1647641753* ___TypeToRange_10;
-
-public:
-	inline static int32_t get_offset_of_None_0() { return static_cast<int32_t>(offsetof(InputRange_t919983432_StaticFields, ___None_0)); }
-	inline InputRange_t919983432  get_None_0() const { return ___None_0; }
-	inline InputRange_t919983432 * get_address_of_None_0() { return &___None_0; }
-	inline void set_None_0(InputRange_t919983432  value)
-	{
-		___None_0 = value;
-	}
-
-	inline static int32_t get_offset_of_MinusOneToOne_1() { return static_cast<int32_t>(offsetof(InputRange_t919983432_StaticFields, ___MinusOneToOne_1)); }
-	inline InputRange_t919983432  get_MinusOneToOne_1() const { return ___MinusOneToOne_1; }
-	inline InputRange_t919983432 * get_address_of_MinusOneToOne_1() { return &___MinusOneToOne_1; }
-	inline void set_MinusOneToOne_1(InputRange_t919983432  value)
-	{
-		___MinusOneToOne_1 = value;
-	}
-
-	inline static int32_t get_offset_of_OneToMinusOne_2() { return static_cast<int32_t>(offsetof(InputRange_t919983432_StaticFields, ___OneToMinusOne_2)); }
-	inline InputRange_t919983432  get_OneToMinusOne_2() const { return ___OneToMinusOne_2; }
-	inline InputRange_t919983432 * get_address_of_OneToMinusOne_2() { return &___OneToMinusOne_2; }
-	inline void set_OneToMinusOne_2(InputRange_t919983432  value)
-	{
-		___OneToMinusOne_2 = value;
-	}
-
-	inline static int32_t get_offset_of_ZeroToOne_3() { return static_cast<int32_t>(offsetof(InputRange_t919983432_StaticFields, ___ZeroToOne_3)); }
-	inline InputRange_t919983432  get_ZeroToOne_3() const { return ___ZeroToOne_3; }
-	inline InputRange_t919983432 * get_address_of_ZeroToOne_3() { return &___ZeroToOne_3; }
-	inline void set_ZeroToOne_3(InputRange_t919983432  value)
-	{
-		___ZeroToOne_3 = value;
-	}
-
-	inline static int32_t get_offset_of_ZeroToMinusOne_4() { return static_cast<int32_t>(offsetof(InputRange_t919983432_StaticFields, ___ZeroToMinusOne_4)); }
-	inline InputRange_t919983432  get_ZeroToMinusOne_4() const { return ___ZeroToMinusOne_4; }
-	inline InputRange_t919983432 * get_address_of_ZeroToMinusOne_4() { return &___ZeroToMinusOne_4; }
-	inline void set_ZeroToMinusOne_4(InputRange_t919983432  value)
-	{
-		___ZeroToMinusOne_4 = value;
-	}
-
-	inline static int32_t get_offset_of_OneToZero_5() { return static_cast<int32_t>(offsetof(InputRange_t919983432_StaticFields, ___OneToZero_5)); }
-	inline InputRange_t919983432  get_OneToZero_5() const { return ___OneToZero_5; }
-	inline InputRange_t919983432 * get_address_of_OneToZero_5() { return &___OneToZero_5; }
-	inline void set_OneToZero_5(InputRange_t919983432  value)
-	{
-		___OneToZero_5 = value;
-	}
-
-	inline static int32_t get_offset_of_MinusOneToZero_6() { return static_cast<int32_t>(offsetof(InputRange_t919983432_StaticFields, ___MinusOneToZero_6)); }
-	inline InputRange_t919983432  get_MinusOneToZero_6() const { return ___MinusOneToZero_6; }
-	inline InputRange_t919983432 * get_address_of_MinusOneToZero_6() { return &___MinusOneToZero_6; }
-	inline void set_MinusOneToZero_6(InputRange_t919983432  value)
-	{
-		___MinusOneToZero_6 = value;
-	}
-
-	inline static int32_t get_offset_of_ZeroToNegativeInfinity_7() { return static_cast<int32_t>(offsetof(InputRange_t919983432_StaticFields, ___ZeroToNegativeInfinity_7)); }
-	inline InputRange_t919983432  get_ZeroToNegativeInfinity_7() const { return ___ZeroToNegativeInfinity_7; }
-	inline InputRange_t919983432 * get_address_of_ZeroToNegativeInfinity_7() { return &___ZeroToNegativeInfinity_7; }
-	inline void set_ZeroToNegativeInfinity_7(InputRange_t919983432  value)
-	{
-		___ZeroToNegativeInfinity_7 = value;
-	}
-
-	inline static int32_t get_offset_of_ZeroToPositiveInfinity_8() { return static_cast<int32_t>(offsetof(InputRange_t919983432_StaticFields, ___ZeroToPositiveInfinity_8)); }
-	inline InputRange_t919983432  get_ZeroToPositiveInfinity_8() const { return ___ZeroToPositiveInfinity_8; }
-	inline InputRange_t919983432 * get_address_of_ZeroToPositiveInfinity_8() { return &___ZeroToPositiveInfinity_8; }
-	inline void set_ZeroToPositiveInfinity_8(InputRange_t919983432  value)
-	{
-		___ZeroToPositiveInfinity_8 = value;
-	}
-
-	inline static int32_t get_offset_of_Everything_9() { return static_cast<int32_t>(offsetof(InputRange_t919983432_StaticFields, ___Everything_9)); }
-	inline InputRange_t919983432  get_Everything_9() const { return ___Everything_9; }
-	inline InputRange_t919983432 * get_address_of_Everything_9() { return &___Everything_9; }
-	inline void set_Everything_9(InputRange_t919983432  value)
-	{
-		___Everything_9 = value;
-	}
-
-	inline static int32_t get_offset_of_TypeToRange_10() { return static_cast<int32_t>(offsetof(InputRange_t919983432_StaticFields, ___TypeToRange_10)); }
-	inline InputRangeU5BU5D_t1647641753* get_TypeToRange_10() const { return ___TypeToRange_10; }
-	inline InputRangeU5BU5D_t1647641753** get_address_of_TypeToRange_10() { return &___TypeToRange_10; }
-	inline void set_TypeToRange_10(InputRangeU5BU5D_t1647641753* value)
-	{
-		___TypeToRange_10 = value;
-		Il2CppCodeGenWriteBarrier((&___TypeToRange_10), value);
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // INPUTRANGE_T919983432_H
 #ifndef INPUTDEVICEPROFILE_T2270363578_H
 #define INPUTDEVICEPROFILE_T2270363578_H
 #ifdef __clang__
@@ -1675,6 +1472,172 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // INPUTDEVICEPROFILE_T2270363578_H
+#ifndef INPUTRANGE_T919983432_H
+#define INPUTRANGE_T919983432_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// InControl.InputRange
+struct  InputRange_t919983432 
+{
+public:
+	// System.Single InControl.InputRange::Value0
+	float ___Value0_11;
+	// System.Single InControl.InputRange::Value1
+	float ___Value1_12;
+	// InControl.InputRangeType InControl.InputRange::Type
+	int32_t ___Type_13;
+
+public:
+	inline static int32_t get_offset_of_Value0_11() { return static_cast<int32_t>(offsetof(InputRange_t919983432, ___Value0_11)); }
+	inline float get_Value0_11() const { return ___Value0_11; }
+	inline float* get_address_of_Value0_11() { return &___Value0_11; }
+	inline void set_Value0_11(float value)
+	{
+		___Value0_11 = value;
+	}
+
+	inline static int32_t get_offset_of_Value1_12() { return static_cast<int32_t>(offsetof(InputRange_t919983432, ___Value1_12)); }
+	inline float get_Value1_12() const { return ___Value1_12; }
+	inline float* get_address_of_Value1_12() { return &___Value1_12; }
+	inline void set_Value1_12(float value)
+	{
+		___Value1_12 = value;
+	}
+
+	inline static int32_t get_offset_of_Type_13() { return static_cast<int32_t>(offsetof(InputRange_t919983432, ___Type_13)); }
+	inline int32_t get_Type_13() const { return ___Type_13; }
+	inline int32_t* get_address_of_Type_13() { return &___Type_13; }
+	inline void set_Type_13(int32_t value)
+	{
+		___Type_13 = value;
+	}
+};
+
+struct InputRange_t919983432_StaticFields
+{
+public:
+	// InControl.InputRange InControl.InputRange::None
+	InputRange_t919983432  ___None_0;
+	// InControl.InputRange InControl.InputRange::MinusOneToOne
+	InputRange_t919983432  ___MinusOneToOne_1;
+	// InControl.InputRange InControl.InputRange::OneToMinusOne
+	InputRange_t919983432  ___OneToMinusOne_2;
+	// InControl.InputRange InControl.InputRange::ZeroToOne
+	InputRange_t919983432  ___ZeroToOne_3;
+	// InControl.InputRange InControl.InputRange::ZeroToMinusOne
+	InputRange_t919983432  ___ZeroToMinusOne_4;
+	// InControl.InputRange InControl.InputRange::OneToZero
+	InputRange_t919983432  ___OneToZero_5;
+	// InControl.InputRange InControl.InputRange::MinusOneToZero
+	InputRange_t919983432  ___MinusOneToZero_6;
+	// InControl.InputRange InControl.InputRange::ZeroToNegativeInfinity
+	InputRange_t919983432  ___ZeroToNegativeInfinity_7;
+	// InControl.InputRange InControl.InputRange::ZeroToPositiveInfinity
+	InputRange_t919983432  ___ZeroToPositiveInfinity_8;
+	// InControl.InputRange InControl.InputRange::Everything
+	InputRange_t919983432  ___Everything_9;
+	// InControl.InputRange[] InControl.InputRange::TypeToRange
+	InputRangeU5BU5D_t1647641753* ___TypeToRange_10;
+
+public:
+	inline static int32_t get_offset_of_None_0() { return static_cast<int32_t>(offsetof(InputRange_t919983432_StaticFields, ___None_0)); }
+	inline InputRange_t919983432  get_None_0() const { return ___None_0; }
+	inline InputRange_t919983432 * get_address_of_None_0() { return &___None_0; }
+	inline void set_None_0(InputRange_t919983432  value)
+	{
+		___None_0 = value;
+	}
+
+	inline static int32_t get_offset_of_MinusOneToOne_1() { return static_cast<int32_t>(offsetof(InputRange_t919983432_StaticFields, ___MinusOneToOne_1)); }
+	inline InputRange_t919983432  get_MinusOneToOne_1() const { return ___MinusOneToOne_1; }
+	inline InputRange_t919983432 * get_address_of_MinusOneToOne_1() { return &___MinusOneToOne_1; }
+	inline void set_MinusOneToOne_1(InputRange_t919983432  value)
+	{
+		___MinusOneToOne_1 = value;
+	}
+
+	inline static int32_t get_offset_of_OneToMinusOne_2() { return static_cast<int32_t>(offsetof(InputRange_t919983432_StaticFields, ___OneToMinusOne_2)); }
+	inline InputRange_t919983432  get_OneToMinusOne_2() const { return ___OneToMinusOne_2; }
+	inline InputRange_t919983432 * get_address_of_OneToMinusOne_2() { return &___OneToMinusOne_2; }
+	inline void set_OneToMinusOne_2(InputRange_t919983432  value)
+	{
+		___OneToMinusOne_2 = value;
+	}
+
+	inline static int32_t get_offset_of_ZeroToOne_3() { return static_cast<int32_t>(offsetof(InputRange_t919983432_StaticFields, ___ZeroToOne_3)); }
+	inline InputRange_t919983432  get_ZeroToOne_3() const { return ___ZeroToOne_3; }
+	inline InputRange_t919983432 * get_address_of_ZeroToOne_3() { return &___ZeroToOne_3; }
+	inline void set_ZeroToOne_3(InputRange_t919983432  value)
+	{
+		___ZeroToOne_3 = value;
+	}
+
+	inline static int32_t get_offset_of_ZeroToMinusOne_4() { return static_cast<int32_t>(offsetof(InputRange_t919983432_StaticFields, ___ZeroToMinusOne_4)); }
+	inline InputRange_t919983432  get_ZeroToMinusOne_4() const { return ___ZeroToMinusOne_4; }
+	inline InputRange_t919983432 * get_address_of_ZeroToMinusOne_4() { return &___ZeroToMinusOne_4; }
+	inline void set_ZeroToMinusOne_4(InputRange_t919983432  value)
+	{
+		___ZeroToMinusOne_4 = value;
+	}
+
+	inline static int32_t get_offset_of_OneToZero_5() { return static_cast<int32_t>(offsetof(InputRange_t919983432_StaticFields, ___OneToZero_5)); }
+	inline InputRange_t919983432  get_OneToZero_5() const { return ___OneToZero_5; }
+	inline InputRange_t919983432 * get_address_of_OneToZero_5() { return &___OneToZero_5; }
+	inline void set_OneToZero_5(InputRange_t919983432  value)
+	{
+		___OneToZero_5 = value;
+	}
+
+	inline static int32_t get_offset_of_MinusOneToZero_6() { return static_cast<int32_t>(offsetof(InputRange_t919983432_StaticFields, ___MinusOneToZero_6)); }
+	inline InputRange_t919983432  get_MinusOneToZero_6() const { return ___MinusOneToZero_6; }
+	inline InputRange_t919983432 * get_address_of_MinusOneToZero_6() { return &___MinusOneToZero_6; }
+	inline void set_MinusOneToZero_6(InputRange_t919983432  value)
+	{
+		___MinusOneToZero_6 = value;
+	}
+
+	inline static int32_t get_offset_of_ZeroToNegativeInfinity_7() { return static_cast<int32_t>(offsetof(InputRange_t919983432_StaticFields, ___ZeroToNegativeInfinity_7)); }
+	inline InputRange_t919983432  get_ZeroToNegativeInfinity_7() const { return ___ZeroToNegativeInfinity_7; }
+	inline InputRange_t919983432 * get_address_of_ZeroToNegativeInfinity_7() { return &___ZeroToNegativeInfinity_7; }
+	inline void set_ZeroToNegativeInfinity_7(InputRange_t919983432  value)
+	{
+		___ZeroToNegativeInfinity_7 = value;
+	}
+
+	inline static int32_t get_offset_of_ZeroToPositiveInfinity_8() { return static_cast<int32_t>(offsetof(InputRange_t919983432_StaticFields, ___ZeroToPositiveInfinity_8)); }
+	inline InputRange_t919983432  get_ZeroToPositiveInfinity_8() const { return ___ZeroToPositiveInfinity_8; }
+	inline InputRange_t919983432 * get_address_of_ZeroToPositiveInfinity_8() { return &___ZeroToPositiveInfinity_8; }
+	inline void set_ZeroToPositiveInfinity_8(InputRange_t919983432  value)
+	{
+		___ZeroToPositiveInfinity_8 = value;
+	}
+
+	inline static int32_t get_offset_of_Everything_9() { return static_cast<int32_t>(offsetof(InputRange_t919983432_StaticFields, ___Everything_9)); }
+	inline InputRange_t919983432  get_Everything_9() const { return ___Everything_9; }
+	inline InputRange_t919983432 * get_address_of_Everything_9() { return &___Everything_9; }
+	inline void set_Everything_9(InputRange_t919983432  value)
+	{
+		___Everything_9 = value;
+	}
+
+	inline static int32_t get_offset_of_TypeToRange_10() { return static_cast<int32_t>(offsetof(InputRange_t919983432_StaticFields, ___TypeToRange_10)); }
+	inline InputRangeU5BU5D_t1647641753* get_TypeToRange_10() const { return ___TypeToRange_10; }
+	inline InputRangeU5BU5D_t1647641753** get_address_of_TypeToRange_10() { return &___TypeToRange_10; }
+	inline void set_TypeToRange_10(InputRangeU5BU5D_t1647641753* value)
+	{
+		___TypeToRange_10 = value;
+		Il2CppCodeGenWriteBarrier((&___TypeToRange_10), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // INPUTRANGE_T919983432_H
 #ifndef NULLABLE_1_T334296202_H
 #define NULLABLE_1_T334296202_H
 #ifdef __clang__
@@ -1714,47 +1677,156 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // NULLABLE_1_T334296202_H
-#ifndef NATIVEINPUTDEVICEPROFILE_T2018902418_H
-#define NATIVEINPUTDEVICEPROFILE_T2018902418_H
+#ifndef NULLABLE_1_T1172541239_H
+#define NULLABLE_1_T1172541239_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 
-// InControl.NativeInputDeviceProfile
-struct  NativeInputDeviceProfile_t2018902418  : public InputDeviceProfile_t2270363578
+// System.Nullable`1<InControl.NativeDeviceTransportType>
+struct  Nullable_1_t1172541239 
 {
 public:
-	// InControl.NativeInputDeviceMatcher[] InControl.NativeInputDeviceProfile::Matchers
-	NativeInputDeviceMatcherU5BU5D_t19578164* ___Matchers_14;
-	// InControl.NativeInputDeviceMatcher[] InControl.NativeInputDeviceProfile::LastResortMatchers
-	NativeInputDeviceMatcherU5BU5D_t19578164* ___LastResortMatchers_15;
+	// T System.Nullable`1::value
+	uint16_t ___value_0;
+	// System.Boolean System.Nullable`1::has_value
+	bool ___has_value_1;
 
 public:
-	inline static int32_t get_offset_of_Matchers_14() { return static_cast<int32_t>(offsetof(NativeInputDeviceProfile_t2018902418, ___Matchers_14)); }
-	inline NativeInputDeviceMatcherU5BU5D_t19578164* get_Matchers_14() const { return ___Matchers_14; }
-	inline NativeInputDeviceMatcherU5BU5D_t19578164** get_address_of_Matchers_14() { return &___Matchers_14; }
-	inline void set_Matchers_14(NativeInputDeviceMatcherU5BU5D_t19578164* value)
+	inline static int32_t get_offset_of_value_0() { return static_cast<int32_t>(offsetof(Nullable_1_t1172541239, ___value_0)); }
+	inline uint16_t get_value_0() const { return ___value_0; }
+	inline uint16_t* get_address_of_value_0() { return &___value_0; }
+	inline void set_value_0(uint16_t value)
 	{
-		___Matchers_14 = value;
-		Il2CppCodeGenWriteBarrier((&___Matchers_14), value);
+		___value_0 = value;
 	}
 
-	inline static int32_t get_offset_of_LastResortMatchers_15() { return static_cast<int32_t>(offsetof(NativeInputDeviceProfile_t2018902418, ___LastResortMatchers_15)); }
-	inline NativeInputDeviceMatcherU5BU5D_t19578164* get_LastResortMatchers_15() const { return ___LastResortMatchers_15; }
-	inline NativeInputDeviceMatcherU5BU5D_t19578164** get_address_of_LastResortMatchers_15() { return &___LastResortMatchers_15; }
-	inline void set_LastResortMatchers_15(NativeInputDeviceMatcherU5BU5D_t19578164* value)
+	inline static int32_t get_offset_of_has_value_1() { return static_cast<int32_t>(offsetof(Nullable_1_t1172541239, ___has_value_1)); }
+	inline bool get_has_value_1() const { return ___has_value_1; }
+	inline bool* get_address_of_has_value_1() { return &___has_value_1; }
+	inline void set_has_value_1(bool value)
 	{
-		___LastResortMatchers_15 = value;
-		Il2CppCodeGenWriteBarrier((&___LastResortMatchers_15), value);
+		___has_value_1 = value;
 	}
 };
 
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // NATIVEINPUTDEVICEPROFILE_T2018902418_H
+#endif // NULLABLE_1_T1172541239_H
+#ifndef NATIVEINPUTDEVICEMATCHER_T1029808777_H
+#define NATIVEINPUTDEVICEMATCHER_T1029808777_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// InControl.NativeInputDeviceMatcher
+struct  NativeInputDeviceMatcher_t1029808777  : public RuntimeObject
+{
+public:
+	// System.Nullable`1<System.UInt16> InControl.NativeInputDeviceMatcher::VendorID
+	Nullable_1_t3900287040  ___VendorID_0;
+	// System.Nullable`1<System.UInt16> InControl.NativeInputDeviceMatcher::ProductID
+	Nullable_1_t3900287040  ___ProductID_1;
+	// System.Nullable`1<System.UInt32> InControl.NativeInputDeviceMatcher::VersionNumber
+	Nullable_1_t4282624060  ___VersionNumber_2;
+	// System.Nullable`1<InControl.NativeDeviceDriverType> InControl.NativeInputDeviceMatcher::DriverType
+	Nullable_1_t334296202  ___DriverType_3;
+	// System.Nullable`1<InControl.NativeDeviceTransportType> InControl.NativeInputDeviceMatcher::TransportType
+	Nullable_1_t1172541239  ___TransportType_4;
+	// System.String[] InControl.NativeInputDeviceMatcher::NameLiterals
+	StringU5BU5D_t1281789340* ___NameLiterals_5;
+	// System.String[] InControl.NativeInputDeviceMatcher::NamePatterns
+	StringU5BU5D_t1281789340* ___NamePatterns_6;
+
+public:
+	inline static int32_t get_offset_of_VendorID_0() { return static_cast<int32_t>(offsetof(NativeInputDeviceMatcher_t1029808777, ___VendorID_0)); }
+	inline Nullable_1_t3900287040  get_VendorID_0() const { return ___VendorID_0; }
+	inline Nullable_1_t3900287040 * get_address_of_VendorID_0() { return &___VendorID_0; }
+	inline void set_VendorID_0(Nullable_1_t3900287040  value)
+	{
+		___VendorID_0 = value;
+	}
+
+	inline static int32_t get_offset_of_ProductID_1() { return static_cast<int32_t>(offsetof(NativeInputDeviceMatcher_t1029808777, ___ProductID_1)); }
+	inline Nullable_1_t3900287040  get_ProductID_1() const { return ___ProductID_1; }
+	inline Nullable_1_t3900287040 * get_address_of_ProductID_1() { return &___ProductID_1; }
+	inline void set_ProductID_1(Nullable_1_t3900287040  value)
+	{
+		___ProductID_1 = value;
+	}
+
+	inline static int32_t get_offset_of_VersionNumber_2() { return static_cast<int32_t>(offsetof(NativeInputDeviceMatcher_t1029808777, ___VersionNumber_2)); }
+	inline Nullable_1_t4282624060  get_VersionNumber_2() const { return ___VersionNumber_2; }
+	inline Nullable_1_t4282624060 * get_address_of_VersionNumber_2() { return &___VersionNumber_2; }
+	inline void set_VersionNumber_2(Nullable_1_t4282624060  value)
+	{
+		___VersionNumber_2 = value;
+	}
+
+	inline static int32_t get_offset_of_DriverType_3() { return static_cast<int32_t>(offsetof(NativeInputDeviceMatcher_t1029808777, ___DriverType_3)); }
+	inline Nullable_1_t334296202  get_DriverType_3() const { return ___DriverType_3; }
+	inline Nullable_1_t334296202 * get_address_of_DriverType_3() { return &___DriverType_3; }
+	inline void set_DriverType_3(Nullable_1_t334296202  value)
+	{
+		___DriverType_3 = value;
+	}
+
+	inline static int32_t get_offset_of_TransportType_4() { return static_cast<int32_t>(offsetof(NativeInputDeviceMatcher_t1029808777, ___TransportType_4)); }
+	inline Nullable_1_t1172541239  get_TransportType_4() const { return ___TransportType_4; }
+	inline Nullable_1_t1172541239 * get_address_of_TransportType_4() { return &___TransportType_4; }
+	inline void set_TransportType_4(Nullable_1_t1172541239  value)
+	{
+		___TransportType_4 = value;
+	}
+
+	inline static int32_t get_offset_of_NameLiterals_5() { return static_cast<int32_t>(offsetof(NativeInputDeviceMatcher_t1029808777, ___NameLiterals_5)); }
+	inline StringU5BU5D_t1281789340* get_NameLiterals_5() const { return ___NameLiterals_5; }
+	inline StringU5BU5D_t1281789340** get_address_of_NameLiterals_5() { return &___NameLiterals_5; }
+	inline void set_NameLiterals_5(StringU5BU5D_t1281789340* value)
+	{
+		___NameLiterals_5 = value;
+		Il2CppCodeGenWriteBarrier((&___NameLiterals_5), value);
+	}
+
+	inline static int32_t get_offset_of_NamePatterns_6() { return static_cast<int32_t>(offsetof(NativeInputDeviceMatcher_t1029808777, ___NamePatterns_6)); }
+	inline StringU5BU5D_t1281789340* get_NamePatterns_6() const { return ___NamePatterns_6; }
+	inline StringU5BU5D_t1281789340** get_address_of_NamePatterns_6() { return &___NamePatterns_6; }
+	inline void set_NamePatterns_6(StringU5BU5D_t1281789340* value)
+	{
+		___NamePatterns_6 = value;
+		Il2CppCodeGenWriteBarrier((&___NamePatterns_6), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // NATIVEINPUTDEVICEMATCHER_T1029808777_H
+#ifndef UNITYINPUTDEVICEPROFILEBASE_T3429842239_H
+#define UNITYINPUTDEVICEPROFILEBASE_T3429842239_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// InControl.UnityInputDeviceProfileBase
+struct  UnityInputDeviceProfileBase_t3429842239  : public InputDeviceProfile_t2270363578
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // UNITYINPUTDEVICEPROFILEBASE_T3429842239_H
 #ifndef INPUTCONTROLMAPPING_T3750691495_H
 #define INPUTCONTROLMAPPING_T3750691495_H
 #ifdef __clang__
@@ -1906,107 +1978,57 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // INPUTCONTROLMAPPING_T3750691495_H
-#ifndef NATIVEINPUTDEVICEMATCHER_T1029808777_H
-#define NATIVEINPUTDEVICEMATCHER_T1029808777_H
+#ifndef NATIVEINPUTDEVICEPROFILE_T2018902418_H
+#define NATIVEINPUTDEVICEPROFILE_T2018902418_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 
-// InControl.NativeInputDeviceMatcher
-struct  NativeInputDeviceMatcher_t1029808777  : public RuntimeObject
+// InControl.NativeInputDeviceProfile
+struct  NativeInputDeviceProfile_t2018902418  : public InputDeviceProfile_t2270363578
 {
 public:
-	// System.Nullable`1<System.UInt16> InControl.NativeInputDeviceMatcher::VendorID
-	Nullable_1_t3900287040  ___VendorID_0;
-	// System.Nullable`1<System.UInt16> InControl.NativeInputDeviceMatcher::ProductID
-	Nullable_1_t3900287040  ___ProductID_1;
-	// System.Nullable`1<System.UInt32> InControl.NativeInputDeviceMatcher::VersionNumber
-	Nullable_1_t4282624060  ___VersionNumber_2;
-	// System.Nullable`1<InControl.NativeDeviceDriverType> InControl.NativeInputDeviceMatcher::DriverType
-	Nullable_1_t334296202  ___DriverType_3;
-	// System.Nullable`1<InControl.NativeDeviceTransportType> InControl.NativeInputDeviceMatcher::TransportType
-	Nullable_1_t1172541239  ___TransportType_4;
-	// System.String[] InControl.NativeInputDeviceMatcher::NameLiterals
-	StringU5BU5D_t1281789340* ___NameLiterals_5;
-	// System.String[] InControl.NativeInputDeviceMatcher::NamePatterns
-	StringU5BU5D_t1281789340* ___NamePatterns_6;
+	// InControl.NativeInputDeviceMatcher[] InControl.NativeInputDeviceProfile::Matchers
+	NativeInputDeviceMatcherU5BU5D_t19578164* ___Matchers_14;
+	// InControl.NativeInputDeviceMatcher[] InControl.NativeInputDeviceProfile::LastResortMatchers
+	NativeInputDeviceMatcherU5BU5D_t19578164* ___LastResortMatchers_15;
 
 public:
-	inline static int32_t get_offset_of_VendorID_0() { return static_cast<int32_t>(offsetof(NativeInputDeviceMatcher_t1029808777, ___VendorID_0)); }
-	inline Nullable_1_t3900287040  get_VendorID_0() const { return ___VendorID_0; }
-	inline Nullable_1_t3900287040 * get_address_of_VendorID_0() { return &___VendorID_0; }
-	inline void set_VendorID_0(Nullable_1_t3900287040  value)
+	inline static int32_t get_offset_of_Matchers_14() { return static_cast<int32_t>(offsetof(NativeInputDeviceProfile_t2018902418, ___Matchers_14)); }
+	inline NativeInputDeviceMatcherU5BU5D_t19578164* get_Matchers_14() const { return ___Matchers_14; }
+	inline NativeInputDeviceMatcherU5BU5D_t19578164** get_address_of_Matchers_14() { return &___Matchers_14; }
+	inline void set_Matchers_14(NativeInputDeviceMatcherU5BU5D_t19578164* value)
 	{
-		___VendorID_0 = value;
+		___Matchers_14 = value;
+		Il2CppCodeGenWriteBarrier((&___Matchers_14), value);
 	}
 
-	inline static int32_t get_offset_of_ProductID_1() { return static_cast<int32_t>(offsetof(NativeInputDeviceMatcher_t1029808777, ___ProductID_1)); }
-	inline Nullable_1_t3900287040  get_ProductID_1() const { return ___ProductID_1; }
-	inline Nullable_1_t3900287040 * get_address_of_ProductID_1() { return &___ProductID_1; }
-	inline void set_ProductID_1(Nullable_1_t3900287040  value)
+	inline static int32_t get_offset_of_LastResortMatchers_15() { return static_cast<int32_t>(offsetof(NativeInputDeviceProfile_t2018902418, ___LastResortMatchers_15)); }
+	inline NativeInputDeviceMatcherU5BU5D_t19578164* get_LastResortMatchers_15() const { return ___LastResortMatchers_15; }
+	inline NativeInputDeviceMatcherU5BU5D_t19578164** get_address_of_LastResortMatchers_15() { return &___LastResortMatchers_15; }
+	inline void set_LastResortMatchers_15(NativeInputDeviceMatcherU5BU5D_t19578164* value)
 	{
-		___ProductID_1 = value;
-	}
-
-	inline static int32_t get_offset_of_VersionNumber_2() { return static_cast<int32_t>(offsetof(NativeInputDeviceMatcher_t1029808777, ___VersionNumber_2)); }
-	inline Nullable_1_t4282624060  get_VersionNumber_2() const { return ___VersionNumber_2; }
-	inline Nullable_1_t4282624060 * get_address_of_VersionNumber_2() { return &___VersionNumber_2; }
-	inline void set_VersionNumber_2(Nullable_1_t4282624060  value)
-	{
-		___VersionNumber_2 = value;
-	}
-
-	inline static int32_t get_offset_of_DriverType_3() { return static_cast<int32_t>(offsetof(NativeInputDeviceMatcher_t1029808777, ___DriverType_3)); }
-	inline Nullable_1_t334296202  get_DriverType_3() const { return ___DriverType_3; }
-	inline Nullable_1_t334296202 * get_address_of_DriverType_3() { return &___DriverType_3; }
-	inline void set_DriverType_3(Nullable_1_t334296202  value)
-	{
-		___DriverType_3 = value;
-	}
-
-	inline static int32_t get_offset_of_TransportType_4() { return static_cast<int32_t>(offsetof(NativeInputDeviceMatcher_t1029808777, ___TransportType_4)); }
-	inline Nullable_1_t1172541239  get_TransportType_4() const { return ___TransportType_4; }
-	inline Nullable_1_t1172541239 * get_address_of_TransportType_4() { return &___TransportType_4; }
-	inline void set_TransportType_4(Nullable_1_t1172541239  value)
-	{
-		___TransportType_4 = value;
-	}
-
-	inline static int32_t get_offset_of_NameLiterals_5() { return static_cast<int32_t>(offsetof(NativeInputDeviceMatcher_t1029808777, ___NameLiterals_5)); }
-	inline StringU5BU5D_t1281789340* get_NameLiterals_5() const { return ___NameLiterals_5; }
-	inline StringU5BU5D_t1281789340** get_address_of_NameLiterals_5() { return &___NameLiterals_5; }
-	inline void set_NameLiterals_5(StringU5BU5D_t1281789340* value)
-	{
-		___NameLiterals_5 = value;
-		Il2CppCodeGenWriteBarrier((&___NameLiterals_5), value);
-	}
-
-	inline static int32_t get_offset_of_NamePatterns_6() { return static_cast<int32_t>(offsetof(NativeInputDeviceMatcher_t1029808777, ___NamePatterns_6)); }
-	inline StringU5BU5D_t1281789340* get_NamePatterns_6() const { return ___NamePatterns_6; }
-	inline StringU5BU5D_t1281789340** get_address_of_NamePatterns_6() { return &___NamePatterns_6; }
-	inline void set_NamePatterns_6(StringU5BU5D_t1281789340* value)
-	{
-		___NamePatterns_6 = value;
-		Il2CppCodeGenWriteBarrier((&___NamePatterns_6), value);
+		___LastResortMatchers_15 = value;
+		Il2CppCodeGenWriteBarrier((&___LastResortMatchers_15), value);
 	}
 };
 
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // NATIVEINPUTDEVICEMATCHER_T1029808777_H
-#ifndef UNITYINPUTDEVICEPROFILEBASE_T3429842239_H
-#define UNITYINPUTDEVICEPROFILEBASE_T3429842239_H
+#endif // NATIVEINPUTDEVICEPROFILE_T2018902418_H
+#ifndef XBOX360WIRELESSWINDOWSNATIVEPROFILE_T3685581764_H
+#define XBOX360WIRELESSWINDOWSNATIVEPROFILE_T3685581764_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 
-// InControl.UnityInputDeviceProfileBase
-struct  UnityInputDeviceProfileBase_t3429842239  : public InputDeviceProfile_t2270363578
+// InControl.NativeProfile.Xbox360WirelessWindowsNativeProfile
+struct  Xbox360WirelessWindowsNativeProfile_t3685581764  : public NativeInputDeviceProfile_t2018902418
 {
 public:
 
@@ -2016,147 +2038,7 @@ public:
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // UNITYINPUTDEVICEPROFILEBASE_T3429842239_H
-#ifndef XBOXONEELITEWINDOWSNATIVEPROFILE_T3124712877_H
-#define XBOXONEELITEWINDOWSNATIVEPROFILE_T3124712877_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// InControl.NativeProfile.XboxOneEliteWindowsNativeProfile
-struct  XboxOneEliteWindowsNativeProfile_t3124712877  : public NativeInputDeviceProfile_t2018902418
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // XBOXONEELITEWINDOWSNATIVEPROFILE_T3124712877_H
-#ifndef NVIDIASHIELDWINDOWSNATIVEPROFILE_T1783928121_H
-#define NVIDIASHIELDWINDOWSNATIVEPROFILE_T1783928121_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// InControl.NativeProfile.NVidiaShieldWindowsNativeProfile
-struct  NVidiaShieldWindowsNativeProfile_t1783928121  : public NativeInputDeviceProfile_t2018902418
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // NVIDIASHIELDWINDOWSNATIVEPROFILE_T1783928121_H
-#ifndef RAZERSERVALWINDOWSNATIVEPROFILE_T2031373214_H
-#define RAZERSERVALWINDOWSNATIVEPROFILE_T2031373214_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// InControl.NativeProfile.RazerServalWindowsNativeProfile
-struct  RazerServalWindowsNativeProfile_t2031373214  : public NativeInputDeviceProfile_t2018902418
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // RAZERSERVALWINDOWSNATIVEPROFILE_T2031373214_H
-#ifndef XBOXONEWINDOWS10NATIVEPROFILE_T686989805_H
-#define XBOXONEWINDOWS10NATIVEPROFILE_T686989805_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// InControl.NativeProfile.XboxOneWindows10NativeProfile
-struct  XboxOneWindows10NativeProfile_t686989805  : public NativeInputDeviceProfile_t2018902418
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // XBOXONEWINDOWS10NATIVEPROFILE_T686989805_H
-#ifndef XBOXONEWINDOWS10AENATIVEPROFILE_T3622036068_H
-#define XBOXONEWINDOWS10AENATIVEPROFILE_T3622036068_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// InControl.NativeProfile.XboxOneWindows10AENativeProfile
-struct  XboxOneWindows10AENativeProfile_t3622036068  : public NativeInputDeviceProfile_t2018902418
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // XBOXONEWINDOWS10AENATIVEPROFILE_T3622036068_H
-#ifndef XBOXONEWINDOWSNATIVEPROFILE_T4202624119_H
-#define XBOXONEWINDOWSNATIVEPROFILE_T4202624119_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// InControl.NativeProfile.XboxOneWindowsNativeProfile
-struct  XboxOneWindowsNativeProfile_t4202624119  : public NativeInputDeviceProfile_t2018902418
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // XBOXONEWINDOWSNATIVEPROFILE_T4202624119_H
-#ifndef PCTWINSHOCKWINDOWSNATIVEPROFILE_T1561701682_H
-#define PCTWINSHOCKWINDOWSNATIVEPROFILE_T1561701682_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// InControl.NativeProfile.PCTWINSHOCKWindowsNativeProfile
-struct  PCTWINSHOCKWindowsNativeProfile_t1561701682  : public NativeInputDeviceProfile_t2018902418
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // PCTWINSHOCKWINDOWSNATIVEPROFILE_T1561701682_H
+#endif // XBOX360WIRELESSWINDOWSNATIVEPROFILE_T3685581764_H
 #ifndef STEAMWINDOWSNATIVEPROFILE_T1326397371_H
 #define STEAMWINDOWSNATIVEPROFILE_T1326397371_H
 #ifdef __clang__
@@ -2177,16 +2059,16 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // STEAMWINDOWSNATIVEPROFILE_T1326397371_H
-#ifndef XBOX360DRIVERMACPROFILE_T1968726057_H
-#define XBOX360DRIVERMACPROFILE_T1968726057_H
+#ifndef RAZERSERVALWINDOWSNATIVEPROFILE_T2031373214_H
+#define RAZERSERVALWINDOWSNATIVEPROFILE_T2031373214_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 
-// InControl.NativeProfile.Xbox360DriverMacProfile
-struct  Xbox360DriverMacProfile_t1968726057  : public NativeInputDeviceProfile_t2018902418
+// InControl.NativeProfile.RazerServalWindowsNativeProfile
+struct  RazerServalWindowsNativeProfile_t2031373214  : public NativeInputDeviceProfile_t2018902418
 {
 public:
 
@@ -2196,7 +2078,47 @@ public:
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // XBOX360DRIVERMACPROFILE_T1968726057_H
+#endif // RAZERSERVALWINDOWSNATIVEPROFILE_T2031373214_H
+#ifndef XBOXONEELITEWINDOWS10AENATIVEPROFILE_T2436047249_H
+#define XBOXONEELITEWINDOWS10AENATIVEPROFILE_T2436047249_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// InControl.NativeProfile.XboxOneEliteWindows10AENativeProfile
+struct  XboxOneEliteWindows10AENativeProfile_t2436047249  : public NativeInputDeviceProfile_t2018902418
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // XBOXONEELITEWINDOWS10AENATIVEPROFILE_T2436047249_H
+#ifndef XBOX360WIREDWINDOWSNATIVEPROFILE_T2246930952_H
+#define XBOX360WIREDWINDOWSNATIVEPROFILE_T2246930952_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// InControl.NativeProfile.Xbox360WiredWindowsNativeProfile
+struct  Xbox360WiredWindowsNativeProfile_t2246930952  : public NativeInputDeviceProfile_t2018902418
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // XBOX360WIREDWINDOWSNATIVEPROFILE_T2246930952_H
 #ifndef PLAYSTATION4WINDOWSNATIVEPROFILE_T1124891012_H
 #define PLAYSTATION4WINDOWSNATIVEPROFILE_T1124891012_H
 #ifdef __clang__
@@ -2237,6 +2159,26 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // PLAYSTATION4MACPROFILE_T119028265_H
+#ifndef XBOX360DRIVERMACPROFILE_T1968726057_H
+#define XBOX360DRIVERMACPROFILE_T1968726057_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// InControl.NativeProfile.Xbox360DriverMacProfile
+struct  Xbox360DriverMacProfile_t1968726057  : public NativeInputDeviceProfile_t2018902418
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // XBOX360DRIVERMACPROFILE_T1968726057_H
 #ifndef PLAYSTATION3MACPROFILE_T25246249_H
 #define PLAYSTATION3MACPROFILE_T25246249_H
 #ifdef __clang__
@@ -2257,16 +2199,16 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // PLAYSTATION3MACPROFILE_T25246249_H
-#ifndef XBOX360WIREDWINDOWSNATIVEPROFILE_T2246930952_H
-#define XBOX360WIREDWINDOWSNATIVEPROFILE_T2246930952_H
+#ifndef PCTWINSHOCKWINDOWSNATIVEPROFILE_T1561701682_H
+#define PCTWINSHOCKWINDOWSNATIVEPROFILE_T1561701682_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 
-// InControl.NativeProfile.Xbox360WiredWindowsNativeProfile
-struct  Xbox360WiredWindowsNativeProfile_t2246930952  : public NativeInputDeviceProfile_t2018902418
+// InControl.NativeProfile.PCTWINSHOCKWindowsNativeProfile
+struct  PCTWINSHOCKWindowsNativeProfile_t1561701682  : public NativeInputDeviceProfile_t2018902418
 {
 public:
 
@@ -2276,17 +2218,17 @@ public:
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // XBOX360WIREDWINDOWSNATIVEPROFILE_T2246930952_H
-#ifndef XBOX360WIRELESSWINDOWSNATIVEPROFILE_T3685581764_H
-#define XBOX360WIRELESSWINDOWSNATIVEPROFILE_T3685581764_H
+#endif // PCTWINSHOCKWINDOWSNATIVEPROFILE_T1561701682_H
+#ifndef XBOXONEELITEWINDOWSNATIVEPROFILE_T3124712877_H
+#define XBOXONEELITEWINDOWSNATIVEPROFILE_T3124712877_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 
-// InControl.NativeProfile.Xbox360WirelessWindowsNativeProfile
-struct  Xbox360WirelessWindowsNativeProfile_t3685581764  : public NativeInputDeviceProfile_t2018902418
+// InControl.NativeProfile.XboxOneEliteWindowsNativeProfile
+struct  XboxOneEliteWindowsNativeProfile_t3124712877  : public NativeInputDeviceProfile_t2018902418
 {
 public:
 
@@ -2296,17 +2238,17 @@ public:
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // XBOX360WIRELESSWINDOWSNATIVEPROFILE_T3685581764_H
-#ifndef XBOXONEELITEWINDOWS10AENATIVEPROFILE_T2436047249_H
-#define XBOXONEELITEWINDOWS10AENATIVEPROFILE_T2436047249_H
+#endif // XBOXONEELITEWINDOWSNATIVEPROFILE_T3124712877_H
+#ifndef LOGITECHF710MODEDWINDOWSNATIVEPROFILE_T2234735030_H
+#define LOGITECHF710MODEDWINDOWSNATIVEPROFILE_T2234735030_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 
-// InControl.NativeProfile.XboxOneEliteWindows10AENativeProfile
-struct  XboxOneEliteWindows10AENativeProfile_t2436047249  : public NativeInputDeviceProfile_t2018902418
+// InControl.NativeProfile.LogitechF710ModeDWindowsNativeProfile
+struct  LogitechF710ModeDWindowsNativeProfile_t2234735030  : public NativeInputDeviceProfile_t2018902418
 {
 public:
 
@@ -2316,17 +2258,17 @@ public:
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // XBOXONEELITEWINDOWS10AENATIVEPROFILE_T2436047249_H
-#ifndef XBOXONEDRIVERMACPROFILE_T4249812493_H
-#define XBOXONEDRIVERMACPROFILE_T4249812493_H
+#endif // LOGITECHF710MODEDWINDOWSNATIVEPROFILE_T2234735030_H
+#ifndef NINTENDOSWITCHPROWINDOWSNATIVEPROFILE_T4236138353_H
+#define NINTENDOSWITCHPROWINDOWSNATIVEPROFILE_T4236138353_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 
-// InControl.NativeProfile.XboxOneDriverMacProfile
-struct  XboxOneDriverMacProfile_t4249812493  : public NativeInputDeviceProfile_t2018902418
+// InControl.NintendoSwitchProWindowsNativeProfile
+struct  NintendoSwitchProWindowsNativeProfile_t4236138353  : public NativeInputDeviceProfile_t2018902418
 {
 public:
 
@@ -2336,7 +2278,7 @@ public:
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // XBOXONEDRIVERMACPROFILE_T4249812493_H
+#endif // NINTENDOSWITCHPROWINDOWSNATIVEPROFILE_T4236138353_H
 #ifndef NINTENDOSWITCHPROMACNATIVEPROFILE_T3897883157_H
 #define NINTENDOSWITCHPROMACNATIVEPROFILE_T3897883157_H
 #ifdef __clang__
@@ -2357,26 +2299,6 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // NINTENDOSWITCHPROMACNATIVEPROFILE_T3897883157_H
-#ifndef LOGITECHF710MODEXWINDOWSNATIVEPROFILE_T2815703866_H
-#define LOGITECHF710MODEXWINDOWSNATIVEPROFILE_T2815703866_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// InControl.NativeProfile.LogitechF710ModeXWindowsNativeProfile
-struct  LogitechF710ModeXWindowsNativeProfile_t2815703866  : public NativeInputDeviceProfile_t2018902418
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // LOGITECHF710MODEXWINDOWSNATIVEPROFILE_T2815703866_H
 #ifndef UNITYINPUTDEVICEPROFILE_T3356944389_H
 #define UNITYINPUTDEVICEPROFILE_T3356944389_H
 #ifdef __clang__
@@ -2983,46 +2905,6 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // UNITYINPUTDEVICEPROFILE_T3356944389_H
-#ifndef NINTENDOSWITCHPROWINDOWSNATIVEPROFILE_T4236138353_H
-#define NINTENDOSWITCHPROWINDOWSNATIVEPROFILE_T4236138353_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// InControl.NintendoSwitchProWindowsNativeProfile
-struct  NintendoSwitchProWindowsNativeProfile_t4236138353  : public NativeInputDeviceProfile_t2018902418
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // NINTENDOSWITCHPROWINDOWSNATIVEPROFILE_T4236138353_H
-#ifndef XBOXONEWIRELESSADAPTERWINDOWSNATIVEPROFILE_T3354516890_H
-#define XBOXONEWIRELESSADAPTERWINDOWSNATIVEPROFILE_T3354516890_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// InControl.NativeProfile.XboxOneWirelessAdapterWindowsNativeProfile
-struct  XboxOneWirelessAdapterWindowsNativeProfile_t3354516890  : public NativeInputDeviceProfile_t2018902418
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // XBOXONEWIRELESSADAPTERWINDOWSNATIVEPROFILE_T3354516890_H
 #ifndef XINPUTWINDOWSNATIVEPROFILE_T1631087183_H
 #define XINPUTWINDOWSNATIVEPROFILE_T1631087183_H
 #ifdef __clang__
@@ -3043,16 +2925,16 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // XINPUTWINDOWSNATIVEPROFILE_T1631087183_H
-#ifndef ROCKCANDYXBOX360CONTROLLERMACPROFILE_T136885549_H
-#define ROCKCANDYXBOX360CONTROLLERMACPROFILE_T136885549_H
+#ifndef XBOXONEWIRELESSADAPTERWINDOWSNATIVEPROFILE_T3354516890_H
+#define XBOXONEWIRELESSADAPTERWINDOWSNATIVEPROFILE_T3354516890_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 
-// InControl.NativeProfile.RockCandyXbox360ControllerMacProfile
-struct  RockCandyXbox360ControllerMacProfile_t136885549  : public Xbox360DriverMacProfile_t1968726057
+// InControl.NativeProfile.XboxOneWirelessAdapterWindowsNativeProfile
+struct  XboxOneWirelessAdapterWindowsNativeProfile_t3354516890  : public NativeInputDeviceProfile_t2018902418
 {
 public:
 
@@ -3062,17 +2944,17 @@ public:
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // ROCKCANDYXBOX360CONTROLLERMACPROFILE_T136885549_H
-#ifndef ROCKCANDYXBOXONECONTROLLERMACPROFILE_T263496214_H
-#define ROCKCANDYXBOXONECONTROLLERMACPROFILE_T263496214_H
+#endif // XBOXONEWIRELESSADAPTERWINDOWSNATIVEPROFILE_T3354516890_H
+#ifndef XBOXONEWINDOWSNATIVEPROFILE_T4202624119_H
+#define XBOXONEWINDOWSNATIVEPROFILE_T4202624119_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 
-// InControl.NativeProfile.RockCandyXboxOneControllerMacProfile
-struct  RockCandyXboxOneControllerMacProfile_t263496214  : public XboxOneDriverMacProfile_t4249812493
+// InControl.NativeProfile.XboxOneWindowsNativeProfile
+struct  XboxOneWindowsNativeProfile_t4202624119  : public NativeInputDeviceProfile_t2018902418
 {
 public:
 
@@ -3082,17 +2964,17 @@ public:
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // ROCKCANDYXBOXONECONTROLLERMACPROFILE_T263496214_H
-#ifndef THRUSTMASTERFERRARI458RACINGWHEELMACPROFILE_T2598697958_H
-#define THRUSTMASTERFERRARI458RACINGWHEELMACPROFILE_T2598697958_H
+#endif // XBOXONEWINDOWSNATIVEPROFILE_T4202624119_H
+#ifndef XBOXONEWINDOWS10NATIVEPROFILE_T686989805_H
+#define XBOXONEWINDOWS10NATIVEPROFILE_T686989805_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 
-// InControl.NativeProfile.ThrustmasterFerrari458RacingWheelMacProfile
-struct  ThrustmasterFerrari458RacingWheelMacProfile_t2598697958  : public Xbox360DriverMacProfile_t1968726057
+// InControl.NativeProfile.XboxOneWindows10NativeProfile
+struct  XboxOneWindows10NativeProfile_t686989805  : public NativeInputDeviceProfile_t2018902418
 {
 public:
 
@@ -3102,17 +2984,17 @@ public:
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // THRUSTMASTERFERRARI458RACINGWHEELMACPROFILE_T2598697958_H
-#ifndef NVIDIASHIELDWINPROFILE_T1670138565_H
-#define NVIDIASHIELDWINPROFILE_T1670138565_H
+#endif // XBOXONEWINDOWS10NATIVEPROFILE_T686989805_H
+#ifndef XBOXONEWINDOWS10AENATIVEPROFILE_T3622036068_H
+#define XBOXONEWINDOWS10AENATIVEPROFILE_T3622036068_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 
-// InControl.NVidiaShieldWinProfile
-struct  NVidiaShieldWinProfile_t1670138565  : public UnityInputDeviceProfile_t3356944389
+// InControl.NativeProfile.XboxOneWindows10AENativeProfile
+struct  XboxOneWindows10AENativeProfile_t3622036068  : public NativeInputDeviceProfile_t2018902418
 {
 public:
 
@@ -3122,17 +3004,17 @@ public:
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // NVIDIASHIELDWINPROFILE_T1670138565_H
-#ifndef SAITEKXBOX360CONTROLLERMACPROFILE_T2825766300_H
-#define SAITEKXBOX360CONTROLLERMACPROFILE_T2825766300_H
+#endif // XBOXONEWINDOWS10AENATIVEPROFILE_T3622036068_H
+#ifndef LOGITECHF710MODEXWINDOWSNATIVEPROFILE_T2815703866_H
+#define LOGITECHF710MODEXWINDOWSNATIVEPROFILE_T2815703866_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 
-// InControl.NativeProfile.SaitekXbox360ControllerMacProfile
-struct  SaitekXbox360ControllerMacProfile_t2825766300  : public Xbox360DriverMacProfile_t1968726057
+// InControl.NativeProfile.LogitechF710ModeXWindowsNativeProfile
+struct  LogitechF710ModeXWindowsNativeProfile_t2815703866  : public NativeInputDeviceProfile_t2018902418
 {
 public:
 
@@ -3142,17 +3024,17 @@ public:
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // SAITEKXBOX360CONTROLLERMACPROFILE_T2825766300_H
-#ifndef RAZERSTRIKECONTROLLERMACPROFILE_T1132282710_H
-#define RAZERSTRIKECONTROLLERMACPROFILE_T1132282710_H
+#endif // LOGITECHF710MODEXWINDOWSNATIVEPROFILE_T2815703866_H
+#ifndef NVIDIASHIELDWINDOWSNATIVEPROFILE_T1783928121_H
+#define NVIDIASHIELDWINDOWSNATIVEPROFILE_T1783928121_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 
-// InControl.NativeProfile.RazerStrikeControllerMacProfile
-struct  RazerStrikeControllerMacProfile_t1132282710  : public Xbox360DriverMacProfile_t1968726057
+// InControl.NativeProfile.NVidiaShieldWindowsNativeProfile
+struct  NVidiaShieldWindowsNativeProfile_t1783928121  : public NativeInputDeviceProfile_t2018902418
 {
 public:
 
@@ -3162,17 +3044,17 @@ public:
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // RAZERSTRIKECONTROLLERMACPROFILE_T1132282710_H
-#ifndef RAZERWILDCATCONTROLLERMACPROFILE_T1980770595_H
-#define RAZERWILDCATCONTROLLERMACPROFILE_T1980770595_H
+#endif // NVIDIASHIELDWINDOWSNATIVEPROFILE_T1783928121_H
+#ifndef XBOXONEDRIVERMACPROFILE_T4249812493_H
+#define XBOXONEDRIVERMACPROFILE_T4249812493_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 
-// InControl.NativeProfile.RazerWildcatControllerMacProfile
-struct  RazerWildcatControllerMacProfile_t1980770595  : public Xbox360DriverMacProfile_t1968726057
+// InControl.NativeProfile.XboxOneDriverMacProfile
+struct  XboxOneDriverMacProfile_t4249812493  : public NativeInputDeviceProfile_t2018902418
 {
 public:
 
@@ -3182,7 +3064,1147 @@ public:
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // RAZERWILDCATCONTROLLERMACPROFILE_T1980770595_H
+#endif // XBOXONEDRIVERMACPROFILE_T4249812493_H
+#ifndef MADCATZSOULCALIBERFIGHTSTICKMACPROFILE_T2806805970_H
+#define MADCATZSOULCALIBERFIGHTSTICKMACPROFILE_T2806805970_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// InControl.NativeProfile.MadCatzSoulCaliberFightStickMacProfile
+struct  MadCatzSoulCaliberFightStickMacProfile_t2806805970  : public Xbox360DriverMacProfile_t1968726057
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // MADCATZSOULCALIBERFIGHTSTICKMACPROFILE_T2806805970_H
+#ifndef MADCATZSF4FIGHTSTICKTEMACPROFILE_T2679135359_H
+#define MADCATZSF4FIGHTSTICKTEMACPROFILE_T2679135359_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// InControl.NativeProfile.MadCatzSF4FightStickTEMacProfile
+struct  MadCatzSF4FightStickTEMacProfile_t2679135359  : public Xbox360DriverMacProfile_t1968726057
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // MADCATZSF4FIGHTSTICKTEMACPROFILE_T2679135359_H
+#ifndef MADCATZSF4FIGHTSTICKSEMACPROFILE_T2679146942_H
+#define MADCATZSF4FIGHTSTICKSEMACPROFILE_T2679146942_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// InControl.NativeProfile.MadCatzSF4FightStickSEMacProfile
+struct  MadCatzSF4FightStickSEMacProfile_t2679146942  : public Xbox360DriverMacProfile_t1968726057
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // MADCATZSF4FIGHTSTICKSEMACPROFILE_T2679146942_H
+#ifndef MADCATZSF4FIGHTSTICKROUND2TEMACPROFILE_T403357773_H
+#define MADCATZSF4FIGHTSTICKROUND2TEMACPROFILE_T403357773_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// InControl.NativeProfile.MadCatzSF4FightStickRound2TEMacProfile
+struct  MadCatzSF4FightStickRound2TEMacProfile_t403357773  : public Xbox360DriverMacProfile_t1968726057
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // MADCATZSF4FIGHTSTICKROUND2TEMACPROFILE_T403357773_H
+#ifndef MADCATZSAITEKAV8R02MACPROFILE_T3762371193_H
+#define MADCATZSAITEKAV8R02MACPROFILE_T3762371193_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// InControl.NativeProfile.MadCatzSaitekAV8R02MacProfile
+struct  MadCatzSaitekAV8R02MacProfile_t3762371193  : public Xbox360DriverMacProfile_t1968726057
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // MADCATZSAITEKAV8R02MACPROFILE_T3762371193_H
+#ifndef MADCATZPROCONTROLLERMACPROFILE_T413010098_H
+#define MADCATZPROCONTROLLERMACPROFILE_T413010098_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// InControl.NativeProfile.MadCatzProControllerMacProfile
+struct  MadCatzProControllerMacProfile_t413010098  : public Xbox360DriverMacProfile_t1968726057
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // MADCATZPROCONTROLLERMACPROFILE_T413010098_H
+#ifndef MADCATZPORTABLEDRUMMACPROFILE_T3702046962_H
+#define MADCATZPORTABLEDRUMMACPROFILE_T3702046962_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// InControl.NativeProfile.MadCatzPortableDrumMacProfile
+struct  MadCatzPortableDrumMacProfile_t3702046962  : public Xbox360DriverMacProfile_t1968726057
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // MADCATZPORTABLEDRUMMACPROFILE_T3702046962_H
+#ifndef MADCATZSSF4CHUNLIFIGHTSTICKTEMACPROFILE_T712973421_H
+#define MADCATZSSF4CHUNLIFIGHTSTICKTEMACPROFILE_T712973421_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// InControl.NativeProfile.MadCatzSSF4ChunLiFightStickTEMacProfile
+struct  MadCatzSSF4ChunLiFightStickTEMacProfile_t712973421  : public Xbox360DriverMacProfile_t1968726057
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // MADCATZSSF4CHUNLIFIGHTSTICKTEMACPROFILE_T712973421_H
+#ifndef TRUSTPREDATORJOYSTICKMACPROFILE_T2452298155_H
+#define TRUSTPREDATORJOYSTICKMACPROFILE_T2452298155_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// InControl.NativeProfile.TrustPredatorJoystickMacProfile
+struct  TrustPredatorJoystickMacProfile_t2452298155  : public Xbox360DriverMacProfile_t1968726057
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // TRUSTPREDATORJOYSTICKMACPROFILE_T2452298155_H
+#ifndef TSZPELICANCONTROLLERMACPROFILE_T85048678_H
+#define TSZPELICANCONTROLLERMACPROFILE_T85048678_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// InControl.NativeProfile.TSZPelicanControllerMacProfile
+struct  TSZPelicanControllerMacProfile_t85048678  : public Xbox360DriverMacProfile_t1968726057
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // TSZPELICANCONTROLLERMACPROFILE_T85048678_H
+#ifndef XBOX360CONTROLLERMACPROFILE_T667764469_H
+#define XBOX360CONTROLLERMACPROFILE_T667764469_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// InControl.NativeProfile.Xbox360ControllerMacProfile
+struct  Xbox360ControllerMacProfile_t667764469  : public Xbox360DriverMacProfile_t1968726057
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // XBOX360CONTROLLERMACPROFILE_T667764469_H
+#ifndef XBOX360MORTALKOMBATFIGHTSTICKMACPROFILE_T2906396905_H
+#define XBOX360MORTALKOMBATFIGHTSTICKMACPROFILE_T2906396905_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// InControl.NativeProfile.Xbox360MortalKombatFightStickMacProfile
+struct  Xbox360MortalKombatFightStickMacProfile_t2906396905  : public Xbox360DriverMacProfile_t1968726057
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // XBOX360MORTALKOMBATFIGHTSTICKMACPROFILE_T2906396905_H
+#ifndef MICROSOFTXBOXCONTROLLERMACPROFILE_T532146484_H
+#define MICROSOFTXBOXCONTROLLERMACPROFILE_T532146484_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// InControl.NativeProfile.MicrosoftXboxControllerMacProfile
+struct  MicrosoftXboxControllerMacProfile_t532146484  : public Xbox360DriverMacProfile_t1968726057
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // MICROSOFTXBOXCONTROLLERMACPROFILE_T532146484_H
+#ifndef MICROSOFTXBOX360CONTROLLERMACPROFILE_T805763698_H
+#define MICROSOFTXBOX360CONTROLLERMACPROFILE_T805763698_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// InControl.NativeProfile.MicrosoftXbox360ControllerMacProfile
+struct  MicrosoftXbox360ControllerMacProfile_t805763698  : public Xbox360DriverMacProfile_t1968726057
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // MICROSOFTXBOX360CONTROLLERMACPROFILE_T805763698_H
+#ifndef XBOXONECONTROLLERMACPROFILE_T1250787628_H
+#define XBOXONECONTROLLERMACPROFILE_T1250787628_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// InControl.NativeProfile.XboxOneControllerMacProfile
+struct  XboxOneControllerMacProfile_t1250787628  : public XboxOneDriverMacProfile_t4249812493
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // XBOXONECONTROLLERMACPROFILE_T1250787628_H
+#ifndef MATCATZCONTROLLERMACPROFILE_T1745398184_H
+#define MATCATZCONTROLLERMACPROFILE_T1745398184_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// InControl.NativeProfile.MatCatzControllerMacProfile
+struct  MatCatzControllerMacProfile_t1745398184  : public Xbox360DriverMacProfile_t1968726057
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // MATCATZCONTROLLERMACPROFILE_T1745398184_H
+#ifndef MADCATZSSF4FIGHTSTICKTEMACPROFILE_T2665834373_H
+#define MADCATZSSF4FIGHTSTICKTEMACPROFILE_T2665834373_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// InControl.NativeProfile.MadCatzSSF4FightStickTEMacProfile
+struct  MadCatzSSF4FightStickTEMacProfile_t2665834373  : public Xbox360DriverMacProfile_t1968726057
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // MADCATZSSF4FIGHTSTICKTEMACPROFILE_T2665834373_H
+#ifndef MADCATZNEOFIGHTSTICKMACPROFILE_T2701266815_H
+#define MADCATZNEOFIGHTSTICKMACPROFILE_T2701266815_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// InControl.NativeProfile.MadCatzNeoFightStickMacProfile
+struct  MadCatzNeoFightStickMacProfile_t2701266815  : public Xbox360DriverMacProfile_t1968726057
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // MADCATZNEOFIGHTSTICKMACPROFILE_T2701266815_H
+#ifndef NVIDIASHIELDWIN10PROFILE_T818366377_H
+#define NVIDIASHIELDWIN10PROFILE_T818366377_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// InControl.NVidiaShieldWin10Profile
+struct  NVidiaShieldWin10Profile_t818366377  : public UnityInputDeviceProfile_t3356944389
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // NVIDIASHIELDWIN10PROFILE_T818366377_H
+#ifndef MADCATZFIGHTSTICKTESPLUSMACPROFILE_T1050370474_H
+#define MADCATZFIGHTSTICKTESPLUSMACPROFILE_T1050370474_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// InControl.NativeProfile.MadCatzFightStickTESPlusMacProfile
+struct  MadCatzFightStickTESPlusMacProfile_t1050370474  : public Xbox360DriverMacProfile_t1968726057
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // MADCATZFIGHTSTICKTESPLUSMACPROFILE_T1050370474_H
+#ifndef MADCATZFIGHTSTICKTE2MACPROFILE_T3625133579_H
+#define MADCATZFIGHTSTICKTE2MACPROFILE_T3625133579_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// InControl.NativeProfile.MadCatzFightStickTE2MacProfile
+struct  MadCatzFightStickTE2MacProfile_t3625133579  : public Xbox360DriverMacProfile_t1968726057
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // MADCATZFIGHTSTICKTE2MACPROFILE_T3625133579_H
+#ifndef MADCATZFIGHTPADMACPROFILE_T2959001431_H
+#define MADCATZFIGHTPADMACPROFILE_T2959001431_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// InControl.NativeProfile.MadCatzFightPadMacProfile
+struct  MadCatzFightPadMacProfile_t2959001431  : public Xbox360DriverMacProfile_t1968726057
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // MADCATZFIGHTPADMACPROFILE_T2959001431_H
+#ifndef MADCATZFIGHTPADCONTROLLERMACPROFILE_T2383453132_H
+#define MADCATZFIGHTPADCONTROLLERMACPROFILE_T2383453132_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// InControl.NativeProfile.MadCatzFightPadControllerMacProfile
+struct  MadCatzFightPadControllerMacProfile_t2383453132  : public Xbox360DriverMacProfile_t1968726057
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // MADCATZFIGHTPADCONTROLLERMACPROFILE_T2383453132_H
+#ifndef MADCATZCONTROLLERMACPROFILE_T2008056521_H
+#define MADCATZCONTROLLERMACPROFILE_T2008056521_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// InControl.NativeProfile.MadCatzControllerMacProfile
+struct  MadCatzControllerMacProfile_t2008056521  : public Xbox360DriverMacProfile_t1968726057
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // MADCATZCONTROLLERMACPROFILE_T2008056521_H
+#ifndef MADCATZCODCONTROLLERMACPROFILE_T664220459_H
+#define MADCATZCODCONTROLLERMACPROFILE_T664220459_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// InControl.NativeProfile.MadCatzCODControllerMacProfile
+struct  MadCatzCODControllerMacProfile_t664220459  : public Xbox360DriverMacProfile_t1968726057
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // MADCATZCODCONTROLLERMACPROFILE_T664220459_H
+#ifndef MADCATZBRAWLSTICKMACPROFILE_T1837722862_H
+#define MADCATZBRAWLSTICKMACPROFILE_T1837722862_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// InControl.NativeProfile.MadCatzBrawlStickMacProfile
+struct  MadCatzBrawlStickMacProfile_t1837722862  : public Xbox360DriverMacProfile_t1968726057
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // MADCATZBRAWLSTICKMACPROFILE_T1837722862_H
+#ifndef MADCATZARCADESTICKMACPROFILE_T4092740279_H
+#define MADCATZARCADESTICKMACPROFILE_T4092740279_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// InControl.NativeProfile.MadCatzArcadeStickMacProfile
+struct  MadCatzArcadeStickMacProfile_t4092740279  : public Xbox360DriverMacProfile_t1968726057
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // MADCATZARCADESTICKMACPROFILE_T4092740279_H
+#ifndef NVIDIASHIELD2017ANDROIDPROFILE_T45566397_H
+#define NVIDIASHIELD2017ANDROIDPROFILE_T45566397_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// InControl.NVidiaShield2017AndroidProfile
+struct  NVidiaShield2017AndroidProfile_t45566397  : public UnityInputDeviceProfile_t3356944389
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // NVIDIASHIELD2017ANDROIDPROFILE_T45566397_H
+#ifndef NEXUSPLAYERMACPROFILE_T3322376911_H
+#define NEXUSPLAYERMACPROFILE_T3322376911_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// InControl.NexusPlayerMacProfile
+struct  NexusPlayerMacProfile_t3322376911  : public UnityInputDeviceProfile_t3356944389
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // NEXUSPLAYERMACPROFILE_T3322376911_H
+#ifndef MADCATZMLGFIGHTSTICKTEMACPROFILE_T528516121_H
+#define MADCATZMLGFIGHTSTICKTEMACPROFILE_T528516121_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// InControl.NativeProfile.MadCatzMLGFightStickTEMacProfile
+struct  MadCatzMLGFightStickTEMacProfile_t528516121  : public Xbox360DriverMacProfile_t1968726057
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // MADCATZMLGFIGHTSTICKTEMACPROFILE_T528516121_H
+#ifndef NEXUSPLAYERPROFILE_T300700291_H
+#define NEXUSPLAYERPROFILE_T300700291_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// InControl.NexusPlayerProfile
+struct  NexusPlayerProfile_t300700291  : public UnityInputDeviceProfile_t3356944389
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // NEXUSPLAYERPROFILE_T300700291_H
+#ifndef NEXUSPLAYERREMOTEPROFILE_T4211476022_H
+#define NEXUSPLAYERREMOTEPROFILE_T4211476022_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// InControl.NexusPlayerRemoteProfile
+struct  NexusPlayerRemoteProfile_t4211476022  : public UnityInputDeviceProfile_t3356944389
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // NEXUSPLAYERREMOTEPROFILE_T4211476022_H
+#ifndef NEXUSPLAYERWINPROFILE_T423550727_H
+#define NEXUSPLAYERWINPROFILE_T423550727_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// InControl.NexusPlayerWinProfile
+struct  NexusPlayerWinProfile_t423550727  : public UnityInputDeviceProfile_t3356944389
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // NEXUSPLAYERWINPROFILE_T423550727_H
+#ifndef MADCATZMICROCONTROLLERMACPROFILE_T1959321018_H
+#define MADCATZMICROCONTROLLERMACPROFILE_T1959321018_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// InControl.NativeProfile.MadCatzMicroControllerMacProfile
+struct  MadCatzMicroControllerMacProfile_t1959321018  : public Xbox360DriverMacProfile_t1968726057
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // MADCATZMICROCONTROLLERMACPROFILE_T1959321018_H
+#ifndef MADCATZMICROCONCONTROLLERMACPROFILE_T2553451175_H
+#define MADCATZMICROCONCONTROLLERMACPROFILE_T2553451175_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// InControl.NativeProfile.MadCatzMicroConControllerMacProfile
+struct  MadCatzMicroConControllerMacProfile_t2553451175  : public Xbox360DriverMacProfile_t1968726057
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // MADCATZMICROCONCONTROLLERMACPROFILE_T2553451175_H
+#ifndef MADCATZFPSPROMACPROFILE_T3500170159_H
+#define MADCATZFPSPROMACPROFILE_T3500170159_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// InControl.NativeProfile.MadCatzFPSProMacProfile
+struct  MadCatzFPSProMacProfile_t3500170159  : public Xbox360DriverMacProfile_t1968726057
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // MADCATZFPSPROMACPROFILE_T3500170159_H
+#ifndef NVIDIASHIELD2016ANDROIDPROFILE_T2262321597_H
+#define NVIDIASHIELD2016ANDROIDPROFILE_T2262321597_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// InControl.NVidiaShield2016AndroidProfile
+struct  NVidiaShield2016AndroidProfile_t2262321597  : public UnityInputDeviceProfile_t3356944389
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // NVIDIASHIELD2016ANDROIDPROFILE_T2262321597_H
+#ifndef THRUSTMASTERGPXCONTROLLERMACPROFILE_T1472817713_H
+#define THRUSTMASTERGPXCONTROLLERMACPROFILE_T1472817713_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// InControl.NativeProfile.ThrustmasterGPXControllerMacProfile
+struct  ThrustmasterGPXControllerMacProfile_t1472817713  : public Xbox360DriverMacProfile_t1968726057
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // THRUSTMASTERGPXCONTROLLERMACPROFILE_T1472817713_H
+#ifndef PDPXBOXONECONTROLLERMACPROFILE_T3335119988_H
+#define PDPXBOXONECONTROLLERMACPROFILE_T3335119988_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// InControl.NativeProfile.PDPXboxOneControllerMacProfile
+struct  PDPXboxOneControllerMacProfile_t3335119988  : public XboxOneDriverMacProfile_t4249812493
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // PDPXBOXONECONTROLLERMACPROFILE_T3335119988_H
+#ifndef MLGCONTROLLERMACPROFILE_T1513752687_H
+#define MLGCONTROLLERMACPROFILE_T1513752687_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// InControl.NativeProfile.MLGControllerMacProfile
+struct  MLGControllerMacProfile_t1513752687  : public Xbox360DriverMacProfile_t1968726057
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // MLGCONTROLLERMACPROFILE_T1513752687_H
+#ifndef MKKLASSIKFIGHTSTICKMACPROFILE_T3649385735_H
+#define MKKLASSIKFIGHTSTICKMACPROFILE_T3649385735_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// InControl.NativeProfile.MKKlassikFightStickMacProfile
+struct  MKKlassikFightStickMacProfile_t3649385735  : public Xbox360DriverMacProfile_t1968726057
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // MKKLASSIKFIGHTSTICKMACPROFILE_T3649385735_H
+#ifndef LOGITECHG920RACINGWHEELMACPROFILE_T2346673367_H
+#define LOGITECHG920RACINGWHEELMACPROFILE_T2346673367_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// InControl.NativeProfile.LogitechG920RacingWheelMacProfile
+struct  LogitechG920RacingWheelMacProfile_t2346673367  : public Xbox360DriverMacProfile_t1968726057
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // LOGITECHG920RACINGWHEELMACPROFILE_T2346673367_H
+#ifndef POWERAAIRFLOWCONTROLLERMACPROFILE_T1422981755_H
+#define POWERAAIRFLOWCONTROLLERMACPROFILE_T1422981755_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// InControl.NativeProfile.PowerAAirflowControllerMacProfile
+struct  PowerAAirflowControllerMacProfile_t1422981755  : public Xbox360DriverMacProfile_t1968726057
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // POWERAAIRFLOWCONTROLLERMACPROFILE_T1422981755_H
+#ifndef POWERAFUS1ONTOURNAMENTCONTROLLERMACPROFILE_T2226959540_H
+#define POWERAFUS1ONTOURNAMENTCONTROLLERMACPROFILE_T2226959540_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// InControl.NativeProfile.POWERAFUS1ONTournamentControllerMacProfile
+struct  POWERAFUS1ONTournamentControllerMacProfile_t2226959540  : public Xbox360DriverMacProfile_t1968726057
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // POWERAFUS1ONTOURNAMENTCONTROLLERMACPROFILE_T2226959540_H
+#ifndef POWERAMINICONTROLLERMACPROFILE_T475998391_H
+#define POWERAMINICONTROLLERMACPROFILE_T475998391_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// InControl.NativeProfile.PowerAMiniControllerMacProfile
+struct  PowerAMiniControllerMacProfile_t475998391  : public Xbox360DriverMacProfile_t1968726057
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // POWERAMINICONTROLLERMACPROFILE_T475998391_H
+#ifndef POWERAMINIPROEXCONTROLLERMACPROFILE_T683302340_H
+#define POWERAMINIPROEXCONTROLLERMACPROFILE_T683302340_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// InControl.NativeProfile.PowerAMiniProExControllerMacProfile
+struct  PowerAMiniProExControllerMacProfile_t683302340  : public Xbox360DriverMacProfile_t1968726057
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // POWERAMINIPROEXCONTROLLERMACPROFILE_T683302340_H
+#ifndef PDPXBOXONEARCADESTICKMACPROFILE_T3097356591_H
+#define PDPXBOXONEARCADESTICKMACPROFILE_T3097356591_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// InControl.NativeProfile.PDPXboxOneArcadeStickMacProfile
+struct  PDPXboxOneArcadeStickMacProfile_t3097356591  : public XboxOneDriverMacProfile_t4249812493
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // PDPXBOXONEARCADESTICKMACPROFILE_T3097356591_H
+#ifndef NACONGC100XFCONTROLLERMACPROFILE_T3663274790_H
+#define NACONGC100XFCONTROLLERMACPROFILE_T3663274790_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// InControl.NativeProfile.NaconGC100XFControllerMacProfile
+struct  NaconGC100XFControllerMacProfile_t3663274790  : public Xbox360DriverMacProfile_t1968726057
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // NACONGC100XFCONTROLLERMACPROFILE_T3663274790_H
+#ifndef MVCTESTICKMACPROFILE_T4225761182_H
+#define MVCTESTICKMACPROFILE_T4225761182_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// InControl.NativeProfile.MVCTEStickMacProfile
+struct  MVCTEStickMacProfile_t4225761182  : public Xbox360DriverMacProfile_t1968726057
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // MVCTESTICKMACPROFILE_T4225761182_H
+#ifndef PDPAFTERGLOWCONTROLLERMACPROFILE_T1588976563_H
+#define PDPAFTERGLOWCONTROLLERMACPROFILE_T1588976563_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// InControl.NativeProfile.PDPAfterglowControllerMacProfile
+struct  PDPAfterglowControllerMacProfile_t1588976563  : public Xbox360DriverMacProfile_t1968726057
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // PDPAFTERGLOWCONTROLLERMACPROFILE_T1588976563_H
+#ifndef PDPBATTLEFIELDXBOXONECONTROLLERMACPROFILE_T2210644831_H
+#define PDPBATTLEFIELDXBOXONECONTROLLERMACPROFILE_T2210644831_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// InControl.NativeProfile.PDPBattlefieldXBoxOneControllerMacProfile
+struct  PDPBattlefieldXBoxOneControllerMacProfile_t2210644831  : public XboxOneDriverMacProfile_t4249812493
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // PDPBATTLEFIELDXBOXONECONTROLLERMACPROFILE_T2210644831_H
+#ifndef PDPMARVELCONTROLLERMACPROFILE_T4098526584_H
+#define PDPMARVELCONTROLLERMACPROFILE_T4098526584_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// InControl.NativeProfile.PDPMarvelControllerMacProfile
+struct  PDPMarvelControllerMacProfile_t4098526584  : public Xbox360DriverMacProfile_t1968726057
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // PDPMARVELCONTROLLERMACPROFILE_T4098526584_H
+#ifndef PDPTITANFALL2XBOXONECONTROLLERMACPROFILE_T3252585292_H
+#define PDPTITANFALL2XBOXONECONTROLLERMACPROFILE_T3252585292_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// InControl.NativeProfile.PDPTitanfall2XboxOneControllerMacProfile
+struct  PDPTitanfall2XboxOneControllerMacProfile_t3252585292  : public XboxOneDriverMacProfile_t4249812493
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // PDPTITANFALL2XBOXONECONTROLLERMACPROFILE_T3252585292_H
+#ifndef PDPTRONCONTROLLERMACPROFILE_T953062917_H
+#define PDPTRONCONTROLLERMACPROFILE_T953062917_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// InControl.NativeProfile.PDPTronControllerMacProfile
+struct  PDPTronControllerMacProfile_t953062917  : public Xbox360DriverMacProfile_t1968726057
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // PDPTRONCONTROLLERMACPROFILE_T953062917_H
+#ifndef PDPVERSUSCONTROLLERMACPROFILE_T2162518710_H
+#define PDPVERSUSCONTROLLERMACPROFILE_T2162518710_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// InControl.NativeProfile.PDPVersusControllerMacProfile
+struct  PDPVersusControllerMacProfile_t2162518710  : public Xbox360DriverMacProfile_t1968726057
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // PDPVERSUSCONTROLLERMACPROFILE_T2162518710_H
+#ifndef PDPXBOX360CONTROLLERMACPROFILE_T447465477_H
+#define PDPXBOX360CONTROLLERMACPROFILE_T447465477_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// InControl.NativeProfile.PDPXbox360ControllerMacProfile
+struct  PDPXbox360ControllerMacProfile_t447465477  : public Xbox360DriverMacProfile_t1968726057
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // PDPXBOX360CONTROLLERMACPROFILE_T447465477_H
+#ifndef POWERAMINIXBOXONECONTROLLERMACPROFILE_T2642713835_H
+#define POWERAMINIXBOXONECONTROLLERMACPROFILE_T2642713835_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// InControl.NativeProfile.PowerAMiniXboxOneControllerMacProfile
+struct  PowerAMiniXboxOneControllerMacProfile_t2642713835  : public XboxOneDriverMacProfile_t4249812493
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // POWERAMINIXBOXONECONTROLLERMACPROFILE_T2642713835_H
 #ifndef REDOCTANECONTROLLERMACPROFILE_T2691488847_H
 #define REDOCTANECONTROLLERMACPROFILE_T2691488847_H
 #ifdef __clang__
@@ -3263,16 +4285,16 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // ROCKCANDYCONTROLLERMACPROFILE_T98473943_H
-#ifndef NVIDIASHIELDWIN10PROFILE_T818366377_H
-#define NVIDIASHIELDWIN10PROFILE_T818366377_H
+#ifndef ROCKCANDYXBOX360CONTROLLERMACPROFILE_T136885549_H
+#define ROCKCANDYXBOX360CONTROLLERMACPROFILE_T136885549_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 
-// InControl.NVidiaShieldWin10Profile
-struct  NVidiaShieldWin10Profile_t818366377  : public UnityInputDeviceProfile_t3356944389
+// InControl.NativeProfile.RockCandyXbox360ControllerMacProfile
+struct  RockCandyXbox360ControllerMacProfile_t136885549  : public Xbox360DriverMacProfile_t1968726057
 {
 public:
 
@@ -3282,17 +4304,17 @@ public:
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // NVIDIASHIELDWIN10PROFILE_T818366377_H
-#ifndef XBOXONECONTROLLERMACPROFILE_T1250787628_H
-#define XBOXONECONTROLLERMACPROFILE_T1250787628_H
+#endif // ROCKCANDYXBOX360CONTROLLERMACPROFILE_T136885549_H
+#ifndef ROCKCANDYXBOXONECONTROLLERMACPROFILE_T263496214_H
+#define ROCKCANDYXBOXONECONTROLLERMACPROFILE_T263496214_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 
-// InControl.NativeProfile.XboxOneControllerMacProfile
-struct  XboxOneControllerMacProfile_t1250787628  : public XboxOneDriverMacProfile_t4249812493
+// InControl.NativeProfile.RockCandyXboxOneControllerMacProfile
+struct  RockCandyXboxOneControllerMacProfile_t263496214  : public XboxOneDriverMacProfile_t4249812493
 {
 public:
 
@@ -3302,17 +4324,17 @@ public:
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // XBOXONECONTROLLERMACPROFILE_T1250787628_H
-#ifndef NEXUSPLAYERWINPROFILE_T423550727_H
-#define NEXUSPLAYERWINPROFILE_T423550727_H
+#endif // ROCKCANDYXBOXONECONTROLLERMACPROFILE_T263496214_H
+#ifndef SAITEKXBOX360CONTROLLERMACPROFILE_T2825766300_H
+#define SAITEKXBOX360CONTROLLERMACPROFILE_T2825766300_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 
-// InControl.NexusPlayerWinProfile
-struct  NexusPlayerWinProfile_t423550727  : public UnityInputDeviceProfile_t3356944389
+// InControl.NativeProfile.SaitekXbox360ControllerMacProfile
+struct  SaitekXbox360ControllerMacProfile_t2825766300  : public Xbox360DriverMacProfile_t1968726057
 {
 public:
 
@@ -3322,367 +4344,7 @@ public:
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // NEXUSPLAYERWINPROFILE_T423550727_H
-#ifndef NEXUSPLAYERREMOTEPROFILE_T4211476022_H
-#define NEXUSPLAYERREMOTEPROFILE_T4211476022_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// InControl.NexusPlayerRemoteProfile
-struct  NexusPlayerRemoteProfile_t4211476022  : public UnityInputDeviceProfile_t3356944389
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // NEXUSPLAYERREMOTEPROFILE_T4211476022_H
-#ifndef NEXUSPLAYERPROFILE_T300700291_H
-#define NEXUSPLAYERPROFILE_T300700291_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// InControl.NexusPlayerProfile
-struct  NexusPlayerProfile_t300700291  : public UnityInputDeviceProfile_t3356944389
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // NEXUSPLAYERPROFILE_T300700291_H
-#ifndef LOGITECHG920RACINGWHEELMACPROFILE_T2346673367_H
-#define LOGITECHG920RACINGWHEELMACPROFILE_T2346673367_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// InControl.NativeProfile.LogitechG920RacingWheelMacProfile
-struct  LogitechG920RacingWheelMacProfile_t2346673367  : public Xbox360DriverMacProfile_t1968726057
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // LOGITECHG920RACINGWHEELMACPROFILE_T2346673367_H
-#ifndef NEXUSPLAYERMACPROFILE_T3322376911_H
-#define NEXUSPLAYERMACPROFILE_T3322376911_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// InControl.NexusPlayerMacProfile
-struct  NexusPlayerMacProfile_t3322376911  : public UnityInputDeviceProfile_t3356944389
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // NEXUSPLAYERMACPROFILE_T3322376911_H
-#ifndef XBOX360MORTALKOMBATFIGHTSTICKMACPROFILE_T2906396905_H
-#define XBOX360MORTALKOMBATFIGHTSTICKMACPROFILE_T2906396905_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// InControl.NativeProfile.Xbox360MortalKombatFightStickMacProfile
-struct  Xbox360MortalKombatFightStickMacProfile_t2906396905  : public Xbox360DriverMacProfile_t1968726057
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // XBOX360MORTALKOMBATFIGHTSTICKMACPROFILE_T2906396905_H
-#ifndef NVIDIASHIELD2017ANDROIDPROFILE_T45566397_H
-#define NVIDIASHIELD2017ANDROIDPROFILE_T45566397_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// InControl.NVidiaShield2017AndroidProfile
-struct  NVidiaShield2017AndroidProfile_t45566397  : public UnityInputDeviceProfile_t3356944389
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // NVIDIASHIELD2017ANDROIDPROFILE_T45566397_H
-#ifndef NVIDIASHIELD2016ANDROIDPROFILE_T2262321597_H
-#define NVIDIASHIELD2016ANDROIDPROFILE_T2262321597_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// InControl.NVidiaShield2016AndroidProfile
-struct  NVidiaShield2016AndroidProfile_t2262321597  : public UnityInputDeviceProfile_t3356944389
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // NVIDIASHIELD2016ANDROIDPROFILE_T2262321597_H
-#ifndef THRUSTMASTERGPXCONTROLLERMACPROFILE_T1472817713_H
-#define THRUSTMASTERGPXCONTROLLERMACPROFILE_T1472817713_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// InControl.NativeProfile.ThrustmasterGPXControllerMacProfile
-struct  ThrustmasterGPXControllerMacProfile_t1472817713  : public Xbox360DriverMacProfile_t1968726057
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // THRUSTMASTERGPXCONTROLLERMACPROFILE_T1472817713_H
-#ifndef TRUSTPREDATORJOYSTICKMACPROFILE_T2452298155_H
-#define TRUSTPREDATORJOYSTICKMACPROFILE_T2452298155_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// InControl.NativeProfile.TrustPredatorJoystickMacProfile
-struct  TrustPredatorJoystickMacProfile_t2452298155  : public Xbox360DriverMacProfile_t1968726057
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // TRUSTPREDATORJOYSTICKMACPROFILE_T2452298155_H
-#ifndef TSZPELICANCONTROLLERMACPROFILE_T85048678_H
-#define TSZPELICANCONTROLLERMACPROFILE_T85048678_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// InControl.NativeProfile.TSZPelicanControllerMacProfile
-struct  TSZPelicanControllerMacProfile_t85048678  : public Xbox360DriverMacProfile_t1968726057
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // TSZPELICANCONTROLLERMACPROFILE_T85048678_H
-#ifndef XBOX360CONTROLLERMACPROFILE_T667764469_H
-#define XBOX360CONTROLLERMACPROFILE_T667764469_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// InControl.NativeProfile.Xbox360ControllerMacProfile
-struct  Xbox360ControllerMacProfile_t667764469  : public Xbox360DriverMacProfile_t1968726057
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // XBOX360CONTROLLERMACPROFILE_T667764469_H
-#ifndef MADCATZARCADESTICKMACPROFILE_T4092740279_H
-#define MADCATZARCADESTICKMACPROFILE_T4092740279_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// InControl.NativeProfile.MadCatzArcadeStickMacProfile
-struct  MadCatzArcadeStickMacProfile_t4092740279  : public Xbox360DriverMacProfile_t1968726057
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // MADCATZARCADESTICKMACPROFILE_T4092740279_H
-#ifndef MADCATZPROCONTROLLERMACPROFILE_T413010098_H
-#define MADCATZPROCONTROLLERMACPROFILE_T413010098_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// InControl.NativeProfile.MadCatzProControllerMacProfile
-struct  MadCatzProControllerMacProfile_t413010098  : public Xbox360DriverMacProfile_t1968726057
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // MADCATZPROCONTROLLERMACPROFILE_T413010098_H
-#ifndef MADCATZSAITEKAV8R02MACPROFILE_T3762371193_H
-#define MADCATZSAITEKAV8R02MACPROFILE_T3762371193_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// InControl.NativeProfile.MadCatzSaitekAV8R02MacProfile
-struct  MadCatzSaitekAV8R02MacProfile_t3762371193  : public Xbox360DriverMacProfile_t1968726057
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // MADCATZSAITEKAV8R02MACPROFILE_T3762371193_H
-#ifndef MADCATZSF4FIGHTSTICKROUND2TEMACPROFILE_T403357773_H
-#define MADCATZSF4FIGHTSTICKROUND2TEMACPROFILE_T403357773_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// InControl.NativeProfile.MadCatzSF4FightStickRound2TEMacProfile
-struct  MadCatzSF4FightStickRound2TEMacProfile_t403357773  : public Xbox360DriverMacProfile_t1968726057
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // MADCATZSF4FIGHTSTICKROUND2TEMACPROFILE_T403357773_H
-#ifndef MADCATZSF4FIGHTSTICKSEMACPROFILE_T2679146942_H
-#define MADCATZSF4FIGHTSTICKSEMACPROFILE_T2679146942_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// InControl.NativeProfile.MadCatzSF4FightStickSEMacProfile
-struct  MadCatzSF4FightStickSEMacProfile_t2679146942  : public Xbox360DriverMacProfile_t1968726057
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // MADCATZSF4FIGHTSTICKSEMACPROFILE_T2679146942_H
-#ifndef MADCATZSF4FIGHTSTICKTEMACPROFILE_T2679135359_H
-#define MADCATZSF4FIGHTSTICKTEMACPROFILE_T2679135359_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// InControl.NativeProfile.MadCatzSF4FightStickTEMacProfile
-struct  MadCatzSF4FightStickTEMacProfile_t2679135359  : public Xbox360DriverMacProfile_t1968726057
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // MADCATZSF4FIGHTSTICKTEMACPROFILE_T2679135359_H
-#ifndef MADCATZSOULCALIBERFIGHTSTICKMACPROFILE_T2806805970_H
-#define MADCATZSOULCALIBERFIGHTSTICKMACPROFILE_T2806805970_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// InControl.NativeProfile.MadCatzSoulCaliberFightStickMacProfile
-struct  MadCatzSoulCaliberFightStickMacProfile_t2806805970  : public Xbox360DriverMacProfile_t1968726057
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // MADCATZSOULCALIBERFIGHTSTICKMACPROFILE_T2806805970_H
+#endif // SAITEKXBOX360CONTROLLERMACPROFILE_T2825766300_H
 #ifndef MICROSOFTXBOXONECONTROLLERMACPROFILE_T2410377206_H
 #define MICROSOFTXBOXONECONTROLLERMACPROFILE_T2410377206_H
 #ifdef __clang__
@@ -3703,16 +4365,16 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // MICROSOFTXBOXONECONTROLLERMACPROFILE_T2410377206_H
-#ifndef MICROSOFTXBOXCONTROLLERMACPROFILE_T532146484_H
-#define MICROSOFTXBOXCONTROLLERMACPROFILE_T532146484_H
+#ifndef THRUSTMASTERFERRARI458RACINGWHEELMACPROFILE_T2598697958_H
+#define THRUSTMASTERFERRARI458RACINGWHEELMACPROFILE_T2598697958_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 
-// InControl.NativeProfile.MicrosoftXboxControllerMacProfile
-struct  MicrosoftXboxControllerMacProfile_t532146484  : public Xbox360DriverMacProfile_t1968726057
+// InControl.NativeProfile.ThrustmasterFerrari458RacingWheelMacProfile
+struct  ThrustmasterFerrari458RacingWheelMacProfile_t2598697958  : public Xbox360DriverMacProfile_t1968726057
 {
 public:
 
@@ -3722,17 +4384,17 @@ public:
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // MICROSOFTXBOXCONTROLLERMACPROFILE_T532146484_H
-#ifndef MICROSOFTXBOX360CONTROLLERMACPROFILE_T805763698_H
-#define MICROSOFTXBOX360CONTROLLERMACPROFILE_T805763698_H
+#endif // THRUSTMASTERFERRARI458RACINGWHEELMACPROFILE_T2598697958_H
+#ifndef RAZERWILDCATCONTROLLERMACPROFILE_T1980770595_H
+#define RAZERWILDCATCONTROLLERMACPROFILE_T1980770595_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 
-// InControl.NativeProfile.MicrosoftXbox360ControllerMacProfile
-struct  MicrosoftXbox360ControllerMacProfile_t805763698  : public Xbox360DriverMacProfile_t1968726057
+// InControl.NativeProfile.RazerWildcatControllerMacProfile
+struct  RazerWildcatControllerMacProfile_t1980770595  : public Xbox360DriverMacProfile_t1968726057
 {
 public:
 
@@ -3742,427 +4404,7 @@ public:
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // MICROSOFTXBOX360CONTROLLERMACPROFILE_T805763698_H
-#ifndef MATCATZCONTROLLERMACPROFILE_T1745398184_H
-#define MATCATZCONTROLLERMACPROFILE_T1745398184_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// InControl.NativeProfile.MatCatzControllerMacProfile
-struct  MatCatzControllerMacProfile_t1745398184  : public Xbox360DriverMacProfile_t1968726057
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // MATCATZCONTROLLERMACPROFILE_T1745398184_H
-#ifndef MADCATZSSF4FIGHTSTICKTEMACPROFILE_T2665834373_H
-#define MADCATZSSF4FIGHTSTICKTEMACPROFILE_T2665834373_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// InControl.NativeProfile.MadCatzSSF4FightStickTEMacProfile
-struct  MadCatzSSF4FightStickTEMacProfile_t2665834373  : public Xbox360DriverMacProfile_t1968726057
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // MADCATZSSF4FIGHTSTICKTEMACPROFILE_T2665834373_H
-#ifndef MADCATZSSF4CHUNLIFIGHTSTICKTEMACPROFILE_T712973421_H
-#define MADCATZSSF4CHUNLIFIGHTSTICKTEMACPROFILE_T712973421_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// InControl.NativeProfile.MadCatzSSF4ChunLiFightStickTEMacProfile
-struct  MadCatzSSF4ChunLiFightStickTEMacProfile_t712973421  : public Xbox360DriverMacProfile_t1968726057
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // MADCATZSSF4CHUNLIFIGHTSTICKTEMACPROFILE_T712973421_H
-#ifndef MADCATZPORTABLEDRUMMACPROFILE_T3702046962_H
-#define MADCATZPORTABLEDRUMMACPROFILE_T3702046962_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// InControl.NativeProfile.MadCatzPortableDrumMacProfile
-struct  MadCatzPortableDrumMacProfile_t3702046962  : public Xbox360DriverMacProfile_t1968726057
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // MADCATZPORTABLEDRUMMACPROFILE_T3702046962_H
-#ifndef MADCATZBRAWLSTICKMACPROFILE_T1837722862_H
-#define MADCATZBRAWLSTICKMACPROFILE_T1837722862_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// InControl.NativeProfile.MadCatzBrawlStickMacProfile
-struct  MadCatzBrawlStickMacProfile_t1837722862  : public Xbox360DriverMacProfile_t1968726057
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // MADCATZBRAWLSTICKMACPROFILE_T1837722862_H
-#ifndef MADCATZCODCONTROLLERMACPROFILE_T664220459_H
-#define MADCATZCODCONTROLLERMACPROFILE_T664220459_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// InControl.NativeProfile.MadCatzCODControllerMacProfile
-struct  MadCatzCODControllerMacProfile_t664220459  : public Xbox360DriverMacProfile_t1968726057
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // MADCATZCODCONTROLLERMACPROFILE_T664220459_H
-#ifndef MADCATZCONTROLLERMACPROFILE_T2008056521_H
-#define MADCATZCONTROLLERMACPROFILE_T2008056521_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// InControl.NativeProfile.MadCatzControllerMacProfile
-struct  MadCatzControllerMacProfile_t2008056521  : public Xbox360DriverMacProfile_t1968726057
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // MADCATZCONTROLLERMACPROFILE_T2008056521_H
-#ifndef MADCATZFIGHTPADCONTROLLERMACPROFILE_T2383453132_H
-#define MADCATZFIGHTPADCONTROLLERMACPROFILE_T2383453132_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// InControl.NativeProfile.MadCatzFightPadControllerMacProfile
-struct  MadCatzFightPadControllerMacProfile_t2383453132  : public Xbox360DriverMacProfile_t1968726057
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // MADCATZFIGHTPADCONTROLLERMACPROFILE_T2383453132_H
-#ifndef MADCATZFIGHTPADMACPROFILE_T2959001431_H
-#define MADCATZFIGHTPADMACPROFILE_T2959001431_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// InControl.NativeProfile.MadCatzFightPadMacProfile
-struct  MadCatzFightPadMacProfile_t2959001431  : public Xbox360DriverMacProfile_t1968726057
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // MADCATZFIGHTPADMACPROFILE_T2959001431_H
-#ifndef MADCATZFIGHTSTICKTE2MACPROFILE_T3625133579_H
-#define MADCATZFIGHTSTICKTE2MACPROFILE_T3625133579_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// InControl.NativeProfile.MadCatzFightStickTE2MacProfile
-struct  MadCatzFightStickTE2MacProfile_t3625133579  : public Xbox360DriverMacProfile_t1968726057
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // MADCATZFIGHTSTICKTE2MACPROFILE_T3625133579_H
-#ifndef MADCATZNEOFIGHTSTICKMACPROFILE_T2701266815_H
-#define MADCATZNEOFIGHTSTICKMACPROFILE_T2701266815_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// InControl.NativeProfile.MadCatzNeoFightStickMacProfile
-struct  MadCatzNeoFightStickMacProfile_t2701266815  : public Xbox360DriverMacProfile_t1968726057
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // MADCATZNEOFIGHTSTICKMACPROFILE_T2701266815_H
-#ifndef MADCATZMLGFIGHTSTICKTEMACPROFILE_T528516121_H
-#define MADCATZMLGFIGHTSTICKTEMACPROFILE_T528516121_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// InControl.NativeProfile.MadCatzMLGFightStickTEMacProfile
-struct  MadCatzMLGFightStickTEMacProfile_t528516121  : public Xbox360DriverMacProfile_t1968726057
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // MADCATZMLGFIGHTSTICKTEMACPROFILE_T528516121_H
-#ifndef MADCATZMICROCONTROLLERMACPROFILE_T1959321018_H
-#define MADCATZMICROCONTROLLERMACPROFILE_T1959321018_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// InControl.NativeProfile.MadCatzMicroControllerMacProfile
-struct  MadCatzMicroControllerMacProfile_t1959321018  : public Xbox360DriverMacProfile_t1968726057
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // MADCATZMICROCONTROLLERMACPROFILE_T1959321018_H
-#ifndef MADCATZMICROCONCONTROLLERMACPROFILE_T2553451175_H
-#define MADCATZMICROCONCONTROLLERMACPROFILE_T2553451175_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// InControl.NativeProfile.MadCatzMicroConControllerMacProfile
-struct  MadCatzMicroConControllerMacProfile_t2553451175  : public Xbox360DriverMacProfile_t1968726057
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // MADCATZMICROCONCONTROLLERMACPROFILE_T2553451175_H
-#ifndef MADCATZFPSPROMACPROFILE_T3500170159_H
-#define MADCATZFPSPROMACPROFILE_T3500170159_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// InControl.NativeProfile.MadCatzFPSProMacProfile
-struct  MadCatzFPSProMacProfile_t3500170159  : public Xbox360DriverMacProfile_t1968726057
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // MADCATZFPSPROMACPROFILE_T3500170159_H
-#ifndef MADCATZFIGHTSTICKTESPLUSMACPROFILE_T1050370474_H
-#define MADCATZFIGHTSTICKTESPLUSMACPROFILE_T1050370474_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// InControl.NativeProfile.MadCatzFightStickTESPlusMacProfile
-struct  MadCatzFightStickTESPlusMacProfile_t1050370474  : public Xbox360DriverMacProfile_t1968726057
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // MADCATZFIGHTSTICKTESPLUSMACPROFILE_T1050370474_H
-#ifndef MICROSOFTXBOXONEELITECONTROLLERMACPROFILE_T4237082878_H
-#define MICROSOFTXBOXONEELITECONTROLLERMACPROFILE_T4237082878_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// InControl.NativeProfile.MicrosoftXboxOneEliteControllerMacProfile
-struct  MicrosoftXboxOneEliteControllerMacProfile_t4237082878  : public XboxOneDriverMacProfile_t4249812493
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // MICROSOFTXBOXONEELITECONTROLLERMACPROFILE_T4237082878_H
-#ifndef POWERAFUS1ONTOURNAMENTCONTROLLERMACPROFILE_T2226959540_H
-#define POWERAFUS1ONTOURNAMENTCONTROLLERMACPROFILE_T2226959540_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// InControl.NativeProfile.POWERAFUS1ONTournamentControllerMacProfile
-struct  POWERAFUS1ONTournamentControllerMacProfile_t2226959540  : public Xbox360DriverMacProfile_t1968726057
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // POWERAFUS1ONTOURNAMENTCONTROLLERMACPROFILE_T2226959540_H
-#ifndef POWERAMINICONTROLLERMACPROFILE_T475998391_H
-#define POWERAMINICONTROLLERMACPROFILE_T475998391_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// InControl.NativeProfile.PowerAMiniControllerMacProfile
-struct  PowerAMiniControllerMacProfile_t475998391  : public Xbox360DriverMacProfile_t1968726057
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // POWERAMINICONTROLLERMACPROFILE_T475998391_H
-#ifndef POWERAMINIPROEXCONTROLLERMACPROFILE_T683302340_H
-#define POWERAMINIPROEXCONTROLLERMACPROFILE_T683302340_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// InControl.NativeProfile.PowerAMiniProExControllerMacProfile
-struct  PowerAMiniProExControllerMacProfile_t683302340  : public Xbox360DriverMacProfile_t1968726057
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // POWERAMINIPROEXCONTROLLERMACPROFILE_T683302340_H
-#ifndef POWERAMINIXBOXONECONTROLLERMACPROFILE_T2642713835_H
-#define POWERAMINIXBOXONECONTROLLERMACPROFILE_T2642713835_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// InControl.NativeProfile.PowerAMiniXboxOneControllerMacProfile
-struct  PowerAMiniXboxOneControllerMacProfile_t2642713835  : public XboxOneDriverMacProfile_t4249812493
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // POWERAMINIXBOXONECONTROLLERMACPROFILE_T2642713835_H
+#endif // RAZERWILDCATCONTROLLERMACPROFILE_T1980770595_H
 #ifndef POWERASPECTRAILLUMINATEDCONTROLLERMACPROFILE_T1373853501_H
 #define POWERASPECTRAILLUMINATEDCONTROLLERMACPROFILE_T1373853501_H
 #ifdef __clang__
@@ -4203,106 +4445,6 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // PROEXXBOX360CONTROLLERMACPROFILE_T1573983937_H
-#ifndef RAZERSABERTOOTHELITECONTROLLERMACPROFILE_T1128221419_H
-#define RAZERSABERTOOTHELITECONTROLLERMACPROFILE_T1128221419_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// InControl.NativeProfile.RazerSabertoothEliteControllerMacProfile
-struct  RazerSabertoothEliteControllerMacProfile_t1128221419  : public Xbox360DriverMacProfile_t1968726057
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // RAZERSABERTOOTHELITECONTROLLERMACPROFILE_T1128221419_H
-#ifndef RAZERONZATECONTROLLERMACPROFILE_T2581177765_H
-#define RAZERONZATECONTROLLERMACPROFILE_T2581177765_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// InControl.NativeProfile.RazerOnzaTEControllerMacProfile
-struct  RazerOnzaTEControllerMacProfile_t2581177765  : public Xbox360DriverMacProfile_t1968726057
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // RAZERONZATECONTROLLERMACPROFILE_T2581177765_H
-#ifndef RAZERONZACONTROLLERMACPROFILE_T1827044606_H
-#define RAZERONZACONTROLLERMACPROFILE_T1827044606_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// InControl.NativeProfile.RazerOnzaControllerMacProfile
-struct  RazerOnzaControllerMacProfile_t1827044606  : public Xbox360DriverMacProfile_t1968726057
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // RAZERONZACONTROLLERMACPROFILE_T1827044606_H
-#ifndef RAZERATROXARCADESTICKMACPROFILE_T3012475922_H
-#define RAZERATROXARCADESTICKMACPROFILE_T3012475922_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// InControl.NativeProfile.RazerAtroxArcadeStickMacProfile
-struct  RazerAtroxArcadeStickMacProfile_t3012475922  : public Xbox360DriverMacProfile_t1968726057
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // RAZERATROXARCADESTICKMACPROFILE_T3012475922_H
-#ifndef QANBAFIGHTSTICKPLUSMACPROFILE_T865257184_H
-#define QANBAFIGHTSTICKPLUSMACPROFILE_T865257184_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// InControl.NativeProfile.QanbaFightStickPlusMacProfile
-struct  QanbaFightStickPlusMacProfile_t865257184  : public Xbox360DriverMacProfile_t1968726057
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // QANBAFIGHTSTICKPLUSMACPROFILE_T865257184_H
 #ifndef PROEXXBOXONECONTROLLERMACPROFILE_T1827355586_H
 #define PROEXXBOXONECONTROLLERMACPROFILE_T1827355586_H
 #ifdef __clang__
@@ -4323,16 +4465,16 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // PROEXXBOXONECONTROLLERMACPROFILE_T1827355586_H
-#ifndef PDPXBOXONECONTROLLERMACPROFILE_T3335119988_H
-#define PDPXBOXONECONTROLLERMACPROFILE_T3335119988_H
+#ifndef MICROSOFTXBOXONEELITECONTROLLERMACPROFILE_T4237082878_H
+#define MICROSOFTXBOXONEELITECONTROLLERMACPROFILE_T4237082878_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 
-// InControl.NativeProfile.PDPXboxOneControllerMacProfile
-struct  PDPXboxOneControllerMacProfile_t3335119988  : public XboxOneDriverMacProfile_t4249812493
+// InControl.NativeProfile.MicrosoftXboxOneEliteControllerMacProfile
+struct  MicrosoftXboxOneEliteControllerMacProfile_t4237082878  : public XboxOneDriverMacProfile_t4249812493
 {
 public:
 
@@ -4342,17 +4484,17 @@ public:
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // PDPXBOXONECONTROLLERMACPROFILE_T3335119988_H
-#ifndef MKKLASSIKFIGHTSTICKMACPROFILE_T3649385735_H
-#define MKKLASSIKFIGHTSTICKMACPROFILE_T3649385735_H
+#endif // MICROSOFTXBOXONEELITECONTROLLERMACPROFILE_T4237082878_H
+#ifndef RAZERATROXARCADESTICKMACPROFILE_T3012475922_H
+#define RAZERATROXARCADESTICKMACPROFILE_T3012475922_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 
-// InControl.NativeProfile.MKKlassikFightStickMacProfile
-struct  MKKlassikFightStickMacProfile_t3649385735  : public Xbox360DriverMacProfile_t1968726057
+// InControl.NativeProfile.RazerAtroxArcadeStickMacProfile
+struct  RazerAtroxArcadeStickMacProfile_t3012475922  : public Xbox360DriverMacProfile_t1968726057
 {
 public:
 
@@ -4362,17 +4504,17 @@ public:
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // MKKLASSIKFIGHTSTICKMACPROFILE_T3649385735_H
-#ifndef MLGCONTROLLERMACPROFILE_T1513752687_H
-#define MLGCONTROLLERMACPROFILE_T1513752687_H
+#endif // RAZERATROXARCADESTICKMACPROFILE_T3012475922_H
+#ifndef RAZERONZACONTROLLERMACPROFILE_T1827044606_H
+#define RAZERONZACONTROLLERMACPROFILE_T1827044606_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 
-// InControl.NativeProfile.MLGControllerMacProfile
-struct  MLGControllerMacProfile_t1513752687  : public Xbox360DriverMacProfile_t1968726057
+// InControl.NativeProfile.RazerOnzaControllerMacProfile
+struct  RazerOnzaControllerMacProfile_t1827044606  : public Xbox360DriverMacProfile_t1968726057
 {
 public:
 
@@ -4382,17 +4524,17 @@ public:
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // MLGCONTROLLERMACPROFILE_T1513752687_H
-#ifndef MVCTESTICKMACPROFILE_T4225761182_H
-#define MVCTESTICKMACPROFILE_T4225761182_H
+#endif // RAZERONZACONTROLLERMACPROFILE_T1827044606_H
+#ifndef RAZERONZATECONTROLLERMACPROFILE_T2581177765_H
+#define RAZERONZATECONTROLLERMACPROFILE_T2581177765_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 
-// InControl.NativeProfile.MVCTEStickMacProfile
-struct  MVCTEStickMacProfile_t4225761182  : public Xbox360DriverMacProfile_t1968726057
+// InControl.NativeProfile.RazerOnzaTEControllerMacProfile
+struct  RazerOnzaTEControllerMacProfile_t2581177765  : public Xbox360DriverMacProfile_t1968726057
 {
 public:
 
@@ -4402,17 +4544,17 @@ public:
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // MVCTESTICKMACPROFILE_T4225761182_H
-#ifndef NACONGC100XFCONTROLLERMACPROFILE_T3663274790_H
-#define NACONGC100XFCONTROLLERMACPROFILE_T3663274790_H
+#endif // RAZERONZATECONTROLLERMACPROFILE_T2581177765_H
+#ifndef RAZERSABERTOOTHELITECONTROLLERMACPROFILE_T1128221419_H
+#define RAZERSABERTOOTHELITECONTROLLERMACPROFILE_T1128221419_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 
-// InControl.NativeProfile.NaconGC100XFControllerMacProfile
-struct  NaconGC100XFControllerMacProfile_t3663274790  : public Xbox360DriverMacProfile_t1968726057
+// InControl.NativeProfile.RazerSabertoothEliteControllerMacProfile
+struct  RazerSabertoothEliteControllerMacProfile_t1128221419  : public Xbox360DriverMacProfile_t1968726057
 {
 public:
 
@@ -4422,17 +4564,17 @@ public:
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // NACONGC100XFCONTROLLERMACPROFILE_T3663274790_H
-#ifndef PDPAFTERGLOWCONTROLLERMACPROFILE_T1588976563_H
-#define PDPAFTERGLOWCONTROLLERMACPROFILE_T1588976563_H
+#endif // RAZERSABERTOOTHELITECONTROLLERMACPROFILE_T1128221419_H
+#ifndef RAZERSTRIKECONTROLLERMACPROFILE_T1132282710_H
+#define RAZERSTRIKECONTROLLERMACPROFILE_T1132282710_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 
-// InControl.NativeProfile.PDPAfterglowControllerMacProfile
-struct  PDPAfterglowControllerMacProfile_t1588976563  : public Xbox360DriverMacProfile_t1968726057
+// InControl.NativeProfile.RazerStrikeControllerMacProfile
+struct  RazerStrikeControllerMacProfile_t1132282710  : public Xbox360DriverMacProfile_t1968726057
 {
 public:
 
@@ -4442,17 +4584,17 @@ public:
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // PDPAFTERGLOWCONTROLLERMACPROFILE_T1588976563_H
-#ifndef PDPBATTLEFIELDXBOXONECONTROLLERMACPROFILE_T2210644831_H
-#define PDPBATTLEFIELDXBOXONECONTROLLERMACPROFILE_T2210644831_H
+#endif // RAZERSTRIKECONTROLLERMACPROFILE_T1132282710_H
+#ifndef QANBAFIGHTSTICKPLUSMACPROFILE_T865257184_H
+#define QANBAFIGHTSTICKPLUSMACPROFILE_T865257184_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 
-// InControl.NativeProfile.PDPBattlefieldXBoxOneControllerMacProfile
-struct  PDPBattlefieldXBoxOneControllerMacProfile_t2210644831  : public XboxOneDriverMacProfile_t4249812493
+// InControl.NativeProfile.QanbaFightStickPlusMacProfile
+struct  QanbaFightStickPlusMacProfile_t865257184  : public Xbox360DriverMacProfile_t1968726057
 {
 public:
 
@@ -4462,147 +4604,7 @@ public:
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // PDPBATTLEFIELDXBOXONECONTROLLERMACPROFILE_T2210644831_H
-#ifndef PDPXBOXONEARCADESTICKMACPROFILE_T3097356591_H
-#define PDPXBOXONEARCADESTICKMACPROFILE_T3097356591_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// InControl.NativeProfile.PDPXboxOneArcadeStickMacProfile
-struct  PDPXboxOneArcadeStickMacProfile_t3097356591  : public XboxOneDriverMacProfile_t4249812493
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // PDPXBOXONEARCADESTICKMACPROFILE_T3097356591_H
-#ifndef PDPXBOX360CONTROLLERMACPROFILE_T447465477_H
-#define PDPXBOX360CONTROLLERMACPROFILE_T447465477_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// InControl.NativeProfile.PDPXbox360ControllerMacProfile
-struct  PDPXbox360ControllerMacProfile_t447465477  : public Xbox360DriverMacProfile_t1968726057
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // PDPXBOX360CONTROLLERMACPROFILE_T447465477_H
-#ifndef PDPVERSUSCONTROLLERMACPROFILE_T2162518710_H
-#define PDPVERSUSCONTROLLERMACPROFILE_T2162518710_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// InControl.NativeProfile.PDPVersusControllerMacProfile
-struct  PDPVersusControllerMacProfile_t2162518710  : public Xbox360DriverMacProfile_t1968726057
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // PDPVERSUSCONTROLLERMACPROFILE_T2162518710_H
-#ifndef PDPTRONCONTROLLERMACPROFILE_T953062917_H
-#define PDPTRONCONTROLLERMACPROFILE_T953062917_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// InControl.NativeProfile.PDPTronControllerMacProfile
-struct  PDPTronControllerMacProfile_t953062917  : public Xbox360DriverMacProfile_t1968726057
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // PDPTRONCONTROLLERMACPROFILE_T953062917_H
-#ifndef PDPTITANFALL2XBOXONECONTROLLERMACPROFILE_T3252585292_H
-#define PDPTITANFALL2XBOXONECONTROLLERMACPROFILE_T3252585292_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// InControl.NativeProfile.PDPTitanfall2XboxOneControllerMacProfile
-struct  PDPTitanfall2XboxOneControllerMacProfile_t3252585292  : public XboxOneDriverMacProfile_t4249812493
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // PDPTITANFALL2XBOXONECONTROLLERMACPROFILE_T3252585292_H
-#ifndef PDPMARVELCONTROLLERMACPROFILE_T4098526584_H
-#define PDPMARVELCONTROLLERMACPROFILE_T4098526584_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// InControl.NativeProfile.PDPMarvelControllerMacProfile
-struct  PDPMarvelControllerMacProfile_t4098526584  : public Xbox360DriverMacProfile_t1968726057
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // PDPMARVELCONTROLLERMACPROFILE_T4098526584_H
-#ifndef POWERAAIRFLOWCONTROLLERMACPROFILE_T1422981755_H
-#define POWERAAIRFLOWCONTROLLERMACPROFILE_T1422981755_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// InControl.NativeProfile.PowerAAirflowControllerMacProfile
-struct  PowerAAirflowControllerMacProfile_t1422981755  : public Xbox360DriverMacProfile_t1968726057
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // POWERAAIRFLOWCONTROLLERMACPROFILE_T1422981755_H
+#endif // QANBAFIGHTSTICKPLUSMACPROFILE_T865257184_H
 // System.String[]
 struct StringU5BU5D_t1281789340  : public RuntimeArray
 {
@@ -4821,6 +4823,591 @@ extern "C"  InputControlMapping_t3750691495 * UnityInputDeviceProfile_DPadUpMapp
 extern "C"  InputControlMapping_t3750691495 * UnityInputDeviceProfile_DPadDownMapping2_m577396001 (RuntimeObject * __this /* static, unused */, RuntimeObject* ___analog0, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // System.Void InControl.InputDeviceProfile::set_UpperDeadZone(System.Single)
 extern "C"  void InputDeviceProfile_set_UpperDeadZone_m126786707 (InputDeviceProfile_t2270363578 * __this, float ___value0, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void InControl.NativeProfile.LogitechF710ModeDWindowsNativeProfile::.ctor()
+extern "C"  void LogitechF710ModeDWindowsNativeProfile__ctor_m1963456993 (LogitechF710ModeDWindowsNativeProfile_t2234735030 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (LogitechF710ModeDWindowsNativeProfile__ctor_m1963456993_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	NativeInputDeviceMatcher_t1029808777 * V_0 = NULL;
+	InputControlMapping_t3750691495 * V_1 = NULL;
+	{
+		NativeInputDeviceProfile__ctor_m521121614(__this, /*hidden argument*/NULL);
+		InputDeviceProfile_set_Name_m1443663649(__this, _stringLiteral2326558473, /*hidden argument*/NULL);
+		InputDeviceProfile_set_Meta_m696359973(__this, _stringLiteral1987819657, /*hidden argument*/NULL);
+		InputDeviceProfile_set_DeviceClass_m3472942326(__this, 3, /*hidden argument*/NULL);
+		InputDeviceProfile_set_DeviceStyle_m2448048405(__this, 1, /*hidden argument*/NULL);
+		StringU5BU5D_t1281789340* L_0 = ((StringU5BU5D_t1281789340*)SZArrayNew(StringU5BU5D_t1281789340_il2cpp_TypeInfo_var, (uint32_t)1));
+		NullCheck(L_0);
+		ArrayElementTypeCheck (L_0, _stringLiteral773292389);
+		(L_0)->SetAt(static_cast<il2cpp_array_size_t>(0), (String_t*)_stringLiteral773292389);
+		InputDeviceProfile_set_IncludePlatforms_m4131069119(__this, L_0, /*hidden argument*/NULL);
+		NativeInputDeviceMatcherU5BU5D_t19578164* L_1 = ((NativeInputDeviceMatcherU5BU5D_t19578164*)SZArrayNew(NativeInputDeviceMatcherU5BU5D_t19578164_il2cpp_TypeInfo_var, (uint32_t)1));
+		NativeInputDeviceMatcher_t1029808777 * L_2 = (NativeInputDeviceMatcher_t1029808777 *)il2cpp_codegen_object_new(NativeInputDeviceMatcher_t1029808777_il2cpp_TypeInfo_var);
+		NativeInputDeviceMatcher__ctor_m576398138(L_2, /*hidden argument*/NULL);
+		V_0 = L_2;
+		NativeInputDeviceMatcher_t1029808777 * L_3 = V_0;
+		Nullable_1_t3900287040  L_4;
+		memset(&L_4, 0, sizeof(L_4));
+		Nullable_1__ctor_m590836141((&L_4), (uint16_t)((int32_t)1133), /*hidden argument*/Nullable_1__ctor_m590836141_RuntimeMethod_var);
+		NullCheck(L_3);
+		L_3->set_VendorID_0(L_4);
+		NativeInputDeviceMatcher_t1029808777 * L_5 = V_0;
+		Nullable_1_t3900287040  L_6;
+		memset(&L_6, 0, sizeof(L_6));
+		Nullable_1__ctor_m590836141((&L_6), (uint16_t)((int32_t)49689), /*hidden argument*/Nullable_1__ctor_m590836141_RuntimeMethod_var);
+		NullCheck(L_5);
+		L_5->set_ProductID_1(L_6);
+		NativeInputDeviceMatcher_t1029808777 * L_7 = V_0;
+		NullCheck(L_1);
+		ArrayElementTypeCheck (L_1, L_7);
+		(L_1)->SetAt(static_cast<il2cpp_array_size_t>(0), (NativeInputDeviceMatcher_t1029808777 *)L_7);
+		((NativeInputDeviceProfile_t2018902418 *)__this)->set_Matchers_14(L_1);
+		InputControlMappingU5BU5D_t2585457374* L_8 = ((InputControlMappingU5BU5D_t2585457374*)SZArrayNew(InputControlMappingU5BU5D_t2585457374_il2cpp_TypeInfo_var, (uint32_t)((int32_t)12)));
+		InputControlMapping_t3750691495 * L_9 = (InputControlMapping_t3750691495 *)il2cpp_codegen_object_new(InputControlMapping_t3750691495_il2cpp_TypeInfo_var);
+		InputControlMapping__ctor_m3302154977(L_9, /*hidden argument*/NULL);
+		V_1 = L_9;
+		InputControlMapping_t3750691495 * L_10 = V_1;
+		NullCheck(L_10);
+		InputControlMapping_set_Handle_m285088(L_10, _stringLiteral3452614648, /*hidden argument*/NULL);
+		InputControlMapping_t3750691495 * L_11 = V_1;
+		NullCheck(L_11);
+		L_11->set_Target_1(((int32_t)21));
+		InputControlMapping_t3750691495 * L_12 = V_1;
+		RuntimeObject* L_13 = NativeInputDeviceProfile_Button_m2166942769(NULL /*static, unused*/, 0, /*hidden argument*/NULL);
+		NullCheck(L_12);
+		L_12->set_Source_0(L_13);
+		InputControlMapping_t3750691495 * L_14 = V_1;
+		NullCheck(L_8);
+		ArrayElementTypeCheck (L_8, L_14);
+		(L_8)->SetAt(static_cast<il2cpp_array_size_t>(0), (InputControlMapping_t3750691495 *)L_14);
+		InputControlMappingU5BU5D_t2585457374* L_15 = L_8;
+		InputControlMapping_t3750691495 * L_16 = (InputControlMapping_t3750691495 *)il2cpp_codegen_object_new(InputControlMapping_t3750691495_il2cpp_TypeInfo_var);
+		InputControlMapping__ctor_m3302154977(L_16, /*hidden argument*/NULL);
+		V_1 = L_16;
+		InputControlMapping_t3750691495 * L_17 = V_1;
+		NullCheck(L_17);
+		InputControlMapping_set_Handle_m285088(L_17, _stringLiteral3452614623, /*hidden argument*/NULL);
+		InputControlMapping_t3750691495 * L_18 = V_1;
+		NullCheck(L_18);
+		L_18->set_Target_1(((int32_t)19));
+		InputControlMapping_t3750691495 * L_19 = V_1;
+		RuntimeObject* L_20 = NativeInputDeviceProfile_Button_m2166942769(NULL /*static, unused*/, 1, /*hidden argument*/NULL);
+		NullCheck(L_19);
+		L_19->set_Source_0(L_20);
+		InputControlMapping_t3750691495 * L_21 = V_1;
+		NullCheck(L_15);
+		ArrayElementTypeCheck (L_15, L_21);
+		(L_15)->SetAt(static_cast<il2cpp_array_size_t>(1), (InputControlMapping_t3750691495 *)L_21);
+		InputControlMappingU5BU5D_t2585457374* L_22 = L_15;
+		InputControlMapping_t3750691495 * L_23 = (InputControlMapping_t3750691495 *)il2cpp_codegen_object_new(InputControlMapping_t3750691495_il2cpp_TypeInfo_var);
+		InputControlMapping__ctor_m3302154977(L_23, /*hidden argument*/NULL);
+		V_1 = L_23;
+		InputControlMapping_t3750691495 * L_24 = V_1;
+		NullCheck(L_24);
+		InputControlMapping_set_Handle_m285088(L_24, _stringLiteral3452614622, /*hidden argument*/NULL);
+		InputControlMapping_t3750691495 * L_25 = V_1;
+		NullCheck(L_25);
+		L_25->set_Target_1(((int32_t)20));
+		InputControlMapping_t3750691495 * L_26 = V_1;
+		RuntimeObject* L_27 = NativeInputDeviceProfile_Button_m2166942769(NULL /*static, unused*/, 2, /*hidden argument*/NULL);
+		NullCheck(L_26);
+		L_26->set_Source_0(L_27);
+		InputControlMapping_t3750691495 * L_28 = V_1;
+		NullCheck(L_22);
+		ArrayElementTypeCheck (L_22, L_28);
+		(L_22)->SetAt(static_cast<il2cpp_array_size_t>(2), (InputControlMapping_t3750691495 *)L_28);
+		InputControlMappingU5BU5D_t2585457374* L_29 = L_22;
+		InputControlMapping_t3750691495 * L_30 = (InputControlMapping_t3750691495 *)il2cpp_codegen_object_new(InputControlMapping_t3750691495_il2cpp_TypeInfo_var);
+		InputControlMapping__ctor_m3302154977(L_30, /*hidden argument*/NULL);
+		V_1 = L_30;
+		InputControlMapping_t3750691495 * L_31 = V_1;
+		NullCheck(L_31);
+		InputControlMapping_set_Handle_m285088(L_31, _stringLiteral3452614647, /*hidden argument*/NULL);
+		InputControlMapping_t3750691495 * L_32 = V_1;
+		NullCheck(L_32);
+		L_32->set_Target_1(((int32_t)22));
+		InputControlMapping_t3750691495 * L_33 = V_1;
+		RuntimeObject* L_34 = NativeInputDeviceProfile_Button_m2166942769(NULL /*static, unused*/, 3, /*hidden argument*/NULL);
+		NullCheck(L_33);
+		L_33->set_Source_0(L_34);
+		InputControlMapping_t3750691495 * L_35 = V_1;
+		NullCheck(L_29);
+		ArrayElementTypeCheck (L_29, L_35);
+		(L_29)->SetAt(static_cast<il2cpp_array_size_t>(3), (InputControlMapping_t3750691495 *)L_35);
+		InputControlMappingU5BU5D_t2585457374* L_36 = L_29;
+		InputControlMapping_t3750691495 * L_37 = (InputControlMapping_t3750691495 *)il2cpp_codegen_object_new(InputControlMapping_t3750691495_il2cpp_TypeInfo_var);
+		InputControlMapping__ctor_m3302154977(L_37, /*hidden argument*/NULL);
+		V_1 = L_37;
+		InputControlMapping_t3750691495 * L_38 = V_1;
+		NullCheck(L_38);
+		InputControlMapping_set_Handle_m285088(L_38, _stringLiteral2732895816, /*hidden argument*/NULL);
+		InputControlMapping_t3750691495 * L_39 = V_1;
+		NullCheck(L_39);
+		L_39->set_Target_1(((int32_t)17));
+		InputControlMapping_t3750691495 * L_40 = V_1;
+		RuntimeObject* L_41 = NativeInputDeviceProfile_Button_m2166942769(NULL /*static, unused*/, 4, /*hidden argument*/NULL);
+		NullCheck(L_40);
+		L_40->set_Source_0(L_41);
+		InputControlMapping_t3750691495 * L_42 = V_1;
+		NullCheck(L_36);
+		ArrayElementTypeCheck (L_36, L_42);
+		(L_36)->SetAt(static_cast<il2cpp_array_size_t>(4), (InputControlMapping_t3750691495 *)L_42);
+		InputControlMappingU5BU5D_t2585457374* L_43 = L_36;
+		InputControlMapping_t3750691495 * L_44 = (InputControlMapping_t3750691495 *)il2cpp_codegen_object_new(InputControlMapping_t3750691495_il2cpp_TypeInfo_var);
+		InputControlMapping__ctor_m3302154977(L_44, /*hidden argument*/NULL);
+		V_1 = L_44;
+		InputControlMapping_t3750691495 * L_45 = V_1;
+		NullCheck(L_45);
+		InputControlMapping_set_Handle_m285088(L_45, _stringLiteral718575221, /*hidden argument*/NULL);
+		InputControlMapping_t3750691495 * L_46 = V_1;
+		NullCheck(L_46);
+		L_46->set_Target_1(((int32_t)18));
+		InputControlMapping_t3750691495 * L_47 = V_1;
+		RuntimeObject* L_48 = NativeInputDeviceProfile_Button_m2166942769(NULL /*static, unused*/, 5, /*hidden argument*/NULL);
+		NullCheck(L_47);
+		L_47->set_Source_0(L_48);
+		InputControlMapping_t3750691495 * L_49 = V_1;
+		NullCheck(L_43);
+		ArrayElementTypeCheck (L_43, L_49);
+		(L_43)->SetAt(static_cast<il2cpp_array_size_t>(5), (InputControlMapping_t3750691495 *)L_49);
+		InputControlMappingU5BU5D_t2585457374* L_50 = L_43;
+		InputControlMapping_t3750691495 * L_51 = (InputControlMapping_t3750691495 *)il2cpp_codegen_object_new(InputControlMapping_t3750691495_il2cpp_TypeInfo_var);
+		InputControlMapping__ctor_m3302154977(L_51, /*hidden argument*/NULL);
+		V_1 = L_51;
+		InputControlMapping_t3750691495 * L_52 = V_1;
+		NullCheck(L_52);
+		InputControlMapping_set_Handle_m285088(L_52, _stringLiteral157069623, /*hidden argument*/NULL);
+		InputControlMapping_t3750691495 * L_53 = V_1;
+		NullCheck(L_53);
+		L_53->set_Target_1(((int32_t)15));
+		InputControlMapping_t3750691495 * L_54 = V_1;
+		RuntimeObject* L_55 = NativeInputDeviceProfile_Button_m2166942769(NULL /*static, unused*/, 6, /*hidden argument*/NULL);
+		NullCheck(L_54);
+		L_54->set_Source_0(L_55);
+		InputControlMapping_t3750691495 * L_56 = V_1;
+		NullCheck(L_50);
+		ArrayElementTypeCheck (L_50, L_56);
+		(L_50)->SetAt(static_cast<il2cpp_array_size_t>(6), (InputControlMapping_t3750691495 *)L_56);
+		InputControlMappingU5BU5D_t2585457374* L_57 = L_50;
+		InputControlMapping_t3750691495 * L_58 = (InputControlMapping_t3750691495 *)il2cpp_codegen_object_new(InputControlMapping_t3750691495_il2cpp_TypeInfo_var);
+		InputControlMapping__ctor_m3302154977(L_58, /*hidden argument*/NULL);
+		V_1 = L_58;
+		InputControlMapping_t3750691495 * L_59 = V_1;
+		NullCheck(L_59);
+		InputControlMapping_set_Handle_m285088(L_59, _stringLiteral2900257707, /*hidden argument*/NULL);
+		InputControlMapping_t3750691495 * L_60 = V_1;
+		NullCheck(L_60);
+		L_60->set_Target_1(((int32_t)16));
+		InputControlMapping_t3750691495 * L_61 = V_1;
+		RuntimeObject* L_62 = NativeInputDeviceProfile_Button_m2166942769(NULL /*static, unused*/, 7, /*hidden argument*/NULL);
+		NullCheck(L_61);
+		L_61->set_Source_0(L_62);
+		InputControlMapping_t3750691495 * L_63 = V_1;
+		NullCheck(L_57);
+		ArrayElementTypeCheck (L_57, L_63);
+		(L_57)->SetAt(static_cast<il2cpp_array_size_t>(7), (InputControlMapping_t3750691495 *)L_63);
+		InputControlMappingU5BU5D_t2585457374* L_64 = L_57;
+		InputControlMapping_t3750691495 * L_65 = (InputControlMapping_t3750691495 *)il2cpp_codegen_object_new(InputControlMapping_t3750691495_il2cpp_TypeInfo_var);
+		InputControlMapping__ctor_m3302154977(L_65, /*hidden argument*/NULL);
+		V_1 = L_65;
+		InputControlMapping_t3750691495 * L_66 = V_1;
+		NullCheck(L_66);
+		InputControlMapping_set_Handle_m285088(L_66, _stringLiteral1167841337, /*hidden argument*/NULL);
+		InputControlMapping_t3750691495 * L_67 = V_1;
+		NullCheck(L_67);
+		L_67->set_Target_1(((int32_t)100));
+		InputControlMapping_t3750691495 * L_68 = V_1;
+		RuntimeObject* L_69 = NativeInputDeviceProfile_Button_m2166942769(NULL /*static, unused*/, 8, /*hidden argument*/NULL);
+		NullCheck(L_68);
+		L_68->set_Source_0(L_69);
+		InputControlMapping_t3750691495 * L_70 = V_1;
+		NullCheck(L_64);
+		ArrayElementTypeCheck (L_64, L_70);
+		(L_64)->SetAt(static_cast<il2cpp_array_size_t>(8), (InputControlMapping_t3750691495 *)L_70);
+		InputControlMappingU5BU5D_t2585457374* L_71 = L_64;
+		InputControlMapping_t3750691495 * L_72 = (InputControlMapping_t3750691495 *)il2cpp_codegen_object_new(InputControlMapping_t3750691495_il2cpp_TypeInfo_var);
+		InputControlMapping__ctor_m3302154977(L_72, /*hidden argument*/NULL);
+		V_1 = L_72;
+		InputControlMapping_t3750691495 * L_73 = V_1;
+		NullCheck(L_73);
+		InputControlMapping_set_Handle_m285088(L_73, _stringLiteral2707270972, /*hidden argument*/NULL);
+		InputControlMapping_t3750691495 * L_74 = V_1;
+		NullCheck(L_74);
+		L_74->set_Target_1(((int32_t)101));
+		InputControlMapping_t3750691495 * L_75 = V_1;
+		RuntimeObject* L_76 = NativeInputDeviceProfile_Button_m2166942769(NULL /*static, unused*/, ((int32_t)9), /*hidden argument*/NULL);
+		NullCheck(L_75);
+		L_75->set_Source_0(L_76);
+		InputControlMapping_t3750691495 * L_77 = V_1;
+		NullCheck(L_71);
+		ArrayElementTypeCheck (L_71, L_77);
+		(L_71)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)9)), (InputControlMapping_t3750691495 *)L_77);
+		InputControlMappingU5BU5D_t2585457374* L_78 = L_71;
+		InputControlMapping_t3750691495 * L_79 = (InputControlMapping_t3750691495 *)il2cpp_codegen_object_new(InputControlMapping_t3750691495_il2cpp_TypeInfo_var);
+		InputControlMapping__ctor_m3302154977(L_79, /*hidden argument*/NULL);
+		V_1 = L_79;
+		InputControlMapping_t3750691495 * L_80 = V_1;
+		NullCheck(L_80);
+		InputControlMapping_set_Handle_m285088(L_80, _stringLiteral1976569017, /*hidden argument*/NULL);
+		InputControlMapping_t3750691495 * L_81 = V_1;
+		NullCheck(L_81);
+		L_81->set_Target_1(5);
+		InputControlMapping_t3750691495 * L_82 = V_1;
+		RuntimeObject* L_83 = NativeInputDeviceProfile_Button_m2166942769(NULL /*static, unused*/, ((int32_t)10), /*hidden argument*/NULL);
+		NullCheck(L_82);
+		L_82->set_Source_0(L_83);
+		InputControlMapping_t3750691495 * L_84 = V_1;
+		NullCheck(L_78);
+		ArrayElementTypeCheck (L_78, L_84);
+		(L_78)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)10)), (InputControlMapping_t3750691495 *)L_84);
+		InputControlMappingU5BU5D_t2585457374* L_85 = L_78;
+		InputControlMapping_t3750691495 * L_86 = (InputControlMapping_t3750691495 *)il2cpp_codegen_object_new(InputControlMapping_t3750691495_il2cpp_TypeInfo_var);
+		InputControlMapping__ctor_m3302154977(L_86, /*hidden argument*/NULL);
+		V_1 = L_86;
+		InputControlMapping_t3750691495 * L_87 = V_1;
+		NullCheck(L_87);
+		InputControlMapping_set_Handle_m285088(L_87, _stringLiteral3316441220, /*hidden argument*/NULL);
+		InputControlMapping_t3750691495 * L_88 = V_1;
+		NullCheck(L_88);
+		L_88->set_Target_1(((int32_t)10));
+		InputControlMapping_t3750691495 * L_89 = V_1;
+		RuntimeObject* L_90 = NativeInputDeviceProfile_Button_m2166942769(NULL /*static, unused*/, ((int32_t)11), /*hidden argument*/NULL);
+		NullCheck(L_89);
+		L_89->set_Source_0(L_90);
+		InputControlMapping_t3750691495 * L_91 = V_1;
+		NullCheck(L_85);
+		ArrayElementTypeCheck (L_85, L_91);
+		(L_85)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)11)), (InputControlMapping_t3750691495 *)L_91);
+		InputDeviceProfile_set_ButtonMappings_m2171483968(__this, L_85, /*hidden argument*/NULL);
+		InputControlMappingU5BU5D_t2585457374* L_92 = ((InputControlMappingU5BU5D_t2585457374*)SZArrayNew(InputControlMappingU5BU5D_t2585457374_il2cpp_TypeInfo_var, (uint32_t)((int32_t)12)));
+		InputControlMapping_t3750691495 * L_93 = (InputControlMapping_t3750691495 *)il2cpp_codegen_object_new(InputControlMapping_t3750691495_il2cpp_TypeInfo_var);
+		InputControlMapping__ctor_m3302154977(L_93, /*hidden argument*/NULL);
+		V_1 = L_93;
+		InputControlMapping_t3750691495 * L_94 = V_1;
+		NullCheck(L_94);
+		InputControlMapping_set_Handle_m285088(L_94, _stringLiteral1743244449, /*hidden argument*/NULL);
+		InputControlMapping_t3750691495 * L_95 = V_1;
+		NullCheck(L_95);
+		L_95->set_Target_1(6);
+		InputControlMapping_t3750691495 * L_96 = V_1;
+		RuntimeObject* L_97 = NativeInputDeviceProfile_Analog_m346957963(NULL /*static, unused*/, 0, /*hidden argument*/NULL);
+		NullCheck(L_96);
+		L_96->set_Source_0(L_97);
+		InputControlMapping_t3750691495 * L_98 = V_1;
+		IL2CPP_RUNTIME_CLASS_INIT(InputRange_t919983432_il2cpp_TypeInfo_var);
+		InputRange_t919983432  L_99 = ((InputRange_t919983432_StaticFields*)il2cpp_codegen_static_fields_for(InputRange_t919983432_il2cpp_TypeInfo_var))->get_ZeroToMinusOne_4();
+		NullCheck(L_98);
+		L_98->set_SourceRange_10(L_99);
+		InputControlMapping_t3750691495 * L_100 = V_1;
+		InputRange_t919983432  L_101 = ((InputRange_t919983432_StaticFields*)il2cpp_codegen_static_fields_for(InputRange_t919983432_il2cpp_TypeInfo_var))->get_ZeroToOne_3();
+		NullCheck(L_100);
+		L_100->set_TargetRange_11(L_101);
+		InputControlMapping_t3750691495 * L_102 = V_1;
+		NullCheck(L_92);
+		ArrayElementTypeCheck (L_92, L_102);
+		(L_92)->SetAt(static_cast<il2cpp_array_size_t>(0), (InputControlMapping_t3750691495 *)L_102);
+		InputControlMappingU5BU5D_t2585457374* L_103 = L_92;
+		InputControlMapping_t3750691495 * L_104 = (InputControlMapping_t3750691495 *)il2cpp_codegen_object_new(InputControlMapping_t3750691495_il2cpp_TypeInfo_var);
+		InputControlMapping__ctor_m3302154977(L_104, /*hidden argument*/NULL);
+		V_1 = L_104;
+		InputControlMapping_t3750691495 * L_105 = V_1;
+		NullCheck(L_105);
+		InputControlMapping_set_Handle_m285088(L_105, _stringLiteral1970191823, /*hidden argument*/NULL);
+		InputControlMapping_t3750691495 * L_106 = V_1;
+		NullCheck(L_106);
+		L_106->set_Target_1(7);
+		InputControlMapping_t3750691495 * L_107 = V_1;
+		RuntimeObject* L_108 = NativeInputDeviceProfile_Analog_m346957963(NULL /*static, unused*/, 0, /*hidden argument*/NULL);
+		NullCheck(L_107);
+		L_107->set_Source_0(L_108);
+		InputControlMapping_t3750691495 * L_109 = V_1;
+		InputRange_t919983432  L_110 = ((InputRange_t919983432_StaticFields*)il2cpp_codegen_static_fields_for(InputRange_t919983432_il2cpp_TypeInfo_var))->get_ZeroToOne_3();
+		NullCheck(L_109);
+		L_109->set_SourceRange_10(L_110);
+		InputControlMapping_t3750691495 * L_111 = V_1;
+		InputRange_t919983432  L_112 = ((InputRange_t919983432_StaticFields*)il2cpp_codegen_static_fields_for(InputRange_t919983432_il2cpp_TypeInfo_var))->get_ZeroToOne_3();
+		NullCheck(L_111);
+		L_111->set_TargetRange_11(L_112);
+		InputControlMapping_t3750691495 * L_113 = V_1;
+		NullCheck(L_103);
+		ArrayElementTypeCheck (L_103, L_113);
+		(L_103)->SetAt(static_cast<il2cpp_array_size_t>(1), (InputControlMapping_t3750691495 *)L_113);
+		InputControlMappingU5BU5D_t2585457374* L_114 = L_103;
+		InputControlMapping_t3750691495 * L_115 = (InputControlMapping_t3750691495 *)il2cpp_codegen_object_new(InputControlMapping_t3750691495_il2cpp_TypeInfo_var);
+		InputControlMapping__ctor_m3302154977(L_115, /*hidden argument*/NULL);
+		V_1 = L_115;
+		InputControlMapping_t3750691495 * L_116 = V_1;
+		NullCheck(L_116);
+		InputControlMapping_set_Handle_m285088(L_116, _stringLiteral1101173484, /*hidden argument*/NULL);
+		InputControlMapping_t3750691495 * L_117 = V_1;
+		NullCheck(L_117);
+		L_117->set_Target_1(8);
+		InputControlMapping_t3750691495 * L_118 = V_1;
+		RuntimeObject* L_119 = NativeInputDeviceProfile_Analog_m346957963(NULL /*static, unused*/, 1, /*hidden argument*/NULL);
+		NullCheck(L_118);
+		L_118->set_Source_0(L_119);
+		InputControlMapping_t3750691495 * L_120 = V_1;
+		InputRange_t919983432  L_121 = ((InputRange_t919983432_StaticFields*)il2cpp_codegen_static_fields_for(InputRange_t919983432_il2cpp_TypeInfo_var))->get_ZeroToMinusOne_4();
+		NullCheck(L_120);
+		L_120->set_SourceRange_10(L_121);
+		InputControlMapping_t3750691495 * L_122 = V_1;
+		InputRange_t919983432  L_123 = ((InputRange_t919983432_StaticFields*)il2cpp_codegen_static_fields_for(InputRange_t919983432_il2cpp_TypeInfo_var))->get_ZeroToOne_3();
+		NullCheck(L_122);
+		L_122->set_TargetRange_11(L_123);
+		InputControlMapping_t3750691495 * L_124 = V_1;
+		NullCheck(L_114);
+		ArrayElementTypeCheck (L_114, L_124);
+		(L_114)->SetAt(static_cast<il2cpp_array_size_t>(2), (InputControlMapping_t3750691495 *)L_124);
+		InputControlMappingU5BU5D_t2585457374* L_125 = L_114;
+		InputControlMapping_t3750691495 * L_126 = (InputControlMapping_t3750691495 *)il2cpp_codegen_object_new(InputControlMapping_t3750691495_il2cpp_TypeInfo_var);
+		InputControlMapping__ctor_m3302154977(L_126, /*hidden argument*/NULL);
+		V_1 = L_126;
+		InputControlMapping_t3750691495 * L_127 = V_1;
+		NullCheck(L_127);
+		InputControlMapping_set_Handle_m285088(L_127, _stringLiteral549368750, /*hidden argument*/NULL);
+		InputControlMapping_t3750691495 * L_128 = V_1;
+		NullCheck(L_128);
+		L_128->set_Target_1(((int32_t)9));
+		InputControlMapping_t3750691495 * L_129 = V_1;
+		RuntimeObject* L_130 = NativeInputDeviceProfile_Analog_m346957963(NULL /*static, unused*/, 1, /*hidden argument*/NULL);
+		NullCheck(L_129);
+		L_129->set_Source_0(L_130);
+		InputControlMapping_t3750691495 * L_131 = V_1;
+		InputRange_t919983432  L_132 = ((InputRange_t919983432_StaticFields*)il2cpp_codegen_static_fields_for(InputRange_t919983432_il2cpp_TypeInfo_var))->get_ZeroToOne_3();
+		NullCheck(L_131);
+		L_131->set_SourceRange_10(L_132);
+		InputControlMapping_t3750691495 * L_133 = V_1;
+		InputRange_t919983432  L_134 = ((InputRange_t919983432_StaticFields*)il2cpp_codegen_static_fields_for(InputRange_t919983432_il2cpp_TypeInfo_var))->get_ZeroToOne_3();
+		NullCheck(L_133);
+		L_133->set_TargetRange_11(L_134);
+		InputControlMapping_t3750691495 * L_135 = V_1;
+		NullCheck(L_125);
+		ArrayElementTypeCheck (L_125, L_135);
+		(L_125)->SetAt(static_cast<il2cpp_array_size_t>(3), (InputControlMapping_t3750691495 *)L_135);
+		InputControlMappingU5BU5D_t2585457374* L_136 = L_125;
+		InputControlMapping_t3750691495 * L_137 = (InputControlMapping_t3750691495 *)il2cpp_codegen_object_new(InputControlMapping_t3750691495_il2cpp_TypeInfo_var);
+		InputControlMapping__ctor_m3302154977(L_137, /*hidden argument*/NULL);
+		V_1 = L_137;
+		InputControlMapping_t3750691495 * L_138 = V_1;
+		NullCheck(L_138);
+		InputControlMapping_set_Handle_m285088(L_138, _stringLiteral1413084728, /*hidden argument*/NULL);
+		InputControlMapping_t3750691495 * L_139 = V_1;
+		NullCheck(L_139);
+		L_139->set_Target_1(1);
+		InputControlMapping_t3750691495 * L_140 = V_1;
+		RuntimeObject* L_141 = NativeInputDeviceProfile_Analog_m346957963(NULL /*static, unused*/, 2, /*hidden argument*/NULL);
+		NullCheck(L_140);
+		L_140->set_Source_0(L_141);
+		InputControlMapping_t3750691495 * L_142 = V_1;
+		InputRange_t919983432  L_143 = ((InputRange_t919983432_StaticFields*)il2cpp_codegen_static_fields_for(InputRange_t919983432_il2cpp_TypeInfo_var))->get_ZeroToMinusOne_4();
+		NullCheck(L_142);
+		L_142->set_SourceRange_10(L_143);
+		InputControlMapping_t3750691495 * L_144 = V_1;
+		InputRange_t919983432  L_145 = ((InputRange_t919983432_StaticFields*)il2cpp_codegen_static_fields_for(InputRange_t919983432_il2cpp_TypeInfo_var))->get_ZeroToOne_3();
+		NullCheck(L_144);
+		L_144->set_TargetRange_11(L_145);
+		InputControlMapping_t3750691495 * L_146 = V_1;
+		NullCheck(L_136);
+		ArrayElementTypeCheck (L_136, L_146);
+		(L_136)->SetAt(static_cast<il2cpp_array_size_t>(4), (InputControlMapping_t3750691495 *)L_146);
+		InputControlMappingU5BU5D_t2585457374* L_147 = L_136;
+		InputControlMapping_t3750691495 * L_148 = (InputControlMapping_t3750691495 *)il2cpp_codegen_object_new(InputControlMapping_t3750691495_il2cpp_TypeInfo_var);
+		InputControlMapping__ctor_m3302154977(L_148, /*hidden argument*/NULL);
+		V_1 = L_148;
+		InputControlMapping_t3750691495 * L_149 = V_1;
+		NullCheck(L_149);
+		InputControlMapping_set_Handle_m285088(L_149, _stringLiteral3664352337, /*hidden argument*/NULL);
+		InputControlMapping_t3750691495 * L_150 = V_1;
+		NullCheck(L_150);
+		L_150->set_Target_1(2);
+		InputControlMapping_t3750691495 * L_151 = V_1;
+		RuntimeObject* L_152 = NativeInputDeviceProfile_Analog_m346957963(NULL /*static, unused*/, 2, /*hidden argument*/NULL);
+		NullCheck(L_151);
+		L_151->set_Source_0(L_152);
+		InputControlMapping_t3750691495 * L_153 = V_1;
+		InputRange_t919983432  L_154 = ((InputRange_t919983432_StaticFields*)il2cpp_codegen_static_fields_for(InputRange_t919983432_il2cpp_TypeInfo_var))->get_ZeroToOne_3();
+		NullCheck(L_153);
+		L_153->set_SourceRange_10(L_154);
+		InputControlMapping_t3750691495 * L_155 = V_1;
+		InputRange_t919983432  L_156 = ((InputRange_t919983432_StaticFields*)il2cpp_codegen_static_fields_for(InputRange_t919983432_il2cpp_TypeInfo_var))->get_ZeroToOne_3();
+		NullCheck(L_155);
+		L_155->set_TargetRange_11(L_156);
+		InputControlMapping_t3750691495 * L_157 = V_1;
+		NullCheck(L_147);
+		ArrayElementTypeCheck (L_147, L_157);
+		(L_147)->SetAt(static_cast<il2cpp_array_size_t>(5), (InputControlMapping_t3750691495 *)L_157);
+		InputControlMappingU5BU5D_t2585457374* L_158 = L_147;
+		InputControlMapping_t3750691495 * L_159 = (InputControlMapping_t3750691495 *)il2cpp_codegen_object_new(InputControlMapping_t3750691495_il2cpp_TypeInfo_var);
+		InputControlMapping__ctor_m3302154977(L_159, /*hidden argument*/NULL);
+		V_1 = L_159;
+		InputControlMapping_t3750691495 * L_160 = V_1;
+		NullCheck(L_160);
+		InputControlMapping_set_Handle_m285088(L_160, _stringLiteral1785679853, /*hidden argument*/NULL);
+		InputControlMapping_t3750691495 * L_161 = V_1;
+		NullCheck(L_161);
+		L_161->set_Target_1(3);
+		InputControlMapping_t3750691495 * L_162 = V_1;
+		RuntimeObject* L_163 = NativeInputDeviceProfile_Analog_m346957963(NULL /*static, unused*/, 3, /*hidden argument*/NULL);
+		NullCheck(L_162);
+		L_162->set_Source_0(L_163);
+		InputControlMapping_t3750691495 * L_164 = V_1;
+		InputRange_t919983432  L_165 = ((InputRange_t919983432_StaticFields*)il2cpp_codegen_static_fields_for(InputRange_t919983432_il2cpp_TypeInfo_var))->get_ZeroToMinusOne_4();
+		NullCheck(L_164);
+		L_164->set_SourceRange_10(L_165);
+		InputControlMapping_t3750691495 * L_166 = V_1;
+		InputRange_t919983432  L_167 = ((InputRange_t919983432_StaticFields*)il2cpp_codegen_static_fields_for(InputRange_t919983432_il2cpp_TypeInfo_var))->get_ZeroToOne_3();
+		NullCheck(L_166);
+		L_166->set_TargetRange_11(L_167);
+		InputControlMapping_t3750691495 * L_168 = V_1;
+		NullCheck(L_158);
+		ArrayElementTypeCheck (L_158, L_168);
+		(L_158)->SetAt(static_cast<il2cpp_array_size_t>(6), (InputControlMapping_t3750691495 *)L_168);
+		InputControlMappingU5BU5D_t2585457374* L_169 = L_158;
+		InputControlMapping_t3750691495 * L_170 = (InputControlMapping_t3750691495 *)il2cpp_codegen_object_new(InputControlMapping_t3750691495_il2cpp_TypeInfo_var);
+		InputControlMapping__ctor_m3302154977(L_170, /*hidden argument*/NULL);
+		V_1 = L_170;
+		InputControlMapping_t3750691495 * L_171 = V_1;
+		NullCheck(L_171);
+		InputControlMapping_set_Handle_m285088(L_171, _stringLiteral2406406317, /*hidden argument*/NULL);
+		InputControlMapping_t3750691495 * L_172 = V_1;
+		NullCheck(L_172);
+		L_172->set_Target_1(4);
+		InputControlMapping_t3750691495 * L_173 = V_1;
+		RuntimeObject* L_174 = NativeInputDeviceProfile_Analog_m346957963(NULL /*static, unused*/, 3, /*hidden argument*/NULL);
+		NullCheck(L_173);
+		L_173->set_Source_0(L_174);
+		InputControlMapping_t3750691495 * L_175 = V_1;
+		InputRange_t919983432  L_176 = ((InputRange_t919983432_StaticFields*)il2cpp_codegen_static_fields_for(InputRange_t919983432_il2cpp_TypeInfo_var))->get_ZeroToOne_3();
+		NullCheck(L_175);
+		L_175->set_SourceRange_10(L_176);
+		InputControlMapping_t3750691495 * L_177 = V_1;
+		InputRange_t919983432  L_178 = ((InputRange_t919983432_StaticFields*)il2cpp_codegen_static_fields_for(InputRange_t919983432_il2cpp_TypeInfo_var))->get_ZeroToOne_3();
+		NullCheck(L_177);
+		L_177->set_TargetRange_11(L_178);
+		InputControlMapping_t3750691495 * L_179 = V_1;
+		NullCheck(L_169);
+		ArrayElementTypeCheck (L_169, L_179);
+		(L_169)->SetAt(static_cast<il2cpp_array_size_t>(7), (InputControlMapping_t3750691495 *)L_179);
+		InputControlMappingU5BU5D_t2585457374* L_180 = L_169;
+		InputControlMapping_t3750691495 * L_181 = (InputControlMapping_t3750691495 *)il2cpp_codegen_object_new(InputControlMapping_t3750691495_il2cpp_TypeInfo_var);
+		InputControlMapping__ctor_m3302154977(L_181, /*hidden argument*/NULL);
+		V_1 = L_181;
+		InputControlMapping_t3750691495 * L_182 = V_1;
+		NullCheck(L_182);
+		InputControlMapping_set_Handle_m285088(L_182, _stringLiteral2965878800, /*hidden argument*/NULL);
+		InputControlMapping_t3750691495 * L_183 = V_1;
+		NullCheck(L_183);
+		L_183->set_Target_1(((int32_t)13));
+		InputControlMapping_t3750691495 * L_184 = V_1;
+		RuntimeObject* L_185 = NativeInputDeviceProfile_Analog_m346957963(NULL /*static, unused*/, 4, /*hidden argument*/NULL);
+		NullCheck(L_184);
+		L_184->set_Source_0(L_185);
+		InputControlMapping_t3750691495 * L_186 = V_1;
+		InputRange_t919983432  L_187 = ((InputRange_t919983432_StaticFields*)il2cpp_codegen_static_fields_for(InputRange_t919983432_il2cpp_TypeInfo_var))->get_ZeroToMinusOne_4();
+		NullCheck(L_186);
+		L_186->set_SourceRange_10(L_187);
+		InputControlMapping_t3750691495 * L_188 = V_1;
+		InputRange_t919983432  L_189 = ((InputRange_t919983432_StaticFields*)il2cpp_codegen_static_fields_for(InputRange_t919983432_il2cpp_TypeInfo_var))->get_ZeroToOne_3();
+		NullCheck(L_188);
+		L_188->set_TargetRange_11(L_189);
+		InputControlMapping_t3750691495 * L_190 = V_1;
+		NullCheck(L_180);
+		ArrayElementTypeCheck (L_180, L_190);
+		(L_180)->SetAt(static_cast<il2cpp_array_size_t>(8), (InputControlMapping_t3750691495 *)L_190);
+		InputControlMappingU5BU5D_t2585457374* L_191 = L_180;
+		InputControlMapping_t3750691495 * L_192 = (InputControlMapping_t3750691495 *)il2cpp_codegen_object_new(InputControlMapping_t3750691495_il2cpp_TypeInfo_var);
+		InputControlMapping__ctor_m3302154977(L_192, /*hidden argument*/NULL);
+		V_1 = L_192;
+		InputControlMapping_t3750691495 * L_193 = V_1;
+		NullCheck(L_193);
+		InputControlMapping_set_Handle_m285088(L_193, _stringLiteral3390605944, /*hidden argument*/NULL);
+		InputControlMapping_t3750691495 * L_194 = V_1;
+		NullCheck(L_194);
+		L_194->set_Target_1(((int32_t)14));
+		InputControlMapping_t3750691495 * L_195 = V_1;
+		RuntimeObject* L_196 = NativeInputDeviceProfile_Analog_m346957963(NULL /*static, unused*/, 4, /*hidden argument*/NULL);
+		NullCheck(L_195);
+		L_195->set_Source_0(L_196);
+		InputControlMapping_t3750691495 * L_197 = V_1;
+		InputRange_t919983432  L_198 = ((InputRange_t919983432_StaticFields*)il2cpp_codegen_static_fields_for(InputRange_t919983432_il2cpp_TypeInfo_var))->get_ZeroToOne_3();
+		NullCheck(L_197);
+		L_197->set_SourceRange_10(L_198);
+		InputControlMapping_t3750691495 * L_199 = V_1;
+		InputRange_t919983432  L_200 = ((InputRange_t919983432_StaticFields*)il2cpp_codegen_static_fields_for(InputRange_t919983432_il2cpp_TypeInfo_var))->get_ZeroToOne_3();
+		NullCheck(L_199);
+		L_199->set_TargetRange_11(L_200);
+		InputControlMapping_t3750691495 * L_201 = V_1;
+		NullCheck(L_191);
+		ArrayElementTypeCheck (L_191, L_201);
+		(L_191)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)9)), (InputControlMapping_t3750691495 *)L_201);
+		InputControlMappingU5BU5D_t2585457374* L_202 = L_191;
+		InputControlMapping_t3750691495 * L_203 = (InputControlMapping_t3750691495 *)il2cpp_codegen_object_new(InputControlMapping_t3750691495_il2cpp_TypeInfo_var);
+		InputControlMapping__ctor_m3302154977(L_203, /*hidden argument*/NULL);
+		V_1 = L_203;
+		InputControlMapping_t3750691495 * L_204 = V_1;
+		NullCheck(L_204);
+		InputControlMapping_set_Handle_m285088(L_204, _stringLiteral3685310677, /*hidden argument*/NULL);
+		InputControlMapping_t3750691495 * L_205 = V_1;
+		NullCheck(L_205);
+		L_205->set_Target_1(((int32_t)11));
+		InputControlMapping_t3750691495 * L_206 = V_1;
+		RuntimeObject* L_207 = NativeInputDeviceProfile_Analog_m346957963(NULL /*static, unused*/, 5, /*hidden argument*/NULL);
+		NullCheck(L_206);
+		L_206->set_Source_0(L_207);
+		InputControlMapping_t3750691495 * L_208 = V_1;
+		InputRange_t919983432  L_209 = ((InputRange_t919983432_StaticFields*)il2cpp_codegen_static_fields_for(InputRange_t919983432_il2cpp_TypeInfo_var))->get_ZeroToOne_3();
+		NullCheck(L_208);
+		L_208->set_SourceRange_10(L_209);
+		InputControlMapping_t3750691495 * L_210 = V_1;
+		InputRange_t919983432  L_211 = ((InputRange_t919983432_StaticFields*)il2cpp_codegen_static_fields_for(InputRange_t919983432_il2cpp_TypeInfo_var))->get_ZeroToOne_3();
+		NullCheck(L_210);
+		L_210->set_TargetRange_11(L_211);
+		InputControlMapping_t3750691495 * L_212 = V_1;
+		NullCheck(L_202);
+		ArrayElementTypeCheck (L_202, L_212);
+		(L_202)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)10)), (InputControlMapping_t3750691495 *)L_212);
+		InputControlMappingU5BU5D_t2585457374* L_213 = L_202;
+		InputControlMapping_t3750691495 * L_214 = (InputControlMapping_t3750691495 *)il2cpp_codegen_object_new(InputControlMapping_t3750691495_il2cpp_TypeInfo_var);
+		InputControlMapping__ctor_m3302154977(L_214, /*hidden argument*/NULL);
+		V_1 = L_214;
+		InputControlMapping_t3750691495 * L_215 = V_1;
+		NullCheck(L_215);
+		InputControlMapping_set_Handle_m285088(L_215, _stringLiteral1456567208, /*hidden argument*/NULL);
+		InputControlMapping_t3750691495 * L_216 = V_1;
+		NullCheck(L_216);
+		L_216->set_Target_1(((int32_t)12));
+		InputControlMapping_t3750691495 * L_217 = V_1;
+		RuntimeObject* L_218 = NativeInputDeviceProfile_Analog_m346957963(NULL /*static, unused*/, 5, /*hidden argument*/NULL);
+		NullCheck(L_217);
+		L_217->set_Source_0(L_218);
+		InputControlMapping_t3750691495 * L_219 = V_1;
+		InputRange_t919983432  L_220 = ((InputRange_t919983432_StaticFields*)il2cpp_codegen_static_fields_for(InputRange_t919983432_il2cpp_TypeInfo_var))->get_ZeroToMinusOne_4();
+		NullCheck(L_219);
+		L_219->set_SourceRange_10(L_220);
+		InputControlMapping_t3750691495 * L_221 = V_1;
+		InputRange_t919983432  L_222 = ((InputRange_t919983432_StaticFields*)il2cpp_codegen_static_fields_for(InputRange_t919983432_il2cpp_TypeInfo_var))->get_ZeroToOne_3();
+		NullCheck(L_221);
+		L_221->set_TargetRange_11(L_222);
+		InputControlMapping_t3750691495 * L_223 = V_1;
+		NullCheck(L_213);
+		ArrayElementTypeCheck (L_213, L_223);
+		(L_213)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)11)), (InputControlMapping_t3750691495 *)L_223);
+		InputDeviceProfile_set_AnalogMappings_m69694497(__this, L_213, /*hidden argument*/NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
@@ -22733,391 +23320,6 @@ extern "C"  void NVidiaShieldWin10Profile__ctor_m2158594688 (NVidiaShieldWin10Pr
 		ArrayElementTypeCheck (L_131, L_137);
 		(L_131)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)13)), (InputControlMapping_t3750691495 *)L_137);
 		InputDeviceProfile_set_AnalogMappings_m69694497(__this, L_131, /*hidden argument*/NULL);
-		return;
-	}
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-// System.Void InControl.NVidiaShieldWinProfile::.ctor()
-extern "C"  void NVidiaShieldWinProfile__ctor_m2348413918 (NVidiaShieldWinProfile_t1670138565 * __this, const RuntimeMethod* method)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (NVidiaShieldWinProfile__ctor_m2348413918_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	InputControlMapping_t3750691495 * V_0 = NULL;
-	{
-		IL2CPP_RUNTIME_CLASS_INIT(UnityInputDeviceProfile_t3356944389_il2cpp_TypeInfo_var);
-		UnityInputDeviceProfile__ctor_m4230127396(__this, /*hidden argument*/NULL);
-		InputDeviceProfile_set_Name_m1443663649(__this, _stringLiteral3294353590, /*hidden argument*/NULL);
-		InputDeviceProfile_set_Meta_m696359973(__this, _stringLiteral3039863629, /*hidden argument*/NULL);
-		InputDeviceProfile_set_DeviceClass_m3472942326(__this, 3, /*hidden argument*/NULL);
-		InputDeviceProfile_set_DeviceStyle_m2448048405(__this, ((int32_t)12), /*hidden argument*/NULL);
-		StringU5BU5D_t1281789340* L_0 = ((StringU5BU5D_t1281789340*)SZArrayNew(StringU5BU5D_t1281789340_il2cpp_TypeInfo_var, (uint32_t)2));
-		NullCheck(L_0);
-		ArrayElementTypeCheck (L_0, _stringLiteral3150312029);
-		(L_0)->SetAt(static_cast<il2cpp_array_size_t>(0), (String_t*)_stringLiteral3150312029);
-		StringU5BU5D_t1281789340* L_1 = L_0;
-		NullCheck(L_1);
-		ArrayElementTypeCheck (L_1, _stringLiteral3150312042);
-		(L_1)->SetAt(static_cast<il2cpp_array_size_t>(1), (String_t*)_stringLiteral3150312042);
-		InputDeviceProfile_set_IncludePlatforms_m4131069119(__this, L_1, /*hidden argument*/NULL);
-		StringU5BU5D_t1281789340* L_2 = ((StringU5BU5D_t1281789340*)SZArrayNew(StringU5BU5D_t1281789340_il2cpp_TypeInfo_var, (uint32_t)1));
-		NullCheck(L_2);
-		ArrayElementTypeCheck (L_2, _stringLiteral2031582478);
-		(L_2)->SetAt(static_cast<il2cpp_array_size_t>(0), (String_t*)_stringLiteral2031582478);
-		((UnityInputDeviceProfile_t3356944389 *)__this)->set_JoystickRegex_15(L_2);
-		InputControlMappingU5BU5D_t2585457374* L_3 = ((InputControlMappingU5BU5D_t2585457374*)SZArrayNew(InputControlMappingU5BU5D_t2585457374_il2cpp_TypeInfo_var, (uint32_t)((int32_t)10)));
-		InputControlMapping_t3750691495 * L_4 = (InputControlMapping_t3750691495 *)il2cpp_codegen_object_new(InputControlMapping_t3750691495_il2cpp_TypeInfo_var);
-		InputControlMapping__ctor_m3302154977(L_4, /*hidden argument*/NULL);
-		V_0 = L_4;
-		InputControlMapping_t3750691495 * L_5 = V_0;
-		NullCheck(L_5);
-		InputControlMapping_set_Handle_m285088(L_5, _stringLiteral3452614623, /*hidden argument*/NULL);
-		InputControlMapping_t3750691495 * L_6 = V_0;
-		NullCheck(L_6);
-		L_6->set_Target_1(((int32_t)19));
-		InputControlMapping_t3750691495 * L_7 = V_0;
-		RuntimeObject* L_8 = ((UnityInputDeviceProfile_t3356944389_StaticFields*)il2cpp_codegen_static_fields_for(UnityInputDeviceProfile_t3356944389_il2cpp_TypeInfo_var))->get_Button0_19();
-		NullCheck(L_7);
-		L_7->set_Source_0(L_8);
-		InputControlMapping_t3750691495 * L_9 = V_0;
-		NullCheck(L_3);
-		ArrayElementTypeCheck (L_3, L_9);
-		(L_3)->SetAt(static_cast<il2cpp_array_size_t>(0), (InputControlMapping_t3750691495 *)L_9);
-		InputControlMappingU5BU5D_t2585457374* L_10 = L_3;
-		InputControlMapping_t3750691495 * L_11 = (InputControlMapping_t3750691495 *)il2cpp_codegen_object_new(InputControlMapping_t3750691495_il2cpp_TypeInfo_var);
-		InputControlMapping__ctor_m3302154977(L_11, /*hidden argument*/NULL);
-		V_0 = L_11;
-		InputControlMapping_t3750691495 * L_12 = V_0;
-		NullCheck(L_12);
-		InputControlMapping_set_Handle_m285088(L_12, _stringLiteral3452614622, /*hidden argument*/NULL);
-		InputControlMapping_t3750691495 * L_13 = V_0;
-		NullCheck(L_13);
-		L_13->set_Target_1(((int32_t)20));
-		InputControlMapping_t3750691495 * L_14 = V_0;
-		RuntimeObject* L_15 = ((UnityInputDeviceProfile_t3356944389_StaticFields*)il2cpp_codegen_static_fields_for(UnityInputDeviceProfile_t3356944389_il2cpp_TypeInfo_var))->get_Button1_20();
-		NullCheck(L_14);
-		L_14->set_Source_0(L_15);
-		InputControlMapping_t3750691495 * L_16 = V_0;
-		NullCheck(L_10);
-		ArrayElementTypeCheck (L_10, L_16);
-		(L_10)->SetAt(static_cast<il2cpp_array_size_t>(1), (InputControlMapping_t3750691495 *)L_16);
-		InputControlMappingU5BU5D_t2585457374* L_17 = L_10;
-		InputControlMapping_t3750691495 * L_18 = (InputControlMapping_t3750691495 *)il2cpp_codegen_object_new(InputControlMapping_t3750691495_il2cpp_TypeInfo_var);
-		InputControlMapping__ctor_m3302154977(L_18, /*hidden argument*/NULL);
-		V_0 = L_18;
-		InputControlMapping_t3750691495 * L_19 = V_0;
-		NullCheck(L_19);
-		InputControlMapping_set_Handle_m285088(L_19, _stringLiteral3452614648, /*hidden argument*/NULL);
-		InputControlMapping_t3750691495 * L_20 = V_0;
-		NullCheck(L_20);
-		L_20->set_Target_1(((int32_t)21));
-		InputControlMapping_t3750691495 * L_21 = V_0;
-		RuntimeObject* L_22 = ((UnityInputDeviceProfile_t3356944389_StaticFields*)il2cpp_codegen_static_fields_for(UnityInputDeviceProfile_t3356944389_il2cpp_TypeInfo_var))->get_Button2_21();
-		NullCheck(L_21);
-		L_21->set_Source_0(L_22);
-		InputControlMapping_t3750691495 * L_23 = V_0;
-		NullCheck(L_17);
-		ArrayElementTypeCheck (L_17, L_23);
-		(L_17)->SetAt(static_cast<il2cpp_array_size_t>(2), (InputControlMapping_t3750691495 *)L_23);
-		InputControlMappingU5BU5D_t2585457374* L_24 = L_17;
-		InputControlMapping_t3750691495 * L_25 = (InputControlMapping_t3750691495 *)il2cpp_codegen_object_new(InputControlMapping_t3750691495_il2cpp_TypeInfo_var);
-		InputControlMapping__ctor_m3302154977(L_25, /*hidden argument*/NULL);
-		V_0 = L_25;
-		InputControlMapping_t3750691495 * L_26 = V_0;
-		NullCheck(L_26);
-		InputControlMapping_set_Handle_m285088(L_26, _stringLiteral3452614647, /*hidden argument*/NULL);
-		InputControlMapping_t3750691495 * L_27 = V_0;
-		NullCheck(L_27);
-		L_27->set_Target_1(((int32_t)22));
-		InputControlMapping_t3750691495 * L_28 = V_0;
-		RuntimeObject* L_29 = ((UnityInputDeviceProfile_t3356944389_StaticFields*)il2cpp_codegen_static_fields_for(UnityInputDeviceProfile_t3356944389_il2cpp_TypeInfo_var))->get_Button3_22();
-		NullCheck(L_28);
-		L_28->set_Source_0(L_29);
-		InputControlMapping_t3750691495 * L_30 = V_0;
-		NullCheck(L_24);
-		ArrayElementTypeCheck (L_24, L_30);
-		(L_24)->SetAt(static_cast<il2cpp_array_size_t>(3), (InputControlMapping_t3750691495 *)L_30);
-		InputControlMappingU5BU5D_t2585457374* L_31 = L_24;
-		InputControlMapping_t3750691495 * L_32 = (InputControlMapping_t3750691495 *)il2cpp_codegen_object_new(InputControlMapping_t3750691495_il2cpp_TypeInfo_var);
-		InputControlMapping__ctor_m3302154977(L_32, /*hidden argument*/NULL);
-		V_0 = L_32;
-		InputControlMapping_t3750691495 * L_33 = V_0;
-		NullCheck(L_33);
-		InputControlMapping_set_Handle_m285088(L_33, _stringLiteral2732895816, /*hidden argument*/NULL);
-		InputControlMapping_t3750691495 * L_34 = V_0;
-		NullCheck(L_34);
-		L_34->set_Target_1(((int32_t)17));
-		InputControlMapping_t3750691495 * L_35 = V_0;
-		RuntimeObject* L_36 = ((UnityInputDeviceProfile_t3356944389_StaticFields*)il2cpp_codegen_static_fields_for(UnityInputDeviceProfile_t3356944389_il2cpp_TypeInfo_var))->get_Button4_23();
-		NullCheck(L_35);
-		L_35->set_Source_0(L_36);
-		InputControlMapping_t3750691495 * L_37 = V_0;
-		NullCheck(L_31);
-		ArrayElementTypeCheck (L_31, L_37);
-		(L_31)->SetAt(static_cast<il2cpp_array_size_t>(4), (InputControlMapping_t3750691495 *)L_37);
-		InputControlMappingU5BU5D_t2585457374* L_38 = L_31;
-		InputControlMapping_t3750691495 * L_39 = (InputControlMapping_t3750691495 *)il2cpp_codegen_object_new(InputControlMapping_t3750691495_il2cpp_TypeInfo_var);
-		InputControlMapping__ctor_m3302154977(L_39, /*hidden argument*/NULL);
-		V_0 = L_39;
-		InputControlMapping_t3750691495 * L_40 = V_0;
-		NullCheck(L_40);
-		InputControlMapping_set_Handle_m285088(L_40, _stringLiteral718575221, /*hidden argument*/NULL);
-		InputControlMapping_t3750691495 * L_41 = V_0;
-		NullCheck(L_41);
-		L_41->set_Target_1(((int32_t)18));
-		InputControlMapping_t3750691495 * L_42 = V_0;
-		RuntimeObject* L_43 = ((UnityInputDeviceProfile_t3356944389_StaticFields*)il2cpp_codegen_static_fields_for(UnityInputDeviceProfile_t3356944389_il2cpp_TypeInfo_var))->get_Button5_24();
-		NullCheck(L_42);
-		L_42->set_Source_0(L_43);
-		InputControlMapping_t3750691495 * L_44 = V_0;
-		NullCheck(L_38);
-		ArrayElementTypeCheck (L_38, L_44);
-		(L_38)->SetAt(static_cast<il2cpp_array_size_t>(5), (InputControlMapping_t3750691495 *)L_44);
-		InputControlMappingU5BU5D_t2585457374* L_45 = L_38;
-		InputControlMapping_t3750691495 * L_46 = (InputControlMapping_t3750691495 *)il2cpp_codegen_object_new(InputControlMapping_t3750691495_il2cpp_TypeInfo_var);
-		InputControlMapping__ctor_m3302154977(L_46, /*hidden argument*/NULL);
-		V_0 = L_46;
-		InputControlMapping_t3750691495 * L_47 = V_0;
-		NullCheck(L_47);
-		InputControlMapping_set_Handle_m285088(L_47, _stringLiteral1976569017, /*hidden argument*/NULL);
-		InputControlMapping_t3750691495 * L_48 = V_0;
-		NullCheck(L_48);
-		L_48->set_Target_1(5);
-		InputControlMapping_t3750691495 * L_49 = V_0;
-		RuntimeObject* L_50 = ((UnityInputDeviceProfile_t3356944389_StaticFields*)il2cpp_codegen_static_fields_for(UnityInputDeviceProfile_t3356944389_il2cpp_TypeInfo_var))->get_Button8_27();
-		NullCheck(L_49);
-		L_49->set_Source_0(L_50);
-		InputControlMapping_t3750691495 * L_51 = V_0;
-		NullCheck(L_45);
-		ArrayElementTypeCheck (L_45, L_51);
-		(L_45)->SetAt(static_cast<il2cpp_array_size_t>(6), (InputControlMapping_t3750691495 *)L_51);
-		InputControlMappingU5BU5D_t2585457374* L_52 = L_45;
-		InputControlMapping_t3750691495 * L_53 = (InputControlMapping_t3750691495 *)il2cpp_codegen_object_new(InputControlMapping_t3750691495_il2cpp_TypeInfo_var);
-		InputControlMapping__ctor_m3302154977(L_53, /*hidden argument*/NULL);
-		V_0 = L_53;
-		InputControlMapping_t3750691495 * L_54 = V_0;
-		NullCheck(L_54);
-		InputControlMapping_set_Handle_m285088(L_54, _stringLiteral3316441220, /*hidden argument*/NULL);
-		InputControlMapping_t3750691495 * L_55 = V_0;
-		NullCheck(L_55);
-		L_55->set_Target_1(((int32_t)10));
-		InputControlMapping_t3750691495 * L_56 = V_0;
-		RuntimeObject* L_57 = ((UnityInputDeviceProfile_t3356944389_StaticFields*)il2cpp_codegen_static_fields_for(UnityInputDeviceProfile_t3356944389_il2cpp_TypeInfo_var))->get_Button9_28();
-		NullCheck(L_56);
-		L_56->set_Source_0(L_57);
-		InputControlMapping_t3750691495 * L_58 = V_0;
-		NullCheck(L_52);
-		ArrayElementTypeCheck (L_52, L_58);
-		(L_52)->SetAt(static_cast<il2cpp_array_size_t>(7), (InputControlMapping_t3750691495 *)L_58);
-		InputControlMappingU5BU5D_t2585457374* L_59 = L_52;
-		InputControlMapping_t3750691495 * L_60 = (InputControlMapping_t3750691495 *)il2cpp_codegen_object_new(InputControlMapping_t3750691495_il2cpp_TypeInfo_var);
-		InputControlMapping__ctor_m3302154977(L_60, /*hidden argument*/NULL);
-		V_0 = L_60;
-		InputControlMapping_t3750691495 * L_61 = V_0;
-		NullCheck(L_61);
-		InputControlMapping_set_Handle_m285088(L_61, _stringLiteral1167841337, /*hidden argument*/NULL);
-		InputControlMapping_t3750691495 * L_62 = V_0;
-		NullCheck(L_62);
-		L_62->set_Target_1(((int32_t)100));
-		InputControlMapping_t3750691495 * L_63 = V_0;
-		RuntimeObject* L_64 = ((UnityInputDeviceProfile_t3356944389_StaticFields*)il2cpp_codegen_static_fields_for(UnityInputDeviceProfile_t3356944389_il2cpp_TypeInfo_var))->get_Button6_25();
-		NullCheck(L_63);
-		L_63->set_Source_0(L_64);
-		InputControlMapping_t3750691495 * L_65 = V_0;
-		NullCheck(L_59);
-		ArrayElementTypeCheck (L_59, L_65);
-		(L_59)->SetAt(static_cast<il2cpp_array_size_t>(8), (InputControlMapping_t3750691495 *)L_65);
-		InputControlMappingU5BU5D_t2585457374* L_66 = L_59;
-		InputControlMapping_t3750691495 * L_67 = (InputControlMapping_t3750691495 *)il2cpp_codegen_object_new(InputControlMapping_t3750691495_il2cpp_TypeInfo_var);
-		InputControlMapping__ctor_m3302154977(L_67, /*hidden argument*/NULL);
-		V_0 = L_67;
-		InputControlMapping_t3750691495 * L_68 = V_0;
-		NullCheck(L_68);
-		InputControlMapping_set_Handle_m285088(L_68, _stringLiteral2707270972, /*hidden argument*/NULL);
-		InputControlMapping_t3750691495 * L_69 = V_0;
-		NullCheck(L_69);
-		L_69->set_Target_1(((int32_t)101));
-		InputControlMapping_t3750691495 * L_70 = V_0;
-		RuntimeObject* L_71 = ((UnityInputDeviceProfile_t3356944389_StaticFields*)il2cpp_codegen_static_fields_for(UnityInputDeviceProfile_t3356944389_il2cpp_TypeInfo_var))->get_Button7_26();
-		NullCheck(L_70);
-		L_70->set_Source_0(L_71);
-		InputControlMapping_t3750691495 * L_72 = V_0;
-		NullCheck(L_66);
-		ArrayElementTypeCheck (L_66, L_72);
-		(L_66)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)9)), (InputControlMapping_t3750691495 *)L_72);
-		InputDeviceProfile_set_ButtonMappings_m2171483968(__this, L_66, /*hidden argument*/NULL);
-		InputControlMappingU5BU5D_t2585457374* L_73 = ((InputControlMappingU5BU5D_t2585457374*)SZArrayNew(InputControlMappingU5BU5D_t2585457374_il2cpp_TypeInfo_var, (uint32_t)((int32_t)16)));
-		RuntimeObject* L_74 = ((UnityInputDeviceProfile_t3356944389_StaticFields*)il2cpp_codegen_static_fields_for(UnityInputDeviceProfile_t3356944389_il2cpp_TypeInfo_var))->get_Analog0_39();
-		InputControlMapping_t3750691495 * L_75 = UnityInputDeviceProfile_LeftStickLeftMapping_m4237206815(NULL /*static, unused*/, L_74, /*hidden argument*/NULL);
-		NullCheck(L_73);
-		ArrayElementTypeCheck (L_73, L_75);
-		(L_73)->SetAt(static_cast<il2cpp_array_size_t>(0), (InputControlMapping_t3750691495 *)L_75);
-		InputControlMappingU5BU5D_t2585457374* L_76 = L_73;
-		RuntimeObject* L_77 = ((UnityInputDeviceProfile_t3356944389_StaticFields*)il2cpp_codegen_static_fields_for(UnityInputDeviceProfile_t3356944389_il2cpp_TypeInfo_var))->get_Analog0_39();
-		InputControlMapping_t3750691495 * L_78 = UnityInputDeviceProfile_LeftStickRightMapping_m3659771226(NULL /*static, unused*/, L_77, /*hidden argument*/NULL);
-		NullCheck(L_76);
-		ArrayElementTypeCheck (L_76, L_78);
-		(L_76)->SetAt(static_cast<il2cpp_array_size_t>(1), (InputControlMapping_t3750691495 *)L_78);
-		InputControlMappingU5BU5D_t2585457374* L_79 = L_76;
-		RuntimeObject* L_80 = ((UnityInputDeviceProfile_t3356944389_StaticFields*)il2cpp_codegen_static_fields_for(UnityInputDeviceProfile_t3356944389_il2cpp_TypeInfo_var))->get_Analog1_40();
-		InputControlMapping_t3750691495 * L_81 = UnityInputDeviceProfile_LeftStickUpMapping_m786958524(NULL /*static, unused*/, L_80, /*hidden argument*/NULL);
-		NullCheck(L_79);
-		ArrayElementTypeCheck (L_79, L_81);
-		(L_79)->SetAt(static_cast<il2cpp_array_size_t>(2), (InputControlMapping_t3750691495 *)L_81);
-		InputControlMappingU5BU5D_t2585457374* L_82 = L_79;
-		RuntimeObject* L_83 = ((UnityInputDeviceProfile_t3356944389_StaticFields*)il2cpp_codegen_static_fields_for(UnityInputDeviceProfile_t3356944389_il2cpp_TypeInfo_var))->get_Analog1_40();
-		InputControlMapping_t3750691495 * L_84 = UnityInputDeviceProfile_LeftStickDownMapping_m3741594451(NULL /*static, unused*/, L_83, /*hidden argument*/NULL);
-		NullCheck(L_82);
-		ArrayElementTypeCheck (L_82, L_84);
-		(L_82)->SetAt(static_cast<il2cpp_array_size_t>(3), (InputControlMapping_t3750691495 *)L_84);
-		InputControlMappingU5BU5D_t2585457374* L_85 = L_82;
-		RuntimeObject* L_86 = ((UnityInputDeviceProfile_t3356944389_StaticFields*)il2cpp_codegen_static_fields_for(UnityInputDeviceProfile_t3356944389_il2cpp_TypeInfo_var))->get_Analog3_42();
-		InputControlMapping_t3750691495 * L_87 = UnityInputDeviceProfile_RightStickLeftMapping_m486052869(NULL /*static, unused*/, L_86, /*hidden argument*/NULL);
-		NullCheck(L_85);
-		ArrayElementTypeCheck (L_85, L_87);
-		(L_85)->SetAt(static_cast<il2cpp_array_size_t>(4), (InputControlMapping_t3750691495 *)L_87);
-		InputControlMappingU5BU5D_t2585457374* L_88 = L_85;
-		RuntimeObject* L_89 = ((UnityInputDeviceProfile_t3356944389_StaticFields*)il2cpp_codegen_static_fields_for(UnityInputDeviceProfile_t3356944389_il2cpp_TypeInfo_var))->get_Analog3_42();
-		InputControlMapping_t3750691495 * L_90 = UnityInputDeviceProfile_RightStickRightMapping_m3157432816(NULL /*static, unused*/, L_89, /*hidden argument*/NULL);
-		NullCheck(L_88);
-		ArrayElementTypeCheck (L_88, L_90);
-		(L_88)->SetAt(static_cast<il2cpp_array_size_t>(5), (InputControlMapping_t3750691495 *)L_90);
-		InputControlMappingU5BU5D_t2585457374* L_91 = L_88;
-		RuntimeObject* L_92 = ((UnityInputDeviceProfile_t3356944389_StaticFields*)il2cpp_codegen_static_fields_for(UnityInputDeviceProfile_t3356944389_il2cpp_TypeInfo_var))->get_Analog4_43();
-		InputControlMapping_t3750691495 * L_93 = UnityInputDeviceProfile_RightStickUpMapping_m3444072115(NULL /*static, unused*/, L_92, /*hidden argument*/NULL);
-		NullCheck(L_91);
-		ArrayElementTypeCheck (L_91, L_93);
-		(L_91)->SetAt(static_cast<il2cpp_array_size_t>(6), (InputControlMapping_t3750691495 *)L_93);
-		InputControlMappingU5BU5D_t2585457374* L_94 = L_91;
-		RuntimeObject* L_95 = ((UnityInputDeviceProfile_t3356944389_StaticFields*)il2cpp_codegen_static_fields_for(UnityInputDeviceProfile_t3356944389_il2cpp_TypeInfo_var))->get_Analog4_43();
-		InputControlMapping_t3750691495 * L_96 = UnityInputDeviceProfile_RightStickDownMapping_m2356681090(NULL /*static, unused*/, L_95, /*hidden argument*/NULL);
-		NullCheck(L_94);
-		ArrayElementTypeCheck (L_94, L_96);
-		(L_94)->SetAt(static_cast<il2cpp_array_size_t>(7), (InputControlMapping_t3750691495 *)L_96);
-		InputControlMappingU5BU5D_t2585457374* L_97 = L_94;
-		RuntimeObject* L_98 = ((UnityInputDeviceProfile_t3356944389_StaticFields*)il2cpp_codegen_static_fields_for(UnityInputDeviceProfile_t3356944389_il2cpp_TypeInfo_var))->get_Analog5_44();
-		InputControlMapping_t3750691495 * L_99 = UnityInputDeviceProfile_DPadLeftMapping_m2480201695(NULL /*static, unused*/, L_98, /*hidden argument*/NULL);
-		NullCheck(L_97);
-		ArrayElementTypeCheck (L_97, L_99);
-		(L_97)->SetAt(static_cast<il2cpp_array_size_t>(8), (InputControlMapping_t3750691495 *)L_99);
-		InputControlMappingU5BU5D_t2585457374* L_100 = L_97;
-		RuntimeObject* L_101 = ((UnityInputDeviceProfile_t3356944389_StaticFields*)il2cpp_codegen_static_fields_for(UnityInputDeviceProfile_t3356944389_il2cpp_TypeInfo_var))->get_Analog5_44();
-		InputControlMapping_t3750691495 * L_102 = UnityInputDeviceProfile_DPadRightMapping_m4272936834(NULL /*static, unused*/, L_101, /*hidden argument*/NULL);
-		NullCheck(L_100);
-		ArrayElementTypeCheck (L_100, L_102);
-		(L_100)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)9)), (InputControlMapping_t3750691495 *)L_102);
-		InputControlMappingU5BU5D_t2585457374* L_103 = L_100;
-		RuntimeObject* L_104 = ((UnityInputDeviceProfile_t3356944389_StaticFields*)il2cpp_codegen_static_fields_for(UnityInputDeviceProfile_t3356944389_il2cpp_TypeInfo_var))->get_Analog6_45();
-		InputControlMapping_t3750691495 * L_105 = UnityInputDeviceProfile_DPadUpMapping2_m3890522397(NULL /*static, unused*/, L_104, /*hidden argument*/NULL);
-		NullCheck(L_103);
-		ArrayElementTypeCheck (L_103, L_105);
-		(L_103)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)10)), (InputControlMapping_t3750691495 *)L_105);
-		InputControlMappingU5BU5D_t2585457374* L_106 = L_103;
-		RuntimeObject* L_107 = ((UnityInputDeviceProfile_t3356944389_StaticFields*)il2cpp_codegen_static_fields_for(UnityInputDeviceProfile_t3356944389_il2cpp_TypeInfo_var))->get_Analog6_45();
-		InputControlMapping_t3750691495 * L_108 = UnityInputDeviceProfile_DPadDownMapping2_m577396001(NULL /*static, unused*/, L_107, /*hidden argument*/NULL);
-		NullCheck(L_106);
-		ArrayElementTypeCheck (L_106, L_108);
-		(L_106)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)11)), (InputControlMapping_t3750691495 *)L_108);
-		InputControlMappingU5BU5D_t2585457374* L_109 = L_106;
-		InputControlMapping_t3750691495 * L_110 = (InputControlMapping_t3750691495 *)il2cpp_codegen_object_new(InputControlMapping_t3750691495_il2cpp_TypeInfo_var);
-		InputControlMapping__ctor_m3302154977(L_110, /*hidden argument*/NULL);
-		V_0 = L_110;
-		InputControlMapping_t3750691495 * L_111 = V_0;
-		NullCheck(L_111);
-		InputControlMapping_set_Handle_m285088(L_111, _stringLiteral157069623, /*hidden argument*/NULL);
-		InputControlMapping_t3750691495 * L_112 = V_0;
-		NullCheck(L_112);
-		L_112->set_Target_1(((int32_t)15));
-		InputControlMapping_t3750691495 * L_113 = V_0;
-		RuntimeObject* L_114 = ((UnityInputDeviceProfile_t3356944389_StaticFields*)il2cpp_codegen_static_fields_for(UnityInputDeviceProfile_t3356944389_il2cpp_TypeInfo_var))->get_Analog2_41();
-		NullCheck(L_113);
-		L_113->set_Source_0(L_114);
-		InputControlMapping_t3750691495 * L_115 = V_0;
-		IL2CPP_RUNTIME_CLASS_INIT(InputRange_t919983432_il2cpp_TypeInfo_var);
-		InputRange_t919983432  L_116 = ((InputRange_t919983432_StaticFields*)il2cpp_codegen_static_fields_for(InputRange_t919983432_il2cpp_TypeInfo_var))->get_ZeroToOne_3();
-		NullCheck(L_115);
-		L_115->set_SourceRange_10(L_116);
-		InputControlMapping_t3750691495 * L_117 = V_0;
-		InputRange_t919983432  L_118 = ((InputRange_t919983432_StaticFields*)il2cpp_codegen_static_fields_for(InputRange_t919983432_il2cpp_TypeInfo_var))->get_ZeroToOne_3();
-		NullCheck(L_117);
-		L_117->set_TargetRange_11(L_118);
-		InputControlMapping_t3750691495 * L_119 = V_0;
-		NullCheck(L_109);
-		ArrayElementTypeCheck (L_109, L_119);
-		(L_109)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)12)), (InputControlMapping_t3750691495 *)L_119);
-		InputControlMappingU5BU5D_t2585457374* L_120 = L_109;
-		InputControlMapping_t3750691495 * L_121 = (InputControlMapping_t3750691495 *)il2cpp_codegen_object_new(InputControlMapping_t3750691495_il2cpp_TypeInfo_var);
-		InputControlMapping__ctor_m3302154977(L_121, /*hidden argument*/NULL);
-		V_0 = L_121;
-		InputControlMapping_t3750691495 * L_122 = V_0;
-		NullCheck(L_122);
-		InputControlMapping_set_Handle_m285088(L_122, _stringLiteral2900257707, /*hidden argument*/NULL);
-		InputControlMapping_t3750691495 * L_123 = V_0;
-		NullCheck(L_123);
-		L_123->set_Target_1(((int32_t)16));
-		InputControlMapping_t3750691495 * L_124 = V_0;
-		RuntimeObject* L_125 = ((UnityInputDeviceProfile_t3356944389_StaticFields*)il2cpp_codegen_static_fields_for(UnityInputDeviceProfile_t3356944389_il2cpp_TypeInfo_var))->get_Analog2_41();
-		NullCheck(L_124);
-		L_124->set_Source_0(L_125);
-		InputControlMapping_t3750691495 * L_126 = V_0;
-		InputRange_t919983432  L_127 = ((InputRange_t919983432_StaticFields*)il2cpp_codegen_static_fields_for(InputRange_t919983432_il2cpp_TypeInfo_var))->get_ZeroToMinusOne_4();
-		NullCheck(L_126);
-		L_126->set_SourceRange_10(L_127);
-		InputControlMapping_t3750691495 * L_128 = V_0;
-		InputRange_t919983432  L_129 = ((InputRange_t919983432_StaticFields*)il2cpp_codegen_static_fields_for(InputRange_t919983432_il2cpp_TypeInfo_var))->get_ZeroToOne_3();
-		NullCheck(L_128);
-		L_128->set_TargetRange_11(L_129);
-		InputControlMapping_t3750691495 * L_130 = V_0;
-		NullCheck(L_120);
-		ArrayElementTypeCheck (L_120, L_130);
-		(L_120)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)13)), (InputControlMapping_t3750691495 *)L_130);
-		InputControlMappingU5BU5D_t2585457374* L_131 = L_120;
-		InputControlMapping_t3750691495 * L_132 = (InputControlMapping_t3750691495 *)il2cpp_codegen_object_new(InputControlMapping_t3750691495_il2cpp_TypeInfo_var);
-		InputControlMapping__ctor_m3302154977(L_132, /*hidden argument*/NULL);
-		V_0 = L_132;
-		InputControlMapping_t3750691495 * L_133 = V_0;
-		NullCheck(L_133);
-		InputControlMapping_set_Handle_m285088(L_133, _stringLiteral157069623, /*hidden argument*/NULL);
-		InputControlMapping_t3750691495 * L_134 = V_0;
-		NullCheck(L_134);
-		L_134->set_Target_1(((int32_t)15));
-		InputControlMapping_t3750691495 * L_135 = V_0;
-		RuntimeObject* L_136 = ((UnityInputDeviceProfile_t3356944389_StaticFields*)il2cpp_codegen_static_fields_for(UnityInputDeviceProfile_t3356944389_il2cpp_TypeInfo_var))->get_Analog8_47();
-		NullCheck(L_135);
-		L_135->set_Source_0(L_136);
-		InputControlMapping_t3750691495 * L_137 = V_0;
-		NullCheck(L_131);
-		ArrayElementTypeCheck (L_131, L_137);
-		(L_131)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)14)), (InputControlMapping_t3750691495 *)L_137);
-		InputControlMappingU5BU5D_t2585457374* L_138 = L_131;
-		InputControlMapping_t3750691495 * L_139 = (InputControlMapping_t3750691495 *)il2cpp_codegen_object_new(InputControlMapping_t3750691495_il2cpp_TypeInfo_var);
-		InputControlMapping__ctor_m3302154977(L_139, /*hidden argument*/NULL);
-		V_0 = L_139;
-		InputControlMapping_t3750691495 * L_140 = V_0;
-		NullCheck(L_140);
-		InputControlMapping_set_Handle_m285088(L_140, _stringLiteral2900257707, /*hidden argument*/NULL);
-		InputControlMapping_t3750691495 * L_141 = V_0;
-		NullCheck(L_141);
-		L_141->set_Target_1(((int32_t)16));
-		InputControlMapping_t3750691495 * L_142 = V_0;
-		RuntimeObject* L_143 = ((UnityInputDeviceProfile_t3356944389_StaticFields*)il2cpp_codegen_static_fields_for(UnityInputDeviceProfile_t3356944389_il2cpp_TypeInfo_var))->get_Analog9_48();
-		NullCheck(L_142);
-		L_142->set_Source_0(L_143);
-		InputControlMapping_t3750691495 * L_144 = V_0;
-		NullCheck(L_138);
-		ArrayElementTypeCheck (L_138, L_144);
-		(L_138)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)15)), (InputControlMapping_t3750691495 *)L_144);
-		InputDeviceProfile_set_AnalogMappings_m69694497(__this, L_138, /*hidden argument*/NULL);
 		return;
 	}
 }

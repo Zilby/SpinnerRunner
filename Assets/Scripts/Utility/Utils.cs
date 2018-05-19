@@ -163,8 +163,7 @@ public static class Utils
 		MyData data = new MyData();
 
 		data.highScore = highScore;
-		// make sure to change back. 
-		data.tutorial = true; //tutorial
+		data.tutorial = tutorial;
 		AudioMixer mix = SoundManager.GetMix();
 		mix.GetFloat("Music", out music);
 		mix.GetFloat("SoundFX", out soundfx);
