@@ -28285,6 +28285,8 @@ extern "C"  void Obstacle_IncrementScore_m3724911122 (Obstacle_t162511623 * __th
 extern "C"  void Action_Invoke_m937035532 (Action_t1264377477 * __this, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // System.Void Obstacle/<Rotate>c__Iterator0::.ctor()
 extern "C"  void U3CRotateU3Ec__Iterator0__ctor_m3342460983 (U3CRotateU3Ec__Iterator0_t2832675316 * __this, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
+// System.Single UnityEngine.Time::get_timeScale()
+extern "C"  float Time_get_timeScale_m701790074 (RuntimeObject * __this /* static, unused */, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Quaternion UnityEngine.Quaternion::Euler(System.Single,System.Single,System.Single)
 extern "C"  Quaternion_t2301928331  Quaternion_Euler_m3049309462 (RuntimeObject * __this /* static, unused */, float p0, float p1, float p2, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Quaternion UnityEngine.Transform::get_rotation()
@@ -28865,8 +28867,6 @@ extern "C"  RuntimeObject* UIManager_EndGame_m842108960 (UIManager_t1042050227 *
 extern "C"  void U3CEndGameU3Ec__Iterator0__ctor_m681854072 (U3CEndGameU3Ec__Iterator0_t3815979393 * __this, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Time::set_timeScale(System.Single)
 extern "C"  void Time_set_timeScale_m1127545364 (RuntimeObject * __this /* static, unused */, float p0, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
-// System.Single UnityEngine.Time::get_timeScale()
-extern "C"  float Time_get_timeScale_m701790074 (RuntimeObject * __this /* static, unused */, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Time::set_fixedDeltaTime(System.Single)
 extern "C"  void Time_set_fixedDeltaTime_m2452744972 (RuntimeObject * __this /* static, unused */, float p0, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.WaitForSecondsRealtime::.ctor(System.Single)
@@ -31694,17 +31694,17 @@ extern "C"  bool U3CRotateU3Ec__Iterator0_MoveNext_m734083056 (U3CRotateU3Ec__It
 			}
 			case 1:
 			{
-				goto IL_013f;
+				goto IL_0145;
 			}
 		}
 	}
 	{
-		goto IL_014b;
+		goto IL_0151;
 	}
 
 IL_0021:
 	{
-		goto IL_013f;
+		goto IL_0145;
 	}
 
 IL_0026:
@@ -31748,83 +31748,84 @@ IL_0065:
 IL_006b:
 	{
 		float L_11 = Time_get_smoothDeltaTime_m2285259559(NULL /*static, unused*/, /*hidden argument*/NULL);
+		float L_12 = Time_get_timeScale_m701790074(NULL /*static, unused*/, /*hidden argument*/NULL);
 		NullCheck(G_B6_2);
-		G_B6_2->set_desiredRot_3(((float)il2cpp_codegen_add((float)G_B6_1, (float)((float)il2cpp_codegen_multiply((float)G_B6_0, (float)L_11)))));
-		Obstacle_t162511623 * L_12 = __this->get_U24this_2();
-		NullCheck(L_12);
-		Transform_t3600365921 * L_13 = Component_get_transform_m3162698980(L_12, /*hidden argument*/NULL);
+		G_B6_2->set_desiredRot_3(((float)il2cpp_codegen_add((float)G_B6_1, (float)((float)il2cpp_codegen_multiply((float)((float)il2cpp_codegen_multiply((float)G_B6_0, (float)L_11)), (float)L_12)))));
+		Obstacle_t162511623 * L_13 = __this->get_U24this_2();
 		NullCheck(L_13);
-		Vector3_t3722313464  L_14 = Transform_get_eulerAngles_m2743581774(L_13, /*hidden argument*/NULL);
-		V_1 = L_14;
-		float L_15 = (&V_1)->get_x_1();
-		Obstacle_t162511623 * L_16 = __this->get_U24this_2();
-		NullCheck(L_16);
-		Transform_t3600365921 * L_17 = Component_get_transform_m3162698980(L_16, /*hidden argument*/NULL);
+		Transform_t3600365921 * L_14 = Component_get_transform_m3162698980(L_13, /*hidden argument*/NULL);
+		NullCheck(L_14);
+		Vector3_t3722313464  L_15 = Transform_get_eulerAngles_m2743581774(L_14, /*hidden argument*/NULL);
+		V_1 = L_15;
+		float L_16 = (&V_1)->get_x_1();
+		Obstacle_t162511623 * L_17 = __this->get_U24this_2();
 		NullCheck(L_17);
-		Vector3_t3722313464  L_18 = Transform_get_eulerAngles_m2743581774(L_17, /*hidden argument*/NULL);
-		V_2 = L_18;
-		float L_19 = (&V_2)->get_y_2();
-		Obstacle_t162511623 * L_20 = __this->get_U24this_2();
-		NullCheck(L_20);
-		float L_21 = L_20->get_desiredRot_3();
+		Transform_t3600365921 * L_18 = Component_get_transform_m3162698980(L_17, /*hidden argument*/NULL);
+		NullCheck(L_18);
+		Vector3_t3722313464  L_19 = Transform_get_eulerAngles_m2743581774(L_18, /*hidden argument*/NULL);
+		V_2 = L_19;
+		float L_20 = (&V_2)->get_y_2();
+		Obstacle_t162511623 * L_21 = __this->get_U24this_2();
+		NullCheck(L_21);
+		float L_22 = L_21->get_desiredRot_3();
 		IL2CPP_RUNTIME_CLASS_INIT(Quaternion_t2301928331_il2cpp_TypeInfo_var);
-		Quaternion_t2301928331  L_22 = Quaternion_Euler_m3049309462(NULL /*static, unused*/, L_15, L_19, L_21, /*hidden argument*/NULL);
-		__this->set_U3CdesiredRotQU3E__1_1(L_22);
-		Obstacle_t162511623 * L_23 = __this->get_U24this_2();
-		NullCheck(L_23);
-		Transform_t3600365921 * L_24 = Component_get_transform_m3162698980(L_23, /*hidden argument*/NULL);
-		Obstacle_t162511623 * L_25 = __this->get_U24this_2();
-		NullCheck(L_25);
-		Transform_t3600365921 * L_26 = Component_get_transform_m3162698980(L_25, /*hidden argument*/NULL);
-		NullCheck(L_26);
-		Quaternion_t2301928331  L_27 = Transform_get_rotation_m3502953881(L_26, /*hidden argument*/NULL);
-		Quaternion_t2301928331  L_28 = __this->get_U3CdesiredRotQU3E__1_1();
-		float L_29 = Time_get_smoothDeltaTime_m2285259559(NULL /*static, unused*/, /*hidden argument*/NULL);
-		Obstacle_t162511623 * L_30 = __this->get_U24this_2();
-		NullCheck(L_30);
-		float L_31 = L_30->get_damping_4();
-		Quaternion_t2301928331  L_32 = Quaternion_Lerp_m1238806789(NULL /*static, unused*/, L_27, L_28, ((float)il2cpp_codegen_multiply((float)L_29, (float)L_31)), /*hidden argument*/NULL);
+		Quaternion_t2301928331  L_23 = Quaternion_Euler_m3049309462(NULL /*static, unused*/, L_16, L_20, L_22, /*hidden argument*/NULL);
+		__this->set_U3CdesiredRotQU3E__1_1(L_23);
+		Obstacle_t162511623 * L_24 = __this->get_U24this_2();
 		NullCheck(L_24);
-		Transform_set_rotation_m3524318132(L_24, L_32, /*hidden argument*/NULL);
-		Obstacle_t162511623 * L_33 = __this->get_U24this_2();
+		Transform_t3600365921 * L_25 = Component_get_transform_m3162698980(L_24, /*hidden argument*/NULL);
+		Obstacle_t162511623 * L_26 = __this->get_U24this_2();
+		NullCheck(L_26);
+		Transform_t3600365921 * L_27 = Component_get_transform_m3162698980(L_26, /*hidden argument*/NULL);
+		NullCheck(L_27);
+		Quaternion_t2301928331  L_28 = Transform_get_rotation_m3502953881(L_27, /*hidden argument*/NULL);
+		Quaternion_t2301928331  L_29 = __this->get_U3CdesiredRotQU3E__1_1();
+		float L_30 = Time_get_smoothDeltaTime_m2285259559(NULL /*static, unused*/, /*hidden argument*/NULL);
+		Obstacle_t162511623 * L_31 = __this->get_U24this_2();
+		NullCheck(L_31);
+		float L_32 = L_31->get_damping_4();
+		Quaternion_t2301928331  L_33 = Quaternion_Lerp_m1238806789(NULL /*static, unused*/, L_28, L_29, ((float)il2cpp_codegen_multiply((float)L_30, (float)L_32)), /*hidden argument*/NULL);
+		NullCheck(L_25);
+		Transform_set_rotation_m3524318132(L_25, L_33, /*hidden argument*/NULL);
 		Obstacle_t162511623 * L_34 = __this->get_U24this_2();
-		NullCheck(L_34);
-		float L_35 = L_34->get_boostedRotation_8();
+		Obstacle_t162511623 * L_35 = __this->get_U24this_2();
+		NullCheck(L_35);
+		float L_36 = L_35->get_boostedRotation_8();
 		IL2CPP_RUNTIME_CLASS_INIT(Mathf_t3464937446_il2cpp_TypeInfo_var);
-		float L_36 = fabsf(L_35);
-		float L_37 = Time_get_smoothDeltaTime_m2285259559(NULL /*static, unused*/, /*hidden argument*/NULL);
-		NullCheck(L_33);
-		L_33->set_boostedRotation_8(((float)il2cpp_codegen_subtract((float)L_36, (float)((float)il2cpp_codegen_multiply((float)(750.0f), (float)L_37)))));
-		WaitForEndOfFrame_t1314943911 * L_38 = (WaitForEndOfFrame_t1314943911 *)il2cpp_codegen_object_new(WaitForEndOfFrame_t1314943911_il2cpp_TypeInfo_var);
-		WaitForEndOfFrame__ctor_m1381314187(L_38, /*hidden argument*/NULL);
-		__this->set_U24current_3(L_38);
-		bool L_39 = __this->get_U24disposing_4();
-		if (L_39)
+		float L_37 = fabsf(L_36);
+		float L_38 = Time_get_smoothDeltaTime_m2285259559(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_34);
+		L_34->set_boostedRotation_8(((float)il2cpp_codegen_subtract((float)L_37, (float)((float)il2cpp_codegen_multiply((float)(750.0f), (float)L_38)))));
+		WaitForEndOfFrame_t1314943911 * L_39 = (WaitForEndOfFrame_t1314943911 *)il2cpp_codegen_object_new(WaitForEndOfFrame_t1314943911_il2cpp_TypeInfo_var);
+		WaitForEndOfFrame__ctor_m1381314187(L_39, /*hidden argument*/NULL);
+		__this->set_U24current_3(L_39);
+		bool L_40 = __this->get_U24disposing_4();
+		if (L_40)
 		{
-			goto IL_013a;
+			goto IL_0140;
 		}
 	}
 	{
 		__this->set_U24PC_5(1);
 	}
 
-IL_013a:
+IL_0140:
 	{
-		goto IL_014d;
+		goto IL_0153;
 	}
 
-IL_013f:
+IL_0145:
 	{
 		goto IL_0026;
 	}
-	// Dead block : IL_0144: ldarg.0
+	// Dead block : IL_014a: ldarg.0
 
-IL_014b:
+IL_0151:
 	{
 		return (bool)0;
 	}
 
-IL_014d:
+IL_0153:
 	{
 		return (bool)1;
 	}
@@ -32521,17 +32522,17 @@ extern "C"  bool U3CMoveU3Ec__Iterator1_MoveNext_m4001239971 (U3CMoveU3Ec__Itera
 			}
 			case 1:
 			{
-				goto IL_00c9;
+				goto IL_00cf;
 			}
 		}
 	}
 	{
-		goto IL_00da;
+		goto IL_00e0;
 	}
 
 IL_0021:
 	{
-		goto IL_00c9;
+		goto IL_00cf;
 	}
 
 IL_0026:
@@ -32553,47 +32554,48 @@ IL_0026:
 		float L_9 = (&V_2)->get_x_1();
 		float L_10 = __this->get_U3CxU3E__1_0();
 		float L_11 = Time_get_smoothDeltaTime_m2285259559(NULL /*static, unused*/, /*hidden argument*/NULL);
-		PlayerController_t2064355688 * L_12 = __this->get_U24this_1();
-		NullCheck(L_12);
-		Transform_t3600365921 * L_13 = Component_get_transform_m3162698980(L_12, /*hidden argument*/NULL);
+		float L_12 = Time_get_timeScale_m701790074(NULL /*static, unused*/, /*hidden argument*/NULL);
+		PlayerController_t2064355688 * L_13 = __this->get_U24this_1();
 		NullCheck(L_13);
-		Vector3_t3722313464  L_14 = Transform_get_position_m36019626(L_13, /*hidden argument*/NULL);
-		V_3 = L_14;
-		float L_15 = (&V_3)->get_y_2();
-		PlayerController_t2064355688 * L_16 = __this->get_U24this_1();
-		NullCheck(L_16);
-		Transform_t3600365921 * L_17 = Component_get_transform_m3162698980(L_16, /*hidden argument*/NULL);
+		Transform_t3600365921 * L_14 = Component_get_transform_m3162698980(L_13, /*hidden argument*/NULL);
+		NullCheck(L_14);
+		Vector3_t3722313464  L_15 = Transform_get_position_m36019626(L_14, /*hidden argument*/NULL);
+		V_3 = L_15;
+		float L_16 = (&V_3)->get_y_2();
+		PlayerController_t2064355688 * L_17 = __this->get_U24this_1();
 		NullCheck(L_17);
-		Vector3_t3722313464  L_18 = Transform_get_position_m36019626(L_17, /*hidden argument*/NULL);
-		V_4 = L_18;
-		float L_19 = (&V_4)->get_z_3();
-		Vector3_t3722313464  L_20;
-		memset(&L_20, 0, sizeof(L_20));
-		Vector3__ctor_m3353183577((&L_20), ((float)il2cpp_codegen_add((float)L_9, (float)((float)il2cpp_codegen_multiply((float)((float)il2cpp_codegen_multiply((float)L_10, (float)(20.0f))), (float)L_11)))), L_15, L_19, /*hidden argument*/NULL);
+		Transform_t3600365921 * L_18 = Component_get_transform_m3162698980(L_17, /*hidden argument*/NULL);
+		NullCheck(L_18);
+		Vector3_t3722313464  L_19 = Transform_get_position_m36019626(L_18, /*hidden argument*/NULL);
+		V_4 = L_19;
+		float L_20 = (&V_4)->get_z_3();
+		Vector3_t3722313464  L_21;
+		memset(&L_21, 0, sizeof(L_21));
+		Vector3__ctor_m3353183577((&L_21), ((float)il2cpp_codegen_add((float)L_9, (float)((float)il2cpp_codegen_multiply((float)((float)il2cpp_codegen_multiply((float)((float)il2cpp_codegen_multiply((float)L_10, (float)(20.0f))), (float)L_11)), (float)L_12)))), L_16, L_20, /*hidden argument*/NULL);
 		NullCheck(L_5);
-		Transform_set_position_m3387557959(L_5, L_20, /*hidden argument*/NULL);
-		WaitForEndOfFrame_t1314943911 * L_21 = (WaitForEndOfFrame_t1314943911 *)il2cpp_codegen_object_new(WaitForEndOfFrame_t1314943911_il2cpp_TypeInfo_var);
-		WaitForEndOfFrame__ctor_m1381314187(L_21, /*hidden argument*/NULL);
-		__this->set_U24current_2(L_21);
-		bool L_22 = __this->get_U24disposing_3();
-		if (L_22)
+		Transform_set_position_m3387557959(L_5, L_21, /*hidden argument*/NULL);
+		WaitForEndOfFrame_t1314943911 * L_22 = (WaitForEndOfFrame_t1314943911 *)il2cpp_codegen_object_new(WaitForEndOfFrame_t1314943911_il2cpp_TypeInfo_var);
+		WaitForEndOfFrame__ctor_m1381314187(L_22, /*hidden argument*/NULL);
+		__this->set_U24current_2(L_22);
+		bool L_23 = __this->get_U24disposing_3();
+		if (L_23)
 		{
-			goto IL_00c4;
+			goto IL_00ca;
 		}
 	}
 	{
 		__this->set_U24PC_4(1);
 	}
 
-IL_00c4:
+IL_00ca:
 	{
-		goto IL_00dc;
+		goto IL_00e2;
 	}
 
-IL_00c9:
+IL_00cf:
 	{
-		bool L_23 = GameController_get_GameOver_m864402210(NULL /*static, unused*/, /*hidden argument*/NULL);
-		if (!L_23)
+		bool L_24 = GameController_get_GameOver_m864402210(NULL /*static, unused*/, /*hidden argument*/NULL);
+		if (!L_24)
 		{
 			goto IL_0026;
 		}
@@ -32602,12 +32604,12 @@ IL_00c9:
 		__this->set_U24PC_4((-1));
 	}
 
-IL_00da:
+IL_00e0:
 	{
 		return (bool)0;
 	}
 
-IL_00dc:
+IL_00e2:
 	{
 		return (bool)1;
 	}
@@ -32702,17 +32704,17 @@ extern "C"  bool U3CRotateU3Ec__Iterator0_MoveNext_m2933125163 (U3CRotateU3Ec__I
 			}
 			case 1:
 			{
-				goto IL_0139;
+				goto IL_013f;
 			}
 		}
 	}
 	{
-		goto IL_014a;
+		goto IL_0150;
 	}
 
 IL_0021:
 	{
-		goto IL_0139;
+		goto IL_013f;
 	}
 
 IL_0026:
@@ -32755,75 +32757,76 @@ IL_005f:
 IL_0065:
 	{
 		float L_10 = Time_get_smoothDeltaTime_m2285259559(NULL /*static, unused*/, /*hidden argument*/NULL);
+		float L_11 = Time_get_timeScale_m701790074(NULL /*static, unused*/, /*hidden argument*/NULL);
 		NullCheck(G_B6_2);
-		G_B6_2->set_desiredRot_11(((float)il2cpp_codegen_add((float)G_B6_1, (float)((float)il2cpp_codegen_multiply((float)G_B6_0, (float)L_10)))));
-		PlayerController_t2064355688 * L_11 = __this->get_U24this_2();
-		NullCheck(L_11);
-		Transform_t3600365921 * L_12 = Component_get_transform_m3162698980(L_11, /*hidden argument*/NULL);
+		G_B6_2->set_desiredRot_11(((float)il2cpp_codegen_add((float)G_B6_1, (float)((float)il2cpp_codegen_multiply((float)((float)il2cpp_codegen_multiply((float)G_B6_0, (float)L_10)), (float)L_11)))));
+		PlayerController_t2064355688 * L_12 = __this->get_U24this_2();
 		NullCheck(L_12);
-		Vector3_t3722313464  L_13 = Transform_get_eulerAngles_m2743581774(L_12, /*hidden argument*/NULL);
-		V_1 = L_13;
-		float L_14 = (&V_1)->get_x_1();
-		PlayerController_t2064355688 * L_15 = __this->get_U24this_2();
-		NullCheck(L_15);
-		Transform_t3600365921 * L_16 = Component_get_transform_m3162698980(L_15, /*hidden argument*/NULL);
+		Transform_t3600365921 * L_13 = Component_get_transform_m3162698980(L_12, /*hidden argument*/NULL);
+		NullCheck(L_13);
+		Vector3_t3722313464  L_14 = Transform_get_eulerAngles_m2743581774(L_13, /*hidden argument*/NULL);
+		V_1 = L_14;
+		float L_15 = (&V_1)->get_x_1();
+		PlayerController_t2064355688 * L_16 = __this->get_U24this_2();
 		NullCheck(L_16);
-		Vector3_t3722313464  L_17 = Transform_get_eulerAngles_m2743581774(L_16, /*hidden argument*/NULL);
-		V_2 = L_17;
-		float L_18 = (&V_2)->get_y_2();
-		PlayerController_t2064355688 * L_19 = __this->get_U24this_2();
-		NullCheck(L_19);
-		float L_20 = L_19->get_desiredRot_11();
+		Transform_t3600365921 * L_17 = Component_get_transform_m3162698980(L_16, /*hidden argument*/NULL);
+		NullCheck(L_17);
+		Vector3_t3722313464  L_18 = Transform_get_eulerAngles_m2743581774(L_17, /*hidden argument*/NULL);
+		V_2 = L_18;
+		float L_19 = (&V_2)->get_y_2();
+		PlayerController_t2064355688 * L_20 = __this->get_U24this_2();
+		NullCheck(L_20);
+		float L_21 = L_20->get_desiredRot_11();
 		IL2CPP_RUNTIME_CLASS_INIT(Quaternion_t2301928331_il2cpp_TypeInfo_var);
-		Quaternion_t2301928331  L_21 = Quaternion_Euler_m3049309462(NULL /*static, unused*/, L_14, L_18, L_20, /*hidden argument*/NULL);
-		__this->set_U3CdesiredRotQU3E__1_1(L_21);
-		PlayerController_t2064355688 * L_22 = __this->get_U24this_2();
-		NullCheck(L_22);
-		Transform_t3600365921 * L_23 = Component_get_transform_m3162698980(L_22, /*hidden argument*/NULL);
-		PlayerController_t2064355688 * L_24 = __this->get_U24this_2();
-		NullCheck(L_24);
-		Transform_t3600365921 * L_25 = Component_get_transform_m3162698980(L_24, /*hidden argument*/NULL);
-		NullCheck(L_25);
-		Quaternion_t2301928331  L_26 = Transform_get_rotation_m3502953881(L_25, /*hidden argument*/NULL);
-		Quaternion_t2301928331  L_27 = __this->get_U3CdesiredRotQU3E__1_1();
-		float L_28 = Time_get_smoothDeltaTime_m2285259559(NULL /*static, unused*/, /*hidden argument*/NULL);
-		PlayerController_t2064355688 * L_29 = __this->get_U24this_2();
-		NullCheck(L_29);
-		float L_30 = L_29->get_damping_12();
-		Quaternion_t2301928331  L_31 = Quaternion_Lerp_m1238806789(NULL /*static, unused*/, L_26, L_27, ((float)il2cpp_codegen_multiply((float)L_28, (float)L_30)), /*hidden argument*/NULL);
+		Quaternion_t2301928331  L_22 = Quaternion_Euler_m3049309462(NULL /*static, unused*/, L_15, L_19, L_21, /*hidden argument*/NULL);
+		__this->set_U3CdesiredRotQU3E__1_1(L_22);
+		PlayerController_t2064355688 * L_23 = __this->get_U24this_2();
 		NullCheck(L_23);
-		Transform_set_rotation_m3524318132(L_23, L_31, /*hidden argument*/NULL);
-		PlayerController_t2064355688 * L_32 = __this->get_U24this_2();
+		Transform_t3600365921 * L_24 = Component_get_transform_m3162698980(L_23, /*hidden argument*/NULL);
+		PlayerController_t2064355688 * L_25 = __this->get_U24this_2();
+		NullCheck(L_25);
+		Transform_t3600365921 * L_26 = Component_get_transform_m3162698980(L_25, /*hidden argument*/NULL);
+		NullCheck(L_26);
+		Quaternion_t2301928331  L_27 = Transform_get_rotation_m3502953881(L_26, /*hidden argument*/NULL);
+		Quaternion_t2301928331  L_28 = __this->get_U3CdesiredRotQU3E__1_1();
+		float L_29 = Time_get_smoothDeltaTime_m2285259559(NULL /*static, unused*/, /*hidden argument*/NULL);
+		PlayerController_t2064355688 * L_30 = __this->get_U24this_2();
+		NullCheck(L_30);
+		float L_31 = L_30->get_damping_12();
+		Quaternion_t2301928331  L_32 = Quaternion_Lerp_m1238806789(NULL /*static, unused*/, L_27, L_28, ((float)il2cpp_codegen_multiply((float)L_29, (float)L_31)), /*hidden argument*/NULL);
+		NullCheck(L_24);
+		Transform_set_rotation_m3524318132(L_24, L_32, /*hidden argument*/NULL);
 		PlayerController_t2064355688 * L_33 = __this->get_U24this_2();
-		NullCheck(L_33);
-		float L_34 = L_33->get_boostedRotation_13();
+		PlayerController_t2064355688 * L_34 = __this->get_U24this_2();
+		NullCheck(L_34);
+		float L_35 = L_34->get_boostedRotation_13();
 		IL2CPP_RUNTIME_CLASS_INIT(Mathf_t3464937446_il2cpp_TypeInfo_var);
-		float L_35 = fabsf(L_34);
-		float L_36 = Time_get_smoothDeltaTime_m2285259559(NULL /*static, unused*/, /*hidden argument*/NULL);
-		NullCheck(L_32);
-		L_32->set_boostedRotation_13(((float)il2cpp_codegen_subtract((float)L_35, (float)((float)il2cpp_codegen_multiply((float)(750.0f), (float)L_36)))));
-		WaitForEndOfFrame_t1314943911 * L_37 = (WaitForEndOfFrame_t1314943911 *)il2cpp_codegen_object_new(WaitForEndOfFrame_t1314943911_il2cpp_TypeInfo_var);
-		WaitForEndOfFrame__ctor_m1381314187(L_37, /*hidden argument*/NULL);
-		__this->set_U24current_3(L_37);
-		bool L_38 = __this->get_U24disposing_4();
-		if (L_38)
+		float L_36 = fabsf(L_35);
+		float L_37 = Time_get_smoothDeltaTime_m2285259559(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_33);
+		L_33->set_boostedRotation_13(((float)il2cpp_codegen_subtract((float)L_36, (float)((float)il2cpp_codegen_multiply((float)(750.0f), (float)L_37)))));
+		WaitForEndOfFrame_t1314943911 * L_38 = (WaitForEndOfFrame_t1314943911 *)il2cpp_codegen_object_new(WaitForEndOfFrame_t1314943911_il2cpp_TypeInfo_var);
+		WaitForEndOfFrame__ctor_m1381314187(L_38, /*hidden argument*/NULL);
+		__this->set_U24current_3(L_38);
+		bool L_39 = __this->get_U24disposing_4();
+		if (L_39)
 		{
-			goto IL_0134;
+			goto IL_013a;
 		}
 	}
 	{
 		__this->set_U24PC_5(1);
 	}
 
-IL_0134:
+IL_013a:
 	{
-		goto IL_014c;
+		goto IL_0152;
 	}
 
-IL_0139:
+IL_013f:
 	{
-		bool L_39 = GameController_get_GameOver_m864402210(NULL /*static, unused*/, /*hidden argument*/NULL);
-		if (!L_39)
+		bool L_40 = GameController_get_GameOver_m864402210(NULL /*static, unused*/, /*hidden argument*/NULL);
+		if (!L_40)
 		{
 			goto IL_0026;
 		}
@@ -32832,12 +32835,12 @@ IL_0139:
 		__this->set_U24PC_5((-1));
 	}
 
-IL_014a:
+IL_0150:
 	{
 		return (bool)0;
 	}
 
-IL_014c:
+IL_0152:
 	{
 		return (bool)1;
 	}

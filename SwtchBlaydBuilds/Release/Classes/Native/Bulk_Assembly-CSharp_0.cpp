@@ -20272,42 +20272,49 @@ extern "C"  void GameController_Update_m217025042 (GameController_t2330501625 * 
 		bool L_0 = ((GameController_t2330501625_StaticFields*)il2cpp_codegen_static_fields_for(GameController_t2330501625_il2cpp_TypeInfo_var))->get_gameOver_14();
 		if (L_0)
 		{
-			goto IL_007f;
+			goto IL_008f;
 		}
 	}
 	{
-		Transform_t3600365921 * L_1 = Component_get_transform_m3162698980(__this, /*hidden argument*/NULL);
+		float L_1 = __this->get_currentTimescale_15();
+		if ((!(((float)L_1) > ((float)(0.0f)))))
+		{
+			goto IL_008f;
+		}
+	}
+	{
 		Transform_t3600365921 * L_2 = Component_get_transform_m3162698980(__this, /*hidden argument*/NULL);
-		NullCheck(L_2);
-		Vector3_t3722313464  L_3 = Transform_get_position_m36019626(L_2, /*hidden argument*/NULL);
-		Transform_t3600365921 * L_4 = Component_get_transform_m3162698980(__this, /*hidden argument*/NULL);
-		NullCheck(L_4);
-		Vector3_t3722313464  L_5 = Transform_get_position_m36019626(L_4, /*hidden argument*/NULL);
-		V_0 = L_5;
-		float L_6 = (&V_0)->get_x_1();
-		Transform_t3600365921 * L_7 = Component_get_transform_m3162698980(__this, /*hidden argument*/NULL);
-		NullCheck(L_7);
-		Vector3_t3722313464  L_8 = Transform_get_position_m36019626(L_7, /*hidden argument*/NULL);
-		V_1 = L_8;
-		float L_9 = (&V_1)->get_y_2();
-		Transform_t3600365921 * L_10 = Component_get_transform_m3162698980(__this, /*hidden argument*/NULL);
-		NullCheck(L_10);
-		Vector3_t3722313464  L_11 = Transform_get_position_m36019626(L_10, /*hidden argument*/NULL);
-		V_2 = L_11;
-		float L_12 = (&V_2)->get_z_3();
-		Vector3_t3722313464  L_13;
-		memset(&L_13, 0, sizeof(L_13));
-		Vector3__ctor_m3353183577((&L_13), L_6, ((float)il2cpp_codegen_add((float)L_9, (float)(1.0f))), L_12, /*hidden argument*/NULL);
-		Vector3_t3722313464 * L_14 = __this->get_address_of_velocity_21();
-		float L_15 = __this->get_moveSpeed_11();
-		float L_16 = Time_get_smoothDeltaTime_m2285259559(NULL /*static, unused*/, /*hidden argument*/NULL);
+		Transform_t3600365921 * L_3 = Component_get_transform_m3162698980(__this, /*hidden argument*/NULL);
+		NullCheck(L_3);
+		Vector3_t3722313464  L_4 = Transform_get_position_m36019626(L_3, /*hidden argument*/NULL);
+		Transform_t3600365921 * L_5 = Component_get_transform_m3162698980(__this, /*hidden argument*/NULL);
+		NullCheck(L_5);
+		Vector3_t3722313464  L_6 = Transform_get_position_m36019626(L_5, /*hidden argument*/NULL);
+		V_0 = L_6;
+		float L_7 = (&V_0)->get_x_1();
+		Transform_t3600365921 * L_8 = Component_get_transform_m3162698980(__this, /*hidden argument*/NULL);
+		NullCheck(L_8);
+		Vector3_t3722313464  L_9 = Transform_get_position_m36019626(L_8, /*hidden argument*/NULL);
+		V_1 = L_9;
+		float L_10 = (&V_1)->get_y_2();
+		Transform_t3600365921 * L_11 = Component_get_transform_m3162698980(__this, /*hidden argument*/NULL);
+		NullCheck(L_11);
+		Vector3_t3722313464  L_12 = Transform_get_position_m36019626(L_11, /*hidden argument*/NULL);
+		V_2 = L_12;
+		float L_13 = (&V_2)->get_z_3();
+		Vector3_t3722313464  L_14;
+		memset(&L_14, 0, sizeof(L_14));
+		Vector3__ctor_m3353183577((&L_14), L_7, ((float)il2cpp_codegen_add((float)L_10, (float)(1.0f))), L_13, /*hidden argument*/NULL);
+		Vector3_t3722313464 * L_15 = __this->get_address_of_velocity_21();
+		float L_16 = __this->get_moveSpeed_11();
+		float L_17 = Time_get_smoothDeltaTime_m2285259559(NULL /*static, unused*/, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(Vector3_t3722313464_il2cpp_TypeInfo_var);
-		Vector3_t3722313464  L_17 = Vector3_SmoothDamp_m4063901109(NULL /*static, unused*/, L_3, L_13, L_14, L_15, (std::numeric_limits<float>::infinity()), L_16, /*hidden argument*/NULL);
-		NullCheck(L_1);
-		Transform_set_position_m3387557959(L_1, L_17, /*hidden argument*/NULL);
+		Vector3_t3722313464  L_18 = Vector3_SmoothDamp_m4063901109(NULL /*static, unused*/, L_4, L_14, L_15, L_16, (std::numeric_limits<float>::infinity()), L_17, /*hidden argument*/NULL);
+		NullCheck(L_2);
+		Transform_set_position_m3387557959(L_2, L_18, /*hidden argument*/NULL);
 	}
 
-IL_007f:
+IL_008f:
 	{
 		return;
 	}

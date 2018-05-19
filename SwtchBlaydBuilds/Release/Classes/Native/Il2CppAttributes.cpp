@@ -39781,55 +39781,6 @@ static void U3CFlyAwayU3Ec__Iterator0_t2879072889_CustomAttributesCacheGenerator
 		DebuggerHiddenAttribute__ctor_m2764625696(tmp, NULL);
 	}
 }
-static void ColorChanger_t3353685796_CustomAttributesCacheGenerator_ColorChanger_ChangeColors_m2419768818(CustomAttributesCache* cache)
-{
-	{
-		DebuggerHiddenAttribute_t587553342 * tmp = (DebuggerHiddenAttribute_t587553342 *)cache->attributes[0];
-		DebuggerHiddenAttribute__ctor_m2764625696(tmp, NULL);
-	}
-}
-static void U3CChangeColorsU3Ec__Iterator0_t2298694164_CustomAttributesCacheGenerator(CustomAttributesCache* cache)
-{
-	{
-		CompilerGeneratedAttribute_t23527886 * tmp = (CompilerGeneratedAttribute_t23527886 *)cache->attributes[0];
-		CompilerGeneratedAttribute__ctor_m3151881902(tmp, NULL);
-	}
-}
-static void U3CChangeColorsU3Ec__Iterator0_t2298694164_CustomAttributesCacheGenerator_U3CChangeColorsU3Ec__Iterator0__ctor_m2012689859(CustomAttributesCache* cache)
-{
-	{
-		DebuggerHiddenAttribute_t587553342 * tmp = (DebuggerHiddenAttribute_t587553342 *)cache->attributes[0];
-		DebuggerHiddenAttribute__ctor_m2764625696(tmp, NULL);
-	}
-}
-static void U3CChangeColorsU3Ec__Iterator0_t2298694164_CustomAttributesCacheGenerator_U3CChangeColorsU3Ec__Iterator0_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m1046763511(CustomAttributesCache* cache)
-{
-	{
-		DebuggerHiddenAttribute_t587553342 * tmp = (DebuggerHiddenAttribute_t587553342 *)cache->attributes[0];
-		DebuggerHiddenAttribute__ctor_m2764625696(tmp, NULL);
-	}
-}
-static void U3CChangeColorsU3Ec__Iterator0_t2298694164_CustomAttributesCacheGenerator_U3CChangeColorsU3Ec__Iterator0_System_Collections_IEnumerator_get_Current_m2669698389(CustomAttributesCache* cache)
-{
-	{
-		DebuggerHiddenAttribute_t587553342 * tmp = (DebuggerHiddenAttribute_t587553342 *)cache->attributes[0];
-		DebuggerHiddenAttribute__ctor_m2764625696(tmp, NULL);
-	}
-}
-static void U3CChangeColorsU3Ec__Iterator0_t2298694164_CustomAttributesCacheGenerator_U3CChangeColorsU3Ec__Iterator0_Dispose_m422251003(CustomAttributesCache* cache)
-{
-	{
-		DebuggerHiddenAttribute_t587553342 * tmp = (DebuggerHiddenAttribute_t587553342 *)cache->attributes[0];
-		DebuggerHiddenAttribute__ctor_m2764625696(tmp, NULL);
-	}
-}
-static void U3CChangeColorsU3Ec__Iterator0_t2298694164_CustomAttributesCacheGenerator_U3CChangeColorsU3Ec__Iterator0_Reset_m84952511(CustomAttributesCache* cache)
-{
-	{
-		DebuggerHiddenAttribute_t587553342 * tmp = (DebuggerHiddenAttribute_t587553342 *)cache->attributes[0];
-		DebuggerHiddenAttribute__ctor_m2764625696(tmp, NULL);
-	}
-}
 static void GameController_t2330501625_CustomAttributesCacheGenerator_wallPrefabs(CustomAttributesCache* cache)
 {
 	{
@@ -40293,6 +40244,55 @@ static void U3CRotateU3Ec__Iterator0_t3986979962_CustomAttributesCacheGenerator_
 	}
 }
 static void U3CRotateU3Ec__Iterator0_t3986979962_CustomAttributesCacheGenerator_U3CRotateU3Ec__Iterator0_Reset_m2218572324(CustomAttributesCache* cache)
+{
+	{
+		DebuggerHiddenAttribute_t587553342 * tmp = (DebuggerHiddenAttribute_t587553342 *)cache->attributes[0];
+		DebuggerHiddenAttribute__ctor_m2764625696(tmp, NULL);
+	}
+}
+static void ColorChanger_t3353685796_CustomAttributesCacheGenerator_ColorChanger_ChangeColors_m2419768818(CustomAttributesCache* cache)
+{
+	{
+		DebuggerHiddenAttribute_t587553342 * tmp = (DebuggerHiddenAttribute_t587553342 *)cache->attributes[0];
+		DebuggerHiddenAttribute__ctor_m2764625696(tmp, NULL);
+	}
+}
+static void U3CChangeColorsU3Ec__Iterator0_t2298694164_CustomAttributesCacheGenerator(CustomAttributesCache* cache)
+{
+	{
+		CompilerGeneratedAttribute_t23527886 * tmp = (CompilerGeneratedAttribute_t23527886 *)cache->attributes[0];
+		CompilerGeneratedAttribute__ctor_m3151881902(tmp, NULL);
+	}
+}
+static void U3CChangeColorsU3Ec__Iterator0_t2298694164_CustomAttributesCacheGenerator_U3CChangeColorsU3Ec__Iterator0__ctor_m2012689859(CustomAttributesCache* cache)
+{
+	{
+		DebuggerHiddenAttribute_t587553342 * tmp = (DebuggerHiddenAttribute_t587553342 *)cache->attributes[0];
+		DebuggerHiddenAttribute__ctor_m2764625696(tmp, NULL);
+	}
+}
+static void U3CChangeColorsU3Ec__Iterator0_t2298694164_CustomAttributesCacheGenerator_U3CChangeColorsU3Ec__Iterator0_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m1046763511(CustomAttributesCache* cache)
+{
+	{
+		DebuggerHiddenAttribute_t587553342 * tmp = (DebuggerHiddenAttribute_t587553342 *)cache->attributes[0];
+		DebuggerHiddenAttribute__ctor_m2764625696(tmp, NULL);
+	}
+}
+static void U3CChangeColorsU3Ec__Iterator0_t2298694164_CustomAttributesCacheGenerator_U3CChangeColorsU3Ec__Iterator0_System_Collections_IEnumerator_get_Current_m2669698389(CustomAttributesCache* cache)
+{
+	{
+		DebuggerHiddenAttribute_t587553342 * tmp = (DebuggerHiddenAttribute_t587553342 *)cache->attributes[0];
+		DebuggerHiddenAttribute__ctor_m2764625696(tmp, NULL);
+	}
+}
+static void U3CChangeColorsU3Ec__Iterator0_t2298694164_CustomAttributesCacheGenerator_U3CChangeColorsU3Ec__Iterator0_Dispose_m422251003(CustomAttributesCache* cache)
+{
+	{
+		DebuggerHiddenAttribute_t587553342 * tmp = (DebuggerHiddenAttribute_t587553342 *)cache->attributes[0];
+		DebuggerHiddenAttribute__ctor_m2764625696(tmp, NULL);
+	}
+}
+static void U3CChangeColorsU3Ec__Iterator0_t2298694164_CustomAttributesCacheGenerator_U3CChangeColorsU3Ec__Iterator0_Reset_m84952511(CustomAttributesCache* cache)
 {
 	{
 		DebuggerHiddenAttribute_t587553342 * tmp = (DebuggerHiddenAttribute_t587553342 *)cache->attributes[0];
@@ -44499,13 +44499,6 @@ extern const CustomAttributesCacheGenerator g_AttributeGenerators[4242] =
 	U3CFlyAwayU3Ec__Iterator0_t2879072889_CustomAttributesCacheGenerator_U3CFlyAwayU3Ec__Iterator0_System_Collections_IEnumerator_get_Current_m1422505798,
 	U3CFlyAwayU3Ec__Iterator0_t2879072889_CustomAttributesCacheGenerator_U3CFlyAwayU3Ec__Iterator0_Dispose_m399587364,
 	U3CFlyAwayU3Ec__Iterator0_t2879072889_CustomAttributesCacheGenerator_U3CFlyAwayU3Ec__Iterator0_Reset_m2224226031,
-	ColorChanger_t3353685796_CustomAttributesCacheGenerator_ColorChanger_ChangeColors_m2419768818,
-	U3CChangeColorsU3Ec__Iterator0_t2298694164_CustomAttributesCacheGenerator,
-	U3CChangeColorsU3Ec__Iterator0_t2298694164_CustomAttributesCacheGenerator_U3CChangeColorsU3Ec__Iterator0__ctor_m2012689859,
-	U3CChangeColorsU3Ec__Iterator0_t2298694164_CustomAttributesCacheGenerator_U3CChangeColorsU3Ec__Iterator0_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m1046763511,
-	U3CChangeColorsU3Ec__Iterator0_t2298694164_CustomAttributesCacheGenerator_U3CChangeColorsU3Ec__Iterator0_System_Collections_IEnumerator_get_Current_m2669698389,
-	U3CChangeColorsU3Ec__Iterator0_t2298694164_CustomAttributesCacheGenerator_U3CChangeColorsU3Ec__Iterator0_Dispose_m422251003,
-	U3CChangeColorsU3Ec__Iterator0_t2298694164_CustomAttributesCacheGenerator_U3CChangeColorsU3Ec__Iterator0_Reset_m84952511,
 	GameController_t2330501625_CustomAttributesCacheGenerator_wallPrefabs,
 	GameController_t2330501625_CustomAttributesCacheGenerator_GameController_IncrementSpeed_m3500125153,
 	GameController_t2330501625_CustomAttributesCacheGenerator_GameController_IncrementScore_m3723399698,
@@ -44573,6 +44566,13 @@ extern const CustomAttributesCacheGenerator g_AttributeGenerators[4242] =
 	U3CRotateU3Ec__Iterator0_t3986979962_CustomAttributesCacheGenerator_U3CRotateU3Ec__Iterator0_System_Collections_IEnumerator_get_Current_m1029195869,
 	U3CRotateU3Ec__Iterator0_t3986979962_CustomAttributesCacheGenerator_U3CRotateU3Ec__Iterator0_Dispose_m1584688918,
 	U3CRotateU3Ec__Iterator0_t3986979962_CustomAttributesCacheGenerator_U3CRotateU3Ec__Iterator0_Reset_m2218572324,
+	ColorChanger_t3353685796_CustomAttributesCacheGenerator_ColorChanger_ChangeColors_m2419768818,
+	U3CChangeColorsU3Ec__Iterator0_t2298694164_CustomAttributesCacheGenerator,
+	U3CChangeColorsU3Ec__Iterator0_t2298694164_CustomAttributesCacheGenerator_U3CChangeColorsU3Ec__Iterator0__ctor_m2012689859,
+	U3CChangeColorsU3Ec__Iterator0_t2298694164_CustomAttributesCacheGenerator_U3CChangeColorsU3Ec__Iterator0_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m1046763511,
+	U3CChangeColorsU3Ec__Iterator0_t2298694164_CustomAttributesCacheGenerator_U3CChangeColorsU3Ec__Iterator0_System_Collections_IEnumerator_get_Current_m2669698389,
+	U3CChangeColorsU3Ec__Iterator0_t2298694164_CustomAttributesCacheGenerator_U3CChangeColorsU3Ec__Iterator0_Dispose_m422251003,
+	U3CChangeColorsU3Ec__Iterator0_t2298694164_CustomAttributesCacheGenerator_U3CChangeColorsU3Ec__Iterator0_Reset_m84952511,
 	SoundManager_t2102329059_CustomAttributesCacheGenerator_SoundManager_U3CAwakeU3Em__0_m855832726,
 	SoundManager_t2102329059_CustomAttributesCacheGenerator_SoundManager_U3CAwakeU3Em__1_m855832725,
 	SoundManager_t2102329059_CustomAttributesCacheGenerator_SoundManager_U3CAwakeU3Em__2_m855832724,
