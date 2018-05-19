@@ -49,10 +49,10 @@ public class SoundManager : MonoBehaviour
 		{
 			DontDestroyOnLoad(gameObject);
 			aS = GetComponents<AudioSource>();
-			SpinEvent = delegate { PlaySFX(0); };
-			CoinEvent = delegate { PlaySFX(1); };
-			DeathEvent = delegate { PlaySFX(2); };
-			ClickEvent = delegate { PlaySFX(3); };
+			SpinEvent = delegate { PlaySFX(0, 2); };
+			CoinEvent = delegate { PlaySFX(1, 0); };
+			DeathEvent = delegate { PlaySFX(2, 3); };
+			ClickEvent = delegate { PlaySFX(3, 0); };
 			GetMix = GetMixer;
 			MixerToggle = ToggleMixer;
 			PlaySong(0);
@@ -74,10 +74,10 @@ public class SoundManager : MonoBehaviour
 	/// <summary>
 	/// Plays a sound effect from the list. 
 	/// </summary>
-	private void PlaySFX(int i)
+	private void PlaySFX(int i, int j)
 	{
-		aS[0].clip = sounds[i];
-		aS[0].Play();
+		aS[j].clip = sounds[i];
+		aS[j].Play();
 	}
 
 	/// <summary>

@@ -37,10 +37,11 @@ public class MenuManager : MonoBehaviour
 	// Use this for initialization
 	void Start()
 	{
-		Utils.Reset();
-		Utils.Loaded = false;
-		Utils.Load();
-
+		if (!Utils.Loaded)
+		{
+			Utils.Reset();
+			Utils.Load();
+		}
 
 		musicOn = music.transform.GetChild(1).gameObject;
 		musicOff = music.transform.GetChild(2).gameObject;

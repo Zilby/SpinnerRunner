@@ -45,7 +45,7 @@ public static class Utils
 	private static bool tutorial = true;
 
 	// whether or not this has been loaded
-	private static bool loaded;
+	private static bool loaded = false;
 
 #if UNITY_EDITOR
 	private static string path = "/bladeSavedInfoEditor.zlb";
@@ -163,7 +163,8 @@ public static class Utils
 		MyData data = new MyData();
 
 		data.highScore = highScore;
-		data.tutorial = tutorial;
+		// Set true for tutorial every time. 
+		data.tutorial = tutorial; //true; 
 		AudioMixer mix = SoundManager.GetMix();
 		mix.GetFloat("Music", out music);
 		mix.GetFloat("SoundFX", out soundfx);
