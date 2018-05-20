@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 /// <summary>
 /// Changes the color of a given material over time. 
@@ -27,9 +28,13 @@ public class ColorChanger : MonoBehaviour
 	/// </summary>
 	private Color currentColor = Color.black;
 
-	private void Start()
+	public static Action colorEvent;
+
+	private void Awake()
 	{
-		StartCoroutine(ChangeColors());
+		SetColor(Color.red, 0f);
+		AssignColors();
+		colorEvent = delegate { StartCoroutine(ChangeColors()); };
 	}
 
 	/// <summary>

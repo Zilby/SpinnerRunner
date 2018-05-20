@@ -5,6 +5,10 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
 using TMPro;
+#if UNITY_ADS
+using UnityEngine.Advertisements;
+#endif
+
 
 /// <summary>
 /// Manages the menu and its UI. 
@@ -43,6 +47,10 @@ public class MenuManager : MonoBehaviour
 			Utils.Load();
 		}
 
+		StartCoroutine(Initialize());
+	}
+
+	private IEnumerator Initialize() {
 		musicOn = music.transform.GetChild(1).gameObject;
 		musicOff = music.transform.GetChild(2).gameObject;
 		soundOn = sound.transform.GetChild(1).gameObject;
@@ -61,6 +69,35 @@ public class MenuManager : MonoBehaviour
 		music.onClick.AddListener(ToggleMusic);
 		menu.onClick.AddListener(delegate { AlternateScreens(scores); });
 		menu2.onClick.AddListener(delegate { AlternateScreens(creditsPage); });
+
+		string gameId = null;
+#if UNITY_ANDROID
+        gameId = "1807729";
+#elif UNITY_IOS
+        gameId = "1807728";
+#endif
+#if UNITY_ADS
+		if (Advertisement.isSupported && !Advertisement.isInitialized)
+		{
+			Advertisement.Initialize(gameId);
+		}
+		float time = 0;
+		while (!Advertisement.IsReady() && time < 2f)
+		{
+			time += 0.1f;
+			yield return new WaitForSecondsRealtime(0.1f);
+		}
+
+		Advertisement.Show();
+
+		while(Advertisement.isShowing) {
+			yield return new WaitForSecondsRealtime(0.1f);
+		}
+#endif
+
+		ColorChanger.colorEvent();
+		SoundManager.SongEvent();
+		yield break;
 	}
 
 	private void LoadGame()

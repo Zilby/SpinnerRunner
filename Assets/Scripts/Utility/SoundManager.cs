@@ -23,6 +23,8 @@ public class SoundManager : MonoBehaviour
 
 	public static Action ClickEvent;
 
+	public static Action SongEvent;
+
 	public AudioMixer mix;
 
 	/// <summary>
@@ -55,7 +57,7 @@ public class SoundManager : MonoBehaviour
 			ClickEvent = delegate { PlaySFX(3, 0); };
 			GetMix = GetMixer;
 			MixerToggle = ToggleMixer;
-			PlaySong(0);
+			SongEvent = delegate { PlaySong(0); };
 		}
 		else
 		{
