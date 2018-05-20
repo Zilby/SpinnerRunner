@@ -14865,7 +14865,7 @@ extern "C" void U3CRotateU3Ec__Iterator0_Reset_m1102183002 ();
 extern "C" void SoundManager__ctor_m1311707663 ();
 extern "C" void SoundManager_Awake_m2554457172 ();
 extern "C" void SoundManager_GetMixer_m2119355100 ();
-extern "C" void SoundManager_PlaySFX_m873413241 ();
+extern "C" void SoundManager_PlaySFX_m4272069466 ();
 extern "C" void SoundManager_PlaySong_m482356588 ();
 extern "C" void SoundManager_ToggleMixer_m2872397047 ();
 extern "C" void SoundManager_U3CAwakeU3Em__0_m855832726 ();
@@ -30356,7 +30356,7 @@ extern const Il2CppMethodPointer g_MethodPointers[15489] =
 	SoundManager__ctor_m1311707663,
 	SoundManager_Awake_m2554457172,
 	SoundManager_GetMixer_m2119355100,
-	SoundManager_PlaySFX_m873413241,
+	SoundManager_PlaySFX_m4272069466,
 	SoundManager_PlaySong_m482356588,
 	SoundManager_ToggleMixer_m2872397047,
 	SoundManager_U3CAwakeU3Em__0_m855832726,

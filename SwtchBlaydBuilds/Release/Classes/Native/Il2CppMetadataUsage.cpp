@@ -23789,7 +23789,7 @@ extern const uint32_t SortKeyBuffer_AppendBufferPrimitive_m3309814175_MetadataUs
 extern const uint32_t SortKeyBuffer_GetResult_m3043958424_MetadataUsageId = 7651;
 extern const uint32_t SortKeyBuffer_Initialize_m3786111493_MetadataUsageId = 7652;
 extern const uint32_t SoundManager_Awake_m2554457172_MetadataUsageId = 7653;
-extern const uint32_t SoundManager_PlaySFX_m873413241_MetadataUsageId = 7654;
+extern const uint32_t SoundManager_PlaySFX_m4272069466_MetadataUsageId = 7654;
 extern const uint32_t SoundManager_PlaySong_m482356588_MetadataUsageId = 7655;
 extern const uint32_t SoundManager_ToggleMixer_m2872397047_MetadataUsageId = 7656;
 extern const uint32_t SpeedlinkStrikeMacProfile__ctor_m1993295687_MetadataUsageId = 7657;

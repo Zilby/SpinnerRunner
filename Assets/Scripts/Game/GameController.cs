@@ -383,6 +383,17 @@ public class GameController : MonoBehaviour
 	}
 
 	/// <summary>
+	/// Pauses the game if the application loses focus. 
+	/// </summary>
+	void OnApplicationFocus(bool hasFocus)
+	{
+		if (Time.timeScale > 0.0f)
+		{
+			UIManager.pauseEvent();
+		}
+	}
+
+	/// <summary>
 	/// Controls the tutorial sequence. 
 	/// </summary>
 	private IEnumerator Tutorial()

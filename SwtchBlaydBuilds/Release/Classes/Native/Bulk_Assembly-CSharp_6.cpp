@@ -899,7 +899,7 @@ extern const RuntimeMethod* SoundManager_GetMixer_m2119355100_RuntimeMethod_var;
 extern const RuntimeMethod* SoundManager_ToggleMixer_m2872397047_RuntimeMethod_var;
 extern const uint32_t SoundManager_Awake_m2554457172_MetadataUsageId;
 extern const RuntimeMethod* List_1_get_Item_m1011483163_RuntimeMethod_var;
-extern const uint32_t SoundManager_PlaySFX_m873413241_MetadataUsageId;
+extern const uint32_t SoundManager_PlaySFX_m4272069466_MetadataUsageId;
 extern const uint32_t SoundManager_PlaySong_m482356588_MetadataUsageId;
 extern const uint32_t SoundManager_ToggleMixer_m2872397047_MetadataUsageId;
 extern RuntimeClass* Boolean_t97287965_il2cpp_TypeInfo_var;
@@ -28373,10 +28373,10 @@ extern "C"  OneAxisInputControl_t3514904862 * TwoAxisInputControl_get_Right_m196
 extern "C"  bool Object_op_Inequality_m4071470834 (RuntimeObject * __this /* static, unused */, Object_t631007953 * p0, Object_t631007953 * p1, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Debug::LogError(System.Object)
 extern "C"  void Debug_LogError_m2850623458 (RuntimeObject * __this /* static, unused */, RuntimeObject * p0, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
+// System.Boolean Utils::get_Loaded()
+extern "C"  bool Utils_get_Loaded_m214041120 (RuntimeObject * __this /* static, unused */, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // System.Void Utils::Reset()
 extern "C"  void Utils_Reset_m3405874451 (RuntimeObject * __this /* static, unused */, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
-// System.Void Utils::set_Loaded(System.Boolean)
-extern "C"  void Utils_set_Loaded_m1611615705 (RuntimeObject * __this /* static, unused */, bool ___value0, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // System.Void Utils::Load()
 extern "C"  void Utils_Load_m2291863489 (RuntimeObject * __this /* static, unused */, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Transform UnityEngine.Component::get_transform()
@@ -28665,8 +28665,8 @@ extern "C"  void AudioSource_Play_m48294159 (AudioSource_t3935305588 * __this, c
 extern "C"  bool AudioMixer_SetFloat_m3036056706 (AudioMixer_t3521020193 * __this, String_t* p0, float p1, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // System.Void Utils::Save()
 extern "C"  void Utils_Save_m1051100566 (RuntimeObject * __this /* static, unused */, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
-// System.Void SoundManager::PlaySFX(System.Int32)
-extern "C"  void SoundManager_PlaySFX_m873413241 (SoundManager_t2102329059 * __this, int32_t ___i0, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
+// System.Void SoundManager::PlaySFX(System.Int32,System.Int32)
+extern "C"  void SoundManager_PlaySFX_m4272069466 (SoundManager_t2102329059 * __this, int32_t ___i0, int32_t ___j1, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Audio.AudioMixer SoundManager/MixEvent::Invoke()
 extern "C"  AudioMixer_t3521020193 * MixEvent_Invoke_m1464537663 (MixEvent_t4044426747 * __this, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // System.Void TMPro.Examples.Benchmark01/<Start>c__Iterator0::.ctor()
@@ -29783,119 +29783,131 @@ extern "C"  void MenuManager_Start_m2906916493 (MenuManager_t2761117704 * __this
 	int32_t V_0 = 0;
 	{
 		IL2CPP_RUNTIME_CLASS_INIT(Utils_t1444179947_il2cpp_TypeInfo_var);
+		bool L_0 = Utils_get_Loaded_m214041120(NULL /*static, unused*/, /*hidden argument*/NULL);
+		if (L_0)
+		{
+			goto IL_0014;
+		}
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(Utils_t1444179947_il2cpp_TypeInfo_var);
 		Utils_Reset_m3405874451(NULL /*static, unused*/, /*hidden argument*/NULL);
-		Utils_set_Loaded_m1611615705(NULL /*static, unused*/, (bool)0, /*hidden argument*/NULL);
 		Utils_Load_m2291863489(NULL /*static, unused*/, /*hidden argument*/NULL);
-		Button_t4055032469 * L_0 = __this->get_music_7();
-		NullCheck(L_0);
-		Transform_t3600365921 * L_1 = Component_get_transform_m3162698980(L_0, /*hidden argument*/NULL);
+	}
+
+IL_0014:
+	{
+		Button_t4055032469 * L_1 = __this->get_music_7();
 		NullCheck(L_1);
-		Transform_t3600365921 * L_2 = Transform_GetChild_m1092972975(L_1, 1, /*hidden argument*/NULL);
+		Transform_t3600365921 * L_2 = Component_get_transform_m3162698980(L_1, /*hidden argument*/NULL);
 		NullCheck(L_2);
-		GameObject_t1113636619 * L_3 = Component_get_gameObject_m442555142(L_2, /*hidden argument*/NULL);
-		__this->set_musicOn_13(L_3);
-		Button_t4055032469 * L_4 = __this->get_music_7();
-		NullCheck(L_4);
-		Transform_t3600365921 * L_5 = Component_get_transform_m3162698980(L_4, /*hidden argument*/NULL);
+		Transform_t3600365921 * L_3 = Transform_GetChild_m1092972975(L_2, 1, /*hidden argument*/NULL);
+		NullCheck(L_3);
+		GameObject_t1113636619 * L_4 = Component_get_gameObject_m442555142(L_3, /*hidden argument*/NULL);
+		__this->set_musicOn_13(L_4);
+		Button_t4055032469 * L_5 = __this->get_music_7();
 		NullCheck(L_5);
-		Transform_t3600365921 * L_6 = Transform_GetChild_m1092972975(L_5, 2, /*hidden argument*/NULL);
+		Transform_t3600365921 * L_6 = Component_get_transform_m3162698980(L_5, /*hidden argument*/NULL);
 		NullCheck(L_6);
-		GameObject_t1113636619 * L_7 = Component_get_gameObject_m442555142(L_6, /*hidden argument*/NULL);
-		__this->set_musicOff_14(L_7);
-		Button_t4055032469 * L_8 = __this->get_sound_6();
-		NullCheck(L_8);
-		Transform_t3600365921 * L_9 = Component_get_transform_m3162698980(L_8, /*hidden argument*/NULL);
+		Transform_t3600365921 * L_7 = Transform_GetChild_m1092972975(L_6, 2, /*hidden argument*/NULL);
+		NullCheck(L_7);
+		GameObject_t1113636619 * L_8 = Component_get_gameObject_m442555142(L_7, /*hidden argument*/NULL);
+		__this->set_musicOff_14(L_8);
+		Button_t4055032469 * L_9 = __this->get_sound_6();
 		NullCheck(L_9);
-		Transform_t3600365921 * L_10 = Transform_GetChild_m1092972975(L_9, 1, /*hidden argument*/NULL);
+		Transform_t3600365921 * L_10 = Component_get_transform_m3162698980(L_9, /*hidden argument*/NULL);
 		NullCheck(L_10);
-		GameObject_t1113636619 * L_11 = Component_get_gameObject_m442555142(L_10, /*hidden argument*/NULL);
-		__this->set_soundOn_15(L_11);
-		Button_t4055032469 * L_12 = __this->get_sound_6();
-		NullCheck(L_12);
-		Transform_t3600365921 * L_13 = Component_get_transform_m3162698980(L_12, /*hidden argument*/NULL);
+		Transform_t3600365921 * L_11 = Transform_GetChild_m1092972975(L_10, 1, /*hidden argument*/NULL);
+		NullCheck(L_11);
+		GameObject_t1113636619 * L_12 = Component_get_gameObject_m442555142(L_11, /*hidden argument*/NULL);
+		__this->set_soundOn_15(L_12);
+		Button_t4055032469 * L_13 = __this->get_sound_6();
 		NullCheck(L_13);
-		Transform_t3600365921 * L_14 = Transform_GetChild_m1092972975(L_13, 2, /*hidden argument*/NULL);
+		Transform_t3600365921 * L_14 = Component_get_transform_m3162698980(L_13, /*hidden argument*/NULL);
 		NullCheck(L_14);
-		GameObject_t1113636619 * L_15 = Component_get_gameObject_m442555142(L_14, /*hidden argument*/NULL);
-		__this->set_soundOff_16(L_15);
-		GameObject_t1113636619 * L_16 = __this->get_musicOn_13();
-		float L_17 = Utils_get_Music_m322474698(NULL /*static, unused*/, /*hidden argument*/NULL);
-		NullCheck(L_16);
-		GameObject_SetActive_m796801857(L_16, (bool)((((int32_t)((!(((float)L_17) >= ((float)(0.0f))))? 1 : 0)) == ((int32_t)0))? 1 : 0), /*hidden argument*/NULL);
-		GameObject_t1113636619 * L_18 = __this->get_musicOff_14();
-		float L_19 = Utils_get_Music_m322474698(NULL /*static, unused*/, /*hidden argument*/NULL);
-		NullCheck(L_18);
-		GameObject_SetActive_m796801857(L_18, (bool)((((float)L_19) < ((float)(0.0f)))? 1 : 0), /*hidden argument*/NULL);
-		GameObject_t1113636619 * L_20 = __this->get_soundOn_15();
-		float L_21 = Utils_get_Soundfx_m2606066325(NULL /*static, unused*/, /*hidden argument*/NULL);
-		NullCheck(L_20);
-		GameObject_SetActive_m796801857(L_20, (bool)((((int32_t)((!(((float)L_21) >= ((float)(0.0f))))? 1 : 0)) == ((int32_t)0))? 1 : 0), /*hidden argument*/NULL);
-		GameObject_t1113636619 * L_22 = __this->get_soundOff_16();
-		float L_23 = Utils_get_Soundfx_m2606066325(NULL /*static, unused*/, /*hidden argument*/NULL);
-		NullCheck(L_22);
-		GameObject_SetActive_m796801857(L_22, (bool)((((float)L_23) < ((float)(0.0f)))? 1 : 0), /*hidden argument*/NULL);
-		TextMeshProUGUI_t529313277 * L_24 = __this->get_score_10();
-		int32_t L_25 = Utils_get_HighScore_m2999726794(NULL /*static, unused*/, /*hidden argument*/NULL);
-		V_0 = L_25;
-		String_t* L_26 = Int32_ToString_m141394615((&V_0), /*hidden argument*/NULL);
-		NullCheck(L_24);
-		TMP_Text_set_text_m3874160647(L_24, L_26, /*hidden argument*/NULL);
-		Button_t4055032469 * L_27 = __this->get_play_3();
-		NullCheck(L_27);
-		ButtonClickedEvent_t48803504 * L_28 = Button_get_onClick_m2332132945(L_27, /*hidden argument*/NULL);
-		intptr_t L_29 = (intptr_t)MenuManager_LoadGame_m982147865_RuntimeMethod_var;
-		UnityAction_t3245792599 * L_30 = (UnityAction_t3245792599 *)il2cpp_codegen_object_new(UnityAction_t3245792599_il2cpp_TypeInfo_var);
-		UnityAction__ctor_m772160306(L_30, __this, L_29, /*hidden argument*/NULL);
+		Transform_t3600365921 * L_15 = Transform_GetChild_m1092972975(L_14, 2, /*hidden argument*/NULL);
+		NullCheck(L_15);
+		GameObject_t1113636619 * L_16 = Component_get_gameObject_m442555142(L_15, /*hidden argument*/NULL);
+		__this->set_soundOff_16(L_16);
+		GameObject_t1113636619 * L_17 = __this->get_musicOn_13();
+		IL2CPP_RUNTIME_CLASS_INIT(Utils_t1444179947_il2cpp_TypeInfo_var);
+		float L_18 = Utils_get_Music_m322474698(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_17);
+		GameObject_SetActive_m796801857(L_17, (bool)((((int32_t)((!(((float)L_18) >= ((float)(0.0f))))? 1 : 0)) == ((int32_t)0))? 1 : 0), /*hidden argument*/NULL);
+		GameObject_t1113636619 * L_19 = __this->get_musicOff_14();
+		float L_20 = Utils_get_Music_m322474698(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_19);
+		GameObject_SetActive_m796801857(L_19, (bool)((((float)L_20) < ((float)(0.0f)))? 1 : 0), /*hidden argument*/NULL);
+		GameObject_t1113636619 * L_21 = __this->get_soundOn_15();
+		float L_22 = Utils_get_Soundfx_m2606066325(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_21);
+		GameObject_SetActive_m796801857(L_21, (bool)((((int32_t)((!(((float)L_22) >= ((float)(0.0f))))? 1 : 0)) == ((int32_t)0))? 1 : 0), /*hidden argument*/NULL);
+		GameObject_t1113636619 * L_23 = __this->get_soundOff_16();
+		float L_24 = Utils_get_Soundfx_m2606066325(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_23);
+		GameObject_SetActive_m796801857(L_23, (bool)((((float)L_24) < ((float)(0.0f)))? 1 : 0), /*hidden argument*/NULL);
+		TextMeshProUGUI_t529313277 * L_25 = __this->get_score_10();
+		int32_t L_26 = Utils_get_HighScore_m2999726794(NULL /*static, unused*/, /*hidden argument*/NULL);
+		V_0 = L_26;
+		String_t* L_27 = Int32_ToString_m141394615((&V_0), /*hidden argument*/NULL);
+		NullCheck(L_25);
+		TMP_Text_set_text_m3874160647(L_25, L_27, /*hidden argument*/NULL);
+		Button_t4055032469 * L_28 = __this->get_play_3();
 		NullCheck(L_28);
-		UnityEvent_AddListener_m2276267359(L_28, L_30, /*hidden argument*/NULL);
-		Button_t4055032469 * L_31 = __this->get_highScores_4();
-		NullCheck(L_31);
-		ButtonClickedEvent_t48803504 * L_32 = Button_get_onClick_m2332132945(L_31, /*hidden argument*/NULL);
-		intptr_t L_33 = (intptr_t)MenuManager_U3CStartU3Em__0_m3131993054_RuntimeMethod_var;
-		UnityAction_t3245792599 * L_34 = (UnityAction_t3245792599 *)il2cpp_codegen_object_new(UnityAction_t3245792599_il2cpp_TypeInfo_var);
-		UnityAction__ctor_m772160306(L_34, __this, L_33, /*hidden argument*/NULL);
+		ButtonClickedEvent_t48803504 * L_29 = Button_get_onClick_m2332132945(L_28, /*hidden argument*/NULL);
+		intptr_t L_30 = (intptr_t)MenuManager_LoadGame_m982147865_RuntimeMethod_var;
+		UnityAction_t3245792599 * L_31 = (UnityAction_t3245792599 *)il2cpp_codegen_object_new(UnityAction_t3245792599_il2cpp_TypeInfo_var);
+		UnityAction__ctor_m772160306(L_31, __this, L_30, /*hidden argument*/NULL);
+		NullCheck(L_29);
+		UnityEvent_AddListener_m2276267359(L_29, L_31, /*hidden argument*/NULL);
+		Button_t4055032469 * L_32 = __this->get_highScores_4();
 		NullCheck(L_32);
-		UnityEvent_AddListener_m2276267359(L_32, L_34, /*hidden argument*/NULL);
-		Button_t4055032469 * L_35 = __this->get_credits_5();
-		NullCheck(L_35);
-		ButtonClickedEvent_t48803504 * L_36 = Button_get_onClick_m2332132945(L_35, /*hidden argument*/NULL);
-		intptr_t L_37 = (intptr_t)MenuManager_U3CStartU3Em__1_m1175677918_RuntimeMethod_var;
-		UnityAction_t3245792599 * L_38 = (UnityAction_t3245792599 *)il2cpp_codegen_object_new(UnityAction_t3245792599_il2cpp_TypeInfo_var);
-		UnityAction__ctor_m772160306(L_38, __this, L_37, /*hidden argument*/NULL);
+		ButtonClickedEvent_t48803504 * L_33 = Button_get_onClick_m2332132945(L_32, /*hidden argument*/NULL);
+		intptr_t L_34 = (intptr_t)MenuManager_U3CStartU3Em__0_m3131993054_RuntimeMethod_var;
+		UnityAction_t3245792599 * L_35 = (UnityAction_t3245792599 *)il2cpp_codegen_object_new(UnityAction_t3245792599_il2cpp_TypeInfo_var);
+		UnityAction__ctor_m772160306(L_35, __this, L_34, /*hidden argument*/NULL);
+		NullCheck(L_33);
+		UnityEvent_AddListener_m2276267359(L_33, L_35, /*hidden argument*/NULL);
+		Button_t4055032469 * L_36 = __this->get_credits_5();
 		NullCheck(L_36);
-		UnityEvent_AddListener_m2276267359(L_36, L_38, /*hidden argument*/NULL);
-		Button_t4055032469 * L_39 = __this->get_sound_6();
-		NullCheck(L_39);
-		ButtonClickedEvent_t48803504 * L_40 = Button_get_onClick_m2332132945(L_39, /*hidden argument*/NULL);
-		intptr_t L_41 = (intptr_t)MenuManager_ToggleSound_m548418401_RuntimeMethod_var;
-		UnityAction_t3245792599 * L_42 = (UnityAction_t3245792599 *)il2cpp_codegen_object_new(UnityAction_t3245792599_il2cpp_TypeInfo_var);
-		UnityAction__ctor_m772160306(L_42, __this, L_41, /*hidden argument*/NULL);
+		ButtonClickedEvent_t48803504 * L_37 = Button_get_onClick_m2332132945(L_36, /*hidden argument*/NULL);
+		intptr_t L_38 = (intptr_t)MenuManager_U3CStartU3Em__1_m1175677918_RuntimeMethod_var;
+		UnityAction_t3245792599 * L_39 = (UnityAction_t3245792599 *)il2cpp_codegen_object_new(UnityAction_t3245792599_il2cpp_TypeInfo_var);
+		UnityAction__ctor_m772160306(L_39, __this, L_38, /*hidden argument*/NULL);
+		NullCheck(L_37);
+		UnityEvent_AddListener_m2276267359(L_37, L_39, /*hidden argument*/NULL);
+		Button_t4055032469 * L_40 = __this->get_sound_6();
 		NullCheck(L_40);
-		UnityEvent_AddListener_m2276267359(L_40, L_42, /*hidden argument*/NULL);
-		Button_t4055032469 * L_43 = __this->get_music_7();
-		NullCheck(L_43);
-		ButtonClickedEvent_t48803504 * L_44 = Button_get_onClick_m2332132945(L_43, /*hidden argument*/NULL);
-		intptr_t L_45 = (intptr_t)MenuManager_ToggleMusic_m437550018_RuntimeMethod_var;
-		UnityAction_t3245792599 * L_46 = (UnityAction_t3245792599 *)il2cpp_codegen_object_new(UnityAction_t3245792599_il2cpp_TypeInfo_var);
-		UnityAction__ctor_m772160306(L_46, __this, L_45, /*hidden argument*/NULL);
+		ButtonClickedEvent_t48803504 * L_41 = Button_get_onClick_m2332132945(L_40, /*hidden argument*/NULL);
+		intptr_t L_42 = (intptr_t)MenuManager_ToggleSound_m548418401_RuntimeMethod_var;
+		UnityAction_t3245792599 * L_43 = (UnityAction_t3245792599 *)il2cpp_codegen_object_new(UnityAction_t3245792599_il2cpp_TypeInfo_var);
+		UnityAction__ctor_m772160306(L_43, __this, L_42, /*hidden argument*/NULL);
+		NullCheck(L_41);
+		UnityEvent_AddListener_m2276267359(L_41, L_43, /*hidden argument*/NULL);
+		Button_t4055032469 * L_44 = __this->get_music_7();
 		NullCheck(L_44);
-		UnityEvent_AddListener_m2276267359(L_44, L_46, /*hidden argument*/NULL);
-		Button_t4055032469 * L_47 = __this->get_menu_9();
-		NullCheck(L_47);
-		ButtonClickedEvent_t48803504 * L_48 = Button_get_onClick_m2332132945(L_47, /*hidden argument*/NULL);
-		intptr_t L_49 = (intptr_t)MenuManager_U3CStartU3Em__2_m2749656030_RuntimeMethod_var;
-		UnityAction_t3245792599 * L_50 = (UnityAction_t3245792599 *)il2cpp_codegen_object_new(UnityAction_t3245792599_il2cpp_TypeInfo_var);
-		UnityAction__ctor_m772160306(L_50, __this, L_49, /*hidden argument*/NULL);
+		ButtonClickedEvent_t48803504 * L_45 = Button_get_onClick_m2332132945(L_44, /*hidden argument*/NULL);
+		intptr_t L_46 = (intptr_t)MenuManager_ToggleMusic_m437550018_RuntimeMethod_var;
+		UnityAction_t3245792599 * L_47 = (UnityAction_t3245792599 *)il2cpp_codegen_object_new(UnityAction_t3245792599_il2cpp_TypeInfo_var);
+		UnityAction__ctor_m772160306(L_47, __this, L_46, /*hidden argument*/NULL);
+		NullCheck(L_45);
+		UnityEvent_AddListener_m2276267359(L_45, L_47, /*hidden argument*/NULL);
+		Button_t4055032469 * L_48 = __this->get_menu_9();
 		NullCheck(L_48);
-		UnityEvent_AddListener_m2276267359(L_48, L_50, /*hidden argument*/NULL);
-		Button_t4055032469 * L_51 = __this->get_menu2_12();
-		NullCheck(L_51);
-		ButtonClickedEvent_t48803504 * L_52 = Button_get_onClick_m2332132945(L_51, /*hidden argument*/NULL);
-		intptr_t L_53 = (intptr_t)MenuManager_U3CStartU3Em__3_m793340894_RuntimeMethod_var;
-		UnityAction_t3245792599 * L_54 = (UnityAction_t3245792599 *)il2cpp_codegen_object_new(UnityAction_t3245792599_il2cpp_TypeInfo_var);
-		UnityAction__ctor_m772160306(L_54, __this, L_53, /*hidden argument*/NULL);
+		ButtonClickedEvent_t48803504 * L_49 = Button_get_onClick_m2332132945(L_48, /*hidden argument*/NULL);
+		intptr_t L_50 = (intptr_t)MenuManager_U3CStartU3Em__2_m2749656030_RuntimeMethod_var;
+		UnityAction_t3245792599 * L_51 = (UnityAction_t3245792599 *)il2cpp_codegen_object_new(UnityAction_t3245792599_il2cpp_TypeInfo_var);
+		UnityAction__ctor_m772160306(L_51, __this, L_50, /*hidden argument*/NULL);
+		NullCheck(L_49);
+		UnityEvent_AddListener_m2276267359(L_49, L_51, /*hidden argument*/NULL);
+		Button_t4055032469 * L_52 = __this->get_menu2_12();
 		NullCheck(L_52);
-		UnityEvent_AddListener_m2276267359(L_52, L_54, /*hidden argument*/NULL);
+		ButtonClickedEvent_t48803504 * L_53 = Button_get_onClick_m2332132945(L_52, /*hidden argument*/NULL);
+		intptr_t L_54 = (intptr_t)MenuManager_U3CStartU3Em__3_m793340894_RuntimeMethod_var;
+		UnityAction_t3245792599 * L_55 = (UnityAction_t3245792599 *)il2cpp_codegen_object_new(UnityAction_t3245792599_il2cpp_TypeInfo_var);
+		UnityAction__ctor_m772160306(L_55, __this, L_54, /*hidden argument*/NULL);
+		NullCheck(L_53);
+		UnityEvent_AddListener_m2276267359(L_53, L_55, /*hidden argument*/NULL);
 		return;
 	}
 }
@@ -33320,32 +33332,34 @@ extern "C"  AudioMixer_t3521020193 * SoundManager_GetMixer_m2119355100 (SoundMan
 		return L_0;
 	}
 }
-// System.Void SoundManager::PlaySFX(System.Int32)
-extern "C"  void SoundManager_PlaySFX_m873413241 (SoundManager_t2102329059 * __this, int32_t ___i0, const RuntimeMethod* method)
+// System.Void SoundManager::PlaySFX(System.Int32,System.Int32)
+extern "C"  void SoundManager_PlaySFX_m4272069466 (SoundManager_t2102329059 * __this, int32_t ___i0, int32_t ___j1, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_method (SoundManager_PlaySFX_m873413241_MetadataUsageId);
+		il2cpp_codegen_initialize_method (SoundManager_PlaySFX_m4272069466_MetadataUsageId);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
 		AudioSourceU5BU5D_t4028559421* L_0 = __this->get_aS_11();
+		int32_t L_1 = ___j1;
 		NullCheck(L_0);
-		int32_t L_1 = 0;
-		AudioSource_t3935305588 * L_2 = (L_0)->GetAt(static_cast<il2cpp_array_size_t>(L_1));
-		List_1_t857997111 * L_3 = __this->get_sounds_9();
-		int32_t L_4 = ___i0;
+		int32_t L_2 = L_1;
+		AudioSource_t3935305588 * L_3 = (L_0)->GetAt(static_cast<il2cpp_array_size_t>(L_2));
+		List_1_t857997111 * L_4 = __this->get_sounds_9();
+		int32_t L_5 = ___i0;
+		NullCheck(L_4);
+		AudioClip_t3680889665 * L_6 = List_1_get_Item_m1011483163(L_4, L_5, /*hidden argument*/List_1_get_Item_m1011483163_RuntimeMethod_var);
 		NullCheck(L_3);
-		AudioClip_t3680889665 * L_5 = List_1_get_Item_m1011483163(L_3, L_4, /*hidden argument*/List_1_get_Item_m1011483163_RuntimeMethod_var);
-		NullCheck(L_2);
-		AudioSource_set_clip_m31653938(L_2, L_5, /*hidden argument*/NULL);
-		AudioSourceU5BU5D_t4028559421* L_6 = __this->get_aS_11();
-		NullCheck(L_6);
-		int32_t L_7 = 0;
-		AudioSource_t3935305588 * L_8 = (L_6)->GetAt(static_cast<il2cpp_array_size_t>(L_7));
-		NullCheck(L_8);
-		AudioSource_Play_m48294159(L_8, /*hidden argument*/NULL);
+		AudioSource_set_clip_m31653938(L_3, L_6, /*hidden argument*/NULL);
+		AudioSourceU5BU5D_t4028559421* L_7 = __this->get_aS_11();
+		int32_t L_8 = ___j1;
+		NullCheck(L_7);
+		int32_t L_9 = L_8;
+		AudioSource_t3935305588 * L_10 = (L_7)->GetAt(static_cast<il2cpp_array_size_t>(L_9));
+		NullCheck(L_10);
+		AudioSource_Play_m48294159(L_10, /*hidden argument*/NULL);
 		return;
 	}
 }
@@ -33423,7 +33437,7 @@ IL_0015:
 extern "C"  void SoundManager_U3CAwakeU3Em__0_m855832726 (SoundManager_t2102329059 * __this, const RuntimeMethod* method)
 {
 	{
-		SoundManager_PlaySFX_m873413241(__this, 0, /*hidden argument*/NULL);
+		SoundManager_PlaySFX_m4272069466(__this, 0, 2, /*hidden argument*/NULL);
 		return;
 	}
 }
@@ -33431,7 +33445,7 @@ extern "C"  void SoundManager_U3CAwakeU3Em__0_m855832726 (SoundManager_t21023290
 extern "C"  void SoundManager_U3CAwakeU3Em__1_m855832725 (SoundManager_t2102329059 * __this, const RuntimeMethod* method)
 {
 	{
-		SoundManager_PlaySFX_m873413241(__this, 1, /*hidden argument*/NULL);
+		SoundManager_PlaySFX_m4272069466(__this, 1, 0, /*hidden argument*/NULL);
 		return;
 	}
 }
@@ -33439,7 +33453,7 @@ extern "C"  void SoundManager_U3CAwakeU3Em__1_m855832725 (SoundManager_t21023290
 extern "C"  void SoundManager_U3CAwakeU3Em__2_m855832724 (SoundManager_t2102329059 * __this, const RuntimeMethod* method)
 {
 	{
-		SoundManager_PlaySFX_m873413241(__this, 2, /*hidden argument*/NULL);
+		SoundManager_PlaySFX_m4272069466(__this, 2, 3, /*hidden argument*/NULL);
 		return;
 	}
 }
@@ -33447,7 +33461,7 @@ extern "C"  void SoundManager_U3CAwakeU3Em__2_m855832724 (SoundManager_t21023290
 extern "C"  void SoundManager_U3CAwakeU3Em__3_m855832723 (SoundManager_t2102329059 * __this, const RuntimeMethod* method)
 {
 	{
-		SoundManager_PlaySFX_m873413241(__this, 3, /*hidden argument*/NULL);
+		SoundManager_PlaySFX_m4272069466(__this, 3, 0, /*hidden argument*/NULL);
 		return;
 	}
 }
