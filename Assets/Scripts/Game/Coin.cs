@@ -62,12 +62,21 @@ public class Coin : Obstacle {
 		}
 		SoundManager.CoinEvent();
 		IncrementScore();
-		Destroy(gameObject);
+		Pooler.returnPooledEvent(this);
 	}
 
 
 	private void OnTriggerStay2D(Collider2D collision)
 	{
 		CollisionEvent();
+	}
+
+	/// <summary>
+	/// Resets this poolable object so that it's ready to be used again.
+	/// </summary>
+	public override void Reset()
+	{
+		base.Reset();
+		transform.localScale = Vector3.one;
 	}
 }

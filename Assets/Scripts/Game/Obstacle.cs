@@ -62,12 +62,7 @@ public class Obstacle : Wall
 
 	protected void Start()
 	{
-		if (!assignedRotation)
-		{
-			rotateRight = Random.Range(0, 2) == 0;
-		}
-		desiredRot = transform.eulerAngles.z;
-		StartCoroutine(Rotate());
+		
 	}
 
 
@@ -122,5 +117,28 @@ public class Obstacle : Wall
 			boostedRotation = Mathf.Abs(boostedRotation) - (750f * Time.smoothDeltaTime);
 			yield return new WaitForEndOfFrame();
 		}
+	}
+
+	/// <summary>
+	/// Resets this poolable object so that it's ready to be used again.
+	/// </summary>
+	public override void Reset() {
+		base.Reset();
+		boostedRotation = 0f;
+		transform.rotation = Quaternion.identity;
+		assignedRotation = false;
+	}
+
+	/// <summary>
+	/// Initializes this pooled object after being pulled from a pool. 
+	/// </summary>
+	public override void Init() { 
+		base.Init();
+		if (!assignedRotation)
+		{
+			rotateRight = Random.Range(0, 2) == 0;
+		}
+		desiredRot = transform.eulerAngles.z;
+		StartCoroutine(Rotate());
 	}
 }

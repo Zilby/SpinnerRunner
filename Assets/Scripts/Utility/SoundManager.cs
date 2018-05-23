@@ -98,6 +98,13 @@ public class SoundManager : MonoBehaviour
 	{
 		float val = active ? -80f : 0f;
 		mix.SetFloat(track, val);
+		// ensures that if music was automatically turned off that 
+		// it isn't saved that way, since it's assigned here. 
+		if(track == "Music") {
+			Utils.Music = val;
+		} else {
+			Utils.Soundfx = val;
+		}
 		Utils.Save();
 	}
 }

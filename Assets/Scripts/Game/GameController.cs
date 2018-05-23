@@ -9,12 +9,6 @@ using UnityEngine;
 /// </summary>
 public class GameController : MonoBehaviour
 {
-
-	[Header("Prefabs")]
-	public List<GameObject> wallPrefabs;
-	public List<GameObject> obstaclePrefabs;
-	public List<GameObject> coinPrefabs;
-
 	/// <summary>
 	/// Event to be called when ending the game. 
 	/// </summary>
@@ -88,27 +82,15 @@ public class GameController : MonoBehaviour
 		get { return gameOver; }
 	}
 
-	private enum PrefabType
-	{
-		Wall,
-		Obstacle,
-		Coin,
-	}
-
 	/// <summary>
 	/// The current type of prefab being spawned. 
 	/// </summary>
-	private PrefabType currentPrefab;
+	private Pooler.PooledName currentPrefab;
 
 	/// <summary>
 	/// The number of the type of prefab being spawned. 
 	/// </summary>
 	private int typeCount;
-
-	/// <summary>
-	/// The list of currently active prefabs in the scene. 
-	/// </summary>
-	private List<GameObject> spawnedPrefabs;
 
 	private Vector3 velocity = Vector3.zero;
 
@@ -119,15 +101,16 @@ public class GameController : MonoBehaviour
 		spawnDistance = 0F;
 		lastSpawn = transform.position;
 		typeCount = 0;
+		AssignPrefabType();
 		SetTimescale();
+		endEvent = FinishGame;
+		pauseEvent = Pause;
 	}
 
 
 	private void Start()
 	{
-		spawnedPrefabs = new List<GameObject>();
-		endEvent = FinishGame;
-		pauseEvent = Pause;
+		ColorChanger.colorEvent();
 		score = 0;
 		if (!Utils.Tutorial)
 		{
@@ -165,7 +148,8 @@ public class GameController : MonoBehaviour
 				Spawn();
 				switch (currentPrefab)
 				{
-					case PrefabType.Wall:
+					case Pooler.PooledName.MiddleWall:
+					case Pooler.PooledName.SideWall:
 						// make sure walls get spaced apart
 						spawnDistance = 6.0f;
 						break;
@@ -196,37 +180,39 @@ public class GameController : MonoBehaviour
 	{
 		switch (currentPrefab)
 		{
-			case PrefabType.Wall:
-				GameObject g = Instantiate(wallPrefabs[UnityEngine.Random.Range(0, wallPrefabs.Count)], new Vector3(0.0f, transform.position.y, 0.0f), Quaternion.identity);
-				g.transform.localScale = new Vector3(UnityEngine.Random.Range(0, 2) == 0 ? -1 : 1, 1, 1);
-				spawnedPrefabs.Add(g);
+			case Pooler.PooledName.MiddleWall:
+				Pooler.getPooledEvent(currentPrefab);
 				break;
-			case PrefabType.Obstacle:
+			case Pooler.PooledName.SideWall:
+				Pooler.getPooledEvent(currentPrefab).transform.localScale = 
+					new Vector3(UnityEngine.Random.Range(0, 2) == 0 ? -1 : 1, 1, 1);
+				break;
+			case Pooler.PooledName.Obstacle:
 				List<float> badLocations = new List<float>();
-				badLocations.Add(SpawnPrefab(obstaclePrefabs, badLocations));
+				badLocations.Add(SpawnPrefab(badLocations));
 				if (UnityEngine.Random.Range(0, 2) == 0)
 				{
-					badLocations.Add(SpawnPrefab(obstaclePrefabs, badLocations));
+					badLocations.Add(SpawnPrefab(badLocations));
 				}
 				if (UnityEngine.Random.Range(0, 3) == 0)
 				{
-					badLocations.Add(SpawnPrefab(obstaclePrefabs, badLocations));
+					badLocations.Add(SpawnPrefab(badLocations));
 				}
 				break;
-			case PrefabType.Coin:
+			case Pooler.PooledName.Coin:
 				badLocations = new List<float>();
-				badLocations.Add(SpawnPrefab(coinPrefabs, badLocations));
+				badLocations.Add(SpawnPrefab(badLocations));
 				if (UnityEngine.Random.Range(0, 2) == 0)
 				{
-					badLocations.Add(SpawnPrefab(coinPrefabs, badLocations));
+					badLocations.Add(SpawnPrefab(badLocations));
 				}
 				if (UnityEngine.Random.Range(0, 3) == 0)
 				{
-					badLocations.Add(SpawnPrefab(coinPrefabs, badLocations));
+					badLocations.Add(SpawnPrefab(badLocations));
 				}
 				if (UnityEngine.Random.Range(0, 3) == 0)
 				{
-					badLocations.Add(SpawnPrefab(coinPrefabs, badLocations));
+					badLocations.Add(SpawnPrefab(badLocations));
 				}
 				break;
 			default:
@@ -234,30 +220,14 @@ public class GameController : MonoBehaviour
 				break;
 		}
 		--typeCount;
-		KillOldPrefabs();
 		AssignPrefabType();
 	}
-
-
-	/// <summary>
-	/// Kills old obstacles to make sure that they get despawned. 
-	/// </summary>
-	private void KillOldPrefabs()
-	{
-		while (spawnedPrefabs.Count > 20)
-		{
-			GameObject g = spawnedPrefabs[0];
-			spawnedPrefabs.RemoveAt(0);
-			Destroy(g);
-		}
-	}
-
 
 	/// <summary>
 	/// Spawns a prefab at a random location that is not the given location.
 	/// </summary>
 	/// <returns>The location of the prefab.</returns>
-	private float SpawnPrefab(List<GameObject> prefabs, List<float> badLocations)
+	private float SpawnPrefab(List<float> badLocations)
 	{
 		bool badLocation = true;
 		float location = 0.0f;
@@ -274,8 +244,7 @@ public class GameController : MonoBehaviour
 				}
 			}
 		}
-		GameObject g = Instantiate(prefabs[UnityEngine.Random.Range(0, prefabs.Count)], new Vector3(location * 1.0f, transform.position.y + 10.0f, 0.0f), Quaternion.identity);
-		spawnedPrefabs.Add(g);
+		Pooler.getPooledEvent(currentPrefab, location);
 		return location;
 	}
 
@@ -289,21 +258,32 @@ public class GameController : MonoBehaviour
 		if (typeCount <= 0)
 		{
 			int r = UnityEngine.Random.Range(0, 5);
-			if (r == 0 || r == 1)
+			typeCount = UnityEngine.Random.Range(0, 5);
+			if (r == 0)
 			{
-				currentPrefab = PrefabType.Wall;
-				typeCount = UnityEngine.Random.Range(0, 5);
+				currentPrefab = Pooler.PooledName.MiddleWall;
+			}
+			else if (r == 1)
+			{
+				currentPrefab = Pooler.PooledName.SideWall;
 			}
 			else if (r == 2 || r == 3)
 			{
-				currentPrefab = PrefabType.Obstacle;
-				typeCount = UnityEngine.Random.Range(0, 5);
+				currentPrefab = Pooler.PooledName.Obstacle;
 			}
 			else
 			{
-				currentPrefab = PrefabType.Coin;
-				typeCount = UnityEngine.Random.Range(0, 5);
+				currentPrefab = Pooler.PooledName.Coin;
 			}
+		}
+		// alternate between middle and side walls regardless
+		else if (currentPrefab == Pooler.PooledName.MiddleWall && UnityEngine.Random.Range(0, 2) == 0)
+		{
+			currentPrefab = Pooler.PooledName.SideWall;
+		}
+		else if (currentPrefab == Pooler.PooledName.SideWall && UnityEngine.Random.Range(0, 2) == 0)
+		{
+			currentPrefab = Pooler.PooledName.MiddleWall;
 		}
 	}
 
@@ -405,62 +385,51 @@ public class GameController : MonoBehaviour
 			int i = UIManager.getTutorialIndex();
 			if (i == 2)
 			{
-				GameObject g = Instantiate(wallPrefabs[0], new Vector3(0.0f, transform.position.y, 0.0f), Quaternion.identity);
-				spawnedPrefabs.Add(g);
+				currentPrefab = Pooler.PooledName.MiddleWall;
+				Pooler.getPooledEvent(currentPrefab);
+				currentPrefab = Pooler.PooledName.SideWall;
 				yield return new WaitForSeconds(2.5f);
-				g = Instantiate(wallPrefabs[1], new Vector3(0.0f, transform.position.y, 0.0f), Quaternion.identity);
-				spawnedPrefabs.Add(g);
+				Pooler.getPooledEvent(currentPrefab);
 				yield return new WaitForSeconds(2.5f);
-				g = Instantiate(wallPrefabs[1], new Vector3(0.0f, transform.position.y, 0.0f), Quaternion.identity);
-				g.transform.localScale = new Vector3(-1, 1, 1);
-				spawnedPrefabs.Add(g);
+				Pooler.getPooledEvent(currentPrefab).transform.localScale = new Vector3(-1, 1, 1);
 				yield return new WaitForSeconds(6);
 			}
 			else if (i == 4)
 			{
+				currentPrefab = Pooler.PooledName.Obstacle;
 				for (int j = -2; j < 3; ++j)
 				{
-					GameObject g = Instantiate(obstaclePrefabs[0], new Vector3(j * 1.0f, transform.position.y + 10.0f, 0.0f), Quaternion.identity);
-					g.GetComponent<Obstacle>().RotateRight = true;
-					spawnedPrefabs.Add(g);
+					Pooler.getPooledEvent(currentPrefab, j).GetComponent<Obstacle>().RotateRight = true;
 				}
 				yield return new WaitForSeconds(2.5f);
 				for (int j = -2; j < 3; ++j)
 				{
-					GameObject g = Instantiate(obstaclePrefabs[0], new Vector3(j * 1.0f, transform.position.y + 10.0f, 0.0f), Quaternion.identity);
-					g.GetComponent<Obstacle>().RotateRight = false;
-					spawnedPrefabs.Add(g);
+					Pooler.getPooledEvent(currentPrefab, j).GetComponent<Obstacle>().RotateRight = false;
 				}
 				yield return new WaitForSeconds(2.5f);
 				for (int j = -2; j < 3; ++j)
 				{
-					GameObject g = Instantiate(obstaclePrefabs[0], new Vector3(j * 1.0f, transform.position.y + 10.0f, 0.0f), Quaternion.identity);
-					g.GetComponent<Obstacle>().RotateRight = true;
-					spawnedPrefabs.Add(g);
+					Pooler.getPooledEvent(currentPrefab, j).GetComponent<Obstacle>().RotateRight = true;
 				}
 				yield return new WaitForSeconds(6);
 			}
 			else if (i == 5)
 			{
+				Poolable p;
+				currentPrefab = Pooler.PooledName.Coin;
 				for (int j = -2; j < 1; ++j)
 				{
-					GameObject g = Instantiate(coinPrefabs[0], new Vector3(j * 1.0f, transform.position.y + 10.0f, 0.0f), Quaternion.identity);
-					g.GetComponent<Obstacle>().RotateRight = false;
-					spawnedPrefabs.Add(g);
+					Pooler.getPooledEvent(currentPrefab, j).GetComponent<Obstacle>().RotateRight = false;
 				}
 				yield return new WaitForSeconds(2.5f);
 				for (int j = 0; j < 3; ++j)
 				{
-					GameObject g = Instantiate(coinPrefabs[0], new Vector3(j * 1.0f, transform.position.y + 10.0f, 0.0f), Quaternion.identity);
-					g.GetComponent<Obstacle>().RotateRight = true;
-					spawnedPrefabs.Add(g);
+					Pooler.getPooledEvent(currentPrefab, j).GetComponent<Obstacle>().RotateRight = true;
 				}
 				yield return new WaitForSeconds(2.5f);
 				for (int j = -1; j < 2; ++j)
 				{
-					GameObject g = Instantiate(coinPrefabs[0], new Vector3(j * 1.0f, transform.position.y + 10.0f, 0.0f), Quaternion.identity);
-					g.GetComponent<Obstacle>().RotateRight = false;
-					spawnedPrefabs.Add(g);
+					Pooler.getPooledEvent(currentPrefab, j).GetComponent<Obstacle>().RotateRight = false;
 				}
 				yield return new WaitForSeconds(6);
 			}

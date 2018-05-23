@@ -5,7 +5,7 @@ using UnityEngine;
 /// <summary>
 /// Base class for objects colliding with the player. 
 /// </summary>
-public class Wall : MonoBehaviour {
+public class Wall : Poolable {
 
 	private void OnTriggerEnter2D(Collider2D collision)
 	{
@@ -20,4 +20,14 @@ public class Wall : MonoBehaviour {
 		GameController.endEvent();
 		PlayerController.Die();
 	}
+
+	/// <summary>
+	/// Resets this poolable object so that it's ready to be used again.
+	/// </summary>
+	public override void Reset() {}
+
+	/// <summary>
+	/// Initializes this pooled object after being pulled from a pool. 
+	/// </summary>
+	public override void Init() { }
 }
