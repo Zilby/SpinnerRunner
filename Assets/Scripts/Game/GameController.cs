@@ -415,7 +415,6 @@ public class GameController : MonoBehaviour
 			}
 			else if (i == 5)
 			{
-				Poolable p;
 				currentPrefab = Pooler.PooledName.Coin;
 				for (int j = -2; j < 1; ++j)
 				{
