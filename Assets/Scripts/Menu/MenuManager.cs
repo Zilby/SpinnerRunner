@@ -70,9 +70,7 @@ public class MenuManager : MonoBehaviour
 		music.onClick.AddListener(ToggleMusic);
 		menu.onClick.AddListener(delegate { AlternateScreens(scores); });
 		menu2.onClick.AddListener(delegate { AlternateScreens(creditsPage); });
-
 #if UNITY_ADS
-
 		if (showAd)
 		{
 
@@ -82,13 +80,12 @@ public class MenuManager : MonoBehaviour
 			gameId = "1807729";
 #elif UNITY_IOS
 			gameId = "1807728";
-#endif 
+#endif
 			if (Advertisement.isSupported && !Advertisement.isInitialized)
 			{
 				Advertisement.Initialize(gameId);
 			}
 			*/
-
 			float time = 0;
 			while (!Advertisement.IsReady() && time < 2.5f)
 			{
@@ -104,7 +101,6 @@ public class MenuManager : MonoBehaviour
 					yield return new WaitForSecondsRealtime(0.1f);
 				}
 				yield return new WaitForSecondsRealtime(0.2f);
-
 			}
 		}
 #endif
