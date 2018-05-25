@@ -18496,7 +18496,7 @@ IL_0082:
 		{
 			MemoryStream_t94973147 * L_22 = V_0;
 			NullCheck(L_22);
-			ByteU5BU5D_t4116647657* L_23 = VirtFuncInvoker0< ByteU5BU5D_t4116647657* >::Invoke(25 /* System.Byte[] System.IO.MemoryStream::ToArray() */, L_22);
+			ByteU5BU5D_t4116647657* L_23 = VirtFuncInvoker0< ByteU5BU5D_t4116647657* >::Invoke(28 /* System.Byte[] System.IO.MemoryStream::ToArray() */, L_22);
 			IL2CPP_RUNTIME_CLASS_INIT(Convert_t2465617642_il2cpp_TypeInfo_var);
 			String_t* L_24 = Convert_ToBase64String_m3839334935(NULL /*static, unused*/, L_23, /*hidden argument*/NULL);
 			V_4 = L_24;

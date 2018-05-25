@@ -2541,16 +2541,6 @@ extern "C"  bool AudioMixer_SetFloat_m3036056706 (AudioMixer_t3521020193 * __thi
 	bool retVal = _il2cpp_icall_func(__this, ___name0, ___value1);
 	return retVal;
 }
-// System.Boolean UnityEngine.Audio.AudioMixer::GetFloat(System.String,System.Single&)
-extern "C"  bool AudioMixer_GetFloat_m3026076910 (AudioMixer_t3521020193 * __this, String_t* ___name0, float* ___value1, const RuntimeMethod* method)
-{
-	typedef bool (*AudioMixer_GetFloat_m3026076910_ftn) (AudioMixer_t3521020193 *, String_t*, float*);
-	static AudioMixer_GetFloat_m3026076910_ftn _il2cpp_icall_func;
-	if (!_il2cpp_icall_func)
-	_il2cpp_icall_func = (AudioMixer_GetFloat_m3026076910_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Audio.AudioMixer::GetFloat(System.String,System.Single&)");
-	bool retVal = _il2cpp_icall_func(__this, ___name0, ___value1);
-	return retVal;
-}
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif

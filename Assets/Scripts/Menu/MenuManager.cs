@@ -41,16 +41,17 @@ public class MenuManager : MonoBehaviour
 	// Use this for initialization
 	void Start()
 	{
+		bool showAd = !Utils.Loaded;
 		if (!Utils.Loaded)
 		{
 			Utils.Reset();
 			Utils.Load();
 		}
 
-		StartCoroutine(Initialize());
+		StartCoroutine(Initialize(showAd));
 	}
 
-	private IEnumerator Initialize() {
+	private IEnumerator Initialize(bool showAd) {
 		musicOn = music.transform.GetChild(1).gameObject;
 		musicOff = music.transform.GetChild(2).gameObject;
 		soundOn = sound.transform.GetChild(1).gameObject;
@@ -70,33 +71,46 @@ public class MenuManager : MonoBehaviour
 		menu.onClick.AddListener(delegate { AlternateScreens(scores); });
 		menu2.onClick.AddListener(delegate { AlternateScreens(creditsPage); });
 
-		string gameId = null;
-#if UNITY_ANDROID
-        gameId = "1807729";
-#elif UNITY_IOS
-        gameId = "1807728";
-#endif
 #if UNITY_ADS
-		if (Advertisement.isSupported && !Advertisement.isInitialized)
-		{
-			Advertisement.Initialize(gameId);
-		}
-		float time = 0;
-		while (!Advertisement.IsReady() && time < 2f)
-		{
-			time += 0.1f;
-			yield return new WaitForSecondsRealtime(0.1f);
-		}
 
-		Advertisement.Show();
+		if (showAd)
+		{
 
-		while(Advertisement.isShowing) {
-			yield return new WaitForSecondsRealtime(0.1f);
+			/*
+			string gameId = null;
+#if UNITY_ANDROID
+			gameId = "1807729";
+#elif UNITY_IOS
+			gameId = "1807728";
+#endif 
+			if (Advertisement.isSupported && !Advertisement.isInitialized)
+			{
+				Advertisement.Initialize(gameId);
+			}
+			*/
+
+			float time = 0;
+			while (!Advertisement.IsReady() && time < 2.5f)
+			{
+				time += 0.1f;
+				yield return new WaitForSecondsRealtime(0.1f);
+			}
+			if (Advertisement.IsReady())
+			{
+				Advertisement.Show();
+				yield return new WaitForSecondsRealtime(2f);
+				while (Advertisement.isShowing)
+				{
+					yield return new WaitForSecondsRealtime(0.1f);
+				}
+				yield return new WaitForSecondsRealtime(0.2f);
+
+			}
 		}
 #endif
-
-		ColorChanger.colorEvent();
 		SoundManager.SongEvent();
+		ColorChanger.colorEvent();
+		GetComponent<FadeableUI>().SelfFadeIn();
 		yield break;
 	}
 

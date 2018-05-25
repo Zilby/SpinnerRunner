@@ -20,6 +20,9 @@ void RegisterStaticallyLinkedModulesGranular()
 	void RegisterModule_ParticleSystem();
 	RegisterModule_ParticleSystem();
 
+	void RegisterModule_PerformanceReporting();
+	RegisterModule_PerformanceReporting();
+
 	void RegisterModule_Physics();
 	RegisterModule_Physics();
 
@@ -32,11 +35,17 @@ void RegisterStaticallyLinkedModulesGranular()
 	void RegisterModule_UI();
 	RegisterModule_UI();
 
+	void RegisterModule_UnityAnalytics();
+	RegisterModule_UnityAnalytics();
+
 	void RegisterModule_UnityConnect();
 	RegisterModule_UnityConnect();
 
 	void RegisterModule_IMGUI();
 	RegisterModule_IMGUI();
+
+	void RegisterModule_ImageConversion();
+	RegisterModule_ImageConversion();
 
 	void RegisterModule_GameCenter();
 	RegisterModule_GameCenter();
@@ -55,9 +64,6 @@ void RegisterStaticallyLinkedModulesGranular()
 
 	void RegisterModule_Wind();
 	RegisterModule_Wind();
-
-	void RegisterModule_ImageConversion();
-	RegisterModule_ImageConversion();
 
 }
 
@@ -252,7 +258,7 @@ class MasterServerInterface; template <> void RegisterClass<MasterServerInterfac
 class MonoManager; template <> void RegisterClass<MonoManager>();
 class NavMeshProjectSettings; 
 class NetworkManager; template <> void RegisterClass<NetworkManager>();
-class PerformanceReportingManager; 
+class PerformanceReportingManager; template <> void RegisterClass<PerformanceReportingManager>();
 class Physics2DSettings; template <> void RegisterClass<Physics2DSettings>();
 class PhysicsManager; template <> void RegisterClass<PhysicsManager>();
 class PlayerSettings; template <> void RegisterClass<PlayerSettings>();
@@ -262,7 +268,7 @@ class RuntimeInitializeOnLoadManager; template <> void RegisterClass<RuntimeInit
 class ScriptMapper; template <> void RegisterClass<ScriptMapper>();
 class TagManager; template <> void RegisterClass<TagManager>();
 class TimeManager; template <> void RegisterClass<TimeManager>();
-class UnityAnalyticsManager; 
+class UnityAnalyticsManager; template <> void RegisterClass<UnityAnalyticsManager>();
 class UnityConnectSettings; template <> void RegisterClass<UnityConnectSettings>();
 class LevelGameManager; template <> void RegisterClass<LevelGameManager>();
 class LightmapSettings; template <> void RegisterClass<LightmapSettings>();
@@ -275,7 +281,7 @@ void RegisterAllClasses()
 {
 void RegisterBuiltinTypes();
 RegisterBuiltinTypes();
-	//Total: 84 non stripped classes
+	//Total: 86 non stripped classes
 	//0. Behaviour
 	RegisterClass<Behaviour>();
 	//1. Unity::Component
@@ -414,35 +420,39 @@ RegisterBuiltinTypes();
 	RegisterClass<MonoScript>();
 	//68. PhysicsManager
 	RegisterClass<PhysicsManager>();
-	//69. UnityConnectSettings
+	//69. UnityAnalyticsManager
+	RegisterClass<UnityAnalyticsManager>();
+	//70. PerformanceReportingManager
+	RegisterClass<PerformanceReportingManager>();
+	//71. UnityConnectSettings
 	RegisterClass<UnityConnectSettings>();
-	//70. CloudWebServicesManager
+	//72. CloudWebServicesManager
 	RegisterClass<CloudWebServicesManager>();
-	//71. AudioManager
+	//73. AudioManager
 	RegisterClass<AudioManager>();
-	//72. Physics2DSettings
+	//74. Physics2DSettings
 	RegisterClass<Physics2DSettings>();
-	//73. RuntimeAnimatorController
+	//75. RuntimeAnimatorController
 	RegisterClass<RuntimeAnimatorController>();
-	//74. AnimatorController
+	//76. AnimatorController
 	RegisterClass<AnimatorController>();
-	//75. LightmapSettings
+	//77. LightmapSettings
 	RegisterClass<LightmapSettings>();
-	//76. AnimationClip
+	//78. AnimationClip
 	RegisterClass<AnimationClip>();
-	//77. Motion
+	//79. Motion
 	RegisterClass<Motion>();
-	//78. AudioMixerGroup
+	//80. AudioMixerGroup
 	RegisterClass<AudioMixerGroup>();
-	//79. AudioMixerSnapshot
+	//81. AudioMixerSnapshot
 	RegisterClass<AudioMixerSnapshot>();
-	//80. CGProgram
+	//82. CGProgram
 	RegisterClass<CGProgram>();
-	//81. Rigidbody2D
+	//83. Rigidbody2D
 	RegisterClass<Rigidbody2D>();
-	//82. BoxCollider2D
+	//84. BoxCollider2D
 	RegisterClass<BoxCollider2D>();
-	//83. CircleCollider2D
+	//85. CircleCollider2D
 	RegisterClass<CircleCollider2D>();
 
 }

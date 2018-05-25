@@ -87,8 +87,11 @@ public class SoundManager : MonoBehaviour
 	/// </summary>
 	private void PlaySong(int i)
 	{
-		aS[1].clip = music[i];
-		aS[1].Play();
+		if (aS[1].clip != music[i])
+		{
+			aS[1].clip = music[i];
+			aS[1].Play();
+		}
 	}
 
 	/// <summary>
