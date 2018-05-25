@@ -166,7 +166,6 @@ public static class Utils
 		// Set true for tutorial every time. 
 		//data.tutorial = true;
 		data.tutorial = tutorial;
-		AudioMixer mix = SoundManager.GetMix();
 		data.music = music;
 		data.soundfx = soundfx;
 		bf.Serialize(file, data);
