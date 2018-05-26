@@ -1694,6 +1694,10 @@ RuntimeClass* FastAction_1_t3044626357_il2cpp_TypeInfo_var;
 RuntimeClass* FastAction_t3491443480_il2cpp_TypeInfo_var;
 RuntimeClass* FastAction_2_t2395899227_il2cpp_TypeInfo_var;
 RuntimeClass* FastAction_1_t4292545838_il2cpp_TypeInfo_var;
+RuntimeClass* AnalyticsEvent_t4058973021_il2cpp_TypeInfo_var;
+RuntimeClass* ICollection_1_t3796219568_il2cpp_TypeInfo_var;
+RuntimeClass* AnalyticsResult_t2273004240_il2cpp_TypeInfo_var;
+RuntimeClass* Dictionary_2_t1632706988_il2cpp_TypeInfo_var;
 RuntimeClass* Advertisement_t842671397_il2cpp_TypeInfo_var;
 RuntimeClass* Platform_t1698302846_il2cpp_TypeInfo_var;
 RuntimeClass* Platform_t1647901813_il2cpp_TypeInfo_var;
@@ -1734,10 +1738,6 @@ RuntimeClass* U3CUnityAdsDidErrorU3Ec__AnonStorey1_t2659421617_il2cpp_TypeInfo_v
 RuntimeClass* U3CUnityAdsDidStartU3Ec__AnonStorey2_t250005642_il2cpp_TypeInfo_var;
 RuntimeClass* U3CUnityAdsDidFinishU3Ec__AnonStorey3_t3126029544_il2cpp_TypeInfo_var;
 RuntimeClass* U3CUnityAdsDidFinishU3Ec__AnonStorey4_t3126029549_il2cpp_TypeInfo_var;
-RuntimeClass* AnalyticsEvent_t4058973021_il2cpp_TypeInfo_var;
-RuntimeClass* ICollection_1_t3796219568_il2cpp_TypeInfo_var;
-RuntimeClass* AnalyticsResult_t2273004240_il2cpp_TypeInfo_var;
-RuntimeClass* Dictionary_2_t1632706988_il2cpp_TypeInfo_var;
 RuntimeClass* List_1_t3952196670_il2cpp_TypeInfo_var;
 RuntimeClass* EventTrigger_t2527451695_il2cpp_TypeInfo_var;
 RuntimeClass* StandardEventPayload_t1629891255_il2cpp_TypeInfo_var;
@@ -3036,6 +3036,8 @@ const RuntimeMethod* FastAction_1__ctor_m3640206815_RuntimeMethod_var;
 const RuntimeMethod* FastAction_1__ctor_m1820454269_RuntimeMethod_var;
 const RuntimeMethod* FastAction_2__ctor_m2106952380_RuntimeMethod_var;
 const RuntimeMethod* FastAction_1__ctor_m375990129_RuntimeMethod_var;
+const RuntimeMethod* Dictionary_2__ctor_m1007136140_RuntimeMethod_var;
+const RuntimeMethod* Dictionary_2_Add_m1316431193_RuntimeMethod_var;
 const RuntimeMethod* Advertisement_U3CInitializeU3Em__0_m2484897031_RuntimeMethod_var;
 const RuntimeMethod* EventHandler_1__ctor_m247885508_RuntimeMethod_var;
 const RuntimeMethod* Advertisement_U3CInitializeU3Em__1_m2109031916_RuntimeMethod_var;
@@ -3077,8 +3079,6 @@ const RuntimeMethod* U3CUnityAdsReadyU3Ec__AnonStorey0_U3CU3Em__0_m656675668_Run
 const RuntimeMethod* U3CUnityAdsDidErrorU3Ec__AnonStorey1_U3CU3Em__0_m1015626936_RuntimeMethod_var;
 const RuntimeMethod* U3CUnityAdsDidStartU3Ec__AnonStorey2_U3CU3Em__0_m413760534_RuntimeMethod_var;
 const RuntimeMethod* U3CUnityAdsDidFinishU3Ec__AnonStorey4_U3CU3Em__0_m944271777_RuntimeMethod_var;
-const RuntimeMethod* Dictionary_2__ctor_m1007136140_RuntimeMethod_var;
-const RuntimeMethod* Dictionary_2_Add_m1316431193_RuntimeMethod_var;
 const RuntimeMethod* List_1__ctor_m2118976410_RuntimeMethod_var;
 const RuntimeMethod* List_1_get_Count_m3935023107_RuntimeMethod_var;
 const RuntimeMethod* List_1_get_Item_m1027239081_RuntimeMethod_var;
@@ -7064,6 +7064,30 @@ String_t* _stringLiteral3145373219;
 String_t* _stringLiteral313270868;
 String_t* _stringLiteral1772946456;
 String_t* _stringLiteral3195452719;
+String_t* _stringLiteral3082188891;
+String_t* _stringLiteral3848816014;
+String_t* _stringLiteral3610066572;
+String_t* _stringLiteral3713525075;
+String_t* _stringLiteral1348467685;
+String_t* _stringLiteral69560130;
+String_t* _stringLiteral2157825051;
+String_t* _stringLiteral314968592;
+String_t* _stringLiteral223781046;
+String_t* _stringLiteral591401181;
+String_t* _stringLiteral2670495305;
+String_t* _stringLiteral3038431854;
+String_t* _stringLiteral1860111314;
+String_t* _stringLiteral3191806752;
+String_t* _stringLiteral2793515199;
+String_t* _stringLiteral1822927358;
+String_t* _stringLiteral3946338038;
+String_t* _stringLiteral1285374328;
+String_t* _stringLiteral1477325238;
+String_t* _stringLiteral359657463;
+String_t* _stringLiteral2913916239;
+String_t* _stringLiteral4063851185;
+String_t* _stringLiteral2569810339;
+String_t* _stringLiteral243880865;
 String_t* _stringLiteral4107934516;
 String_t* _stringLiteral2258625258;
 String_t* _stringLiteral1947076759;
@@ -7108,30 +7132,6 @@ String_t* _stringLiteral3342921282;
 String_t* _stringLiteral2170070431;
 String_t* _stringLiteral1332923527;
 String_t* _stringLiteral3541090105;
-String_t* _stringLiteral3082188891;
-String_t* _stringLiteral3848816014;
-String_t* _stringLiteral3610066572;
-String_t* _stringLiteral3713525075;
-String_t* _stringLiteral1348467685;
-String_t* _stringLiteral69560130;
-String_t* _stringLiteral2157825051;
-String_t* _stringLiteral314968592;
-String_t* _stringLiteral223781046;
-String_t* _stringLiteral591401181;
-String_t* _stringLiteral2670495305;
-String_t* _stringLiteral3038431854;
-String_t* _stringLiteral1860111314;
-String_t* _stringLiteral3191806752;
-String_t* _stringLiteral2793515199;
-String_t* _stringLiteral1822927358;
-String_t* _stringLiteral3946338038;
-String_t* _stringLiteral1285374328;
-String_t* _stringLiteral1477325238;
-String_t* _stringLiteral359657463;
-String_t* _stringLiteral2913916239;
-String_t* _stringLiteral4063851185;
-String_t* _stringLiteral2569810339;
-String_t* _stringLiteral243880865;
 String_t* _stringLiteral3578372784;
 String_t* _stringLiteral4288880708;
 String_t* _stringLiteral1935206035;
@@ -8578,12 +8578,6 @@ String_t* _stringLiteral2219906404;
 String_t* _stringLiteral4266086259;
 String_t* _stringLiteral62725266;
 String_t* _stringLiteral574698398;
-String_t* _stringLiteral109517272;
-String_t* _stringLiteral3202208669;
-String_t* _stringLiteral3202208672;
-String_t* _stringLiteral3202208671;
-String_t* _stringLiteral3202208666;
-String_t* _stringLiteral3202208665;
 String_t* _stringLiteral3929163537;
 String_t* _stringLiteral958016255;
 String_t* _stringLiteral3552476482;
@@ -8890,7 +8884,7 @@ String_t* _stringLiteral46997234;
 String_t* _stringLiteral1132744560;
 String_t* _stringLiteral1864861238;
 String_t* _stringLiteral3926843441;
-extern void** const g_MetadataUsages[8872] = 
+extern void** const g_MetadataUsages[8866] = 
 {
 	(void**)(&Contraction_t1589275354_0_0_0_var),
 	(void**)(&Level2Map_t3640798870_0_0_0_var),
@@ -10568,6 +10562,10 @@ extern void** const g_MetadataUsages[8872] =
 	(void**)(&FastAction_t3491443480_il2cpp_TypeInfo_var),
 	(void**)(&FastAction_2_t2395899227_il2cpp_TypeInfo_var),
 	(void**)(&FastAction_1_t4292545838_il2cpp_TypeInfo_var),
+	(void**)(&AnalyticsEvent_t4058973021_il2cpp_TypeInfo_var),
+	(void**)(&ICollection_1_t3796219568_il2cpp_TypeInfo_var),
+	(void**)(&AnalyticsResult_t2273004240_il2cpp_TypeInfo_var),
+	(void**)(&Dictionary_2_t1632706988_il2cpp_TypeInfo_var),
 	(void**)(&Advertisement_t842671397_il2cpp_TypeInfo_var),
 	(void**)(&Platform_t1698302846_il2cpp_TypeInfo_var),
 	(void**)(&Platform_t1647901813_il2cpp_TypeInfo_var),
@@ -10608,10 +10606,6 @@ extern void** const g_MetadataUsages[8872] =
 	(void**)(&U3CUnityAdsDidStartU3Ec__AnonStorey2_t250005642_il2cpp_TypeInfo_var),
 	(void**)(&U3CUnityAdsDidFinishU3Ec__AnonStorey3_t3126029544_il2cpp_TypeInfo_var),
 	(void**)(&U3CUnityAdsDidFinishU3Ec__AnonStorey4_t3126029549_il2cpp_TypeInfo_var),
-	(void**)(&AnalyticsEvent_t4058973021_il2cpp_TypeInfo_var),
-	(void**)(&ICollection_1_t3796219568_il2cpp_TypeInfo_var),
-	(void**)(&AnalyticsResult_t2273004240_il2cpp_TypeInfo_var),
-	(void**)(&Dictionary_2_t1632706988_il2cpp_TypeInfo_var),
 	(void**)(&List_1_t3952196670_il2cpp_TypeInfo_var),
 	(void**)(&EventTrigger_t2527451695_il2cpp_TypeInfo_var),
 	(void**)(&StandardEventPayload_t1629891255_il2cpp_TypeInfo_var),
@@ -11910,6 +11904,8 @@ extern void** const g_MetadataUsages[8872] =
 	(void**)(&FastAction_1__ctor_m1820454269_RuntimeMethod_var),
 	(void**)(&FastAction_2__ctor_m2106952380_RuntimeMethod_var),
 	(void**)(&FastAction_1__ctor_m375990129_RuntimeMethod_var),
+	(void**)(&Dictionary_2__ctor_m1007136140_RuntimeMethod_var),
+	(void**)(&Dictionary_2_Add_m1316431193_RuntimeMethod_var),
 	(void**)(&Advertisement_U3CInitializeU3Em__0_m2484897031_RuntimeMethod_var),
 	(void**)(&EventHandler_1__ctor_m247885508_RuntimeMethod_var),
 	(void**)(&Advertisement_U3CInitializeU3Em__1_m2109031916_RuntimeMethod_var),
@@ -11951,8 +11947,6 @@ extern void** const g_MetadataUsages[8872] =
 	(void**)(&U3CUnityAdsDidErrorU3Ec__AnonStorey1_U3CU3Em__0_m1015626936_RuntimeMethod_var),
 	(void**)(&U3CUnityAdsDidStartU3Ec__AnonStorey2_U3CU3Em__0_m413760534_RuntimeMethod_var),
 	(void**)(&U3CUnityAdsDidFinishU3Ec__AnonStorey4_U3CU3Em__0_m944271777_RuntimeMethod_var),
-	(void**)(&Dictionary_2__ctor_m1007136140_RuntimeMethod_var),
-	(void**)(&Dictionary_2_Add_m1316431193_RuntimeMethod_var),
 	(void**)(&List_1__ctor_m2118976410_RuntimeMethod_var),
 	(void**)(&List_1_get_Count_m3935023107_RuntimeMethod_var),
 	(void**)(&List_1_get_Item_m1027239081_RuntimeMethod_var),
@@ -15938,6 +15932,30 @@ extern void** const g_MetadataUsages[8872] =
 	(void**)(&_stringLiteral313270868),
 	(void**)(&_stringLiteral1772946456),
 	(void**)(&_stringLiteral3195452719),
+	(void**)(&_stringLiteral3082188891),
+	(void**)(&_stringLiteral3848816014),
+	(void**)(&_stringLiteral3610066572),
+	(void**)(&_stringLiteral3713525075),
+	(void**)(&_stringLiteral1348467685),
+	(void**)(&_stringLiteral69560130),
+	(void**)(&_stringLiteral2157825051),
+	(void**)(&_stringLiteral314968592),
+	(void**)(&_stringLiteral223781046),
+	(void**)(&_stringLiteral591401181),
+	(void**)(&_stringLiteral2670495305),
+	(void**)(&_stringLiteral3038431854),
+	(void**)(&_stringLiteral1860111314),
+	(void**)(&_stringLiteral3191806752),
+	(void**)(&_stringLiteral2793515199),
+	(void**)(&_stringLiteral1822927358),
+	(void**)(&_stringLiteral3946338038),
+	(void**)(&_stringLiteral1285374328),
+	(void**)(&_stringLiteral1477325238),
+	(void**)(&_stringLiteral359657463),
+	(void**)(&_stringLiteral2913916239),
+	(void**)(&_stringLiteral4063851185),
+	(void**)(&_stringLiteral2569810339),
+	(void**)(&_stringLiteral243880865),
 	(void**)(&_stringLiteral4107934516),
 	(void**)(&_stringLiteral2258625258),
 	(void**)(&_stringLiteral1947076759),
@@ -15982,30 +16000,6 @@ extern void** const g_MetadataUsages[8872] =
 	(void**)(&_stringLiteral2170070431),
 	(void**)(&_stringLiteral1332923527),
 	(void**)(&_stringLiteral3541090105),
-	(void**)(&_stringLiteral3082188891),
-	(void**)(&_stringLiteral3848816014),
-	(void**)(&_stringLiteral3610066572),
-	(void**)(&_stringLiteral3713525075),
-	(void**)(&_stringLiteral1348467685),
-	(void**)(&_stringLiteral69560130),
-	(void**)(&_stringLiteral2157825051),
-	(void**)(&_stringLiteral314968592),
-	(void**)(&_stringLiteral223781046),
-	(void**)(&_stringLiteral591401181),
-	(void**)(&_stringLiteral2670495305),
-	(void**)(&_stringLiteral3038431854),
-	(void**)(&_stringLiteral1860111314),
-	(void**)(&_stringLiteral3191806752),
-	(void**)(&_stringLiteral2793515199),
-	(void**)(&_stringLiteral1822927358),
-	(void**)(&_stringLiteral3946338038),
-	(void**)(&_stringLiteral1285374328),
-	(void**)(&_stringLiteral1477325238),
-	(void**)(&_stringLiteral359657463),
-	(void**)(&_stringLiteral2913916239),
-	(void**)(&_stringLiteral4063851185),
-	(void**)(&_stringLiteral2569810339),
-	(void**)(&_stringLiteral243880865),
 	(void**)(&_stringLiteral3578372784),
 	(void**)(&_stringLiteral4288880708),
 	(void**)(&_stringLiteral1935206035),
@@ -17452,12 +17446,6 @@ extern void** const g_MetadataUsages[8872] =
 	(void**)(&_stringLiteral4266086259),
 	(void**)(&_stringLiteral62725266),
 	(void**)(&_stringLiteral574698398),
-	(void**)(&_stringLiteral109517272),
-	(void**)(&_stringLiteral3202208669),
-	(void**)(&_stringLiteral3202208672),
-	(void**)(&_stringLiteral3202208671),
-	(void**)(&_stringLiteral3202208666),
-	(void**)(&_stringLiteral3202208665),
 	(void**)(&_stringLiteral3929163537),
 	(void**)(&_stringLiteral958016255),
 	(void**)(&_stringLiteral3552476482),
@@ -28396,438 +28384,439 @@ extern const uint32_t WaitHandle_WaitAny_m1809371212_MetadataUsageId = 10627;
 extern const uint32_t WaitHandle_WaitOne_m2577152516_MetadataUsageId = 10628;
 extern const uint32_t WaitOrTimerCallback_BeginInvoke_m2905803559_MetadataUsageId = 10629;
 extern const uint32_t Wall_CollisionEvent_m1948758426_MetadataUsageId = 10630;
-extern const uint32_t WarpTextExample__ctor_m2079404197_MetadataUsageId = 10631;
-extern const uint32_t WarpTextExample_Awake_m1587858378_MetadataUsageId = 10632;
-extern const uint32_t WarpTextExample_CopyAnimationCurve_m2588067094_MetadataUsageId = 10633;
-extern const uint32_t WarpTextExample_WarpText_m2604028403_MetadataUsageId = 10634;
-extern const uint32_t WeakReference__ctor_m1244067698_MetadataUsageId = 10635;
-extern const uint32_t WeakReference_GetObjectData_m2192383095_MetadataUsageId = 10636;
-extern const uint32_t WebAsyncResult__ctor_m2054281158_MetadataUsageId = 10637;
-extern const uint32_t WebAsyncResult__ctor_m3529977349_MetadataUsageId = 10638;
-extern const uint32_t WebAsyncResult__ctor_m4245223108_MetadataUsageId = 10639;
-extern const uint32_t WebAsyncResult_get_AsyncWaitHandle_m2645832664_MetadataUsageId = 10640;
-extern const uint32_t WebConnection__cctor_m506309166_MetadataUsageId = 10641;
-extern const uint32_t WebConnection__ctor_m3920572924_MetadataUsageId = 10642;
-extern const uint32_t WebConnection_Abort_m20739763_MetadataUsageId = 10643;
-extern const uint32_t WebConnection_BeginRead_m2950707033_MetadataUsageId = 10644;
-extern const uint32_t WebConnection_BeginWrite_m3795141727_MetadataUsageId = 10645;
-extern const uint32_t WebConnection_CheckUnityWebSecurity_m101785_MetadataUsageId = 10646;
-extern const uint32_t WebConnection_Close_m1464903054_MetadataUsageId = 10647;
-extern const uint32_t WebConnection_Connect_m2850066444_MetadataUsageId = 10648;
-extern const uint32_t WebConnection_CreateStream_m3387195587_MetadataUsageId = 10649;
-extern const uint32_t WebConnection_CreateTunnel_m930414641_MetadataUsageId = 10650;
-extern const uint32_t WebConnection_EndRead_m3553040041_MetadataUsageId = 10651;
-extern const uint32_t WebConnection_EndWrite_m778444801_MetadataUsageId = 10652;
-extern const uint32_t WebConnection_EndWrite2_m1365797410_MetadataUsageId = 10653;
-extern const uint32_t WebConnection_EnsureRead_m1250887662_MetadataUsageId = 10654;
-extern const uint32_t WebConnection_EnsureSSLStreamAvailable_m768122312_MetadataUsageId = 10655;
-extern const uint32_t WebConnection_GetCertificates_m955850324_MetadataUsageId = 10656;
-extern const uint32_t WebConnection_GetResponse_m2224473082_MetadataUsageId = 10657;
-extern const uint32_t WebConnection_HandleError_m738788885_MetadataUsageId = 10658;
-extern const uint32_t WebConnection_InitConnection_m679229319_MetadataUsageId = 10659;
-extern const uint32_t WebConnection_InitRead_m3857158647_MetadataUsageId = 10660;
-extern const uint32_t WebConnection_LoggedThrow_m3339834945_MetadataUsageId = 10661;
-extern const uint32_t WebConnection_NextRead_m3275930655_MetadataUsageId = 10662;
-extern const uint32_t WebConnection_Read_m1054701704_MetadataUsageId = 10663;
-extern const uint32_t WebConnection_ReadDone_m4265791416_MetadataUsageId = 10664;
-extern const uint32_t WebConnection_ReadHeaders_m1859597073_MetadataUsageId = 10665;
-extern const uint32_t WebConnection_ReadLine_m1318917240_MetadataUsageId = 10666;
-extern const uint32_t WebConnection_SendNext_m1567013439_MetadataUsageId = 10667;
-extern const uint32_t WebConnection_Write_m3744361765_MetadataUsageId = 10668;
-extern const uint32_t WebConnectionGroup__ctor_m4209428564_MetadataUsageId = 10669;
-extern const uint32_t WebConnectionGroup_CreateOrReuseConnection_m1860341936_MetadataUsageId = 10670;
-extern const uint32_t WebConnectionGroup_GetConnection_m311125738_MetadataUsageId = 10671;
-extern const uint32_t WebConnectionGroup_PrepareSharingNtlm_m3982393373_MetadataUsageId = 10672;
-extern const uint32_t WebConnectionStream__cctor_m2995607677_MetadataUsageId = 10673;
-extern const uint32_t WebConnectionStream__ctor_m1091771122_MetadataUsageId = 10674;
-extern const uint32_t WebConnectionStream__ctor_m2392030538_MetadataUsageId = 10675;
-extern const uint32_t WebConnectionStream_BeginRead_m2120480875_MetadataUsageId = 10676;
-extern const uint32_t WebConnectionStream_BeginWrite_m91788762_MetadataUsageId = 10677;
-extern const uint32_t WebConnectionStream_CheckWriteOverflow_m962631185_MetadataUsageId = 10678;
-extern const uint32_t WebConnectionStream_Close_m1981057778_MetadataUsageId = 10679;
-extern const uint32_t WebConnectionStream_EndRead_m3979704604_MetadataUsageId = 10680;
-extern const uint32_t WebConnectionStream_EndWrite_m1860918953_MetadataUsageId = 10681;
-extern const uint32_t WebConnectionStream_get_Length_m750039804_MetadataUsageId = 10682;
-extern const uint32_t WebConnectionStream_get_Position_m2559024493_MetadataUsageId = 10683;
-extern const uint32_t WebConnectionStream_IsNtlmAuth_m4072757025_MetadataUsageId = 10684;
-extern const uint32_t WebConnectionStream_Read_m4279029041_MetadataUsageId = 10685;
-extern const uint32_t WebConnectionStream_ReadAll_m3145919104_MetadataUsageId = 10686;
-extern const uint32_t WebConnectionStream_ReadCallbackWrapper_m3664552025_MetadataUsageId = 10687;
-extern const uint32_t WebConnectionStream_Seek_m3960780793_MetadataUsageId = 10688;
-extern const uint32_t WebConnectionStream_set_Position_m537414785_MetadataUsageId = 10689;
-extern const uint32_t WebConnectionStream_SetHeaders_m3009966013_MetadataUsageId = 10690;
-extern const uint32_t WebConnectionStream_SetLength_m942668073_MetadataUsageId = 10691;
-extern const uint32_t WebConnectionStream_Write_m1061706378_MetadataUsageId = 10692;
-extern const uint32_t WebConnectionStream_WriteCallbackWrapper_m641430686_MetadataUsageId = 10693;
-extern const uint32_t WebConnectionStream_WriteHeaders_m3483589366_MetadataUsageId = 10694;
-extern const uint32_t WebConnectionStream_WriteRequest_m340830927_MetadataUsageId = 10695;
-extern const uint32_t WebConnectionStream_WriteRequestAsyncCB_m3620104053_MetadataUsageId = 10696;
-extern const uint32_t WebHeaderCollection__cctor_m2093192431_MetadataUsageId = 10697;
-extern const uint32_t WebHeaderCollection__ctor_m1308130075_MetadataUsageId = 10698;
-extern const uint32_t WebHeaderCollection_Add_m183143026_MetadataUsageId = 10699;
-extern const uint32_t WebHeaderCollection_Add_m928193981_MetadataUsageId = 10700;
-extern const uint32_t WebHeaderCollection_AddWithoutValidate_m3120519792_MetadataUsageId = 10701;
-extern const uint32_t WebHeaderCollection_GetObjectData_m730985326_MetadataUsageId = 10702;
-extern const uint32_t WebHeaderCollection_GetValues_m2828584819_MetadataUsageId = 10703;
-extern const uint32_t WebHeaderCollection_IsHeaderName_m2906290131_MetadataUsageId = 10704;
-extern const uint32_t WebHeaderCollection_IsMultiValue_m3103018277_MetadataUsageId = 10705;
-extern const uint32_t WebHeaderCollection_IsRestricted_m2639089215_MetadataUsageId = 10706;
-extern const uint32_t WebHeaderCollection_Remove_m275303502_MetadataUsageId = 10707;
-extern const uint32_t WebHeaderCollection_RemoveAndAdd_m3288706236_MetadataUsageId = 10708;
-extern const uint32_t WebHeaderCollection_RemoveInternal_m2712218737_MetadataUsageId = 10709;
-extern const uint32_t WebHeaderCollection_Set_m2824231721_MetadataUsageId = 10710;
-extern const uint32_t WebHeaderCollection_SetInternal_m126443775_MetadataUsageId = 10711;
-extern const uint32_t WebHeaderCollection_SetInternal_m3393264823_MetadataUsageId = 10712;
-extern const uint32_t WebHeaderCollection_ToString_m1263025316_MetadataUsageId = 10713;
-extern const uint32_t WebProxy__ctor_m3723076346_MetadataUsageId = 10714;
-extern const uint32_t WebProxy__ctor_m3758467778_MetadataUsageId = 10715;
-extern const uint32_t WebProxy_CheckBypassList_m3657340229_MetadataUsageId = 10716;
-extern const uint32_t WebProxy_GetObjectData_m2475888157_MetadataUsageId = 10717;
-extern const uint32_t WebProxy_IsBypassed_m2918071028_MetadataUsageId = 10718;
-extern const uint32_t WebRequest__cctor_m3940074084_MetadataUsageId = 10719;
-extern const uint32_t WebRequest_Abort_m1387679547_MetadataUsageId = 10720;
-extern const uint32_t WebRequest_AddDynamicPrefix_m4246631209_MetadataUsageId = 10721;
-extern const uint32_t WebRequest_AddPrefix_m3187775913_MetadataUsageId = 10722;
-extern const uint32_t WebRequest_BeginGetResponse_m594613547_MetadataUsageId = 10723;
-extern const uint32_t WebRequest_Create_m1521009289_MetadataUsageId = 10724;
-extern const uint32_t WebRequest_Create_m2603246108_MetadataUsageId = 10725;
-extern const uint32_t WebRequest_EndGetResponse_m983572203_MetadataUsageId = 10726;
-extern const uint32_t WebRequest_get_ContentLength_m47669036_MetadataUsageId = 10727;
-extern const uint32_t WebRequest_get_Credentials_m338312678_MetadataUsageId = 10728;
-extern const uint32_t WebRequest_get_DefaultWebProxy_m4155870144_MetadataUsageId = 10729;
-extern const uint32_t WebRequest_get_Headers_m1915717959_MetadataUsageId = 10730;
-extern const uint32_t WebRequest_get_Method_m1872254915_MetadataUsageId = 10731;
-extern const uint32_t WebRequest_get_Proxy_m317269301_MetadataUsageId = 10732;
-extern const uint32_t WebRequest_get_RequestUri_m2259001472_MetadataUsageId = 10733;
-extern const uint32_t WebRequest_GetCreator_m2383296374_MetadataUsageId = 10734;
-extern const uint32_t WebRequest_GetMustImplement_m1485657458_MetadataUsageId = 10735;
-extern const uint32_t WebRequest_GetObjectData_m1299992613_MetadataUsageId = 10736;
-extern const uint32_t WebRequest_System_Runtime_Serialization_ISerializable_GetObjectData_m3856360037_MetadataUsageId = 10737;
-extern const uint32_t WebRequestUtils__cctor_m4190982137_MetadataUsageId = 10738;
-extern const uint32_t WebRequestUtils_RedirectTo_m55747000_MetadataUsageId = 10739;
-extern const uint32_t WebResponse__ctor_m3907452824_MetadataUsageId = 10740;
-extern const uint32_t WebResponse_Close_m3195977952_MetadataUsageId = 10741;
-extern const uint32_t WebResponse_get_Headers_m1380453460_MetadataUsageId = 10742;
-extern const uint32_t WebResponse_GetMustImplement_m3276739230_MetadataUsageId = 10743;
-extern const uint32_t WebResponse_GetResponseStream_m3988934657_MetadataUsageId = 10744;
-extern const uint32_t WebResponse_System_Runtime_Serialization_ISerializable_GetObjectData_m4038369249_MetadataUsageId = 10745;
-extern const uint32_t WellKnownClientTypeEntry__ctor_m2471908952_MetadataUsageId = 10746;
-extern const uint32_t WellKnownClientTypeEntry_ToString_m1119458503_MetadataUsageId = 10747;
-extern const uint32_t WellKnownServiceTypeEntry__ctor_m2390594423_MetadataUsageId = 10748;
-extern const uint32_t WellKnownServiceTypeEntry_ToString_m1546833365_MetadataUsageId = 10749;
-extern const uint32_t Win32Exception__ctor_m2451451937_MetadataUsageId = 10750;
-extern const uint32_t Win32Exception__ctor_m3265219078_MetadataUsageId = 10751;
-extern const uint32_t Win32Exception_GetObjectData_m2897703401_MetadataUsageId = 10752;
-extern const uint32_t Win32Resource_ToString_m1615154437_MetadataUsageId = 10753;
-extern const uint32_t WindowFunction_BeginInvoke_m3381614433_MetadataUsageId = 10754;
-extern const uint32_t WindowsIdentity__cctor_m1315799505_MetadataUsageId = 10755;
-extern const uint32_t WindowsIdentity_Dispose_m3466258450_MetadataUsageId = 10756;
-extern const uint32_t WindowsIdentity_System_Runtime_Serialization_IDeserializationCallback_OnDeserialization_m3428853631_MetadataUsageId = 10757;
-extern const uint32_t WindowsIdentity_System_Runtime_Serialization_ISerializable_GetObjectData_m2539658116_MetadataUsageId = 10758;
-extern const uint32_t WordSelectionEvent__ctor_m3341154825_MetadataUsageId = 10759;
-extern const uint32_t Worker_ReceiveFrom_m35403591_MetadataUsageId = 10760;
-extern const uint32_t Worker_Send_m1896362792_MetadataUsageId = 10761;
-extern const uint32_t Worker_SendTo_m1355176649_MetadataUsageId = 10762;
-extern const uint32_t WriteDelegate_BeginInvoke_m39624777_MetadataUsageId = 10763;
-extern const uint32_t WriteDelegate_BeginInvoke_m4282217382_MetadataUsageId = 10764;
-extern const uint32_t WriteMethod_BeginInvoke_m2181678049_MetadataUsageId = 10765;
-extern const uint32_t X500DistinguishedName__ctor_m3469219344_MetadataUsageId = 10766;
-extern const uint32_t X500DistinguishedName_AreEqual_m2828302026_MetadataUsageId = 10767;
-extern const uint32_t X500DistinguishedName_Canonize_m2594679403_MetadataUsageId = 10768;
-extern const uint32_t X500DistinguishedName_Decode_m3521921960_MetadataUsageId = 10769;
-extern const uint32_t X500DistinguishedName_DecodeRawData_m3790804100_MetadataUsageId = 10770;
-extern const uint32_t X500DistinguishedName_GetSeparator_m1336760642_MetadataUsageId = 10771;
-extern const uint32_t X501__cctor_m1166912714_MetadataUsageId = 10772;
-extern const uint32_t X501__cctor_m2428304915_MetadataUsageId = 10773;
-extern const uint32_t X501_AppendEntry_m2470239841_MetadataUsageId = 10774;
-extern const uint32_t X501_AppendEntry_m2479013363_MetadataUsageId = 10775;
-extern const uint32_t X501_ToString_m1148552872_MetadataUsageId = 10776;
-extern const uint32_t X501_ToString_m2260475203_MetadataUsageId = 10777;
-extern const uint32_t X501_ToString_m2278029064_MetadataUsageId = 10778;
-extern const uint32_t X501_ToString_m4186311521_MetadataUsageId = 10779;
-extern const uint32_t X509BasicConstraintsExtension__ctor_m1244152959_MetadataUsageId = 10780;
-extern const uint32_t X509BasicConstraintsExtension__ctor_m3136793028_MetadataUsageId = 10781;
-extern const uint32_t X509BasicConstraintsExtension__ctor_m3721156175_MetadataUsageId = 10782;
-extern const uint32_t X509BasicConstraintsExtension_CopyFrom_m1931463033_MetadataUsageId = 10783;
-extern const uint32_t X509BasicConstraintsExtension_Decode_m120598446_MetadataUsageId = 10784;
-extern const uint32_t X509BasicConstraintsExtension_Encode_m2310708419_MetadataUsageId = 10785;
-extern const uint32_t X509BasicConstraintsExtension_get_CertificateAuthority_m3360658367_MetadataUsageId = 10786;
-extern const uint32_t X509BasicConstraintsExtension_get_HasPathLengthConstraint_m2072837820_MetadataUsageId = 10787;
-extern const uint32_t X509BasicConstraintsExtension_get_PathLengthConstraint_m1198369084_MetadataUsageId = 10788;
-extern const uint32_t X509BasicConstraintsExtension_ToString_m1809935297_MetadataUsageId = 10789;
-extern const uint32_t X509Certificate__cctor_m1746020738_MetadataUsageId = 10790;
-extern const uint32_t X509Certificate__cctor_m198658613_MetadataUsageId = 10791;
-extern const uint32_t X509Certificate__ctor_m191107012_MetadataUsageId = 10792;
-extern const uint32_t X509Certificate__ctor_m2595927506_MetadataUsageId = 10793;
-extern const uint32_t X509Certificate__ctor_m3656389950_MetadataUsageId = 10794;
-extern const uint32_t X509Certificate__ctor_m4186241804_MetadataUsageId = 10795;
-extern const uint32_t X509Certificate_Equals_m3784196370_MetadataUsageId = 10796;
-extern const uint32_t X509Certificate_Equals_m861530042_MetadataUsageId = 10797;
-extern const uint32_t X509Certificate_get_DSA_m1760272844_MetadataUsageId = 10798;
-extern const uint32_t X509Certificate_get_DSA_m565099499_MetadataUsageId = 10799;
-extern const uint32_t X509Certificate_get_Hash_m410033711_MetadataUsageId = 10800;
-extern const uint32_t X509Certificate_get_IsCurrent_m469817010_MetadataUsageId = 10801;
-extern const uint32_t X509Certificate_get_IsSelfSigned_m4064195693_MetadataUsageId = 10802;
-extern const uint32_t X509Certificate_get_Issuer_m2934704867_MetadataUsageId = 10803;
-extern const uint32_t X509Certificate_get_KeyAlgorithmParameters_m3698130868_MetadataUsageId = 10804;
-extern const uint32_t X509Certificate_get_KeyAlgorithmParameters_m681676289_MetadataUsageId = 10805;
-extern const uint32_t X509Certificate_get_PublicKey_m1627137142_MetadataUsageId = 10806;
-extern const uint32_t X509Certificate_get_PublicKey_m950835056_MetadataUsageId = 10807;
-extern const uint32_t X509Certificate_get_RawData_m2387471414_MetadataUsageId = 10808;
-extern const uint32_t X509Certificate_get_RawData_m2626675988_MetadataUsageId = 10809;
-extern const uint32_t X509Certificate_get_RSA_m1755006809_MetadataUsageId = 10810;
-extern const uint32_t X509Certificate_get_SerialNumber_m3924188880_MetadataUsageId = 10811;
-extern const uint32_t X509Certificate_get_Signature_m2498854864_MetadataUsageId = 10812;
-extern const uint32_t X509Certificate_get_Subject_m2638144878_MetadataUsageId = 10813;
-extern const uint32_t X509Certificate_GetCertHash_m274210048_MetadataUsageId = 10814;
-extern const uint32_t X509Certificate_GetEffectiveDateString_m1666677721_MetadataUsageId = 10815;
-extern const uint32_t X509Certificate_GetExpirationDateString_m1253593872_MetadataUsageId = 10816;
-extern const uint32_t X509Certificate_GetIssuerName_m1601331538_MetadataUsageId = 10817;
-extern const uint32_t X509Certificate_GetName_m1060481339_MetadataUsageId = 10818;
-extern const uint32_t X509Certificate_GetObjectData_m2057262401_MetadataUsageId = 10819;
-extern const uint32_t X509Certificate_GetObjectData_m2952009451_MetadataUsageId = 10820;
-extern const uint32_t X509Certificate_GetPublicKey_m4184729161_MetadataUsageId = 10821;
-extern const uint32_t X509Certificate_GetRawCertData_m781236105_MetadataUsageId = 10822;
-extern const uint32_t X509Certificate_GetUnsignedBigInteger_m1025066663_MetadataUsageId = 10823;
-extern const uint32_t X509Certificate_GetUnsignedBigInteger_m877462855_MetadataUsageId = 10824;
-extern const uint32_t X509Certificate_Import_m3563119820_MetadataUsageId = 10825;
-extern const uint32_t X509Certificate_Parse_m1106379228_MetadataUsageId = 10826;
-extern const uint32_t X509Certificate_Parse_m54358579_MetadataUsageId = 10827;
-extern const uint32_t X509Certificate_PEM_m1177570576_MetadataUsageId = 10828;
-extern const uint32_t X509Certificate_PEM_m2020851166_MetadataUsageId = 10829;
-extern const uint32_t X509Certificate_System_Runtime_Serialization_ISerializable_GetObjectData_m1891910043_MetadataUsageId = 10830;
-extern const uint32_t X509Certificate_tostr_m197816703_MetadataUsageId = 10831;
-extern const uint32_t X509Certificate_ToString_m2340207075_MetadataUsageId = 10832;
-extern const uint32_t X509Certificate_VerifySignature_m2813642028_MetadataUsageId = 10833;
-extern const uint32_t X509Certificate_VerifySignature_m3538124832_MetadataUsageId = 10834;
-extern const uint32_t X509Certificate_VerifySignature_m3988463526_MetadataUsageId = 10835;
-extern const uint32_t X509Certificate_WasCurrent_m1146083014_MetadataUsageId = 10836;
-extern const uint32_t X509Certificate2__cctor_m4292326511_MetadataUsageId = 10837;
-extern const uint32_t X509Certificate2__ctor_m2802623960_MetadataUsageId = 10838;
-extern const uint32_t X509Certificate2__ctor_m3336405942_MetadataUsageId = 10839;
-extern const uint32_t X509Certificate2_AppendBuffer_m445040858_MetadataUsageId = 10840;
-extern const uint32_t X509Certificate2_get_Extensions_m3552930730_MetadataUsageId = 10841;
-extern const uint32_t X509Certificate2_get_IssuerName_m1277209535_MetadataUsageId = 10842;
-extern const uint32_t X509Certificate2_get_NotAfter_m1930122497_MetadataUsageId = 10843;
-extern const uint32_t X509Certificate2_get_NotBefore_m2514418239_MetadataUsageId = 10844;
-extern const uint32_t X509Certificate2_get_PrivateKey_m3900779210_MetadataUsageId = 10845;
-extern const uint32_t X509Certificate2_get_PublicKey_m370665820_MetadataUsageId = 10846;
-extern const uint32_t X509Certificate2_get_SerialNumber_m1315874713_MetadataUsageId = 10847;
-extern const uint32_t X509Certificate2_get_SignatureAlgorithm_m2810155907_MetadataUsageId = 10848;
-extern const uint32_t X509Certificate2_get_SubjectName_m2588317215_MetadataUsageId = 10849;
-extern const uint32_t X509Certificate2_get_Version_m2534012675_MetadataUsageId = 10850;
-extern const uint32_t X509Certificate2_GetNameInfo_m869719036_MetadataUsageId = 10851;
-extern const uint32_t X509Certificate2_GetValueAsString_m1348462142_MetadataUsageId = 10852;
-extern const uint32_t X509Certificate2_Import_m4026562329_MetadataUsageId = 10853;
-extern const uint32_t X509Certificate2_ImportPkcs12_m2042454190_MetadataUsageId = 10854;
-extern const uint32_t X509Certificate2_Reset_m3988214799_MetadataUsageId = 10855;
-extern const uint32_t X509Certificate2_ToString_m3891217889_MetadataUsageId = 10856;
-extern const uint32_t X509Certificate2_ToString_m4246350784_MetadataUsageId = 10857;
-extern const uint32_t X509Certificate2_Verify_m1464738766_MetadataUsageId = 10858;
-extern const uint32_t X509Certificate2Collection_Add_m3151757943_MetadataUsageId = 10859;
-extern const uint32_t X509Certificate2Collection_AddRange_m3206541680_MetadataUsageId = 10860;
-extern const uint32_t X509Certificate2Collection_Contains_m3300508662_MetadataUsageId = 10861;
-extern const uint32_t X509Certificate2Collection_Find_m4007010753_MetadataUsageId = 10862;
-extern const uint32_t X509Certificate2Collection_get_Item_m1658740919_MetadataUsageId = 10863;
-extern const uint32_t X509Certificate2Collection_GetEnumerator_m3634416032_MetadataUsageId = 10864;
-extern const uint32_t X509Certificate2Enumerator__ctor_m1083666285_MetadataUsageId = 10865;
-extern const uint32_t X509Certificate2Enumerator_get_Current_m157909321_MetadataUsageId = 10866;
-extern const uint32_t X509Certificate2Enumerator_MoveNext_m2220460870_MetadataUsageId = 10867;
-extern const uint32_t X509Certificate2Enumerator_Reset_m1308823525_MetadataUsageId = 10868;
-extern const uint32_t X509Certificate2Enumerator_System_Collections_IEnumerator_get_Current_m352453934_MetadataUsageId = 10869;
-extern const uint32_t X509Certificate2Enumerator_System_Collections_IEnumerator_MoveNext_m1563787129_MetadataUsageId = 10870;
-extern const uint32_t X509Certificate2Enumerator_System_Collections_IEnumerator_Reset_m388172138_MetadataUsageId = 10871;
-extern const uint32_t X509CertificateCollection_Add_m2277657976_MetadataUsageId = 10872;
-extern const uint32_t X509CertificateCollection_Add_m3136524580_MetadataUsageId = 10873;
-extern const uint32_t X509CertificateCollection_AddRange_m2165814476_MetadataUsageId = 10874;
-extern const uint32_t X509CertificateCollection_AddRange_m3683116910_MetadataUsageId = 10875;
-extern const uint32_t X509CertificateCollection_get_Item_m1033426577_MetadataUsageId = 10876;
-extern const uint32_t X509CertificateCollection_get_Item_m1464788693_MetadataUsageId = 10877;
-extern const uint32_t X509CertificateCollection_get_Item_m3219599455_MetadataUsageId = 10878;
-extern const uint32_t X509CertificateCollection_GetEnumerator_m385726313_MetadataUsageId = 10879;
-extern const uint32_t X509CertificateCollection_GetEnumerator_m4229251522_MetadataUsageId = 10880;
-extern const uint32_t X509CertificateCollection_GetEnumerator_m92169144_MetadataUsageId = 10881;
-extern const uint32_t X509CertificateCollection_IndexOf_m2003755268_MetadataUsageId = 10882;
-extern const uint32_t X509CertificateEnumerator__ctor_m3747779152_MetadataUsageId = 10883;
-extern const uint32_t X509CertificateEnumerator__ctor_m85694331_MetadataUsageId = 10884;
-extern const uint32_t X509CertificateEnumerator__ctor_m943731472_MetadataUsageId = 10885;
-extern const uint32_t X509CertificateEnumerator_get_Current_m1016419_MetadataUsageId = 10886;
-extern const uint32_t X509CertificateEnumerator_get_Current_m3041233561_MetadataUsageId = 10887;
-extern const uint32_t X509CertificateEnumerator_get_Current_m3079314562_MetadataUsageId = 10888;
-extern const uint32_t X509CertificateEnumerator_MoveNext_m1342258196_MetadataUsageId = 10889;
-extern const uint32_t X509CertificateEnumerator_MoveNext_m2269241175_MetadataUsageId = 10890;
-extern const uint32_t X509CertificateEnumerator_MoveNext_m3211955044_MetadataUsageId = 10891;
-extern const uint32_t X509CertificateEnumerator_Reset_m122774664_MetadataUsageId = 10892;
-extern const uint32_t X509CertificateEnumerator_Reset_m1825523691_MetadataUsageId = 10893;
-extern const uint32_t X509CertificateEnumerator_Reset_m4026698923_MetadataUsageId = 10894;
-extern const uint32_t X509CertificateEnumerator_System_Collections_IEnumerator_get_Current_m1846030361_MetadataUsageId = 10895;
-extern const uint32_t X509CertificateEnumerator_System_Collections_IEnumerator_get_Current_m418791713_MetadataUsageId = 10896;
-extern const uint32_t X509CertificateEnumerator_System_Collections_IEnumerator_get_Current_m4218613192_MetadataUsageId = 10897;
-extern const uint32_t X509CertificateEnumerator_System_Collections_IEnumerator_MoveNext_m1392570645_MetadataUsageId = 10898;
-extern const uint32_t X509CertificateEnumerator_System_Collections_IEnumerator_MoveNext_m2626270621_MetadataUsageId = 10899;
-extern const uint32_t X509CertificateEnumerator_System_Collections_IEnumerator_MoveNext_m708500216_MetadataUsageId = 10900;
-extern const uint32_t X509CertificateEnumerator_System_Collections_IEnumerator_Reset_m1219650180_MetadataUsageId = 10901;
-extern const uint32_t X509CertificateEnumerator_System_Collections_IEnumerator_Reset_m2039524926_MetadataUsageId = 10902;
-extern const uint32_t X509CertificateEnumerator_System_Collections_IEnumerator_Reset_m2928805663_MetadataUsageId = 10903;
-extern const uint32_t X509Chain__cctor_m993507223_MetadataUsageId = 10904;
-extern const uint32_t X509Chain__ctor_m1084071882_MetadataUsageId = 10905;
-extern const uint32_t X509Chain__ctor_m2674663382_MetadataUsageId = 10906;
-extern const uint32_t X509Chain__ctor_m3563800449_MetadataUsageId = 10907;
-extern const uint32_t X509Chain_Build_m2469702749_MetadataUsageId = 10908;
-extern const uint32_t X509Chain_Build_m611063989_MetadataUsageId = 10909;
-extern const uint32_t X509Chain_CheckRevocation_m3466271023_MetadataUsageId = 10910;
-extern const uint32_t X509Chain_CheckRevocationOnChain_m1377635439_MetadataUsageId = 10911;
-extern const uint32_t X509Chain_FindCertificateParent_m2809823532_MetadataUsageId = 10912;
-extern const uint32_t X509Chain_FindCertificateRoot_m1937726457_MetadataUsageId = 10913;
-extern const uint32_t X509Chain_FindCrl_m1657810964_MetadataUsageId = 10914;
-extern const uint32_t X509Chain_get_CertificateAuthorities_m804805415_MetadataUsageId = 10915;
-extern const uint32_t X509Chain_get_CertificateCollection_m511297491_MetadataUsageId = 10916;
-extern const uint32_t X509Chain_get_ChainStatus_m3613658095_MetadataUsageId = 10917;
-extern const uint32_t X509Chain_get_Roots_m317091712_MetadataUsageId = 10918;
-extern const uint32_t X509Chain_get_TrustAnchors_m2434696767_MetadataUsageId = 10919;
-extern const uint32_t X509Chain_GetAuthorityKeyIdentifier_m2237883181_MetadataUsageId = 10920;
-extern const uint32_t X509Chain_GetAuthorityKeyIdentifier_m4138418749_MetadataUsageId = 10921;
-extern const uint32_t X509Chain_GetAuthorityKeyIdentifier_m614536199_MetadataUsageId = 10922;
-extern const uint32_t X509Chain_GetSubjectKeyIdentifier_m1349242905_MetadataUsageId = 10923;
-extern const uint32_t X509Chain_IsChainComplete_m1577524584_MetadataUsageId = 10924;
-extern const uint32_t X509Chain_IsParent_m2689546349_MetadataUsageId = 10925;
-extern const uint32_t X509Chain_IsSelfIssued_m2588855382_MetadataUsageId = 10926;
-extern const uint32_t X509Chain_IsValid_m3670863655_MetadataUsageId = 10927;
-extern const uint32_t X509Chain_PrepareForNextCertificate_m3691934993_MetadataUsageId = 10928;
-extern const uint32_t X509Chain_Process_m1119354891_MetadataUsageId = 10929;
-extern const uint32_t X509Chain_ProcessCertificateExtensions_m1468796745_MetadataUsageId = 10930;
-extern const uint32_t X509Chain_ProcessCrlEntryExtensions_m3203112264_MetadataUsageId = 10931;
-extern const uint32_t X509Chain_ProcessCrlExtensions_m236234529_MetadataUsageId = 10932;
-extern const uint32_t X509Chain_SelectBestFromCollection_m1068759221_MetadataUsageId = 10933;
-extern const uint32_t X509ChainElement__ctor_m252371420_MetadataUsageId = 10934;
-extern const uint32_t X509ChainElement_UncompressFlags_m781553362_MetadataUsageId = 10935;
-extern const uint32_t X509ChainElementCollection__ctor_m3424079155_MetadataUsageId = 10936;
-extern const uint32_t X509ChainElementCollection_Add_m737054930_MetadataUsageId = 10937;
-extern const uint32_t X509ChainElementCollection_Contains_m2924813355_MetadataUsageId = 10938;
-extern const uint32_t X509ChainElementCollection_get_Item_m1978766852_MetadataUsageId = 10939;
-extern const uint32_t X509ChainElementCollection_GetEnumerator_m2610805770_MetadataUsageId = 10940;
-extern const uint32_t X509ChainElementCollection_System_Collections_IEnumerable_GetEnumerator_m3829089536_MetadataUsageId = 10941;
-extern const uint32_t X509ChainElementEnumerator__ctor_m1674160564_MetadataUsageId = 10942;
-extern const uint32_t X509ChainElementEnumerator_get_Current_m1301774989_MetadataUsageId = 10943;
-extern const uint32_t X509ChainElementEnumerator_MoveNext_m3940594045_MetadataUsageId = 10944;
-extern const uint32_t X509ChainElementEnumerator_Reset_m1416607221_MetadataUsageId = 10945;
-extern const uint32_t X509ChainElementEnumerator_System_Collections_IEnumerator_get_Current_m1913555061_MetadataUsageId = 10946;
-extern const uint32_t X509ChainPolicy_Reset_m1883700166_MetadataUsageId = 10947;
-extern const uint32_t X509ChainPolicy_set_RevocationMode_m3002768104_MetadataUsageId = 10948;
-extern const uint32_t X509ChainStatus_GetInformation_m245493206_MetadataUsageId = 10949;
-extern const uint32_t X509Crl__ctor_m1817187405_MetadataUsageId = 10950;
-extern const uint32_t X509Crl_get_Hash_m464217067_MetadataUsageId = 10951;
-extern const uint32_t X509Crl_GetCrlEntry_m5954460_MetadataUsageId = 10952;
-extern const uint32_t X509Crl_GetCrlEntry_m641501875_MetadataUsageId = 10953;
-extern const uint32_t X509Crl_GetHashName_m4214678741_MetadataUsageId = 10954;
-extern const uint32_t X509Crl_Parse_m3164013387_MetadataUsageId = 10955;
-extern const uint32_t X509Crl_VerifySignature_m1377612461_MetadataUsageId = 10956;
-extern const uint32_t X509Crl_VerifySignature_m1808348256_MetadataUsageId = 10957;
-extern const uint32_t X509Crl_VerifySignature_m1902456590_MetadataUsageId = 10958;
-extern const uint32_t X509CrlEntry__ctor_m4013514048_MetadataUsageId = 10959;
-extern const uint32_t X509CrlEntry_get_SerialNumber_m3627212772_MetadataUsageId = 10960;
-extern const uint32_t X509EnhancedKeyUsageExtension__ctor_m298908880_MetadataUsageId = 10961;
-extern const uint32_t X509EnhancedKeyUsageExtension_CopyFrom_m3750050754_MetadataUsageId = 10962;
-extern const uint32_t X509EnhancedKeyUsageExtension_Decode_m3726500073_MetadataUsageId = 10963;
-extern const uint32_t X509EnhancedKeyUsageExtension_get_EnhancedKeyUsages_m2617268680_MetadataUsageId = 10964;
-extern const uint32_t X509EnhancedKeyUsageExtension_ToString_m350388564_MetadataUsageId = 10965;
-extern const uint32_t X509Extension__ctor_m1474351312_MetadataUsageId = 10966;
-extern const uint32_t X509Extension__ctor_m1750445243_MetadataUsageId = 10967;
-extern const uint32_t X509Extension__ctor_m710637961_MetadataUsageId = 10968;
-extern const uint32_t X509Extension_CopyFrom_m474590450_MetadataUsageId = 10969;
-extern const uint32_t X509Extension_Equals_m1222951829_MetadataUsageId = 10970;
-extern const uint32_t X509Extension_Equals_m1779194186_MetadataUsageId = 10971;
-extern const uint32_t X509Extension_FormatUnkownData_m3636863676_MetadataUsageId = 10972;
-extern const uint32_t X509Extension_ToString_m3664524823_MetadataUsageId = 10973;
-extern const uint32_t X509Extension_ToString_m3727002866_MetadataUsageId = 10974;
-extern const uint32_t X509Extension_WriteLine_m1400196767_MetadataUsageId = 10975;
-extern const uint32_t X509Extension_WriteLine_m1662885247_MetadataUsageId = 10976;
-extern const uint32_t X509ExtensionCollection__ctor_m1730716172_MetadataUsageId = 10977;
-extern const uint32_t X509ExtensionCollection__ctor_m3315097415_MetadataUsageId = 10978;
-extern const uint32_t X509ExtensionCollection__ctor_m551870633_MetadataUsageId = 10979;
-extern const uint32_t X509ExtensionCollection_get_Item_m2761897938_MetadataUsageId = 10980;
-extern const uint32_t X509ExtensionCollection_get_Item_m3637880514_MetadataUsageId = 10981;
-extern const uint32_t X509ExtensionCollection_GetEnumerator_m3371013144_MetadataUsageId = 10982;
-extern const uint32_t X509ExtensionCollection_IndexOf_m2996504451_MetadataUsageId = 10983;
-extern const uint32_t X509ExtensionCollection_System_Collections_ICollection_CopyTo_m2505796149_MetadataUsageId = 10984;
-extern const uint32_t X509ExtensionCollection_System_Collections_IEnumerable_GetEnumerator_m4033897067_MetadataUsageId = 10985;
-extern const uint32_t X509ExtensionEnumerator_get_Current_m256207749_MetadataUsageId = 10986;
-extern const uint32_t X509ExtensionEnumerator_MoveNext_m3077762850_MetadataUsageId = 10987;
-extern const uint32_t X509ExtensionEnumerator_Reset_m2310001600_MetadataUsageId = 10988;
-extern const uint32_t X509ExtensionEnumerator_System_Collections_IEnumerator_get_Current_m2494161059_MetadataUsageId = 10989;
-extern const uint32_t X509KeyUsageExtension__ctor_m1098820427_MetadataUsageId = 10990;
-extern const uint32_t X509KeyUsageExtension__ctor_m1105912158_MetadataUsageId = 10991;
-extern const uint32_t X509KeyUsageExtension__ctor_m524748856_MetadataUsageId = 10992;
-extern const uint32_t X509KeyUsageExtension_CopyFrom_m186479533_MetadataUsageId = 10993;
-extern const uint32_t X509KeyUsageExtension_Decode_m3150759625_MetadataUsageId = 10994;
-extern const uint32_t X509KeyUsageExtension_Encode_m2128077825_MetadataUsageId = 10995;
-extern const uint32_t X509KeyUsageExtension_get_KeyUsages_m3263859785_MetadataUsageId = 10996;
-extern const uint32_t X509KeyUsageExtension_ToString_m3542316380_MetadataUsageId = 10997;
-extern const uint32_t X509Store__ctor_m275383717_MetadataUsageId = 10998;
-extern const uint32_t X509Store_BuildCertificatesCollection_m3030935583_MetadataUsageId = 10999;
-extern const uint32_t X509Store_BuildCrlsCollection_m1991312527_MetadataUsageId = 11000;
-extern const uint32_t X509Store_CheckStore_m2045435685_MetadataUsageId = 11001;
-extern const uint32_t X509Store_get_Certificates_m2149701265_MetadataUsageId = 11002;
-extern const uint32_t X509Store_get_Crls_m4075976598_MetadataUsageId = 11003;
-extern const uint32_t X509Store_Load_m2048139132_MetadataUsageId = 11004;
-extern const uint32_t X509Store_LoadCertificate_m1587806288_MetadataUsageId = 11005;
-extern const uint32_t X509Store_LoadCrl_m1881903843_MetadataUsageId = 11006;
-extern const uint32_t X509Store_Open_m909451489_MetadataUsageId = 11007;
-extern const uint32_t X509StoreManager_get_CurrentUser_m4040993045_MetadataUsageId = 11008;
-extern const uint32_t X509StoreManager_get_LocalMachine_m3994689999_MetadataUsageId = 11009;
-extern const uint32_t X509StoreManager_get_TrustedRootCertificates_m2180997293_MetadataUsageId = 11010;
-extern const uint32_t X509Stores_get_TrustedRoot_m1736182879_MetadataUsageId = 11011;
-extern const uint32_t X509Stores_Open_m1553467177_MetadataUsageId = 11012;
-extern const uint32_t X509SubjectKeyIdentifierExtension__ctor_m1397817642_MetadataUsageId = 11013;
-extern const uint32_t X509SubjectKeyIdentifierExtension__ctor_m201177607_MetadataUsageId = 11014;
-extern const uint32_t X509SubjectKeyIdentifierExtension__ctor_m2055934916_MetadataUsageId = 11015;
-extern const uint32_t X509SubjectKeyIdentifierExtension__ctor_m2644971776_MetadataUsageId = 11016;
-extern const uint32_t X509SubjectKeyIdentifierExtension__ctor_m3160552652_MetadataUsageId = 11017;
-extern const uint32_t X509SubjectKeyIdentifierExtension_CopyFrom_m1588766981_MetadataUsageId = 11018;
-extern const uint32_t X509SubjectKeyIdentifierExtension_Decode_m1505409124_MetadataUsageId = 11019;
-extern const uint32_t X509SubjectKeyIdentifierExtension_Encode_m3345759265_MetadataUsageId = 11020;
-extern const uint32_t X509SubjectKeyIdentifierExtension_FromHex_m1011249985_MetadataUsageId = 11021;
-extern const uint32_t X509SubjectKeyIdentifierExtension_get_SubjectKeyIdentifier_m3059478847_MetadataUsageId = 11022;
-extern const uint32_t X509SubjectKeyIdentifierExtension_ToString_m12089275_MetadataUsageId = 11023;
-extern const uint32_t Xbox360AmazonProfile__ctor_m647432164_MetadataUsageId = 11024;
-extern const uint32_t Xbox360AndroidProfile__ctor_m343281846_MetadataUsageId = 11025;
-extern const uint32_t Xbox360ControllerMacProfile__ctor_m2738099239_MetadataUsageId = 11026;
-extern const uint32_t Xbox360DriverMacProfile__ctor_m286248790_MetadataUsageId = 11027;
-extern const uint32_t Xbox360LinuxProfile__ctor_m863830139_MetadataUsageId = 11028;
-extern const uint32_t Xbox360MacProfile__ctor_m1992925320_MetadataUsageId = 11029;
-extern const uint32_t Xbox360MortalKombatFightStickMacProfile__ctor_m2600522424_MetadataUsageId = 11030;
-extern const uint32_t Xbox360RockCandyAndroidProfile__ctor_m382530019_MetadataUsageId = 11031;
-extern const uint32_t Xbox360WinProfile__ctor_m493617542_MetadataUsageId = 11032;
-extern const uint32_t Xbox360WiredWindowsNativeProfile__ctor_m1836489570_MetadataUsageId = 11033;
-extern const uint32_t Xbox360WirelessWindowsNativeProfile__ctor_m3663762967_MetadataUsageId = 11034;
-extern const uint32_t XboxOneBluetoothAndroidProfile__ctor_m605160133_MetadataUsageId = 11035;
-extern const uint32_t XboxOneControllerMacProfile__ctor_m910224053_MetadataUsageId = 11036;
-extern const uint32_t XboxOneDriverMacProfile__ctor_m2249201808_MetadataUsageId = 11037;
-extern const uint32_t XboxOneEliteWindows10AENativeProfile__ctor_m4080553473_MetadataUsageId = 11038;
-extern const uint32_t XboxOneEliteWindowsNativeProfile__ctor_m315059058_MetadataUsageId = 11039;
-extern const uint32_t XboxOneInputDevice__ctor_m2269806188_MetadataUsageId = 11040;
-extern const uint32_t XboxOneInputDevice_CacheAnalogAxisNameForId_m4119824099_MetadataUsageId = 11041;
-extern const uint32_t XboxOneInputDevice_CacheAnalogAxisNames_m3351499462_MetadataUsageId = 11042;
-extern const uint32_t XboxOneInputDeviceManager__ctor_m222233586_MetadataUsageId = 11043;
-extern const uint32_t XboxOneInputDeviceManager_Enable_m682580625_MetadataUsageId = 11044;
-extern const uint32_t XboxOneInputDeviceManager_UpdateInternal_m3809914533_MetadataUsageId = 11045;
-extern const uint32_t XboxOneMacProfile__ctor_m3701357089_MetadataUsageId = 11046;
-extern const uint32_t XboxOneProfile__ctor_m1998849800_MetadataUsageId = 11047;
-extern const uint32_t XboxOneWin10AEProfile__ctor_m2226835634_MetadataUsageId = 11048;
-extern const uint32_t XboxOneWin10Profile__ctor_m110967625_MetadataUsageId = 11049;
-extern const uint32_t XboxOneWindows10AENativeProfile__ctor_m164157544_MetadataUsageId = 11050;
-extern const uint32_t XboxOneWindows10NativeProfile__ctor_m2605879002_MetadataUsageId = 11051;
-extern const uint32_t XboxOneWindowsNativeProfile__ctor_m2441458040_MetadataUsageId = 11052;
-extern const uint32_t XboxOneWinProfile__ctor_m1548635182_MetadataUsageId = 11053;
-extern const uint32_t XboxOneWirelessAdapterWindowsNativeProfile__ctor_m2452998081_MetadataUsageId = 11054;
-extern const uint32_t XiamoiMacProfile__ctor_m3231396804_MetadataUsageId = 11055;
-extern const uint32_t XiamoiWinProfile__ctor_m2542591296_MetadataUsageId = 11056;
-extern const uint32_t XInputWindowsNativeProfile__ctor_m1875407206_MetadataUsageId = 11057;
-extern const uint32_t XTR_G2_MacNativeProfile__ctor_m1092350216_MetadataUsageId = 11058;
-extern const uint32_t XTR_G2_MacUnityProfile__ctor_m1408439440_MetadataUsageId = 11059;
-extern const uint32_t XTR_G2_WindowsNativeProfile__ctor_m314871028_MetadataUsageId = 11060;
-extern const uint32_t XTR_G2_WindowsUnityProfile__ctor_m3389538646_MetadataUsageId = 11061;
-extern const uint32_t XTR55_G2_MacNativeProfile__ctor_m4116482615_MetadataUsageId = 11062;
-extern const uint32_t XTR55_G2_MacUnityProfile__ctor_m4021054444_MetadataUsageId = 11063;
-extern const uint32_t XTR55_G2_WindowsNativeProfile__ctor_m4120010601_MetadataUsageId = 11064;
-extern const uint32_t XTR55_G2_WindowsUnityProfile__ctor_m1474036107_MetadataUsageId = 11065;
+extern const uint32_t Wall_OnTriggerEnter2D_m1456502492_MetadataUsageId = 10631;
+extern const uint32_t WarpTextExample__ctor_m2079404197_MetadataUsageId = 10632;
+extern const uint32_t WarpTextExample_Awake_m1587858378_MetadataUsageId = 10633;
+extern const uint32_t WarpTextExample_CopyAnimationCurve_m2588067094_MetadataUsageId = 10634;
+extern const uint32_t WarpTextExample_WarpText_m2604028403_MetadataUsageId = 10635;
+extern const uint32_t WeakReference__ctor_m1244067698_MetadataUsageId = 10636;
+extern const uint32_t WeakReference_GetObjectData_m2192383095_MetadataUsageId = 10637;
+extern const uint32_t WebAsyncResult__ctor_m2054281158_MetadataUsageId = 10638;
+extern const uint32_t WebAsyncResult__ctor_m3529977349_MetadataUsageId = 10639;
+extern const uint32_t WebAsyncResult__ctor_m4245223108_MetadataUsageId = 10640;
+extern const uint32_t WebAsyncResult_get_AsyncWaitHandle_m2645832664_MetadataUsageId = 10641;
+extern const uint32_t WebConnection__cctor_m506309166_MetadataUsageId = 10642;
+extern const uint32_t WebConnection__ctor_m3920572924_MetadataUsageId = 10643;
+extern const uint32_t WebConnection_Abort_m20739763_MetadataUsageId = 10644;
+extern const uint32_t WebConnection_BeginRead_m2950707033_MetadataUsageId = 10645;
+extern const uint32_t WebConnection_BeginWrite_m3795141727_MetadataUsageId = 10646;
+extern const uint32_t WebConnection_CheckUnityWebSecurity_m101785_MetadataUsageId = 10647;
+extern const uint32_t WebConnection_Close_m1464903054_MetadataUsageId = 10648;
+extern const uint32_t WebConnection_Connect_m2850066444_MetadataUsageId = 10649;
+extern const uint32_t WebConnection_CreateStream_m3387195587_MetadataUsageId = 10650;
+extern const uint32_t WebConnection_CreateTunnel_m930414641_MetadataUsageId = 10651;
+extern const uint32_t WebConnection_EndRead_m3553040041_MetadataUsageId = 10652;
+extern const uint32_t WebConnection_EndWrite_m778444801_MetadataUsageId = 10653;
+extern const uint32_t WebConnection_EndWrite2_m1365797410_MetadataUsageId = 10654;
+extern const uint32_t WebConnection_EnsureRead_m1250887662_MetadataUsageId = 10655;
+extern const uint32_t WebConnection_EnsureSSLStreamAvailable_m768122312_MetadataUsageId = 10656;
+extern const uint32_t WebConnection_GetCertificates_m955850324_MetadataUsageId = 10657;
+extern const uint32_t WebConnection_GetResponse_m2224473082_MetadataUsageId = 10658;
+extern const uint32_t WebConnection_HandleError_m738788885_MetadataUsageId = 10659;
+extern const uint32_t WebConnection_InitConnection_m679229319_MetadataUsageId = 10660;
+extern const uint32_t WebConnection_InitRead_m3857158647_MetadataUsageId = 10661;
+extern const uint32_t WebConnection_LoggedThrow_m3339834945_MetadataUsageId = 10662;
+extern const uint32_t WebConnection_NextRead_m3275930655_MetadataUsageId = 10663;
+extern const uint32_t WebConnection_Read_m1054701704_MetadataUsageId = 10664;
+extern const uint32_t WebConnection_ReadDone_m4265791416_MetadataUsageId = 10665;
+extern const uint32_t WebConnection_ReadHeaders_m1859597073_MetadataUsageId = 10666;
+extern const uint32_t WebConnection_ReadLine_m1318917240_MetadataUsageId = 10667;
+extern const uint32_t WebConnection_SendNext_m1567013439_MetadataUsageId = 10668;
+extern const uint32_t WebConnection_Write_m3744361765_MetadataUsageId = 10669;
+extern const uint32_t WebConnectionGroup__ctor_m4209428564_MetadataUsageId = 10670;
+extern const uint32_t WebConnectionGroup_CreateOrReuseConnection_m1860341936_MetadataUsageId = 10671;
+extern const uint32_t WebConnectionGroup_GetConnection_m311125738_MetadataUsageId = 10672;
+extern const uint32_t WebConnectionGroup_PrepareSharingNtlm_m3982393373_MetadataUsageId = 10673;
+extern const uint32_t WebConnectionStream__cctor_m2995607677_MetadataUsageId = 10674;
+extern const uint32_t WebConnectionStream__ctor_m1091771122_MetadataUsageId = 10675;
+extern const uint32_t WebConnectionStream__ctor_m2392030538_MetadataUsageId = 10676;
+extern const uint32_t WebConnectionStream_BeginRead_m2120480875_MetadataUsageId = 10677;
+extern const uint32_t WebConnectionStream_BeginWrite_m91788762_MetadataUsageId = 10678;
+extern const uint32_t WebConnectionStream_CheckWriteOverflow_m962631185_MetadataUsageId = 10679;
+extern const uint32_t WebConnectionStream_Close_m1981057778_MetadataUsageId = 10680;
+extern const uint32_t WebConnectionStream_EndRead_m3979704604_MetadataUsageId = 10681;
+extern const uint32_t WebConnectionStream_EndWrite_m1860918953_MetadataUsageId = 10682;
+extern const uint32_t WebConnectionStream_get_Length_m750039804_MetadataUsageId = 10683;
+extern const uint32_t WebConnectionStream_get_Position_m2559024493_MetadataUsageId = 10684;
+extern const uint32_t WebConnectionStream_IsNtlmAuth_m4072757025_MetadataUsageId = 10685;
+extern const uint32_t WebConnectionStream_Read_m4279029041_MetadataUsageId = 10686;
+extern const uint32_t WebConnectionStream_ReadAll_m3145919104_MetadataUsageId = 10687;
+extern const uint32_t WebConnectionStream_ReadCallbackWrapper_m3664552025_MetadataUsageId = 10688;
+extern const uint32_t WebConnectionStream_Seek_m3960780793_MetadataUsageId = 10689;
+extern const uint32_t WebConnectionStream_set_Position_m537414785_MetadataUsageId = 10690;
+extern const uint32_t WebConnectionStream_SetHeaders_m3009966013_MetadataUsageId = 10691;
+extern const uint32_t WebConnectionStream_SetLength_m942668073_MetadataUsageId = 10692;
+extern const uint32_t WebConnectionStream_Write_m1061706378_MetadataUsageId = 10693;
+extern const uint32_t WebConnectionStream_WriteCallbackWrapper_m641430686_MetadataUsageId = 10694;
+extern const uint32_t WebConnectionStream_WriteHeaders_m3483589366_MetadataUsageId = 10695;
+extern const uint32_t WebConnectionStream_WriteRequest_m340830927_MetadataUsageId = 10696;
+extern const uint32_t WebConnectionStream_WriteRequestAsyncCB_m3620104053_MetadataUsageId = 10697;
+extern const uint32_t WebHeaderCollection__cctor_m2093192431_MetadataUsageId = 10698;
+extern const uint32_t WebHeaderCollection__ctor_m1308130075_MetadataUsageId = 10699;
+extern const uint32_t WebHeaderCollection_Add_m183143026_MetadataUsageId = 10700;
+extern const uint32_t WebHeaderCollection_Add_m928193981_MetadataUsageId = 10701;
+extern const uint32_t WebHeaderCollection_AddWithoutValidate_m3120519792_MetadataUsageId = 10702;
+extern const uint32_t WebHeaderCollection_GetObjectData_m730985326_MetadataUsageId = 10703;
+extern const uint32_t WebHeaderCollection_GetValues_m2828584819_MetadataUsageId = 10704;
+extern const uint32_t WebHeaderCollection_IsHeaderName_m2906290131_MetadataUsageId = 10705;
+extern const uint32_t WebHeaderCollection_IsMultiValue_m3103018277_MetadataUsageId = 10706;
+extern const uint32_t WebHeaderCollection_IsRestricted_m2639089215_MetadataUsageId = 10707;
+extern const uint32_t WebHeaderCollection_Remove_m275303502_MetadataUsageId = 10708;
+extern const uint32_t WebHeaderCollection_RemoveAndAdd_m3288706236_MetadataUsageId = 10709;
+extern const uint32_t WebHeaderCollection_RemoveInternal_m2712218737_MetadataUsageId = 10710;
+extern const uint32_t WebHeaderCollection_Set_m2824231721_MetadataUsageId = 10711;
+extern const uint32_t WebHeaderCollection_SetInternal_m126443775_MetadataUsageId = 10712;
+extern const uint32_t WebHeaderCollection_SetInternal_m3393264823_MetadataUsageId = 10713;
+extern const uint32_t WebHeaderCollection_ToString_m1263025316_MetadataUsageId = 10714;
+extern const uint32_t WebProxy__ctor_m3723076346_MetadataUsageId = 10715;
+extern const uint32_t WebProxy__ctor_m3758467778_MetadataUsageId = 10716;
+extern const uint32_t WebProxy_CheckBypassList_m3657340229_MetadataUsageId = 10717;
+extern const uint32_t WebProxy_GetObjectData_m2475888157_MetadataUsageId = 10718;
+extern const uint32_t WebProxy_IsBypassed_m2918071028_MetadataUsageId = 10719;
+extern const uint32_t WebRequest__cctor_m3940074084_MetadataUsageId = 10720;
+extern const uint32_t WebRequest_Abort_m1387679547_MetadataUsageId = 10721;
+extern const uint32_t WebRequest_AddDynamicPrefix_m4246631209_MetadataUsageId = 10722;
+extern const uint32_t WebRequest_AddPrefix_m3187775913_MetadataUsageId = 10723;
+extern const uint32_t WebRequest_BeginGetResponse_m594613547_MetadataUsageId = 10724;
+extern const uint32_t WebRequest_Create_m1521009289_MetadataUsageId = 10725;
+extern const uint32_t WebRequest_Create_m2603246108_MetadataUsageId = 10726;
+extern const uint32_t WebRequest_EndGetResponse_m983572203_MetadataUsageId = 10727;
+extern const uint32_t WebRequest_get_ContentLength_m47669036_MetadataUsageId = 10728;
+extern const uint32_t WebRequest_get_Credentials_m338312678_MetadataUsageId = 10729;
+extern const uint32_t WebRequest_get_DefaultWebProxy_m4155870144_MetadataUsageId = 10730;
+extern const uint32_t WebRequest_get_Headers_m1915717959_MetadataUsageId = 10731;
+extern const uint32_t WebRequest_get_Method_m1872254915_MetadataUsageId = 10732;
+extern const uint32_t WebRequest_get_Proxy_m317269301_MetadataUsageId = 10733;
+extern const uint32_t WebRequest_get_RequestUri_m2259001472_MetadataUsageId = 10734;
+extern const uint32_t WebRequest_GetCreator_m2383296374_MetadataUsageId = 10735;
+extern const uint32_t WebRequest_GetMustImplement_m1485657458_MetadataUsageId = 10736;
+extern const uint32_t WebRequest_GetObjectData_m1299992613_MetadataUsageId = 10737;
+extern const uint32_t WebRequest_System_Runtime_Serialization_ISerializable_GetObjectData_m3856360037_MetadataUsageId = 10738;
+extern const uint32_t WebRequestUtils__cctor_m4190982137_MetadataUsageId = 10739;
+extern const uint32_t WebRequestUtils_RedirectTo_m55747000_MetadataUsageId = 10740;
+extern const uint32_t WebResponse__ctor_m3907452824_MetadataUsageId = 10741;
+extern const uint32_t WebResponse_Close_m3195977952_MetadataUsageId = 10742;
+extern const uint32_t WebResponse_get_Headers_m1380453460_MetadataUsageId = 10743;
+extern const uint32_t WebResponse_GetMustImplement_m3276739230_MetadataUsageId = 10744;
+extern const uint32_t WebResponse_GetResponseStream_m3988934657_MetadataUsageId = 10745;
+extern const uint32_t WebResponse_System_Runtime_Serialization_ISerializable_GetObjectData_m4038369249_MetadataUsageId = 10746;
+extern const uint32_t WellKnownClientTypeEntry__ctor_m2471908952_MetadataUsageId = 10747;
+extern const uint32_t WellKnownClientTypeEntry_ToString_m1119458503_MetadataUsageId = 10748;
+extern const uint32_t WellKnownServiceTypeEntry__ctor_m2390594423_MetadataUsageId = 10749;
+extern const uint32_t WellKnownServiceTypeEntry_ToString_m1546833365_MetadataUsageId = 10750;
+extern const uint32_t Win32Exception__ctor_m2451451937_MetadataUsageId = 10751;
+extern const uint32_t Win32Exception__ctor_m3265219078_MetadataUsageId = 10752;
+extern const uint32_t Win32Exception_GetObjectData_m2897703401_MetadataUsageId = 10753;
+extern const uint32_t Win32Resource_ToString_m1615154437_MetadataUsageId = 10754;
+extern const uint32_t WindowFunction_BeginInvoke_m3381614433_MetadataUsageId = 10755;
+extern const uint32_t WindowsIdentity__cctor_m1315799505_MetadataUsageId = 10756;
+extern const uint32_t WindowsIdentity_Dispose_m3466258450_MetadataUsageId = 10757;
+extern const uint32_t WindowsIdentity_System_Runtime_Serialization_IDeserializationCallback_OnDeserialization_m3428853631_MetadataUsageId = 10758;
+extern const uint32_t WindowsIdentity_System_Runtime_Serialization_ISerializable_GetObjectData_m2539658116_MetadataUsageId = 10759;
+extern const uint32_t WordSelectionEvent__ctor_m3341154825_MetadataUsageId = 10760;
+extern const uint32_t Worker_ReceiveFrom_m35403591_MetadataUsageId = 10761;
+extern const uint32_t Worker_Send_m1896362792_MetadataUsageId = 10762;
+extern const uint32_t Worker_SendTo_m1355176649_MetadataUsageId = 10763;
+extern const uint32_t WriteDelegate_BeginInvoke_m39624777_MetadataUsageId = 10764;
+extern const uint32_t WriteDelegate_BeginInvoke_m4282217382_MetadataUsageId = 10765;
+extern const uint32_t WriteMethod_BeginInvoke_m2181678049_MetadataUsageId = 10766;
+extern const uint32_t X500DistinguishedName__ctor_m3469219344_MetadataUsageId = 10767;
+extern const uint32_t X500DistinguishedName_AreEqual_m2828302026_MetadataUsageId = 10768;
+extern const uint32_t X500DistinguishedName_Canonize_m2594679403_MetadataUsageId = 10769;
+extern const uint32_t X500DistinguishedName_Decode_m3521921960_MetadataUsageId = 10770;
+extern const uint32_t X500DistinguishedName_DecodeRawData_m3790804100_MetadataUsageId = 10771;
+extern const uint32_t X500DistinguishedName_GetSeparator_m1336760642_MetadataUsageId = 10772;
+extern const uint32_t X501__cctor_m1166912714_MetadataUsageId = 10773;
+extern const uint32_t X501__cctor_m2428304915_MetadataUsageId = 10774;
+extern const uint32_t X501_AppendEntry_m2470239841_MetadataUsageId = 10775;
+extern const uint32_t X501_AppendEntry_m2479013363_MetadataUsageId = 10776;
+extern const uint32_t X501_ToString_m1148552872_MetadataUsageId = 10777;
+extern const uint32_t X501_ToString_m2260475203_MetadataUsageId = 10778;
+extern const uint32_t X501_ToString_m2278029064_MetadataUsageId = 10779;
+extern const uint32_t X501_ToString_m4186311521_MetadataUsageId = 10780;
+extern const uint32_t X509BasicConstraintsExtension__ctor_m1244152959_MetadataUsageId = 10781;
+extern const uint32_t X509BasicConstraintsExtension__ctor_m3136793028_MetadataUsageId = 10782;
+extern const uint32_t X509BasicConstraintsExtension__ctor_m3721156175_MetadataUsageId = 10783;
+extern const uint32_t X509BasicConstraintsExtension_CopyFrom_m1931463033_MetadataUsageId = 10784;
+extern const uint32_t X509BasicConstraintsExtension_Decode_m120598446_MetadataUsageId = 10785;
+extern const uint32_t X509BasicConstraintsExtension_Encode_m2310708419_MetadataUsageId = 10786;
+extern const uint32_t X509BasicConstraintsExtension_get_CertificateAuthority_m3360658367_MetadataUsageId = 10787;
+extern const uint32_t X509BasicConstraintsExtension_get_HasPathLengthConstraint_m2072837820_MetadataUsageId = 10788;
+extern const uint32_t X509BasicConstraintsExtension_get_PathLengthConstraint_m1198369084_MetadataUsageId = 10789;
+extern const uint32_t X509BasicConstraintsExtension_ToString_m1809935297_MetadataUsageId = 10790;
+extern const uint32_t X509Certificate__cctor_m1746020738_MetadataUsageId = 10791;
+extern const uint32_t X509Certificate__cctor_m198658613_MetadataUsageId = 10792;
+extern const uint32_t X509Certificate__ctor_m191107012_MetadataUsageId = 10793;
+extern const uint32_t X509Certificate__ctor_m2595927506_MetadataUsageId = 10794;
+extern const uint32_t X509Certificate__ctor_m3656389950_MetadataUsageId = 10795;
+extern const uint32_t X509Certificate__ctor_m4186241804_MetadataUsageId = 10796;
+extern const uint32_t X509Certificate_Equals_m3784196370_MetadataUsageId = 10797;
+extern const uint32_t X509Certificate_Equals_m861530042_MetadataUsageId = 10798;
+extern const uint32_t X509Certificate_get_DSA_m1760272844_MetadataUsageId = 10799;
+extern const uint32_t X509Certificate_get_DSA_m565099499_MetadataUsageId = 10800;
+extern const uint32_t X509Certificate_get_Hash_m410033711_MetadataUsageId = 10801;
+extern const uint32_t X509Certificate_get_IsCurrent_m469817010_MetadataUsageId = 10802;
+extern const uint32_t X509Certificate_get_IsSelfSigned_m4064195693_MetadataUsageId = 10803;
+extern const uint32_t X509Certificate_get_Issuer_m2934704867_MetadataUsageId = 10804;
+extern const uint32_t X509Certificate_get_KeyAlgorithmParameters_m3698130868_MetadataUsageId = 10805;
+extern const uint32_t X509Certificate_get_KeyAlgorithmParameters_m681676289_MetadataUsageId = 10806;
+extern const uint32_t X509Certificate_get_PublicKey_m1627137142_MetadataUsageId = 10807;
+extern const uint32_t X509Certificate_get_PublicKey_m950835056_MetadataUsageId = 10808;
+extern const uint32_t X509Certificate_get_RawData_m2387471414_MetadataUsageId = 10809;
+extern const uint32_t X509Certificate_get_RawData_m2626675988_MetadataUsageId = 10810;
+extern const uint32_t X509Certificate_get_RSA_m1755006809_MetadataUsageId = 10811;
+extern const uint32_t X509Certificate_get_SerialNumber_m3924188880_MetadataUsageId = 10812;
+extern const uint32_t X509Certificate_get_Signature_m2498854864_MetadataUsageId = 10813;
+extern const uint32_t X509Certificate_get_Subject_m2638144878_MetadataUsageId = 10814;
+extern const uint32_t X509Certificate_GetCertHash_m274210048_MetadataUsageId = 10815;
+extern const uint32_t X509Certificate_GetEffectiveDateString_m1666677721_MetadataUsageId = 10816;
+extern const uint32_t X509Certificate_GetExpirationDateString_m1253593872_MetadataUsageId = 10817;
+extern const uint32_t X509Certificate_GetIssuerName_m1601331538_MetadataUsageId = 10818;
+extern const uint32_t X509Certificate_GetName_m1060481339_MetadataUsageId = 10819;
+extern const uint32_t X509Certificate_GetObjectData_m2057262401_MetadataUsageId = 10820;
+extern const uint32_t X509Certificate_GetObjectData_m2952009451_MetadataUsageId = 10821;
+extern const uint32_t X509Certificate_GetPublicKey_m4184729161_MetadataUsageId = 10822;
+extern const uint32_t X509Certificate_GetRawCertData_m781236105_MetadataUsageId = 10823;
+extern const uint32_t X509Certificate_GetUnsignedBigInteger_m1025066663_MetadataUsageId = 10824;
+extern const uint32_t X509Certificate_GetUnsignedBigInteger_m877462855_MetadataUsageId = 10825;
+extern const uint32_t X509Certificate_Import_m3563119820_MetadataUsageId = 10826;
+extern const uint32_t X509Certificate_Parse_m1106379228_MetadataUsageId = 10827;
+extern const uint32_t X509Certificate_Parse_m54358579_MetadataUsageId = 10828;
+extern const uint32_t X509Certificate_PEM_m1177570576_MetadataUsageId = 10829;
+extern const uint32_t X509Certificate_PEM_m2020851166_MetadataUsageId = 10830;
+extern const uint32_t X509Certificate_System_Runtime_Serialization_ISerializable_GetObjectData_m1891910043_MetadataUsageId = 10831;
+extern const uint32_t X509Certificate_tostr_m197816703_MetadataUsageId = 10832;
+extern const uint32_t X509Certificate_ToString_m2340207075_MetadataUsageId = 10833;
+extern const uint32_t X509Certificate_VerifySignature_m2813642028_MetadataUsageId = 10834;
+extern const uint32_t X509Certificate_VerifySignature_m3538124832_MetadataUsageId = 10835;
+extern const uint32_t X509Certificate_VerifySignature_m3988463526_MetadataUsageId = 10836;
+extern const uint32_t X509Certificate_WasCurrent_m1146083014_MetadataUsageId = 10837;
+extern const uint32_t X509Certificate2__cctor_m4292326511_MetadataUsageId = 10838;
+extern const uint32_t X509Certificate2__ctor_m2802623960_MetadataUsageId = 10839;
+extern const uint32_t X509Certificate2__ctor_m3336405942_MetadataUsageId = 10840;
+extern const uint32_t X509Certificate2_AppendBuffer_m445040858_MetadataUsageId = 10841;
+extern const uint32_t X509Certificate2_get_Extensions_m3552930730_MetadataUsageId = 10842;
+extern const uint32_t X509Certificate2_get_IssuerName_m1277209535_MetadataUsageId = 10843;
+extern const uint32_t X509Certificate2_get_NotAfter_m1930122497_MetadataUsageId = 10844;
+extern const uint32_t X509Certificate2_get_NotBefore_m2514418239_MetadataUsageId = 10845;
+extern const uint32_t X509Certificate2_get_PrivateKey_m3900779210_MetadataUsageId = 10846;
+extern const uint32_t X509Certificate2_get_PublicKey_m370665820_MetadataUsageId = 10847;
+extern const uint32_t X509Certificate2_get_SerialNumber_m1315874713_MetadataUsageId = 10848;
+extern const uint32_t X509Certificate2_get_SignatureAlgorithm_m2810155907_MetadataUsageId = 10849;
+extern const uint32_t X509Certificate2_get_SubjectName_m2588317215_MetadataUsageId = 10850;
+extern const uint32_t X509Certificate2_get_Version_m2534012675_MetadataUsageId = 10851;
+extern const uint32_t X509Certificate2_GetNameInfo_m869719036_MetadataUsageId = 10852;
+extern const uint32_t X509Certificate2_GetValueAsString_m1348462142_MetadataUsageId = 10853;
+extern const uint32_t X509Certificate2_Import_m4026562329_MetadataUsageId = 10854;
+extern const uint32_t X509Certificate2_ImportPkcs12_m2042454190_MetadataUsageId = 10855;
+extern const uint32_t X509Certificate2_Reset_m3988214799_MetadataUsageId = 10856;
+extern const uint32_t X509Certificate2_ToString_m3891217889_MetadataUsageId = 10857;
+extern const uint32_t X509Certificate2_ToString_m4246350784_MetadataUsageId = 10858;
+extern const uint32_t X509Certificate2_Verify_m1464738766_MetadataUsageId = 10859;
+extern const uint32_t X509Certificate2Collection_Add_m3151757943_MetadataUsageId = 10860;
+extern const uint32_t X509Certificate2Collection_AddRange_m3206541680_MetadataUsageId = 10861;
+extern const uint32_t X509Certificate2Collection_Contains_m3300508662_MetadataUsageId = 10862;
+extern const uint32_t X509Certificate2Collection_Find_m4007010753_MetadataUsageId = 10863;
+extern const uint32_t X509Certificate2Collection_get_Item_m1658740919_MetadataUsageId = 10864;
+extern const uint32_t X509Certificate2Collection_GetEnumerator_m3634416032_MetadataUsageId = 10865;
+extern const uint32_t X509Certificate2Enumerator__ctor_m1083666285_MetadataUsageId = 10866;
+extern const uint32_t X509Certificate2Enumerator_get_Current_m157909321_MetadataUsageId = 10867;
+extern const uint32_t X509Certificate2Enumerator_MoveNext_m2220460870_MetadataUsageId = 10868;
+extern const uint32_t X509Certificate2Enumerator_Reset_m1308823525_MetadataUsageId = 10869;
+extern const uint32_t X509Certificate2Enumerator_System_Collections_IEnumerator_get_Current_m352453934_MetadataUsageId = 10870;
+extern const uint32_t X509Certificate2Enumerator_System_Collections_IEnumerator_MoveNext_m1563787129_MetadataUsageId = 10871;
+extern const uint32_t X509Certificate2Enumerator_System_Collections_IEnumerator_Reset_m388172138_MetadataUsageId = 10872;
+extern const uint32_t X509CertificateCollection_Add_m2277657976_MetadataUsageId = 10873;
+extern const uint32_t X509CertificateCollection_Add_m3136524580_MetadataUsageId = 10874;
+extern const uint32_t X509CertificateCollection_AddRange_m2165814476_MetadataUsageId = 10875;
+extern const uint32_t X509CertificateCollection_AddRange_m3683116910_MetadataUsageId = 10876;
+extern const uint32_t X509CertificateCollection_get_Item_m1033426577_MetadataUsageId = 10877;
+extern const uint32_t X509CertificateCollection_get_Item_m1464788693_MetadataUsageId = 10878;
+extern const uint32_t X509CertificateCollection_get_Item_m3219599455_MetadataUsageId = 10879;
+extern const uint32_t X509CertificateCollection_GetEnumerator_m385726313_MetadataUsageId = 10880;
+extern const uint32_t X509CertificateCollection_GetEnumerator_m4229251522_MetadataUsageId = 10881;
+extern const uint32_t X509CertificateCollection_GetEnumerator_m92169144_MetadataUsageId = 10882;
+extern const uint32_t X509CertificateCollection_IndexOf_m2003755268_MetadataUsageId = 10883;
+extern const uint32_t X509CertificateEnumerator__ctor_m3747779152_MetadataUsageId = 10884;
+extern const uint32_t X509CertificateEnumerator__ctor_m85694331_MetadataUsageId = 10885;
+extern const uint32_t X509CertificateEnumerator__ctor_m943731472_MetadataUsageId = 10886;
+extern const uint32_t X509CertificateEnumerator_get_Current_m1016419_MetadataUsageId = 10887;
+extern const uint32_t X509CertificateEnumerator_get_Current_m3041233561_MetadataUsageId = 10888;
+extern const uint32_t X509CertificateEnumerator_get_Current_m3079314562_MetadataUsageId = 10889;
+extern const uint32_t X509CertificateEnumerator_MoveNext_m1342258196_MetadataUsageId = 10890;
+extern const uint32_t X509CertificateEnumerator_MoveNext_m2269241175_MetadataUsageId = 10891;
+extern const uint32_t X509CertificateEnumerator_MoveNext_m3211955044_MetadataUsageId = 10892;
+extern const uint32_t X509CertificateEnumerator_Reset_m122774664_MetadataUsageId = 10893;
+extern const uint32_t X509CertificateEnumerator_Reset_m1825523691_MetadataUsageId = 10894;
+extern const uint32_t X509CertificateEnumerator_Reset_m4026698923_MetadataUsageId = 10895;
+extern const uint32_t X509CertificateEnumerator_System_Collections_IEnumerator_get_Current_m1846030361_MetadataUsageId = 10896;
+extern const uint32_t X509CertificateEnumerator_System_Collections_IEnumerator_get_Current_m418791713_MetadataUsageId = 10897;
+extern const uint32_t X509CertificateEnumerator_System_Collections_IEnumerator_get_Current_m4218613192_MetadataUsageId = 10898;
+extern const uint32_t X509CertificateEnumerator_System_Collections_IEnumerator_MoveNext_m1392570645_MetadataUsageId = 10899;
+extern const uint32_t X509CertificateEnumerator_System_Collections_IEnumerator_MoveNext_m2626270621_MetadataUsageId = 10900;
+extern const uint32_t X509CertificateEnumerator_System_Collections_IEnumerator_MoveNext_m708500216_MetadataUsageId = 10901;
+extern const uint32_t X509CertificateEnumerator_System_Collections_IEnumerator_Reset_m1219650180_MetadataUsageId = 10902;
+extern const uint32_t X509CertificateEnumerator_System_Collections_IEnumerator_Reset_m2039524926_MetadataUsageId = 10903;
+extern const uint32_t X509CertificateEnumerator_System_Collections_IEnumerator_Reset_m2928805663_MetadataUsageId = 10904;
+extern const uint32_t X509Chain__cctor_m993507223_MetadataUsageId = 10905;
+extern const uint32_t X509Chain__ctor_m1084071882_MetadataUsageId = 10906;
+extern const uint32_t X509Chain__ctor_m2674663382_MetadataUsageId = 10907;
+extern const uint32_t X509Chain__ctor_m3563800449_MetadataUsageId = 10908;
+extern const uint32_t X509Chain_Build_m2469702749_MetadataUsageId = 10909;
+extern const uint32_t X509Chain_Build_m611063989_MetadataUsageId = 10910;
+extern const uint32_t X509Chain_CheckRevocation_m3466271023_MetadataUsageId = 10911;
+extern const uint32_t X509Chain_CheckRevocationOnChain_m1377635439_MetadataUsageId = 10912;
+extern const uint32_t X509Chain_FindCertificateParent_m2809823532_MetadataUsageId = 10913;
+extern const uint32_t X509Chain_FindCertificateRoot_m1937726457_MetadataUsageId = 10914;
+extern const uint32_t X509Chain_FindCrl_m1657810964_MetadataUsageId = 10915;
+extern const uint32_t X509Chain_get_CertificateAuthorities_m804805415_MetadataUsageId = 10916;
+extern const uint32_t X509Chain_get_CertificateCollection_m511297491_MetadataUsageId = 10917;
+extern const uint32_t X509Chain_get_ChainStatus_m3613658095_MetadataUsageId = 10918;
+extern const uint32_t X509Chain_get_Roots_m317091712_MetadataUsageId = 10919;
+extern const uint32_t X509Chain_get_TrustAnchors_m2434696767_MetadataUsageId = 10920;
+extern const uint32_t X509Chain_GetAuthorityKeyIdentifier_m2237883181_MetadataUsageId = 10921;
+extern const uint32_t X509Chain_GetAuthorityKeyIdentifier_m4138418749_MetadataUsageId = 10922;
+extern const uint32_t X509Chain_GetAuthorityKeyIdentifier_m614536199_MetadataUsageId = 10923;
+extern const uint32_t X509Chain_GetSubjectKeyIdentifier_m1349242905_MetadataUsageId = 10924;
+extern const uint32_t X509Chain_IsChainComplete_m1577524584_MetadataUsageId = 10925;
+extern const uint32_t X509Chain_IsParent_m2689546349_MetadataUsageId = 10926;
+extern const uint32_t X509Chain_IsSelfIssued_m2588855382_MetadataUsageId = 10927;
+extern const uint32_t X509Chain_IsValid_m3670863655_MetadataUsageId = 10928;
+extern const uint32_t X509Chain_PrepareForNextCertificate_m3691934993_MetadataUsageId = 10929;
+extern const uint32_t X509Chain_Process_m1119354891_MetadataUsageId = 10930;
+extern const uint32_t X509Chain_ProcessCertificateExtensions_m1468796745_MetadataUsageId = 10931;
+extern const uint32_t X509Chain_ProcessCrlEntryExtensions_m3203112264_MetadataUsageId = 10932;
+extern const uint32_t X509Chain_ProcessCrlExtensions_m236234529_MetadataUsageId = 10933;
+extern const uint32_t X509Chain_SelectBestFromCollection_m1068759221_MetadataUsageId = 10934;
+extern const uint32_t X509ChainElement__ctor_m252371420_MetadataUsageId = 10935;
+extern const uint32_t X509ChainElement_UncompressFlags_m781553362_MetadataUsageId = 10936;
+extern const uint32_t X509ChainElementCollection__ctor_m3424079155_MetadataUsageId = 10937;
+extern const uint32_t X509ChainElementCollection_Add_m737054930_MetadataUsageId = 10938;
+extern const uint32_t X509ChainElementCollection_Contains_m2924813355_MetadataUsageId = 10939;
+extern const uint32_t X509ChainElementCollection_get_Item_m1978766852_MetadataUsageId = 10940;
+extern const uint32_t X509ChainElementCollection_GetEnumerator_m2610805770_MetadataUsageId = 10941;
+extern const uint32_t X509ChainElementCollection_System_Collections_IEnumerable_GetEnumerator_m3829089536_MetadataUsageId = 10942;
+extern const uint32_t X509ChainElementEnumerator__ctor_m1674160564_MetadataUsageId = 10943;
+extern const uint32_t X509ChainElementEnumerator_get_Current_m1301774989_MetadataUsageId = 10944;
+extern const uint32_t X509ChainElementEnumerator_MoveNext_m3940594045_MetadataUsageId = 10945;
+extern const uint32_t X509ChainElementEnumerator_Reset_m1416607221_MetadataUsageId = 10946;
+extern const uint32_t X509ChainElementEnumerator_System_Collections_IEnumerator_get_Current_m1913555061_MetadataUsageId = 10947;
+extern const uint32_t X509ChainPolicy_Reset_m1883700166_MetadataUsageId = 10948;
+extern const uint32_t X509ChainPolicy_set_RevocationMode_m3002768104_MetadataUsageId = 10949;
+extern const uint32_t X509ChainStatus_GetInformation_m245493206_MetadataUsageId = 10950;
+extern const uint32_t X509Crl__ctor_m1817187405_MetadataUsageId = 10951;
+extern const uint32_t X509Crl_get_Hash_m464217067_MetadataUsageId = 10952;
+extern const uint32_t X509Crl_GetCrlEntry_m5954460_MetadataUsageId = 10953;
+extern const uint32_t X509Crl_GetCrlEntry_m641501875_MetadataUsageId = 10954;
+extern const uint32_t X509Crl_GetHashName_m4214678741_MetadataUsageId = 10955;
+extern const uint32_t X509Crl_Parse_m3164013387_MetadataUsageId = 10956;
+extern const uint32_t X509Crl_VerifySignature_m1377612461_MetadataUsageId = 10957;
+extern const uint32_t X509Crl_VerifySignature_m1808348256_MetadataUsageId = 10958;
+extern const uint32_t X509Crl_VerifySignature_m1902456590_MetadataUsageId = 10959;
+extern const uint32_t X509CrlEntry__ctor_m4013514048_MetadataUsageId = 10960;
+extern const uint32_t X509CrlEntry_get_SerialNumber_m3627212772_MetadataUsageId = 10961;
+extern const uint32_t X509EnhancedKeyUsageExtension__ctor_m298908880_MetadataUsageId = 10962;
+extern const uint32_t X509EnhancedKeyUsageExtension_CopyFrom_m3750050754_MetadataUsageId = 10963;
+extern const uint32_t X509EnhancedKeyUsageExtension_Decode_m3726500073_MetadataUsageId = 10964;
+extern const uint32_t X509EnhancedKeyUsageExtension_get_EnhancedKeyUsages_m2617268680_MetadataUsageId = 10965;
+extern const uint32_t X509EnhancedKeyUsageExtension_ToString_m350388564_MetadataUsageId = 10966;
+extern const uint32_t X509Extension__ctor_m1474351312_MetadataUsageId = 10967;
+extern const uint32_t X509Extension__ctor_m1750445243_MetadataUsageId = 10968;
+extern const uint32_t X509Extension__ctor_m710637961_MetadataUsageId = 10969;
+extern const uint32_t X509Extension_CopyFrom_m474590450_MetadataUsageId = 10970;
+extern const uint32_t X509Extension_Equals_m1222951829_MetadataUsageId = 10971;
+extern const uint32_t X509Extension_Equals_m1779194186_MetadataUsageId = 10972;
+extern const uint32_t X509Extension_FormatUnkownData_m3636863676_MetadataUsageId = 10973;
+extern const uint32_t X509Extension_ToString_m3664524823_MetadataUsageId = 10974;
+extern const uint32_t X509Extension_ToString_m3727002866_MetadataUsageId = 10975;
+extern const uint32_t X509Extension_WriteLine_m1400196767_MetadataUsageId = 10976;
+extern const uint32_t X509Extension_WriteLine_m1662885247_MetadataUsageId = 10977;
+extern const uint32_t X509ExtensionCollection__ctor_m1730716172_MetadataUsageId = 10978;
+extern const uint32_t X509ExtensionCollection__ctor_m3315097415_MetadataUsageId = 10979;
+extern const uint32_t X509ExtensionCollection__ctor_m551870633_MetadataUsageId = 10980;
+extern const uint32_t X509ExtensionCollection_get_Item_m2761897938_MetadataUsageId = 10981;
+extern const uint32_t X509ExtensionCollection_get_Item_m3637880514_MetadataUsageId = 10982;
+extern const uint32_t X509ExtensionCollection_GetEnumerator_m3371013144_MetadataUsageId = 10983;
+extern const uint32_t X509ExtensionCollection_IndexOf_m2996504451_MetadataUsageId = 10984;
+extern const uint32_t X509ExtensionCollection_System_Collections_ICollection_CopyTo_m2505796149_MetadataUsageId = 10985;
+extern const uint32_t X509ExtensionCollection_System_Collections_IEnumerable_GetEnumerator_m4033897067_MetadataUsageId = 10986;
+extern const uint32_t X509ExtensionEnumerator_get_Current_m256207749_MetadataUsageId = 10987;
+extern const uint32_t X509ExtensionEnumerator_MoveNext_m3077762850_MetadataUsageId = 10988;
+extern const uint32_t X509ExtensionEnumerator_Reset_m2310001600_MetadataUsageId = 10989;
+extern const uint32_t X509ExtensionEnumerator_System_Collections_IEnumerator_get_Current_m2494161059_MetadataUsageId = 10990;
+extern const uint32_t X509KeyUsageExtension__ctor_m1098820427_MetadataUsageId = 10991;
+extern const uint32_t X509KeyUsageExtension__ctor_m1105912158_MetadataUsageId = 10992;
+extern const uint32_t X509KeyUsageExtension__ctor_m524748856_MetadataUsageId = 10993;
+extern const uint32_t X509KeyUsageExtension_CopyFrom_m186479533_MetadataUsageId = 10994;
+extern const uint32_t X509KeyUsageExtension_Decode_m3150759625_MetadataUsageId = 10995;
+extern const uint32_t X509KeyUsageExtension_Encode_m2128077825_MetadataUsageId = 10996;
+extern const uint32_t X509KeyUsageExtension_get_KeyUsages_m3263859785_MetadataUsageId = 10997;
+extern const uint32_t X509KeyUsageExtension_ToString_m3542316380_MetadataUsageId = 10998;
+extern const uint32_t X509Store__ctor_m275383717_MetadataUsageId = 10999;
+extern const uint32_t X509Store_BuildCertificatesCollection_m3030935583_MetadataUsageId = 11000;
+extern const uint32_t X509Store_BuildCrlsCollection_m1991312527_MetadataUsageId = 11001;
+extern const uint32_t X509Store_CheckStore_m2045435685_MetadataUsageId = 11002;
+extern const uint32_t X509Store_get_Certificates_m2149701265_MetadataUsageId = 11003;
+extern const uint32_t X509Store_get_Crls_m4075976598_MetadataUsageId = 11004;
+extern const uint32_t X509Store_Load_m2048139132_MetadataUsageId = 11005;
+extern const uint32_t X509Store_LoadCertificate_m1587806288_MetadataUsageId = 11006;
+extern const uint32_t X509Store_LoadCrl_m1881903843_MetadataUsageId = 11007;
+extern const uint32_t X509Store_Open_m909451489_MetadataUsageId = 11008;
+extern const uint32_t X509StoreManager_get_CurrentUser_m4040993045_MetadataUsageId = 11009;
+extern const uint32_t X509StoreManager_get_LocalMachine_m3994689999_MetadataUsageId = 11010;
+extern const uint32_t X509StoreManager_get_TrustedRootCertificates_m2180997293_MetadataUsageId = 11011;
+extern const uint32_t X509Stores_get_TrustedRoot_m1736182879_MetadataUsageId = 11012;
+extern const uint32_t X509Stores_Open_m1553467177_MetadataUsageId = 11013;
+extern const uint32_t X509SubjectKeyIdentifierExtension__ctor_m1397817642_MetadataUsageId = 11014;
+extern const uint32_t X509SubjectKeyIdentifierExtension__ctor_m201177607_MetadataUsageId = 11015;
+extern const uint32_t X509SubjectKeyIdentifierExtension__ctor_m2055934916_MetadataUsageId = 11016;
+extern const uint32_t X509SubjectKeyIdentifierExtension__ctor_m2644971776_MetadataUsageId = 11017;
+extern const uint32_t X509SubjectKeyIdentifierExtension__ctor_m3160552652_MetadataUsageId = 11018;
+extern const uint32_t X509SubjectKeyIdentifierExtension_CopyFrom_m1588766981_MetadataUsageId = 11019;
+extern const uint32_t X509SubjectKeyIdentifierExtension_Decode_m1505409124_MetadataUsageId = 11020;
+extern const uint32_t X509SubjectKeyIdentifierExtension_Encode_m3345759265_MetadataUsageId = 11021;
+extern const uint32_t X509SubjectKeyIdentifierExtension_FromHex_m1011249985_MetadataUsageId = 11022;
+extern const uint32_t X509SubjectKeyIdentifierExtension_get_SubjectKeyIdentifier_m3059478847_MetadataUsageId = 11023;
+extern const uint32_t X509SubjectKeyIdentifierExtension_ToString_m12089275_MetadataUsageId = 11024;
+extern const uint32_t Xbox360AmazonProfile__ctor_m647432164_MetadataUsageId = 11025;
+extern const uint32_t Xbox360AndroidProfile__ctor_m343281846_MetadataUsageId = 11026;
+extern const uint32_t Xbox360ControllerMacProfile__ctor_m2738099239_MetadataUsageId = 11027;
+extern const uint32_t Xbox360DriverMacProfile__ctor_m286248790_MetadataUsageId = 11028;
+extern const uint32_t Xbox360LinuxProfile__ctor_m863830139_MetadataUsageId = 11029;
+extern const uint32_t Xbox360MacProfile__ctor_m1992925320_MetadataUsageId = 11030;
+extern const uint32_t Xbox360MortalKombatFightStickMacProfile__ctor_m2600522424_MetadataUsageId = 11031;
+extern const uint32_t Xbox360RockCandyAndroidProfile__ctor_m382530019_MetadataUsageId = 11032;
+extern const uint32_t Xbox360WinProfile__ctor_m493617542_MetadataUsageId = 11033;
+extern const uint32_t Xbox360WiredWindowsNativeProfile__ctor_m1836489570_MetadataUsageId = 11034;
+extern const uint32_t Xbox360WirelessWindowsNativeProfile__ctor_m3663762967_MetadataUsageId = 11035;
+extern const uint32_t XboxOneBluetoothAndroidProfile__ctor_m605160133_MetadataUsageId = 11036;
+extern const uint32_t XboxOneControllerMacProfile__ctor_m910224053_MetadataUsageId = 11037;
+extern const uint32_t XboxOneDriverMacProfile__ctor_m2249201808_MetadataUsageId = 11038;
+extern const uint32_t XboxOneEliteWindows10AENativeProfile__ctor_m4080553473_MetadataUsageId = 11039;
+extern const uint32_t XboxOneEliteWindowsNativeProfile__ctor_m315059058_MetadataUsageId = 11040;
+extern const uint32_t XboxOneInputDevice__ctor_m2269806188_MetadataUsageId = 11041;
+extern const uint32_t XboxOneInputDevice_CacheAnalogAxisNameForId_m4119824099_MetadataUsageId = 11042;
+extern const uint32_t XboxOneInputDevice_CacheAnalogAxisNames_m3351499462_MetadataUsageId = 11043;
+extern const uint32_t XboxOneInputDeviceManager__ctor_m222233586_MetadataUsageId = 11044;
+extern const uint32_t XboxOneInputDeviceManager_Enable_m682580625_MetadataUsageId = 11045;
+extern const uint32_t XboxOneInputDeviceManager_UpdateInternal_m3809914533_MetadataUsageId = 11046;
+extern const uint32_t XboxOneMacProfile__ctor_m3701357089_MetadataUsageId = 11047;
+extern const uint32_t XboxOneProfile__ctor_m1998849800_MetadataUsageId = 11048;
+extern const uint32_t XboxOneWin10AEProfile__ctor_m2226835634_MetadataUsageId = 11049;
+extern const uint32_t XboxOneWin10Profile__ctor_m110967625_MetadataUsageId = 11050;
+extern const uint32_t XboxOneWindows10AENativeProfile__ctor_m164157544_MetadataUsageId = 11051;
+extern const uint32_t XboxOneWindows10NativeProfile__ctor_m2605879002_MetadataUsageId = 11052;
+extern const uint32_t XboxOneWindowsNativeProfile__ctor_m2441458040_MetadataUsageId = 11053;
+extern const uint32_t XboxOneWinProfile__ctor_m1548635182_MetadataUsageId = 11054;
+extern const uint32_t XboxOneWirelessAdapterWindowsNativeProfile__ctor_m2452998081_MetadataUsageId = 11055;
+extern const uint32_t XiamoiMacProfile__ctor_m3231396804_MetadataUsageId = 11056;
+extern const uint32_t XiamoiWinProfile__ctor_m2542591296_MetadataUsageId = 11057;
+extern const uint32_t XInputWindowsNativeProfile__ctor_m1875407206_MetadataUsageId = 11058;
+extern const uint32_t XTR_G2_MacNativeProfile__ctor_m1092350216_MetadataUsageId = 11059;
+extern const uint32_t XTR_G2_MacUnityProfile__ctor_m1408439440_MetadataUsageId = 11060;
+extern const uint32_t XTR_G2_WindowsNativeProfile__ctor_m314871028_MetadataUsageId = 11061;
+extern const uint32_t XTR_G2_WindowsUnityProfile__ctor_m3389538646_MetadataUsageId = 11062;
+extern const uint32_t XTR55_G2_MacNativeProfile__ctor_m4116482615_MetadataUsageId = 11063;
+extern const uint32_t XTR55_G2_MacUnityProfile__ctor_m4021054444_MetadataUsageId = 11064;
+extern const uint32_t XTR55_G2_WindowsNativeProfile__ctor_m4120010601_MetadataUsageId = 11065;
+extern const uint32_t XTR55_G2_WindowsUnityProfile__ctor_m1474036107_MetadataUsageId = 11066;

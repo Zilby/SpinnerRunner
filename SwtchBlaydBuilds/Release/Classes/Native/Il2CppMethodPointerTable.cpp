@@ -9224,6 +9224,7 @@ extern "C" void Component_GetComponentInChildren_m388868270 ();
 extern "C" void Component_GetComponentInParent_m779177818 ();
 extern "C" void Component_GetComponentsForListInternal_m1419905927 ();
 extern "C" void Component_GetComponents_m1102698478 ();
+extern "C" void Component_get_tag_m2716693327 ();
 extern "C" void Component_CompareTag_m1328479619 ();
 extern "C" void ComputeBuffer__ctor_m2741670761 ();
 extern "C" void ComputeBuffer__ctor_m365470372 ();
@@ -9401,6 +9402,7 @@ extern "C" void GameObject_set_layer_m3294992795 ();
 extern "C" void GameObject_SetActive_m796801857 ();
 extern "C" void GameObject_get_activeSelf_m1767405923 ();
 extern "C" void GameObject_get_activeInHierarchy_m2006396688 ();
+extern "C" void GameObject_get_tag_m3951609671 ();
 extern "C" void GameObject_CompareTag_m3144439756 ();
 extern "C" void GameObject_FindGameObjectWithTag_m2129039296 ();
 extern "C" void GameObject_SendMessage_m3720186693 ();
@@ -14021,6 +14023,10 @@ extern "C" void TMPro_ExtensionMethods_Compare_m267473099 ();
 extern "C" void TMPro_ExtensionMethods_Compare_m2242521107 ();
 extern "C" void VertexGradient__ctor_m1209748059_AdjustorThunk ();
 extern "C" void VertexGradient__ctor_m1854884556_AdjustorThunk ();
+extern "C" void AnalyticsEvent_get_debugMode_m2240954048 ();
+extern "C" void AnalyticsEvent_OnValidationFailed_m2609604624 ();
+extern "C" void AnalyticsEvent_Custom_m227997836 ();
+extern "C" void AnalyticsEvent__cctor_m3994162614 ();
 extern "C" void Advertisement_LoadRuntime_m1930758518 ();
 extern "C" void Advertisement_LoadEditor_m2032877435 ();
 extern "C" void Advertisement_Load_m3998104966 ();
@@ -14238,10 +14244,6 @@ extern "C" void UnsupportedPlatform_IsReady_m721141642 ();
 extern "C" void UnsupportedPlatform_GetPlacementState_m3500418431 ();
 extern "C" void UnsupportedPlatform_Show_m236483508 ();
 extern "C" void UnsupportedPlatform_SetMetaData_m3305125483 ();
-extern "C" void AnalyticsEvent_get_debugMode_m2240954048 ();
-extern "C" void AnalyticsEvent_OnValidationFailed_m2609604624 ();
-extern "C" void AnalyticsEvent_Custom_m227997836 ();
-extern "C" void AnalyticsEvent__cctor_m3994162614 ();
 extern "C" void AnalyticsEventParam__ctor_m1888826734 ();
 extern "C" void AnalyticsEventParam_get_requirementType_m1268059884 ();
 extern "C" void AnalyticsEventParam_get_groupID_m569309506 ();
@@ -17142,7 +17144,7 @@ extern "C" void Wall_OnTriggerEnter2D_m1456502492 ();
 extern "C" void Wall_CollisionEvent_m1948758426 ();
 extern "C" void Wall_Reset_m2174162741 ();
 extern "C" void Wall_Init_m4213948973 ();
-extern const Il2CppMethodPointer g_MethodPointers[17124] = 
+extern const Il2CppMethodPointer g_MethodPointers[17126] = 
 {
 	Locale_GetText_m3374010885,
 	Locale_GetText_m1601577974,
@@ -26350,6 +26352,7 @@ extern const Il2CppMethodPointer g_MethodPointers[17124] =
 	Component_GetComponentInParent_m779177818,
 	Component_GetComponentsForListInternal_m1419905927,
 	Component_GetComponents_m1102698478,
+	Component_get_tag_m2716693327,
 	Component_CompareTag_m1328479619,
 	ComputeBuffer__ctor_m2741670761,
 	ComputeBuffer__ctor_m365470372,
@@ -26527,6 +26530,7 @@ extern const Il2CppMethodPointer g_MethodPointers[17124] =
 	GameObject_SetActive_m796801857,
 	GameObject_get_activeSelf_m1767405923,
 	GameObject_get_activeInHierarchy_m2006396688,
+	GameObject_get_tag_m3951609671,
 	GameObject_CompareTag_m3144439756,
 	GameObject_FindGameObjectWithTag_m2129039296,
 	GameObject_SendMessage_m3720186693,
@@ -31147,6 +31151,10 @@ extern const Il2CppMethodPointer g_MethodPointers[17124] =
 	TMPro_ExtensionMethods_Compare_m2242521107,
 	VertexGradient__ctor_m1209748059_AdjustorThunk,
 	VertexGradient__ctor_m1854884556_AdjustorThunk,
+	AnalyticsEvent_get_debugMode_m2240954048,
+	AnalyticsEvent_OnValidationFailed_m2609604624,
+	AnalyticsEvent_Custom_m227997836,
+	AnalyticsEvent__cctor_m3994162614,
 	Advertisement_LoadRuntime_m1930758518,
 	Advertisement_LoadEditor_m2032877435,
 	Advertisement_Load_m3998104966,
@@ -31364,10 +31372,6 @@ extern const Il2CppMethodPointer g_MethodPointers[17124] =
 	UnsupportedPlatform_GetPlacementState_m3500418431,
 	UnsupportedPlatform_Show_m236483508,
 	UnsupportedPlatform_SetMetaData_m3305125483,
-	AnalyticsEvent_get_debugMode_m2240954048,
-	AnalyticsEvent_OnValidationFailed_m2609604624,
-	AnalyticsEvent_Custom_m227997836,
-	AnalyticsEvent__cctor_m3994162614,
 	AnalyticsEventParam__ctor_m1888826734,
 	AnalyticsEventParam_get_requirementType_m1268059884,
 	AnalyticsEventParam_get_groupID_m569309506,
