@@ -96,15 +96,6 @@ public class Pooler : MonoBehaviour
 	/// <returns></returns>
 	public Poolable GetPooledObject(PooledName tag, float x = 0.0f)
 	{
-		List<Poolable> pooled = activePool[tag];
-		if(pooled.Count != 0) {
-			print(tag.ToString() + ("" + (transform.position.y - pooled[0].transform.position.y)));
-		}
-		while (pooled.Count != 0 && transform.position.y - pooled[0].transform.position.y > 7)
-		{
-			Poolable p = pooled[0];
-			ReturnPooledObject(p);
-		}
 		List<Poolable> pool = unactivePool[tag];
 		if (pool.Count != 0)
 		{

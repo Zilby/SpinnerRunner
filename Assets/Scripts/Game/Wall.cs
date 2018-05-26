@@ -5,11 +5,19 @@ using UnityEngine;
 /// <summary>
 /// Base class for objects colliding with the player. 
 /// </summary>
-public class Wall : Poolable {
+public class Wall : Poolable
+{
 
 	private void OnTriggerEnter2D(Collider2D collision)
 	{
-		CollisionEvent();
+		if (collision.tag == "Player")
+		{
+			CollisionEvent();
+		}
+		else
+		{
+			Pooler.returnPooledEvent(this);
+		}
 	}
 
 	/// <summary>
@@ -24,7 +32,7 @@ public class Wall : Poolable {
 	/// <summary>
 	/// Resets this poolable object so that it's ready to be used again.
 	/// </summary>
-	public override void Reset() {}
+	public override void Reset() { }
 
 	/// <summary>
 	/// Initializes this pooled object after being pulled from a pool. 
