@@ -1694,10 +1694,6 @@ RuntimeClass* FastAction_1_t3044626357_il2cpp_TypeInfo_var;
 RuntimeClass* FastAction_t3491443480_il2cpp_TypeInfo_var;
 RuntimeClass* FastAction_2_t2395899227_il2cpp_TypeInfo_var;
 RuntimeClass* FastAction_1_t4292545838_il2cpp_TypeInfo_var;
-RuntimeClass* AnalyticsEvent_t4058973021_il2cpp_TypeInfo_var;
-RuntimeClass* ICollection_1_t3796219568_il2cpp_TypeInfo_var;
-RuntimeClass* AnalyticsResult_t2273004240_il2cpp_TypeInfo_var;
-RuntimeClass* Dictionary_2_t1632706988_il2cpp_TypeInfo_var;
 RuntimeClass* Advertisement_t842671397_il2cpp_TypeInfo_var;
 RuntimeClass* Platform_t1698302846_il2cpp_TypeInfo_var;
 RuntimeClass* Platform_t1647901813_il2cpp_TypeInfo_var;
@@ -1738,6 +1734,10 @@ RuntimeClass* U3CUnityAdsDidErrorU3Ec__AnonStorey1_t2659421617_il2cpp_TypeInfo_v
 RuntimeClass* U3CUnityAdsDidStartU3Ec__AnonStorey2_t250005642_il2cpp_TypeInfo_var;
 RuntimeClass* U3CUnityAdsDidFinishU3Ec__AnonStorey3_t3126029544_il2cpp_TypeInfo_var;
 RuntimeClass* U3CUnityAdsDidFinishU3Ec__AnonStorey4_t3126029549_il2cpp_TypeInfo_var;
+RuntimeClass* AnalyticsEvent_t4058973021_il2cpp_TypeInfo_var;
+RuntimeClass* ICollection_1_t3796219568_il2cpp_TypeInfo_var;
+RuntimeClass* AnalyticsResult_t2273004240_il2cpp_TypeInfo_var;
+RuntimeClass* Dictionary_2_t1632706988_il2cpp_TypeInfo_var;
 RuntimeClass* List_1_t3952196670_il2cpp_TypeInfo_var;
 RuntimeClass* EventTrigger_t2527451695_il2cpp_TypeInfo_var;
 RuntimeClass* StandardEventPayload_t1629891255_il2cpp_TypeInfo_var;
@@ -3036,8 +3036,6 @@ const RuntimeMethod* FastAction_1__ctor_m3640206815_RuntimeMethod_var;
 const RuntimeMethod* FastAction_1__ctor_m1820454269_RuntimeMethod_var;
 const RuntimeMethod* FastAction_2__ctor_m2106952380_RuntimeMethod_var;
 const RuntimeMethod* FastAction_1__ctor_m375990129_RuntimeMethod_var;
-const RuntimeMethod* Dictionary_2__ctor_m1007136140_RuntimeMethod_var;
-const RuntimeMethod* Dictionary_2_Add_m1316431193_RuntimeMethod_var;
 const RuntimeMethod* Advertisement_U3CInitializeU3Em__0_m2484897031_RuntimeMethod_var;
 const RuntimeMethod* EventHandler_1__ctor_m247885508_RuntimeMethod_var;
 const RuntimeMethod* Advertisement_U3CInitializeU3Em__1_m2109031916_RuntimeMethod_var;
@@ -3079,6 +3077,8 @@ const RuntimeMethod* U3CUnityAdsReadyU3Ec__AnonStorey0_U3CU3Em__0_m656675668_Run
 const RuntimeMethod* U3CUnityAdsDidErrorU3Ec__AnonStorey1_U3CU3Em__0_m1015626936_RuntimeMethod_var;
 const RuntimeMethod* U3CUnityAdsDidStartU3Ec__AnonStorey2_U3CU3Em__0_m413760534_RuntimeMethod_var;
 const RuntimeMethod* U3CUnityAdsDidFinishU3Ec__AnonStorey4_U3CU3Em__0_m944271777_RuntimeMethod_var;
+const RuntimeMethod* Dictionary_2__ctor_m1007136140_RuntimeMethod_var;
+const RuntimeMethod* Dictionary_2_Add_m1316431193_RuntimeMethod_var;
 const RuntimeMethod* List_1__ctor_m2118976410_RuntimeMethod_var;
 const RuntimeMethod* List_1_get_Count_m3935023107_RuntimeMethod_var;
 const RuntimeMethod* List_1_get_Item_m1027239081_RuntimeMethod_var;
@@ -7064,30 +7064,6 @@ String_t* _stringLiteral3145373219;
 String_t* _stringLiteral313270868;
 String_t* _stringLiteral1772946456;
 String_t* _stringLiteral3195452719;
-String_t* _stringLiteral3082188891;
-String_t* _stringLiteral3848816014;
-String_t* _stringLiteral3610066572;
-String_t* _stringLiteral3713525075;
-String_t* _stringLiteral1348467685;
-String_t* _stringLiteral69560130;
-String_t* _stringLiteral2157825051;
-String_t* _stringLiteral314968592;
-String_t* _stringLiteral223781046;
-String_t* _stringLiteral591401181;
-String_t* _stringLiteral2670495305;
-String_t* _stringLiteral3038431854;
-String_t* _stringLiteral1860111314;
-String_t* _stringLiteral3191806752;
-String_t* _stringLiteral2793515199;
-String_t* _stringLiteral1822927358;
-String_t* _stringLiteral3946338038;
-String_t* _stringLiteral1285374328;
-String_t* _stringLiteral1477325238;
-String_t* _stringLiteral359657463;
-String_t* _stringLiteral2913916239;
-String_t* _stringLiteral4063851185;
-String_t* _stringLiteral2569810339;
-String_t* _stringLiteral243880865;
 String_t* _stringLiteral4107934516;
 String_t* _stringLiteral2258625258;
 String_t* _stringLiteral1947076759;
@@ -7132,6 +7108,30 @@ String_t* _stringLiteral3342921282;
 String_t* _stringLiteral2170070431;
 String_t* _stringLiteral1332923527;
 String_t* _stringLiteral3541090105;
+String_t* _stringLiteral3082188891;
+String_t* _stringLiteral3848816014;
+String_t* _stringLiteral3610066572;
+String_t* _stringLiteral3713525075;
+String_t* _stringLiteral1348467685;
+String_t* _stringLiteral69560130;
+String_t* _stringLiteral2157825051;
+String_t* _stringLiteral314968592;
+String_t* _stringLiteral223781046;
+String_t* _stringLiteral591401181;
+String_t* _stringLiteral2670495305;
+String_t* _stringLiteral3038431854;
+String_t* _stringLiteral1860111314;
+String_t* _stringLiteral3191806752;
+String_t* _stringLiteral2793515199;
+String_t* _stringLiteral1822927358;
+String_t* _stringLiteral3946338038;
+String_t* _stringLiteral1285374328;
+String_t* _stringLiteral1477325238;
+String_t* _stringLiteral359657463;
+String_t* _stringLiteral2913916239;
+String_t* _stringLiteral4063851185;
+String_t* _stringLiteral2569810339;
+String_t* _stringLiteral243880865;
 String_t* _stringLiteral3578372784;
 String_t* _stringLiteral4288880708;
 String_t* _stringLiteral1935206035;
@@ -10562,10 +10562,6 @@ extern void** const g_MetadataUsages[8866] =
 	(void**)(&FastAction_t3491443480_il2cpp_TypeInfo_var),
 	(void**)(&FastAction_2_t2395899227_il2cpp_TypeInfo_var),
 	(void**)(&FastAction_1_t4292545838_il2cpp_TypeInfo_var),
-	(void**)(&AnalyticsEvent_t4058973021_il2cpp_TypeInfo_var),
-	(void**)(&ICollection_1_t3796219568_il2cpp_TypeInfo_var),
-	(void**)(&AnalyticsResult_t2273004240_il2cpp_TypeInfo_var),
-	(void**)(&Dictionary_2_t1632706988_il2cpp_TypeInfo_var),
 	(void**)(&Advertisement_t842671397_il2cpp_TypeInfo_var),
 	(void**)(&Platform_t1698302846_il2cpp_TypeInfo_var),
 	(void**)(&Platform_t1647901813_il2cpp_TypeInfo_var),
@@ -10606,6 +10602,10 @@ extern void** const g_MetadataUsages[8866] =
 	(void**)(&U3CUnityAdsDidStartU3Ec__AnonStorey2_t250005642_il2cpp_TypeInfo_var),
 	(void**)(&U3CUnityAdsDidFinishU3Ec__AnonStorey3_t3126029544_il2cpp_TypeInfo_var),
 	(void**)(&U3CUnityAdsDidFinishU3Ec__AnonStorey4_t3126029549_il2cpp_TypeInfo_var),
+	(void**)(&AnalyticsEvent_t4058973021_il2cpp_TypeInfo_var),
+	(void**)(&ICollection_1_t3796219568_il2cpp_TypeInfo_var),
+	(void**)(&AnalyticsResult_t2273004240_il2cpp_TypeInfo_var),
+	(void**)(&Dictionary_2_t1632706988_il2cpp_TypeInfo_var),
 	(void**)(&List_1_t3952196670_il2cpp_TypeInfo_var),
 	(void**)(&EventTrigger_t2527451695_il2cpp_TypeInfo_var),
 	(void**)(&StandardEventPayload_t1629891255_il2cpp_TypeInfo_var),
@@ -11904,8 +11904,6 @@ extern void** const g_MetadataUsages[8866] =
 	(void**)(&FastAction_1__ctor_m1820454269_RuntimeMethod_var),
 	(void**)(&FastAction_2__ctor_m2106952380_RuntimeMethod_var),
 	(void**)(&FastAction_1__ctor_m375990129_RuntimeMethod_var),
-	(void**)(&Dictionary_2__ctor_m1007136140_RuntimeMethod_var),
-	(void**)(&Dictionary_2_Add_m1316431193_RuntimeMethod_var),
 	(void**)(&Advertisement_U3CInitializeU3Em__0_m2484897031_RuntimeMethod_var),
 	(void**)(&EventHandler_1__ctor_m247885508_RuntimeMethod_var),
 	(void**)(&Advertisement_U3CInitializeU3Em__1_m2109031916_RuntimeMethod_var),
@@ -11947,6 +11945,8 @@ extern void** const g_MetadataUsages[8866] =
 	(void**)(&U3CUnityAdsDidErrorU3Ec__AnonStorey1_U3CU3Em__0_m1015626936_RuntimeMethod_var),
 	(void**)(&U3CUnityAdsDidStartU3Ec__AnonStorey2_U3CU3Em__0_m413760534_RuntimeMethod_var),
 	(void**)(&U3CUnityAdsDidFinishU3Ec__AnonStorey4_U3CU3Em__0_m944271777_RuntimeMethod_var),
+	(void**)(&Dictionary_2__ctor_m1007136140_RuntimeMethod_var),
+	(void**)(&Dictionary_2_Add_m1316431193_RuntimeMethod_var),
 	(void**)(&List_1__ctor_m2118976410_RuntimeMethod_var),
 	(void**)(&List_1_get_Count_m3935023107_RuntimeMethod_var),
 	(void**)(&List_1_get_Item_m1027239081_RuntimeMethod_var),
@@ -15932,30 +15932,6 @@ extern void** const g_MetadataUsages[8866] =
 	(void**)(&_stringLiteral313270868),
 	(void**)(&_stringLiteral1772946456),
 	(void**)(&_stringLiteral3195452719),
-	(void**)(&_stringLiteral3082188891),
-	(void**)(&_stringLiteral3848816014),
-	(void**)(&_stringLiteral3610066572),
-	(void**)(&_stringLiteral3713525075),
-	(void**)(&_stringLiteral1348467685),
-	(void**)(&_stringLiteral69560130),
-	(void**)(&_stringLiteral2157825051),
-	(void**)(&_stringLiteral314968592),
-	(void**)(&_stringLiteral223781046),
-	(void**)(&_stringLiteral591401181),
-	(void**)(&_stringLiteral2670495305),
-	(void**)(&_stringLiteral3038431854),
-	(void**)(&_stringLiteral1860111314),
-	(void**)(&_stringLiteral3191806752),
-	(void**)(&_stringLiteral2793515199),
-	(void**)(&_stringLiteral1822927358),
-	(void**)(&_stringLiteral3946338038),
-	(void**)(&_stringLiteral1285374328),
-	(void**)(&_stringLiteral1477325238),
-	(void**)(&_stringLiteral359657463),
-	(void**)(&_stringLiteral2913916239),
-	(void**)(&_stringLiteral4063851185),
-	(void**)(&_stringLiteral2569810339),
-	(void**)(&_stringLiteral243880865),
 	(void**)(&_stringLiteral4107934516),
 	(void**)(&_stringLiteral2258625258),
 	(void**)(&_stringLiteral1947076759),
@@ -16000,6 +15976,30 @@ extern void** const g_MetadataUsages[8866] =
 	(void**)(&_stringLiteral2170070431),
 	(void**)(&_stringLiteral1332923527),
 	(void**)(&_stringLiteral3541090105),
+	(void**)(&_stringLiteral3082188891),
+	(void**)(&_stringLiteral3848816014),
+	(void**)(&_stringLiteral3610066572),
+	(void**)(&_stringLiteral3713525075),
+	(void**)(&_stringLiteral1348467685),
+	(void**)(&_stringLiteral69560130),
+	(void**)(&_stringLiteral2157825051),
+	(void**)(&_stringLiteral314968592),
+	(void**)(&_stringLiteral223781046),
+	(void**)(&_stringLiteral591401181),
+	(void**)(&_stringLiteral2670495305),
+	(void**)(&_stringLiteral3038431854),
+	(void**)(&_stringLiteral1860111314),
+	(void**)(&_stringLiteral3191806752),
+	(void**)(&_stringLiteral2793515199),
+	(void**)(&_stringLiteral1822927358),
+	(void**)(&_stringLiteral3946338038),
+	(void**)(&_stringLiteral1285374328),
+	(void**)(&_stringLiteral1477325238),
+	(void**)(&_stringLiteral359657463),
+	(void**)(&_stringLiteral2913916239),
+	(void**)(&_stringLiteral4063851185),
+	(void**)(&_stringLiteral2569810339),
+	(void**)(&_stringLiteral243880865),
 	(void**)(&_stringLiteral3578372784),
 	(void**)(&_stringLiteral4288880708),
 	(void**)(&_stringLiteral1935206035),

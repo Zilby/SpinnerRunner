@@ -452,7 +452,6 @@ extern const Il2CppType KeyValuePair_2_t3478638126_0_0_0;
 extern const Il2CppType TMP_SubMesh_t2613037997_0_0_0;
 extern const Il2CppType TMP_SubMeshUI_t1578871311_0_0_0;
 extern const Il2CppType SpriteData_t3048397587_0_0_0;
-extern const Il2CppType KeyValuePair_2_t4030379155_0_0_0;
 extern const Il2CppType StartEventArgs_t4291826435_0_0_0;
 extern const Il2CppType FinishEventArgs_t2984178802_0_0_0;
 extern const Il2CppType ShowResult_t3070553623_0_0_0;
@@ -460,6 +459,7 @@ extern const Il2CppType Action_1_t535963774_0_0_0;
 extern const Il2CppType CallbackExecutor_t363496179_0_0_0;
 extern const Il2CppType ReadyEventArgs_t549087536_0_0_0;
 extern const Il2CppType ErrorEventArgs_t2253147013_0_0_0;
+extern const Il2CppType KeyValuePair_2_t4030379155_0_0_0;
 extern const Il2CppType AnalyticsEventParam_t2480121928_0_0_0;
 extern const Il2CppType List_1_t1569362707_0_0_0;
 extern const Il2CppType KeyValuePair_2_t3752291173_0_0_0;
@@ -2278,14 +2278,6 @@ static const RuntimeType* GenInst_TMP_SubMeshUI_t1578871311_0_0_0_Types[] = { (&
 extern const Il2CppGenericInst GenInst_TMP_SubMeshUI_t1578871311_0_0_0 = { 1, GenInst_TMP_SubMeshUI_t1578871311_0_0_0_Types };
 static const RuntimeType* GenInst_SpriteData_t3048397587_0_0_0_Types[] = { (&SpriteData_t3048397587_0_0_0) };
 extern const Il2CppGenericInst GenInst_SpriteData_t3048397587_0_0_0 = { 1, GenInst_SpriteData_t3048397587_0_0_0_Types };
-static const RuntimeType* GenInst_String_t_0_0_0_String_t_0_0_0_DictionaryEntry_t3123975638_0_0_0_Types[] = { (&String_t_0_0_0), (&String_t_0_0_0), (&DictionaryEntry_t3123975638_0_0_0) };
-extern const Il2CppGenericInst GenInst_String_t_0_0_0_String_t_0_0_0_DictionaryEntry_t3123975638_0_0_0 = { 3, GenInst_String_t_0_0_0_String_t_0_0_0_DictionaryEntry_t3123975638_0_0_0_Types };
-static const RuntimeType* GenInst_KeyValuePair_2_t4030379155_0_0_0_Types[] = { (&KeyValuePair_2_t4030379155_0_0_0) };
-extern const Il2CppGenericInst GenInst_KeyValuePair_2_t4030379155_0_0_0 = { 1, GenInst_KeyValuePair_2_t4030379155_0_0_0_Types };
-static const RuntimeType* GenInst_String_t_0_0_0_String_t_0_0_0_KeyValuePair_2_t4030379155_0_0_0_Types[] = { (&String_t_0_0_0), (&String_t_0_0_0), (&KeyValuePair_2_t4030379155_0_0_0) };
-extern const Il2CppGenericInst GenInst_String_t_0_0_0_String_t_0_0_0_KeyValuePair_2_t4030379155_0_0_0 = { 3, GenInst_String_t_0_0_0_String_t_0_0_0_KeyValuePair_2_t4030379155_0_0_0_Types };
-static const RuntimeType* GenInst_String_t_0_0_0_String_t_0_0_0_String_t_0_0_0_Types[] = { (&String_t_0_0_0), (&String_t_0_0_0), (&String_t_0_0_0) };
-extern const Il2CppGenericInst GenInst_String_t_0_0_0_String_t_0_0_0_String_t_0_0_0 = { 3, GenInst_String_t_0_0_0_String_t_0_0_0_String_t_0_0_0_Types };
 static const RuntimeType* GenInst_StartEventArgs_t4291826435_0_0_0_Types[] = { (&StartEventArgs_t4291826435_0_0_0) };
 extern const Il2CppGenericInst GenInst_StartEventArgs_t4291826435_0_0_0 = { 1, GenInst_StartEventArgs_t4291826435_0_0_0_Types };
 static const RuntimeType* GenInst_FinishEventArgs_t2984178802_0_0_0_Types[] = { (&FinishEventArgs_t2984178802_0_0_0) };
@@ -2300,6 +2292,14 @@ static const RuntimeType* GenInst_ReadyEventArgs_t549087536_0_0_0_Types[] = { (&
 extern const Il2CppGenericInst GenInst_ReadyEventArgs_t549087536_0_0_0 = { 1, GenInst_ReadyEventArgs_t549087536_0_0_0_Types };
 static const RuntimeType* GenInst_ErrorEventArgs_t2253147013_0_0_0_Types[] = { (&ErrorEventArgs_t2253147013_0_0_0) };
 extern const Il2CppGenericInst GenInst_ErrorEventArgs_t2253147013_0_0_0 = { 1, GenInst_ErrorEventArgs_t2253147013_0_0_0_Types };
+static const RuntimeType* GenInst_String_t_0_0_0_String_t_0_0_0_DictionaryEntry_t3123975638_0_0_0_Types[] = { (&String_t_0_0_0), (&String_t_0_0_0), (&DictionaryEntry_t3123975638_0_0_0) };
+extern const Il2CppGenericInst GenInst_String_t_0_0_0_String_t_0_0_0_DictionaryEntry_t3123975638_0_0_0 = { 3, GenInst_String_t_0_0_0_String_t_0_0_0_DictionaryEntry_t3123975638_0_0_0_Types };
+static const RuntimeType* GenInst_KeyValuePair_2_t4030379155_0_0_0_Types[] = { (&KeyValuePair_2_t4030379155_0_0_0) };
+extern const Il2CppGenericInst GenInst_KeyValuePair_2_t4030379155_0_0_0 = { 1, GenInst_KeyValuePair_2_t4030379155_0_0_0_Types };
+static const RuntimeType* GenInst_String_t_0_0_0_String_t_0_0_0_KeyValuePair_2_t4030379155_0_0_0_Types[] = { (&String_t_0_0_0), (&String_t_0_0_0), (&KeyValuePair_2_t4030379155_0_0_0) };
+extern const Il2CppGenericInst GenInst_String_t_0_0_0_String_t_0_0_0_KeyValuePair_2_t4030379155_0_0_0 = { 3, GenInst_String_t_0_0_0_String_t_0_0_0_KeyValuePair_2_t4030379155_0_0_0_Types };
+static const RuntimeType* GenInst_String_t_0_0_0_String_t_0_0_0_String_t_0_0_0_Types[] = { (&String_t_0_0_0), (&String_t_0_0_0), (&String_t_0_0_0) };
+extern const Il2CppGenericInst GenInst_String_t_0_0_0_String_t_0_0_0_String_t_0_0_0 = { 3, GenInst_String_t_0_0_0_String_t_0_0_0_String_t_0_0_0_Types };
 static const RuntimeType* GenInst_AnalyticsEventParam_t2480121928_0_0_0_Types[] = { (&AnalyticsEventParam_t2480121928_0_0_0) };
 extern const Il2CppGenericInst GenInst_AnalyticsEventParam_t2480121928_0_0_0 = { 1, GenInst_AnalyticsEventParam_t2480121928_0_0_0_Types };
 static const RuntimeType* GenInst_String_t_0_0_0_List_1_t1569362707_0_0_0_Types[] = { (&String_t_0_0_0), (&List_1_t1569362707_0_0_0) };
@@ -4110,10 +4110,6 @@ extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[1266] =
 	&GenInst_TMP_SubMesh_t2613037997_0_0_0,
 	&GenInst_TMP_SubMeshUI_t1578871311_0_0_0,
 	&GenInst_SpriteData_t3048397587_0_0_0,
-	&GenInst_String_t_0_0_0_String_t_0_0_0_DictionaryEntry_t3123975638_0_0_0,
-	&GenInst_KeyValuePair_2_t4030379155_0_0_0,
-	&GenInst_String_t_0_0_0_String_t_0_0_0_KeyValuePair_2_t4030379155_0_0_0,
-	&GenInst_String_t_0_0_0_String_t_0_0_0_String_t_0_0_0,
 	&GenInst_StartEventArgs_t4291826435_0_0_0,
 	&GenInst_FinishEventArgs_t2984178802_0_0_0,
 	&GenInst_ShowResult_t3070553623_0_0_0,
@@ -4121,6 +4117,10 @@ extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[1266] =
 	&GenInst_CallbackExecutor_t363496179_0_0_0,
 	&GenInst_ReadyEventArgs_t549087536_0_0_0,
 	&GenInst_ErrorEventArgs_t2253147013_0_0_0,
+	&GenInst_String_t_0_0_0_String_t_0_0_0_DictionaryEntry_t3123975638_0_0_0,
+	&GenInst_KeyValuePair_2_t4030379155_0_0_0,
+	&GenInst_String_t_0_0_0_String_t_0_0_0_KeyValuePair_2_t4030379155_0_0_0,
+	&GenInst_String_t_0_0_0_String_t_0_0_0_String_t_0_0_0,
 	&GenInst_AnalyticsEventParam_t2480121928_0_0_0,
 	&GenInst_String_t_0_0_0_List_1_t1569362707_0_0_0,
 	&GenInst_List_1_t1569362707_0_0_0,

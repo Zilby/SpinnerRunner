@@ -827,48 +827,68 @@ public:
 struct  U3CInitializeU3Ec__Iterator0_t3702636450  : public RuntimeObject
 {
 public:
+	// System.Boolean MenuManager/<Initialize>c__Iterator0::showAd
+	bool ___showAd_0;
+	// System.Single MenuManager/<Initialize>c__Iterator0::<time>__1
+	float ___U3CtimeU3E__1_1;
 	// MenuManager MenuManager/<Initialize>c__Iterator0::$this
-	MenuManager_t2761117704 * ___U24this_0;
+	MenuManager_t2761117704 * ___U24this_2;
 	// System.Object MenuManager/<Initialize>c__Iterator0::$current
-	RuntimeObject * ___U24current_1;
+	RuntimeObject * ___U24current_3;
 	// System.Boolean MenuManager/<Initialize>c__Iterator0::$disposing
-	bool ___U24disposing_2;
+	bool ___U24disposing_4;
 	// System.Int32 MenuManager/<Initialize>c__Iterator0::$PC
-	int32_t ___U24PC_3;
+	int32_t ___U24PC_5;
 
 public:
-	inline static int32_t get_offset_of_U24this_0() { return static_cast<int32_t>(offsetof(U3CInitializeU3Ec__Iterator0_t3702636450, ___U24this_0)); }
-	inline MenuManager_t2761117704 * get_U24this_0() const { return ___U24this_0; }
-	inline MenuManager_t2761117704 ** get_address_of_U24this_0() { return &___U24this_0; }
-	inline void set_U24this_0(MenuManager_t2761117704 * value)
+	inline static int32_t get_offset_of_showAd_0() { return static_cast<int32_t>(offsetof(U3CInitializeU3Ec__Iterator0_t3702636450, ___showAd_0)); }
+	inline bool get_showAd_0() const { return ___showAd_0; }
+	inline bool* get_address_of_showAd_0() { return &___showAd_0; }
+	inline void set_showAd_0(bool value)
 	{
-		___U24this_0 = value;
-		Il2CppCodeGenWriteBarrier((&___U24this_0), value);
+		___showAd_0 = value;
 	}
 
-	inline static int32_t get_offset_of_U24current_1() { return static_cast<int32_t>(offsetof(U3CInitializeU3Ec__Iterator0_t3702636450, ___U24current_1)); }
-	inline RuntimeObject * get_U24current_1() const { return ___U24current_1; }
-	inline RuntimeObject ** get_address_of_U24current_1() { return &___U24current_1; }
-	inline void set_U24current_1(RuntimeObject * value)
+	inline static int32_t get_offset_of_U3CtimeU3E__1_1() { return static_cast<int32_t>(offsetof(U3CInitializeU3Ec__Iterator0_t3702636450, ___U3CtimeU3E__1_1)); }
+	inline float get_U3CtimeU3E__1_1() const { return ___U3CtimeU3E__1_1; }
+	inline float* get_address_of_U3CtimeU3E__1_1() { return &___U3CtimeU3E__1_1; }
+	inline void set_U3CtimeU3E__1_1(float value)
 	{
-		___U24current_1 = value;
-		Il2CppCodeGenWriteBarrier((&___U24current_1), value);
+		___U3CtimeU3E__1_1 = value;
 	}
 
-	inline static int32_t get_offset_of_U24disposing_2() { return static_cast<int32_t>(offsetof(U3CInitializeU3Ec__Iterator0_t3702636450, ___U24disposing_2)); }
-	inline bool get_U24disposing_2() const { return ___U24disposing_2; }
-	inline bool* get_address_of_U24disposing_2() { return &___U24disposing_2; }
-	inline void set_U24disposing_2(bool value)
+	inline static int32_t get_offset_of_U24this_2() { return static_cast<int32_t>(offsetof(U3CInitializeU3Ec__Iterator0_t3702636450, ___U24this_2)); }
+	inline MenuManager_t2761117704 * get_U24this_2() const { return ___U24this_2; }
+	inline MenuManager_t2761117704 ** get_address_of_U24this_2() { return &___U24this_2; }
+	inline void set_U24this_2(MenuManager_t2761117704 * value)
 	{
-		___U24disposing_2 = value;
+		___U24this_2 = value;
+		Il2CppCodeGenWriteBarrier((&___U24this_2), value);
 	}
 
-	inline static int32_t get_offset_of_U24PC_3() { return static_cast<int32_t>(offsetof(U3CInitializeU3Ec__Iterator0_t3702636450, ___U24PC_3)); }
-	inline int32_t get_U24PC_3() const { return ___U24PC_3; }
-	inline int32_t* get_address_of_U24PC_3() { return &___U24PC_3; }
-	inline void set_U24PC_3(int32_t value)
+	inline static int32_t get_offset_of_U24current_3() { return static_cast<int32_t>(offsetof(U3CInitializeU3Ec__Iterator0_t3702636450, ___U24current_3)); }
+	inline RuntimeObject * get_U24current_3() const { return ___U24current_3; }
+	inline RuntimeObject ** get_address_of_U24current_3() { return &___U24current_3; }
+	inline void set_U24current_3(RuntimeObject * value)
 	{
-		___U24PC_3 = value;
+		___U24current_3 = value;
+		Il2CppCodeGenWriteBarrier((&___U24current_3), value);
+	}
+
+	inline static int32_t get_offset_of_U24disposing_4() { return static_cast<int32_t>(offsetof(U3CInitializeU3Ec__Iterator0_t3702636450, ___U24disposing_4)); }
+	inline bool get_U24disposing_4() const { return ___U24disposing_4; }
+	inline bool* get_address_of_U24disposing_4() { return &___U24disposing_4; }
+	inline void set_U24disposing_4(bool value)
+	{
+		___U24disposing_4 = value;
+	}
+
+	inline static int32_t get_offset_of_U24PC_5() { return static_cast<int32_t>(offsetof(U3CInitializeU3Ec__Iterator0_t3702636450, ___U24PC_5)); }
+	inline int32_t get_U24PC_5() const { return ___U24PC_5; }
+	inline int32_t* get_address_of_U24PC_5() { return &___U24PC_5; }
+	inline void set_U24PC_5(int32_t value)
+	{
+		___U24PC_5 = value;
 	}
 };
 
@@ -7571,12 +7591,14 @@ extern const int32_t g_FieldOffsetTable2959[15] =
 	MenuManager_t2761117704::get_offset_of_soundOff_16(),
 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2960 = { sizeof (U3CInitializeU3Ec__Iterator0_t3702636450), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable2960[4] = 
+extern const int32_t g_FieldOffsetTable2960[6] = 
 {
-	U3CInitializeU3Ec__Iterator0_t3702636450::get_offset_of_U24this_0(),
-	U3CInitializeU3Ec__Iterator0_t3702636450::get_offset_of_U24current_1(),
-	U3CInitializeU3Ec__Iterator0_t3702636450::get_offset_of_U24disposing_2(),
-	U3CInitializeU3Ec__Iterator0_t3702636450::get_offset_of_U24PC_3(),
+	U3CInitializeU3Ec__Iterator0_t3702636450::get_offset_of_showAd_0(),
+	U3CInitializeU3Ec__Iterator0_t3702636450::get_offset_of_U3CtimeU3E__1_1(),
+	U3CInitializeU3Ec__Iterator0_t3702636450::get_offset_of_U24this_2(),
+	U3CInitializeU3Ec__Iterator0_t3702636450::get_offset_of_U24current_3(),
+	U3CInitializeU3Ec__Iterator0_t3702636450::get_offset_of_U24disposing_4(),
+	U3CInitializeU3Ec__Iterator0_t3702636450::get_offset_of_U24PC_5(),
 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2961 = { sizeof (MenuSpinner_t2707977446), -1, 0, 0 };
 extern const int32_t g_FieldOffsetTable2961[1] = 

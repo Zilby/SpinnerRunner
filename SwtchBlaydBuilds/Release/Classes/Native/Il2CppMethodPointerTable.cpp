@@ -14023,10 +14023,6 @@ extern "C" void TMPro_ExtensionMethods_Compare_m267473099 ();
 extern "C" void TMPro_ExtensionMethods_Compare_m2242521107 ();
 extern "C" void VertexGradient__ctor_m1209748059_AdjustorThunk ();
 extern "C" void VertexGradient__ctor_m1854884556_AdjustorThunk ();
-extern "C" void AnalyticsEvent_get_debugMode_m2240954048 ();
-extern "C" void AnalyticsEvent_OnValidationFailed_m2609604624 ();
-extern "C" void AnalyticsEvent_Custom_m227997836 ();
-extern "C" void AnalyticsEvent__cctor_m3994162614 ();
 extern "C" void Advertisement_LoadRuntime_m1930758518 ();
 extern "C" void Advertisement_LoadEditor_m2032877435 ();
 extern "C" void Advertisement_Load_m3998104966 ();
@@ -14244,6 +14240,10 @@ extern "C" void UnsupportedPlatform_IsReady_m721141642 ();
 extern "C" void UnsupportedPlatform_GetPlacementState_m3500418431 ();
 extern "C" void UnsupportedPlatform_Show_m236483508 ();
 extern "C" void UnsupportedPlatform_SetMetaData_m3305125483 ();
+extern "C" void AnalyticsEvent_get_debugMode_m2240954048 ();
+extern "C" void AnalyticsEvent_OnValidationFailed_m2609604624 ();
+extern "C" void AnalyticsEvent_Custom_m227997836 ();
+extern "C" void AnalyticsEvent__cctor_m3994162614 ();
 extern "C" void AnalyticsEventParam__ctor_m1888826734 ();
 extern "C" void AnalyticsEventParam_get_requirementType_m1268059884 ();
 extern "C" void AnalyticsEventParam_get_groupID_m569309506 ();
@@ -31151,10 +31151,6 @@ extern const Il2CppMethodPointer g_MethodPointers[17126] =
 	TMPro_ExtensionMethods_Compare_m2242521107,
 	VertexGradient__ctor_m1209748059_AdjustorThunk,
 	VertexGradient__ctor_m1854884556_AdjustorThunk,
-	AnalyticsEvent_get_debugMode_m2240954048,
-	AnalyticsEvent_OnValidationFailed_m2609604624,
-	AnalyticsEvent_Custom_m227997836,
-	AnalyticsEvent__cctor_m3994162614,
 	Advertisement_LoadRuntime_m1930758518,
 	Advertisement_LoadEditor_m2032877435,
 	Advertisement_Load_m3998104966,
@@ -31372,6 +31368,10 @@ extern const Il2CppMethodPointer g_MethodPointers[17126] =
 	UnsupportedPlatform_GetPlacementState_m3500418431,
 	UnsupportedPlatform_Show_m236483508,
 	UnsupportedPlatform_SetMetaData_m3305125483,
+	AnalyticsEvent_get_debugMode_m2240954048,
+	AnalyticsEvent_OnValidationFailed_m2609604624,
+	AnalyticsEvent_Custom_m227997836,
+	AnalyticsEvent__cctor_m3994162614,
 	AnalyticsEventParam__ctor_m1888826734,
 	AnalyticsEventParam_get_requirementType_m1268059884,
 	AnalyticsEventParam_get_groupID_m569309506,

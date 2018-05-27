@@ -33800,18 +33800,6 @@ static void U3CPrivateImplementationDetailsU3E_t3057255366_CustomAttributesCache
 		CompilerGeneratedAttribute__ctor_m3151881902(tmp, NULL);
 	}
 }
-static void g_UnityEngine_StandardEvents_Assembly_CustomAttributesCacheGenerator(CustomAttributesCache* cache)
-{
-	{
-		DebuggableAttribute_t886312066 * tmp = (DebuggableAttribute_t886312066 *)cache->attributes[0];
-		DebuggableAttribute__ctor_m3124850944(tmp, 258LL, NULL);
-	}
-	{
-		RuntimeCompatibilityAttribute_t1169614002 * tmp = (RuntimeCompatibilityAttribute_t1169614002 *)cache->attributes[1];
-		RuntimeCompatibilityAttribute__ctor_m1311107907(tmp, NULL);
-		RuntimeCompatibilityAttribute_set_WrapNonExceptionThrows_m2506646892(tmp, true, NULL);
-	}
-}
 static void g_UnityEngine_Advertisements_Assembly_CustomAttributesCacheGenerator(CustomAttributesCache* cache)
 {
 	{
@@ -34553,6 +34541,18 @@ static void U3CUnityAdsDidFinishU3Ec__AnonStorey4_t3126029549_CustomAttributesCa
 	{
 		CompilerGeneratedAttribute_t23527886 * tmp = (CompilerGeneratedAttribute_t23527886 *)cache->attributes[0];
 		CompilerGeneratedAttribute__ctor_m3151881902(tmp, NULL);
+	}
+}
+static void g_UnityEngine_StandardEvents_Assembly_CustomAttributesCacheGenerator(CustomAttributesCache* cache)
+{
+	{
+		DebuggableAttribute_t886312066 * tmp = (DebuggableAttribute_t886312066 *)cache->attributes[0];
+		DebuggableAttribute__ctor_m3124850944(tmp, 258LL, NULL);
+	}
+	{
+		RuntimeCompatibilityAttribute_t1169614002 * tmp = (RuntimeCompatibilityAttribute_t1169614002 *)cache->attributes[1];
+		RuntimeCompatibilityAttribute__ctor_m1311107907(tmp, NULL);
+		RuntimeCompatibilityAttribute_set_WrapNonExceptionThrows_m2506646892(tmp, true, NULL);
 	}
 }
 static void g_UnityEngine_Analytics_Assembly_CustomAttributesCacheGenerator(CustomAttributesCache* cache)
@@ -47363,7 +47363,6 @@ extern const CustomAttributesCacheGenerator g_AttributeGenerators[4643] =
 	TextContainer_t97923372_CustomAttributesCacheGenerator_m_rect,
 	TextContainer_t97923372_CustomAttributesCacheGenerator_m_margins,
 	U3CPrivateImplementationDetailsU3E_t3057255366_CustomAttributesCacheGenerator,
-	g_UnityEngine_StandardEvents_Assembly_CustomAttributesCacheGenerator,
 	g_UnityEngine_Advertisements_Assembly_CustomAttributesCacheGenerator,
 	Advertisement_t842671397_CustomAttributesCacheGenerator_U3CU3Ef__amU24cache0,
 	Advertisement_t842671397_CustomAttributesCacheGenerator_U3CU3Ef__amU24cache1,
@@ -47446,6 +47445,7 @@ extern const CustomAttributesCacheGenerator g_AttributeGenerators[4643] =
 	U3CUnityAdsDidStartU3Ec__AnonStorey2_t250005642_CustomAttributesCacheGenerator,
 	U3CUnityAdsDidFinishU3Ec__AnonStorey3_t3126029544_CustomAttributesCacheGenerator,
 	U3CUnityAdsDidFinishU3Ec__AnonStorey4_t3126029549_CustomAttributesCacheGenerator,
+	g_UnityEngine_StandardEvents_Assembly_CustomAttributesCacheGenerator,
 	g_UnityEngine_Analytics_Assembly_CustomAttributesCacheGenerator,
 	AnalyticsEventTracker_t2285229262_CustomAttributesCacheGenerator,
 	AnalyticsEventTracker_t2285229262_CustomAttributesCacheGenerator_m_Trigger,
