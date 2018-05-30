@@ -2,6 +2,7 @@
 #include "UnityViewControllerBase.h"
 #include "OrientationSupport.h"
 #include "Unity/ObjCRuntime.h"
+#include "UI/UnityView.h"
 #include <cstring>
 
 extern "C" const char* UnityGetLaunchScreenXib();
@@ -20,7 +21,7 @@ static bool _canRotateToPortraitUpsideDown  = false;
 static bool _canRotateToLandscapeLeft       = false;
 static bool _canRotateToLandscapeRight      = false;
 
-#if !UNITY_TVOS
+#if !PLATFORM_TVOS
 typedef id (*WillRotateToInterfaceOrientationSendFunc)(struct objc_super*, SEL, UIInterfaceOrientation, NSTimeInterval);
 typedef id (*DidRotateFromInterfaceOrientationSendFunc)(struct objc_super*, SEL, UIInterfaceOrientation);
 #endif
@@ -160,6 +161,12 @@ static NSString* GetLaunchImageFileName(UIUserInterfaceIdiom idiom, const CGSize
 {
     CGFloat scale = UnityScreenScaleFactor([UIScreen mainScreen]);
     UnityReportResizeView(self.bounds.size.width * scale, self.bounds.size.height * scale, orient);
+    ReportSafeAreaChangeForView(self);
+
+    // Storyboards should have a view controller to automatically configure orientation
+    bool hasStoryboard = [[NSBundle mainBundle] pathForResource: @"LaunchScreen" ofType: @"storyboardc"] != nullptr;
+    if (hasStoryboard)
+        return;
 
     UIUserInterfaceIdiom idiom = [[UIDevice currentDevice] userInterfaceIdiom];
 
@@ -187,14 +194,8 @@ static NSString* GetLaunchImageFileName(UIUserInterfaceIdiom idiom, const CGSize
     UIImage* image = nil;
     CGSize screenSize = [[UIScreen mainScreen] bounds].size;
 
-    // Try asset catalog on iOS 7.0+. Note, that we can't be sure that asset
-    // catalog is used, because the deployment target might have been lower and
-    // thus old launch images are used.
-    if (_ios70orNewer)
-    {
-        NSString* imageName = GetLaunchImageName(idiom, screenSize);
-        image = [UIImage imageNamed: imageName];
-    }
+    // Try asset catalog.
+    image = [UIImage imageNamed: GetLaunchImageName(idiom, screenSize)];
 
     if (image == nil)
     {
@@ -239,7 +240,7 @@ static NSString* GetLaunchImageFileName(UIUserInterfaceIdiom idiom, const CGSize
 
 @implementation SplashScreenController
 
-#if !UNITY_TVOS
+#if !PLATFORM_TVOS
 static void WillRotateToInterfaceOrientation_DefaultImpl(id self_, SEL _cmd, UIInterfaceOrientation toInterfaceOrientation, NSTimeInterval duration)
 {
     if (_isOrientable)
@@ -279,7 +280,7 @@ static void ViewWillTransitionToSize_DefaultImpl(id self_, SEL _cmd, CGSize size
 {
     if ((self = [super init]))
     {
-#if !UNITY_TVOS
+#if !PLATFORM_TVOS
         AddViewControllerRotationHandling(
             [SplashScreenController class],
             (IMP)&WillRotateToInterfaceOrientation_DefaultImpl, (IMP)&DidRotateFromInterfaceOrientation_DefaultImpl,
@@ -309,7 +310,7 @@ static void ViewWillTransitionToSize_DefaultImpl(id self_, SEL _cmd, CGSize size
 
     // Launch screens are used only on iOS8+ iPhones
     const char* xib = UnityGetLaunchScreenXib();
-#if !UNITY_TVOS
+#if !PLATFORM_TVOS
     _usesLaunchscreen = false;
     if (_ios80orNewer && xib != NULL)
     {
@@ -349,23 +350,25 @@ static void ViewWillTransitionToSize_DefaultImpl(id self_, SEL _cmd, CGSize size
             _nonOrientableDefaultOrientation = landscapeRight;
     }
 
-    self.view = _splash;
+    bool hasStoryboard = [[NSBundle mainBundle] pathForResource: @"LaunchScreen" ofType: @"storyboardc"] != nullptr;
 
-#if !UNITY_TVOS
-    self.wantsFullScreenLayout = TRUE;
-#endif
-
-    [window addSubview: _splash];
     window.rootViewController = self;
-    [window bringSubviewToFront: _splash];
 
-    ScreenOrientation orient = UIViewControllerOrientation(self);
-    [_splash updateOrientation: orient];
+    if (!hasStoryboard)
+    {
+        self.view = _splash;
 
-    if (!_isOrientable)
-        orient = _nonOrientableDefaultOrientation;
+        [window addSubview: _splash];
+        [window bringSubviewToFront: _splash];
 
-    OrientView([SplashScreenController Instance], _splash, orient);
+        ScreenOrientation orient = UIViewControllerOrientation(self);
+        [_splash updateOrientation: orient];
+
+        if (!_isOrientable)
+            orient = _nonOrientableDefaultOrientation;
+
+        OrientView([SplashScreenController Instance], _splash, orient);
+    }
 }
 
 - (BOOL)shouldAutorotate
@@ -398,8 +401,18 @@ static void ViewWillTransitionToSize_DefaultImpl(id self_, SEL _cmd, CGSize size
 
 void ShowSplashScreen(UIWindow* window)
 {
-    _controller = [[SplashScreenController alloc] init];
+    bool hasStoryboard = [[NSBundle mainBundle] pathForResource: @"LaunchScreen" ofType: @"storyboardc"] != nullptr;
+
+    if (hasStoryboard)
+    {
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName: @"LaunchScreen" bundle: [NSBundle mainBundle]];
+        _controller = [storyboard instantiateViewControllerWithIdentifier: @"unitySplashStoryboard"];
+    }
+    else
+        _controller = [[SplashScreenController alloc] init];
+
     [_controller create: window];
+    [window makeKeyAndVisible];
 }
 
 void HideSplashScreen()

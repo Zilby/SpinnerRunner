@@ -2,18 +2,18 @@
 
 #include <stdint.h>
 #include "il2cpp-config.h"
-#include "blob.h"
-#include "class-internals.h"
+#include "il2cpp-blob.h"
+#include "il2cpp-class-internals.h"
 #include "metadata/Il2CppTypeVector.h"
 #include "utils/dynamic_array.h"
-#include "class-internals.h"
-#include "object-internals.h"
+#include "il2cpp-class-internals.h"
+#include "il2cpp-object-internals.h"
 #include "Exception.h"
 #include "Type.h"
 
 #if NET_4_0
 #include "vm/MetadataCache.h"
-#include "tabledefs.h"
+#include "il2cpp-tabledefs.h"
 #endif
 
 
@@ -26,7 +26,6 @@ struct MethodInfo;
 struct Il2CppImage;
 struct Il2CppReflectionType;
 struct Il2CppType;
-struct Il2CppDebugTypeInfo;
 struct Il2CppGenericContainer;
 struct Il2CppGenericContext;
 struct Il2CppGenericParameter;
@@ -73,6 +72,7 @@ namespace vm
         static bool IsInflated(const Il2CppClass *klass);
         static bool IsSubclassOf(Il2CppClass *klass, Il2CppClass *klassc, bool check_interfaces);
         static bool IsValuetype(const Il2CppClass *klass);
+        static bool IsBlittable(const Il2CppClass *klass);
         static bool HasDefaultConstructor(Il2CppClass* klass);
         static int GetFlags(const Il2CppClass *klass);
         static bool IsAbstract(const Il2CppClass *klass);
@@ -85,8 +85,8 @@ namespace vm
         static bool HasAttribute(Il2CppClass *klass, Il2CppClass *attr_class);
         static bool IsEnum(const Il2CppClass *klass);
         static const Il2CppImage* GetImage(Il2CppClass* klass);
-        static const Il2CppDebugTypeInfo *GetDebugInfo(const Il2CppClass *klass);
         static const char *GetAssemblyName(const Il2CppClass *klass);
+        static const char *GetAssemblyNameNoExtension(const Il2CppClass *klass);
 
     public:
         //internal
@@ -115,6 +115,7 @@ namespace vm
         static Il2CppClass* GetArrayClass(Il2CppClass *element_class, uint32_t rank);
         static Il2CppClass* GetBoundedArrayClass(Il2CppClass *element_class, uint32_t rank, bool bounded);
         static Il2CppClass* GetInflatedGenericInstanceClass(Il2CppClass* klass, const metadata::Il2CppTypeVector& types);
+        static Il2CppClass* GetInflatedGenericInstanceClass(Il2CppClass* klass, const Il2CppGenericInst* genericInst);
         static Il2CppClass* InflateGenericClass(Il2CppClass* klass, Il2CppGenericContext *context);
         static const Il2CppType* InflateGenericType(const Il2CppType* type, Il2CppGenericContext *context);
 
@@ -138,7 +139,7 @@ namespace vm
         static void SetupTypeHierarchy(Il2CppClass *klass);
         static void SetupInterfaces(Il2CppClass *klass);
 
-        static const dynamic_array<Il2CppClass*>& GetStaticFieldData();
+        static const il2cpp::utils::dynamic_array<Il2CppClass*>& GetStaticFieldData();
 
         static size_t GetBitmapSize(const Il2CppClass* klass);
         static void GetBitmap(Il2CppClass* klass, size_t* bitmap, size_t& maxSetBit);

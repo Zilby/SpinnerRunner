@@ -1,6 +1,6 @@
 #pragma once
 
-// we allow to build with sdk 7.0 (and run on ios6) so we need to take an extra care about Metal support
+// we allow to build with sdk 9.0 (and run on ios7) so we need to take an extra care about Metal support
 // it is expected to substitute Metal.h so only objc
 
 #ifdef __cplusplus
@@ -17,12 +17,16 @@ typedef MTLDeviceRef (*MTLCreateSystemDefaultDeviceFunc)();
 
 #else
 
+#if !(TARGET_IPHONE_SIMULATOR && defined(__IPHONE_11_0)) && !(TARGET_TVOS_SIMULATOR && defined(__TVOS_11_0))
+
 typedef NSUInteger MTLPixelFormat;
 enum
 {
     MTLPixelFormatBGRA8Unorm,
     MTLPixelFormatBGRA8Unorm_sRGB,
 };
+
+#endif
 
 @interface CAMetalLayer : CALayer
 @property (readwrite) BOOL framebufferOnly;

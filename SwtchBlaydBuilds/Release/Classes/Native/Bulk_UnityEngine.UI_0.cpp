@@ -1338,7 +1338,7 @@ extern const RuntimeMethod* List_1_get_Item_m489380024_RuntimeMethod_var;
 extern const uint32_t Dropdown_RefreshShownValue_m2806045241_MetadataUsageId;
 extern const RuntimeMethod* List_1_AddRange_m682775554_RuntimeMethod_var;
 extern const uint32_t Dropdown_AddOptions_m3733885929_MetadataUsageId;
-extern const RuntimeMethod* List_1_get_Item_m3346958548_RuntimeMethod_var;
+extern const RuntimeMethod* List_1_get_Item_m3729392029_RuntimeMethod_var;
 extern const RuntimeMethod* List_1_get_Count_m2276455407_RuntimeMethod_var;
 extern const uint32_t Dropdown_AddOptions_m2776940360_MetadataUsageId;
 extern const RuntimeMethod* List_1_get_Item_m1550008287_RuntimeMethod_var;
@@ -1627,8 +1627,8 @@ struct Vector3U5BU5D_t1718750761;
 struct Vector2U5BU5D_t1457185986;
 
 
-#ifndef U3CMODULEU3E_T692745546_H
-#define U3CMODULEU3E_T692745546_H
+#ifndef U3CMODULEU3E_T692745549_H
+#define U3CMODULEU3E_T692745549_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
@@ -1636,7 +1636,7 @@ struct Vector2U5BU5D_t1457185986;
 #endif
 
 // <Module>
-struct  U3CModuleU3E_t692745546 
+struct  U3CModuleU3E_t692745549 
 {
 public:
 
@@ -1646,7 +1646,7 @@ public:
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // U3CMODULEU3E_T692745546_H
+#endif // U3CMODULEU3E_T692745549_H
 #ifndef RUNTIMEOBJECT_H
 #define RUNTIMEOBJECT_H
 #ifdef __clang__
@@ -18627,7 +18627,7 @@ extern "C"  Sprite_t280657092 * OptionData_get_image_m2796360767 (OptionData_t32
 // System.Void System.Collections.Generic.List`1<UnityEngine.UI.Dropdown/OptionData>::AddRange(System.Collections.Generic.IEnumerable`1<!0>)
 #define List_1_AddRange_m682775554(__this, p0, method) ((  void (*) (List_1_t447389798 *, RuntimeObject*, const RuntimeMethod*))List_1_AddRange_m3709462088_gshared)(__this, p0, method)
 // !0 System.Collections.Generic.List`1<System.String>::get_Item(System.Int32)
-#define List_1_get_Item_m3346958548(__this, p0, method) ((  String_t* (*) (List_1_t3319525431 *, int32_t, const RuntimeMethod*))List_1_get_Item_m2287542950_gshared)(__this, p0, method)
+#define List_1_get_Item_m3729392029(__this, p0, method) ((  String_t* (*) (List_1_t3319525431 *, int32_t, const RuntimeMethod*))List_1_get_Item_m2287542950_gshared)(__this, p0, method)
 // System.Void UnityEngine.UI.Dropdown/OptionData::.ctor(System.String)
 extern "C"  void OptionData__ctor_m2696491456 (OptionData_t3270282352 * __this, String_t* ___text0, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // System.Int32 System.Collections.Generic.List`1<System.String>::get_Count()
@@ -38384,7 +38384,7 @@ IL_0008:
 		List_1_t3319525431 * L_1 = ___options0;
 		int32_t L_2 = V_0;
 		NullCheck(L_1);
-		String_t* L_3 = List_1_get_Item_m3346958548(L_1, L_2, /*hidden argument*/List_1_get_Item_m3346958548_RuntimeMethod_var);
+		String_t* L_3 = List_1_get_Item_m3729392029(L_1, L_2, /*hidden argument*/List_1_get_Item_m3729392029_RuntimeMethod_var);
 		OptionData_t3270282352 * L_4 = (OptionData_t3270282352 *)il2cpp_codegen_object_new(OptionData_t3270282352_il2cpp_TypeInfo_var);
 		OptionData__ctor_m2696491456(L_4, L_3, /*hidden argument*/NULL);
 		NullCheck(L_0);

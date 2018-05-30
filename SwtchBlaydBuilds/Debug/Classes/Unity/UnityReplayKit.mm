@@ -55,7 +55,7 @@ static UnityReplayKit* _replayKit = nil;
 // meaning that if we dont do anything suddenly all orientations become enabled.
 // to avoid that we create this monstrosity that pokes unity for orientation.
 
-#if UNITY_IOS
+#if PLATFORM_IOS
 @interface UnityReplayKitViewController : UnityViewControllerBase {}
 - (NSUInteger)supportedInterfaceOrientations;
 @end
@@ -340,9 +340,9 @@ static UnityReplayKit* _replayKit = nil;
         return;
     }
 
-    [class_BroadcastActivityViewController performSelector: @selector(loadBroadcastActivityViewControllerWithHandler:) withObject:^(UnityReplayKit_RPBroadcastActivityViewController* sBroadcastActivityViewController, NSError* error)
+    [class_BroadcastActivityViewController performSelector: @selector(loadBroadcastActivityViewControllerWithHandler:) withObject:^(UnityReplayKit_RPBroadcastActivityViewController* vc, NSError* error)
     {
-        if (sBroadcastActivityViewController == nil || error != nil)
+        if (vc == nil || error != nil)
         {
             _lastError = [error description];
             UnityReplayKitTriggerBroadcastStatusCallback(callback, false, [_lastError UTF8String]);
@@ -351,10 +351,21 @@ static UnityReplayKit* _replayKit = nil;
 
         [self createOverlayWindow];
         UnityPause(1);
-        sBroadcastActivityViewController.delegate = self;
+        vc.delegate = self;
         broadcastStartStatusCallback = callback;
-        sBroadcastActivityViewController.modalPresentationStyle = [UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad ? UIModalPresentationFormSheet : UIModalPresentationPopover;
-        [UnityGetGLViewController() presentViewController: sBroadcastActivityViewController animated: YES completion: nil];
+
+    #if PLATFORM_TVOS
+        vc.modalPresentationStyle = UIModalPresentationFullScreen;
+    #else
+        vc.modalPresentationStyle = UIModalPresentationPopover;
+        if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+        {
+            vc.popoverPresentationController.sourceRect = CGRectMake(GetAppController().rootView.bounds.size.width / 2, 0, 0, 0);
+            vc.popoverPresentationController.sourceView = GetAppController().rootView;
+        }
+    #endif
+
+        [UnityGetGLViewController() presentViewController: vc animated: YES completion: nil];
     }];
     return;
 }

@@ -98,11 +98,12 @@ public class MenuManager : MonoBehaviour
 		if (showAd)
 		{
 			float time = 0;
-			while(!IsInitialized() && time < 2.5f) {
+			while (!IsInitialized() && time < 2.5f)
+			{
 				time += 0.1f;
 				yield return new WaitForSecondsRealtime(0.1f);
 			}
-			if (!ValidifyPurchase())
+			if (IsInitialized() && !ValidifyPurchase())
 			{
 				while (!Advertisement.IsReady() && time < 2.5f)
 				{
@@ -119,7 +120,9 @@ public class MenuManager : MonoBehaviour
 					}
 					yield return new WaitForSecondsRealtime(0.2f);
 				}
-			} else {
+			}
+			else
+			{
 				ads.gameObject.SetActive(false);
 			}
 		}

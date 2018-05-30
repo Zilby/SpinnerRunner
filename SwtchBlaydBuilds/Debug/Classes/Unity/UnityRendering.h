@@ -93,6 +93,7 @@ typedef struct
     int                 msaaSamples;
     int                 useCVTextureCache;      // [bool]
     int                 srgb;                   // [bool]
+    int                 wideColor;              // [bool]
     int                 disableDepthAndStencil; // [bool]
     int                 allowScreenshot;        // [bool] currently we allow screenshots (from script) only on main display
 
@@ -104,6 +105,8 @@ UnityDisplaySurfaceBase;
 // START_STRUCT confuse clang c compiler (though it is idiomatic c code that works)
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wmissing-declarations"
+
+#define kUnityNumOffscreenSurfaces 3
 
 // GLES display surface
 START_STRUCT(UnityDisplaySurfaceGLES, UnityDisplaySurfaceBase)
@@ -139,7 +142,17 @@ OBJC_OBJECT_PTR CAMetalLayer *       layer;
 OBJC_OBJECT_PTR MTLDeviceRef        device;
 
 OBJC_OBJECT_PTR MTLCommandQueueRef  commandQueue;
+OBJC_OBJECT_PTR MTLCommandQueueRef  drawableCommandQueue;
+
 OBJC_OBJECT_PTR CAMetalDrawableRef  drawable;
+
+OBJC_OBJECT_PTR MTLTextureRef       drawableProxyRT[kUnityNumOffscreenSurfaces];
+
+// These are used on a Mac with drawableProxyRT when off-screen rendering is used
+volatile int32_t                    readCount;
+volatile int32_t                    writeCount;
+volatile int32_t                    bufferChanged;
+volatile int32_t                    bufferCompleted[3];
 
 OBJC_OBJECT_PTR MTLTextureRef       systemColorRB;
 OBJC_OBJECT_PTR MTLTextureRef       targetColorRT;
@@ -150,6 +163,7 @@ OBJC_OBJECT_PTR MTLTextureRef       stencilRB;
 
 unsigned                            colorFormat;        // [MTLPixelFormat]
 unsigned                            depthFormat;        // [MTLPixelFormat]
+int                                 framebufferOnly;
 END_STRUCT(UnityDisplaySurfaceMTL)
 
 // START_STRUCT confuse clang c compiler (though it is idiomatic c code that works)
@@ -217,6 +231,9 @@ void EndFrameRenderingMTL(UnityDisplaySurfaceMTL* surface);
 void PreparePresentMTL(UnityDisplaySurfaceMTL* surface);
 void PresentMTL(UnityDisplaySurfaceMTL* surface);
 
+// Acquires CAMetalDrawable resource for the surface and returns the drawable texture
+MTLTextureRef AcquireDrawableMTL(UnityDisplaySurfaceMTL* surface);
+
 #ifdef __cplusplus
 } // extern "C"
 #endif
@@ -230,7 +247,8 @@ extern "C" {
 // metal: resolveTex should be non-nil only if tex have AA
 UnityRenderBufferHandle UnityCreateExternalSurfaceGLES(UnityRenderBufferHandle surf, int isColor, unsigned texid, unsigned rbid, unsigned glesFormat, const UnityRenderBufferDesc* desc);
 UnityRenderBufferHandle UnityCreateExternalSurfaceMTL(UnityRenderBufferHandle surf, int isColor, MTLTextureRef tex, const UnityRenderBufferDesc* desc);
-UnityRenderBufferHandle UnityCreateExternalColorSurfaceMTL(UnityRenderBufferHandle surf, MTLTextureRef tex, MTLTextureRef resolveTex, const UnityRenderBufferDesc* desc);
+// Passing non-nil displaySurface will mark render surface as proxy and will do a delayed drawable acquisition when setting up framebuffer
+UnityRenderBufferHandle UnityCreateExternalColorSurfaceMTL(UnityRenderBufferHandle surf, MTLTextureRef tex, MTLTextureRef resolveTex, const UnityRenderBufferDesc* desc, UnityDisplaySurfaceMTL* displaySurface);
 UnityRenderBufferHandle UnityCreateExternalDepthSurfaceMTL(UnityRenderBufferHandle surf, MTLTextureRef tex, MTLTextureRef stencilTex, const UnityRenderBufferDesc* desc);
 // creates "dummy" surface - will indicate "missing" buffer (e.g. depth-only RT will have color as dummy)
 UnityRenderBufferHandle UnityCreateDummySurface(UnityRenderBufferHandle surf, int isColor, const UnityRenderBufferDesc* desc);
@@ -244,6 +262,12 @@ void    UnitySetRenderTarget(UnityRenderBufferHandle color, UnityRenderBufferHan
 // final blit to backbuffer
 void    UnityBlitToBackbuffer(UnityRenderBufferHandle srcColor, UnityRenderBufferHandle dstColor, UnityRenderBufferHandle dstDepth);
 // get native renderbuffer from handle
+
+// sets vSync on OSX 10.13 and up
+#if PLATFORM_OSX
+void MetalUpdateDisplaySync();
+#endif
+
 UnityRenderBufferHandle UnityNativeRenderBufferFromHandle(void *rb);
 
 MTLCommandBufferRef UnityCurrentMTLCommandBuffer();

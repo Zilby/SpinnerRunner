@@ -1,7 +1,7 @@
 #pragma once
 
 #include "utils/dynamic_array.h"
-#include "object-internals.h"
+#include "il2cpp-object-internals.h"
 
 struct GPtrArray
 {
@@ -9,7 +9,7 @@ struct GPtrArray
     unsigned int len;
 };
 
-typedef dynamic_array<void*> VoidPtrArray;
+typedef il2cpp::utils::dynamic_array<void*> VoidPtrArray;
 
 GPtrArray* void_ptr_array_to_gptr_array(const VoidPtrArray& array);
 GPtrArray* empty_gptr_array();
@@ -42,16 +42,16 @@ struct  PublicKeyTokenFixedBuffer
     };
 };
 
-struct  MonoAssemblyName
+struct  Il2CppMonoAssemblyName
 {
     // System.IntPtr Mono.MonoAssemblyName::name
-    Il2CppIntPtr name;
+    const char * name;
     // System.IntPtr Mono.MonoAssemblyName::culture
-    Il2CppIntPtr culture;
+    const char * culture;
     // System.IntPtr Mono.MonoAssemblyName::hash_value
-    Il2CppIntPtr hash_value;
+    const char * hash_value;
     // System.IntPtr Mono.MonoAssemblyName::public_key
-    Il2CppIntPtr public_key;
+    const uint8_t* public_key;
     // Mono.MonoAssemblyName/<public_key_token>__FixedBuffer0 Mono.MonoAssemblyName::public_key_token
     PublicKeyTokenFixedBuffer  public_key_token;
     // System.UInt32 Mono.MonoAssemblyName::hash_alg

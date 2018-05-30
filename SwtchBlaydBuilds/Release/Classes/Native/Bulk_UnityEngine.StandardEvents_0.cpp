@@ -102,7 +102,7 @@ extern const uint32_t AnalyticsEvent_Custom_m227997836_MetadataUsageId;
 extern RuntimeClass* Dictionary_2_t2865362463_il2cpp_TypeInfo_var;
 extern RuntimeClass* Dictionary_2_t1632706988_il2cpp_TypeInfo_var;
 extern const RuntimeMethod* Dictionary_2__ctor_m2606011945_RuntimeMethod_var;
-extern const RuntimeMethod* Dictionary_2__ctor_m1007136140_RuntimeMethod_var;
+extern const RuntimeMethod* Dictionary_2__ctor_m3302800229_RuntimeMethod_var;
 extern const RuntimeMethod* Dictionary_2_Add_m1316431193_RuntimeMethod_var;
 extern String_t* _stringLiteral314968592;
 extern String_t* _stringLiteral223781046;
@@ -140,8 +140,8 @@ struct ObjectU5BU5D_t2843939325;
 #pragma clang diagnostic pop
 #endif
 #endif // RUNTIMEOBJECT_H
-#ifndef U3CMODULEU3E_T692745549_H
-#define U3CMODULEU3E_T692745549_H
+#ifndef U3CMODULEU3E_T692745553_H
+#define U3CMODULEU3E_T692745553_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
@@ -149,7 +149,7 @@ struct ObjectU5BU5D_t2843939325;
 #endif
 
 // <Module>
-struct  U3CModuleU3E_t692745549 
+struct  U3CModuleU3E_t692745553 
 {
 public:
 
@@ -159,7 +159,7 @@ public:
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // U3CMODULEU3E_T692745549_H
+#endif // U3CMODULEU3E_T692745553_H
 #ifndef VALUETYPE_T3640485471_H
 #define VALUETYPE_T3640485471_H
 #ifdef __clang__
@@ -1172,7 +1172,7 @@ extern "C"  void Debug_LogWarningFormat_m2535776735 (RuntimeObject * __this /* s
 // System.Void System.Collections.Generic.Dictionary`2<System.String,System.Object>::.ctor()
 #define Dictionary_2__ctor_m2606011945(__this, method) ((  void (*) (Dictionary_2_t2865362463 *, const RuntimeMethod*))Dictionary_2__ctor_m518943619_gshared)(__this, method)
 // System.Void System.Collections.Generic.Dictionary`2<System.String,System.String>::.ctor()
-#define Dictionary_2__ctor_m1007136140(__this, method) ((  void (*) (Dictionary_2_t1632706988 *, const RuntimeMethod*))Dictionary_2__ctor_m518943619_gshared)(__this, method)
+#define Dictionary_2__ctor_m3302800229(__this, method) ((  void (*) (Dictionary_2_t1632706988 *, const RuntimeMethod*))Dictionary_2__ctor_m518943619_gshared)(__this, method)
 // System.Void System.Collections.Generic.Dictionary`2<System.String,System.String>::Add(!0,!1)
 #define Dictionary_2_Add_m1316431193(__this, p0, p1, method) ((  void (*) (Dictionary_2_t1632706988 *, String_t*, String_t*, const RuntimeMethod*))Dictionary_2_Add_m2387223709_gshared)(__this, p0, p1, method)
 #ifdef __clang__
@@ -1560,7 +1560,7 @@ extern "C"  void AnalyticsEvent__cctor_m3994162614 (RuntimeObject * __this /* st
 		((AnalyticsEvent_t4058973021_StaticFields*)il2cpp_codegen_static_fields_for(AnalyticsEvent_t4058973021_il2cpp_TypeInfo_var))->set_m_EventData_1(L_0);
 		((AnalyticsEvent_t4058973021_StaticFields*)il2cpp_codegen_static_fields_for(AnalyticsEvent_t4058973021_il2cpp_TypeInfo_var))->set__debugMode_2((bool)0);
 		Dictionary_2_t1632706988 * L_1 = (Dictionary_2_t1632706988 *)il2cpp_codegen_object_new(Dictionary_2_t1632706988_il2cpp_TypeInfo_var);
-		Dictionary_2__ctor_m1007136140(L_1, /*hidden argument*/Dictionary_2__ctor_m1007136140_RuntimeMethod_var);
+		Dictionary_2__ctor_m3302800229(L_1, /*hidden argument*/Dictionary_2__ctor_m3302800229_RuntimeMethod_var);
 		V_0 = L_1;
 		Dictionary_2_t1632706988 * L_2 = V_0;
 		NullCheck(L_2);

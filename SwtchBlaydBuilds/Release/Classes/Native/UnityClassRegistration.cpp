@@ -47,6 +47,9 @@ void RegisterStaticallyLinkedModulesGranular()
 	void RegisterModule_ImageConversion();
 	RegisterModule_ImageConversion();
 
+	void RegisterModule_UnityWebRequest();
+	RegisterModule_UnityWebRequest();
+
 	void RegisterModule_GameCenter();
 	RegisterModule_GameCenter();
 
@@ -58,9 +61,6 @@ void RegisterStaticallyLinkedModulesGranular()
 
 	void RegisterModule_JSONSerialize();
 	RegisterModule_JSONSerialize();
-
-	void RegisterModule_UnityWebRequest();
-	RegisterModule_UnityWebRequest();
 
 	void RegisterModule_Wind();
 	RegisterModule_Wind();

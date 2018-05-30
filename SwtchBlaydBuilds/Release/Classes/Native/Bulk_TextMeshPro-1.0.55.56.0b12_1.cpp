@@ -709,7 +709,7 @@ extern const RuntimeMethod* List_1_get_Item_m912461115_RuntimeMethod_var;
 extern const uint32_t TMP_Dropdown_RefreshShownValue_m3069578469_MetadataUsageId;
 extern const RuntimeMethod* List_1_AddRange_m4152876761_RuntimeMethod_var;
 extern const uint32_t TMP_Dropdown_AddOptions_m1885437345_MetadataUsageId;
-extern const RuntimeMethod* List_1_get_Item_m3346958548_RuntimeMethod_var;
+extern const RuntimeMethod* List_1_get_Item_m3729392029_RuntimeMethod_var;
 extern const RuntimeMethod* List_1_get_Count_m2276455407_RuntimeMethod_var;
 extern const uint32_t TMP_Dropdown_AddOptions_m359719346_MetadataUsageId;
 extern const RuntimeMethod* List_1_get_Item_m1550008287_RuntimeMethod_var;
@@ -22679,7 +22679,7 @@ extern "C"  Sprite_t280657092 * OptionData_get_image_m820342357 (OptionData_t111
 // System.Void System.Collections.Generic.List`1<TMPro.TMP_Dropdown/OptionData>::AddRange(System.Collections.Generic.IEnumerable`1<!0>)
 #define List_1_AddRange_m4152876761(__this, p0, method) ((  void (*) (List_1_t2586715010 *, RuntimeObject*, const RuntimeMethod*))List_1_AddRange_m3709462088_gshared)(__this, p0, method)
 // !0 System.Collections.Generic.List`1<System.String>::get_Item(System.Int32)
-#define List_1_get_Item_m3346958548(__this, p0, method) ((  String_t* (*) (List_1_t3319525431 *, int32_t, const RuntimeMethod*))List_1_get_Item_m2287542950_gshared)(__this, p0, method)
+#define List_1_get_Item_m3729392029(__this, p0, method) ((  String_t* (*) (List_1_t3319525431 *, int32_t, const RuntimeMethod*))List_1_get_Item_m2287542950_gshared)(__this, p0, method)
 // System.Void TMPro.TMP_Dropdown/OptionData::.ctor(System.String)
 extern "C"  void OptionData__ctor_m1049226027 (OptionData_t1114640268 * __this, String_t* ___text0, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // System.Int32 System.Collections.Generic.List`1<System.String>::get_Count()
@@ -26662,7 +26662,7 @@ IL_0005:
 		List_1_t3319525431 * L_1 = ___options0;
 		int32_t L_2 = V_0;
 		NullCheck(L_1);
-		String_t* L_3 = List_1_get_Item_m3346958548(L_1, L_2, /*hidden argument*/List_1_get_Item_m3346958548_RuntimeMethod_var);
+		String_t* L_3 = List_1_get_Item_m3729392029(L_1, L_2, /*hidden argument*/List_1_get_Item_m3729392029_RuntimeMethod_var);
 		OptionData_t1114640268 * L_4 = (OptionData_t1114640268 *)il2cpp_codegen_object_new(OptionData_t1114640268_il2cpp_TypeInfo_var);
 		OptionData__ctor_m1049226027(L_4, L_3, /*hidden argument*/NULL);
 		NullCheck(L_0);

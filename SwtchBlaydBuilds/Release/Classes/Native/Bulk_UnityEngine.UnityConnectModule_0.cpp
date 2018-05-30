@@ -49,8 +49,8 @@ extern const uint32_t RemoteSettings_CallOnUpdate_m2821567430_MetadataUsageId;
 
 
 
-#ifndef U3CMODULEU3E_T692745542_H
-#define U3CMODULEU3E_T692745542_H
+#ifndef U3CMODULEU3E_T692745543_H
+#define U3CMODULEU3E_T692745543_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
@@ -58,7 +58,7 @@ extern const uint32_t RemoteSettings_CallOnUpdate_m2821567430_MetadataUsageId;
 #endif
 
 // <Module>
-struct  U3CModuleU3E_t692745542 
+struct  U3CModuleU3E_t692745543 
 {
 public:
 
@@ -68,7 +68,7 @@ public:
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // U3CMODULEU3E_T692745542_H
+#endif // U3CMODULEU3E_T692745543_H
 #ifndef RUNTIMEOBJECT_H
 #define RUNTIMEOBJECT_H
 #ifdef __clang__

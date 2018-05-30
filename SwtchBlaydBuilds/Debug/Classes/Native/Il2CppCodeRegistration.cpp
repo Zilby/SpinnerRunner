@@ -13,8 +13,12 @@
 #include <limits>
 #include <assert.h>
 
-#include "class-internals.h"
+#include "il2cpp-class-internals.h"
 #include "codegen/il2cpp-codegen.h"
+
+
+
+
 
 
 
@@ -28,21 +32,21 @@ extern const InvokerMethod g_Il2CppInvokerPointers[];
 extern const CustomAttributesCacheGenerator g_AttributeGenerators[];
 extern const Il2CppMethodPointer g_UnresolvedVirtualMethodPointers[];
 extern Il2CppInteropData g_Il2CppInteropData[];
-const Il2CppCodeRegistration g_CodeRegistration = 
+extern const Il2CppCodeRegistration g_CodeRegistration = 
 {
-	15695,
+	18919,
 	g_MethodPointers,
-	1,
+	10,
 	g_ReversePInvokeWrapperPointers,
-	6589,
+	8615,
 	g_Il2CppGenericMethodPointers,
-	2350,
+	2651,
 	g_Il2CppInvokerPointers,
-	4386,
+	5336,
 	g_AttributeGenerators,
-	299,
+	338,
 	g_UnresolvedVirtualMethodPointers,
-	129,
+	169,
 	g_Il2CppInteropData,
 };
 extern const Il2CppMetadataRegistration g_MetadataRegistration;
@@ -54,4 +58,6 @@ void s_Il2CppCodegenRegistration()
 {
 	il2cpp_codegen_register (&g_CodeRegistration, &g_MetadataRegistration, &s_Il2CppCodeGenOptions);
 }
+#if RUNTIME_IL2CPP
 static il2cpp::utils::RegisterRuntimeInitializeAndCleanup s_Il2CppCodegenRegistrationVariable (&s_Il2CppCodegenRegistration, NULL);
+#endif

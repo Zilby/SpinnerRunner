@@ -609,9 +609,9 @@ extern const uint32_t ICadeDeviceManager_GetState_m1377057413_MetadataUsageId;
 extern RuntimeClass* List_1_t3319525431_il2cpp_TypeInfo_var;
 extern const RuntimeMethod* List_1__ctor_m706204246_RuntimeMethod_var;
 extern const RuntimeMethod* InputManager_AddDeviceManager_TisICadeDeviceManager_t451636877_m1965924793_RuntimeMethod_var;
-extern const RuntimeMethod* List_1_GetEnumerator_m1955908099_RuntimeMethod_var;
-extern const RuntimeMethod* Enumerator_get_Current_m236733038_RuntimeMethod_var;
-extern const RuntimeMethod* Enumerator_MoveNext_m4158182743_RuntimeMethod_var;
+extern const RuntimeMethod* List_1_GetEnumerator_m2474945812_RuntimeMethod_var;
+extern const RuntimeMethod* Enumerator_get_Current_m2585598696_RuntimeMethod_var;
+extern const RuntimeMethod* Enumerator_MoveNext_m1326435557_RuntimeMethod_var;
 extern const RuntimeMethod* Enumerator_Dispose_m2026665411_RuntimeMethod_var;
 extern const uint32_t ICadeDeviceManager_Enable_m635264605_MetadataUsageId;
 extern RuntimeClass* TwoAxisInputControl_t1190563457_il2cpp_TypeInfo_var;
@@ -12593,13 +12593,13 @@ extern "C"  bool ICadeDeviceManager_CheckPlatformSupport_m532007225 (RuntimeObje
 // System.Void InControl.InputManager::AddDeviceManager<InControl.ICadeDeviceManager>()
 #define InputManager_AddDeviceManager_TisICadeDeviceManager_t451636877_m1965924793(__this /* static, unused */, method) ((  void (*) (RuntimeObject * /* static, unused */, const RuntimeMethod*))InputManager_AddDeviceManager_TisRuntimeObject_m2290032365_gshared)(__this /* static, unused */, method)
 // System.Collections.Generic.List`1/Enumerator<!0> System.Collections.Generic.List`1<System.String>::GetEnumerator()
-#define List_1_GetEnumerator_m1955908099(__this, method) ((  Enumerator_t913802012  (*) (List_1_t3319525431 *, const RuntimeMethod*))List_1_GetEnumerator_m2930774921_gshared)(__this, method)
+#define List_1_GetEnumerator_m2474945812(__this, method) ((  Enumerator_t913802012  (*) (List_1_t3319525431 *, const RuntimeMethod*))List_1_GetEnumerator_m2930774921_gshared)(__this, method)
 // !0 System.Collections.Generic.List`1/Enumerator<System.String>::get_Current()
-#define Enumerator_get_Current_m236733038(__this, method) ((  String_t* (*) (Enumerator_t913802012 *, const RuntimeMethod*))Enumerator_get_Current_m470245444_gshared)(__this, method)
+#define Enumerator_get_Current_m2585598696(__this, method) ((  String_t* (*) (Enumerator_t913802012 *, const RuntimeMethod*))Enumerator_get_Current_m470245444_gshared)(__this, method)
 // System.Void InControl.Logger::LogError(System.String)
 extern "C"  void Logger_LogError_m2965611649 (RuntimeObject * __this /* static, unused */, String_t* ___text0, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // System.Boolean System.Collections.Generic.List`1/Enumerator<System.String>::MoveNext()
-#define Enumerator_MoveNext_m4158182743(__this, method) ((  bool (*) (Enumerator_t913802012 *, const RuntimeMethod*))Enumerator_MoveNext_m2142368520_gshared)(__this, method)
+#define Enumerator_MoveNext_m1326435557(__this, method) ((  bool (*) (Enumerator_t913802012 *, const RuntimeMethod*))Enumerator_MoveNext_m2142368520_gshared)(__this, method)
 // System.Void System.Collections.Generic.List`1/Enumerator<System.String>::Dispose()
 #define Enumerator_Dispose_m2026665411(__this, method) ((  void (*) (Enumerator_t913802012 *, const RuntimeMethod*))Enumerator_Dispose_m3007748546_gshared)(__this, method)
 // System.Void InControl.ICadeNative::OnStateChanged(System.Int32)
@@ -17518,7 +17518,7 @@ IL_001b:
 	{
 		List_1_t3319525431 * L_3 = V_0;
 		NullCheck(L_3);
-		Enumerator_t913802012  L_4 = List_1_GetEnumerator_m1955908099(L_3, /*hidden argument*/List_1_GetEnumerator_m1955908099_RuntimeMethod_var);
+		Enumerator_t913802012  L_4 = List_1_GetEnumerator_m2474945812(L_3, /*hidden argument*/List_1_GetEnumerator_m2474945812_RuntimeMethod_var);
 		V_2 = L_4;
 	}
 
@@ -17531,7 +17531,7 @@ IL_0022:
 
 IL_0027:
 		{
-			String_t* L_5 = Enumerator_get_Current_m236733038((&V_2), /*hidden argument*/Enumerator_get_Current_m236733038_RuntimeMethod_var);
+			String_t* L_5 = Enumerator_get_Current_m2585598696((&V_2), /*hidden argument*/Enumerator_get_Current_m2585598696_RuntimeMethod_var);
 			V_1 = L_5;
 			String_t* L_6 = V_1;
 			Logger_LogError_m2965611649(NULL /*static, unused*/, L_6, /*hidden argument*/NULL);
@@ -17539,7 +17539,7 @@ IL_0027:
 
 IL_0035:
 		{
-			bool L_7 = Enumerator_MoveNext_m4158182743((&V_2), /*hidden argument*/Enumerator_MoveNext_m4158182743_RuntimeMethod_var);
+			bool L_7 = Enumerator_MoveNext_m1326435557((&V_2), /*hidden argument*/Enumerator_MoveNext_m1326435557_RuntimeMethod_var);
 			if (L_7)
 			{
 				goto IL_0027;
@@ -19882,7 +19882,7 @@ IL_0103:
 	{
 		List_1_t3319525431 * L_28 = __this->get_customProfiles_21();
 		NullCheck(L_28);
-		Enumerator_t913802012  L_29 = List_1_GetEnumerator_m1955908099(L_28, /*hidden argument*/List_1_GetEnumerator_m1955908099_RuntimeMethod_var);
+		Enumerator_t913802012  L_29 = List_1_GetEnumerator_m2474945812(L_28, /*hidden argument*/List_1_GetEnumerator_m2474945812_RuntimeMethod_var);
 		V_1 = L_29;
 	}
 
@@ -19895,7 +19895,7 @@ IL_010f:
 
 IL_0114:
 		{
-			String_t* L_30 = Enumerator_get_Current_m236733038((&V_1), /*hidden argument*/Enumerator_get_Current_m236733038_RuntimeMethod_var);
+			String_t* L_30 = Enumerator_get_Current_m2585598696((&V_1), /*hidden argument*/Enumerator_get_Current_m2585598696_RuntimeMethod_var);
 			V_0 = L_30;
 			String_t* L_31 = V_0;
 			IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
@@ -19941,7 +19941,7 @@ IL_0150:
 
 IL_015b:
 		{
-			bool L_41 = Enumerator_MoveNext_m4158182743((&V_1), /*hidden argument*/Enumerator_MoveNext_m4158182743_RuntimeMethod_var);
+			bool L_41 = Enumerator_MoveNext_m1326435557((&V_1), /*hidden argument*/Enumerator_MoveNext_m1326435557_RuntimeMethod_var);
 			if (L_41)
 			{
 				goto IL_0114;

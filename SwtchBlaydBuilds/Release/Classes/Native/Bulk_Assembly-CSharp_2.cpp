@@ -492,7 +492,7 @@ extern const uint32_t MouseBindingSource_get_DeviceName_m3363747103_MetadataUsag
 extern const uint32_t MouseBindingSource_Equals_m702950876_MetadataUsageId;
 extern const uint32_t MouseBindingSource_Equals_m839319506_MetadataUsageId;
 extern const uint32_t MouseBindingSource_GetHashCode_m1244865322_MetadataUsageId;
-extern RuntimeField* U3CPrivateImplementationDetailsU3E_t3057255367____U24fieldU2D504F4B95521811246CA965BF7A38285411AA1461_0_FieldInfo_var;
+extern RuntimeField* U3CPrivateImplementationDetailsU3E_t3057255368____U24fieldU2D504F4B95521811246CA965BF7A38285411AA1461_0_FieldInfo_var;
 extern const uint32_t MouseBindingSource__cctor_m3430436851_MetadataUsageId;
 extern const uint32_t MouseBindingSourceListener_Listen_m2504332827_MetadataUsageId;
 extern RuntimeClass* MouseBindingSourceListener_t2404226114_il2cpp_TypeInfo_var;
@@ -603,9 +603,9 @@ extern RuntimeClass* List_1_t3319525431_il2cpp_TypeInfo_var;
 extern RuntimeClass* Debug_t3317548046_il2cpp_TypeInfo_var;
 extern const RuntimeMethod* List_1__ctor_m706204246_RuntimeMethod_var;
 extern const RuntimeMethod* InputManager_AddDeviceManager_TisNativeInputDeviceManager_t1361677247_m2660882013_RuntimeMethod_var;
-extern const RuntimeMethod* List_1_GetEnumerator_m1955908099_RuntimeMethod_var;
-extern const RuntimeMethod* Enumerator_get_Current_m236733038_RuntimeMethod_var;
-extern const RuntimeMethod* Enumerator_MoveNext_m4158182743_RuntimeMethod_var;
+extern const RuntimeMethod* List_1_GetEnumerator_m2474945812_RuntimeMethod_var;
+extern const RuntimeMethod* Enumerator_get_Current_m2585598696_RuntimeMethod_var;
+extern const RuntimeMethod* Enumerator_MoveNext_m1326435557_RuntimeMethod_var;
 extern const RuntimeMethod* Enumerator_Dispose_m2026665411_RuntimeMethod_var;
 extern String_t* _stringLiteral167646235;
 extern const uint32_t NativeInputDeviceManager_Enable_m1958484592_MetadataUsageId;
@@ -4058,8 +4058,8 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // NATIVEDEVICEDRIVERTYPE_T2906701416_H
-#ifndef U3CPRIVATEIMPLEMENTATIONDETAILSU3E_T3057255367_H
-#define U3CPRIVATEIMPLEMENTATIONDETAILSU3E_T3057255367_H
+#ifndef U3CPRIVATEIMPLEMENTATIONDETAILSU3E_T3057255368_H
+#define U3CPRIVATEIMPLEMENTATIONDETAILSU3E_T3057255368_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
@@ -4067,14 +4067,14 @@ public:
 #endif
 
 // <PrivateImplementationDetails>
-struct  U3CPrivateImplementationDetailsU3E_t3057255367  : public RuntimeObject
+struct  U3CPrivateImplementationDetailsU3E_t3057255368  : public RuntimeObject
 {
 public:
 
 public:
 };
 
-struct U3CPrivateImplementationDetailsU3E_t3057255367_StaticFields
+struct U3CPrivateImplementationDetailsU3E_t3057255368_StaticFields
 {
 public:
 	// <PrivateImplementationDetails>/$ArrayType=64 <PrivateImplementationDetails>::$field-504F4B95521811246CA965BF7A38285411AA1461
@@ -4085,7 +4085,7 @@ public:
 	U24ArrayTypeU3D24_t2467506693  ___U24fieldU2DC90F38A020811481753795774EB5AF353F414C59_2;
 
 public:
-	inline static int32_t get_offset_of_U24fieldU2D504F4B95521811246CA965BF7A38285411AA1461_0() { return static_cast<int32_t>(offsetof(U3CPrivateImplementationDetailsU3E_t3057255367_StaticFields, ___U24fieldU2D504F4B95521811246CA965BF7A38285411AA1461_0)); }
+	inline static int32_t get_offset_of_U24fieldU2D504F4B95521811246CA965BF7A38285411AA1461_0() { return static_cast<int32_t>(offsetof(U3CPrivateImplementationDetailsU3E_t3057255368_StaticFields, ___U24fieldU2D504F4B95521811246CA965BF7A38285411AA1461_0)); }
 	inline U24ArrayTypeU3D64_t498138225  get_U24fieldU2D504F4B95521811246CA965BF7A38285411AA1461_0() const { return ___U24fieldU2D504F4B95521811246CA965BF7A38285411AA1461_0; }
 	inline U24ArrayTypeU3D64_t498138225 * get_address_of_U24fieldU2D504F4B95521811246CA965BF7A38285411AA1461_0() { return &___U24fieldU2D504F4B95521811246CA965BF7A38285411AA1461_0; }
 	inline void set_U24fieldU2D504F4B95521811246CA965BF7A38285411AA1461_0(U24ArrayTypeU3D64_t498138225  value)
@@ -4093,7 +4093,7 @@ public:
 		___U24fieldU2D504F4B95521811246CA965BF7A38285411AA1461_0 = value;
 	}
 
-	inline static int32_t get_offset_of_U24fieldU2D51A7A390CD6DE245186881400B18C9D822EFE240_1() { return static_cast<int32_t>(offsetof(U3CPrivateImplementationDetailsU3E_t3057255367_StaticFields, ___U24fieldU2D51A7A390CD6DE245186881400B18C9D822EFE240_1)); }
+	inline static int32_t get_offset_of_U24fieldU2D51A7A390CD6DE245186881400B18C9D822EFE240_1() { return static_cast<int32_t>(offsetof(U3CPrivateImplementationDetailsU3E_t3057255368_StaticFields, ___U24fieldU2D51A7A390CD6DE245186881400B18C9D822EFE240_1)); }
 	inline U24ArrayTypeU3D12_t2488454197  get_U24fieldU2D51A7A390CD6DE245186881400B18C9D822EFE240_1() const { return ___U24fieldU2D51A7A390CD6DE245186881400B18C9D822EFE240_1; }
 	inline U24ArrayTypeU3D12_t2488454197 * get_address_of_U24fieldU2D51A7A390CD6DE245186881400B18C9D822EFE240_1() { return &___U24fieldU2D51A7A390CD6DE245186881400B18C9D822EFE240_1; }
 	inline void set_U24fieldU2D51A7A390CD6DE245186881400B18C9D822EFE240_1(U24ArrayTypeU3D12_t2488454197  value)
@@ -4101,7 +4101,7 @@ public:
 		___U24fieldU2D51A7A390CD6DE245186881400B18C9D822EFE240_1 = value;
 	}
 
-	inline static int32_t get_offset_of_U24fieldU2DC90F38A020811481753795774EB5AF353F414C59_2() { return static_cast<int32_t>(offsetof(U3CPrivateImplementationDetailsU3E_t3057255367_StaticFields, ___U24fieldU2DC90F38A020811481753795774EB5AF353F414C59_2)); }
+	inline static int32_t get_offset_of_U24fieldU2DC90F38A020811481753795774EB5AF353F414C59_2() { return static_cast<int32_t>(offsetof(U3CPrivateImplementationDetailsU3E_t3057255368_StaticFields, ___U24fieldU2DC90F38A020811481753795774EB5AF353F414C59_2)); }
 	inline U24ArrayTypeU3D24_t2467506693  get_U24fieldU2DC90F38A020811481753795774EB5AF353F414C59_2() const { return ___U24fieldU2DC90F38A020811481753795774EB5AF353F414C59_2; }
 	inline U24ArrayTypeU3D24_t2467506693 * get_address_of_U24fieldU2DC90F38A020811481753795774EB5AF353F414C59_2() { return &___U24fieldU2DC90F38A020811481753795774EB5AF353F414C59_2; }
 	inline void set_U24fieldU2DC90F38A020811481753795774EB5AF353F414C59_2(U24ArrayTypeU3D24_t2467506693  value)
@@ -4113,7 +4113,7 @@ public:
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // U3CPRIVATEIMPLEMENTATIONDETAILSU3E_T3057255367_H
+#endif // U3CPRIVATEIMPLEMENTATIONDETAILSU3E_T3057255368_H
 #ifndef BINDINGSOURCETYPE_T1040826559_H
 #define BINDINGSOURCETYPE_T1040826559_H
 #ifdef __clang__
@@ -8994,15 +8994,15 @@ extern "C"  bool NativeInputDeviceManager_CheckPlatformSupport_m2026824340 (Runt
 // System.Void InControl.InputManager::AddDeviceManager<InControl.NativeInputDeviceManager>()
 #define InputManager_AddDeviceManager_TisNativeInputDeviceManager_t1361677247_m2660882013(__this /* static, unused */, method) ((  void (*) (RuntimeObject * /* static, unused */, const RuntimeMethod*))InputManager_AddDeviceManager_TisRuntimeObject_m2290032365_gshared)(__this /* static, unused */, method)
 // System.Collections.Generic.List`1/Enumerator<!0> System.Collections.Generic.List`1<System.String>::GetEnumerator()
-#define List_1_GetEnumerator_m1955908099(__this, method) ((  Enumerator_t913802012  (*) (List_1_t3319525431 *, const RuntimeMethod*))List_1_GetEnumerator_m2930774921_gshared)(__this, method)
+#define List_1_GetEnumerator_m2474945812(__this, method) ((  Enumerator_t913802012  (*) (List_1_t3319525431 *, const RuntimeMethod*))List_1_GetEnumerator_m2930774921_gshared)(__this, method)
 // !0 System.Collections.Generic.List`1/Enumerator<System.String>::get_Current()
-#define Enumerator_get_Current_m236733038(__this, method) ((  String_t* (*) (Enumerator_t913802012 *, const RuntimeMethod*))Enumerator_get_Current_m470245444_gshared)(__this, method)
+#define Enumerator_get_Current_m2585598696(__this, method) ((  String_t* (*) (Enumerator_t913802012 *, const RuntimeMethod*))Enumerator_get_Current_m470245444_gshared)(__this, method)
 // System.String System.String::Concat(System.String,System.String)
 extern "C"  String_t* String_Concat_m3937257545 (RuntimeObject * __this /* static, unused */, String_t* p0, String_t* p1, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Debug::LogError(System.Object)
 extern "C"  void Debug_LogError_m2850623458 (RuntimeObject * __this /* static, unused */, RuntimeObject * p0, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // System.Boolean System.Collections.Generic.List`1/Enumerator<System.String>::MoveNext()
-#define Enumerator_MoveNext_m4158182743(__this, method) ((  bool (*) (Enumerator_t913802012 *, const RuntimeMethod*))Enumerator_MoveNext_m2142368520_gshared)(__this, method)
+#define Enumerator_MoveNext_m1326435557(__this, method) ((  bool (*) (Enumerator_t913802012 *, const RuntimeMethod*))Enumerator_MoveNext_m2142368520_gshared)(__this, method)
 // System.Void System.Collections.Generic.List`1/Enumerator<System.String>::Dispose()
 #define Enumerator_Dispose_m2026665411(__this, method) ((  void (*) (Enumerator_t913802012 *, const RuntimeMethod*))Enumerator_Dispose_m3007748546_gshared)(__this, method)
 // System.Boolean InControl.NativeInputDeviceProfile::Matches(InControl.NativeDeviceInfo)
@@ -16035,7 +16035,7 @@ extern "C"  void MouseBindingSource__cctor_m3430436851 (RuntimeObject * __this /
 		((MouseBindingSource_t3185707367_StaticFields*)il2cpp_codegen_static_fields_for(MouseBindingSource_t3185707367_il2cpp_TypeInfo_var))->set_ScaleZ_4((0.05f));
 		((MouseBindingSource_t3185707367_StaticFields*)il2cpp_codegen_static_fields_for(MouseBindingSource_t3185707367_il2cpp_TypeInfo_var))->set_JitterThreshold_5((0.05f));
 		Int32U5BU5D_t385246372* L_0 = ((Int32U5BU5D_t385246372*)SZArrayNew(Int32U5BU5D_t385246372_il2cpp_TypeInfo_var, (uint32_t)((int32_t)16)));
-		RuntimeFieldHandle_t1871169219  L_1 = { reinterpret_cast<intptr_t> (U3CPrivateImplementationDetailsU3E_t3057255367____U24fieldU2D504F4B95521811246CA965BF7A38285411AA1461_0_FieldInfo_var) };
+		RuntimeFieldHandle_t1871169219  L_1 = { reinterpret_cast<intptr_t> (U3CPrivateImplementationDetailsU3E_t3057255368____U24fieldU2D504F4B95521811246CA965BF7A38285411AA1461_0_FieldInfo_var) };
 		RuntimeHelpers_InitializeArray_m3117905507(NULL /*static, unused*/, (RuntimeArray *)(RuntimeArray *)L_0, L_1, /*hidden argument*/NULL);
 		((MouseBindingSource_t3185707367_StaticFields*)il2cpp_codegen_static_fields_for(MouseBindingSource_t3185707367_il2cpp_TypeInfo_var))->set_buttonTable_6(L_0);
 		return;
@@ -19214,7 +19214,7 @@ IL_0018:
 	{
 		List_1_t3319525431 * L_3 = V_0;
 		NullCheck(L_3);
-		Enumerator_t913802012  L_4 = List_1_GetEnumerator_m1955908099(L_3, /*hidden argument*/List_1_GetEnumerator_m1955908099_RuntimeMethod_var);
+		Enumerator_t913802012  L_4 = List_1_GetEnumerator_m2474945812(L_3, /*hidden argument*/List_1_GetEnumerator_m2474945812_RuntimeMethod_var);
 		V_2 = L_4;
 	}
 
@@ -19227,7 +19227,7 @@ IL_001f:
 
 IL_0024:
 		{
-			String_t* L_5 = Enumerator_get_Current_m236733038((&V_2), /*hidden argument*/Enumerator_get_Current_m236733038_RuntimeMethod_var);
+			String_t* L_5 = Enumerator_get_Current_m2585598696((&V_2), /*hidden argument*/Enumerator_get_Current_m2585598696_RuntimeMethod_var);
 			V_1 = L_5;
 			String_t* L_6 = V_1;
 			IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
@@ -19238,7 +19238,7 @@ IL_0024:
 
 IL_003c:
 		{
-			bool L_8 = Enumerator_MoveNext_m4158182743((&V_2), /*hidden argument*/Enumerator_MoveNext_m4158182743_RuntimeMethod_var);
+			bool L_8 = Enumerator_MoveNext_m1326435557((&V_2), /*hidden argument*/Enumerator_MoveNext_m1326435557_RuntimeMethod_var);
 			if (L_8)
 			{
 				goto IL_0024;

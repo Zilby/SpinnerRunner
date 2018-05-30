@@ -163,10 +163,19 @@ extern const uint32_t SymmetricTransform_FinalDecrypt_m764004682_MetadataUsageId
 extern const uint32_t SymmetricTransform_TransformFinalBlock_m1030888689_MetadataUsageId;
 extern String_t* _stringLiteral4294193667;
 extern const uint32_t Check_Source_m4098695967_MetadataUsageId;
+extern String_t* _stringLiteral3174732046;
+extern const uint32_t Check_SourceAndFunc_m1489824209_MetadataUsageId;
+extern String_t* _stringLiteral3977229295;
+extern const uint32_t Check_SourceAndSelector_m4013530551_MetadataUsageId;
 extern String_t* _stringLiteral3941128596;
 extern const uint32_t Check_SourceAndPredicate_m2332465641_MetadataUsageId;
+extern String_t* _stringLiteral2374226348;
+extern String_t* _stringLiteral3502150264;
+extern const uint32_t Check_FirstAndSecond_m1286658405_MetadataUsageId;
 extern String_t* _stringLiteral2212699745;
 extern const uint32_t Check_SourceAndKeySelector_m1202955589_MetadataUsageId;
+extern String_t* _stringLiteral3009079190;
+extern const uint32_t Check_SourceAndKeyElementSelectors_m4285999668_MetadataUsageId;
 extern RuntimeClass* KeySizesU5BU5D_t722666473_il2cpp_TypeInfo_var;
 extern RuntimeClass* KeySizes_t85027896_il2cpp_TypeInfo_var;
 extern const uint32_t Aes__ctor_m178909601_MetadataUsageId;
@@ -2755,7 +2764,7 @@ IL_00fa:
 extern "C"  void SymmetricTransform_System_IDisposable_Dispose_m3657987482 (SymmetricTransform_t3802591843 * __this, const RuntimeMethod* method)
 {
 	{
-		VirtActionInvoker1< bool >::Invoke(8 /* System.Void Mono.Security.Cryptography.SymmetricTransform::Dispose(System.Boolean) */, __this, (bool)1);
+		VirtActionInvoker1< bool >::Invoke(11 /* System.Void Mono.Security.Cryptography.SymmetricTransform::Dispose(System.Boolean) */, __this, (bool)1);
 		GC_SuppressFinalize_m1177400158(NULL /*static, unused*/, __this, /*hidden argument*/NULL);
 		return;
 	}
@@ -2773,7 +2782,7 @@ extern "C"  void SymmetricTransform_Finalize_m4129642865 (SymmetricTransform_t38
 IL_0000:
 	try
 	{ // begin try (depth: 1)
-		VirtActionInvoker1< bool >::Invoke(8 /* System.Void Mono.Security.Cryptography.SymmetricTransform::Dispose(System.Boolean) */, __this, (bool)0);
+		VirtActionInvoker1< bool >::Invoke(11 /* System.Void Mono.Security.Cryptography.SymmetricTransform::Dispose(System.Boolean) */, __this, (bool)0);
 		IL2CPP_LEAVE(0x13, FINALLY_000c);
 	} // end try (depth: 1)
 	catch(Il2CppExceptionWrapper& e)
@@ -2836,11 +2845,34 @@ IL_004a:
 		return;
 	}
 }
+// System.Boolean Mono.Security.Cryptography.SymmetricTransform::get_CanTransformMultipleBlocks()
+extern "C"  bool SymmetricTransform_get_CanTransformMultipleBlocks_m2172207851 (SymmetricTransform_t3802591843 * __this, const RuntimeMethod* method)
+{
+	{
+		return (bool)1;
+	}
+}
 // System.Boolean Mono.Security.Cryptography.SymmetricTransform::get_CanReuseTransform()
 extern "C"  bool SymmetricTransform_get_CanReuseTransform_m3495714228 (SymmetricTransform_t3802591843 * __this, const RuntimeMethod* method)
 {
 	{
 		return (bool)0;
+	}
+}
+// System.Int32 Mono.Security.Cryptography.SymmetricTransform::get_InputBlockSize()
+extern "C"  int32_t SymmetricTransform_get_InputBlockSize_m48243441 (SymmetricTransform_t3802591843 * __this, const RuntimeMethod* method)
+{
+	{
+		int32_t L_0 = __this->get_BlockSizeByte_2();
+		return L_0;
+	}
+}
+// System.Int32 Mono.Security.Cryptography.SymmetricTransform::get_OutputBlockSize()
+extern "C"  int32_t SymmetricTransform_get_OutputBlockSize_m3395837183 (SymmetricTransform_t3802591843 * __this, const RuntimeMethod* method)
+{
+	{
+		int32_t L_0 = __this->get_BlockSizeByte_2();
+		return L_0;
 	}
 }
 // System.Void Mono.Security.Cryptography.SymmetricTransform::Transform(System.Byte[],System.Byte[])
@@ -2856,7 +2888,7 @@ extern "C"  void SymmetricTransform_Transform_m1683494363 (SymmetricTransform_t3
 	{
 		SymmetricAlgorithm_t4254223087 * L_0 = __this->get_algo_0();
 		NullCheck(L_0);
-		int32_t L_1 = VirtFuncInvoker0< int32_t >::Invoke(16 /* System.Security.Cryptography.CipherMode System.Security.Cryptography.SymmetricAlgorithm::get_Mode() */, L_0);
+		int32_t L_1 = VirtFuncInvoker0< int32_t >::Invoke(18 /* System.Security.Cryptography.CipherMode System.Security.Cryptography.SymmetricAlgorithm::get_Mode() */, L_0);
 		V_0 = L_1;
 		int32_t L_2 = V_0;
 		switch (((int32_t)il2cpp_codegen_subtract((int32_t)L_2, (int32_t)1)))
@@ -2891,7 +2923,7 @@ IL_002d:
 	{
 		ByteU5BU5D_t4116647657* L_3 = ___input0;
 		ByteU5BU5D_t4116647657* L_4 = ___output1;
-		VirtActionInvoker2< ByteU5BU5D_t4116647657*, ByteU5BU5D_t4116647657* >::Invoke(11 /* System.Void Mono.Security.Cryptography.SymmetricTransform::ECB(System.Byte[],System.Byte[]) */, __this, L_3, L_4);
+		VirtActionInvoker2< ByteU5BU5D_t4116647657*, ByteU5BU5D_t4116647657* >::Invoke(17 /* System.Void Mono.Security.Cryptography.SymmetricTransform::ECB(System.Byte[],System.Byte[]) */, __this, L_3, L_4);
 		goto IL_0093;
 	}
 
@@ -2899,7 +2931,7 @@ IL_003a:
 	{
 		ByteU5BU5D_t4116647657* L_5 = ___input0;
 		ByteU5BU5D_t4116647657* L_6 = ___output1;
-		VirtActionInvoker2< ByteU5BU5D_t4116647657*, ByteU5BU5D_t4116647657* >::Invoke(12 /* System.Void Mono.Security.Cryptography.SymmetricTransform::CBC(System.Byte[],System.Byte[]) */, __this, L_5, L_6);
+		VirtActionInvoker2< ByteU5BU5D_t4116647657*, ByteU5BU5D_t4116647657* >::Invoke(18 /* System.Void Mono.Security.Cryptography.SymmetricTransform::CBC(System.Byte[],System.Byte[]) */, __this, L_5, L_6);
 		goto IL_0093;
 	}
 
@@ -2907,7 +2939,7 @@ IL_0047:
 	{
 		ByteU5BU5D_t4116647657* L_7 = ___input0;
 		ByteU5BU5D_t4116647657* L_8 = ___output1;
-		VirtActionInvoker2< ByteU5BU5D_t4116647657*, ByteU5BU5D_t4116647657* >::Invoke(13 /* System.Void Mono.Security.Cryptography.SymmetricTransform::CFB(System.Byte[],System.Byte[]) */, __this, L_7, L_8);
+		VirtActionInvoker2< ByteU5BU5D_t4116647657*, ByteU5BU5D_t4116647657* >::Invoke(19 /* System.Void Mono.Security.Cryptography.SymmetricTransform::CFB(System.Byte[],System.Byte[]) */, __this, L_7, L_8);
 		goto IL_0093;
 	}
 
@@ -2915,7 +2947,7 @@ IL_0054:
 	{
 		ByteU5BU5D_t4116647657* L_9 = ___input0;
 		ByteU5BU5D_t4116647657* L_10 = ___output1;
-		VirtActionInvoker2< ByteU5BU5D_t4116647657*, ByteU5BU5D_t4116647657* >::Invoke(14 /* System.Void Mono.Security.Cryptography.SymmetricTransform::OFB(System.Byte[],System.Byte[]) */, __this, L_9, L_10);
+		VirtActionInvoker2< ByteU5BU5D_t4116647657*, ByteU5BU5D_t4116647657* >::Invoke(20 /* System.Void Mono.Security.Cryptography.SymmetricTransform::OFB(System.Byte[],System.Byte[]) */, __this, L_9, L_10);
 		goto IL_0093;
 	}
 
@@ -2923,7 +2955,7 @@ IL_0061:
 	{
 		ByteU5BU5D_t4116647657* L_11 = ___input0;
 		ByteU5BU5D_t4116647657* L_12 = ___output1;
-		VirtActionInvoker2< ByteU5BU5D_t4116647657*, ByteU5BU5D_t4116647657* >::Invoke(15 /* System.Void Mono.Security.Cryptography.SymmetricTransform::CTS(System.Byte[],System.Byte[]) */, __this, L_11, L_12);
+		VirtActionInvoker2< ByteU5BU5D_t4116647657*, ByteU5BU5D_t4116647657* >::Invoke(21 /* System.Void Mono.Security.Cryptography.SymmetricTransform::CTS(System.Byte[],System.Byte[]) */, __this, L_11, L_12);
 		goto IL_0093;
 	}
 
@@ -2931,7 +2963,7 @@ IL_006e:
 	{
 		SymmetricAlgorithm_t4254223087 * L_13 = __this->get_algo_0();
 		NullCheck(L_13);
-		int32_t L_14 = VirtFuncInvoker0< int32_t >::Invoke(16 /* System.Security.Cryptography.CipherMode System.Security.Cryptography.SymmetricAlgorithm::get_Mode() */, L_13);
+		int32_t L_14 = VirtFuncInvoker0< int32_t >::Invoke(18 /* System.Security.Cryptography.CipherMode System.Security.Cryptography.SymmetricAlgorithm::get_Mode() */, L_13);
 		int32_t L_15 = L_14;
 		RuntimeObject * L_16 = Box(CipherMode_t84635067_il2cpp_TypeInfo_var, &L_15);
 		NullCheck((Enum_t4135868527 *)L_16);
@@ -2993,7 +3025,7 @@ IL_002a:
 	{
 		ByteU5BU5D_t4116647657* L_11 = __this->get_temp_3();
 		ByteU5BU5D_t4116647657* L_12 = ___output1;
-		VirtActionInvoker2< ByteU5BU5D_t4116647657*, ByteU5BU5D_t4116647657* >::Invoke(11 /* System.Void Mono.Security.Cryptography.SymmetricTransform::ECB(System.Byte[],System.Byte[]) */, __this, L_11, L_12);
+		VirtActionInvoker2< ByteU5BU5D_t4116647657*, ByteU5BU5D_t4116647657* >::Invoke(17 /* System.Void Mono.Security.Cryptography.SymmetricTransform::ECB(System.Byte[],System.Byte[]) */, __this, L_11, L_12);
 		ByteU5BU5D_t4116647657* L_13 = ___output1;
 		ByteU5BU5D_t4116647657* L_14 = __this->get_temp_3();
 		int32_t L_15 = __this->get_BlockSizeByte_2();
@@ -3009,7 +3041,7 @@ IL_005c:
 		Buffer_BlockCopy_m2884209081(NULL /*static, unused*/, (RuntimeArray *)(RuntimeArray *)L_16, 0, (RuntimeArray *)(RuntimeArray *)L_17, 0, L_18, /*hidden argument*/NULL);
 		ByteU5BU5D_t4116647657* L_19 = ___input0;
 		ByteU5BU5D_t4116647657* L_20 = ___output1;
-		VirtActionInvoker2< ByteU5BU5D_t4116647657*, ByteU5BU5D_t4116647657* >::Invoke(11 /* System.Void Mono.Security.Cryptography.SymmetricTransform::ECB(System.Byte[],System.Byte[]) */, __this, L_19, L_20);
+		VirtActionInvoker2< ByteU5BU5D_t4116647657*, ByteU5BU5D_t4116647657* >::Invoke(17 /* System.Void Mono.Security.Cryptography.SymmetricTransform::ECB(System.Byte[],System.Byte[]) */, __this, L_19, L_20);
 		V_1 = 0;
 		goto IL_0097;
 	}
@@ -3074,7 +3106,7 @@ IL_0012:
 	{
 		ByteU5BU5D_t4116647657* L_1 = __this->get_temp_3();
 		ByteU5BU5D_t4116647657* L_2 = __this->get_temp2_4();
-		VirtActionInvoker2< ByteU5BU5D_t4116647657*, ByteU5BU5D_t4116647657* >::Invoke(11 /* System.Void Mono.Security.Cryptography.SymmetricTransform::ECB(System.Byte[],System.Byte[]) */, __this, L_1, L_2);
+		VirtActionInvoker2< ByteU5BU5D_t4116647657*, ByteU5BU5D_t4116647657* >::Invoke(17 /* System.Void Mono.Security.Cryptography.SymmetricTransform::ECB(System.Byte[],System.Byte[]) */, __this, L_1, L_2);
 		V_1 = 0;
 		goto IL_0043;
 	}
@@ -3152,7 +3184,7 @@ IL_00b0:
 		__this->set_encrypt_1((bool)1);
 		ByteU5BU5D_t4116647657* L_32 = __this->get_temp_3();
 		ByteU5BU5D_t4116647657* L_33 = __this->get_temp2_4();
-		VirtActionInvoker2< ByteU5BU5D_t4116647657*, ByteU5BU5D_t4116647657* >::Invoke(11 /* System.Void Mono.Security.Cryptography.SymmetricTransform::ECB(System.Byte[],System.Byte[]) */, __this, L_32, L_33);
+		VirtActionInvoker2< ByteU5BU5D_t4116647657*, ByteU5BU5D_t4116647657* >::Invoke(17 /* System.Void Mono.Security.Cryptography.SymmetricTransform::ECB(System.Byte[],System.Byte[]) */, __this, L_32, L_33);
 		__this->set_encrypt_1((bool)0);
 		ByteU5BU5D_t4116647657* L_34 = __this->get_temp_3();
 		int32_t L_35 = __this->get_FeedBackByte_7();
@@ -3403,7 +3435,7 @@ IL_0049:
 	{
 		SymmetricAlgorithm_t4254223087 * L_14 = __this->get_algo_0();
 		NullCheck(L_14);
-		int32_t L_15 = VirtFuncInvoker0< int32_t >::Invoke(18 /* System.Security.Cryptography.PaddingMode System.Security.Cryptography.SymmetricAlgorithm::get_Padding() */, L_14);
+		int32_t L_15 = VirtFuncInvoker0< int32_t >::Invoke(20 /* System.Security.Cryptography.PaddingMode System.Security.Cryptography.SymmetricAlgorithm::get_Padding() */, L_14);
 		if ((((int32_t)L_15) == ((int32_t)1)))
 		{
 			goto IL_0087;
@@ -3412,7 +3444,7 @@ IL_0049:
 	{
 		SymmetricAlgorithm_t4254223087 * L_16 = __this->get_algo_0();
 		NullCheck(L_16);
-		int32_t L_17 = VirtFuncInvoker0< int32_t >::Invoke(18 /* System.Security.Cryptography.PaddingMode System.Security.Cryptography.SymmetricAlgorithm::get_Padding() */, L_16);
+		int32_t L_17 = VirtFuncInvoker0< int32_t >::Invoke(20 /* System.Security.Cryptography.PaddingMode System.Security.Cryptography.SymmetricAlgorithm::get_Padding() */, L_16);
 		if ((!(((uint32_t)L_17) == ((uint32_t)3))))
 		{
 			goto IL_009c;
@@ -3516,7 +3548,7 @@ extern "C"  bool SymmetricTransform_get_KeepLastBlock_m2492071306 (SymmetricTran
 	{
 		SymmetricAlgorithm_t4254223087 * L_1 = __this->get_algo_0();
 		NullCheck(L_1);
-		int32_t L_2 = VirtFuncInvoker0< int32_t >::Invoke(18 /* System.Security.Cryptography.PaddingMode System.Security.Cryptography.SymmetricAlgorithm::get_Padding() */, L_1);
+		int32_t L_2 = VirtFuncInvoker0< int32_t >::Invoke(20 /* System.Security.Cryptography.PaddingMode System.Security.Cryptography.SymmetricAlgorithm::get_Padding() */, L_1);
 		if ((((int32_t)L_2) == ((int32_t)1)))
 		{
 			goto IL_002f;
@@ -3525,7 +3557,7 @@ extern "C"  bool SymmetricTransform_get_KeepLastBlock_m2492071306 (SymmetricTran
 	{
 		SymmetricAlgorithm_t4254223087 * L_3 = __this->get_algo_0();
 		NullCheck(L_3);
-		int32_t L_4 = VirtFuncInvoker0< int32_t >::Invoke(18 /* System.Security.Cryptography.PaddingMode System.Security.Cryptography.SymmetricAlgorithm::get_Padding() */, L_3);
+		int32_t L_4 = VirtFuncInvoker0< int32_t >::Invoke(20 /* System.Security.Cryptography.PaddingMode System.Security.Cryptography.SymmetricAlgorithm::get_Padding() */, L_3);
 		G_B4_0 = ((((int32_t)((((int32_t)L_4) == ((int32_t)3))? 1 : 0)) == ((int32_t)0))? 1 : 0);
 		goto IL_0030;
 	}
@@ -3615,7 +3647,7 @@ IL_0045:
 	{
 		ByteU5BU5D_t4116647657* L_11 = __this->get_workBuff_5();
 		ByteU5BU5D_t4116647657* L_12 = __this->get_workout_6();
-		VirtActionInvoker2< ByteU5BU5D_t4116647657*, ByteU5BU5D_t4116647657* >::Invoke(10 /* System.Void Mono.Security.Cryptography.SymmetricTransform::Transform(System.Byte[],System.Byte[]) */, __this, L_11, L_12);
+		VirtActionInvoker2< ByteU5BU5D_t4116647657*, ByteU5BU5D_t4116647657* >::Invoke(16 /* System.Void Mono.Security.Cryptography.SymmetricTransform::Transform(System.Byte[],System.Byte[]) */, __this, L_11, L_12);
 		ByteU5BU5D_t4116647657* L_13 = __this->get_workout_6();
 		ByteU5BU5D_t4116647657* L_14 = ___outputBuffer3;
 		int32_t L_15 = ___outputOffset4;
@@ -3645,7 +3677,7 @@ IL_009c:
 		Buffer_BlockCopy_m2884209081(NULL /*static, unused*/, (RuntimeArray *)(RuntimeArray *)L_21, L_22, (RuntimeArray *)(RuntimeArray *)L_23, 0, L_24, /*hidden argument*/NULL);
 		ByteU5BU5D_t4116647657* L_25 = __this->get_workBuff_5();
 		ByteU5BU5D_t4116647657* L_26 = __this->get_workout_6();
-		VirtActionInvoker2< ByteU5BU5D_t4116647657*, ByteU5BU5D_t4116647657* >::Invoke(10 /* System.Void Mono.Security.Cryptography.SymmetricTransform::Transform(System.Byte[],System.Byte[]) */, __this, L_25, L_26);
+		VirtActionInvoker2< ByteU5BU5D_t4116647657*, ByteU5BU5D_t4116647657* >::Invoke(16 /* System.Void Mono.Security.Cryptography.SymmetricTransform::Transform(System.Byte[],System.Byte[]) */, __this, L_25, L_26);
 		ByteU5BU5D_t4116647657* L_27 = __this->get_workout_6();
 		ByteU5BU5D_t4116647657* L_28 = ___outputBuffer3;
 		int32_t L_29 = ___outputOffset4;
@@ -3827,7 +3859,7 @@ extern "C"  ByteU5BU5D_t4116647657* SymmetricTransform_FinalEncrypt_m748885414 (
 		V_2 = L_5;
 		SymmetricAlgorithm_t4254223087 * L_6 = __this->get_algo_0();
 		NullCheck(L_6);
-		int32_t L_7 = VirtFuncInvoker0< int32_t >::Invoke(18 /* System.Security.Cryptography.PaddingMode System.Security.Cryptography.SymmetricAlgorithm::get_Padding() */, L_6);
+		int32_t L_7 = VirtFuncInvoker0< int32_t >::Invoke(20 /* System.Security.Cryptography.PaddingMode System.Security.Cryptography.SymmetricAlgorithm::get_Padding() */, L_6);
 		V_8 = L_7;
 		int32_t L_8 = V_8;
 		switch (((int32_t)il2cpp_codegen_subtract((int32_t)L_8, (int32_t)2)))
@@ -3885,7 +3917,7 @@ IL_005c:
 	{
 		SymmetricAlgorithm_t4254223087 * L_13 = __this->get_algo_0();
 		NullCheck(L_13);
-		int32_t L_14 = VirtFuncInvoker0< int32_t >::Invoke(18 /* System.Security.Cryptography.PaddingMode System.Security.Cryptography.SymmetricAlgorithm::get_Padding() */, L_13);
+		int32_t L_14 = VirtFuncInvoker0< int32_t >::Invoke(20 /* System.Security.Cryptography.PaddingMode System.Security.Cryptography.SymmetricAlgorithm::get_Padding() */, L_13);
 		if ((!(((uint32_t)L_14) == ((uint32_t)1))))
 		{
 			goto IL_007e;
@@ -3964,7 +3996,7 @@ IL_00e9:
 		V_6 = (uint8_t)(((int32_t)((uint8_t)((int32_t)il2cpp_codegen_subtract((int32_t)L_39, (int32_t)L_40)))));
 		SymmetricAlgorithm_t4254223087 * L_41 = __this->get_algo_0();
 		NullCheck(L_41);
-		int32_t L_42 = VirtFuncInvoker0< int32_t >::Invoke(18 /* System.Security.Cryptography.PaddingMode System.Security.Cryptography.SymmetricAlgorithm::get_Padding() */, L_41);
+		int32_t L_42 = VirtFuncInvoker0< int32_t >::Invoke(20 /* System.Security.Cryptography.PaddingMode System.Security.Cryptography.SymmetricAlgorithm::get_Padding() */, L_41);
 		V_8 = L_42;
 		int32_t L_43 = V_8;
 		switch (((int32_t)il2cpp_codegen_subtract((int32_t)L_43, (int32_t)2)))
@@ -4201,7 +4233,7 @@ IL_0066:
 	{
 		ByteU5BU5D_t4116647657* L_22 = __this->get_workBuff_5();
 		ByteU5BU5D_t4116647657* L_23 = __this->get_workout_6();
-		VirtActionInvoker2< ByteU5BU5D_t4116647657*, ByteU5BU5D_t4116647657* >::Invoke(10 /* System.Void Mono.Security.Cryptography.SymmetricTransform::Transform(System.Byte[],System.Byte[]) */, __this, L_22, L_23);
+		VirtActionInvoker2< ByteU5BU5D_t4116647657*, ByteU5BU5D_t4116647657* >::Invoke(16 /* System.Void Mono.Security.Cryptography.SymmetricTransform::Transform(System.Byte[],System.Byte[]) */, __this, L_22, L_23);
 		ByteU5BU5D_t4116647657* L_24 = __this->get_workout_6();
 		ByteU5BU5D_t4116647657* L_25 = V_1;
 		int32_t L_26 = V_2;
@@ -4241,7 +4273,7 @@ IL_00c0:
 		V_4 = (uint8_t)G_B12_0;
 		SymmetricAlgorithm_t4254223087 * L_35 = __this->get_algo_0();
 		NullCheck(L_35);
-		int32_t L_36 = VirtFuncInvoker0< int32_t >::Invoke(18 /* System.Security.Cryptography.PaddingMode System.Security.Cryptography.SymmetricAlgorithm::get_Padding() */, L_35);
+		int32_t L_36 = VirtFuncInvoker0< int32_t >::Invoke(20 /* System.Security.Cryptography.PaddingMode System.Security.Cryptography.SymmetricAlgorithm::get_Padding() */, L_35);
 		V_8 = L_36;
 		int32_t L_37 = V_8;
 		switch (((int32_t)il2cpp_codegen_subtract((int32_t)L_37, (int32_t)1)))
@@ -4293,7 +4325,7 @@ IL_0105:
 	{
 		SymmetricAlgorithm_t4254223087 * L_41 = __this->get_algo_0();
 		NullCheck(L_41);
-		int32_t L_42 = VirtFuncInvoker0< int32_t >::Invoke(18 /* System.Security.Cryptography.PaddingMode System.Security.Cryptography.SymmetricAlgorithm::get_Padding() */, L_41);
+		int32_t L_42 = VirtFuncInvoker0< int32_t >::Invoke(20 /* System.Security.Cryptography.PaddingMode System.Security.Cryptography.SymmetricAlgorithm::get_Padding() */, L_41);
 		uint8_t L_43 = V_4;
 		SymmetricTransform_ThrowBadPaddingException_m2898061954(__this, L_42, L_43, (-1), /*hidden argument*/NULL);
 	}
@@ -4321,7 +4353,7 @@ IL_0124:
 	{
 		SymmetricAlgorithm_t4254223087 * L_50 = __this->get_algo_0();
 		NullCheck(L_50);
-		int32_t L_51 = VirtFuncInvoker0< int32_t >::Invoke(18 /* System.Security.Cryptography.PaddingMode System.Security.Cryptography.SymmetricAlgorithm::get_Padding() */, L_50);
+		int32_t L_51 = VirtFuncInvoker0< int32_t >::Invoke(20 /* System.Security.Cryptography.PaddingMode System.Security.Cryptography.SymmetricAlgorithm::get_Padding() */, L_50);
 		int32_t L_52 = V_5;
 		SymmetricTransform_ThrowBadPaddingException_m2898061954(__this, L_51, (-1), L_52, /*hidden argument*/NULL);
 	}
@@ -4368,7 +4400,7 @@ IL_0171:
 	{
 		SymmetricAlgorithm_t4254223087 * L_60 = __this->get_algo_0();
 		NullCheck(L_60);
-		int32_t L_61 = VirtFuncInvoker0< int32_t >::Invoke(18 /* System.Security.Cryptography.PaddingMode System.Security.Cryptography.SymmetricAlgorithm::get_Padding() */, L_60);
+		int32_t L_61 = VirtFuncInvoker0< int32_t >::Invoke(20 /* System.Security.Cryptography.PaddingMode System.Security.Cryptography.SymmetricAlgorithm::get_Padding() */, L_60);
 		uint8_t L_62 = V_4;
 		SymmetricTransform_ThrowBadPaddingException_m2898061954(__this, L_61, L_62, (-1), /*hidden argument*/NULL);
 	}
@@ -4402,7 +4434,7 @@ IL_01a3:
 	{
 		SymmetricAlgorithm_t4254223087 * L_68 = __this->get_algo_0();
 		NullCheck(L_68);
-		int32_t L_69 = VirtFuncInvoker0< int32_t >::Invoke(18 /* System.Security.Cryptography.PaddingMode System.Security.Cryptography.SymmetricAlgorithm::get_Padding() */, L_68);
+		int32_t L_69 = VirtFuncInvoker0< int32_t >::Invoke(20 /* System.Security.Cryptography.PaddingMode System.Security.Cryptography.SymmetricAlgorithm::get_Padding() */, L_68);
 		uint8_t L_70 = V_4;
 		SymmetricTransform_ThrowBadPaddingException_m2898061954(__this, L_69, L_70, (-1), /*hidden argument*/NULL);
 	}
@@ -4431,7 +4463,7 @@ IL_01c2:
 	{
 		SymmetricAlgorithm_t4254223087 * L_78 = __this->get_algo_0();
 		NullCheck(L_78);
-		int32_t L_79 = VirtFuncInvoker0< int32_t >::Invoke(18 /* System.Security.Cryptography.PaddingMode System.Security.Cryptography.SymmetricAlgorithm::get_Padding() */, L_78);
+		int32_t L_79 = VirtFuncInvoker0< int32_t >::Invoke(20 /* System.Security.Cryptography.PaddingMode System.Security.Cryptography.SymmetricAlgorithm::get_Padding() */, L_78);
 		int32_t L_80 = V_6;
 		SymmetricTransform_ThrowBadPaddingException_m2898061954(__this, L_79, (-1), L_80, /*hidden argument*/NULL);
 	}
@@ -4647,6 +4679,88 @@ IL_0011:
 		return;
 	}
 }
+// System.Void System.Linq.Check::SourceAndFunc(System.Object,System.Object)
+extern "C"  void Check_SourceAndFunc_m1489824209 (RuntimeObject * __this /* static, unused */, RuntimeObject * ___source0, RuntimeObject * ___func1, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Check_SourceAndFunc_m1489824209_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		RuntimeObject * L_0 = ___source0;
+		if (L_0)
+		{
+			goto IL_0011;
+		}
+	}
+	{
+		ArgumentNullException_t1615371798 * L_1 = (ArgumentNullException_t1615371798 *)il2cpp_codegen_object_new(ArgumentNullException_t1615371798_il2cpp_TypeInfo_var);
+		ArgumentNullException__ctor_m1170824041(L_1, _stringLiteral4294193667, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_1);
+	}
+
+IL_0011:
+	{
+		RuntimeObject * L_2 = ___func1;
+		if (L_2)
+		{
+			goto IL_0022;
+		}
+	}
+	{
+		ArgumentNullException_t1615371798 * L_3 = (ArgumentNullException_t1615371798 *)il2cpp_codegen_object_new(ArgumentNullException_t1615371798_il2cpp_TypeInfo_var);
+		ArgumentNullException__ctor_m1170824041(L_3, _stringLiteral3174732046, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_3);
+	}
+
+IL_0022:
+	{
+		return;
+	}
+}
+// System.Void System.Linq.Check::SourceAndSelector(System.Object,System.Object)
+extern "C"  void Check_SourceAndSelector_m4013530551 (RuntimeObject * __this /* static, unused */, RuntimeObject * ___source0, RuntimeObject * ___selector1, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Check_SourceAndSelector_m4013530551_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		RuntimeObject * L_0 = ___source0;
+		if (L_0)
+		{
+			goto IL_0011;
+		}
+	}
+	{
+		ArgumentNullException_t1615371798 * L_1 = (ArgumentNullException_t1615371798 *)il2cpp_codegen_object_new(ArgumentNullException_t1615371798_il2cpp_TypeInfo_var);
+		ArgumentNullException__ctor_m1170824041(L_1, _stringLiteral4294193667, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_1);
+	}
+
+IL_0011:
+	{
+		RuntimeObject * L_2 = ___selector1;
+		if (L_2)
+		{
+			goto IL_0022;
+		}
+	}
+	{
+		ArgumentNullException_t1615371798 * L_3 = (ArgumentNullException_t1615371798 *)il2cpp_codegen_object_new(ArgumentNullException_t1615371798_il2cpp_TypeInfo_var);
+		ArgumentNullException__ctor_m1170824041(L_3, _stringLiteral3977229295, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_3);
+	}
+
+IL_0022:
+	{
+		return;
+	}
+}
 // System.Void System.Linq.Check::SourceAndPredicate(System.Object,System.Object)
 extern "C"  void Check_SourceAndPredicate_m2332465641 (RuntimeObject * __this /* static, unused */, RuntimeObject * ___source0, RuntimeObject * ___predicate1, const RuntimeMethod* method)
 {
@@ -4680,6 +4794,47 @@ IL_0011:
 	{
 		ArgumentNullException_t1615371798 * L_3 = (ArgumentNullException_t1615371798 *)il2cpp_codegen_object_new(ArgumentNullException_t1615371798_il2cpp_TypeInfo_var);
 		ArgumentNullException__ctor_m1170824041(L_3, _stringLiteral3941128596, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_3);
+	}
+
+IL_0022:
+	{
+		return;
+	}
+}
+// System.Void System.Linq.Check::FirstAndSecond(System.Object,System.Object)
+extern "C"  void Check_FirstAndSecond_m1286658405 (RuntimeObject * __this /* static, unused */, RuntimeObject * ___first0, RuntimeObject * ___second1, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Check_FirstAndSecond_m1286658405_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		RuntimeObject * L_0 = ___first0;
+		if (L_0)
+		{
+			goto IL_0011;
+		}
+	}
+	{
+		ArgumentNullException_t1615371798 * L_1 = (ArgumentNullException_t1615371798 *)il2cpp_codegen_object_new(ArgumentNullException_t1615371798_il2cpp_TypeInfo_var);
+		ArgumentNullException__ctor_m1170824041(L_1, _stringLiteral2374226348, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_1);
+	}
+
+IL_0011:
+	{
+		RuntimeObject * L_2 = ___second1;
+		if (L_2)
+		{
+			goto IL_0022;
+		}
+	}
+	{
+		ArgumentNullException_t1615371798 * L_3 = (ArgumentNullException_t1615371798 *)il2cpp_codegen_object_new(ArgumentNullException_t1615371798_il2cpp_TypeInfo_var);
+		ArgumentNullException__ctor_m1170824041(L_3, _stringLiteral3502150264, /*hidden argument*/NULL);
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_3);
 	}
 
@@ -4725,6 +4880,61 @@ IL_0011:
 	}
 
 IL_0022:
+	{
+		return;
+	}
+}
+// System.Void System.Linq.Check::SourceAndKeyElementSelectors(System.Object,System.Object,System.Object)
+extern "C"  void Check_SourceAndKeyElementSelectors_m4285999668 (RuntimeObject * __this /* static, unused */, RuntimeObject * ___source0, RuntimeObject * ___keySelector1, RuntimeObject * ___elementSelector2, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Check_SourceAndKeyElementSelectors_m4285999668_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		RuntimeObject * L_0 = ___source0;
+		if (L_0)
+		{
+			goto IL_0011;
+		}
+	}
+	{
+		ArgumentNullException_t1615371798 * L_1 = (ArgumentNullException_t1615371798 *)il2cpp_codegen_object_new(ArgumentNullException_t1615371798_il2cpp_TypeInfo_var);
+		ArgumentNullException__ctor_m1170824041(L_1, _stringLiteral4294193667, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_1);
+	}
+
+IL_0011:
+	{
+		RuntimeObject * L_2 = ___keySelector1;
+		if (L_2)
+		{
+			goto IL_0022;
+		}
+	}
+	{
+		ArgumentNullException_t1615371798 * L_3 = (ArgumentNullException_t1615371798 *)il2cpp_codegen_object_new(ArgumentNullException_t1615371798_il2cpp_TypeInfo_var);
+		ArgumentNullException__ctor_m1170824041(L_3, _stringLiteral2212699745, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_3);
+	}
+
+IL_0022:
+	{
+		RuntimeObject * L_4 = ___elementSelector2;
+		if (L_4)
+		{
+			goto IL_0033;
+		}
+	}
+	{
+		ArgumentNullException_t1615371798 * L_5 = (ArgumentNullException_t1615371798 *)il2cpp_codegen_object_new(ArgumentNullException_t1615371798_il2cpp_TypeInfo_var);
+		ArgumentNullException__ctor_m1170824041(L_5, _stringLiteral3009079190, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_5);
+	}
+
+IL_0033:
 	{
 		return;
 	}
