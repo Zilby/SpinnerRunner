@@ -30,8 +30,9 @@ public class MenuManager : MonoBehaviour
 	public Button sound;
 	public Button music;
 	public Button ads;
+    public Button restore;
 
-	[Header("HighScores")]
+    [Header("HighScores")]
 	public GameObject scores;
 	public Button menu;
 	public TextMeshProUGUI score;
@@ -50,6 +51,11 @@ public class MenuManager : MonoBehaviour
 	private static IExtensionProvider m_StoreExtensionProvider; // The store-specific Purchasing subsystems.
 
 	private static string disableAdsProductID = "1807728";
+
+    /// <summary>
+    /// Update the static buttons per instance to allow purchasing instance to disable them. 
+    /// </summary>
+    private static Button[] disableable = new Button[2];
 #endif
 
 	// Use this for initialization
@@ -93,9 +99,17 @@ public class MenuManager : MonoBehaviour
 		music.onClick.AddListener(ToggleMusic);
 		menu.onClick.AddListener(delegate { AlternateScreens(scores); });
 		menu2.onClick.AddListener(delegate { AlternateScreens(creditsPage); });
-		ads.onClick.AddListener(DisableAds);
+#if UNITY_PURCHASING
+        disableable = new Button[] { ads, restore };
+        ads.onClick.AddListener(DisableAds);
+#if UNITY_IOS
+        restore.onClick.AddListener(RestorePurchases);
+        restore.gameObject.SetActive(true);
+#endif
+#endif
+
 #if UNITY_ADS && UNITY_PURCHASING
-		if (showAd)
+        if (showAd)
 		{
 			float time = 0;
 			while (!IsInitialized() && time < 2.5f)
@@ -120,10 +134,6 @@ public class MenuManager : MonoBehaviour
 					}
 					yield return new WaitForSecondsRealtime(0.2f);
 				}
-			}
-			else
-			{
-				ads.gameObject.SetActive(false);
 			}
 		}
 #endif
@@ -162,16 +172,14 @@ public class MenuManager : MonoBehaviour
 		SoundManager.MixerToggle(active, "Music");
 	}
 
-	private void DisableAds()
-	{
 #if UNITY_PURCHASING
+    private void DisableAds()
+	{
 		// Buy the non-consumable product using its general identifier. Expect a response either 
 		// through ProcessPurchase or OnPurchaseFailed asynchronously.
 		BuyProductID(disableAdsProductID);
-#endif
 	}
 
-#if UNITY_PURCHASING
 	public void InitializePurchasing()
 	{
 		// If we have already connected to Purchasing ...
@@ -200,8 +208,8 @@ public class MenuManager : MonoBehaviour
 
 	void BuyProductID(string productId)
 	{
-		// If Purchasing has been initialized ...
-		if (IsInitialized())
+        // If Purchasing has been initialized ...
+        if (IsInitialized())
 		{
 			// ... look up the Product reference with the general product identifier and the Purchasing 
 			// system's products collection.
@@ -253,17 +261,18 @@ public class MenuManager : MonoBehaviour
 
 	public PurchaseProcessingResult ProcessPurchase(PurchaseEventArgs args)
 	{
-		// Or ... a non-consumable product has been purchased by this user.
-		if (String.Equals(args.purchasedProduct.definition.id, disableAdsProductID, StringComparison.Ordinal))
+        // Or ... a non-consumable product has been purchased by this user.
+        if (String.Equals(args.purchasedProduct.definition.id, disableAdsProductID, StringComparison.Ordinal))
 		{
 			Debug.Log(string.Format("ProcessPurchase: PASS. Product: '{0}'", args.purchasedProduct.definition.id));
-			// TODO: The non-consumable item has been successfully purchased, grant this item to the player.
-			ads.gameObject.SetActive(false);
+            // The non-consumable item has been successfully purchased, grant this item to the player.
+            disableable[0].gameObject.SetActive(false);
+            disableable[1].gameObject.SetActive(false);
 		}
 		// Or ... an unknown product has been purchased by this user. Fill in additional products here....
 		else
 		{
-			Debug.Log(string.Format("ProcessPurchase: FAIL. Unrecognized product: '{0}'", args.purchasedProduct.definition.id));
+            Debug.Log(string.Format("ProcessPurchase: FAIL. Unrecognized product: '{0}'", args.purchasedProduct.definition.id));
 		}
 
 		// Return a flag indicating whether this product has completely been received, or if the application needs 
@@ -316,7 +325,36 @@ public class MenuManager : MonoBehaviour
 		}
 #endif
 
-		return validPurchase;
+        disableable[0].gameObject.SetActive(!validPurchase);
+#if UNITY_IOS
+        disableable[1].gameObject.SetActive(!validPurchase);
+#endif
+
+        return validPurchase;
 	}
+
+#if UNITY_IOS
+
+    /// <summary>
+    /// Restores purchases for apple IOS store
+    /// </summary>
+    public void RestorePurchases()
+    {
+        m_StoreExtensionProvider.GetExtension<IAppleExtensions>().RestoreTransactions(result => {
+            if (result)
+            {
+                Debug.Log("Restore Succeeded");
+                ValidifyPurchase();
+                restore.gameObject.SetActive(false);
+            }
+            else
+            {
+                Debug.Log("Restore Failed");
+            }
+        });
+    }
+
+#endif
+
 #endif
 }
