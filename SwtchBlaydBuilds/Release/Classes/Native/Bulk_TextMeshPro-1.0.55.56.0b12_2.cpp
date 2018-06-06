@@ -467,7 +467,7 @@ extern const RuntimeMethod* TMP_XmlTagStack_1__ctor_m1009822149_RuntimeMethod_va
 extern const RuntimeMethod* TMP_XmlTagStack_1__ctor_m3675273995_RuntimeMethod_var;
 extern const RuntimeMethod* TMP_XmlTagStack_1__ctor_m3797671191_RuntimeMethod_var;
 extern const RuntimeMethod* TMP_XmlTagStack_1__ctor_m2987941261_RuntimeMethod_var;
-extern RuntimeField* U3CPrivateImplementationDetailsU3E_t3057255366____9E6378168821DBABB7EE3D0154346480FAC8AEF1_1_FieldInfo_var;
+extern RuntimeField* U3CPrivateImplementationDetailsU3E_t3057255369____9E6378168821DBABB7EE3D0154346480FAC8AEF1_1_FieldInfo_var;
 extern const uint32_t TMP_Text__ctor_m619509216_MetadataUsageId;
 extern const uint32_t TMP_Text__cctor_m2899078435_MetadataUsageId;
 extern RuntimeClass* TMP_WordInfoU5BU5D_t3766301798_il2cpp_TypeInfo_var;
@@ -5687,8 +5687,8 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // CARETPOSITION_T3997512201_H
-#ifndef U3CPRIVATEIMPLEMENTATIONDETAILSU3E_T3057255366_H
-#define U3CPRIVATEIMPLEMENTATIONDETAILSU3E_T3057255366_H
+#ifndef U3CPRIVATEIMPLEMENTATIONDETAILSU3E_T3057255369_H
+#define U3CPRIVATEIMPLEMENTATIONDETAILSU3E_T3057255369_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
@@ -5696,14 +5696,14 @@ public:
 #endif
 
 // <PrivateImplementationDetails>
-struct  U3CPrivateImplementationDetailsU3E_t3057255366  : public RuntimeObject
+struct  U3CPrivateImplementationDetailsU3E_t3057255369  : public RuntimeObject
 {
 public:
 
 public:
 };
 
-struct U3CPrivateImplementationDetailsU3E_t3057255366_StaticFields
+struct U3CPrivateImplementationDetailsU3E_t3057255369_StaticFields
 {
 public:
 	// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=12 <PrivateImplementationDetails>::7BBE37982E6C057ED87163CAFC7FD6E5E42EEA46
@@ -5712,7 +5712,7 @@ public:
 	__StaticArrayInitTypeSizeU3D40_t1547998295  ___9E6378168821DBABB7EE3D0154346480FAC8AEF1_1;
 
 public:
-	inline static int32_t get_offset_of_U37BBE37982E6C057ED87163CAFC7FD6E5E42EEA46_0() { return static_cast<int32_t>(offsetof(U3CPrivateImplementationDetailsU3E_t3057255366_StaticFields, ___7BBE37982E6C057ED87163CAFC7FD6E5E42EEA46_0)); }
+	inline static int32_t get_offset_of_U37BBE37982E6C057ED87163CAFC7FD6E5E42EEA46_0() { return static_cast<int32_t>(offsetof(U3CPrivateImplementationDetailsU3E_t3057255369_StaticFields, ___7BBE37982E6C057ED87163CAFC7FD6E5E42EEA46_0)); }
 	inline __StaticArrayInitTypeSizeU3D12_t2710994317  get_U37BBE37982E6C057ED87163CAFC7FD6E5E42EEA46_0() const { return ___7BBE37982E6C057ED87163CAFC7FD6E5E42EEA46_0; }
 	inline __StaticArrayInitTypeSizeU3D12_t2710994317 * get_address_of_U37BBE37982E6C057ED87163CAFC7FD6E5E42EEA46_0() { return &___7BBE37982E6C057ED87163CAFC7FD6E5E42EEA46_0; }
 	inline void set_U37BBE37982E6C057ED87163CAFC7FD6E5E42EEA46_0(__StaticArrayInitTypeSizeU3D12_t2710994317  value)
@@ -5720,7 +5720,7 @@ public:
 		___7BBE37982E6C057ED87163CAFC7FD6E5E42EEA46_0 = value;
 	}
 
-	inline static int32_t get_offset_of_U39E6378168821DBABB7EE3D0154346480FAC8AEF1_1() { return static_cast<int32_t>(offsetof(U3CPrivateImplementationDetailsU3E_t3057255366_StaticFields, ___9E6378168821DBABB7EE3D0154346480FAC8AEF1_1)); }
+	inline static int32_t get_offset_of_U39E6378168821DBABB7EE3D0154346480FAC8AEF1_1() { return static_cast<int32_t>(offsetof(U3CPrivateImplementationDetailsU3E_t3057255369_StaticFields, ___9E6378168821DBABB7EE3D0154346480FAC8AEF1_1)); }
 	inline __StaticArrayInitTypeSizeU3D40_t1547998295  get_U39E6378168821DBABB7EE3D0154346480FAC8AEF1_1() const { return ___9E6378168821DBABB7EE3D0154346480FAC8AEF1_1; }
 	inline __StaticArrayInitTypeSizeU3D40_t1547998295 * get_address_of_U39E6378168821DBABB7EE3D0154346480FAC8AEF1_1() { return &___9E6378168821DBABB7EE3D0154346480FAC8AEF1_1; }
 	inline void set_U39E6378168821DBABB7EE3D0154346480FAC8AEF1_1(__StaticArrayInitTypeSizeU3D40_t1547998295  value)
@@ -5732,7 +5732,7 @@ public:
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // U3CPRIVATEIMPLEMENTATIONDETAILSU3E_T3057255366_H
+#endif // U3CPRIVATEIMPLEMENTATIONDETAILSU3E_T3057255369_H
 #ifndef RUNTIMEFIELDHANDLE_T1871169219_H
 #define RUNTIMEFIELDHANDLE_T1871169219_H
 #ifdef __clang__
@@ -12678,7 +12678,7 @@ extern "C"  RuntimeObject * Component_GetComponent_TisRuntimeObject_m2906321015_
 // !!0 UnityEngine.GameObject::GetComponent<System.Object>()
 extern "C"  RuntimeObject * GameObject_GetComponent_TisRuntimeObject_m2049753423_gshared (GameObject_t1113636619 * __this, const RuntimeMethod* method);
 // !!0 UnityEngine.GameObject::AddComponent<System.Object>()
-extern "C"  RuntimeObject * GameObject_AddComponent_TisRuntimeObject_m3469369570_gshared (GameObject_t1113636619 * __this, const RuntimeMethod* method);
+extern "C"  RuntimeObject * GameObject_AddComponent_TisRuntimeObject_m147650894_gshared (GameObject_t1113636619 * __this, const RuntimeMethod* method);
 // System.Void TMPro.TMP_XmlTagStack`1<System.Int32>::Clear()
 extern "C"  void TMP_XmlTagStack_1_Clear_m2347268616_gshared (TMP_XmlTagStack_1_t2514600297 * __this, const RuntimeMethod* method);
 // System.Void TMPro.TMP_Text::ResizeInternalArray<System.Int32>(T[]&)
@@ -12813,7 +12813,7 @@ extern "C"  Vector2_t2156229523  RectTransform_get_pivot_m3425744470 (RectTransf
 // System.Void UnityEngine.RectTransform::set_pivot(UnityEngine.Vector2)
 extern "C"  void RectTransform_set_pivot_m909387058 (RectTransform_t3704657025 * __this, Vector2_t2156229523  p0, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // !!0 UnityEngine.GameObject::AddComponent<TMPro.TMP_SubMeshUI>()
-#define GameObject_AddComponent_TisTMP_SubMeshUI_t1578871311_m4159179807(__this, method) ((  TMP_SubMeshUI_t1578871311 * (*) (GameObject_t1113636619 *, const RuntimeMethod*))GameObject_AddComponent_TisRuntimeObject_m3469369570_gshared)(__this, method)
+#define GameObject_AddComponent_TisTMP_SubMeshUI_t1578871311_m4159179807(__this, method) ((  TMP_SubMeshUI_t1578871311 * (*) (GameObject_t1113636619 *, const RuntimeMethod*))GameObject_AddComponent_TisRuntimeObject_m147650894_gshared)(__this, method)
 // UnityEngine.CanvasRenderer TMPro.TMP_SubMeshUI::get_canvasRenderer()
 extern "C"  CanvasRenderer_t2598313366 * TMP_SubMeshUI_get_canvasRenderer_m2278480403 (TMP_SubMeshUI_t1578871311 * __this, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // System.Void TMPro.TMP_UpdateRegistry::UnRegisterCanvasElementForRebuild(UnityEngine.UI.ICanvasElement)
@@ -12911,7 +12911,7 @@ extern "C"  Bounds_t2266837910  TMP_Text_GetTextBounds_m3794880173 (TMP_Text_t25
 // !!0 UnityEngine.Component::GetComponent<TMPro.TMP_SpriteAnimator>()
 #define Component_GetComponent_TisTMP_SpriteAnimator_t2836635477_m572454603(__this, method) ((  TMP_SpriteAnimator_t2836635477 * (*) (Component_t1923634451 *, const RuntimeMethod*))Component_GetComponent_TisRuntimeObject_m2906321015_gshared)(__this, method)
 // !!0 UnityEngine.GameObject::AddComponent<TMPro.TMP_SpriteAnimator>()
-#define GameObject_AddComponent_TisTMP_SpriteAnimator_t2836635477_m3473391888(__this, method) ((  TMP_SpriteAnimator_t2836635477 * (*) (GameObject_t1113636619 *, const RuntimeMethod*))GameObject_AddComponent_TisRuntimeObject_m3469369570_gshared)(__this, method)
+#define GameObject_AddComponent_TisTMP_SpriteAnimator_t2836635477_m3473391888(__this, method) ((  TMP_SpriteAnimator_t2836635477 * (*) (GameObject_t1113636619 *, const RuntimeMethod*))GameObject_AddComponent_TisRuntimeObject_m147650894_gshared)(__this, method)
 // !!0 UnityEngine.Component::GetComponent<UnityEngine.UI.LayoutElement>()
 #define Component_GetComponent_TisLayoutElement_t1785403678_m1767194036(__this, method) ((  LayoutElement_t1785403678 * (*) (Component_t1923634451 *, const RuntimeMethod*))Component_GetComponent_TisRuntimeObject_m2906321015_gshared)(__this, method)
 // System.Single TMPro.TMP_Text::GetPreferredWidth()
@@ -45066,7 +45066,7 @@ extern "C"  void TMP_Text__ctor_m619509216 (TMP_Text_t2599618874 * __this, const
 		__this->set_m_baselineOffsetStack_210(L_29);
 		__this->set_m_spriteCount_218(0);
 		SingleU5BU5D_t1444911251* L_30 = ((SingleU5BU5D_t1444911251*)SZArrayNew(SingleU5BU5D_t1444911251_il2cpp_TypeInfo_var, (uint32_t)((int32_t)10)));
-		RuntimeFieldHandle_t1871169219  L_31 = { reinterpret_cast<intptr_t> (U3CPrivateImplementationDetailsU3E_t3057255366____9E6378168821DBABB7EE3D0154346480FAC8AEF1_1_FieldInfo_var) };
+		RuntimeFieldHandle_t1871169219  L_31 = { reinterpret_cast<intptr_t> (U3CPrivateImplementationDetailsU3E_t3057255369____9E6378168821DBABB7EE3D0154346480FAC8AEF1_1_FieldInfo_var) };
 		RuntimeHelpers_InitializeArray_m3117905507(NULL /*static, unused*/, (RuntimeArray *)(RuntimeArray *)L_30, L_31, /*hidden argument*/NULL);
 		__this->set_k_Power_223(L_30);
 		MaskableGraphic__ctor_m3705055375(__this, /*hidden argument*/NULL);

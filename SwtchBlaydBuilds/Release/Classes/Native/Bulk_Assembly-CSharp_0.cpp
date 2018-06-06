@@ -981,8 +981,8 @@ struct NativeInputDeviceMatcherU5BU5D_t19578164;
 #pragma clang diagnostic pop
 #endif
 #endif // RUNTIMEOBJECT_H
-#ifndef U3CMODULEU3E_T692745558_H
-#define U3CMODULEU3E_T692745558_H
+#ifndef U3CMODULEU3E_T692745567_H
+#define U3CMODULEU3E_T692745567_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
@@ -990,7 +990,7 @@ struct NativeInputDeviceMatcherU5BU5D_t19578164;
 #endif
 
 // <Module>
-struct  U3CModuleU3E_t692745558 
+struct  U3CModuleU3E_t692745567 
 {
 public:
 
@@ -1000,7 +1000,7 @@ public:
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // U3CMODULEU3E_T692745558_H
+#endif // U3CMODULEU3E_T692745567_H
 #ifndef BINDINGLISTENOPTIONS_T3851969405_H
 #define BINDINGLISTENOPTIONS_T3851969405_H
 #ifdef __clang__
@@ -6897,8 +6897,8 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // POOLEDNAME_T2425375797_H
-#ifndef U3CPRIVATEIMPLEMENTATIONDETAILSU3E_T3057255368_H
-#define U3CPRIVATEIMPLEMENTATIONDETAILSU3E_T3057255368_H
+#ifndef U3CPRIVATEIMPLEMENTATIONDETAILSU3E_T3057255371_H
+#define U3CPRIVATEIMPLEMENTATIONDETAILSU3E_T3057255371_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
@@ -6906,14 +6906,14 @@ public:
 #endif
 
 // <PrivateImplementationDetails>
-struct  U3CPrivateImplementationDetailsU3E_t3057255368  : public RuntimeObject
+struct  U3CPrivateImplementationDetailsU3E_t3057255371  : public RuntimeObject
 {
 public:
 
 public:
 };
 
-struct U3CPrivateImplementationDetailsU3E_t3057255368_StaticFields
+struct U3CPrivateImplementationDetailsU3E_t3057255371_StaticFields
 {
 public:
 	// <PrivateImplementationDetails>/$ArrayType=64 <PrivateImplementationDetails>::$field-504F4B95521811246CA965BF7A38285411AA1461
@@ -6924,7 +6924,7 @@ public:
 	U24ArrayTypeU3D24_t2467506693  ___U24fieldU2DC90F38A020811481753795774EB5AF353F414C59_2;
 
 public:
-	inline static int32_t get_offset_of_U24fieldU2D504F4B95521811246CA965BF7A38285411AA1461_0() { return static_cast<int32_t>(offsetof(U3CPrivateImplementationDetailsU3E_t3057255368_StaticFields, ___U24fieldU2D504F4B95521811246CA965BF7A38285411AA1461_0)); }
+	inline static int32_t get_offset_of_U24fieldU2D504F4B95521811246CA965BF7A38285411AA1461_0() { return static_cast<int32_t>(offsetof(U3CPrivateImplementationDetailsU3E_t3057255371_StaticFields, ___U24fieldU2D504F4B95521811246CA965BF7A38285411AA1461_0)); }
 	inline U24ArrayTypeU3D64_t498138225  get_U24fieldU2D504F4B95521811246CA965BF7A38285411AA1461_0() const { return ___U24fieldU2D504F4B95521811246CA965BF7A38285411AA1461_0; }
 	inline U24ArrayTypeU3D64_t498138225 * get_address_of_U24fieldU2D504F4B95521811246CA965BF7A38285411AA1461_0() { return &___U24fieldU2D504F4B95521811246CA965BF7A38285411AA1461_0; }
 	inline void set_U24fieldU2D504F4B95521811246CA965BF7A38285411AA1461_0(U24ArrayTypeU3D64_t498138225  value)
@@ -6932,7 +6932,7 @@ public:
 		___U24fieldU2D504F4B95521811246CA965BF7A38285411AA1461_0 = value;
 	}
 
-	inline static int32_t get_offset_of_U24fieldU2D51A7A390CD6DE245186881400B18C9D822EFE240_1() { return static_cast<int32_t>(offsetof(U3CPrivateImplementationDetailsU3E_t3057255368_StaticFields, ___U24fieldU2D51A7A390CD6DE245186881400B18C9D822EFE240_1)); }
+	inline static int32_t get_offset_of_U24fieldU2D51A7A390CD6DE245186881400B18C9D822EFE240_1() { return static_cast<int32_t>(offsetof(U3CPrivateImplementationDetailsU3E_t3057255371_StaticFields, ___U24fieldU2D51A7A390CD6DE245186881400B18C9D822EFE240_1)); }
 	inline U24ArrayTypeU3D12_t2488454197  get_U24fieldU2D51A7A390CD6DE245186881400B18C9D822EFE240_1() const { return ___U24fieldU2D51A7A390CD6DE245186881400B18C9D822EFE240_1; }
 	inline U24ArrayTypeU3D12_t2488454197 * get_address_of_U24fieldU2D51A7A390CD6DE245186881400B18C9D822EFE240_1() { return &___U24fieldU2D51A7A390CD6DE245186881400B18C9D822EFE240_1; }
 	inline void set_U24fieldU2D51A7A390CD6DE245186881400B18C9D822EFE240_1(U24ArrayTypeU3D12_t2488454197  value)
@@ -6940,7 +6940,7 @@ public:
 		___U24fieldU2D51A7A390CD6DE245186881400B18C9D822EFE240_1 = value;
 	}
 
-	inline static int32_t get_offset_of_U24fieldU2DC90F38A020811481753795774EB5AF353F414C59_2() { return static_cast<int32_t>(offsetof(U3CPrivateImplementationDetailsU3E_t3057255368_StaticFields, ___U24fieldU2DC90F38A020811481753795774EB5AF353F414C59_2)); }
+	inline static int32_t get_offset_of_U24fieldU2DC90F38A020811481753795774EB5AF353F414C59_2() { return static_cast<int32_t>(offsetof(U3CPrivateImplementationDetailsU3E_t3057255371_StaticFields, ___U24fieldU2DC90F38A020811481753795774EB5AF353F414C59_2)); }
 	inline U24ArrayTypeU3D24_t2467506693  get_U24fieldU2DC90F38A020811481753795774EB5AF353F414C59_2() const { return ___U24fieldU2DC90F38A020811481753795774EB5AF353F414C59_2; }
 	inline U24ArrayTypeU3D24_t2467506693 * get_address_of_U24fieldU2DC90F38A020811481753795774EB5AF353F414C59_2() { return &___U24fieldU2DC90F38A020811481753795774EB5AF353F414C59_2; }
 	inline void set_U24fieldU2DC90F38A020811481753795774EB5AF353F414C59_2(U24ArrayTypeU3D24_t2467506693  value)
@@ -6952,7 +6952,7 @@ public:
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // U3CPRIVATEIMPLEMENTATIONDETAILSU3E_T3057255368_H
+#endif // U3CPRIVATEIMPLEMENTATIONDETAILSU3E_T3057255371_H
 #ifndef U3CFLYAWAYU3EC__ITERATOR0_T2879072889_H
 #define U3CFLYAWAYU3EC__ITERATOR0_T2879072889_H
 #ifdef __clang__

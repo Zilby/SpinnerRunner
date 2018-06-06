@@ -492,7 +492,7 @@ extern const uint32_t MouseBindingSource_get_DeviceName_m3363747103_MetadataUsag
 extern const uint32_t MouseBindingSource_Equals_m702950876_MetadataUsageId;
 extern const uint32_t MouseBindingSource_Equals_m839319506_MetadataUsageId;
 extern const uint32_t MouseBindingSource_GetHashCode_m1244865322_MetadataUsageId;
-extern RuntimeField* U3CPrivateImplementationDetailsU3E_t3057255368____U24fieldU2D504F4B95521811246CA965BF7A38285411AA1461_0_FieldInfo_var;
+extern RuntimeField* U3CPrivateImplementationDetailsU3E_t3057255371____U24fieldU2D504F4B95521811246CA965BF7A38285411AA1461_0_FieldInfo_var;
 extern const uint32_t MouseBindingSource__cctor_m3430436851_MetadataUsageId;
 extern const uint32_t MouseBindingSourceListener_Listen_m2504332827_MetadataUsageId;
 extern RuntimeClass* MouseBindingSourceListener_t2404226114_il2cpp_TypeInfo_var;
@@ -4058,8 +4058,8 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // NATIVEDEVICEDRIVERTYPE_T2906701416_H
-#ifndef U3CPRIVATEIMPLEMENTATIONDETAILSU3E_T3057255368_H
-#define U3CPRIVATEIMPLEMENTATIONDETAILSU3E_T3057255368_H
+#ifndef U3CPRIVATEIMPLEMENTATIONDETAILSU3E_T3057255371_H
+#define U3CPRIVATEIMPLEMENTATIONDETAILSU3E_T3057255371_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
@@ -4067,14 +4067,14 @@ public:
 #endif
 
 // <PrivateImplementationDetails>
-struct  U3CPrivateImplementationDetailsU3E_t3057255368  : public RuntimeObject
+struct  U3CPrivateImplementationDetailsU3E_t3057255371  : public RuntimeObject
 {
 public:
 
 public:
 };
 
-struct U3CPrivateImplementationDetailsU3E_t3057255368_StaticFields
+struct U3CPrivateImplementationDetailsU3E_t3057255371_StaticFields
 {
 public:
 	// <PrivateImplementationDetails>/$ArrayType=64 <PrivateImplementationDetails>::$field-504F4B95521811246CA965BF7A38285411AA1461
@@ -4085,7 +4085,7 @@ public:
 	U24ArrayTypeU3D24_t2467506693  ___U24fieldU2DC90F38A020811481753795774EB5AF353F414C59_2;
 
 public:
-	inline static int32_t get_offset_of_U24fieldU2D504F4B95521811246CA965BF7A38285411AA1461_0() { return static_cast<int32_t>(offsetof(U3CPrivateImplementationDetailsU3E_t3057255368_StaticFields, ___U24fieldU2D504F4B95521811246CA965BF7A38285411AA1461_0)); }
+	inline static int32_t get_offset_of_U24fieldU2D504F4B95521811246CA965BF7A38285411AA1461_0() { return static_cast<int32_t>(offsetof(U3CPrivateImplementationDetailsU3E_t3057255371_StaticFields, ___U24fieldU2D504F4B95521811246CA965BF7A38285411AA1461_0)); }
 	inline U24ArrayTypeU3D64_t498138225  get_U24fieldU2D504F4B95521811246CA965BF7A38285411AA1461_0() const { return ___U24fieldU2D504F4B95521811246CA965BF7A38285411AA1461_0; }
 	inline U24ArrayTypeU3D64_t498138225 * get_address_of_U24fieldU2D504F4B95521811246CA965BF7A38285411AA1461_0() { return &___U24fieldU2D504F4B95521811246CA965BF7A38285411AA1461_0; }
 	inline void set_U24fieldU2D504F4B95521811246CA965BF7A38285411AA1461_0(U24ArrayTypeU3D64_t498138225  value)
@@ -4093,7 +4093,7 @@ public:
 		___U24fieldU2D504F4B95521811246CA965BF7A38285411AA1461_0 = value;
 	}
 
-	inline static int32_t get_offset_of_U24fieldU2D51A7A390CD6DE245186881400B18C9D822EFE240_1() { return static_cast<int32_t>(offsetof(U3CPrivateImplementationDetailsU3E_t3057255368_StaticFields, ___U24fieldU2D51A7A390CD6DE245186881400B18C9D822EFE240_1)); }
+	inline static int32_t get_offset_of_U24fieldU2D51A7A390CD6DE245186881400B18C9D822EFE240_1() { return static_cast<int32_t>(offsetof(U3CPrivateImplementationDetailsU3E_t3057255371_StaticFields, ___U24fieldU2D51A7A390CD6DE245186881400B18C9D822EFE240_1)); }
 	inline U24ArrayTypeU3D12_t2488454197  get_U24fieldU2D51A7A390CD6DE245186881400B18C9D822EFE240_1() const { return ___U24fieldU2D51A7A390CD6DE245186881400B18C9D822EFE240_1; }
 	inline U24ArrayTypeU3D12_t2488454197 * get_address_of_U24fieldU2D51A7A390CD6DE245186881400B18C9D822EFE240_1() { return &___U24fieldU2D51A7A390CD6DE245186881400B18C9D822EFE240_1; }
 	inline void set_U24fieldU2D51A7A390CD6DE245186881400B18C9D822EFE240_1(U24ArrayTypeU3D12_t2488454197  value)
@@ -4101,7 +4101,7 @@ public:
 		___U24fieldU2D51A7A390CD6DE245186881400B18C9D822EFE240_1 = value;
 	}
 
-	inline static int32_t get_offset_of_U24fieldU2DC90F38A020811481753795774EB5AF353F414C59_2() { return static_cast<int32_t>(offsetof(U3CPrivateImplementationDetailsU3E_t3057255368_StaticFields, ___U24fieldU2DC90F38A020811481753795774EB5AF353F414C59_2)); }
+	inline static int32_t get_offset_of_U24fieldU2DC90F38A020811481753795774EB5AF353F414C59_2() { return static_cast<int32_t>(offsetof(U3CPrivateImplementationDetailsU3E_t3057255371_StaticFields, ___U24fieldU2DC90F38A020811481753795774EB5AF353F414C59_2)); }
 	inline U24ArrayTypeU3D24_t2467506693  get_U24fieldU2DC90F38A020811481753795774EB5AF353F414C59_2() const { return ___U24fieldU2DC90F38A020811481753795774EB5AF353F414C59_2; }
 	inline U24ArrayTypeU3D24_t2467506693 * get_address_of_U24fieldU2DC90F38A020811481753795774EB5AF353F414C59_2() { return &___U24fieldU2DC90F38A020811481753795774EB5AF353F414C59_2; }
 	inline void set_U24fieldU2DC90F38A020811481753795774EB5AF353F414C59_2(U24ArrayTypeU3D24_t2467506693  value)
@@ -4113,7 +4113,7 @@ public:
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // U3CPRIVATEIMPLEMENTATIONDETAILSU3E_T3057255368_H
+#endif // U3CPRIVATEIMPLEMENTATIONDETAILSU3E_T3057255371_H
 #ifndef BINDINGSOURCETYPE_T1040826559_H
 #define BINDINGSOURCETYPE_T1040826559_H
 #ifdef __clang__
@@ -16035,7 +16035,7 @@ extern "C"  void MouseBindingSource__cctor_m3430436851 (RuntimeObject * __this /
 		((MouseBindingSource_t3185707367_StaticFields*)il2cpp_codegen_static_fields_for(MouseBindingSource_t3185707367_il2cpp_TypeInfo_var))->set_ScaleZ_4((0.05f));
 		((MouseBindingSource_t3185707367_StaticFields*)il2cpp_codegen_static_fields_for(MouseBindingSource_t3185707367_il2cpp_TypeInfo_var))->set_JitterThreshold_5((0.05f));
 		Int32U5BU5D_t385246372* L_0 = ((Int32U5BU5D_t385246372*)SZArrayNew(Int32U5BU5D_t385246372_il2cpp_TypeInfo_var, (uint32_t)((int32_t)16)));
-		RuntimeFieldHandle_t1871169219  L_1 = { reinterpret_cast<intptr_t> (U3CPrivateImplementationDetailsU3E_t3057255368____U24fieldU2D504F4B95521811246CA965BF7A38285411AA1461_0_FieldInfo_var) };
+		RuntimeFieldHandle_t1871169219  L_1 = { reinterpret_cast<intptr_t> (U3CPrivateImplementationDetailsU3E_t3057255371____U24fieldU2D504F4B95521811246CA965BF7A38285411AA1461_0_FieldInfo_var) };
 		RuntimeHelpers_InitializeArray_m3117905507(NULL /*static, unused*/, (RuntimeArray *)(RuntimeArray *)L_0, L_1, /*hidden argument*/NULL);
 		((MouseBindingSource_t3185707367_StaticFields*)il2cpp_codegen_static_fields_for(MouseBindingSource_t3185707367_il2cpp_TypeInfo_var))->set_buttonTable_6(L_0);
 		return;

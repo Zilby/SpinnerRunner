@@ -356,7 +356,7 @@ extern RuntimeClass* AndroidJavaProxy_t2835824643_il2cpp_TypeInfo_var;
 extern RuntimeClass* AndroidJavaClass_t32045322_il2cpp_TypeInfo_var;
 extern RuntimeClass* GameObject_t1113636619_il2cpp_TypeInfo_var;
 extern RuntimeClass* Object_t631007953_il2cpp_TypeInfo_var;
-extern const RuntimeMethod* AndroidJavaObject_GetStatic_TisAndroidJavaObject_t4131667876_m100625750_RuntimeMethod_var;
+extern const RuntimeMethod* AndroidJavaObject_GetStatic_TisAndroidJavaObject_t4131667876_m671986461_RuntimeMethod_var;
 extern const RuntimeMethod* GameObject_AddComponent_TisCallbackExecutor_t363496179_m2253360972_RuntimeMethod_var;
 extern String_t* _stringLiteral1157834939;
 extern String_t* _stringLiteral2149247999;
@@ -572,8 +572,8 @@ struct ByteU5BU5D_t4116647657;
 struct StringU5BU5D_t1281789340;
 
 
-#ifndef U3CMODULEU3E_T692745555_H
-#define U3CMODULEU3E_T692745555_H
+#ifndef U3CMODULEU3E_T692745563_H
+#define U3CMODULEU3E_T692745563_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
@@ -581,7 +581,7 @@ struct StringU5BU5D_t1281789340;
 #endif
 
 // <Module>
-struct  U3CModuleU3E_t692745555 
+struct  U3CModuleU3E_t692745563 
 {
 public:
 
@@ -591,7 +591,7 @@ public:
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // U3CMODULEU3E_T692745555_H
+#endif // U3CMODULEU3E_T692745563_H
 #ifndef RUNTIMEOBJECT_H
 #define RUNTIMEOBJECT_H
 #ifdef __clang__
@@ -4587,9 +4587,9 @@ extern "C"  void EventHandler_1__ctor_m699822512_gshared (EventHandler_1_t100426
 // System.Void System.Action`1<UnityEngine.Advertisements.ShowResult>::Invoke(!0)
 extern "C"  void Action_1_Invoke_m860665472_gshared (Action_1_t3243021218 * __this, int32_t p0, const RuntimeMethod* method);
 // !!0 UnityEngine.AndroidJavaObject::GetStatic<System.Object>(System.String)
-extern "C"  RuntimeObject * AndroidJavaObject_GetStatic_TisRuntimeObject_m2018075987_gshared (AndroidJavaObject_t4131667876 * __this, String_t* p0, const RuntimeMethod* method);
+extern "C"  RuntimeObject * AndroidJavaObject_GetStatic_TisRuntimeObject_m2411779517_gshared (AndroidJavaObject_t4131667876 * __this, String_t* p0, const RuntimeMethod* method);
 // !!0 UnityEngine.GameObject::AddComponent<System.Object>()
-extern "C"  RuntimeObject * GameObject_AddComponent_TisRuntimeObject_m3469369570_gshared (GameObject_t1113636619 * __this, const RuntimeMethod* method);
+extern "C"  RuntimeObject * GameObject_AddComponent_TisRuntimeObject_m147650894_gshared (GameObject_t1113636619 * __this, const RuntimeMethod* method);
 // System.Void System.Action`1<System.Object>::.ctor(System.Object,System.IntPtr)
 extern "C"  void Action_1__ctor_m118522912_gshared (Action_1_t3252573759 * __this, RuntimeObject * p0, intptr_t p1, const RuntimeMethod* method);
 // !!0 UnityEngine.AndroidJavaObject::Call<System.Int32>(System.String,System.Object[])
@@ -4714,13 +4714,13 @@ extern "C"  void AndroidJavaProxy__ctor_m545570009 (AndroidJavaProxy_t2835824643
 // System.Void UnityEngine.AndroidJavaClass::.ctor(System.String)
 extern "C"  void AndroidJavaClass__ctor_m366853020 (AndroidJavaClass_t32045322 * __this, String_t* p0, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // !!0 UnityEngine.AndroidJavaObject::GetStatic<UnityEngine.AndroidJavaObject>(System.String)
-#define AndroidJavaObject_GetStatic_TisAndroidJavaObject_t4131667876_m100625750(__this, p0, method) ((  AndroidJavaObject_t4131667876 * (*) (AndroidJavaObject_t4131667876 *, String_t*, const RuntimeMethod*))AndroidJavaObject_GetStatic_TisRuntimeObject_m2018075987_gshared)(__this, p0, method)
+#define AndroidJavaObject_GetStatic_TisAndroidJavaObject_t4131667876_m671986461(__this, p0, method) ((  AndroidJavaObject_t4131667876 * (*) (AndroidJavaObject_t4131667876 *, String_t*, const RuntimeMethod*))AndroidJavaObject_GetStatic_TisRuntimeObject_m2411779517_gshared)(__this, p0, method)
 // System.Void UnityEngine.GameObject::.ctor(System.String)
 extern "C"  void GameObject__ctor_m2093116449 (GameObject_t1113636619 * __this, String_t* p0, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Object::set_hideFlags(UnityEngine.HideFlags)
 extern "C"  void Object_set_hideFlags_m1648752846 (Object_t631007953 * __this, int32_t p0, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // !!0 UnityEngine.GameObject::AddComponent<UnityEngine.Advertisements.CallbackExecutor>()
-#define GameObject_AddComponent_TisCallbackExecutor_t363496179_m2253360972(__this, method) ((  CallbackExecutor_t363496179 * (*) (GameObject_t1113636619 *, const RuntimeMethod*))GameObject_AddComponent_TisRuntimeObject_m3469369570_gshared)(__this, method)
+#define GameObject_AddComponent_TisCallbackExecutor_t363496179_m2253360972(__this, method) ((  CallbackExecutor_t363496179 * (*) (GameObject_t1113636619 *, const RuntimeMethod*))GameObject_AddComponent_TisRuntimeObject_m147650894_gshared)(__this, method)
 // System.Void UnityEngine.Object::DontDestroyOnLoad(UnityEngine.Object)
 extern "C"  void Object_DontDestroyOnLoad_m166252750 (RuntimeObject * __this /* static, unused */, Object_t631007953 * p0, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Advertisements.Android.Platform/<onUnityAdsReady>c__AnonStorey0::.ctor()
@@ -4838,7 +4838,7 @@ extern "C"  void GUI_DrawTexture_m2312292152 (RuntimeObject * __this /* static, 
 // System.Boolean UnityEngine.GUI::Button(UnityEngine.Rect,System.String)
 extern "C"  bool GUI_Button_m1518979886 (RuntimeObject * __this /* static, unused */, Rect_t2360479859  p0, String_t* p1, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // !!0 UnityEngine.GameObject::AddComponent<UnityEngine.Advertisements.Editor.Placeholder>()
-#define GameObject_AddComponent_TisPlaceholder_t2906495853_m4080008109(__this, method) ((  Placeholder_t2906495853 * (*) (GameObject_t1113636619 *, const RuntimeMethod*))GameObject_AddComponent_TisRuntimeObject_m3469369570_gshared)(__this, method)
+#define GameObject_AddComponent_TisPlaceholder_t2906495853_m4080008109(__this, method) ((  Placeholder_t2906495853 * (*) (GameObject_t1113636619 *, const RuntimeMethod*))GameObject_AddComponent_TisRuntimeObject_m147650894_gshared)(__this, method)
 // System.Void UnityEngine.Advertisements.Editor.Placeholder::add_OnFinish(System.EventHandler`1<UnityEngine.Advertisements.FinishEventArgs>)
 extern "C"  void Placeholder_add_OnFinish_m3075927457 (Placeholder_t2906495853 * __this, EventHandler_1_t908338235 * ___value0, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Advertisements.Editor.Placeholder::Load(System.String)
@@ -6182,7 +6182,7 @@ extern "C"  void Platform__ctor_m3233182567 (Platform_t1698302846 * __this, cons
 		V_0 = L_0;
 		AndroidJavaClass_t32045322 * L_1 = V_0;
 		NullCheck(L_1);
-		AndroidJavaObject_t4131667876 * L_2 = AndroidJavaObject_GetStatic_TisAndroidJavaObject_t4131667876_m100625750(L_1, _stringLiteral3452315504, /*hidden argument*/AndroidJavaObject_GetStatic_TisAndroidJavaObject_t4131667876_m100625750_RuntimeMethod_var);
+		AndroidJavaObject_t4131667876 * L_2 = AndroidJavaObject_GetStatic_TisAndroidJavaObject_t4131667876_m671986461(L_1, _stringLiteral3452315504, /*hidden argument*/AndroidJavaObject_GetStatic_TisAndroidJavaObject_t4131667876_m671986461_RuntimeMethod_var);
 		__this->set_m_CurrentActivity_4(L_2);
 		AndroidJavaClass_t32045322 * L_3 = (AndroidJavaClass_t32045322 *)il2cpp_codegen_object_new(AndroidJavaClass_t32045322_il2cpp_TypeInfo_var);
 		AndroidJavaClass__ctor_m366853020(L_3, _stringLiteral3217210809, /*hidden argument*/NULL);

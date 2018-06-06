@@ -278,7 +278,7 @@ extern RuntimeClass* MemoryStream_t94973147_il2cpp_TypeInfo_var;
 extern RuntimeClass* WWWTranscoder_t272523958_il2cpp_TypeInfo_var;
 extern RuntimeClass* StringU5BU5D_t1281789340_il2cpp_TypeInfo_var;
 extern RuntimeClass* IDisposable_t3640265483_il2cpp_TypeInfo_var;
-extern const RuntimeMethod* List_1_get_Item_m3729392029_RuntimeMethod_var;
+extern const RuntimeMethod* List_1_get_Item_m953835688_RuntimeMethod_var;
 extern const RuntimeMethod* List_1_get_Item_m2439967551_RuntimeMethod_var;
 extern const RuntimeMethod* List_1_get_Count_m660812737_RuntimeMethod_var;
 extern String_t* _stringLiteral3450713987;
@@ -3806,7 +3806,7 @@ extern "C"  Encoding_t1523322056 * WWWForm_get_DefaultEncoding_m4131957975 (Runt
 // System.Void System.IO.MemoryStream::.ctor(System.Int32)
 extern "C"  void MemoryStream__ctor_m2128850779 (MemoryStream_t94973147 * __this, int32_t p0, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // !0 System.Collections.Generic.List`1<System.String>::get_Item(System.Int32)
-#define List_1_get_Item_m3729392029(__this, p0, method) ((  String_t* (*) (List_1_t3319525431 *, int32_t, const RuntimeMethod*))List_1_get_Item_m2287542950_gshared)(__this, p0, method)
+#define List_1_get_Item_m953835688(__this, p0, method) ((  String_t* (*) (List_1_t3319525431 *, int32_t, const RuntimeMethod*))List_1_get_Item_m2287542950_gshared)(__this, p0, method)
 // System.Boolean UnityEngine.WWWTranscoder::SevenBitClean(System.String,System.Text.Encoding)
 extern "C"  bool WWWTranscoder_SevenBitClean_m207206973 (RuntimeObject * __this /* static, unused */, String_t* ___s0, Encoding_t1523322056 * ___e1, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // System.Int32 System.String::IndexOf(System.String)
@@ -3866,7 +3866,7 @@ extern "C"  String_t* WWWTranscoder_URLDecode_m3140444198 (RuntimeObject * __thi
 // System.String System.Uri::get_OriginalString()
 extern "C"  String_t* Uri_get_OriginalString_m3715995233 (Uri_t100236324 * __this, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Text.RegularExpressions.Regex::.ctor(System.String)
-extern "C"  void Regex__ctor_m3948448025 (Regex_t3657309853 * __this, String_t* p0, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
+extern "C"  void Regex__ctor_m897876424 (Regex_t3657309853 * __this, String_t* p0, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
@@ -6288,7 +6288,7 @@ IL_0084:
 			List_1_t3319525431 * L_30 = __this->get_types_3();
 			int32_t L_31 = V_7;
 			NullCheck(L_30);
-			String_t* L_32 = List_1_get_Item_m3729392029(L_30, L_31, /*hidden argument*/List_1_get_Item_m3729392029_RuntimeMethod_var);
+			String_t* L_32 = List_1_get_Item_m953835688(L_30, L_31, /*hidden argument*/List_1_get_Item_m953835688_RuntimeMethod_var);
 			NullCheck(L_29);
 			ByteU5BU5D_t4116647657* L_33 = VirtFuncInvoker1< ByteU5BU5D_t4116647657*, String_t* >::Invoke(10 /* System.Byte[] System.Text.Encoding::GetBytes(System.String) */, L_29, L_32);
 			V_8 = L_33;
@@ -6317,7 +6317,7 @@ IL_0084:
 			List_1_t3319525431 * L_45 = __this->get_fieldNames_1();
 			int32_t L_46 = V_7;
 			NullCheck(L_45);
-			String_t* L_47 = List_1_get_Item_m3729392029(L_45, L_46, /*hidden argument*/List_1_get_Item_m3729392029_RuntimeMethod_var);
+			String_t* L_47 = List_1_get_Item_m953835688(L_45, L_46, /*hidden argument*/List_1_get_Item_m953835688_RuntimeMethod_var);
 			V_10 = L_47;
 			String_t* L_48 = V_10;
 			Encoding_t1523322056 * L_49 = Encoding_get_UTF8_m1008486739(NULL /*static, unused*/, /*hidden argument*/NULL);
@@ -6396,7 +6396,7 @@ IL_0183:
 			List_1_t3319525431 * L_72 = __this->get_fileNames_2();
 			int32_t L_73 = V_7;
 			NullCheck(L_72);
-			String_t* L_74 = List_1_get_Item_m3729392029(L_72, L_73, /*hidden argument*/List_1_get_Item_m3729392029_RuntimeMethod_var);
+			String_t* L_74 = List_1_get_Item_m953835688(L_72, L_73, /*hidden argument*/List_1_get_Item_m953835688_RuntimeMethod_var);
 			if (!L_74)
 			{
 				goto IL_0266;
@@ -6408,7 +6408,7 @@ IL_01bf:
 			List_1_t3319525431 * L_75 = __this->get_fileNames_2();
 			int32_t L_76 = V_7;
 			NullCheck(L_75);
-			String_t* L_77 = List_1_get_Item_m3729392029(L_75, L_76, /*hidden argument*/List_1_get_Item_m3729392029_RuntimeMethod_var);
+			String_t* L_77 = List_1_get_Item_m953835688(L_75, L_76, /*hidden argument*/List_1_get_Item_m953835688_RuntimeMethod_var);
 			V_12 = L_77;
 			String_t* L_78 = V_12;
 			IL2CPP_RUNTIME_CLASS_INIT(Encoding_t1523322056_il2cpp_TypeInfo_var);
@@ -6637,7 +6637,7 @@ IL_034f:
 			List_1_t3319525431 * L_146 = __this->get_fieldNames_1();
 			int32_t L_147 = V_19;
 			NullCheck(L_146);
-			String_t* L_148 = List_1_get_Item_m3729392029(L_146, L_147, /*hidden argument*/List_1_get_Item_m3729392029_RuntimeMethod_var);
+			String_t* L_148 = List_1_get_Item_m953835688(L_146, L_147, /*hidden argument*/List_1_get_Item_m953835688_RuntimeMethod_var);
 			NullCheck(L_145);
 			ByteU5BU5D_t4116647657* L_149 = VirtFuncInvoker1< ByteU5BU5D_t4116647657*, String_t* >::Invoke(10 /* System.Byte[] System.Text.Encoding::GetBytes(System.String) */, L_145, L_148);
 			IL2CPP_RUNTIME_CLASS_INIT(WWWTranscoder_t272523958_il2cpp_TypeInfo_var);
@@ -8094,7 +8094,7 @@ extern "C"  void WebRequestUtils__cctor_m4190982137 (RuntimeObject * __this /* s
 	}
 	{
 		Regex_t3657309853 * L_0 = (Regex_t3657309853 *)il2cpp_codegen_object_new(Regex_t3657309853_il2cpp_TypeInfo_var);
-		Regex__ctor_m3948448025(L_0, _stringLiteral97523668, /*hidden argument*/NULL);
+		Regex__ctor_m897876424(L_0, _stringLiteral97523668, /*hidden argument*/NULL);
 		((WebRequestUtils_t3541624225_StaticFields*)il2cpp_codegen_static_fields_for(WebRequestUtils_t3541624225_il2cpp_TypeInfo_var))->set_domainRegex_0(L_0);
 		return;
 	}

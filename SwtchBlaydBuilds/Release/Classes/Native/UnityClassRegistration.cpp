@@ -47,20 +47,26 @@ void RegisterStaticallyLinkedModulesGranular()
 	void RegisterModule_ImageConversion();
 	RegisterModule_ImageConversion();
 
+	void RegisterModule_JSONSerialize();
+	RegisterModule_JSONSerialize();
+
 	void RegisterModule_UnityWebRequest();
 	RegisterModule_UnityWebRequest();
 
 	void RegisterModule_GameCenter();
 	RegisterModule_GameCenter();
 
+	void RegisterModule_VR();
+	RegisterModule_VR();
+
+	void RegisterModule_Input();
+	RegisterModule_Input();
+
 	void RegisterModule_Core();
 	RegisterModule_Core();
 
 	void RegisterModule_SharedInternals();
 	RegisterModule_SharedInternals();
-
-	void RegisterModule_JSONSerialize();
-	RegisterModule_JSONSerialize();
 
 	void RegisterModule_Wind();
 	RegisterModule_Wind();

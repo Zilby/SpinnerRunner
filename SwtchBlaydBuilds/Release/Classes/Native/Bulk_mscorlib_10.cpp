@@ -943,6 +943,7 @@ extern const uint32_t WaitHandle_CheckDisposed_m303961449_MetadataUsageId;
 extern const uint32_t WaitOrTimerCallback_BeginInvoke_m2905803559_MetadataUsageId;
 extern RuntimeClass* TimeSpan_t881159249_il2cpp_TypeInfo_var;
 extern const uint32_t TimeSpan__ctor_m3689759052_MetadataUsageId;
+extern const uint32_t TimeSpan__ctor_m4161351023_MetadataUsageId;
 extern const uint32_t TimeSpan__ctor_m2047388489_MetadataUsageId;
 extern RuntimeClass* MonoTouchAOTHelper_t570977590_il2cpp_TypeInfo_var;
 extern RuntimeClass* GenericComparer_1_t2877759089_il2cpp_TypeInfo_var;
@@ -12153,6 +12154,8 @@ extern "C"  void TimeSpan__ctor_m1896986612 (TimeSpan_t881159249 * __this, int64
 extern "C"  int64_t TimeSpan_CalculateTicks_m1336746319 (RuntimeObject * __this /* static, unused */, int32_t ___days0, int32_t ___hours1, int32_t ___minutes2, int32_t ___seconds3, int32_t ___milliseconds4, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // System.Void System.TimeSpan::.ctor(System.Int32,System.Int32,System.Int32)
 extern "C"  void TimeSpan__ctor_m3689759052 (TimeSpan_t881159249 * __this, int32_t ___hours0, int32_t ___minutes1, int32_t ___seconds2, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
+// System.Void System.TimeSpan::.ctor(System.Int32,System.Int32,System.Int32,System.Int32)
+extern "C"  void TimeSpan__ctor_m4161351023 (TimeSpan_t881159249 * __this, int32_t ___days0, int32_t ___hours1, int32_t ___minutes2, int32_t ___seconds3, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Collections.Generic.GenericComparer`1<System.TimeSpan>::.ctor()
 #define GenericComparer_1__ctor_m3652072706(__this, method) ((  void (*) (GenericComparer_1_t2877759089 *, const RuntimeMethod*))GenericComparer_1__ctor_m3652072706_gshared)(__this, method)
 // System.Void System.Collections.Generic.GenericEqualityComparer`1<System.TimeSpan>::.ctor()
@@ -35416,7 +35419,7 @@ IL_0036:
 			Scheduler_Add_m21574731(__this, L_9, /*hidden argument*/NULL);
 			SortedList_t2427694641 * L_10 = __this->get_list_1();
 			NullCheck(L_10);
-			RuntimeObject * L_11 = VirtFuncInvoker1< RuntimeObject *, int32_t >::Invoke(35 /* System.Object System.Collections.SortedList::GetByIndex(System.Int32) */, L_10, 0);
+			RuntimeObject * L_11 = VirtFuncInvoker1< RuntimeObject *, int32_t >::Invoke(36 /* System.Object System.Collections.SortedList::GetByIndex(System.Int32) */, L_10, 0);
 			Timer_t716671026 * L_12 = ___timer0;
 			if ((!(((RuntimeObject*)(RuntimeObject *)L_11) == ((RuntimeObject*)(Timer_t716671026 *)L_12))))
 			{
@@ -35474,7 +35477,7 @@ extern "C"  void Scheduler_Add_m21574731 (Scheduler_t3215764947 * __this, Timer_
 		SortedList_t2427694641 * L_0 = __this->get_list_1();
 		Timer_t716671026 * L_1 = ___timer0;
 		NullCheck(L_0);
-		int32_t L_2 = VirtFuncInvoker1< int32_t, RuntimeObject * >::Invoke(33 /* System.Int32 System.Collections.SortedList::IndexOfKey(System.Object) */, L_0, L_1);
+		int32_t L_2 = VirtFuncInvoker1< int32_t, RuntimeObject * >::Invoke(34 /* System.Int32 System.Collections.SortedList::IndexOfKey(System.Object) */, L_0, L_1);
 		V_0 = L_2;
 		int32_t L_3 = V_0;
 		if ((((int32_t)L_3) == ((int32_t)(-1))))
@@ -35541,7 +35544,7 @@ IL_0064:
 		int32_t L_14 = V_0;
 		SortedList_t2427694641 * L_15 = __this->get_list_1();
 		NullCheck(L_15);
-		int32_t L_16 = VirtFuncInvoker0< int32_t >::Invoke(16 /* System.Int32 System.Collections.SortedList::get_Count() */, L_15);
+		int32_t L_16 = VirtFuncInvoker0< int32_t >::Invoke(17 /* System.Int32 System.Collections.SortedList::get_Count() */, L_15);
 		if ((((int32_t)L_14) < ((int32_t)L_16)))
 		{
 			goto IL_007a;
@@ -35556,7 +35559,7 @@ IL_007a:
 		SortedList_t2427694641 * L_17 = __this->get_list_1();
 		int32_t L_18 = V_0;
 		NullCheck(L_17);
-		RuntimeObject * L_19 = VirtFuncInvoker1< RuntimeObject *, int32_t >::Invoke(35 /* System.Object System.Collections.SortedList::GetByIndex(System.Int32) */, L_17, L_18);
+		RuntimeObject * L_19 = VirtFuncInvoker1< RuntimeObject *, int32_t >::Invoke(36 /* System.Object System.Collections.SortedList::GetByIndex(System.Int32) */, L_17, L_18);
 		V_2 = ((Timer_t716671026 *)CastclassSealed((RuntimeObject*)L_19, Timer_t716671026_il2cpp_TypeInfo_var));
 		Timer_t716671026 * L_20 = V_2;
 		NullCheck(L_20);
@@ -35584,7 +35587,7 @@ IL_00a7:
 		Timer_t716671026 * L_25 = ___timer0;
 		Timer_t716671026 * L_26 = ___timer0;
 		NullCheck(L_24);
-		VirtActionInvoker2< RuntimeObject *, RuntimeObject * >::Invoke(26 /* System.Void System.Collections.SortedList::Add(System.Object,System.Object) */, L_24, L_25, L_26);
+		VirtActionInvoker2< RuntimeObject *, RuntimeObject * >::Invoke(27 /* System.Void System.Collections.SortedList::Add(System.Object,System.Object) */, L_24, L_25, L_26);
 		return;
 	}
 }
@@ -35596,7 +35599,7 @@ extern "C"  int32_t Scheduler_InternalRemove_m3297531302 (Scheduler_t3215764947 
 		SortedList_t2427694641 * L_0 = __this->get_list_1();
 		Timer_t716671026 * L_1 = ___timer0;
 		NullCheck(L_0);
-		int32_t L_2 = VirtFuncInvoker1< int32_t, RuntimeObject * >::Invoke(33 /* System.Int32 System.Collections.SortedList::IndexOfKey(System.Object) */, L_0, L_1);
+		int32_t L_2 = VirtFuncInvoker1< int32_t, RuntimeObject * >::Invoke(34 /* System.Int32 System.Collections.SortedList::IndexOfKey(System.Object) */, L_0, L_1);
 		V_0 = L_2;
 		int32_t L_3 = V_0;
 		if ((((int32_t)L_3) < ((int32_t)0)))
@@ -35608,7 +35611,7 @@ extern "C"  int32_t Scheduler_InternalRemove_m3297531302 (Scheduler_t3215764947 
 		SortedList_t2427694641 * L_4 = __this->get_list_1();
 		int32_t L_5 = V_0;
 		NullCheck(L_4);
-		VirtActionInvoker1< int32_t >::Invoke(32 /* System.Void System.Collections.SortedList::RemoveAt(System.Int32) */, L_4, L_5);
+		VirtActionInvoker1< int32_t >::Invoke(33 /* System.Void System.Collections.SortedList::RemoveAt(System.Int32) */, L_4, L_5);
 	}
 
 IL_0020:
@@ -35674,7 +35677,7 @@ IL_0028:
 		{
 			SortedList_t2427694641 * L_4 = __this->get_list_1();
 			NullCheck(L_4);
-			int32_t L_5 = VirtFuncInvoker0< int32_t >::Invoke(16 /* System.Int32 System.Collections.SortedList::get_Count() */, L_4);
+			int32_t L_5 = VirtFuncInvoker0< int32_t >::Invoke(17 /* System.Int32 System.Collections.SortedList::get_Count() */, L_4);
 			V_4 = L_5;
 			V_3 = 0;
 			goto IL_0116;
@@ -35685,7 +35688,7 @@ IL_003c:
 			SortedList_t2427694641 * L_6 = __this->get_list_1();
 			int32_t L_7 = V_3;
 			NullCheck(L_6);
-			RuntimeObject * L_8 = VirtFuncInvoker1< RuntimeObject *, int32_t >::Invoke(35 /* System.Object System.Collections.SortedList::GetByIndex(System.Int32) */, L_6, L_7);
+			RuntimeObject * L_8 = VirtFuncInvoker1< RuntimeObject *, int32_t >::Invoke(36 /* System.Object System.Collections.SortedList::GetByIndex(System.Int32) */, L_6, L_7);
 			V_5 = ((Timer_t716671026 *)CastclassSealed((RuntimeObject*)L_8, Timer_t716671026_il2cpp_TypeInfo_var));
 			Timer_t716671026 * L_9 = V_5;
 			NullCheck(L_9);
@@ -35707,7 +35710,7 @@ IL_0061:
 			SortedList_t2427694641 * L_12 = __this->get_list_1();
 			int32_t L_13 = V_3;
 			NullCheck(L_12);
-			VirtActionInvoker1< int32_t >::Invoke(32 /* System.Void System.Collections.SortedList::RemoveAt(System.Int32) */, L_12, L_13);
+			VirtActionInvoker1< int32_t >::Invoke(33 /* System.Void System.Collections.SortedList::RemoveAt(System.Int32) */, L_12, L_13);
 			int32_t L_14 = V_4;
 			V_4 = ((int32_t)il2cpp_codegen_subtract((int32_t)L_14, (int32_t)1));
 			int32_t L_15 = V_3;
@@ -35870,11 +35873,11 @@ IL_014f:
 			Scheduler_ShrinkIfNeeded_m820085397(__this, L_51, ((int32_t)512), /*hidden argument*/NULL);
 			SortedList_t2427694641 * L_52 = __this->get_list_1();
 			NullCheck(L_52);
-			int32_t L_53 = VirtFuncInvoker0< int32_t >::Invoke(24 /* System.Int32 System.Collections.SortedList::get_Capacity() */, L_52);
+			int32_t L_53 = VirtFuncInvoker0< int32_t >::Invoke(25 /* System.Int32 System.Collections.SortedList::get_Capacity() */, L_52);
 			V_10 = L_53;
 			SortedList_t2427694641 * L_54 = __this->get_list_1();
 			NullCheck(L_54);
-			int32_t L_55 = VirtFuncInvoker0< int32_t >::Invoke(16 /* System.Int32 System.Collections.SortedList::get_Count() */, L_54);
+			int32_t L_55 = VirtFuncInvoker0< int32_t >::Invoke(17 /* System.Int32 System.Collections.SortedList::get_Count() */, L_54);
 			V_4 = L_55;
 			int32_t L_56 = V_10;
 			if ((((int32_t)L_56) <= ((int32_t)((int32_t)1024))))
@@ -35907,7 +35910,7 @@ IL_019a:
 			SortedList_t2427694641 * L_60 = __this->get_list_1();
 			int32_t L_61 = V_4;
 			NullCheck(L_60);
-			VirtActionInvoker1< int32_t >::Invoke(25 /* System.Void System.Collections.SortedList::set_Capacity(System.Int32) */, L_60, ((int32_t)il2cpp_codegen_multiply((int32_t)L_61, (int32_t)2)));
+			VirtActionInvoker1< int32_t >::Invoke(26 /* System.Void System.Collections.SortedList::set_Capacity(System.Int32) */, L_60, ((int32_t)il2cpp_codegen_multiply((int32_t)L_61, (int32_t)2)));
 		}
 
 IL_01a9:
@@ -35915,7 +35918,7 @@ IL_01a9:
 			V_11 = ((int64_t)std::numeric_limits<int64_t>::max());
 			SortedList_t2427694641 * L_62 = __this->get_list_1();
 			NullCheck(L_62);
-			int32_t L_63 = VirtFuncInvoker0< int32_t >::Invoke(16 /* System.Int32 System.Collections.SortedList::get_Count() */, L_62);
+			int32_t L_63 = VirtFuncInvoker0< int32_t >::Invoke(17 /* System.Int32 System.Collections.SortedList::get_Count() */, L_62);
 			if ((((int32_t)L_63) <= ((int32_t)0)))
 			{
 				goto IL_01dd;
@@ -35926,7 +35929,7 @@ IL_01c5:
 		{
 			SortedList_t2427694641 * L_64 = __this->get_list_1();
 			NullCheck(L_64);
-			RuntimeObject * L_65 = VirtFuncInvoker1< RuntimeObject *, int32_t >::Invoke(35 /* System.Object System.Collections.SortedList::GetByIndex(System.Int32) */, L_64, 0);
+			RuntimeObject * L_65 = VirtFuncInvoker1< RuntimeObject *, int32_t >::Invoke(36 /* System.Object System.Collections.SortedList::GetByIndex(System.Int32) */, L_64, 0);
 			NullCheck(((Timer_t716671026 *)CastclassSealed((RuntimeObject*)L_65, Timer_t716671026_il2cpp_TypeInfo_var)));
 			int64_t L_66 = ((Timer_t716671026 *)CastclassSealed((RuntimeObject*)L_65, Timer_t716671026_il2cpp_TypeInfo_var))->get_next_run_6();
 			V_11 = L_66;
@@ -37103,6 +37106,31 @@ extern "C"  void TimeSpan__ctor_m3689759052_AdjustorThunk (RuntimeObject * __thi
 {
 	TimeSpan_t881159249 * _thisAdjusted = reinterpret_cast<TimeSpan_t881159249 *>(__this + 1);
 	TimeSpan__ctor_m3689759052(_thisAdjusted, ___hours0, ___minutes1, ___seconds2, method);
+}
+// System.Void System.TimeSpan::.ctor(System.Int32,System.Int32,System.Int32,System.Int32)
+extern "C"  void TimeSpan__ctor_m4161351023 (TimeSpan_t881159249 * __this, int32_t ___days0, int32_t ___hours1, int32_t ___minutes2, int32_t ___seconds3, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (TimeSpan__ctor_m4161351023_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		int32_t L_0 = ___days0;
+		int32_t L_1 = ___hours1;
+		int32_t L_2 = ___minutes2;
+		int32_t L_3 = ___seconds3;
+		IL2CPP_RUNTIME_CLASS_INIT(TimeSpan_t881159249_il2cpp_TypeInfo_var);
+		int64_t L_4 = TimeSpan_CalculateTicks_m1336746319(NULL /*static, unused*/, L_0, L_1, L_2, L_3, 0, /*hidden argument*/NULL);
+		__this->set__ticks_3(L_4);
+		return;
+	}
+}
+extern "C"  void TimeSpan__ctor_m4161351023_AdjustorThunk (RuntimeObject * __this, int32_t ___days0, int32_t ___hours1, int32_t ___minutes2, int32_t ___seconds3, const RuntimeMethod* method)
+{
+	TimeSpan_t881159249 * _thisAdjusted = reinterpret_cast<TimeSpan_t881159249 *>(__this + 1);
+	TimeSpan__ctor_m4161351023(_thisAdjusted, ___days0, ___hours1, ___minutes2, ___seconds3, method);
 }
 // System.Void System.TimeSpan::.ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)
 extern "C"  void TimeSpan__ctor_m2047388489 (TimeSpan_t881159249 * __this, int32_t ___days0, int32_t ___hours1, int32_t ___minutes2, int32_t ___seconds3, int32_t ___milliseconds4, const RuntimeMethod* method)

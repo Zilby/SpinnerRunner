@@ -33157,7 +33157,7 @@ IL_0135:
 		Hashtable_t1853889766 * L_63 = V_4;
 		Type_t * L_64 = V_12;
 		NullCheck(L_63);
-		RuntimeObject * L_65 = VirtFuncInvoker1< RuntimeObject *, RuntimeObject * >::Invoke(23 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_63, L_64);
+		RuntimeObject * L_65 = VirtFuncInvoker1< RuntimeObject *, RuntimeObject * >::Invoke(24 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_63, L_64);
 		V_13 = ((AttributeInfo_t2216804170 *)CastclassClass((RuntimeObject*)L_65, AttributeInfo_t2216804170_il2cpp_TypeInfo_var));
 		AttributeInfo_t2216804170 * L_66 = V_13;
 		if (!L_66)
@@ -33258,7 +33258,7 @@ IL_01a8:
 		AttributeInfo_t2216804170 * L_88 = (AttributeInfo_t2216804170 *)il2cpp_codegen_object_new(AttributeInfo_t2216804170_il2cpp_TypeInfo_var);
 		AttributeInfo__ctor_m140304083(L_88, L_86, L_87, /*hidden argument*/NULL);
 		NullCheck(L_84);
-		VirtActionInvoker2< RuntimeObject *, RuntimeObject * >::Invoke(26 /* System.Void System.Collections.Hashtable::Add(System.Object,System.Object) */, L_84, L_85, L_88);
+		VirtActionInvoker2< RuntimeObject *, RuntimeObject * >::Invoke(27 /* System.Void System.Collections.Hashtable::Add(System.Object,System.Object) */, L_84, L_85, L_88);
 	}
 
 IL_01c1:
@@ -34214,7 +34214,7 @@ extern "C"  void MonoEnumInfo_GetInfo_m1670492558 (RuntimeObject * __this /* sta
 		Hashtable_t1853889766 * L_0 = MonoEnumInfo_get_Cache_m752167006(NULL /*static, unused*/, /*hidden argument*/NULL);
 		Type_t * L_1 = ___enumType0;
 		NullCheck(L_0);
-		bool L_2 = VirtFuncInvoker1< bool, RuntimeObject * >::Invoke(31 /* System.Boolean System.Collections.Hashtable::ContainsKey(System.Object) */, L_0, L_1);
+		bool L_2 = VirtFuncInvoker1< bool, RuntimeObject * >::Invoke(32 /* System.Boolean System.Collections.Hashtable::ContainsKey(System.Object) */, L_0, L_1);
 		if (!L_2)
 		{
 			goto IL_0027;
@@ -34226,7 +34226,7 @@ extern "C"  void MonoEnumInfo_GetInfo_m1670492558 (RuntimeObject * __this /* sta
 		Hashtable_t1853889766 * L_4 = ((MonoEnumInfo_t3694469084_ThreadStaticFields*)il2cpp_codegen_get_thread_static_data(MonoEnumInfo_t3694469084_il2cpp_TypeInfo_var))->get_cache_4();
 		Type_t * L_5 = ___enumType0;
 		NullCheck(L_4);
-		RuntimeObject * L_6 = VirtFuncInvoker1< RuntimeObject *, RuntimeObject * >::Invoke(23 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_4, L_5);
+		RuntimeObject * L_6 = VirtFuncInvoker1< RuntimeObject *, RuntimeObject * >::Invoke(24 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_4, L_5);
 		*(MonoEnumInfo_t3694469084 *)L_3 = ((*(MonoEnumInfo_t3694469084 *)((MonoEnumInfo_t3694469084 *)UnBox(L_6, MonoEnumInfo_t3694469084_il2cpp_TypeInfo_var))));
 		return;
 	}
@@ -34248,7 +34248,7 @@ IL_0033:
 			Hashtable_t1853889766 * L_9 = ((MonoEnumInfo_t3694469084_StaticFields*)il2cpp_codegen_static_fields_for(MonoEnumInfo_t3694469084_il2cpp_TypeInfo_var))->get_global_cache_5();
 			Type_t * L_10 = ___enumType0;
 			NullCheck(L_9);
-			bool L_11 = VirtFuncInvoker1< bool, RuntimeObject * >::Invoke(31 /* System.Boolean System.Collections.Hashtable::ContainsKey(System.Object) */, L_9, L_10);
+			bool L_11 = VirtFuncInvoker1< bool, RuntimeObject * >::Invoke(32 /* System.Boolean System.Collections.Hashtable::ContainsKey(System.Object) */, L_9, L_10);
 			if (!L_11)
 			{
 				goto IL_006c;
@@ -34261,13 +34261,13 @@ IL_0043:
 			Hashtable_t1853889766 * L_12 = ((MonoEnumInfo_t3694469084_StaticFields*)il2cpp_codegen_static_fields_for(MonoEnumInfo_t3694469084_il2cpp_TypeInfo_var))->get_global_cache_5();
 			Type_t * L_13 = ___enumType0;
 			NullCheck(L_12);
-			RuntimeObject * L_14 = VirtFuncInvoker1< RuntimeObject *, RuntimeObject * >::Invoke(23 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_12, L_13);
+			RuntimeObject * L_14 = VirtFuncInvoker1< RuntimeObject *, RuntimeObject * >::Invoke(24 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_12, L_13);
 			V_1 = L_14;
 			Hashtable_t1853889766 * L_15 = ((MonoEnumInfo_t3694469084_ThreadStaticFields*)il2cpp_codegen_get_thread_static_data(MonoEnumInfo_t3694469084_il2cpp_TypeInfo_var))->get_cache_4();
 			Type_t * L_16 = ___enumType0;
 			RuntimeObject * L_17 = V_1;
 			NullCheck(L_15);
-			VirtActionInvoker2< RuntimeObject *, RuntimeObject * >::Invoke(24 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, L_15, L_16, L_17);
+			VirtActionInvoker2< RuntimeObject *, RuntimeObject * >::Invoke(25 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, L_15, L_16, L_17);
 			MonoEnumInfo_t3694469084 * L_18 = ___info1;
 			RuntimeObject * L_19 = V_1;
 			*(MonoEnumInfo_t3694469084 *)L_18 = ((*(MonoEnumInfo_t3694469084 *)((MonoEnumInfo_t3694469084 *)UnBox(L_19, MonoEnumInfo_t3694469084_il2cpp_TypeInfo_var))));
@@ -34440,7 +34440,7 @@ IL_0163:
 		int32_t L_62 = L_61;
 		RuntimeObject * L_63 = Box(Int32_t2950945753_il2cpp_TypeInfo_var, &L_62);
 		NullCheck(L_55);
-		VirtActionInvoker2< RuntimeObject *, RuntimeObject * >::Invoke(24 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, L_55, L_60, L_63);
+		VirtActionInvoker2< RuntimeObject *, RuntimeObject * >::Invoke(25 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, L_55, L_60, L_63);
 		int32_t L_64 = V_3;
 		V_3 = ((int32_t)il2cpp_codegen_add((int32_t)L_64, (int32_t)1));
 	}
@@ -34478,7 +34478,7 @@ IL_01a9:
 		MonoEnumInfo_t3694469084  L_74 = L_73;
 		RuntimeObject * L_75 = Box(MonoEnumInfo_t3694469084_il2cpp_TypeInfo_var, &L_74);
 		NullCheck(L_71);
-		VirtActionInvoker2< RuntimeObject *, RuntimeObject * >::Invoke(24 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, L_71, L_72, L_75);
+		VirtActionInvoker2< RuntimeObject *, RuntimeObject * >::Invoke(25 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, L_71, L_72, L_75);
 		IL2CPP_LEAVE(0x1C8, FINALLY_01c0);
 	} // end try (depth: 1)
 	catch(Il2CppExceptionWrapper& e)

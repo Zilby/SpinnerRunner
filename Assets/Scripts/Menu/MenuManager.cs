@@ -74,6 +74,7 @@ public class MenuManager : MonoBehaviour
 #endif
             Utils.Reset();
             Utils.Load();
+			Screen.sleepTimeout = SleepTimeout.NeverSleep;
         }
 
         StartCoroutine(Initialize(showAd));

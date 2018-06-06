@@ -33186,7 +33186,7 @@ IL_0022:
 			Hashtable_t1853889766 * L_8 = ((SecurityManager_t3383402582_StaticFields*)il2cpp_codegen_static_fields_for(SecurityManager_t3383402582_il2cpp_TypeInfo_var))->get__declsecCache_1();
 			RuntimeObject * L_9 = V_2;
 			NullCheck(L_8);
-			RuntimeObject * L_10 = VirtFuncInvoker1< RuntimeObject *, RuntimeObject * >::Invoke(23 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_8, L_9);
+			RuntimeObject * L_10 = VirtFuncInvoker1< RuntimeObject *, RuntimeObject * >::Invoke(24 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_8, L_9);
 			V_0 = ((PermissionSet_t223948603 *)CastclassClass((RuntimeObject*)L_10, PermissionSet_t223948603_il2cpp_TypeInfo_var));
 			PermissionSet_t223948603 * L_11 = V_0;
 			if (L_11)
@@ -33215,7 +33215,7 @@ IL_0045:
 			RuntimeObject * L_20 = V_2;
 			PermissionSet_t223948603 * L_21 = V_0;
 			NullCheck(L_19);
-			VirtActionInvoker2< RuntimeObject *, RuntimeObject * >::Invoke(26 /* System.Void System.Collections.Hashtable::Add(System.Object,System.Object) */, L_19, L_20, L_21);
+			VirtActionInvoker2< RuntimeObject *, RuntimeObject * >::Invoke(27 /* System.Void System.Collections.Hashtable::Add(System.Object,System.Object) */, L_19, L_20, L_21);
 		}
 
 IL_006f:

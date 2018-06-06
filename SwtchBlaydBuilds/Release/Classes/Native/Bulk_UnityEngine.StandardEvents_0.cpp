@@ -103,7 +103,7 @@ extern RuntimeClass* Dictionary_2_t2865362463_il2cpp_TypeInfo_var;
 extern RuntimeClass* Dictionary_2_t1632706988_il2cpp_TypeInfo_var;
 extern const RuntimeMethod* Dictionary_2__ctor_m2606011945_RuntimeMethod_var;
 extern const RuntimeMethod* Dictionary_2__ctor_m3302800229_RuntimeMethod_var;
-extern const RuntimeMethod* Dictionary_2_Add_m1316431193_RuntimeMethod_var;
+extern const RuntimeMethod* Dictionary_2_Add_m3097518446_RuntimeMethod_var;
 extern String_t* _stringLiteral314968592;
 extern String_t* _stringLiteral223781046;
 extern String_t* _stringLiteral591401181;
@@ -140,8 +140,8 @@ struct ObjectU5BU5D_t2843939325;
 #pragma clang diagnostic pop
 #endif
 #endif // RUNTIMEOBJECT_H
-#ifndef U3CMODULEU3E_T692745553_H
-#define U3CMODULEU3E_T692745553_H
+#ifndef U3CMODULEU3E_T692745564_H
+#define U3CMODULEU3E_T692745564_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
@@ -149,7 +149,7 @@ struct ObjectU5BU5D_t2843939325;
 #endif
 
 // <Module>
-struct  U3CModuleU3E_t692745553 
+struct  U3CModuleU3E_t692745564 
 {
 public:
 
@@ -159,7 +159,7 @@ public:
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // U3CMODULEU3E_T692745553_H
+#endif // U3CMODULEU3E_T692745564_H
 #ifndef VALUETYPE_T3640485471_H
 #define VALUETYPE_T3640485471_H
 #ifdef __clang__
@@ -1174,7 +1174,7 @@ extern "C"  void Debug_LogWarningFormat_m2535776735 (RuntimeObject * __this /* s
 // System.Void System.Collections.Generic.Dictionary`2<System.String,System.String>::.ctor()
 #define Dictionary_2__ctor_m3302800229(__this, method) ((  void (*) (Dictionary_2_t1632706988 *, const RuntimeMethod*))Dictionary_2__ctor_m518943619_gshared)(__this, method)
 // System.Void System.Collections.Generic.Dictionary`2<System.String,System.String>::Add(!0,!1)
-#define Dictionary_2_Add_m1316431193(__this, p0, p1, method) ((  void (*) (Dictionary_2_t1632706988 *, String_t*, String_t*, const RuntimeMethod*))Dictionary_2_Add_m2387223709_gshared)(__this, p0, p1, method)
+#define Dictionary_2_Add_m3097518446(__this, p0, p1, method) ((  void (*) (Dictionary_2_t1632706988 *, String_t*, String_t*, const RuntimeMethod*))Dictionary_2_Add_m2387223709_gshared)(__this, p0, p1, method)
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
@@ -1564,28 +1564,28 @@ extern "C"  void AnalyticsEvent__cctor_m3994162614 (RuntimeObject * __this /* st
 		V_0 = L_1;
 		Dictionary_2_t1632706988 * L_2 = V_0;
 		NullCheck(L_2);
-		Dictionary_2_Add_m1316431193(L_2, _stringLiteral223781046, _stringLiteral591401181, /*hidden argument*/Dictionary_2_Add_m1316431193_RuntimeMethod_var);
+		Dictionary_2_Add_m3097518446(L_2, _stringLiteral223781046, _stringLiteral591401181, /*hidden argument*/Dictionary_2_Add_m3097518446_RuntimeMethod_var);
 		Dictionary_2_t1632706988 * L_3 = V_0;
 		NullCheck(L_3);
-		Dictionary_2_Add_m1316431193(L_3, _stringLiteral2670495305, _stringLiteral3038431854, /*hidden argument*/Dictionary_2_Add_m1316431193_RuntimeMethod_var);
+		Dictionary_2_Add_m3097518446(L_3, _stringLiteral2670495305, _stringLiteral3038431854, /*hidden argument*/Dictionary_2_Add_m3097518446_RuntimeMethod_var);
 		Dictionary_2_t1632706988 * L_4 = V_0;
 		NullCheck(L_4);
-		Dictionary_2_Add_m1316431193(L_4, _stringLiteral1860111314, _stringLiteral3191806752, /*hidden argument*/Dictionary_2_Add_m1316431193_RuntimeMethod_var);
+		Dictionary_2_Add_m3097518446(L_4, _stringLiteral1860111314, _stringLiteral3191806752, /*hidden argument*/Dictionary_2_Add_m3097518446_RuntimeMethod_var);
 		Dictionary_2_t1632706988 * L_5 = V_0;
 		NullCheck(L_5);
-		Dictionary_2_Add_m1316431193(L_5, _stringLiteral2793515199, _stringLiteral1822927358, /*hidden argument*/Dictionary_2_Add_m1316431193_RuntimeMethod_var);
+		Dictionary_2_Add_m3097518446(L_5, _stringLiteral2793515199, _stringLiteral1822927358, /*hidden argument*/Dictionary_2_Add_m3097518446_RuntimeMethod_var);
 		Dictionary_2_t1632706988 * L_6 = V_0;
 		NullCheck(L_6);
-		Dictionary_2_Add_m1316431193(L_6, _stringLiteral3946338038, _stringLiteral1285374328, /*hidden argument*/Dictionary_2_Add_m1316431193_RuntimeMethod_var);
+		Dictionary_2_Add_m3097518446(L_6, _stringLiteral3946338038, _stringLiteral1285374328, /*hidden argument*/Dictionary_2_Add_m3097518446_RuntimeMethod_var);
 		Dictionary_2_t1632706988 * L_7 = V_0;
 		NullCheck(L_7);
-		Dictionary_2_Add_m1316431193(L_7, _stringLiteral1477325238, _stringLiteral359657463, /*hidden argument*/Dictionary_2_Add_m1316431193_RuntimeMethod_var);
+		Dictionary_2_Add_m3097518446(L_7, _stringLiteral1477325238, _stringLiteral359657463, /*hidden argument*/Dictionary_2_Add_m3097518446_RuntimeMethod_var);
 		Dictionary_2_t1632706988 * L_8 = V_0;
 		NullCheck(L_8);
-		Dictionary_2_Add_m1316431193(L_8, _stringLiteral2913916239, _stringLiteral4063851185, /*hidden argument*/Dictionary_2_Add_m1316431193_RuntimeMethod_var);
+		Dictionary_2_Add_m3097518446(L_8, _stringLiteral2913916239, _stringLiteral4063851185, /*hidden argument*/Dictionary_2_Add_m3097518446_RuntimeMethod_var);
 		Dictionary_2_t1632706988 * L_9 = V_0;
 		NullCheck(L_9);
-		Dictionary_2_Add_m1316431193(L_9, _stringLiteral2569810339, _stringLiteral243880865, /*hidden argument*/Dictionary_2_Add_m1316431193_RuntimeMethod_var);
+		Dictionary_2_Add_m3097518446(L_9, _stringLiteral2569810339, _stringLiteral243880865, /*hidden argument*/Dictionary_2_Add_m3097518446_RuntimeMethod_var);
 		Dictionary_2_t1632706988 * L_10 = V_0;
 		((AnalyticsEvent_t4058973021_StaticFields*)il2cpp_codegen_static_fields_for(AnalyticsEvent_t4058973021_il2cpp_TypeInfo_var))->set_enumRenameTable_3(L_10);
 		return;

@@ -1252,6 +1252,7 @@ extern const uint32_t BitConverter__cctor_m3841343255_MetadataUsageId;
 extern const uint32_t BitConverter_DoubleToInt64Bits_m3574395137_MetadataUsageId;
 extern const uint32_t BitConverter_GetBytes_m2120707223_MetadataUsageId;
 extern const uint32_t BitConverter_GetBytes_m658425501_MetadataUsageId;
+extern const uint32_t BitConverter_GetBytes_m2889955588_MetadataUsageId;
 extern const uint32_t BitConverter_GetBytes_m3693159656_MetadataUsageId;
 extern String_t* _stringLiteral2410720131;
 extern String_t* _stringLiteral1358229803;
@@ -1291,6 +1292,7 @@ extern const uint32_t Boolean_Equals_m2410333903_MetadataUsageId;
 extern RuntimeClass* FormatException_t154580423_il2cpp_TypeInfo_var;
 extern String_t* _stringLiteral3793797373;
 extern const uint32_t Boolean_Parse_m2370352694_MetadataUsageId;
+extern const uint32_t Boolean_TryParse_m1999513058_MetadataUsageId;
 extern const uint32_t Boolean_ToString_m2664721875_MetadataUsageId;
 extern String_t* _stringLiteral2265951865;
 extern const uint32_t Buffer_ByteLength_m2639516074_MetadataUsageId;
@@ -5820,26 +5822,26 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // HASHTABLE_T1853889766_H
-#ifndef UINT64_T4134040092_H
-#define UINT64_T4134040092_H
+#ifndef UINT16_T2177724958_H
+#define UINT16_T2177724958_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 
-// System.UInt64
-struct  UInt64_t4134040092 
+// System.UInt16
+struct  UInt16_t2177724958 
 {
 public:
-	// System.UInt64 System.UInt64::m_value
-	uint64_t ___m_value_2;
+	// System.UInt16 System.UInt16::m_value
+	uint16_t ___m_value_2;
 
 public:
-	inline static int32_t get_offset_of_m_value_2() { return static_cast<int32_t>(offsetof(UInt64_t4134040092, ___m_value_2)); }
-	inline uint64_t get_m_value_2() const { return ___m_value_2; }
-	inline uint64_t* get_address_of_m_value_2() { return &___m_value_2; }
-	inline void set_m_value_2(uint64_t value)
+	inline static int32_t get_offset_of_m_value_2() { return static_cast<int32_t>(offsetof(UInt16_t2177724958, ___m_value_2)); }
+	inline uint16_t get_m_value_2() const { return ___m_value_2; }
+	inline uint16_t* get_address_of_m_value_2() { return &___m_value_2; }
+	inline void set_m_value_2(uint16_t value)
 	{
 		___m_value_2 = value;
 	}
@@ -5848,7 +5850,7 @@ public:
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // UINT64_T4134040092_H
+#endif // UINT16_T2177724958_H
 #ifndef DOUBLE_T594665363_H
 #define DOUBLE_T594665363_H
 #ifdef __clang__
@@ -6047,26 +6049,26 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // U24ARRAYTYPEU2496_T2898536284_H
-#ifndef UINT16_T2177724958_H
-#define UINT16_T2177724958_H
+#ifndef UINT64_T4134040092_H
+#define UINT64_T4134040092_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 
-// System.UInt16
-struct  UInt16_t2177724958 
+// System.UInt64
+struct  UInt64_t4134040092 
 {
 public:
-	// System.UInt16 System.UInt16::m_value
-	uint16_t ___m_value_2;
+	// System.UInt64 System.UInt64::m_value
+	uint64_t ___m_value_2;
 
 public:
-	inline static int32_t get_offset_of_m_value_2() { return static_cast<int32_t>(offsetof(UInt16_t2177724958, ___m_value_2)); }
-	inline uint16_t get_m_value_2() const { return ___m_value_2; }
-	inline uint16_t* get_address_of_m_value_2() { return &___m_value_2; }
-	inline void set_m_value_2(uint16_t value)
+	inline static int32_t get_offset_of_m_value_2() { return static_cast<int32_t>(offsetof(UInt64_t4134040092, ___m_value_2)); }
+	inline uint64_t get_m_value_2() const { return ___m_value_2; }
+	inline uint64_t* get_address_of_m_value_2() { return &___m_value_2; }
+	inline void set_m_value_2(uint64_t value)
 	{
 		___m_value_2 = value;
 	}
@@ -6075,7 +6077,7 @@ public:
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // UINT16_T2177724958_H
+#endif // UINT64_T4134040092_H
 #ifndef SYSTEMEXCEPTION_T176217640_H
 #define SYSTEMEXCEPTION_T176217640_H
 #ifdef __clang__
@@ -24399,7 +24401,7 @@ extern "C"  ASN1_t2114160832 * PKCS12_CertificateSafeBag_m3469173172 (PKCS12_t41
 		V_4 = L_18;
 		RuntimeObject* L_19 = ___attributes1;
 		NullCheck(L_19);
-		RuntimeObject* L_20 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(4 /* System.Collections.IDictionaryEnumerator System.Collections.IDictionary::GetEnumerator() */, IDictionary_t1363984059_il2cpp_TypeInfo_var, L_19);
+		RuntimeObject* L_20 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(5 /* System.Collections.IDictionaryEnumerator System.Collections.IDictionary::GetEnumerator() */, IDictionary_t1363984059_il2cpp_TypeInfo_var, L_19);
 		V_5 = L_20;
 		goto IL_0265;
 	}
@@ -36381,7 +36383,7 @@ IL_0048:
 		Hashtable_t1853889766 * L_9 = V_1;
 		String_t* L_10 = V_0;
 		NullCheck(L_9);
-		bool L_11 = VirtFuncInvoker1< bool, RuntimeObject * >::Invoke(28 /* System.Boolean System.Collections.Hashtable::Contains(System.Object) */, L_9, L_10);
+		bool L_11 = VirtFuncInvoker1< bool, RuntimeObject * >::Invoke(29 /* System.Boolean System.Collections.Hashtable::Contains(System.Object) */, L_9, L_10);
 		if (!L_11)
 		{
 			goto IL_0056;
@@ -36397,7 +36399,7 @@ IL_0056:
 		String_t* L_13 = V_0;
 		String_t* L_14 = V_0;
 		NullCheck(L_12);
-		VirtActionInvoker2< RuntimeObject *, RuntimeObject * >::Invoke(24 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, L_12, L_13, L_14);
+		VirtActionInvoker2< RuntimeObject *, RuntimeObject * >::Invoke(25 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, L_12, L_13, L_14);
 	}
 
 IL_005e:
@@ -36482,7 +36484,7 @@ FINALLY_00bc:
 		Hashtable_t1853889766 * L_31 = V_1;
 		String_t* L_32 = V_0;
 		NullCheck(L_31);
-		VirtActionInvoker1< RuntimeObject * >::Invoke(30 /* System.Void System.Collections.Hashtable::Remove(System.Object) */, L_31, L_32);
+		VirtActionInvoker1< RuntimeObject * >::Invoke(31 /* System.Void System.Collections.Hashtable::Remove(System.Object) */, L_31, L_32);
 		IL2CPP_END_FINALLY(188)
 	} // end finally (depth: 1)
 	IL2CPP_CLEANUP(188)
@@ -43513,6 +43515,21 @@ extern "C"  ByteU5BU5D_t4116647657* BitConverter_GetBytes_m658425501 (RuntimeObj
 		return L_0;
 	}
 }
+// System.Byte[] System.BitConverter::GetBytes(System.UInt64)
+extern "C"  ByteU5BU5D_t4116647657* BitConverter_GetBytes_m2889955588 (RuntimeObject * __this /* static, unused */, uint64_t ___value0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (BitConverter_GetBytes_m2889955588_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(BitConverter_t3118986983_il2cpp_TypeInfo_var);
+		ByteU5BU5D_t4116647657* L_0 = BitConverter_GetBytes_m2120707223(NULL /*static, unused*/, (uint8_t*)(uint8_t*)(&___value0), 8, /*hidden argument*/NULL);
+		return L_0;
+	}
+}
 // System.Byte[] System.BitConverter::GetBytes(System.Double)
 extern "C"  ByteU5BU5D_t4116647657* BitConverter_GetBytes_m3693159656 (RuntimeObject * __this /* static, unused */, double ___value0, const RuntimeMethod* method)
 {
@@ -44652,6 +44669,75 @@ IL_0049:
 		FormatException_t154580423 * L_13 = (FormatException_t154580423 *)il2cpp_codegen_object_new(FormatException_t154580423_il2cpp_TypeInfo_var);
 		FormatException__ctor_m4049685996(L_13, L_12, /*hidden argument*/NULL);
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_13);
+	}
+}
+// System.Boolean System.Boolean::TryParse(System.String,System.Boolean&)
+extern "C"  bool Boolean_TryParse_m1999513058 (RuntimeObject * __this /* static, unused */, String_t* ___value0, bool* ___result1, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Boolean_TryParse_m1999513058_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		bool* L_0 = ___result1;
+		*((int8_t*)(L_0)) = (int8_t)0;
+		String_t* L_1 = ___value0;
+		if (L_1)
+		{
+			goto IL_000b;
+		}
+	}
+	{
+		return (bool)0;
+	}
+
+IL_000b:
+	{
+		String_t* L_2 = ___value0;
+		NullCheck(L_2);
+		String_t* L_3 = String_Trim_m923598732(L_2, /*hidden argument*/NULL);
+		___value0 = L_3;
+		String_t* L_4 = ___value0;
+		IL2CPP_RUNTIME_CLASS_INIT(Boolean_t97287965_il2cpp_TypeInfo_var);
+		String_t* L_5 = ((Boolean_t97287965_StaticFields*)il2cpp_codegen_static_fields_for(Boolean_t97287965_il2cpp_TypeInfo_var))->get_TrueString_1();
+		IL2CPP_RUNTIME_CLASS_INIT(CultureInfo_t4157843068_il2cpp_TypeInfo_var);
+		CultureInfo_t4157843068 * L_6 = CultureInfo_get_InvariantCulture_m3532445182(NULL /*static, unused*/, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		int32_t L_7 = String_Compare_m1293271421(NULL /*static, unused*/, L_4, L_5, (bool)1, L_6, /*hidden argument*/NULL);
+		if (L_7)
+		{
+			goto IL_002e;
+		}
+	}
+	{
+		bool* L_8 = ___result1;
+		*((int8_t*)(L_8)) = (int8_t)1;
+		return (bool)1;
+	}
+
+IL_002e:
+	{
+		String_t* L_9 = ___value0;
+		IL2CPP_RUNTIME_CLASS_INIT(Boolean_t97287965_il2cpp_TypeInfo_var);
+		String_t* L_10 = ((Boolean_t97287965_StaticFields*)il2cpp_codegen_static_fields_for(Boolean_t97287965_il2cpp_TypeInfo_var))->get_FalseString_0();
+		IL2CPP_RUNTIME_CLASS_INIT(CultureInfo_t4157843068_il2cpp_TypeInfo_var);
+		CultureInfo_t4157843068 * L_11 = CultureInfo_get_InvariantCulture_m3532445182(NULL /*static, unused*/, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
+		int32_t L_12 = String_Compare_m1293271421(NULL /*static, unused*/, L_9, L_10, (bool)1, L_11, /*hidden argument*/NULL);
+		if (L_12)
+		{
+			goto IL_0046;
+		}
+	}
+	{
+		return (bool)1;
+	}
+
+IL_0046:
+	{
+		return (bool)0;
 	}
 }
 // System.String System.Boolean::ToString()

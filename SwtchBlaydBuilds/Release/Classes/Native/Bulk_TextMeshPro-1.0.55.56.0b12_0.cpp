@@ -859,8 +859,8 @@ struct Color32U5BU5D_t3850468773;
 struct TMP_SubMeshUIU5BU5D_t3119380694;
 
 
-#ifndef U3CMODULEU3E_T692745551_H
-#define U3CMODULEU3E_T692745551_H
+#ifndef U3CMODULEU3E_T692745562_H
+#define U3CMODULEU3E_T692745562_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
@@ -868,7 +868,7 @@ struct TMP_SubMeshUIU5BU5D_t3119380694;
 #endif
 
 // <Module>
-struct  U3CModuleU3E_t692745551 
+struct  U3CModuleU3E_t692745562 
 {
 public:
 
@@ -878,7 +878,7 @@ public:
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // U3CMODULEU3E_T692745551_H
+#endif // U3CMODULEU3E_T692745562_H
 #ifndef RUNTIMEOBJECT_H
 #define RUNTIMEOBJECT_H
 #ifdef __clang__
@@ -6810,8 +6810,8 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // HIDEFLAGS_T4250555765_H
-#ifndef U3CPRIVATEIMPLEMENTATIONDETAILSU3E_T3057255366_H
-#define U3CPRIVATEIMPLEMENTATIONDETAILSU3E_T3057255366_H
+#ifndef U3CPRIVATEIMPLEMENTATIONDETAILSU3E_T3057255369_H
+#define U3CPRIVATEIMPLEMENTATIONDETAILSU3E_T3057255369_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
@@ -6819,14 +6819,14 @@ public:
 #endif
 
 // <PrivateImplementationDetails>
-struct  U3CPrivateImplementationDetailsU3E_t3057255366  : public RuntimeObject
+struct  U3CPrivateImplementationDetailsU3E_t3057255369  : public RuntimeObject
 {
 public:
 
 public:
 };
 
-struct U3CPrivateImplementationDetailsU3E_t3057255366_StaticFields
+struct U3CPrivateImplementationDetailsU3E_t3057255369_StaticFields
 {
 public:
 	// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=12 <PrivateImplementationDetails>::7BBE37982E6C057ED87163CAFC7FD6E5E42EEA46
@@ -6835,7 +6835,7 @@ public:
 	__StaticArrayInitTypeSizeU3D40_t1547998295  ___9E6378168821DBABB7EE3D0154346480FAC8AEF1_1;
 
 public:
-	inline static int32_t get_offset_of_U37BBE37982E6C057ED87163CAFC7FD6E5E42EEA46_0() { return static_cast<int32_t>(offsetof(U3CPrivateImplementationDetailsU3E_t3057255366_StaticFields, ___7BBE37982E6C057ED87163CAFC7FD6E5E42EEA46_0)); }
+	inline static int32_t get_offset_of_U37BBE37982E6C057ED87163CAFC7FD6E5E42EEA46_0() { return static_cast<int32_t>(offsetof(U3CPrivateImplementationDetailsU3E_t3057255369_StaticFields, ___7BBE37982E6C057ED87163CAFC7FD6E5E42EEA46_0)); }
 	inline __StaticArrayInitTypeSizeU3D12_t2710994317  get_U37BBE37982E6C057ED87163CAFC7FD6E5E42EEA46_0() const { return ___7BBE37982E6C057ED87163CAFC7FD6E5E42EEA46_0; }
 	inline __StaticArrayInitTypeSizeU3D12_t2710994317 * get_address_of_U37BBE37982E6C057ED87163CAFC7FD6E5E42EEA46_0() { return &___7BBE37982E6C057ED87163CAFC7FD6E5E42EEA46_0; }
 	inline void set_U37BBE37982E6C057ED87163CAFC7FD6E5E42EEA46_0(__StaticArrayInitTypeSizeU3D12_t2710994317  value)
@@ -6843,7 +6843,7 @@ public:
 		___7BBE37982E6C057ED87163CAFC7FD6E5E42EEA46_0 = value;
 	}
 
-	inline static int32_t get_offset_of_U39E6378168821DBABB7EE3D0154346480FAC8AEF1_1() { return static_cast<int32_t>(offsetof(U3CPrivateImplementationDetailsU3E_t3057255366_StaticFields, ___9E6378168821DBABB7EE3D0154346480FAC8AEF1_1)); }
+	inline static int32_t get_offset_of_U39E6378168821DBABB7EE3D0154346480FAC8AEF1_1() { return static_cast<int32_t>(offsetof(U3CPrivateImplementationDetailsU3E_t3057255369_StaticFields, ___9E6378168821DBABB7EE3D0154346480FAC8AEF1_1)); }
 	inline __StaticArrayInitTypeSizeU3D40_t1547998295  get_U39E6378168821DBABB7EE3D0154346480FAC8AEF1_1() const { return ___9E6378168821DBABB7EE3D0154346480FAC8AEF1_1; }
 	inline __StaticArrayInitTypeSizeU3D40_t1547998295 * get_address_of_U39E6378168821DBABB7EE3D0154346480FAC8AEF1_1() { return &___9E6378168821DBABB7EE3D0154346480FAC8AEF1_1; }
 	inline void set_U39E6378168821DBABB7EE3D0154346480FAC8AEF1_1(__StaticArrayInitTypeSizeU3D40_t1547998295  value)
@@ -6855,7 +6855,7 @@ public:
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // U3CPRIVATEIMPLEMENTATIONDETAILSU3E_T3057255366_H
+#endif // U3CPRIVATEIMPLEMENTATIONDETAILSU3E_T3057255369_H
 #ifndef TEXTUREMAPPINGOPTIONS_T270963663_H
 #define TEXTUREMAPPINGOPTIONS_T270963663_H
 #ifdef __clang__
@@ -15673,7 +15673,7 @@ extern "C"  RuntimeObject * GameObject_GetComponent_TisRuntimeObject_m2049753423
 // !!0 UnityEngine.Component::GetComponent<System.Object>()
 extern "C"  RuntimeObject * Component_GetComponent_TisRuntimeObject_m2906321015_gshared (Component_t1923634451 * __this, const RuntimeMethod* method);
 // !!0 UnityEngine.GameObject::AddComponent<System.Object>()
-extern "C"  RuntimeObject * GameObject_AddComponent_TisRuntimeObject_m3469369570_gshared (GameObject_t1113636619 * __this, const RuntimeMethod* method);
+extern "C"  RuntimeObject * GameObject_AddComponent_TisRuntimeObject_m147650894_gshared (GameObject_t1113636619 * __this, const RuntimeMethod* method);
 // System.Int32 System.Collections.Generic.List`1<System.Object>::get_Count()
 extern "C"  int32_t List_1_get_Count_m2934127733_gshared (List_1_t257213610 * __this, const RuntimeMethod* method);
 // !0 System.Collections.Generic.List`1<System.Object>::get_Item(System.Int32)
@@ -15697,7 +15697,7 @@ extern "C"  RuntimeObject* Enumerable_OrderBy_TisRuntimeObject_TisInt32_t2950945
 // System.Linq.IOrderedEnumerable`1<!!0> System.Linq.Enumerable::ThenBy<System.Object,System.Int32>(System.Linq.IOrderedEnumerable`1<!!0>,System.Func`2<!!0,!!1>)
 extern "C"  RuntimeObject* Enumerable_ThenBy_TisRuntimeObject_TisInt32_t2950945753_m1422993476_gshared (RuntimeObject * __this /* static, unused */, RuntimeObject* p0, Func_2_t2317969963 * p1, const RuntimeMethod* method);
 // System.Collections.Generic.List`1<!!0> System.Linq.Enumerable::ToList<System.Object>(System.Collections.Generic.IEnumerable`1<!!0>)
-extern "C"  List_1_t257213610 * Enumerable_ToList_TisRuntimeObject_m1610189404_gshared (RuntimeObject * __this /* static, unused */, RuntimeObject* p0, const RuntimeMethod* method);
+extern "C"  List_1_t257213610 * Enumerable_ToList_TisRuntimeObject_m3722849500_gshared (RuntimeObject * __this /* static, unused */, RuntimeObject* p0, const RuntimeMethod* method);
 // System.Boolean System.Collections.Generic.Dictionary`2<System.Int32,System.Int32>::TryGetValue(!0,!1&)
 extern "C"  bool Dictionary_2_TryGetValue_m2732287433_gshared (Dictionary_2_t1839659084 * __this, int32_t p0, int32_t* p1, const RuntimeMethod* method);
 // System.Int32 System.Collections.Generic.Dictionary`2<System.Int32,System.Int32>::get_Count()
@@ -15920,7 +15920,7 @@ extern "C"  void TMP_Text_set_havePropertiesChanged_m2101231957 (TMP_Text_t25996
 // System.Void UnityEngine.GameObject::.ctor(System.String)
 extern "C"  void GameObject__ctor_m2093116449 (GameObject_t1113636619 * __this, String_t* p0, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // !!0 UnityEngine.GameObject::AddComponent<TMPro.InlineGraphic>()
-#define GameObject_AddComponent_TisInlineGraphic_t2901727699_m3551950054(__this, method) ((  InlineGraphic_t2901727699 * (*) (GameObject_t1113636619 *, const RuntimeMethod*))GameObject_AddComponent_TisRuntimeObject_m3469369570_gshared)(__this, method)
+#define GameObject_AddComponent_TisInlineGraphic_t2901727699_m3551950054(__this, method) ((  InlineGraphic_t2901727699 * (*) (GameObject_t1113636619 *, const RuntimeMethod*))GameObject_AddComponent_TisRuntimeObject_m147650894_gshared)(__this, method)
 // !!0 UnityEngine.GameObject::GetComponent<UnityEngine.CanvasRenderer>()
 #define GameObject_GetComponent_TisCanvasRenderer_t2598313366_m1231919896(__this, method) ((  CanvasRenderer_t2598313366 * (*) (GameObject_t1113636619 *, const RuntimeMethod*))GameObject_GetComponent_TisRuntimeObject_m2049753423_gshared)(__this, method)
 // UnityEngine.Transform UnityEngine.Component::get_transform()
@@ -16004,7 +16004,7 @@ extern "C"  void U3CU3Ec__DisplayClass4_0__ctor_m754605306 (U3CU3Ec__DisplayClas
 // System.Linq.IOrderedEnumerable`1<!!0> System.Linq.Enumerable::ThenBy<TMPro.KerningPair,System.Int32>(System.Linq.IOrderedEnumerable`1<!!0>,System.Func`2<!!0,!!1>)
 #define Enumerable_ThenBy_TisKerningPair_t2270855589_TisInt32_t2950945753_m731299962(__this /* static, unused */, p0, p1, method) ((  RuntimeObject* (*) (RuntimeObject * /* static, unused */, RuntimeObject*, Func_2_t2554309206 *, const RuntimeMethod*))Enumerable_ThenBy_TisRuntimeObject_TisInt32_t2950945753_m1422993476_gshared)(__this /* static, unused */, p0, p1, method)
 // System.Collections.Generic.List`1<!!0> System.Linq.Enumerable::ToList<TMPro.KerningPair>(System.Collections.Generic.IEnumerable`1<!!0>)
-#define Enumerable_ToList_TisKerningPair_t2270855589_m1899586668(__this /* static, unused */, p0, method) ((  List_1_t3742930331 * (*) (RuntimeObject * /* static, unused */, RuntimeObject*, const RuntimeMethod*))Enumerable_ToList_TisRuntimeObject_m1610189404_gshared)(__this /* static, unused */, p0, method)
+#define Enumerable_ToList_TisKerningPair_t2270855589_m1899586668(__this /* static, unused */, p0, method) ((  List_1_t3742930331 * (*) (RuntimeObject * /* static, unused */, RuntimeObject*, const RuntimeMethod*))Enumerable_ToList_TisRuntimeObject_m3722849500_gshared)(__this /* static, unused */, p0, method)
 // System.Void TMPro.KerningTable/<>c::.ctor()
 extern "C"  void U3CU3Ec__ctor_m941171148 (U3CU3Ec_t4077839018 * __this, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // System.Int32 UnityEngine.Object::GetInstanceID()
@@ -16122,7 +16122,7 @@ extern "C"  TextMeshPro_t2393593166 * TextContainer_get_textMeshPro_m396204080 (
 // UnityEngine.RectTransform TMPro.TextContainer::get_rectTransform()
 extern "C"  RectTransform_t3704657025 * TextContainer_get_rectTransform_m3911036452 (TextContainer_t97923372 * __this, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // !!0 UnityEngine.GameObject::AddComponent<UnityEngine.RectTransform>()
-#define GameObject_AddComponent_TisRectTransform_t3704657025_m3669823029(__this, method) ((  RectTransform_t3704657025 * (*) (GameObject_t1113636619 *, const RuntimeMethod*))GameObject_AddComponent_TisRuntimeObject_m3469369570_gshared)(__this, method)
+#define GameObject_AddComponent_TisRectTransform_t3704657025_m3669823029(__this, method) ((  RectTransform_t3704657025 * (*) (GameObject_t1113636619 *, const RuntimeMethod*))GameObject_AddComponent_TisRuntimeObject_m147650894_gshared)(__this, method)
 // UnityEngine.Vector2 UnityEngine.RectTransform::get_sizeDelta()
 extern "C"  Vector2_t2156229523  RectTransform_get_sizeDelta_m2183112744 (RectTransform_t3704657025 * __this, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // System.Void TMPro.TextContainer::set_size(UnityEngine.Vector2)
@@ -16144,13 +16144,13 @@ extern "C"  void UIBehaviour__ctor_m4230637738 (UIBehaviour_t3495933518 * __this
 // !!0 UnityEngine.Component::GetComponent<UnityEngine.Renderer>()
 #define Component_GetComponent_TisRenderer_t2627027031_m1858649706(__this, method) ((  Renderer_t2627027031 * (*) (Component_t1923634451 *, const RuntimeMethod*))Component_GetComponent_TisRuntimeObject_m2906321015_gshared)(__this, method)
 // !!0 UnityEngine.GameObject::AddComponent<UnityEngine.Renderer>()
-#define GameObject_AddComponent_TisRenderer_t2627027031_m4226733895(__this, method) ((  Renderer_t2627027031 * (*) (GameObject_t1113636619 *, const RuntimeMethod*))GameObject_AddComponent_TisRuntimeObject_m3469369570_gshared)(__this, method)
+#define GameObject_AddComponent_TisRenderer_t2627027031_m4226733895(__this, method) ((  Renderer_t2627027031 * (*) (GameObject_t1113636619 *, const RuntimeMethod*))GameObject_AddComponent_TisRuntimeObject_m147650894_gshared)(__this, method)
 // UnityEngine.CanvasRenderer UnityEngine.UI.Graphic::get_canvasRenderer()
 extern "C"  CanvasRenderer_t2598313366 * Graphic_get_canvasRenderer_m315509948 (Graphic_t1660335611 * __this, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Object::set_hideFlags(UnityEngine.HideFlags)
 extern "C"  void Object_set_hideFlags_m1648752846 (Object_t631007953 * __this, int32_t p0, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // !!0 UnityEngine.GameObject::AddComponent<UnityEngine.CanvasRenderer>()
-#define GameObject_AddComponent_TisCanvasRenderer_t2598313366_m1632061036(__this, method) ((  CanvasRenderer_t2598313366 * (*) (GameObject_t1113636619 *, const RuntimeMethod*))GameObject_AddComponent_TisRuntimeObject_m3469369570_gshared)(__this, method)
+#define GameObject_AddComponent_TisCanvasRenderer_t2598313366_m1632061036(__this, method) ((  CanvasRenderer_t2598313366 * (*) (GameObject_t1113636619 *, const RuntimeMethod*))GameObject_AddComponent_TisRuntimeObject_m147650894_gshared)(__this, method)
 // UnityEngine.RectTransform TMPro.TMP_Text::get_rectTransform()
 extern "C"  RectTransform_t3704657025 * TMP_Text_get_rectTransform_m54267381 (TMP_Text_t2599618874 * __this, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Transform TMPro.TextMeshPro::get_transform()
@@ -16158,7 +16158,7 @@ extern "C"  Transform_t3600365921 * TextMeshPro_get_transform_m2396957138 (TextM
 // !!0 UnityEngine.Component::GetComponent<UnityEngine.MeshFilter>()
 #define Component_GetComponent_TisMeshFilter_t3523625662_m768735314(__this, method) ((  MeshFilter_t3523625662 * (*) (Component_t1923634451 *, const RuntimeMethod*))Component_GetComponent_TisRuntimeObject_m2906321015_gshared)(__this, method)
 // !!0 UnityEngine.GameObject::AddComponent<UnityEngine.MeshFilter>()
-#define GameObject_AddComponent_TisMeshFilter_t3523625662_m1294114787(__this, method) ((  MeshFilter_t3523625662 * (*) (GameObject_t1113636619 *, const RuntimeMethod*))GameObject_AddComponent_TisRuntimeObject_m3469369570_gshared)(__this, method)
+#define GameObject_AddComponent_TisMeshFilter_t3523625662_m1294114787(__this, method) ((  MeshFilter_t3523625662 * (*) (GameObject_t1113636619 *, const RuntimeMethod*))GameObject_AddComponent_TisRuntimeObject_m147650894_gshared)(__this, method)
 // System.Void UnityEngine.Mesh::.ctor()
 extern "C"  void Mesh__ctor_m2533762929 (Mesh_t3648964284 * __this, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.MeshFilter::set_mesh(UnityEngine.Mesh)

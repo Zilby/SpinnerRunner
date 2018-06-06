@@ -19711,7 +19711,7 @@ extern "C"  int32_t Enum_FindName_m293338090 (RuntimeObject * __this /* static, 
 		Hashtable_t1853889766 * L_2 = ___name_hash0;
 		String_t* L_3 = ___name2;
 		NullCheck(L_2);
-		RuntimeObject * L_4 = VirtFuncInvoker1< RuntimeObject *, RuntimeObject * >::Invoke(23 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_2, L_3);
+		RuntimeObject * L_4 = VirtFuncInvoker1< RuntimeObject *, RuntimeObject * >::Invoke(24 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_2, L_3);
 		V_0 = L_4;
 		RuntimeObject * L_5 = V_0;
 		if (!L_5)
@@ -25070,7 +25070,7 @@ IL_003c:
 			int32_t L_10 = L_9;
 			RuntimeObject * L_11 = Box(Int32_t2950945753_il2cpp_TypeInfo_var, &L_10);
 			NullCheck(L_7);
-			RuntimeObject * L_12 = VirtFuncInvoker1< RuntimeObject *, RuntimeObject * >::Invoke(23 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_7, L_11);
+			RuntimeObject * L_12 = VirtFuncInvoker1< RuntimeObject *, RuntimeObject * >::Invoke(24 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_7, L_11);
 			__this->set_collator_5(((SimpleCollator_t2877834729 *)CastclassClass((RuntimeObject*)L_12, SimpleCollator_t2877834729_il2cpp_TypeInfo_var)));
 			SimpleCollator_t2877834729 * L_13 = __this->get_collator_5();
 			if (L_13)
@@ -25094,7 +25094,7 @@ IL_0067:
 			RuntimeObject * L_20 = Box(Int32_t2950945753_il2cpp_TypeInfo_var, &L_19);
 			SimpleCollator_t2877834729 * L_21 = __this->get_collator_5();
 			NullCheck(L_16);
-			VirtActionInvoker2< RuntimeObject *, RuntimeObject * >::Invoke(24 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, L_16, L_20, L_21);
+			VirtActionInvoker2< RuntimeObject *, RuntimeObject * >::Invoke(25 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, L_16, L_20, L_21);
 		}
 
 IL_008e:
@@ -27939,14 +27939,14 @@ IL_001e:
 		RuntimeObject * L_7 = Box(Int32_t2950945753_il2cpp_TypeInfo_var, &L_6);
 		CultureInfo_t4157843068 * L_8 = ___c0;
 		NullCheck(L_3);
-		VirtActionInvoker2< RuntimeObject *, RuntimeObject * >::Invoke(24 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, L_3, L_7, L_8);
+		VirtActionInvoker2< RuntimeObject *, RuntimeObject * >::Invoke(25 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, L_3, L_7, L_8);
 		Hashtable_t1853889766 * L_9 = ((CultureInfo_t4157843068_StaticFields*)il2cpp_codegen_static_fields_for(CultureInfo_t4157843068_il2cpp_TypeInfo_var))->get_shared_by_name_37();
 		CultureInfo_t4157843068 * L_10 = ___c0;
 		NullCheck(L_10);
 		String_t* L_11 = L_10->get_m_name_17();
 		CultureInfo_t4157843068 * L_12 = ___c0;
 		NullCheck(L_9);
-		VirtActionInvoker2< RuntimeObject *, RuntimeObject * >::Invoke(24 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, L_9, L_11, L_12);
+		VirtActionInvoker2< RuntimeObject *, RuntimeObject * >::Invoke(25 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, L_9, L_11, L_12);
 		return;
 	}
 }
@@ -27996,7 +27996,7 @@ IL_0016:
 			int32_t L_5 = L_4;
 			RuntimeObject * L_6 = Box(Int32_t2950945753_il2cpp_TypeInfo_var, &L_5);
 			NullCheck(L_3);
-			RuntimeObject * L_7 = VirtFuncInvoker1< RuntimeObject *, RuntimeObject * >::Invoke(23 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_3, L_6);
+			RuntimeObject * L_7 = VirtFuncInvoker1< RuntimeObject *, RuntimeObject * >::Invoke(24 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_3, L_6);
 			V_0 = ((CultureInfo_t4157843068 *)IsInstClass((RuntimeObject*)L_7, CultureInfo_t4157843068_il2cpp_TypeInfo_var));
 			CultureInfo_t4157843068 * L_8 = V_0;
 			if (!L_8)
@@ -28113,7 +28113,7 @@ IL_0027:
 			Hashtable_t1853889766 * L_5 = ((CultureInfo_t4157843068_StaticFields*)il2cpp_codegen_static_fields_for(CultureInfo_t4157843068_il2cpp_TypeInfo_var))->get_shared_by_name_37();
 			String_t* L_6 = ___name0;
 			NullCheck(L_5);
-			RuntimeObject * L_7 = VirtFuncInvoker1< RuntimeObject *, RuntimeObject * >::Invoke(23 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_5, L_6);
+			RuntimeObject * L_7 = VirtFuncInvoker1< RuntimeObject *, RuntimeObject * >::Invoke(24 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_5, L_6);
 			V_0 = ((CultureInfo_t4157843068 *)IsInstClass((RuntimeObject*)L_7, CultureInfo_t4157843068_il2cpp_TypeInfo_var));
 			CultureInfo_t4157843068 * L_8 = V_0;
 			if (!L_8)

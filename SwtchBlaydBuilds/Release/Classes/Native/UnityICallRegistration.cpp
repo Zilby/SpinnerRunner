@@ -90,6 +90,10 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Analytics_UnityAnalyticsHandler_InternalDestroy();
 		Register_UnityEngine_Analytics_UnityAnalyticsHandler_InternalDestroy();
 
+		//UnityEngine.Analytics.AnalyticsResult UnityEngine.Analytics.UnityAnalyticsHandler::InternalTransaction(System.String,System.Double,System.String,System.String,System.String,System.Boolean)
+		void Register_UnityEngine_Analytics_UnityAnalyticsHandler_InternalTransaction();
+		Register_UnityEngine_Analytics_UnityAnalyticsHandler_InternalTransaction();
+
 		//UnityEngine.Analytics.AnalyticsResult UnityEngine.Analytics.UnityAnalyticsHandler::SendCustomEvent(UnityEngine.Analytics.CustomEventData)
 		void Register_UnityEngine_Analytics_UnityAnalyticsHandler_SendCustomEvent();
 		Register_UnityEngine_Analytics_UnityAnalyticsHandler_SendCustomEvent();
@@ -374,9 +378,49 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_AndroidJNI_INTERNAL_CALL_ToShortArray();
 		Register_UnityEngine_AndroidJNI_INTERNAL_CALL_ToShortArray();
 
+		//System.Void UnityEngine.AndroidJNI::SetBooleanField(System.IntPtr,System.IntPtr,System.Boolean)
+		void Register_UnityEngine_AndroidJNI_SetBooleanField();
+		Register_UnityEngine_AndroidJNI_SetBooleanField();
+
+		//System.Void UnityEngine.AndroidJNI::SetByteField(System.IntPtr,System.IntPtr,System.Byte)
+		void Register_UnityEngine_AndroidJNI_SetByteField();
+		Register_UnityEngine_AndroidJNI_SetByteField();
+
+		//System.Void UnityEngine.AndroidJNI::SetCharField(System.IntPtr,System.IntPtr,System.Char)
+		void Register_UnityEngine_AndroidJNI_SetCharField();
+		Register_UnityEngine_AndroidJNI_SetCharField();
+
+		//System.Void UnityEngine.AndroidJNI::SetDoubleField(System.IntPtr,System.IntPtr,System.Double)
+		void Register_UnityEngine_AndroidJNI_SetDoubleField();
+		Register_UnityEngine_AndroidJNI_SetDoubleField();
+
+		//System.Void UnityEngine.AndroidJNI::SetFloatField(System.IntPtr,System.IntPtr,System.Single)
+		void Register_UnityEngine_AndroidJNI_SetFloatField();
+		Register_UnityEngine_AndroidJNI_SetFloatField();
+
+		//System.Void UnityEngine.AndroidJNI::SetIntField(System.IntPtr,System.IntPtr,System.Int32)
+		void Register_UnityEngine_AndroidJNI_SetIntField();
+		Register_UnityEngine_AndroidJNI_SetIntField();
+
+		//System.Void UnityEngine.AndroidJNI::SetLongField(System.IntPtr,System.IntPtr,System.Int64)
+		void Register_UnityEngine_AndroidJNI_SetLongField();
+		Register_UnityEngine_AndroidJNI_SetLongField();
+
 		//System.Void UnityEngine.AndroidJNI::SetObjectArrayElement(System.IntPtr,System.Int32,System.IntPtr)
 		void Register_UnityEngine_AndroidJNI_SetObjectArrayElement();
 		Register_UnityEngine_AndroidJNI_SetObjectArrayElement();
+
+		//System.Void UnityEngine.AndroidJNI::SetObjectField(System.IntPtr,System.IntPtr,System.IntPtr)
+		void Register_UnityEngine_AndroidJNI_SetObjectField();
+		Register_UnityEngine_AndroidJNI_SetObjectField();
+
+		//System.Void UnityEngine.AndroidJNI::SetShortField(System.IntPtr,System.IntPtr,System.Int16)
+		void Register_UnityEngine_AndroidJNI_SetShortField();
+		Register_UnityEngine_AndroidJNI_SetShortField();
+
+		//System.Void UnityEngine.AndroidJNI::SetStringField(System.IntPtr,System.IntPtr,System.String)
+		void Register_UnityEngine_AndroidJNI_SetStringField();
+		Register_UnityEngine_AndroidJNI_SetStringField();
 
 	//End Registrations for type : UnityEngine.AndroidJNI
 
@@ -461,6 +505,10 @@ void RegisterAllStrippedInternalCalls()
 		//System.String UnityEngine.Application::get_cloudProjectId()
 		void Register_UnityEngine_Application_get_cloudProjectId();
 		Register_UnityEngine_Application_get_cloudProjectId();
+
+		//System.String UnityEngine.Application::get_identifier()
+		void Register_UnityEngine_Application_get_identifier();
+		Register_UnityEngine_Application_get_identifier();
 
 		//System.String UnityEngine.Application::get_persistentDataPath()
 		void Register_UnityEngine_Application_get_persistentDataPath();
@@ -1792,6 +1840,14 @@ void RegisterAllStrippedInternalCalls()
 
 	//End Registrations for type : UnityEngine.iOS.NotificationHelper
 
+	//Start Registrations for type : UnityEngine.JsonUtility
+
+		//System.Object UnityEngine.JsonUtility::FromJson(System.String,System.Type)
+		void Register_UnityEngine_JsonUtility_FromJson();
+		Register_UnityEngine_JsonUtility_FromJson();
+
+	//End Registrations for type : UnityEngine.JsonUtility
+
 	//Start Registrations for type : UnityEngine.Light
 
 		//System.Void UnityEngine.Light::get_color_Injected(UnityEngine.Color&)
@@ -2758,6 +2814,10 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Screen_get_dpi();
 		Register_UnityEngine_Screen_get_dpi();
 
+		//System.Void UnityEngine.Screen::set_sleepTimeout(System.Int32)
+		void Register_UnityEngine_Screen_set_sleepTimeout();
+		Register_UnityEngine_Screen_set_sleepTimeout();
+
 	//End Registrations for type : UnityEngine.Screen
 
 	//Start Registrations for type : UnityEngine.ScriptableObject
@@ -3447,5 +3507,21 @@ void RegisterAllStrippedInternalCalls()
 		Register_UnityEngine_Vector3_INTERNAL_CALL_Slerp();
 
 	//End Registrations for type : UnityEngine.Vector3
+
+	//Start Registrations for type : UnityEngine.XR.XRSettings
+
+		//System.Boolean UnityEngine.XR.XRSettings::get_enabled()
+		void Register_UnityEngine_XR_XRSettings_get_enabled();
+		Register_UnityEngine_XR_XRSettings_get_enabled();
+
+	//End Registrations for type : UnityEngine.XR.XRSettings
+
+	//Start Registrations for type : UnityEngineInternal.Input.NativeInputSystem
+
+		//System.Void UnityEngineInternal.Input.NativeInputSystem::set_hasDeviceDiscoveredCallback(System.Boolean)
+		void Register_UnityEngineInternal_Input_NativeInputSystem_set_hasDeviceDiscoveredCallback();
+		Register_UnityEngineInternal_Input_NativeInputSystem_set_hasDeviceDiscoveredCallback();
+
+	//End Registrations for type : UnityEngineInternal.Input.NativeInputSystem
 
 }

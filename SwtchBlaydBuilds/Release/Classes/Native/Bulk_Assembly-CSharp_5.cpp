@@ -12876,7 +12876,7 @@ extern "C"  RuntimeObject * SingletonMonoBehavior_2_get_Instance_m2660043820_gsh
 // System.Void System.Collections.Generic.List`1<System.Object>::RemoveAt(System.Int32)
 extern "C"  void List_1_RemoveAt_m2730968292_gshared (List_1_t257213610 * __this, int32_t p0, const RuntimeMethod* method);
 // !!0 UnityEngine.GameObject::AddComponent<System.Object>()
-extern "C"  RuntimeObject * GameObject_AddComponent_TisRuntimeObject_m3469369570_gshared (GameObject_t1113636619 * __this, const RuntimeMethod* method);
+extern "C"  RuntimeObject * GameObject_AddComponent_TisRuntimeObject_m147650894_gshared (GameObject_t1113636619 * __this, const RuntimeMethod* method);
 // System.Void System.Collections.Generic.List`1<System.Object>::.ctor()
 extern "C"  void List_1__ctor_m2321703786_gshared (List_1_t257213610 * __this, const RuntimeMethod* method);
 // System.Void System.Predicate`1<System.Object>::.ctor(System.Object,System.IntPtr)
@@ -13315,7 +13315,7 @@ extern "C"  int32_t GameObject_get_layer_m4158800245 (GameObject_t1113636619 * _
 // System.Void UnityEngine.GameObject::set_layer(System.Int32)
 extern "C"  void GameObject_set_layer_m3294992795 (GameObject_t1113636619 * __this, int32_t p0, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // !!0 UnityEngine.GameObject::AddComponent<UnityEngine.SpriteRenderer>()
-#define GameObject_AddComponent_TisSpriteRenderer_t3235626157_m1939192903(__this, method) ((  SpriteRenderer_t3235626157 * (*) (GameObject_t1113636619 *, const RuntimeMethod*))GameObject_AddComponent_TisRuntimeObject_m3469369570_gshared)(__this, method)
+#define GameObject_AddComponent_TisSpriteRenderer_t3235626157_m1939192903(__this, method) ((  SpriteRenderer_t3235626157 * (*) (GameObject_t1113636619 *, const RuntimeMethod*))GameObject_AddComponent_TisRuntimeObject_m147650894_gshared)(__this, method)
 // System.Void UnityEngine.Renderer::set_sortingOrder(System.Int32)
 extern "C"  void Renderer_set_sortingOrder_m549573253 (Renderer_t2627027031 * __this, int32_t p0, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Shader UnityEngine.Shader::Find(System.String)
@@ -13905,9 +13905,9 @@ extern "C"  String_t* Application_get_unityVersion_m1068543125 (RuntimeObject * 
 // System.Text.RegularExpressions.Match System.Text.RegularExpressions.Regex::Match(System.String,System.String)
 extern "C"  Match_t3408321083 * Regex_Match_m2057380353 (RuntimeObject * __this /* static, unused */, String_t* p0, String_t* p1, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // System.Text.RegularExpressions.Group System.Text.RegularExpressions.GroupCollection::get_Item(System.Int32)
-extern "C"  Group_t2468205786 * GroupCollection_get_Item_m723682197 (GroupCollection_t69770484 * __this, int32_t p0, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
+extern "C"  Group_t2468205786 * GroupCollection_get_Item_m2465789076 (GroupCollection_t69770484 * __this, int32_t p0, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // System.String System.Text.RegularExpressions.Capture::get_Value()
-extern "C"  String_t* Capture_get_Value_m3919646039 (Capture_t2232016050 * __this, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
+extern "C"  String_t* Capture_get_Value_m538076933 (Capture_t2232016050 * __this, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // System.Int32 System.Convert::ToInt32(System.String)
 extern "C"  int32_t Convert_ToInt32_m1758051682 (RuntimeObject * __this /* static, unused */, String_t* p0, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // System.Int32 InControl.VersionInfo::CompareTo(InControl.VersionInfo)
@@ -30571,9 +30571,9 @@ extern "C"  VersionInfo_t3887684359  VersionInfo_UnityVersion_m2712369395 (Runti
 		NullCheck(L_2);
 		GroupCollection_t69770484 * L_3 = VirtFuncInvoker0< GroupCollection_t69770484 * >::Invoke(4 /* System.Text.RegularExpressions.GroupCollection System.Text.RegularExpressions.Match::get_Groups() */, L_2);
 		NullCheck(L_3);
-		Group_t2468205786 * L_4 = GroupCollection_get_Item_m723682197(L_3, 1, /*hidden argument*/NULL);
+		Group_t2468205786 * L_4 = GroupCollection_get_Item_m2465789076(L_3, 1, /*hidden argument*/NULL);
 		NullCheck(L_4);
-		String_t* L_5 = Capture_get_Value_m3919646039(L_4, /*hidden argument*/NULL);
+		String_t* L_5 = Capture_get_Value_m538076933(L_4, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(Convert_t2465617642_il2cpp_TypeInfo_var);
 		int32_t L_6 = Convert_ToInt32_m1758051682(NULL /*static, unused*/, L_5, /*hidden argument*/NULL);
 		(&V_2)->set_Major_0(L_6);
@@ -30581,18 +30581,18 @@ extern "C"  VersionInfo_t3887684359  VersionInfo_UnityVersion_m2712369395 (Runti
 		NullCheck(L_7);
 		GroupCollection_t69770484 * L_8 = VirtFuncInvoker0< GroupCollection_t69770484 * >::Invoke(4 /* System.Text.RegularExpressions.GroupCollection System.Text.RegularExpressions.Match::get_Groups() */, L_7);
 		NullCheck(L_8);
-		Group_t2468205786 * L_9 = GroupCollection_get_Item_m723682197(L_8, 2, /*hidden argument*/NULL);
+		Group_t2468205786 * L_9 = GroupCollection_get_Item_m2465789076(L_8, 2, /*hidden argument*/NULL);
 		NullCheck(L_9);
-		String_t* L_10 = Capture_get_Value_m3919646039(L_9, /*hidden argument*/NULL);
+		String_t* L_10 = Capture_get_Value_m538076933(L_9, /*hidden argument*/NULL);
 		int32_t L_11 = Convert_ToInt32_m1758051682(NULL /*static, unused*/, L_10, /*hidden argument*/NULL);
 		(&V_2)->set_Minor_1(L_11);
 		Match_t3408321083 * L_12 = V_0;
 		NullCheck(L_12);
 		GroupCollection_t69770484 * L_13 = VirtFuncInvoker0< GroupCollection_t69770484 * >::Invoke(4 /* System.Text.RegularExpressions.GroupCollection System.Text.RegularExpressions.Match::get_Groups() */, L_12);
 		NullCheck(L_13);
-		Group_t2468205786 * L_14 = GroupCollection_get_Item_m723682197(L_13, 3, /*hidden argument*/NULL);
+		Group_t2468205786 * L_14 = GroupCollection_get_Item_m2465789076(L_13, 3, /*hidden argument*/NULL);
 		NullCheck(L_14);
-		String_t* L_15 = Capture_get_Value_m3919646039(L_14, /*hidden argument*/NULL);
+		String_t* L_15 = Capture_get_Value_m538076933(L_14, /*hidden argument*/NULL);
 		int32_t L_16 = Convert_ToInt32_m1758051682(NULL /*static, unused*/, L_15, /*hidden argument*/NULL);
 		(&V_2)->set_Patch_2(L_16);
 		int32_t L_17 = V_1;

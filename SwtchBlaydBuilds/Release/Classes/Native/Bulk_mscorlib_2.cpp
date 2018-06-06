@@ -782,6 +782,7 @@ extern const uint32_t Convert_ToDecimal_m1233667008_MetadataUsageId;
 extern const uint32_t Convert_ToDecimal_m889385228_MetadataUsageId;
 extern const uint32_t Convert_ToDecimal_m1695757674_MetadataUsageId;
 extern const uint32_t Convert_ToDecimal_m2858622624_MetadataUsageId;
+extern const uint32_t Convert_ToDecimal_m92395068_MetadataUsageId;
 extern const uint32_t Convert_ToDecimal_m3815908452_MetadataUsageId;
 extern const uint32_t Convert_ToDouble_m1177445661_MetadataUsageId;
 extern const uint32_t Convert_ToDouble_m4025515304_MetadataUsageId;
@@ -1000,6 +1001,7 @@ extern const uint32_t DateTime_get_Today_m2788644320_MetadataUsageId;
 extern const uint32_t DateTime_get_UtcNow_m1393945741_MetadataUsageId;
 extern const uint32_t DateTime_AddTicks_m3396580426_MetadataUsageId;
 extern const uint32_t DateTime_AddMilliseconds_m3713972790_MetadataUsageId;
+extern const uint32_t DateTime_AddMonths_m2010113531_MetadataUsageId;
 extern const uint32_t DateTime_Compare_m2855073242_MetadataUsageId;
 extern String_t* _stringLiteral2283438069;
 extern const uint32_t DateTime_CompareTo_m3687348273_MetadataUsageId;
@@ -1011,6 +1013,7 @@ extern String_t* _stringLiteral4301633;
 extern String_t* _stringLiteral835817753;
 extern const uint32_t DateTime_CheckDateTimeKind_m456577410_MetadataUsageId;
 extern const uint32_t DateTime_IsLeapYear_m1852497299_MetadataUsageId;
+extern const uint32_t DateTime_Parse_m2550724587_MetadataUsageId;
 extern const uint32_t DateTime_Parse_m3729096069_MetadataUsageId;
 extern const uint32_t DateTime_Parse_m1070804416_MetadataUsageId;
 extern RuntimeClass* DateTimeFormatInfo_t2405853701_il2cpp_TypeInfo_var;
@@ -1041,8 +1044,10 @@ extern String_t* _stringLiteral199312060;
 extern String_t* _stringLiteral4021861061;
 extern String_t* _stringLiteral3901562946;
 extern const uint32_t DateTime_CheckStyle_m1392838900_MetadataUsageId;
+extern const uint32_t DateTime_TryParse_m1242989867_MetadataUsageId;
 extern String_t* _stringLiteral2333226155;
 extern const uint32_t DateTime_ParseExact_m317338046_MetadataUsageId;
+extern const uint32_t DateTime_Subtract_m77007479_MetadataUsageId;
 extern const uint32_t DateTime_Subtract_m3522513701_MetadataUsageId;
 extern String_t* _stringLiteral3452614617;
 extern const uint32_t DateTime_ToString_m884486936_MetadataUsageId;
@@ -1122,6 +1127,10 @@ extern const uint32_t Decimal__ctor_m3650533794_MetadataUsageId;
 extern String_t* _stringLiteral2733559655;
 extern const uint32_t Decimal__ctor_m1925875020_MetadataUsageId;
 extern const uint32_t Decimal__ctor_m1842485920_MetadataUsageId;
+extern String_t* _stringLiteral1407330741;
+extern String_t* _stringLiteral2295149384;
+extern String_t* _stringLiteral1488400110;
+extern const uint32_t Decimal__ctor_m336758058_MetadataUsageId;
 extern const uint32_t Decimal__cctor_m834667025_MetadataUsageId;
 extern const uint32_t Decimal_System_IConvertible_ToType_m2919262279_MetadataUsageId;
 extern const uint32_t Decimal_System_IConvertible_ToBoolean_m1123794670_MetadataUsageId;
@@ -1172,6 +1181,7 @@ extern String_t* _stringLiteral524131177;
 extern String_t* _stringLiteral3137115555;
 extern String_t* _stringLiteral3452614543;
 extern const uint32_t Decimal_PerformParse_m1679987175_MetadataUsageId;
+extern const uint32_t Decimal_ToDouble_m1460191033_MetadataUsageId;
 extern RuntimeClass* NumberFormatter_t1182924621_il2cpp_TypeInfo_var;
 extern const uint32_t Decimal_ToString_m14270257_MetadataUsageId;
 extern const uint32_t Decimal_ToString_m4018746482_MetadataUsageId;
@@ -10914,6 +10924,8 @@ extern "C"  Decimal_t2948259380  Decimal_op_Implicit_m3873897383 (RuntimeObject 
 extern "C"  Decimal_t2948259380  Decimal_op_Implicit_m2299919277 (RuntimeObject * __this /* static, unused */, uint64_t ___value0, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // System.Decimal System.Decimal::op_Implicit(System.UInt16)
 extern "C"  Decimal_t2948259380  Decimal_op_Implicit_m4256234411 (RuntimeObject * __this /* static, unused */, uint16_t ___value0, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
+// System.Decimal System.Convert::ToDecimal(System.Object,System.IFormatProvider)
+extern "C"  Decimal_t2948259380  Convert_ToDecimal_m3815908452 (RuntimeObject * __this /* static, unused */, RuntimeObject * ___value0, RuntimeObject* ___provider1, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // System.Double System.Decimal::op_Explicit(System.Decimal)
 extern "C"  double Decimal_op_Explicit_m2816896069 (RuntimeObject * __this /* static, unused */, Decimal_t2948259380  ___value0, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // System.Double System.Double::Parse(System.String)
@@ -10972,6 +10984,8 @@ extern "C"  String_t* Int32_ToString_m141394615 (int32_t* __this, const RuntimeM
 extern "C"  String_t* Int64_ToString_m2986581816 (int64_t* __this, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // System.String System.Convert::ToString(System.Object,System.IFormatProvider)
 extern "C"  String_t* Convert_ToString_m1854379141 (RuntimeObject * __this /* static, unused */, RuntimeObject * ___value0, RuntimeObject* ___provider1, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
+// System.String System.UInt64::ToString()
+extern "C"  String_t* UInt64_ToString_m1529093114 (uint64_t* __this, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // System.UInt16 System.Decimal::op_Explicit(System.Decimal)
 extern "C"  uint16_t Decimal_op_Explicit_m3716368008 (RuntimeObject * __this /* static, unused */, Decimal_t2948259380  ___value0, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // System.UInt16 System.UInt16::Parse(System.String,System.IFormatProvider)
@@ -11126,6 +11140,8 @@ extern "C"  int32_t DateTime_get_Month_m1566006993 (DateTime_t3738529785 * __thi
 extern "C"  int32_t DateTime_get_Day_m1623500273 (DateTime_t3738529785 * __this, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // System.DayOfWeek System.DateTime::get_DayOfWeek()
 extern "C"  int32_t DateTime_get_DayOfWeek_m2326490739 (DateTime_t3738529785 * __this, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
+// System.TimeSpan System.DateTime::get_TimeOfDay()
+extern "C"  TimeSpan_t881159249  DateTime_get_TimeOfDay_m82064893 (DateTime_t3738529785 * __this, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // System.Int32 System.TimeSpan::get_Hours()
 extern "C"  int32_t TimeSpan_get_Hours_m550761902 (TimeSpan_t881159249 * __this, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // System.Int32 System.DateTime::get_Hour()
@@ -11156,8 +11172,12 @@ extern "C"  DateTime_t3738529785  DateTime_Add_m2995894549 (DateTime_t3738529785
 extern "C"  DateTime_t3738529785  DateTime_AddMilliseconds_m3713972790 (DateTime_t3738529785 * __this, double ___value0, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // System.DateTime System.DateTime::AddDays(System.Double)
 extern "C"  DateTime_t3738529785  DateTime_AddDays_m2583849741 (DateTime_t3738529785 * __this, double ___value0, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
+// System.DateTime System.DateTime::AddMonths(System.Int32)
+extern "C"  DateTime_t3738529785  DateTime_AddMonths_m2010113531 (DateTime_t3738529785 * __this, int32_t ___months0, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // System.DateTime System.DateTime::AddSeconds(System.Double)
 extern "C"  DateTime_t3738529785  DateTime_AddSeconds_m332574389 (DateTime_t3738529785 * __this, double ___value0, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
+// System.DateTime System.DateTime::AddYears(System.Int32)
+extern "C"  DateTime_t3738529785  DateTime_AddYears_m271357322 (DateTime_t3738529785 * __this, int32_t ___value0, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // System.Boolean System.TimeSpan::op_LessThan(System.TimeSpan,System.TimeSpan)
 extern "C"  bool TimeSpan_op_LessThan_m1594498345 (RuntimeObject * __this /* static, unused */, TimeSpan_t881159249  ___t10, TimeSpan_t881159249  ___t21, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // System.Boolean System.TimeSpan::op_GreaterThan(System.TimeSpan,System.TimeSpan)
@@ -11268,6 +11288,8 @@ extern "C"  TimeSpan_t881159249  TimeSpan_op_Subtraction_m3592306516 (RuntimeObj
 extern "C"  DateTime_t3738529785  DateTime_ParseExact_m1132380469 (RuntimeObject * __this /* static, unused */, String_t* ___s0, StringU5BU5D_t1281789340* ___formats1, RuntimeObject* ___provider2, int32_t ___style3, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // System.Void System.DateTime::CheckStyle(System.Globalization.DateTimeStyles)
 extern "C"  void DateTime_CheckStyle_m1392838900 (RuntimeObject * __this /* static, unused */, int32_t ___style0, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
+// System.TimeSpan System.DateTime::Subtract(System.DateTime)
+extern "C"  TimeSpan_t881159249  DateTime_Subtract_m77007479 (DateTime_t3738529785 * __this, DateTime_t3738529785  ___value0, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // System.DateTime System.DateTime::Subtract(System.TimeSpan)
 extern "C"  DateTime_t3738529785  DateTime_Subtract_m3522513701 (DateTime_t3738529785 * __this, TimeSpan_t881159249  ___value0, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // System.String System.DateTime::ToString(System.String,System.IFormatProvider)
@@ -11432,6 +11454,10 @@ extern "C"  bool Double_IsPositiveInfinity_m1245619811 (RuntimeObject * __this /
 extern "C"  String_t* Double_ToString_m3828879243 (double* __this, RuntimeObject* ___provider0, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Decimal::.ctor(System.Double)
 extern "C"  void Decimal__ctor_m1842485920 (Decimal_t2948259380 * __this, double ___value0, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
+// System.Int32 System.Array::GetLength(System.Int32)
+extern "C"  int32_t Array_GetLength_m2178203778 (RuntimeArray * __this, int32_t ___dimension0, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
+// System.Void System.Decimal::.ctor(System.Int32[])
+extern "C"  void Decimal__ctor_m336758058 (Decimal_t2948259380 * __this, Int32U5BU5D_t385246372* ___bits0, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // System.Object System.Decimal::System.IConvertible.ToType(System.Type,System.IFormatProvider)
 extern "C"  RuntimeObject * Decimal_System_IConvertible_ToType_m2919262279 (Decimal_t2948259380 * __this, Type_t * ___targetType0, RuntimeObject* ___provider1, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
 // System.Boolean System.Convert::ToBoolean(System.Decimal)
@@ -16346,7 +16372,7 @@ IL_002d:
 	{
 		RuntimeObject* L_8 = ___d0;
 		NullCheck(L_8);
-		RuntimeObject* L_9 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(4 /* System.Collections.IDictionaryEnumerator System.Collections.IDictionary::GetEnumerator() */, IDictionary_t1363984059_il2cpp_TypeInfo_var, L_8);
+		RuntimeObject* L_9 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(5 /* System.Collections.IDictionaryEnumerator System.Collections.IDictionary::GetEnumerator() */, IDictionary_t1363984059_il2cpp_TypeInfo_var, L_8);
 		V_0 = L_9;
 		goto IL_004b;
 	}
@@ -16359,7 +16385,7 @@ IL_0039:
 		RuntimeObject* L_12 = V_0;
 		NullCheck(L_12);
 		RuntimeObject * L_13 = InterfaceFuncInvoker0< RuntimeObject * >::Invoke(2 /* System.Object System.Collections.IDictionaryEnumerator::get_Value() */, IDictionaryEnumerator_t1693217257_il2cpp_TypeInfo_var, L_12);
-		VirtActionInvoker2< RuntimeObject *, RuntimeObject * >::Invoke(26 /* System.Void System.Collections.Hashtable::Add(System.Object,System.Object) */, __this, L_11, L_13);
+		VirtActionInvoker2< RuntimeObject *, RuntimeObject * >::Invoke(27 /* System.Void System.Collections.Hashtable::Add(System.Object,System.Object) */, __this, L_11, L_13);
 	}
 
 IL_004b:
@@ -16600,7 +16626,7 @@ IL_0016:
 		NullCheck(L_4);
 		V_2 = (((int32_t)((int32_t)(((RuntimeArray *)L_4)->max_length))));
 		RuntimeObject * L_5 = ___key0;
-		int32_t L_6 = VirtFuncInvoker1< int32_t, RuntimeObject * >::Invoke(35 /* System.Int32 System.Collections.Hashtable::GetHash(System.Object) */, __this, L_5);
+		int32_t L_6 = VirtFuncInvoker1< int32_t, RuntimeObject * >::Invoke(36 /* System.Int32 System.Collections.Hashtable::GetHash(System.Object) */, __this, L_5);
 		V_3 = ((int32_t)((int32_t)L_6&(int32_t)((int32_t)2147483647LL)));
 		int32_t L_7 = V_3;
 		V_4 = L_7;
@@ -16659,7 +16685,7 @@ IL_0080:
 	{
 		RuntimeObject * L_25 = ___key0;
 		RuntimeObject * L_26 = V_9;
-		bool L_27 = VirtFuncInvoker2< bool, RuntimeObject *, RuntimeObject * >::Invoke(36 /* System.Boolean System.Collections.Hashtable::KeyEquals(System.Object,System.Object) */, __this, L_25, L_26);
+		bool L_27 = VirtFuncInvoker2< bool, RuntimeObject *, RuntimeObject * >::Invoke(37 /* System.Boolean System.Collections.Hashtable::KeyEquals(System.Object,System.Object) */, __this, L_25, L_26);
 		if (!L_27)
 		{
 			goto IL_00ac;
@@ -16817,7 +16843,7 @@ IL_005d:
 
 IL_007b:
 	{
-		RuntimeObject* L_18 = VirtFuncInvoker0< RuntimeObject* >::Invoke(29 /* System.Collections.IDictionaryEnumerator System.Collections.Hashtable::GetEnumerator() */, __this);
+		RuntimeObject* L_18 = VirtFuncInvoker0< RuntimeObject* >::Invoke(30 /* System.Collections.IDictionaryEnumerator System.Collections.Hashtable::GetEnumerator() */, __this);
 		V_0 = L_18;
 		int32_t L_19 = ___arrayIndex1;
 		V_1 = L_19;
@@ -17021,7 +17047,7 @@ extern "C"  bool Hashtable_ContainsKey_m2963904694 (Hashtable_t1853889766 * __th
 {
 	{
 		RuntimeObject * L_0 = ___key0;
-		bool L_1 = VirtFuncInvoker1< bool, RuntimeObject * >::Invoke(28 /* System.Boolean System.Collections.Hashtable::Contains(System.Object) */, __this, L_0);
+		bool L_1 = VirtFuncInvoker1< bool, RuntimeObject * >::Invoke(29 /* System.Boolean System.Collections.Hashtable::Contains(System.Object) */, __this, L_0);
 		return L_1;
 	}
 }
@@ -17317,7 +17343,7 @@ IL_017c:
 		NullCheck(L_45);
 		int32_t L_47 = L_46;
 		RuntimeObject * L_48 = (L_45)->GetAt(static_cast<il2cpp_array_size_t>(L_47));
-		VirtActionInvoker2< RuntimeObject *, RuntimeObject * >::Invoke(26 /* System.Void System.Collections.Hashtable::Add(System.Object,System.Object) */, __this, L_44, L_48);
+		VirtActionInvoker2< RuntimeObject *, RuntimeObject * >::Invoke(27 /* System.Void System.Collections.Hashtable::Add(System.Object,System.Object) */, __this, L_44, L_48);
 		int32_t L_49 = V_3;
 		V_3 = ((int32_t)il2cpp_codegen_add((int32_t)L_49, (int32_t)1));
 	}
@@ -17584,7 +17610,7 @@ IL_0016:
 		NullCheck(L_4);
 		V_2 = (((int32_t)((int32_t)(((RuntimeArray *)L_4)->max_length))));
 		RuntimeObject * L_5 = ___key0;
-		int32_t L_6 = VirtFuncInvoker1< int32_t, RuntimeObject * >::Invoke(35 /* System.Int32 System.Collections.Hashtable::GetHash(System.Object) */, __this, L_5);
+		int32_t L_6 = VirtFuncInvoker1< int32_t, RuntimeObject * >::Invoke(36 /* System.Int32 System.Collections.Hashtable::GetHash(System.Object) */, __this, L_5);
 		V_3 = ((int32_t)((int32_t)L_6&(int32_t)((int32_t)2147483647LL)));
 		int32_t L_7 = V_3;
 		V_4 = L_7;
@@ -17643,7 +17669,7 @@ IL_0080:
 	{
 		RuntimeObject * L_25 = ___key0;
 		RuntimeObject * L_26 = V_9;
-		bool L_27 = VirtFuncInvoker2< bool, RuntimeObject *, RuntimeObject * >::Invoke(36 /* System.Boolean System.Collections.Hashtable::KeyEquals(System.Object,System.Object) */, __this, L_25, L_26);
+		bool L_27 = VirtFuncInvoker2< bool, RuntimeObject *, RuntimeObject * >::Invoke(37 /* System.Boolean System.Collections.Hashtable::KeyEquals(System.Object,System.Object) */, __this, L_25, L_26);
 		if (!L_27)
 		{
 			goto IL_00a7;
@@ -17891,7 +17917,7 @@ IL_002d:
 		NullCheck(L_4);
 		V_0 = (((int32_t)((int32_t)(((RuntimeArray *)L_4)->max_length))));
 		RuntimeObject * L_5 = ___key0;
-		int32_t L_6 = VirtFuncInvoker1< int32_t, RuntimeObject * >::Invoke(35 /* System.Int32 System.Collections.Hashtable::GetHash(System.Object) */, __this, L_5);
+		int32_t L_6 = VirtFuncInvoker1< int32_t, RuntimeObject * >::Invoke(36 /* System.Int32 System.Collections.Hashtable::GetHash(System.Object) */, __this, L_5);
 		V_1 = ((int32_t)((int32_t)L_6&(int32_t)((int32_t)2147483647LL)));
 		int32_t L_7 = V_1;
 		V_2 = L_7;
@@ -18004,7 +18030,7 @@ IL_00ee:
 	{
 		RuntimeObject * L_33 = ___key0;
 		RuntimeObject * L_34 = (&V_6)->get_key_0();
-		bool L_35 = VirtFuncInvoker2< bool, RuntimeObject *, RuntimeObject * >::Invoke(36 /* System.Boolean System.Collections.Hashtable::KeyEquals(System.Object,System.Object) */, __this, L_33, L_34);
+		bool L_35 = VirtFuncInvoker2< bool, RuntimeObject *, RuntimeObject * >::Invoke(37 /* System.Boolean System.Collections.Hashtable::KeyEquals(System.Object,System.Object) */, __this, L_33, L_34);
 		if (!L_35)
 		{
 			goto IL_0149;
@@ -18716,7 +18742,7 @@ extern "C"  int32_t HashKeys_get_Count_m4206343425 (HashKeys_t1568156503 * __thi
 	{
 		Hashtable_t1853889766 * L_0 = __this->get_host_0();
 		NullCheck(L_0);
-		int32_t L_1 = VirtFuncInvoker0< int32_t >::Invoke(18 /* System.Int32 System.Collections.Hashtable::get_Count() */, L_0);
+		int32_t L_1 = VirtFuncInvoker0< int32_t >::Invoke(19 /* System.Int32 System.Collections.Hashtable::get_Count() */, L_0);
 		return L_1;
 	}
 }
@@ -18726,7 +18752,7 @@ extern "C"  bool HashKeys_get_IsSynchronized_m174400341 (HashKeys_t1568156503 * 
 	{
 		Hashtable_t1853889766 * L_0 = __this->get_host_0();
 		NullCheck(L_0);
-		bool L_1 = VirtFuncInvoker0< bool >::Invoke(19 /* System.Boolean System.Collections.Hashtable::get_IsSynchronized() */, L_0);
+		bool L_1 = VirtFuncInvoker0< bool >::Invoke(20 /* System.Boolean System.Collections.Hashtable::get_IsSynchronized() */, L_0);
 		return L_1;
 	}
 }
@@ -18736,7 +18762,7 @@ extern "C"  RuntimeObject * HashKeys_get_SyncRoot_m3757723936 (HashKeys_t1568156
 	{
 		Hashtable_t1853889766 * L_0 = __this->get_host_0();
 		NullCheck(L_0);
-		RuntimeObject * L_1 = VirtFuncInvoker0< RuntimeObject * >::Invoke(20 /* System.Object System.Collections.Hashtable::get_SyncRoot() */, L_0);
+		RuntimeObject * L_1 = VirtFuncInvoker0< RuntimeObject * >::Invoke(21 /* System.Object System.Collections.Hashtable::get_SyncRoot() */, L_0);
 		return L_1;
 	}
 }
@@ -18880,7 +18906,7 @@ extern "C"  int32_t HashValues_get_Count_m1050845476 (HashValues_t618387445 * __
 	{
 		Hashtable_t1853889766 * L_0 = __this->get_host_0();
 		NullCheck(L_0);
-		int32_t L_1 = VirtFuncInvoker0< int32_t >::Invoke(18 /* System.Int32 System.Collections.Hashtable::get_Count() */, L_0);
+		int32_t L_1 = VirtFuncInvoker0< int32_t >::Invoke(19 /* System.Int32 System.Collections.Hashtable::get_Count() */, L_0);
 		return L_1;
 	}
 }
@@ -18890,7 +18916,7 @@ extern "C"  bool HashValues_get_IsSynchronized_m3461082747 (HashValues_t61838744
 	{
 		Hashtable_t1853889766 * L_0 = __this->get_host_0();
 		NullCheck(L_0);
-		bool L_1 = VirtFuncInvoker0< bool >::Invoke(19 /* System.Boolean System.Collections.Hashtable::get_IsSynchronized() */, L_0);
+		bool L_1 = VirtFuncInvoker0< bool >::Invoke(20 /* System.Boolean System.Collections.Hashtable::get_IsSynchronized() */, L_0);
 		return L_1;
 	}
 }
@@ -18900,7 +18926,7 @@ extern "C"  RuntimeObject * HashValues_get_SyncRoot_m337642017 (HashValues_t6183
 	{
 		Hashtable_t1853889766 * L_0 = __this->get_host_0();
 		NullCheck(L_0);
-		RuntimeObject * L_1 = VirtFuncInvoker0< RuntimeObject * >::Invoke(20 /* System.Object System.Collections.Hashtable::get_SyncRoot() */, L_0);
+		RuntimeObject * L_1 = VirtFuncInvoker0< RuntimeObject * >::Invoke(21 /* System.Object System.Collections.Hashtable::get_SyncRoot() */, L_0);
 		return L_1;
 	}
 }
@@ -19290,7 +19316,7 @@ extern "C"  int32_t SyncHashtable_get_Count_m3689832098 (SyncHashtable_t35697747
 	{
 		Hashtable_t1853889766 * L_0 = __this->get_host_14();
 		NullCheck(L_0);
-		int32_t L_1 = VirtFuncInvoker0< int32_t >::Invoke(18 /* System.Int32 System.Collections.Hashtable::get_Count() */, L_0);
+		int32_t L_1 = VirtFuncInvoker0< int32_t >::Invoke(19 /* System.Int32 System.Collections.Hashtable::get_Count() */, L_0);
 		return L_1;
 	}
 }
@@ -19307,7 +19333,7 @@ extern "C"  RuntimeObject * SyncHashtable_get_SyncRoot_m2724224665 (SyncHashtabl
 	{
 		Hashtable_t1853889766 * L_0 = __this->get_host_14();
 		NullCheck(L_0);
-		RuntimeObject * L_1 = VirtFuncInvoker0< RuntimeObject * >::Invoke(20 /* System.Object System.Collections.Hashtable::get_SyncRoot() */, L_0);
+		RuntimeObject * L_1 = VirtFuncInvoker0< RuntimeObject * >::Invoke(21 /* System.Object System.Collections.Hashtable::get_SyncRoot() */, L_0);
 		return L_1;
 	}
 }
@@ -19326,7 +19352,7 @@ extern "C"  RuntimeObject* SyncHashtable_get_Keys_m1469437863 (SyncHashtable_t35
 		V_0 = (RuntimeObject*)NULL;
 		Hashtable_t1853889766 * L_0 = __this->get_host_14();
 		NullCheck(L_0);
-		RuntimeObject * L_1 = VirtFuncInvoker0< RuntimeObject * >::Invoke(20 /* System.Object System.Collections.Hashtable::get_SyncRoot() */, L_0);
+		RuntimeObject * L_1 = VirtFuncInvoker0< RuntimeObject * >::Invoke(21 /* System.Object System.Collections.Hashtable::get_SyncRoot() */, L_0);
 		V_1 = L_1;
 		RuntimeObject * L_2 = V_1;
 		Monitor_Enter_m2249409497(NULL /*static, unused*/, L_2, /*hidden argument*/NULL);
@@ -19337,7 +19363,7 @@ IL_0014:
 	{ // begin try (depth: 1)
 		Hashtable_t1853889766 * L_3 = __this->get_host_14();
 		NullCheck(L_3);
-		RuntimeObject* L_4 = VirtFuncInvoker0< RuntimeObject* >::Invoke(21 /* System.Collections.ICollection System.Collections.Hashtable::get_Keys() */, L_3);
+		RuntimeObject* L_4 = VirtFuncInvoker0< RuntimeObject* >::Invoke(22 /* System.Collections.ICollection System.Collections.Hashtable::get_Keys() */, L_3);
 		V_0 = L_4;
 		IL2CPP_LEAVE(0x2C, FINALLY_0025);
 	} // end try (depth: 1)
@@ -19380,7 +19406,7 @@ extern "C"  RuntimeObject* SyncHashtable_get_Values_m3820929471 (SyncHashtable_t
 		V_0 = (RuntimeObject*)NULL;
 		Hashtable_t1853889766 * L_0 = __this->get_host_14();
 		NullCheck(L_0);
-		RuntimeObject * L_1 = VirtFuncInvoker0< RuntimeObject * >::Invoke(20 /* System.Object System.Collections.Hashtable::get_SyncRoot() */, L_0);
+		RuntimeObject * L_1 = VirtFuncInvoker0< RuntimeObject * >::Invoke(21 /* System.Object System.Collections.Hashtable::get_SyncRoot() */, L_0);
 		V_1 = L_1;
 		RuntimeObject * L_2 = V_1;
 		Monitor_Enter_m2249409497(NULL /*static, unused*/, L_2, /*hidden argument*/NULL);
@@ -19391,7 +19417,7 @@ IL_0014:
 	{ // begin try (depth: 1)
 		Hashtable_t1853889766 * L_3 = __this->get_host_14();
 		NullCheck(L_3);
-		RuntimeObject* L_4 = VirtFuncInvoker0< RuntimeObject* >::Invoke(22 /* System.Collections.ICollection System.Collections.Hashtable::get_Values() */, L_3);
+		RuntimeObject* L_4 = VirtFuncInvoker0< RuntimeObject* >::Invoke(23 /* System.Collections.ICollection System.Collections.Hashtable::get_Values() */, L_3);
 		V_0 = L_4;
 		IL2CPP_LEAVE(0x2C, FINALLY_0025);
 	} // end try (depth: 1)
@@ -19426,7 +19452,7 @@ extern "C"  RuntimeObject * SyncHashtable_get_Item_m2686606216 (SyncHashtable_t3
 		Hashtable_t1853889766 * L_0 = __this->get_host_14();
 		RuntimeObject * L_1 = ___key0;
 		NullCheck(L_0);
-		RuntimeObject * L_2 = VirtFuncInvoker1< RuntimeObject *, RuntimeObject * >::Invoke(23 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_0, L_1);
+		RuntimeObject * L_2 = VirtFuncInvoker1< RuntimeObject *, RuntimeObject * >::Invoke(24 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_0, L_1);
 		return L_2;
 	}
 }
@@ -19443,7 +19469,7 @@ extern "C"  void SyncHashtable_set_Item_m2451773607 (SyncHashtable_t3569774773 *
 	{
 		Hashtable_t1853889766 * L_0 = __this->get_host_14();
 		NullCheck(L_0);
-		RuntimeObject * L_1 = VirtFuncInvoker0< RuntimeObject * >::Invoke(20 /* System.Object System.Collections.Hashtable::get_SyncRoot() */, L_0);
+		RuntimeObject * L_1 = VirtFuncInvoker0< RuntimeObject * >::Invoke(21 /* System.Object System.Collections.Hashtable::get_SyncRoot() */, L_0);
 		V_0 = L_1;
 		RuntimeObject * L_2 = V_0;
 		Monitor_Enter_m2249409497(NULL /*static, unused*/, L_2, /*hidden argument*/NULL);
@@ -19456,7 +19482,7 @@ IL_0012:
 		RuntimeObject * L_4 = ___key0;
 		RuntimeObject * L_5 = ___value1;
 		NullCheck(L_3);
-		VirtActionInvoker2< RuntimeObject *, RuntimeObject * >::Invoke(24 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, L_3, L_4, L_5);
+		VirtActionInvoker2< RuntimeObject *, RuntimeObject * >::Invoke(25 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, L_3, L_4, L_5);
 		IL2CPP_LEAVE(0x2B, FINALLY_0024);
 	} // end try (depth: 1)
 	catch(Il2CppExceptionWrapper& e)
@@ -19490,7 +19516,7 @@ extern "C"  void SyncHashtable_CopyTo_m3934112540 (SyncHashtable_t3569774773 * _
 		RuntimeArray * L_1 = ___array0;
 		int32_t L_2 = ___arrayIndex1;
 		NullCheck(L_0);
-		VirtActionInvoker2< RuntimeArray *, int32_t >::Invoke(25 /* System.Void System.Collections.Hashtable::CopyTo(System.Array,System.Int32) */, L_0, L_1, L_2);
+		VirtActionInvoker2< RuntimeArray *, int32_t >::Invoke(26 /* System.Void System.Collections.Hashtable::CopyTo(System.Array,System.Int32) */, L_0, L_1, L_2);
 		return;
 	}
 }
@@ -19507,7 +19533,7 @@ extern "C"  void SyncHashtable_Add_m3016107307 (SyncHashtable_t3569774773 * __th
 	{
 		Hashtable_t1853889766 * L_0 = __this->get_host_14();
 		NullCheck(L_0);
-		RuntimeObject * L_1 = VirtFuncInvoker0< RuntimeObject * >::Invoke(20 /* System.Object System.Collections.Hashtable::get_SyncRoot() */, L_0);
+		RuntimeObject * L_1 = VirtFuncInvoker0< RuntimeObject * >::Invoke(21 /* System.Object System.Collections.Hashtable::get_SyncRoot() */, L_0);
 		V_0 = L_1;
 		RuntimeObject * L_2 = V_0;
 		Monitor_Enter_m2249409497(NULL /*static, unused*/, L_2, /*hidden argument*/NULL);
@@ -19520,7 +19546,7 @@ IL_0012:
 		RuntimeObject * L_4 = ___key0;
 		RuntimeObject * L_5 = ___value1;
 		NullCheck(L_3);
-		VirtActionInvoker2< RuntimeObject *, RuntimeObject * >::Invoke(26 /* System.Void System.Collections.Hashtable::Add(System.Object,System.Object) */, L_3, L_4, L_5);
+		VirtActionInvoker2< RuntimeObject *, RuntimeObject * >::Invoke(27 /* System.Void System.Collections.Hashtable::Add(System.Object,System.Object) */, L_3, L_4, L_5);
 		IL2CPP_LEAVE(0x2B, FINALLY_0024);
 	} // end try (depth: 1)
 	catch(Il2CppExceptionWrapper& e)
@@ -19559,7 +19585,7 @@ extern "C"  void SyncHashtable_Clear_m714964133 (SyncHashtable_t3569774773 * __t
 	{
 		Hashtable_t1853889766 * L_0 = __this->get_host_14();
 		NullCheck(L_0);
-		RuntimeObject * L_1 = VirtFuncInvoker0< RuntimeObject * >::Invoke(20 /* System.Object System.Collections.Hashtable::get_SyncRoot() */, L_0);
+		RuntimeObject * L_1 = VirtFuncInvoker0< RuntimeObject * >::Invoke(21 /* System.Object System.Collections.Hashtable::get_SyncRoot() */, L_0);
 		V_0 = L_1;
 		RuntimeObject * L_2 = V_0;
 		Monitor_Enter_m2249409497(NULL /*static, unused*/, L_2, /*hidden argument*/NULL);
@@ -19570,7 +19596,7 @@ IL_0012:
 	{ // begin try (depth: 1)
 		Hashtable_t1853889766 * L_3 = __this->get_host_14();
 		NullCheck(L_3);
-		VirtActionInvoker0::Invoke(27 /* System.Void System.Collections.Hashtable::Clear() */, L_3);
+		VirtActionInvoker0::Invoke(28 /* System.Void System.Collections.Hashtable::Clear() */, L_3);
 		IL2CPP_LEAVE(0x29, FINALLY_0022);
 	} // end try (depth: 1)
 	catch(Il2CppExceptionWrapper& e)
@@ -19636,7 +19662,7 @@ extern "C"  void SyncHashtable_Remove_m4179265271 (SyncHashtable_t3569774773 * _
 	{
 		Hashtable_t1853889766 * L_0 = __this->get_host_14();
 		NullCheck(L_0);
-		RuntimeObject * L_1 = VirtFuncInvoker0< RuntimeObject * >::Invoke(20 /* System.Object System.Collections.Hashtable::get_SyncRoot() */, L_0);
+		RuntimeObject * L_1 = VirtFuncInvoker0< RuntimeObject * >::Invoke(21 /* System.Object System.Collections.Hashtable::get_SyncRoot() */, L_0);
 		V_0 = L_1;
 		RuntimeObject * L_2 = V_0;
 		Monitor_Enter_m2249409497(NULL /*static, unused*/, L_2, /*hidden argument*/NULL);
@@ -19648,7 +19674,7 @@ IL_0012:
 		Hashtable_t1853889766 * L_3 = __this->get_host_14();
 		RuntimeObject * L_4 = ___key0;
 		NullCheck(L_3);
-		VirtActionInvoker1< RuntimeObject * >::Invoke(30 /* System.Void System.Collections.Hashtable::Remove(System.Object) */, L_3, L_4);
+		VirtActionInvoker1< RuntimeObject * >::Invoke(31 /* System.Void System.Collections.Hashtable::Remove(System.Object) */, L_3, L_4);
 		IL2CPP_LEAVE(0x2A, FINALLY_0023);
 	} // end try (depth: 1)
 	catch(Il2CppExceptionWrapper& e)
@@ -19681,7 +19707,7 @@ extern "C"  bool SyncHashtable_ContainsKey_m4051091192 (SyncHashtable_t356977477
 		Hashtable_t1853889766 * L_0 = __this->get_host_14();
 		RuntimeObject * L_1 = ___key0;
 		NullCheck(L_0);
-		bool L_2 = VirtFuncInvoker1< bool, RuntimeObject * >::Invoke(28 /* System.Boolean System.Collections.Hashtable::Contains(System.Object) */, L_0, L_1);
+		bool L_2 = VirtFuncInvoker1< bool, RuntimeObject * >::Invoke(29 /* System.Boolean System.Collections.Hashtable::Contains(System.Object) */, L_0, L_1);
 		return L_2;
 	}
 }
@@ -19705,7 +19731,7 @@ extern "C"  RuntimeObject * SyncHashtable_Clone_m3726939774 (SyncHashtable_t3569
 	{
 		Hashtable_t1853889766 * L_0 = __this->get_host_14();
 		NullCheck(L_0);
-		RuntimeObject * L_1 = VirtFuncInvoker0< RuntimeObject * >::Invoke(20 /* System.Object System.Collections.Hashtable::get_SyncRoot() */, L_0);
+		RuntimeObject * L_1 = VirtFuncInvoker0< RuntimeObject * >::Invoke(21 /* System.Object System.Collections.Hashtable::get_SyncRoot() */, L_0);
 		V_0 = L_1;
 		RuntimeObject * L_2 = V_0;
 		Monitor_Enter_m2249409497(NULL /*static, unused*/, L_2, /*hidden argument*/NULL);
@@ -19717,7 +19743,7 @@ IL_0012:
 		{
 			Hashtable_t1853889766 * L_3 = __this->get_host_14();
 			NullCheck(L_3);
-			RuntimeObject * L_4 = VirtFuncInvoker0< RuntimeObject * >::Invoke(32 /* System.Object System.Collections.Hashtable::Clone() */, L_3);
+			RuntimeObject * L_4 = VirtFuncInvoker0< RuntimeObject * >::Invoke(33 /* System.Object System.Collections.Hashtable::Clone() */, L_3);
 			SyncHashtable_t3569774773 * L_5 = (SyncHashtable_t3569774773 *)il2cpp_codegen_object_new(SyncHashtable_t3569774773_il2cpp_TypeInfo_var);
 			SyncHashtable__ctor_m988729399(L_5, ((Hashtable_t1853889766 *)CastclassClass((RuntimeObject*)L_4, Hashtable_t1853889766_il2cpp_TypeInfo_var)), /*hidden argument*/NULL);
 			V_1 = L_5;
@@ -20711,7 +20737,7 @@ IL_0017:
 		__this->set_comparer_4(L_4);
 		RuntimeObject* L_5 = ___d0;
 		NullCheck(L_5);
-		RuntimeObject* L_6 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(4 /* System.Collections.IDictionaryEnumerator System.Collections.IDictionary::GetEnumerator() */, IDictionary_t1363984059_il2cpp_TypeInfo_var, L_5);
+		RuntimeObject* L_6 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(5 /* System.Collections.IDictionaryEnumerator System.Collections.IDictionary::GetEnumerator() */, IDictionary_t1363984059_il2cpp_TypeInfo_var, L_5);
 		V_0 = L_6;
 		goto IL_0049;
 	}
@@ -20724,7 +20750,7 @@ IL_0037:
 		RuntimeObject* L_9 = V_0;
 		NullCheck(L_9);
 		RuntimeObject * L_10 = InterfaceFuncInvoker0< RuntimeObject * >::Invoke(2 /* System.Object System.Collections.IDictionaryEnumerator::get_Value() */, IDictionaryEnumerator_t1693217257_il2cpp_TypeInfo_var, L_9);
-		VirtActionInvoker2< RuntimeObject *, RuntimeObject * >::Invoke(26 /* System.Void System.Collections.SortedList::Add(System.Object,System.Object) */, __this, L_8, L_10);
+		VirtActionInvoker2< RuntimeObject *, RuntimeObject * >::Invoke(27 /* System.Void System.Collections.SortedList::Add(System.Object,System.Object) */, __this, L_8, L_10);
 	}
 
 IL_0049:
@@ -20874,7 +20900,7 @@ extern "C"  void SortedList_set_Item_m32382988 (SortedList_t2427694641 * __this,
 
 IL_000c:
 	{
-		bool L_2 = VirtFuncInvoker0< bool >::Invoke(20 /* System.Boolean System.Collections.SortedList::get_IsReadOnly() */, __this);
+		bool L_2 = VirtFuncInvoker0< bool >::Invoke(21 /* System.Boolean System.Collections.SortedList::get_IsReadOnly() */, __this);
 		if (!L_2)
 		{
 			goto IL_0022;
@@ -20896,7 +20922,7 @@ IL_0022:
 		}
 	}
 	{
-		bool L_6 = VirtFuncInvoker0< bool >::Invoke(19 /* System.Boolean System.Collections.SortedList::get_IsFixedSize() */, __this);
+		bool L_6 = VirtFuncInvoker0< bool >::Invoke(20 /* System.Boolean System.Collections.SortedList::get_IsFixedSize() */, __this);
 		if (!L_6)
 		{
 			goto IL_0045;
@@ -21124,7 +21150,7 @@ extern "C"  void SortedList_Remove_m2784369438 (SortedList_t2427694641 * __this,
 	int32_t V_0 = 0;
 	{
 		RuntimeObject * L_0 = ___key0;
-		int32_t L_1 = VirtFuncInvoker1< int32_t, RuntimeObject * >::Invoke(33 /* System.Int32 System.Collections.SortedList::IndexOfKey(System.Object) */, __this, L_0);
+		int32_t L_1 = VirtFuncInvoker1< int32_t, RuntimeObject * >::Invoke(34 /* System.Int32 System.Collections.SortedList::IndexOfKey(System.Object) */, __this, L_0);
 		V_0 = L_1;
 		int32_t L_2 = V_0;
 		if ((((int32_t)L_2) < ((int32_t)0)))
@@ -21134,7 +21160,7 @@ extern "C"  void SortedList_Remove_m2784369438 (SortedList_t2427694641 * __this,
 	}
 	{
 		int32_t L_3 = V_0;
-		VirtActionInvoker1< int32_t >::Invoke(32 /* System.Void System.Collections.SortedList::RemoveAt(System.Int32) */, __this, L_3);
+		VirtActionInvoker1< int32_t >::Invoke(33 /* System.Void System.Collections.SortedList::RemoveAt(System.Int32) */, __this, L_3);
 	}
 
 IL_0016:
@@ -21215,7 +21241,7 @@ IL_0030:
 
 IL_0047:
 	{
-		int32_t L_11 = VirtFuncInvoker0< int32_t >::Invoke(16 /* System.Int32 System.Collections.SortedList::get_Count() */, __this);
+		int32_t L_11 = VirtFuncInvoker0< int32_t >::Invoke(17 /* System.Int32 System.Collections.SortedList::get_Count() */, __this);
 		RuntimeArray * L_12 = ___array0;
 		NullCheck(L_12);
 		int32_t L_13 = Array_get_Length_m21610649(L_12, /*hidden argument*/NULL);
@@ -21233,7 +21259,7 @@ IL_0047:
 
 IL_0065:
 	{
-		RuntimeObject* L_16 = VirtFuncInvoker0< RuntimeObject* >::Invoke(28 /* System.Collections.IDictionaryEnumerator System.Collections.SortedList::GetEnumerator() */, __this);
+		RuntimeObject* L_16 = VirtFuncInvoker0< RuntimeObject* >::Invoke(29 /* System.Collections.IDictionaryEnumerator System.Collections.SortedList::GetEnumerator() */, __this);
 		V_0 = L_16;
 		int32_t L_17 = ___arrayIndex1;
 		V_1 = L_17;
@@ -21306,7 +21332,7 @@ extern "C"  void SortedList_RemoveAt_m1767403850 (SortedList_t2427694641 * __thi
 	{
 		SlotU5BU5D_t227397015* L_0 = __this->get_table_3();
 		V_0 = L_0;
-		int32_t L_1 = VirtFuncInvoker0< int32_t >::Invoke(16 /* System.Int32 System.Collections.SortedList::get_Count() */, __this);
+		int32_t L_1 = VirtFuncInvoker0< int32_t >::Invoke(17 /* System.Int32 System.Collections.SortedList::get_Count() */, __this);
 		V_1 = L_1;
 		int32_t L_2 = ___index0;
 		if ((((int32_t)L_2) < ((int32_t)0)))
@@ -21479,7 +21505,7 @@ IL_000c:
 	{ // begin try (depth: 1)
 		{
 			RuntimeObject * L_2 = ___key0;
-			bool L_3 = VirtFuncInvoker1< bool, RuntimeObject * >::Invoke(27 /* System.Boolean System.Collections.SortedList::Contains(System.Object) */, __this, L_2);
+			bool L_3 = VirtFuncInvoker1< bool, RuntimeObject * >::Invoke(28 /* System.Boolean System.Collections.SortedList::Contains(System.Object) */, __this, L_2);
 			V_0 = L_3;
 			goto IL_002a;
 		}
@@ -21535,7 +21561,7 @@ extern "C"  RuntimeObject * SortedList_GetByIndex_m3848565786 (SortedList_t24276
 	}
 	{
 		int32_t L_1 = ___index0;
-		int32_t L_2 = VirtFuncInvoker0< int32_t >::Invoke(16 /* System.Int32 System.Collections.SortedList::get_Count() */, __this);
+		int32_t L_2 = VirtFuncInvoker0< int32_t >::Invoke(17 /* System.Int32 System.Collections.SortedList::get_Count() */, __this);
 		if ((((int32_t)L_1) >= ((int32_t)L_2)))
 		{
 			goto IL_0025;
@@ -21574,7 +21600,7 @@ extern "C"  RuntimeObject * SortedList_GetKey_m658905367 (SortedList_t2427694641
 	}
 	{
 		int32_t L_1 = ___index0;
-		int32_t L_2 = VirtFuncInvoker0< int32_t >::Invoke(16 /* System.Int32 System.Collections.SortedList::get_Count() */, __this);
+		int32_t L_2 = VirtFuncInvoker0< int32_t >::Invoke(17 /* System.Int32 System.Collections.SortedList::get_Count() */, __this);
 		if ((((int32_t)L_1) >= ((int32_t)L_2)))
 		{
 			goto IL_0025;
@@ -21614,7 +21640,7 @@ extern "C"  void SortedList_EnsureCapacity_m1354099314 (SortedList_t2427694641 *
 		SlotU5BU5D_t227397015* L_0 = __this->get_table_3();
 		V_0 = L_0;
 		V_1 = (SlotU5BU5D_t227397015*)NULL;
-		int32_t L_1 = VirtFuncInvoker0< int32_t >::Invoke(24 /* System.Int32 System.Collections.SortedList::get_Capacity() */, __this);
+		int32_t L_1 = VirtFuncInvoker0< int32_t >::Invoke(25 /* System.Int32 System.Collections.SortedList::get_Capacity() */, __this);
 		V_2 = L_1;
 		int32_t L_2 = ___free1;
 		if ((((int32_t)L_2) < ((int32_t)0)))
@@ -21624,7 +21650,7 @@ extern "C"  void SortedList_EnsureCapacity_m1354099314 (SortedList_t2427694641 *
 	}
 	{
 		int32_t L_3 = ___free1;
-		int32_t L_4 = VirtFuncInvoker0< int32_t >::Invoke(16 /* System.Int32 System.Collections.SortedList::get_Count() */, __this);
+		int32_t L_4 = VirtFuncInvoker0< int32_t >::Invoke(17 /* System.Int32 System.Collections.SortedList::get_Count() */, __this);
 		G_B3_0 = ((((int32_t)L_3) < ((int32_t)L_4))? 1 : 0);
 		goto IL_0023;
 	}
@@ -21682,7 +21708,7 @@ IL_0034:
 
 IL_0056:
 	{
-		int32_t L_15 = VirtFuncInvoker0< int32_t >::Invoke(16 /* System.Int32 System.Collections.SortedList::get_Count() */, __this);
+		int32_t L_15 = VirtFuncInvoker0< int32_t >::Invoke(17 /* System.Int32 System.Collections.SortedList::get_Count() */, __this);
 		int32_t L_16 = ___free1;
 		V_4 = ((int32_t)il2cpp_codegen_subtract((int32_t)L_15, (int32_t)L_16));
 		int32_t L_17 = V_4;
@@ -21709,7 +21735,7 @@ IL_007a:
 	{
 		SlotU5BU5D_t227397015* L_23 = V_0;
 		SlotU5BU5D_t227397015* L_24 = V_1;
-		int32_t L_25 = VirtFuncInvoker0< int32_t >::Invoke(16 /* System.Int32 System.Collections.SortedList::get_Count() */, __this);
+		int32_t L_25 = VirtFuncInvoker0< int32_t >::Invoke(17 /* System.Int32 System.Collections.SortedList::get_Count() */, __this);
 		Array_Copy_m1988217701(NULL /*static, unused*/, (RuntimeArray *)(RuntimeArray *)L_23, (RuntimeArray *)(RuntimeArray *)L_24, L_25, /*hidden argument*/NULL);
 	}
 
@@ -21733,7 +21759,7 @@ IL_0093:
 		int32_t L_29 = ___free1;
 		SlotU5BU5D_t227397015* L_30 = V_0;
 		int32_t L_31 = ___free1;
-		int32_t L_32 = VirtFuncInvoker0< int32_t >::Invoke(16 /* System.Int32 System.Collections.SortedList::get_Count() */, __this);
+		int32_t L_32 = VirtFuncInvoker0< int32_t >::Invoke(17 /* System.Int32 System.Collections.SortedList::get_Count() */, __this);
 		int32_t L_33 = ___free1;
 		Array_Copy_m344457298(NULL /*static, unused*/, (RuntimeArray *)(RuntimeArray *)L_28, L_29, (RuntimeArray *)(RuntimeArray *)L_30, ((int32_t)il2cpp_codegen_add((int32_t)L_31, (int32_t)1)), ((int32_t)il2cpp_codegen_subtract((int32_t)L_32, (int32_t)L_33)), /*hidden argument*/NULL);
 	}
@@ -21857,7 +21883,7 @@ IL_0078:
 		int32_t L_17 = V_1;
 		V_1 = ((~L_17));
 		int32_t L_18 = V_1;
-		int32_t L_19 = VirtFuncInvoker0< int32_t >::Invoke(24 /* System.Int32 System.Collections.SortedList::get_Capacity() */, __this);
+		int32_t L_19 = VirtFuncInvoker0< int32_t >::Invoke(25 /* System.Int32 System.Collections.SortedList::get_Capacity() */, __this);
 		if ((((int32_t)L_18) <= ((int32_t)((int32_t)il2cpp_codegen_add((int32_t)L_19, (int32_t)1)))))
 		{
 			goto IL_00cb;
@@ -21906,7 +21932,7 @@ IL_0078:
 
 IL_00cb:
 	{
-		int32_t L_34 = VirtFuncInvoker0< int32_t >::Invoke(16 /* System.Int32 System.Collections.SortedList::get_Count() */, __this);
+		int32_t L_34 = VirtFuncInvoker0< int32_t >::Invoke(17 /* System.Int32 System.Collections.SortedList::get_Count() */, __this);
 		int32_t L_35 = V_1;
 		SortedList_EnsureCapacity_m1354099314(__this, ((int32_t)il2cpp_codegen_add((int32_t)L_34, (int32_t)1)), L_35, /*hidden argument*/NULL);
 		SlotU5BU5D_t227397015* L_36 = __this->get_table_3();
@@ -22026,7 +22052,7 @@ IL_0011:
 	}
 	{
 		int32_t L_3 = ___i1;
-		int32_t L_4 = VirtFuncInvoker0< int32_t >::Invoke(16 /* System.Int32 System.Collections.SortedList::get_Count() */, __this);
+		int32_t L_4 = VirtFuncInvoker0< int32_t >::Invoke(17 /* System.Int32 System.Collections.SortedList::get_Count() */, __this);
 		RuntimeArray * L_5 = ___arr0;
 		NullCheck(L_5);
 		int32_t L_6 = Array_get_Length_m21610649(L_5, /*hidden argument*/NULL);
@@ -22100,7 +22126,7 @@ extern "C"  int32_t SortedList_Find_m3363512987 (SortedList_t2427694641 * __this
 	{
 		SlotU5BU5D_t227397015* L_0 = __this->get_table_3();
 		V_0 = L_0;
-		int32_t L_1 = VirtFuncInvoker0< int32_t >::Invoke(16 /* System.Int32 System.Collections.SortedList::get_Count() */, __this);
+		int32_t L_1 = VirtFuncInvoker0< int32_t >::Invoke(17 /* System.Int32 System.Collections.SortedList::get_Count() */, __this);
 		V_1 = L_1;
 		int32_t L_2 = V_1;
 		if (L_2)
@@ -22224,7 +22250,7 @@ extern "C"  void Enumerator__ctor_m4264210349 (Enumerator_t3548462377 * __this, 
 		__this->set_stamp_1(L_2);
 		SortedList_t2427694641 * L_3 = ___host0;
 		NullCheck(L_3);
-		int32_t L_4 = VirtFuncInvoker0< int32_t >::Invoke(16 /* System.Int32 System.Collections.SortedList::get_Count() */, L_3);
+		int32_t L_4 = VirtFuncInvoker0< int32_t >::Invoke(17 /* System.Int32 System.Collections.SortedList::get_Count() */, L_3);
 		__this->set_size_3(L_4);
 		int32_t L_5 = ___mode1;
 		__this->set_mode_4(L_5);
@@ -22706,7 +22732,7 @@ extern "C"  int32_t ListKeys_get_Count_m1203091392 (ListKeys_t1506865728 * __thi
 	{
 		SortedList_t2427694641 * L_0 = __this->get_host_0();
 		NullCheck(L_0);
-		int32_t L_1 = VirtFuncInvoker0< int32_t >::Invoke(16 /* System.Int32 System.Collections.SortedList::get_Count() */, L_0);
+		int32_t L_1 = VirtFuncInvoker0< int32_t >::Invoke(17 /* System.Int32 System.Collections.SortedList::get_Count() */, L_0);
 		return L_1;
 	}
 }
@@ -22716,7 +22742,7 @@ extern "C"  bool ListKeys_get_IsSynchronized_m1383519739 (ListKeys_t1506865728 *
 	{
 		SortedList_t2427694641 * L_0 = __this->get_host_0();
 		NullCheck(L_0);
-		bool L_1 = VirtFuncInvoker0< bool >::Invoke(17 /* System.Boolean System.Collections.SortedList::get_IsSynchronized() */, L_0);
+		bool L_1 = VirtFuncInvoker0< bool >::Invoke(18 /* System.Boolean System.Collections.SortedList::get_IsSynchronized() */, L_0);
 		return L_1;
 	}
 }
@@ -22726,7 +22752,7 @@ extern "C"  RuntimeObject * ListKeys_get_SyncRoot_m2187925119 (ListKeys_t1506865
 	{
 		SortedList_t2427694641 * L_0 = __this->get_host_0();
 		NullCheck(L_0);
-		RuntimeObject * L_1 = VirtFuncInvoker0< RuntimeObject * >::Invoke(18 /* System.Object System.Collections.SortedList::get_SyncRoot() */, L_0);
+		RuntimeObject * L_1 = VirtFuncInvoker0< RuntimeObject * >::Invoke(19 /* System.Object System.Collections.SortedList::get_SyncRoot() */, L_0);
 		return L_1;
 	}
 }
@@ -22763,7 +22789,7 @@ extern "C"  RuntimeObject * ListKeys_get_Item_m1955309188 (ListKeys_t1506865728 
 		SortedList_t2427694641 * L_0 = __this->get_host_0();
 		int32_t L_1 = ___index0;
 		NullCheck(L_0);
-		RuntimeObject * L_2 = VirtFuncInvoker1< RuntimeObject *, int32_t >::Invoke(36 /* System.Object System.Collections.SortedList::GetKey(System.Int32) */, L_0, L_1);
+		RuntimeObject * L_2 = VirtFuncInvoker1< RuntimeObject *, int32_t >::Invoke(37 /* System.Object System.Collections.SortedList::GetKey(System.Int32) */, L_0, L_1);
 		return L_2;
 	}
 }
@@ -22819,7 +22845,7 @@ extern "C"  bool ListKeys_Contains_m342621034 (ListKeys_t1506865728 * __this, Ru
 		SortedList_t2427694641 * L_0 = __this->get_host_0();
 		RuntimeObject * L_1 = ___key0;
 		NullCheck(L_0);
-		bool L_2 = VirtFuncInvoker1< bool, RuntimeObject * >::Invoke(27 /* System.Boolean System.Collections.SortedList::Contains(System.Object) */, L_0, L_1);
+		bool L_2 = VirtFuncInvoker1< bool, RuntimeObject * >::Invoke(28 /* System.Boolean System.Collections.SortedList::Contains(System.Object) */, L_0, L_1);
 		return L_2;
 	}
 }
@@ -22830,7 +22856,7 @@ extern "C"  int32_t ListKeys_IndexOf_m3572544279 (ListKeys_t1506865728 * __this,
 		SortedList_t2427694641 * L_0 = __this->get_host_0();
 		RuntimeObject * L_1 = ___key0;
 		NullCheck(L_0);
-		int32_t L_2 = VirtFuncInvoker1< int32_t, RuntimeObject * >::Invoke(33 /* System.Int32 System.Collections.SortedList::IndexOfKey(System.Object) */, L_0, L_1);
+		int32_t L_2 = VirtFuncInvoker1< int32_t, RuntimeObject * >::Invoke(34 /* System.Int32 System.Collections.SortedList::IndexOfKey(System.Object) */, L_0, L_1);
 		return L_2;
 	}
 }
@@ -25913,6 +25939,37 @@ extern "C"  Decimal_t2948259380  Convert_ToDecimal_m2858622624 (RuntimeObject * 
 		return L_1;
 	}
 }
+// System.Decimal System.Convert::ToDecimal(System.Object)
+extern "C"  Decimal_t2948259380  Convert_ToDecimal_m92395068 (RuntimeObject * __this /* static, unused */, RuntimeObject * ___value0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Convert_ToDecimal_m92395068_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		RuntimeObject * L_0 = ___value0;
+		if (L_0)
+		{
+			goto IL_000d;
+		}
+	}
+	{
+		Decimal_t2948259380  L_1;
+		memset(&L_1, 0, sizeof(L_1));
+		Decimal__ctor_m1256289983((&L_1), 0, /*hidden argument*/NULL);
+		return L_1;
+	}
+
+IL_000d:
+	{
+		RuntimeObject * L_2 = ___value0;
+		IL2CPP_RUNTIME_CLASS_INIT(Convert_t2465617642_il2cpp_TypeInfo_var);
+		Decimal_t2948259380  L_3 = Convert_ToDecimal_m3815908452(NULL /*static, unused*/, L_2, (RuntimeObject*)NULL, /*hidden argument*/NULL);
+		return L_3;
+	}
+}
 // System.Decimal System.Convert::ToDecimal(System.Object,System.IFormatProvider)
 extern "C"  Decimal_t2948259380  Convert_ToDecimal_m3815908452 (RuntimeObject * __this /* static, unused */, RuntimeObject * ___value0, RuntimeObject* ___provider1, const RuntimeMethod* method)
 {
@@ -28196,6 +28253,14 @@ IL_0025:
 		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
 		String_t* L_7 = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->get_Empty_2();
 		return L_7;
+	}
+}
+// System.String System.Convert::ToString(System.UInt64)
+extern "C"  String_t* Convert_ToString_m2411707427 (RuntimeObject * __this /* static, unused */, uint64_t ___value0, const RuntimeMethod* method)
+{
+	{
+		String_t* L_0 = UInt64_ToString_m1529093114((&___value0), /*hidden argument*/NULL);
+		return L_0;
 	}
 }
 // System.UInt16 System.Convert::ToUInt16(System.Boolean)
@@ -31138,7 +31203,7 @@ IL_003f:
 		RuntimeObject * L_22 = Box(Int32_t2950945753_il2cpp_TypeInfo_var, &L_21);
 		DaylightTime_t2582425773 * L_23 = V_3;
 		NullCheck(L_19);
-		VirtActionInvoker2< RuntimeObject *, RuntimeObject * >::Invoke(26 /* System.Void System.Collections.Hashtable::Add(System.Object,System.Object) */, L_19, L_22, L_23);
+		VirtActionInvoker2< RuntimeObject *, RuntimeObject * >::Invoke(27 /* System.Void System.Collections.Hashtable::Add(System.Object,System.Object) */, L_19, L_22, L_23);
 		DaylightTime_t2582425773 * L_24 = V_3;
 		CurrentSystemTimeZone_OnDeserialization_m3711380055(__this, L_24, /*hidden argument*/NULL);
 		return;
@@ -31238,7 +31303,7 @@ IL_0050:
 			int32_t L_15 = L_14;
 			RuntimeObject * L_16 = Box(Int32_t2950945753_il2cpp_TypeInfo_var, &L_15);
 			NullCheck(L_13);
-			RuntimeObject * L_17 = VirtFuncInvoker1< RuntimeObject *, RuntimeObject * >::Invoke(23 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_13, L_16);
+			RuntimeObject * L_17 = VirtFuncInvoker1< RuntimeObject *, RuntimeObject * >::Invoke(24 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_13, L_16);
 			V_1 = ((DaylightTime_t2582425773 *)CastclassClass((RuntimeObject*)L_17, DaylightTime_t2582425773_il2cpp_TypeInfo_var));
 			DaylightTime_t2582425773 * L_18 = V_1;
 			if (L_18)
@@ -31281,7 +31346,7 @@ IL_0097:
 			RuntimeObject * L_32 = Box(Int32_t2950945753_il2cpp_TypeInfo_var, &L_31);
 			DaylightTime_t2582425773 * L_33 = V_1;
 			NullCheck(L_29);
-			VirtActionInvoker2< RuntimeObject *, RuntimeObject * >::Invoke(26 /* System.Void System.Collections.Hashtable::Add(System.Object,System.Object) */, L_29, L_32, L_33);
+			VirtActionInvoker2< RuntimeObject *, RuntimeObject * >::Invoke(27 /* System.Void System.Collections.Hashtable::Add(System.Object,System.Object) */, L_29, L_32, L_33);
 		}
 
 IL_00b1:
@@ -32832,6 +32897,23 @@ extern "C"  int32_t DateTime_get_DayOfWeek_m2326490739_AdjustorThunk (RuntimeObj
 	DateTime_t3738529785 * _thisAdjusted = reinterpret_cast<DateTime_t3738529785 *>(__this + 1);
 	return DateTime_get_DayOfWeek_m2326490739(_thisAdjusted, method);
 }
+// System.TimeSpan System.DateTime::get_TimeOfDay()
+extern "C"  TimeSpan_t881159249  DateTime_get_TimeOfDay_m82064893 (DateTime_t3738529785 * __this, const RuntimeMethod* method)
+{
+	{
+		TimeSpan_t881159249 * L_0 = __this->get_address_of_ticks_0();
+		int64_t L_1 = TimeSpan_get_Ticks_m2137362016(L_0, /*hidden argument*/NULL);
+		TimeSpan_t881159249  L_2;
+		memset(&L_2, 0, sizeof(L_2));
+		TimeSpan__ctor_m1896986612((&L_2), ((int64_t)((int64_t)L_1%(int64_t)((int64_t)864000000000LL))), /*hidden argument*/NULL);
+		return L_2;
+	}
+}
+extern "C"  TimeSpan_t881159249  DateTime_get_TimeOfDay_m82064893_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
+{
+	DateTime_t3738529785 * _thisAdjusted = reinterpret_cast<DateTime_t3738529785 *>(__this + 1);
+	return DateTime_get_TimeOfDay_m82064893(_thisAdjusted, method);
+}
 // System.Int32 System.DateTime::get_Hour()
 extern "C"  int32_t DateTime_get_Hour_m4153505178 (DateTime_t3738529785 * __this, const RuntimeMethod* method)
 {
@@ -33162,6 +33244,96 @@ extern "C"  DateTime_t3738529785  DateTime_AddMilliseconds_m3713972790_AdjustorT
 	DateTime_t3738529785 * _thisAdjusted = reinterpret_cast<DateTime_t3738529785 *>(__this + 1);
 	return DateTime_AddMilliseconds_m3713972790(_thisAdjusted, ___value0, method);
 }
+// System.DateTime System.DateTime::AddMonths(System.Int32)
+extern "C"  DateTime_t3738529785  DateTime_AddMonths_m2010113531 (DateTime_t3738529785 * __this, int32_t ___months0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (DateTime_AddMonths_m2010113531_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	int32_t V_1 = 0;
+	int32_t V_2 = 0;
+	int32_t V_3 = 0;
+	DateTime_t3738529785  V_4;
+	memset(&V_4, 0, sizeof(V_4));
+	{
+		int32_t L_0 = DateTime_get_Day_m1623500273(__this, /*hidden argument*/NULL);
+		V_0 = L_0;
+		int32_t L_1 = DateTime_get_Month_m1566006993(__this, /*hidden argument*/NULL);
+		int32_t L_2 = ___months0;
+		V_1 = ((int32_t)il2cpp_codegen_add((int32_t)L_1, (int32_t)((int32_t)((int32_t)L_2%(int32_t)((int32_t)12)))));
+		int32_t L_3 = DateTime_get_Year_m1184003812(__this, /*hidden argument*/NULL);
+		int32_t L_4 = ___months0;
+		V_2 = ((int32_t)il2cpp_codegen_add((int32_t)L_3, (int32_t)((int32_t)((int32_t)L_4/(int32_t)((int32_t)12)))));
+		int32_t L_5 = V_1;
+		if ((((int32_t)L_5) >= ((int32_t)1)))
+		{
+			goto IL_0034;
+		}
+	}
+	{
+		int32_t L_6 = V_1;
+		V_1 = ((int32_t)il2cpp_codegen_add((int32_t)((int32_t)12), (int32_t)L_6));
+		int32_t L_7 = V_2;
+		V_2 = ((int32_t)il2cpp_codegen_subtract((int32_t)L_7, (int32_t)1));
+		goto IL_0045;
+	}
+
+IL_0034:
+	{
+		int32_t L_8 = V_1;
+		if ((((int32_t)L_8) <= ((int32_t)((int32_t)12))))
+		{
+			goto IL_0045;
+		}
+	}
+	{
+		int32_t L_9 = V_1;
+		V_1 = ((int32_t)il2cpp_codegen_subtract((int32_t)L_9, (int32_t)((int32_t)12)));
+		int32_t L_10 = V_2;
+		V_2 = ((int32_t)il2cpp_codegen_add((int32_t)L_10, (int32_t)1));
+	}
+
+IL_0045:
+	{
+		int32_t L_11 = V_2;
+		int32_t L_12 = V_1;
+		IL2CPP_RUNTIME_CLASS_INIT(DateTime_t3738529785_il2cpp_TypeInfo_var);
+		int32_t L_13 = DateTime_DaysInMonth_m2587936260(NULL /*static, unused*/, L_11, L_12, /*hidden argument*/NULL);
+		V_3 = L_13;
+		int32_t L_14 = V_0;
+		int32_t L_15 = V_3;
+		if ((((int32_t)L_14) <= ((int32_t)L_15)))
+		{
+			goto IL_0056;
+		}
+	}
+	{
+		int32_t L_16 = V_3;
+		V_0 = L_16;
+	}
+
+IL_0056:
+	{
+		int32_t L_17 = V_2;
+		int32_t L_18 = V_1;
+		int32_t L_19 = V_0;
+		DateTime__ctor_m12900168((&V_4), L_17, L_18, L_19, /*hidden argument*/NULL);
+		int32_t L_20 = __this->get_kind_1();
+		(&V_4)->set_kind_1(L_20);
+		TimeSpan_t881159249  L_21 = DateTime_get_TimeOfDay_m82064893(__this, /*hidden argument*/NULL);
+		DateTime_t3738529785  L_22 = DateTime_Add_m2995894549((&V_4), L_21, /*hidden argument*/NULL);
+		return L_22;
+	}
+}
+extern "C"  DateTime_t3738529785  DateTime_AddMonths_m2010113531_AdjustorThunk (RuntimeObject * __this, int32_t ___months0, const RuntimeMethod* method)
+{
+	DateTime_t3738529785 * _thisAdjusted = reinterpret_cast<DateTime_t3738529785 *>(__this + 1);
+	return DateTime_AddMonths_m2010113531(_thisAdjusted, ___months0, method);
+}
 // System.DateTime System.DateTime::AddSeconds(System.Double)
 extern "C"  DateTime_t3738529785  DateTime_AddSeconds_m332574389 (DateTime_t3738529785 * __this, double ___value0, const RuntimeMethod* method)
 {
@@ -33175,6 +33347,20 @@ extern "C"  DateTime_t3738529785  DateTime_AddSeconds_m332574389_AdjustorThunk (
 {
 	DateTime_t3738529785 * _thisAdjusted = reinterpret_cast<DateTime_t3738529785 *>(__this + 1);
 	return DateTime_AddSeconds_m332574389(_thisAdjusted, ___value0, method);
+}
+// System.DateTime System.DateTime::AddYears(System.Int32)
+extern "C"  DateTime_t3738529785  DateTime_AddYears_m271357322 (DateTime_t3738529785 * __this, int32_t ___value0, const RuntimeMethod* method)
+{
+	{
+		int32_t L_0 = ___value0;
+		DateTime_t3738529785  L_1 = DateTime_AddMonths_m2010113531(__this, ((int32_t)il2cpp_codegen_multiply((int32_t)L_0, (int32_t)((int32_t)12))), /*hidden argument*/NULL);
+		return L_1;
+	}
+}
+extern "C"  DateTime_t3738529785  DateTime_AddYears_m271357322_AdjustorThunk (RuntimeObject * __this, int32_t ___value0, const RuntimeMethod* method)
+{
+	DateTime_t3738529785 * _thisAdjusted = reinterpret_cast<DateTime_t3738529785 *>(__this + 1);
+	return DateTime_AddYears_m271357322(_thisAdjusted, ___value0, method);
 }
 // System.Int32 System.DateTime::Compare(System.DateTime,System.DateTime)
 extern "C"  int32_t DateTime_Compare_m2855073242 (RuntimeObject * __this /* static, unused */, DateTime_t3738529785  ___t10, DateTime_t3738529785  ___t21, const RuntimeMethod* method)
@@ -33677,6 +33863,22 @@ IL_0035:
 IL_0036:
 	{
 		return (bool)G_B7_0;
+	}
+}
+// System.DateTime System.DateTime::Parse(System.String)
+extern "C"  DateTime_t3738529785  DateTime_Parse_m2550724587 (RuntimeObject * __this /* static, unused */, String_t* ___s0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (DateTime_Parse_m2550724587_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		String_t* L_0 = ___s0;
+		IL2CPP_RUNTIME_CLASS_INIT(DateTime_t3738529785_il2cpp_TypeInfo_var);
+		DateTime_t3738529785  L_1 = DateTime_Parse_m3729096069(NULL /*static, unused*/, L_0, (RuntimeObject*)NULL, /*hidden argument*/NULL);
+		return L_1;
 	}
 }
 // System.DateTime System.DateTime::Parse(System.String,System.IFormatProvider)
@@ -39262,6 +39464,79 @@ IL_0059:
 		return;
 	}
 }
+// System.Boolean System.DateTime::TryParse(System.String,System.DateTime&)
+extern "C"  bool DateTime_TryParse_m1242989867 (RuntimeObject * __this /* static, unused */, String_t* ___s0, DateTime_t3738529785 * ___result1, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (DateTime_TryParse_m1242989867_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t * V_0 = NULL;
+	DateTimeOffset_t3229287507  V_1;
+	memset(&V_1, 0, sizeof(V_1));
+	bool V_2 = false;
+	Exception_t * __last_unhandled_exception = 0;
+	NO_UNUSED_WARNING (__last_unhandled_exception);
+	Exception_t * __exception_local = 0;
+	NO_UNUSED_WARNING (__exception_local);
+	int32_t __leave_target = 0;
+	NO_UNUSED_WARNING (__leave_target);
+	{
+		String_t* L_0 = ___s0;
+		if (!L_0)
+		{
+			goto IL_0027;
+		}
+	}
+
+IL_0006:
+	try
+	{ // begin try (depth: 1)
+		{
+			V_0 = (Exception_t *)NULL;
+			String_t* L_1 = ___s0;
+			DateTime_t3738529785 * L_2 = ___result1;
+			IL2CPP_RUNTIME_CLASS_INIT(DateTime_t3738529785_il2cpp_TypeInfo_var);
+			bool L_3 = DateTime_CoreParse_m428043272(NULL /*static, unused*/, L_1, (RuntimeObject*)NULL, 7, L_2, (&V_1), (bool)0, (&V_0), /*hidden argument*/NULL);
+			V_2 = L_3;
+			goto IL_0034;
+		}
+
+IL_001c:
+		{
+			; // IL_001c: leave IL_0027
+		}
+	} // end try (depth: 1)
+	catch(Il2CppExceptionWrapper& e)
+	{
+		__exception_local = (Exception_t *)e.ex;
+		if(il2cpp_codegen_class_is_assignable_from (RuntimeObject_il2cpp_TypeInfo_var, il2cpp_codegen_object_class(e.ex)))
+			goto CATCH_0021;
+		throw e;
+	}
+
+CATCH_0021:
+	{ // begin catch(System.Object)
+		goto IL_0027;
+	} // end catch (depth: 1)
+
+IL_0027:
+	{
+		DateTime_t3738529785 * L_4 = ___result1;
+		IL2CPP_RUNTIME_CLASS_INIT(DateTime_t3738529785_il2cpp_TypeInfo_var);
+		DateTime_t3738529785  L_5 = ((DateTime_t3738529785_StaticFields*)il2cpp_codegen_static_fields_for(DateTime_t3738529785_il2cpp_TypeInfo_var))->get_MinValue_3();
+		*(DateTime_t3738529785 *)L_4 = L_5;
+		return (bool)0;
+	}
+
+IL_0034:
+	{
+		bool L_6 = V_2;
+		return L_6;
+	}
+}
 // System.Boolean System.DateTime::ParseExact(System.String,System.String[],System.Globalization.DateTimeFormatInfo,System.Globalization.DateTimeStyles,System.DateTime&,System.Boolean,System.Boolean&,System.Boolean,System.Exception&)
 extern "C"  bool DateTime_ParseExact_m317338046 (RuntimeObject * __this /* static, unused */, String_t* ___s0, StringU5BU5D_t1281789340* ___formats1, DateTimeFormatInfo_t2405853701 * ___dfi2, int32_t ___style3, DateTime_t3738529785 * ___ret4, bool ___exact5, bool* ___longYear6, bool ___setExceptionOnError7, Exception_t ** ___exception8, const RuntimeMethod* method)
 {
@@ -39381,6 +39656,32 @@ IL_006f:
 		*(DateTime_t3738529785 *)L_26 = L_27;
 		return (bool)0;
 	}
+}
+// System.TimeSpan System.DateTime::Subtract(System.DateTime)
+extern "C"  TimeSpan_t881159249  DateTime_Subtract_m77007479 (DateTime_t3738529785 * __this, DateTime_t3738529785  ___value0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (DateTime_Subtract_m77007479_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		TimeSpan_t881159249 * L_0 = __this->get_address_of_ticks_0();
+		int64_t L_1 = TimeSpan_get_Ticks_m2137362016(L_0, /*hidden argument*/NULL);
+		TimeSpan_t881159249  L_2;
+		memset(&L_2, 0, sizeof(L_2));
+		TimeSpan__ctor_m1896986612((&L_2), L_1, /*hidden argument*/NULL);
+		TimeSpan_t881159249  L_3 = (&___value0)->get_ticks_0();
+		IL2CPP_RUNTIME_CLASS_INIT(TimeSpan_t881159249_il2cpp_TypeInfo_var);
+		TimeSpan_t881159249  L_4 = TimeSpan_op_Subtraction_m3592306516(NULL /*static, unused*/, L_2, L_3, /*hidden argument*/NULL);
+		return L_4;
+	}
+}
+extern "C"  TimeSpan_t881159249  DateTime_Subtract_m77007479_AdjustorThunk (RuntimeObject * __this, DateTime_t3738529785  ___value0, const RuntimeMethod* method)
+{
+	DateTime_t3738529785 * _thisAdjusted = reinterpret_cast<DateTime_t3738529785 *>(__this + 1);
+	return DateTime_Subtract_m77007479(_thisAdjusted, ___value0, method);
 }
 // System.DateTime System.DateTime::Subtract(System.TimeSpan)
 extern "C"  DateTime_t3738529785  DateTime_Subtract_m3522513701 (DateTime_t3738529785 * __this, TimeSpan_t881159249  ___value0, const RuntimeMethod* method)
@@ -43216,6 +43517,103 @@ extern "C"  void Decimal__ctor_m1842485920_AdjustorThunk (RuntimeObject * __this
 	Decimal_t2948259380 * _thisAdjusted = reinterpret_cast<Decimal_t2948259380 *>(__this + 1);
 	Decimal__ctor_m1842485920(_thisAdjusted, ___value0, method);
 }
+// System.Void System.Decimal::.ctor(System.Int32[])
+extern "C"  void Decimal__ctor_m336758058 (Decimal_t2948259380 * __this, Int32U5BU5D_t385246372* ___bits0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Decimal__ctor_m336758058_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	uint8_t V_0 = 0x0;
+	{
+		Int32U5BU5D_t385246372* L_0 = ___bits0;
+		if (L_0)
+		{
+			goto IL_0016;
+		}
+	}
+	{
+		String_t* L_1 = Locale_GetText_m3374010885(NULL /*static, unused*/, _stringLiteral1407330741, /*hidden argument*/NULL);
+		ArgumentNullException_t1615371798 * L_2 = (ArgumentNullException_t1615371798 *)il2cpp_codegen_object_new(ArgumentNullException_t1615371798_il2cpp_TypeInfo_var);
+		ArgumentNullException__ctor_m1170824041(L_2, L_1, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_2);
+	}
+
+IL_0016:
+	{
+		Int32U5BU5D_t385246372* L_3 = ___bits0;
+		NullCheck((RuntimeArray *)(RuntimeArray *)L_3);
+		int32_t L_4 = Array_GetLength_m2178203778((RuntimeArray *)(RuntimeArray *)L_3, 0, /*hidden argument*/NULL);
+		if ((((int32_t)L_4) == ((int32_t)4)))
+		{
+			goto IL_0033;
+		}
+	}
+	{
+		String_t* L_5 = Locale_GetText_m3374010885(NULL /*static, unused*/, _stringLiteral2295149384, /*hidden argument*/NULL);
+		ArgumentException_t132251570 * L_6 = (ArgumentException_t132251570 *)il2cpp_codegen_object_new(ArgumentException_t132251570_il2cpp_TypeInfo_var);
+		ArgumentException__ctor_m1312628991(L_6, L_5, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_6);
+	}
+
+IL_0033:
+	{
+		Int32U5BU5D_t385246372* L_7 = ___bits0;
+		NullCheck(L_7);
+		int32_t L_8 = 0;
+		int32_t L_9 = (L_7)->GetAt(static_cast<il2cpp_array_size_t>(L_8));
+		__this->set_lo_7(L_9);
+		Int32U5BU5D_t385246372* L_10 = ___bits0;
+		NullCheck(L_10);
+		int32_t L_11 = 1;
+		int32_t L_12 = (L_10)->GetAt(static_cast<il2cpp_array_size_t>(L_11));
+		__this->set_mid_8(L_12);
+		Int32U5BU5D_t385246372* L_13 = ___bits0;
+		NullCheck(L_13);
+		int32_t L_14 = 2;
+		int32_t L_15 = (L_13)->GetAt(static_cast<il2cpp_array_size_t>(L_14));
+		__this->set_hi_6(L_15);
+		Int32U5BU5D_t385246372* L_16 = ___bits0;
+		NullCheck(L_16);
+		int32_t L_17 = 3;
+		int32_t L_18 = (L_16)->GetAt(static_cast<il2cpp_array_size_t>(L_17));
+		__this->set_flags_5(L_18);
+		uint32_t L_19 = __this->get_flags_5();
+		V_0 = (uint8_t)(((int32_t)((uint8_t)((int32_t)((uint32_t)L_19>>((int32_t)16))))));
+		uint8_t L_20 = V_0;
+		if ((!(((uint32_t)L_20) <= ((uint32_t)((int32_t)28)))))
+		{
+			goto IL_007b;
+		}
+	}
+	{
+		uint32_t L_21 = __this->get_flags_5();
+		if (!((int32_t)((int32_t)L_21&(int32_t)((int32_t)2130771967))))
+		{
+			goto IL_008b;
+		}
+	}
+
+IL_007b:
+	{
+		String_t* L_22 = Locale_GetText_m3374010885(NULL /*static, unused*/, _stringLiteral1488400110, /*hidden argument*/NULL);
+		ArgumentException_t132251570 * L_23 = (ArgumentException_t132251570 *)il2cpp_codegen_object_new(ArgumentException_t132251570_il2cpp_TypeInfo_var);
+		ArgumentException__ctor_m1312628991(L_23, L_22, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_23);
+	}
+
+IL_008b:
+	{
+		return;
+	}
+}
+extern "C"  void Decimal__ctor_m336758058_AdjustorThunk (RuntimeObject * __this, Int32U5BU5D_t385246372* ___bits0, const RuntimeMethod* method)
+{
+	Decimal_t2948259380 * _thisAdjusted = reinterpret_cast<Decimal_t2948259380 *>(__this + 1);
+	Decimal__ctor_m336758058(_thisAdjusted, ___bits0, method);
+}
 // System.Void System.Decimal::.cctor()
 extern "C"  void Decimal__cctor_m834667025 (RuntimeObject * __this /* static, unused */, const RuntimeMethod* method)
 {
@@ -45940,6 +46338,22 @@ IL_0257:
 		Decimal_t2948259380  L_106 = V_14;
 		*(Decimal_t2948259380 *)L_105 = L_106;
 		return (bool)1;
+	}
+}
+// System.Double System.Decimal::ToDouble(System.Decimal)
+extern "C"  double Decimal_ToDouble_m1460191033 (RuntimeObject * __this /* static, unused */, Decimal_t2948259380  ___d0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (Decimal_ToDouble_m1460191033_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		Decimal_t2948259380  L_0 = ___d0;
+		IL2CPP_RUNTIME_CLASS_INIT(Convert_t2465617642_il2cpp_TypeInfo_var);
+		double L_1 = Convert_ToDouble_m1177445661(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
+		return L_1;
 	}
 }
 // System.String System.Decimal::ToString(System.String,System.IFormatProvider)
