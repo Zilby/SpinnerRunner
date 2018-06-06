@@ -74,7 +74,7 @@ public class MenuManager : MonoBehaviour
 #endif
             Utils.Reset();
             Utils.Load();
-			Screen.sleepTimeout = SleepTimeout.NeverSleep;
+            Screen.sleepTimeout = SleepTimeout.NeverSleep;
         }
 
         StartCoroutine(Initialize(showAd));
@@ -338,7 +338,8 @@ public class MenuManager : MonoBehaviour
     /// </summary>
     public void RestorePurchases()
     {
-        m_StoreExtensionProvider.GetExtension<IAppleExtensions>().RestoreTransactions(result => {
+        m_StoreExtensionProvider.GetExtension<IAppleExtensions>().RestoreTransactions(result =>
+        {
             if (result)
             {
                 Debug.Log("Restore Succeeded");
