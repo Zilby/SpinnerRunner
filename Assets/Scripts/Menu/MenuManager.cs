@@ -262,7 +262,7 @@ public class MenuManager : MonoBehaviour
     public PurchaseProcessingResult ProcessPurchase(PurchaseEventArgs args)
     {
         // Or ... a non-consumable product has been purchased by this user.
-        if (String.Equals(args.purchasedProduct.definition.id, disableAdsProductID, StringComparison.Ordinal))
+        if (System.String.Equals(args.purchasedProduct.definition.id, disableAdsProductID, System.StringComparison.Ordinal))
         {
             Debug.Log(string.Format("ProcessPurchase: PASS. Product: '{0}'", args.purchasedProduct.definition.id));
             // The non-consumable item has been successfully purchased, grant this item to the player.

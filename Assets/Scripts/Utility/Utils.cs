@@ -44,6 +44,8 @@ public static class Utils
 
 	private static bool tutorial = true;
 
+	private static float sensitivity = 0.8f;
+
 	// whether or not this has been loaded
 	private static bool loaded = false;
 
@@ -142,6 +144,21 @@ public static class Utils
 		set { tutorial = value; }
 	}
 
+	/// <summary>
+	/// The current user sensitivity. 
+	/// </summary>
+	public static float Sensitivity
+	{
+		get
+		{
+			return sensitivity;
+		}
+		set
+		{
+			sensitivity = value;
+		}
+	}
+
 
 	/// <summary>
 	/// Resets all game data.
@@ -166,6 +183,7 @@ public static class Utils
 		// Set true for tutorial every time. 
 		//data.tutorial = true;
 		data.tutorial = tutorial;
+		data.sensitivity = sensitivity;
 		data.music = music;
 		data.soundfx = soundfx;
 		bf.Serialize(file, data);
@@ -191,6 +209,7 @@ public static class Utils
 				AudioMixer mix = SoundManager.GetMix();
 				highScore = data.highScore;
 				tutorial = data.tutorial;
+				sensitivity = data.sensitivity;
 				music = data.music;
 				soundfx = data.soundfx;
 
@@ -221,5 +240,6 @@ public static class Utils
 		public bool tutorial;
 		public float music;
 		public float soundfx;
+		public float sensitivity;
 	}
 }

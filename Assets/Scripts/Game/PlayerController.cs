@@ -204,7 +204,9 @@ public class PlayerController : MonoBehaviour
 #else
 			float x = Input.acceleration.x;
 #endif
-			transform.position = new Vector3(transform.position.x + ((x * MOVE_SPEED) * Time.smoothDeltaTime * Time.timeScale), transform.position.y, transform.position.z);
+			float aboveThreshold = x != 0 ? Mathf.Max(Mathf.Abs(x) - (1 - Utils.Sensitivity), 0) * (x / Mathf.Abs(x)) : 0;
+			float speed = aboveThreshold  / Utils.Sensitivity;
+			transform.position = new Vector3(transform.position.x + ((speed * MOVE_SPEED) * Time.smoothDeltaTime * Time.timeScale), transform.position.y, transform.position.z);
 			yield return new WaitForEndOfFrame();
 		}
 	}

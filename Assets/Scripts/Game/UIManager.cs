@@ -73,6 +73,11 @@ public class UIManager : MonoBehaviour {
 	/// </summary>
 	public Button menu2;
 
+	/// <summary>
+	/// The sensitivity slider.
+	/// </summary>
+	public Slider sensitivitySlider;
+
 	[Header("TutorialElements")]
 
 	public GameObject tutorial;
@@ -117,6 +122,7 @@ public class UIManager : MonoBehaviour {
 		musicOff.SetActive(Utils.Music < 0);
 		soundOn.SetActive(Utils.Soundfx >= 0);
 		soundOff.SetActive(Utils.Soundfx < 0);
+		sensitivitySlider.value = Utils.Sensitivity;
 
 		pause.onClick.AddListener(Pause);
 		resume.onClick.AddListener(Pause);
@@ -125,6 +131,7 @@ public class UIManager : MonoBehaviour {
 		again.onClick.AddListener(Again);
 		sound.onClick.AddListener(ToggleSound);
 		music.onClick.AddListener(ToggleMusic);
+		sensitivitySlider.onValueChanged.AddListener(ChangeSensitivity);
 		blur = Camera.main.GetComponent<BlurOptimized>();
 		tutorialTexts = tutorial.GetComponentsInChildren<FadeableUI>();
 		tutorialIndex = 0;
@@ -214,4 +221,10 @@ public class UIManager : MonoBehaviour {
 
 		SoundManager.MixerToggle(active, "Music");
 	}
+
+	private void ChangeSensitivity(float x) {
+		Utils.Sensitivity = x;
+	}
+
+
 }
