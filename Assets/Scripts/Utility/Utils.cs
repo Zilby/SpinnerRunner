@@ -44,7 +44,7 @@ public static class Utils
 
 	private static bool tutorial = true;
 
-	private static float sensitivity = 0.8f;
+	private static float sensitivity = 0.9f;
 
 	// whether or not this has been loaded
 	private static bool loaded = false;
@@ -210,6 +210,10 @@ public static class Utils
 				highScore = data.highScore;
 				tutorial = data.tutorial;
 				sensitivity = data.sensitivity;
+				if (data.sensitivity == 0)
+				{
+					sensitivity = 0.9f;
+				}
 				music = data.music;
 				soundfx = data.soundfx;
 

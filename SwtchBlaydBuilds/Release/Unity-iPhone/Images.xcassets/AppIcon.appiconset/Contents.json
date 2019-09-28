@@ -1,73 +1,61 @@
 {
 	"images" : [
 		{
-			"filename" : "Icon.png",
-			"idiom" : "iphone",
-			"scale" : "1x",
-			"size" : "57x57"
-		},
-		{
-			"filename" : "Icon@2x.png",
-			"idiom" : "iphone",
-			"scale" : "2x",
-			"size" : "57x57"
-		},
-		{
-			"filename" : "Icon-120.png",
+			"filename" : "Icon-iPhone-120.png",
 			"idiom" : "iphone",
 			"scale" : "2x",
 			"size" : "60x60"
 		},
 		{
-			"filename" : "Icon-180.png",
+			"filename" : "Icon-iPhone-180.png",
 			"idiom" : "iphone",
 			"scale" : "3x",
 			"size" : "60x60"
 		},
 		{
-			"filename" : "Icon-Small.png",
+			"filename" : "Icon-iPhone-Settings-29.png",
 			"idiom" : "iphone",
 			"scale" : "1x",
 			"size" : "29x29"
 		},
 		{
-			"filename" : "Icon-Small@2x.png",
+			"filename" : "Icon-iPhone-Settings-58.png",
 			"idiom" : "iphone",
 			"scale" : "2x",
 			"size" : "29x29"
 		},
 		{
-			"filename" : "Icon-Small@3x.png",
+			"filename" : "Icon-iPhone-Settings-87.png",
 			"idiom" : "iphone",
 			"scale" : "3x",
 			"size" : "29x29"
 		},
 		{
-			"filename" : "Icon-Small-80.png",
+			"filename" : "Icon-iPhone-Spotlight-80.png",
 			"idiom" : "iphone",
 			"scale" : "2x",
 			"size" : "40x40"
 		},
 		{
-			"filename" : "Icon-Small-120.png",
+			"filename" : "Icon-iPhone-Spotlight-120.png",
 			"idiom" : "iphone",
 			"scale" : "3x",
 			"size" : "40x40"
 		},
 		{
-			"filename" : "Icon-Notification@2x.png",
+			"filename" : "Icon-iPhone-Notification-40.png",
 			"idiom" : "iphone",
 			"scale" : "2x",
 			"size" : "20x20"
 		},
 		{
-			"filename" : "Icon-Notification@3x.png",
+			"filename" : "Icon-iPhone-Notification-60.png",
 			"idiom" : "iphone",
 			"scale" : "3x",
 			"size" : "20x20"
 		},
 		{
-			"filename" : "Icon-Store.png",
+			"filename" : "Icon-Store-1024.png",
 			"idiom" : "ios-marketing",
 			"scale" : "1x",
 			"size" : "1024x1024"

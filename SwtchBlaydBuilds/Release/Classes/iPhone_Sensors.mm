@@ -1,7 +1,11 @@
 #define SIMULATE_ATTITUDE_FROM_GRAVITY 1
 
 #import "iPhone_Sensors.h"
+
+#if UNITY_USES_LOCATION
 #import <CoreLocation/CoreLocation.h>
+#endif
+
 #if !PLATFORM_TVOS
 #import <CoreMotion/CoreMotion.h>
 #endif
@@ -25,12 +29,16 @@ static bool gTVRemoteReportsAbsoluteDpadValuesInitialValue = false;
 
 static bool gCompensateSensors = true;
 bool gEnableGyroscope = false;
+extern "C" void UnityEnableGyroscope(bool value) { gEnableGyroscope = value; }
+
 static bool gJoysticksInited = false;
 #define MAX_JOYSTICKS 4
 static bool gPausedJoysticks[MAX_JOYSTICKS] = {false, false, false, false};
 static id gGameControllerClass = nil;
 // This defines the number of maximum acceleration events Unity will queue internally for scripts to access.
-int gMaxQueuedAccelerationEvents = 2 * 60; // 120 events or 2 seconds at 60Hz reporting.
+extern "C" int UnityMaxQueuedAccelerationEvents() { return 2 * 60; } // 120 events or 2 seconds at 60Hz reporting.
+
+static NSMutableSet *pressedButtons = nil;
 
 static ControllerPausedHandler gControllerHandler = ^(GCController *controller)
 {
@@ -45,8 +53,8 @@ static ControllerPausedHandler gControllerHandler = ^(GCController *controller)
     }
 };
 
-bool IsCompensatingSensors() { return gCompensateSensors; }
-void SetCompensatingSensors(bool val) { gCompensateSensors = val; }
+extern "C" bool IsCompensatingSensors() { return gCompensateSensors; }
+extern "C" void SetCompensatingSensors(bool val) { gCompensateSensors = val; }
 
 inline float UnityReorientHeading(float heading)
 {
@@ -85,13 +93,13 @@ inline Vector3f UnityReorientVector3(float x, float y, float z)
         {
             case portraitUpsideDown:
             { res = (Vector3f) {-x, -y, z}; }
-                                            break;
+            break;
             case landscapeLeft:
             { res = (Vector3f) {-y, x, z}; }
-                                           break;
+            break;
             case landscapeRight:
             { res = (Vector3f) {y, -x, z}; }
-                                           break;
+            break;
             default:
             { res = (Vector3f) {x, y, z}; }
         }
@@ -192,14 +200,11 @@ extern "C" void UnityCoreMotionStart()
 
     if (initMotionManager && sMotionManager.accelerometerAvailable)
     {
-        int frequency = UnityGetAccelerometerFrequency();
+        const int frequency = UnityGetAccelerometerFrequency();
         if (frequency > 0)
         {
-            [sMotionManager startAccelerometerUpdatesToQueue: sMotionQueue withHandler:^(CMAccelerometerData* data, NSError* error) {
-                Vector3f res = UnityReorientVector3(data.acceleration.x, data.acceleration.y, data.acceleration.z);
-                UnityDidAccelerate(res.x, res.y, res.z, data.timestamp);
-            }];
-            [sMotionManager setAccelerometerUpdateInterval: 1.0f / frequency];
+            sMotionManager.accelerometerUpdateInterval = 1.0f / frequency;
+            [sMotionManager startAccelerometerUpdates];
         }
     }
 #endif
@@ -214,6 +219,22 @@ extern "C" void UnityCoreMotionStop()
     {
         [sMotionManager stopGyroUpdates];
         [sMotionManager stopDeviceMotionUpdates];
+        [sMotionManager stopAccelerometerUpdates];
+    }
+#endif
+}
+
+extern "C" void UnityUpdateAccelerometerData()
+{
+#if !PLATFORM_TVOS
+    if (sMotionManager)
+    {
+        CMAccelerometerData* data = sMotionManager.accelerometerData;
+        if (data != nil)
+        {
+            Vector3f res = UnityReorientVector3(data.acceleration.x, data.acceleration.y, data.acceleration.z);
+            UnityDidAccelerate(res.x, res.y, res.z, data.timestamp);
+        }
     }
 #endif
 }
@@ -389,6 +410,8 @@ extern "C" void UnityInitJoysticks()
             gAggregatedJoystickState[i].state = false;
         }
 
+        pressedButtons = [[NSMutableSet alloc] init];
+
         gJoysticksInited = true;
     }
 }
@@ -402,15 +425,27 @@ static void ResetAggregatedJoystickState()
 {
     for (int i = 0; i < BTN_COUNT; i++)
     {
-        gAggregatedJoystickState[i].state = false;
+        if ([pressedButtons containsObject: [NSNumber numberWithInteger: gAggregatedJoystickState[i].buttonCode]])
+        {
+            gAggregatedJoystickState[i].state = false;
+        }
     }
+    for (NSNumber *code in pressedButtons)
+    {
+        UnitySetKeyState((int)[code integerValue], false);
+    }
+    [pressedButtons removeAllObjects];
 }
 
 static void SetAggregatedJoystickState()
 {
     for (int i = 0; i < BTN_COUNT; i++)
     {
-        UnitySetKeyState(gAggregatedJoystickState[i].buttonCode, gAggregatedJoystickState[i].state);
+        if (gAggregatedJoystickState[i].state)
+        {
+            UnitySetKeyState(gAggregatedJoystickState[i].buttonCode, gAggregatedJoystickState[i].state);
+            [pressedButtons addObject: [NSNumber numberWithInteger: gAggregatedJoystickState[i].buttonCode]];
+        }
     }
 }
 
@@ -423,9 +458,14 @@ static void ReportAggregatedJoystickButton(int buttonNum, int state)
 
 static void SetJoystickButtonState(int joyNum, int buttonNum, int state)
 {
-    char buf[128];
-    sprintf(buf, "joystick %d button %d", joyNum, buttonNum);
-    UnitySetKeyState(UnityStringToKey(buf), state);
+    if (state)
+    {
+        char buf[128];
+        sprintf(buf, "joystick %d button %d", joyNum, buttonNum);
+        int code = UnityStringToKey(buf);
+        [pressedButtons addObject: [NSNumber numberWithInteger: code]];
+        UnitySetKeyState(code, state);
+    }
 
     ReportAggregatedJoystickButton(buttonNum, state);
 }
@@ -704,7 +744,7 @@ extern "C" int  UnityGetJoystickCount()
     return count;
 }
 
-static void PrintJoystickIdentifier(int idx, char* buffer, int maxLen, const char* typeString,
+static void FormatJoystickIdentifier(int idx, char* buffer, int maxLen, const char* typeString,
     const char* attachment, const char* vendorName)
 {
     snprintf(buffer, maxLen, "[%s,%s] joystick %d by %s",
@@ -728,7 +768,7 @@ extern "C" void UnityGetJoystickName(int idx, char* buffer, int maxLen)
 
         const char* typeString = [controller extendedGamepad] != nil ? "extended" : "basic";
 
-        PrintJoystickIdentifier(idx, buffer, maxLen, typeString, attached,
+        FormatJoystickIdentifier(idx, buffer, maxLen, typeString, attached,
             [[controller vendorName] UTF8String]);
     }
     else
@@ -736,7 +776,7 @@ extern "C" void UnityGetJoystickName(int idx, char* buffer, int maxLen)
 #if UNITY_TVOS_SIMULATOR_FAKE_REMOTE
         if (idx == [QueryControllerCollection() count])
         {
-            PrintJoystickIdentifier(idx, buffer, maxLen, "basic", "wireless", "Unity");
+            FormatJoystickIdentifier(idx, buffer, maxLen, "basic", "wireless", "Unity");
             return;
         }
 #endif
@@ -754,11 +794,12 @@ extern "C" void UnityGetNiceKeyname(int key, char* buffer, int maxLen)
 
 #pragma clang diagnostic pop
 
-
+#if UNITY_USES_LOCATION
 @interface LocationServiceDelegate : NSObject<CLLocationManagerDelegate>
 @end
+#endif
 
-void
+extern "C" void
 UnitySetLastLocation(double timestamp,
     float latitude,
     float longitude,
@@ -766,12 +807,13 @@ UnitySetLastLocation(double timestamp,
     float horizontalAccuracy,
     float verticalAccuracy);
 
-void
+extern "C" void
 UnitySetLastHeading(float magneticHeading,
     float trueHeading,
     float rawX, float rawY, float rawZ,
     double timestamp);
 
+#if UNITY_USES_LOCATION
 struct LocationServiceInfo
 {
 private:
@@ -812,40 +854,56 @@ CLLocationManager* LocationServiceInfo::GetLocationManager()
     return locationManager;
 }
 
+#endif
+
 bool LocationService::IsServiceEnabledByUser()
 {
+#if UNITY_USES_LOCATION
     return [CLLocationManager locationServicesEnabled];
+#else
+    return false;
+#endif
 }
 
 void LocationService::SetDesiredAccuracy(float val)
 {
+#if UNITY_USES_LOCATION
     gLocationServiceStatus.desiredAccuracy = val;
+#endif
 }
 
 float LocationService::GetDesiredAccuracy()
 {
+#if UNITY_USES_LOCATION
     return gLocationServiceStatus.desiredAccuracy;
+#else
+    return NAN;
+#endif
 }
 
 void LocationService::SetDistanceFilter(float val)
 {
+#if UNITY_USES_LOCATION
     gLocationServiceStatus.distanceFilter = val;
+#endif
 }
 
 float LocationService::GetDistanceFilter()
 {
+#if UNITY_USES_LOCATION
     return gLocationServiceStatus.distanceFilter;
+#else
+    return NAN;
+#endif
 }
 
 void LocationService::StartUpdatingLocation()
 {
+#if UNITY_USES_LOCATION
     if (gLocationServiceStatus.locationStatus != kLocationServiceRunning)
     {
         CLLocationManager* locationManager = gLocationServiceStatus.GetLocationManager();
-
-        // request authorization on ios8
-        if ([locationManager respondsToSelector: @selector(requestWhenInUseAuthorization)])
-            [locationManager performSelector: @selector(requestWhenInUseAuthorization)];
+        [locationManager requestWhenInUseAuthorization];
 
         locationManager.desiredAccuracy = gLocationServiceStatus.desiredAccuracy;
         // Set a movement threshold for new events
@@ -859,20 +917,23 @@ void LocationService::StartUpdatingLocation()
 
         gLocationServiceStatus.locationStatus = kLocationServiceInitializing;
     }
+#endif
 }
 
 void LocationService::StopUpdatingLocation()
 {
+#if UNITY_USES_LOCATION
     if (gLocationServiceStatus.locationStatus != kLocationServiceStopped)
     {
         [gLocationServiceStatus.GetLocationManager() stopUpdatingLocation];
         gLocationServiceStatus.locationStatus = kLocationServiceStopped;
     }
+#endif
 }
 
 void LocationService::SetHeadingUpdatesEnabled(bool enabled)
 {
-#if PLATFORM_IOS
+#if PLATFORM_IOS && UNITY_USES_LOCATION
     if (enabled)
     {
         if (gLocationServiceStatus.headingStatus != kLocationServiceRunning &&
@@ -897,28 +958,41 @@ void LocationService::SetHeadingUpdatesEnabled(bool enabled)
 
 bool LocationService::IsHeadingUpdatesEnabled()
 {
+#if UNITY_USES_LOCATION
     return (gLocationServiceStatus.headingStatus == kLocationServiceRunning);
+#else
+    return false;
+#endif
 }
 
-int UnityGetLocationStatus()
+LocationServiceStatus LocationService::GetLocationStatus()
 {
-    return gLocationServiceStatus.locationStatus;
+#if UNITY_USES_LOCATION
+    return (LocationServiceStatus)gLocationServiceStatus.locationStatus;
+#else
+    return kLocationServiceFailed;
+#endif
 }
 
-int UnityGetHeadingStatus()
+LocationServiceStatus LocationService::GetHeadingStatus()
 {
-    return gLocationServiceStatus.headingStatus;
+#if UNITY_USES_LOCATION
+    return (LocationServiceStatus)gLocationServiceStatus.headingStatus;
+#else
+    return kLocationServiceFailed;
+#endif
 }
 
 bool LocationService::IsHeadingAvailable()
 {
-#if PLATFORM_TVOS
-    return false;
-#else
+#if PLATFORM_IOS && UNITY_USES_LOCATION
     return [CLLocationManager headingAvailable];
+#else
+    return false;
 #endif
 }
 
+#if UNITY_USES_LOCATION
 @implementation LocationServiceDelegate
 
 - (void)locationManager:(CLLocationManager*)manager didUpdateLocations:(NSArray*)locations
@@ -930,7 +1004,7 @@ bool LocationService::IsHeadingAvailable()
     UnitySetLastLocation([lastLocation.timestamp timeIntervalSince1970],
         lastLocation.coordinate.latitude, lastLocation.coordinate.longitude, lastLocation.altitude,
         lastLocation.horizontalAccuracy, lastLocation.verticalAccuracy
-        );
+    );
 }
 
 #if PLATFORM_IOS
@@ -960,6 +1034,7 @@ bool LocationService::IsHeadingAvailable()
 }
 
 @end
+#endif
 
 #if PLATFORM_TVOS
 

@@ -130,16 +130,19 @@ public class Pooler : MonoBehaviour
 	/// <param name="obj">The object to be returned.</param>
 	public void ReturnPooledObject(Poolable obj)
 	{
-		obj.gameObject.SetActive(false);
-		switch (obj.poolName)
+		if (!unactivePool[obj.poolName].Contains(obj))
 		{
-			case PooledName.Unassigned:
-				break;
-			default:
-				obj.Reset();
-				activePool[obj.poolName].Remove(obj);
-				unactivePool[obj.poolName].Add(obj);
-				break;
+			obj.gameObject.SetActive(false);
+			switch (obj.poolName)
+			{
+				case PooledName.Unassigned:
+					break;
+				default:
+					obj.Reset();
+					activePool[obj.poolName].Remove(obj);
+					unactivePool[obj.poolName].Add(obj);
+					break;
+			}
 		}
 	}
 

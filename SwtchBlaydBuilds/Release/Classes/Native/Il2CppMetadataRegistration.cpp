@@ -6,6 +6,7 @@
 # include <malloc.h>
 #endif
 
+
 #include <cstring>
 #include <string.h>
 #include <stdio.h>
@@ -35,20 +36,20 @@ extern const Il2CppTypeDefinitionSizes* g_Il2CppTypeDefinitionSizesTable[];
 extern void** const g_MetadataUsages[];
 extern const Il2CppMetadataRegistration g_MetadataRegistration = 
 {
-	5334,
+	9062,
 	s_Il2CppGenericTypes,
-	1463,
+	1609,
 	g_Il2CppGenericInstTable,
-	9935,
+	11278,
 	s_Il2CppGenericMethodFunctions,
-	15749,
+	22461,
 	g_Il2CppTypeTable,
-	10495,
+	12091,
 	g_Il2CppMethodSpecTable,
-	3350,
+	4336,
 	g_FieldOffsetTable,
-	3350,
+	4336,
 	g_Il2CppTypeDefinitionSizesTable,
-	12166,
+	14527,
 	g_MetadataUsages,
 };

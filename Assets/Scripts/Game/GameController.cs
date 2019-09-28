@@ -27,7 +27,7 @@ public class GameController : MonoBehaviour
 	/// <summary>
 	/// The delay between the speed progressions. 
 	/// </summary>
-	const float PROGRESSION_DELAY = 10000.0f;
+	const float PROGRESSION_DELAY = 5000.0f;
 
 	/// <summary>
 	/// The increment that the movement speed progresses at. 
@@ -302,7 +302,6 @@ public class GameController : MonoBehaviour
 				yield return new WaitForFixedUpdate();
 			}
 			moveSpeed /= PROGRESSION_INCREMENT;
-			print(moveSpeed);
 			speedTimer.Reset();
 		}
 	}

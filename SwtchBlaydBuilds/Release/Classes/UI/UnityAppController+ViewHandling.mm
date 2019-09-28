@@ -82,23 +82,9 @@ extern bool _unityAppReady;
         UIInterfaceOrientation orientation = ConvertToIosScreenOrientation((ScreenOrientation)UnityRequestedScreenOrientation());
         ret = [self createRootViewControllerForOrientation: orientation];
     }
-
-    if (_curOrientation == UIInterfaceOrientationUnknown)
-        [self updateAppOrientation: ConvertToIosScreenOrientation(UIViewControllerOrientation(ret))];
 #endif
     return ret;
 }
-
-#if UNITY_SUPPORT_ROTATION
-- (UIViewController*)createSecondaryAutorotatingViewController
-{
-    if (_secondaryAutorotatingViewController == nil)
-        _secondaryAutorotatingViewController = [self createUnityViewControllerDefault];
-    std::swap(_viewControllerForOrientation[0], _secondaryAutorotatingViewController);
-    return _viewControllerForOrientation[0];
-}
-
-#endif
 
 - (UIViewController*)topMostController
 {
@@ -120,6 +106,19 @@ extern bool _unityAppReady;
 {
 }
 
+- (void)didTransitionToViewController:(UIViewController*)toController fromViewController:(UIViewController*)fromController
+{
+#if UNITY_SUPPORT_ROTATION
+    // when transitioning between view controllers ios will not send reorient events (because they are bound to controllers, not view)
+    // so we imitate them here so unity view can update its size/orientation
+    [_unityView willRotateToOrientation: UIViewControllerInterfaceOrientation(toController) fromOrientation: ConvertToIosScreenOrientation(_unityView.contentOrientation)];
+    [_unityView didRotate];
+
+    // NB: this is both important and insane at the same time (that we have several places to keep current orentation and we need to sync them)
+    _curOrientation = UIViewControllerInterfaceOrientation(toController);
+#endif
+}
+
 - (UIView*)createSnapshotView
 {
     // Snapshot API appeared on iOS 7, however before iOS 8 tweaking hierarchy like that on going to
@@ -130,7 +129,7 @@ extern bool _unityAppReady;
     // compositor: any use of -[UIView snapshotViewAfterScreenUpdates] causes black screen being shown
     // temporarily when 4 finger gesture to swipe to another app in the task switcher is being performed slowly
 #if UNITY_SNAPSHOT_VIEW_ON_APPLICATION_PAUSE
-    return _ios80orNewer ? [_rootView snapshotViewAfterScreenUpdates: YES] : nil;
+    return [_rootView snapshotViewAfterScreenUpdates: YES];
 #else
     return nil;
 #endif
@@ -155,8 +154,21 @@ extern bool _unityAppReady;
 
     ShowSplashScreen(_window);
 
+#if UNITY_SUPPORT_ROTATION
+    // to be able to query orientation from view controller we should actually show it.
+    // at this point we can only show splash screen, so update app orientation after we started showing it
+    // NB: _window.rootViewController = splash view controller (not _rootController)
+    [self updateAppOrientation: ConvertToIosScreenOrientation(UIViewControllerOrientation(_window.rootViewController))];
+#endif
+
     NSNumber* style = [[[NSBundle mainBundle] infoDictionary] objectForKey: @"Unity_LoadingActivityIndicatorStyle"];
     ShowActivityIndicator([SplashScreen Instance], style ? [style intValue] : -1);
+
+    NSNumber* vcControlled = [[[NSBundle mainBundle] infoDictionary] objectForKey: @"UIViewControllerBasedStatusBarAppearance"];
+    if (vcControlled && ![vcControlled boolValue])
+        printf_console("\nSetting UIViewControllerBasedStatusBarAppearance to NO is no longer supported.\n"
+            "Apple actively discourages that, and all application-wide methods of changing status bar appearance are deprecated\n\n"
+        );
 }
 
 - (void)showGameUI
@@ -175,6 +187,12 @@ extern bool _unityAppReady;
     [_window addSubview: _rootView];
     _window.rootViewController = _rootController;
     [_window bringSubviewToFront: _rootView];
+
+#if UNITY_SUPPORT_ROTATION
+    // to be able to query orientation from view controller we should actually show it.
+    // at this point we finally started to show game view controller. Just in case update orientation again
+    [self updateAppOrientation: ConvertToIosScreenOrientation(UIViewControllerOrientation(_rootController))];
+#endif
 
     // why we set level ready only now:
     // surface recreate will try to repaint if this var is set (poking unity to do it)
@@ -203,13 +221,31 @@ extern bool _unityAppReady;
 {
     [self willTransitionToViewController: vc fromViewController: _rootController];
 
-    // first: hide window and remove view hierarchy
-    _window.hidden = YES; _rootController.view = nil; _window.rootViewController = nil;
-    // second: assign new root controller (and view hierarchy with that) and show it
-    _rootController = _window.rootViewController = vc; _rootController.view = _rootView; _window.hidden = NO;
+    // first: remove from view hierarchy.
+    // if we simply hide the window before assigning the new view controller, it will cause black frame flickering
+    // on the other hand, hiding the window is important by itself to better signal the intent to iOS
+    //   e.g. unless we hide the window view, safeArea might stop working (due to bug in iOS if we're to speculate)
+    // due to that we do this hide/unhide sequence: we want to to make it hidden, but still unhide it before changing window view controller.
+    _window.hidden = YES;
+    _window.hidden = NO;
+
+    _rootController.view = nil;
+    _window.rootViewController = nil;
+
+    // second: assign new root controller (and view hierarchy with that), restore bounds
+    _rootController = _window.rootViewController = vc;
+    _rootController.view = _rootView;
+
+    _window.bounds = [UIScreen mainScreen].bounds;
+    // required for iOS 8, otherwise view bounds will be incorrect
+    _rootView.bounds = _window.bounds;
+    _rootView.center = _window.center;
+
     // third: restore window as key and layout subviews to finalize size changes
     [_window makeKeyAndVisible];
     [_window layoutSubviews];
+
+    [self didTransitionToViewController: vc fromViewController: _rootController];
 }
 
 #if UNITY_SUPPORT_ROTATION
@@ -228,6 +264,49 @@ extern bool _unityAppReady;
 
 #endif
 
+#define ARRAY_SIZE(x) (sizeof(x) / sizeof(x[0]))
+
+- (void)executeForEveryViewController:(void(^)(UIViewController*))callback
+{
+    for (unsigned i = 0; i < ARRAY_SIZE(_viewControllerForOrientation); ++i)
+    {
+        UIViewController* vc = _viewControllerForOrientation[i];
+        if (vc)
+            callback(vc);
+    }
+}
+
+- (void)notifyHideHomeButtonChange
+{
+    // Note that we need to update all view controllers because UIKit won't necessarily
+    // update the properties of view controllers when orientation is changed.
+#if PLATFORM_IOS && UNITY_HAS_IOSSDK_11_0
+    if (@available(iOS 11.0, *))
+    {
+        [self executeForEveryViewController: ^(UIViewController* vc)
+        {
+            // setNeedsUpdateOfHomeIndicatorAutoHidden is not implemented on iOS 11.0.
+            // The bug has been fixed in iOS 11.0.1. See http://www.openradar.me/35127134
+            if ([vc respondsToSelector: @selector(setNeedsUpdateOfHomeIndicatorAutoHidden)])
+                [vc setNeedsUpdateOfHomeIndicatorAutoHidden];
+        }];
+    }
+#endif
+}
+
+- (void)notifyDeferSystemGesturesChange
+{
+#if PLATFORM_IOS && UNITY_HAS_IOSSDK_11_0
+    if (@available(iOS 11.0, *))
+    {
+        [self executeForEveryViewController: ^(UIViewController* vc)
+        {
+            [vc setNeedsUpdateOfScreenEdgesDeferringSystemGestures];
+        }];
+    }
+#endif
+}
+
 @end
 
 
@@ -242,57 +321,62 @@ extern bool _unityAppReady;
     return _viewControllerForOrientation[orientation];
 }
 
-- (bool)isCurrentInterfaceOrientationEnabled
-{
-    NSUInteger supportedOrientMask = EnabledAutorotationInterfaceOrientations();
-    NSUInteger currOrientMask = (1 << _curOrientation);
-    return (supportedOrientMask & currOrientMask) != 0;
-}
-
-- (void)forceAutorotatingControllerToRefreshEnabledOrientationsIfNeeded
-{
-    if (!UnityShouldAutorotate())
-        return;
-
-    if (![self isCurrentInterfaceOrientationEnabled])
-    {
-        // if the current orientation is disabled, attemptRotationToDeviceOrientation
-        // does nothing because we're trying to rotate the view controller away from
-        // the current device orientation
-        [self transitionToViewController: [self createSecondaryAutorotatingViewController]];
-    }
-    else
-        [UIViewController attemptRotationToDeviceOrientation];
-}
-
 - (void)checkOrientationRequest
 {
-    if (UnityHasOrientationRequest())
+    if (!UnityHasOrientationRequest() && !UnityShouldChangeAllowedOrientations())
+        return;
+
+    // normally we want to call attemptRotationToDeviceOrientation to tell iOS that we changed orientation constraints
+    // but if the current orientation is disabled we need special processing, as iOS will simply ignore us
+    //   the only good/robust way is to simply recreate "autorotating" view controller and transition to it if needed
+
+    // please note that we want to trigger "orientation request" code path if we recreate autorotating view controller
+    bool changeOrient = UnityHasOrientationRequest();
+
+    if (UnityShouldChangeAllowedOrientations())
+    {
+        // so we can say that the only corner case is when we are autorotating and will autorotate
+        //   AND changed allowed orientations while keeping current allowed
+        // in that case we simply trigger attemptRotationToDeviceOrientation and we are done
+        // please note that it this can happen when current *device* orientation is disabled (and we want to enable it)
+
+        NSUInteger rootOrient = 1 << UIViewControllerInterfaceOrientation(self.rootViewController);
+        if (UnityShouldAutorotate() && _rootController == _viewControllerForOrientation[0] && (rootOrient & EnabledAutorotationInterfaceOrientations()))
+        {
+            [UIViewController attemptRotationToDeviceOrientation];
+            return;
+        }
+
+        // otherwise we recreate default autorotating view controller
+        // please note that below we will check if root controller still equals _viewControllerForOrientation[0]
+        // in that case (we update _viewControllerForOrientation[0]) the check will fail and trigger transition (as expected)
+        // you may look at this check as "are we autorotating with same constraints"
+        _viewControllerForOrientation[0] = [self createUnityViewControllerDefault];
+        changeOrient = true;
+    }
+
+    if (changeOrient)
     {
         if (UnityShouldAutorotate())
         {
+            if (_viewControllerForOrientation[0] == nil)
+                _viewControllerForOrientation[0] = [self createUnityViewControllerDefault];
             if (_rootController != _viewControllerForOrientation[0])
-            {
-                [self transitionToViewController: [self createRootViewController]];
-                [UIViewController attemptRotationToDeviceOrientation];
-            }
-            else
-                [self forceAutorotatingControllerToRefreshEnabledOrientationsIfNeeded];
+                [self transitionToViewController: _viewControllerForOrientation[0]];
+            [UIViewController attemptRotationToDeviceOrientation];
         }
         else
         {
             ScreenOrientation requestedOrient = (ScreenOrientation)UnityRequestedScreenOrientation();
             [self orientInterface: ConvertToIosScreenOrientation(requestedOrient)];
         }
-        UnityOrientationRequestWasCommitted();
     }
+
+    UnityOrientationRequestWasCommitted();
 }
 
 - (void)orientInterface:(UIInterfaceOrientation)orient
 {
-    if (_curOrientation == orient && _rootController != _viewControllerForOrientation[0])
-        return;
-
     if (_unityAppReady)
         UnityFinishRendering();
 
@@ -322,3 +406,13 @@ extern bool _unityAppReady;
 @end
 
 #endif
+
+extern "C" void UnityNotifyHideHomeButtonChange()
+{
+    [GetAppController() notifyHideHomeButtonChange];
+}
+
+extern "C" void UnityNotifyDeferSystemGesturesChange()
+{
+    [GetAppController() notifyDeferSystemGesturesChange];
+}

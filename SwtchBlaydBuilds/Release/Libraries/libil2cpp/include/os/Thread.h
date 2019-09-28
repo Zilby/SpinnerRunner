@@ -57,6 +57,7 @@ namespace os
         ThreadPriority GetPriority();
 
         void SetStackSize(size_t stackSize);
+        static int GetMaxStackSize();
 
         void SetCleanupFunction(CleanupFunc cleanupFunc, void* arg)
         {
@@ -99,6 +100,7 @@ namespace os
         static void SetNativeThreadCleanup(ThreadCleanupFunc cleanupFunction);
         static void RegisterCurrentThreadForCleanup(void* arg);
         static void UnregisterCurrentThreadForCleanup();
+        void SignalExited();
 #endif
 
         static const uint64_t kInvalidThreadId = 0;

@@ -21,22 +21,14 @@
     DisplayConnection*  _mainDisplay;
 
     // We will cache view controllers used for fixed orientation (indexed by UIInterfaceOrientation).
-    // Default view contoller goes to index 0. The default view controller is
-    // used when autorotation is enabled.
+    // Default view contoller goes to index 0. The default view controller is used when autorotation is enabled.
     //
-    // There's no way to force iOS to change orientation when autorotation is enabled and
-    // the current orientation is disabled. [UIViewController attemptRotationToDeviceOrientation]
-    // is insufficient to force iOS to change orientation in this circumstance.
-    //
-    // To work around this there's an additional view controller. We switch to it when the
-    // autorotating view controller is used and we detect that the current orientation has been
-    // disabled. The controller is swapped with _viewControllerForOrientation[0] immediately,
-    // so _secondaryAutorotatingViewController is never the actual active controller and can be
-    // ignored for most purposes.
+    // There's no way to force iOS to change orientation when autorotation is enabled and the current orientation is disabled.
+    // [UIViewController attemptRotationToDeviceOrientation] is insufficient to force iOS to change orientation in this circumstance.
+    // We will recreate _viewControllerForOrientation[0] in that case immediately (see checkOrientationRequest for more comments)
 #if UNITY_SUPPORT_ROTATION
     UIViewController*       _viewControllerForOrientation[5];
     UIInterfaceOrientation  _curOrientation;
-    UIViewController*       _secondaryAutorotatingViewController;
 #else
     UIViewController*       _viewControllerForOrientation[1];
 #endif
@@ -77,6 +69,14 @@
 
 @end
 
+// accessing app controller
+
+extern UnityAppController* _UnityAppController;
+inline UnityAppController* GetAppController()
+{
+    return _UnityAppController;
+}
+
 // Put this into mm file with your subclass implementation
 // pass subclass name to define
 
@@ -94,10 +94,8 @@
 }                                               \
 @end                                            \
 
-inline UnityAppController*  GetAppController()
-{
-    return (UnityAppController*)[UIApplication sharedApplication].delegate;
-}
+
+// plugins
 
 #define APP_CONTROLLER_RENDER_PLUGIN_METHOD(method)                         \
 do {                                                                        \
@@ -135,5 +133,12 @@ void AppController_SendUnityViewControllerNotification(NSString* name);
 // However, tvOS SDK has it already in 10.2, but disabled.
 @interface UIScreen ()
 @property (readonly) NSInteger maximumFramesPerSecond;
+@end
+#endif
+
+#if (PLATFORM_IOS && !UNITY_HAS_IOSSDK_11_0) || (PLATFORM_TVOS && !UNITY_HAS_TVOSSDK_11_0)
+// The safeAreaInsets API is available in the SDKs since 11.0.
+@interface UIView ()
+@property (nonatomic, readonly) UIEdgeInsets safeAreaInsets;
 @end
 #endif

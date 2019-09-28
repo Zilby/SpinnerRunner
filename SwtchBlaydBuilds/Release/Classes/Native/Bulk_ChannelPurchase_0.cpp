@@ -6,6 +6,7 @@
 # include <malloc.h>
 #endif
 
+
 #include <cstring>
 #include <string.h>
 #include <stdio.h>
@@ -19,53 +20,45 @@
 #include "il2cpp-object-internals.h"
 
 
-// UnityEngine.ChannelPurchase.PurchaseForwardCallback
-struct PurchaseForwardCallback_t3627744015;
-// UnityEngine.ChannelPurchase.IPurchaseListener
-struct IPurchaseListener_t3176597229;
-// UnityEngine.AndroidJavaProxy
-struct AndroidJavaProxy_t2835824643;
+// System.Object[]
+struct ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A;
 // System.String
 struct String_t;
-// UnityEngine.AndroidJavaObject
-struct AndroidJavaObject_t4131667876;
-// System.Object[]
-struct ObjectU5BU5D_t2843939325;
 // UnityEngine.AndroidJavaClass
-struct AndroidJavaClass_t32045322;
-// UnityEngine.GlobalJavaObjectRef
-struct GlobalJavaObjectRef_t3225273728;
-// System.Char[]
-struct CharU5BU5D_t3528271667;
-// System.Void
-struct Void_t1185182177;
+struct AndroidJavaClass_tFC9C1064BF4849691FEDC988743C0C271C62FDC8;
+// UnityEngine.AndroidJavaObject
+struct AndroidJavaObject_t5B3829FB6E1DBC020F5BA17846F1351EAA982F8E;
+// UnityEngine.AndroidJavaProxy
+struct AndroidJavaProxy_tBF3E21C3639CF1A14BDC9173530DC13D45540795;
+// UnityEngine.ChannelPurchase.IPurchaseListener
+struct IPurchaseListener_tA4C69AC7EE35CB962A593E99A70F4C64F5D49C4B;
+// UnityEngine.ChannelPurchase.PurchaseForwardCallback
+struct PurchaseForwardCallback_tC1617A8286567EB8A6EC04207640307CDCBBB602;
 
-extern RuntimeClass* AndroidJavaProxy_t2835824643_il2cpp_TypeInfo_var;
-extern String_t* _stringLiteral2677875019;
-extern const uint32_t PurchaseForwardCallback__ctor_m1221040595_MetadataUsageId;
-extern RuntimeClass* PurchaseForwardCallback_t3627744015_il2cpp_TypeInfo_var;
-extern RuntimeClass* ObjectU5BU5D_t2843939325_il2cpp_TypeInfo_var;
-extern RuntimeClass* AndroidJavaObject_t4131667876_il2cpp_TypeInfo_var;
-extern RuntimeClass* String_t_il2cpp_TypeInfo_var;
-extern RuntimeClass* PurchaseService_t2241894207_il2cpp_TypeInfo_var;
-extern const RuntimeMethod* AndroidJavaObject_Set_TisString_t_m2428066008_RuntimeMethod_var;
-extern String_t* _stringLiteral1729848435;
-extern String_t* _stringLiteral121570947;
-extern String_t* _stringLiteral43791901;
-extern String_t* _stringLiteral3920973500;
-extern String_t* _stringLiteral369603133;
-extern const uint32_t PurchaseService_Purchase_m1787445135_MetadataUsageId;
-extern String_t* _stringLiteral232548031;
-extern const uint32_t PurchaseService_ValidateReceipt_m3570238123_MetadataUsageId;
-extern RuntimeClass* AndroidJavaClass_t32045322_il2cpp_TypeInfo_var;
-extern String_t* _stringLiteral1012026229;
-extern const uint32_t PurchaseService__cctor_m2402948696_MetadataUsageId;
+extern RuntimeClass* AndroidJavaClass_tFC9C1064BF4849691FEDC988743C0C271C62FDC8_il2cpp_TypeInfo_var;
+extern RuntimeClass* AndroidJavaObject_t5B3829FB6E1DBC020F5BA17846F1351EAA982F8E_il2cpp_TypeInfo_var;
+extern RuntimeClass* ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A_il2cpp_TypeInfo_var;
+extern RuntimeClass* PurchaseForwardCallback_tC1617A8286567EB8A6EC04207640307CDCBBB602_il2cpp_TypeInfo_var;
+extern RuntimeClass* PurchaseService_t7F12D5C55BBD81DB4420C2853172B9FED0FF3830_il2cpp_TypeInfo_var;
+extern String_t* _stringLiteral3B64CAA4AC5332E2069F86F967064FE587AF7820;
+extern String_t* _stringLiteral5C38A0DB4523DB58D7037B943EE48EA52C550961;
+extern String_t* _stringLiteral63ABAE7BC73526B86B58B1B64EADC99C5012BAD2;
+extern String_t* _stringLiteral86FFD853377A99EBBCE9C80D462E6123A4B2BA88;
+extern String_t* _stringLiteralCDBA822F8324B05B69E1AA552687ED7C8B37C97F;
+extern String_t* _stringLiteralD376CA2995B3D140552F1BF6BC31C2EDA6C9CFC8;
+extern String_t* _stringLiteralD8556CF7451C22FF4E069B286916B24EBBF72F1F;
+extern String_t* _stringLiteralF0D3E5409C4E6A8E3575A0F030882EC0FB1BECEB;
+extern const RuntimeMethod* AndroidJavaObject_Set_TisString_t_mD154A1FD76D63071E5543292304A88D96DE58CF9_RuntimeMethod_var;
+extern const uint32_t PurchaseForwardCallback__ctor_m7CED7BDF0821630616B072DAEDB1E34EED64E8D2_MetadataUsageId;
+extern const uint32_t PurchaseService_Purchase_mC65FF5DFE61961585B7E1666DADBA5DC047BE46A_MetadataUsageId;
+extern const uint32_t PurchaseService_ValidateReceipt_m98B3D125BE4906AB67D40336B9F20CA5B79CED82_MetadataUsageId;
+extern const uint32_t PurchaseService__cctor_m93DBD5AAC9D2DA63CB15A59EF8A1F35F00855660_MetadataUsageId;
 
-struct ObjectU5BU5D_t2843939325;
+struct ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A;
 
 
-#ifndef U3CMODULEU3E_T692745553_H
-#define U3CMODULEU3E_T692745553_H
+#ifndef U3CMODULEU3E_T71096C40DB5EF1F9198731474861C3FFADC0C040_H
+#define U3CMODULEU3E_T71096C40DB5EF1F9198731474861C3FFADC0C040_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
@@ -73,7 +66,7 @@ struct ObjectU5BU5D_t2843939325;
 #endif
 
 // <Module>
-struct  U3CModuleU3E_t692745553 
+struct  U3CModuleU3E_t71096C40DB5EF1F9198731474861C3FFADC0C040 
 {
 public:
 
@@ -83,7 +76,7 @@ public:
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // U3CMODULEU3E_T692745553_H
+#endif // U3CMODULEU3E_T71096C40DB5EF1F9198731474861C3FFADC0C040_H
 #ifndef RUNTIMEOBJECT_H
 #define RUNTIMEOBJECT_H
 #ifdef __clang__
@@ -113,139 +106,6 @@ struct Il2CppArrayBounds;
 #pragma clang diagnostic pop
 #endif
 #endif // RUNTIMEARRAY_H
-#ifndef VALUETYPE_T3640485471_H
-#define VALUETYPE_T3640485471_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.ValueType
-struct  ValueType_t3640485471  : public RuntimeObject
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-// Native definition for P/Invoke marshalling of System.ValueType
-struct ValueType_t3640485471_marshaled_pinvoke
-{
-};
-// Native definition for COM marshalling of System.ValueType
-struct ValueType_t3640485471_marshaled_com
-{
-};
-#endif // VALUETYPE_T3640485471_H
-#ifndef ANDROIDJAVAOBJECT_T4131667876_H
-#define ANDROIDJAVAOBJECT_T4131667876_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// UnityEngine.AndroidJavaObject
-struct  AndroidJavaObject_t4131667876  : public RuntimeObject
-{
-public:
-	// UnityEngine.GlobalJavaObjectRef UnityEngine.AndroidJavaObject::m_jobject
-	GlobalJavaObjectRef_t3225273728 * ___m_jobject_1;
-	// UnityEngine.GlobalJavaObjectRef UnityEngine.AndroidJavaObject::m_jclass
-	GlobalJavaObjectRef_t3225273728 * ___m_jclass_2;
-
-public:
-	inline static int32_t get_offset_of_m_jobject_1() { return static_cast<int32_t>(offsetof(AndroidJavaObject_t4131667876, ___m_jobject_1)); }
-	inline GlobalJavaObjectRef_t3225273728 * get_m_jobject_1() const { return ___m_jobject_1; }
-	inline GlobalJavaObjectRef_t3225273728 ** get_address_of_m_jobject_1() { return &___m_jobject_1; }
-	inline void set_m_jobject_1(GlobalJavaObjectRef_t3225273728 * value)
-	{
-		___m_jobject_1 = value;
-		Il2CppCodeGenWriteBarrier((&___m_jobject_1), value);
-	}
-
-	inline static int32_t get_offset_of_m_jclass_2() { return static_cast<int32_t>(offsetof(AndroidJavaObject_t4131667876, ___m_jclass_2)); }
-	inline GlobalJavaObjectRef_t3225273728 * get_m_jclass_2() const { return ___m_jclass_2; }
-	inline GlobalJavaObjectRef_t3225273728 ** get_address_of_m_jclass_2() { return &___m_jclass_2; }
-	inline void set_m_jclass_2(GlobalJavaObjectRef_t3225273728 * value)
-	{
-		___m_jclass_2 = value;
-		Il2CppCodeGenWriteBarrier((&___m_jclass_2), value);
-	}
-};
-
-struct AndroidJavaObject_t4131667876_StaticFields
-{
-public:
-	// System.Boolean UnityEngine.AndroidJavaObject::enableDebugPrints
-	bool ___enableDebugPrints_0;
-	// UnityEngine.AndroidJavaClass UnityEngine.AndroidJavaObject::s_JavaLangClass
-	AndroidJavaClass_t32045322 * ___s_JavaLangClass_3;
-
-public:
-	inline static int32_t get_offset_of_enableDebugPrints_0() { return static_cast<int32_t>(offsetof(AndroidJavaObject_t4131667876_StaticFields, ___enableDebugPrints_0)); }
-	inline bool get_enableDebugPrints_0() const { return ___enableDebugPrints_0; }
-	inline bool* get_address_of_enableDebugPrints_0() { return &___enableDebugPrints_0; }
-	inline void set_enableDebugPrints_0(bool value)
-	{
-		___enableDebugPrints_0 = value;
-	}
-
-	inline static int32_t get_offset_of_s_JavaLangClass_3() { return static_cast<int32_t>(offsetof(AndroidJavaObject_t4131667876_StaticFields, ___s_JavaLangClass_3)); }
-	inline AndroidJavaClass_t32045322 * get_s_JavaLangClass_3() const { return ___s_JavaLangClass_3; }
-	inline AndroidJavaClass_t32045322 ** get_address_of_s_JavaLangClass_3() { return &___s_JavaLangClass_3; }
-	inline void set_s_JavaLangClass_3(AndroidJavaClass_t32045322 * value)
-	{
-		___s_JavaLangClass_3 = value;
-		Il2CppCodeGenWriteBarrier((&___s_JavaLangClass_3), value);
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // ANDROIDJAVAOBJECT_T4131667876_H
-#ifndef PURCHASESERVICE_T2241894207_H
-#define PURCHASESERVICE_T2241894207_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// UnityEngine.ChannelPurchase.PurchaseService
-struct  PurchaseService_t2241894207  : public RuntimeObject
-{
-public:
-
-public:
-};
-
-struct PurchaseService_t2241894207_StaticFields
-{
-public:
-	// UnityEngine.AndroidJavaClass UnityEngine.ChannelPurchase.PurchaseService::serviceClass
-	AndroidJavaClass_t32045322 * ___serviceClass_0;
-
-public:
-	inline static int32_t get_offset_of_serviceClass_0() { return static_cast<int32_t>(offsetof(PurchaseService_t2241894207_StaticFields, ___serviceClass_0)); }
-	inline AndroidJavaClass_t32045322 * get_serviceClass_0() const { return ___serviceClass_0; }
-	inline AndroidJavaClass_t32045322 ** get_address_of_serviceClass_0() { return &___serviceClass_0; }
-	inline void set_serviceClass_0(AndroidJavaClass_t32045322 * value)
-	{
-		___serviceClass_0 = value;
-		Il2CppCodeGenWriteBarrier((&___serviceClass_0), value);
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // PURCHASESERVICE_T2241894207_H
 #ifndef STRING_T_H
 #define STRING_T_H
 #ifdef __clang__
@@ -258,26 +118,26 @@ public:
 struct  String_t  : public RuntimeObject
 {
 public:
-	// System.Int32 System.String::length
-	int32_t ___length_0;
-	// System.Char System.String::start_char
-	Il2CppChar ___start_char_1;
+	// System.Int32 System.String::m_stringLength
+	int32_t ___m_stringLength_0;
+	// System.Char System.String::m_firstChar
+	Il2CppChar ___m_firstChar_1;
 
 public:
-	inline static int32_t get_offset_of_length_0() { return static_cast<int32_t>(offsetof(String_t, ___length_0)); }
-	inline int32_t get_length_0() const { return ___length_0; }
-	inline int32_t* get_address_of_length_0() { return &___length_0; }
-	inline void set_length_0(int32_t value)
+	inline static int32_t get_offset_of_m_stringLength_0() { return static_cast<int32_t>(offsetof(String_t, ___m_stringLength_0)); }
+	inline int32_t get_m_stringLength_0() const { return ___m_stringLength_0; }
+	inline int32_t* get_address_of_m_stringLength_0() { return &___m_stringLength_0; }
+	inline void set_m_stringLength_0(int32_t value)
 	{
-		___length_0 = value;
+		___m_stringLength_0 = value;
 	}
 
-	inline static int32_t get_offset_of_start_char_1() { return static_cast<int32_t>(offsetof(String_t, ___start_char_1)); }
-	inline Il2CppChar get_start_char_1() const { return ___start_char_1; }
-	inline Il2CppChar* get_address_of_start_char_1() { return &___start_char_1; }
-	inline void set_start_char_1(Il2CppChar value)
+	inline static int32_t get_offset_of_m_firstChar_1() { return static_cast<int32_t>(offsetof(String_t, ___m_firstChar_1)); }
+	inline Il2CppChar get_m_firstChar_1() const { return ___m_firstChar_1; }
+	inline Il2CppChar* get_address_of_m_firstChar_1() { return &___m_firstChar_1; }
+	inline void set_m_firstChar_1(Il2CppChar value)
 	{
-		___start_char_1 = value;
+		___m_firstChar_1 = value;
 	}
 };
 
@@ -285,27 +145,16 @@ struct String_t_StaticFields
 {
 public:
 	// System.String System.String::Empty
-	String_t* ___Empty_2;
-	// System.Char[] System.String::WhiteChars
-	CharU5BU5D_t3528271667* ___WhiteChars_3;
+	String_t* ___Empty_5;
 
 public:
-	inline static int32_t get_offset_of_Empty_2() { return static_cast<int32_t>(offsetof(String_t_StaticFields, ___Empty_2)); }
-	inline String_t* get_Empty_2() const { return ___Empty_2; }
-	inline String_t** get_address_of_Empty_2() { return &___Empty_2; }
-	inline void set_Empty_2(String_t* value)
+	inline static int32_t get_offset_of_Empty_5() { return static_cast<int32_t>(offsetof(String_t_StaticFields, ___Empty_5)); }
+	inline String_t* get_Empty_5() const { return ___Empty_5; }
+	inline String_t** get_address_of_Empty_5() { return &___Empty_5; }
+	inline void set_Empty_5(String_t* value)
 	{
-		___Empty_2 = value;
-		Il2CppCodeGenWriteBarrier((&___Empty_2), value);
-	}
-
-	inline static int32_t get_offset_of_WhiteChars_3() { return static_cast<int32_t>(offsetof(String_t_StaticFields, ___WhiteChars_3)); }
-	inline CharU5BU5D_t3528271667* get_WhiteChars_3() const { return ___WhiteChars_3; }
-	inline CharU5BU5D_t3528271667** get_address_of_WhiteChars_3() { return &___WhiteChars_3; }
-	inline void set_WhiteChars_3(CharU5BU5D_t3528271667* value)
-	{
-		___WhiteChars_3 = value;
-		Il2CppCodeGenWriteBarrier((&___WhiteChars_3), value);
+		___Empty_5 = value;
+		Il2CppCodeGenWriteBarrier((&___Empty_5), value);
 	}
 };
 
@@ -313,16 +162,16 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // STRING_T_H
-#ifndef ANDROIDJAVACLASS_T32045322_H
-#define ANDROIDJAVACLASS_T32045322_H
+#ifndef VALUETYPE_T4D0C27076F7C36E76190FB3328E232BCB1CD1FFF_H
+#define VALUETYPE_T4D0C27076F7C36E76190FB3328E232BCB1CD1FFF_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 
-// UnityEngine.AndroidJavaClass
-struct  AndroidJavaClass_t32045322  : public AndroidJavaObject_t4131667876
+// System.ValueType
+struct  ValueType_t4D0C27076F7C36E76190FB3328E232BCB1CD1FFF  : public RuntimeObject
 {
 public:
 
@@ -332,74 +181,25 @@ public:
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // ANDROIDJAVACLASS_T32045322_H
-#ifndef BOOLEAN_T97287965_H
-#define BOOLEAN_T97287965_H
+// Native definition for P/Invoke marshalling of System.ValueType
+struct ValueType_t4D0C27076F7C36E76190FB3328E232BCB1CD1FFF_marshaled_pinvoke
+{
+};
+// Native definition for COM marshalling of System.ValueType
+struct ValueType_t4D0C27076F7C36E76190FB3328E232BCB1CD1FFF_marshaled_com
+{
+};
+#endif // VALUETYPE_T4D0C27076F7C36E76190FB3328E232BCB1CD1FFF_H
+#ifndef ANDROIDJAVAOBJECT_T5B3829FB6E1DBC020F5BA17846F1351EAA982F8E_H
+#define ANDROIDJAVAOBJECT_T5B3829FB6E1DBC020F5BA17846F1351EAA982F8E_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 
-// System.Boolean
-struct  Boolean_t97287965 
-{
-public:
-	// System.Boolean System.Boolean::m_value
-	bool ___m_value_2;
-
-public:
-	inline static int32_t get_offset_of_m_value_2() { return static_cast<int32_t>(offsetof(Boolean_t97287965, ___m_value_2)); }
-	inline bool get_m_value_2() const { return ___m_value_2; }
-	inline bool* get_address_of_m_value_2() { return &___m_value_2; }
-	inline void set_m_value_2(bool value)
-	{
-		___m_value_2 = value;
-	}
-};
-
-struct Boolean_t97287965_StaticFields
-{
-public:
-	// System.String System.Boolean::FalseString
-	String_t* ___FalseString_0;
-	// System.String System.Boolean::TrueString
-	String_t* ___TrueString_1;
-
-public:
-	inline static int32_t get_offset_of_FalseString_0() { return static_cast<int32_t>(offsetof(Boolean_t97287965_StaticFields, ___FalseString_0)); }
-	inline String_t* get_FalseString_0() const { return ___FalseString_0; }
-	inline String_t** get_address_of_FalseString_0() { return &___FalseString_0; }
-	inline void set_FalseString_0(String_t* value)
-	{
-		___FalseString_0 = value;
-		Il2CppCodeGenWriteBarrier((&___FalseString_0), value);
-	}
-
-	inline static int32_t get_offset_of_TrueString_1() { return static_cast<int32_t>(offsetof(Boolean_t97287965_StaticFields, ___TrueString_1)); }
-	inline String_t* get_TrueString_1() const { return ___TrueString_1; }
-	inline String_t** get_address_of_TrueString_1() { return &___TrueString_1; }
-	inline void set_TrueString_1(String_t* value)
-	{
-		___TrueString_1 = value;
-		Il2CppCodeGenWriteBarrier((&___TrueString_1), value);
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // BOOLEAN_T97287965_H
-#ifndef VOID_T1185182177_H
-#define VOID_T1185182177_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.Void
-struct  Void_t1185182177 
+// UnityEngine.AndroidJavaObject
+struct  AndroidJavaObject_t5B3829FB6E1DBC020F5BA17846F1351EAA982F8E  : public RuntimeObject
 {
 public:
 
@@ -409,54 +209,9 @@ public:
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // VOID_T1185182177_H
-#ifndef INTPTR_T_H
-#define INTPTR_T_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// System.IntPtr
-struct  IntPtr_t 
-{
-public:
-	// System.Void* System.IntPtr::m_value
-	void* ___m_value_0;
-
-public:
-	inline static int32_t get_offset_of_m_value_0() { return static_cast<int32_t>(offsetof(IntPtr_t, ___m_value_0)); }
-	inline void* get_m_value_0() const { return ___m_value_0; }
-	inline void** get_address_of_m_value_0() { return &___m_value_0; }
-	inline void set_m_value_0(void* value)
-	{
-		___m_value_0 = value;
-	}
-};
-
-struct IntPtr_t_StaticFields
-{
-public:
-	// System.IntPtr System.IntPtr::Zero
-	intptr_t ___Zero_1;
-
-public:
-	inline static int32_t get_offset_of_Zero_1() { return static_cast<int32_t>(offsetof(IntPtr_t_StaticFields, ___Zero_1)); }
-	inline intptr_t get_Zero_1() const { return ___Zero_1; }
-	inline intptr_t* get_address_of_Zero_1() { return &___Zero_1; }
-	inline void set_Zero_1(intptr_t value)
-	{
-		___Zero_1 = value;
-	}
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // INTPTR_T_H
-#ifndef ANDROIDJAVAPROXY_T2835824643_H
-#define ANDROIDJAVAPROXY_T2835824643_H
+#endif // ANDROIDJAVAOBJECT_T5B3829FB6E1DBC020F5BA17846F1351EAA982F8E_H
+#ifndef ANDROIDJAVAPROXY_TBF3E21C3639CF1A14BDC9173530DC13D45540795_H
+#define ANDROIDJAVAPROXY_TBF3E21C3639CF1A14BDC9173530DC13D45540795_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
@@ -464,67 +219,160 @@ public:
 #endif
 
 // UnityEngine.AndroidJavaProxy
-struct  AndroidJavaProxy_t2835824643  : public RuntimeObject
+struct  AndroidJavaProxy_tBF3E21C3639CF1A14BDC9173530DC13D45540795  : public RuntimeObject
 {
 public:
-	// UnityEngine.AndroidJavaClass UnityEngine.AndroidJavaProxy::javaInterface
-	AndroidJavaClass_t32045322 * ___javaInterface_0;
-	// UnityEngine.AndroidJavaObject UnityEngine.AndroidJavaProxy::proxyObject
-	AndroidJavaObject_t4131667876 * ___proxyObject_1;
 
 public:
-	inline static int32_t get_offset_of_javaInterface_0() { return static_cast<int32_t>(offsetof(AndroidJavaProxy_t2835824643, ___javaInterface_0)); }
-	inline AndroidJavaClass_t32045322 * get_javaInterface_0() const { return ___javaInterface_0; }
-	inline AndroidJavaClass_t32045322 ** get_address_of_javaInterface_0() { return &___javaInterface_0; }
-	inline void set_javaInterface_0(AndroidJavaClass_t32045322 * value)
-	{
-		___javaInterface_0 = value;
-		Il2CppCodeGenWriteBarrier((&___javaInterface_0), value);
-	}
-
-	inline static int32_t get_offset_of_proxyObject_1() { return static_cast<int32_t>(offsetof(AndroidJavaProxy_t2835824643, ___proxyObject_1)); }
-	inline AndroidJavaObject_t4131667876 * get_proxyObject_1() const { return ___proxyObject_1; }
-	inline AndroidJavaObject_t4131667876 ** get_address_of_proxyObject_1() { return &___proxyObject_1; }
-	inline void set_proxyObject_1(AndroidJavaObject_t4131667876 * value)
-	{
-		___proxyObject_1 = value;
-		Il2CppCodeGenWriteBarrier((&___proxyObject_1), value);
-	}
 };
 
-struct AndroidJavaProxy_t2835824643_StaticFields
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // ANDROIDJAVAPROXY_TBF3E21C3639CF1A14BDC9173530DC13D45540795_H
+#ifndef PURCHASESERVICE_T7F12D5C55BBD81DB4420C2853172B9FED0FF3830_H
+#define PURCHASESERVICE_T7F12D5C55BBD81DB4420C2853172B9FED0FF3830_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// UnityEngine.ChannelPurchase.PurchaseService
+struct  PurchaseService_t7F12D5C55BBD81DB4420C2853172B9FED0FF3830  : public RuntimeObject
 {
 public:
-	// UnityEngine.GlobalJavaObjectRef UnityEngine.AndroidJavaProxy::s_JavaLangSystemClass
-	GlobalJavaObjectRef_t3225273728 * ___s_JavaLangSystemClass_2;
-	// System.IntPtr UnityEngine.AndroidJavaProxy::s_HashCodeMethodID
-	intptr_t ___s_HashCodeMethodID_3;
 
 public:
-	inline static int32_t get_offset_of_s_JavaLangSystemClass_2() { return static_cast<int32_t>(offsetof(AndroidJavaProxy_t2835824643_StaticFields, ___s_JavaLangSystemClass_2)); }
-	inline GlobalJavaObjectRef_t3225273728 * get_s_JavaLangSystemClass_2() const { return ___s_JavaLangSystemClass_2; }
-	inline GlobalJavaObjectRef_t3225273728 ** get_address_of_s_JavaLangSystemClass_2() { return &___s_JavaLangSystemClass_2; }
-	inline void set_s_JavaLangSystemClass_2(GlobalJavaObjectRef_t3225273728 * value)
-	{
-		___s_JavaLangSystemClass_2 = value;
-		Il2CppCodeGenWriteBarrier((&___s_JavaLangSystemClass_2), value);
-	}
+};
 
-	inline static int32_t get_offset_of_s_HashCodeMethodID_3() { return static_cast<int32_t>(offsetof(AndroidJavaProxy_t2835824643_StaticFields, ___s_HashCodeMethodID_3)); }
-	inline intptr_t get_s_HashCodeMethodID_3() const { return ___s_HashCodeMethodID_3; }
-	inline intptr_t* get_address_of_s_HashCodeMethodID_3() { return &___s_HashCodeMethodID_3; }
-	inline void set_s_HashCodeMethodID_3(intptr_t value)
+struct PurchaseService_t7F12D5C55BBD81DB4420C2853172B9FED0FF3830_StaticFields
+{
+public:
+	// UnityEngine.AndroidJavaClass UnityEngine.ChannelPurchase.PurchaseService::serviceClass
+	AndroidJavaClass_tFC9C1064BF4849691FEDC988743C0C271C62FDC8 * ___serviceClass_0;
+
+public:
+	inline static int32_t get_offset_of_serviceClass_0() { return static_cast<int32_t>(offsetof(PurchaseService_t7F12D5C55BBD81DB4420C2853172B9FED0FF3830_StaticFields, ___serviceClass_0)); }
+	inline AndroidJavaClass_tFC9C1064BF4849691FEDC988743C0C271C62FDC8 * get_serviceClass_0() const { return ___serviceClass_0; }
+	inline AndroidJavaClass_tFC9C1064BF4849691FEDC988743C0C271C62FDC8 ** get_address_of_serviceClass_0() { return &___serviceClass_0; }
+	inline void set_serviceClass_0(AndroidJavaClass_tFC9C1064BF4849691FEDC988743C0C271C62FDC8 * value)
 	{
-		___s_HashCodeMethodID_3 = value;
+		___serviceClass_0 = value;
+		Il2CppCodeGenWriteBarrier((&___serviceClass_0), value);
 	}
 };
 
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // ANDROIDJAVAPROXY_T2835824643_H
-#ifndef PURCHASEFORWARDCALLBACK_T3627744015_H
-#define PURCHASEFORWARDCALLBACK_T3627744015_H
+#endif // PURCHASESERVICE_T7F12D5C55BBD81DB4420C2853172B9FED0FF3830_H
+#ifndef BOOLEAN_TB53F6830F670160873277339AA58F15CAED4399C_H
+#define BOOLEAN_TB53F6830F670160873277339AA58F15CAED4399C_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Boolean
+struct  Boolean_tB53F6830F670160873277339AA58F15CAED4399C 
+{
+public:
+	// System.Boolean System.Boolean::m_value
+	bool ___m_value_0;
+
+public:
+	inline static int32_t get_offset_of_m_value_0() { return static_cast<int32_t>(offsetof(Boolean_tB53F6830F670160873277339AA58F15CAED4399C, ___m_value_0)); }
+	inline bool get_m_value_0() const { return ___m_value_0; }
+	inline bool* get_address_of_m_value_0() { return &___m_value_0; }
+	inline void set_m_value_0(bool value)
+	{
+		___m_value_0 = value;
+	}
+};
+
+struct Boolean_tB53F6830F670160873277339AA58F15CAED4399C_StaticFields
+{
+public:
+	// System.String System.Boolean::TrueString
+	String_t* ___TrueString_5;
+	// System.String System.Boolean::FalseString
+	String_t* ___FalseString_6;
+
+public:
+	inline static int32_t get_offset_of_TrueString_5() { return static_cast<int32_t>(offsetof(Boolean_tB53F6830F670160873277339AA58F15CAED4399C_StaticFields, ___TrueString_5)); }
+	inline String_t* get_TrueString_5() const { return ___TrueString_5; }
+	inline String_t** get_address_of_TrueString_5() { return &___TrueString_5; }
+	inline void set_TrueString_5(String_t* value)
+	{
+		___TrueString_5 = value;
+		Il2CppCodeGenWriteBarrier((&___TrueString_5), value);
+	}
+
+	inline static int32_t get_offset_of_FalseString_6() { return static_cast<int32_t>(offsetof(Boolean_tB53F6830F670160873277339AA58F15CAED4399C_StaticFields, ___FalseString_6)); }
+	inline String_t* get_FalseString_6() const { return ___FalseString_6; }
+	inline String_t** get_address_of_FalseString_6() { return &___FalseString_6; }
+	inline void set_FalseString_6(String_t* value)
+	{
+		___FalseString_6 = value;
+		Il2CppCodeGenWriteBarrier((&___FalseString_6), value);
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // BOOLEAN_TB53F6830F670160873277339AA58F15CAED4399C_H
+#ifndef VOID_T22962CB4C05B1D89B55A6E1139F0E87A90987017_H
+#define VOID_T22962CB4C05B1D89B55A6E1139F0E87A90987017_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Void
+struct  Void_t22962CB4C05B1D89B55A6E1139F0E87A90987017 
+{
+public:
+	union
+	{
+		struct
+		{
+		};
+		uint8_t Void_t22962CB4C05B1D89B55A6E1139F0E87A90987017__padding[1];
+	};
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // VOID_T22962CB4C05B1D89B55A6E1139F0E87A90987017_H
+#ifndef ANDROIDJAVACLASS_TFC9C1064BF4849691FEDC988743C0C271C62FDC8_H
+#define ANDROIDJAVACLASS_TFC9C1064BF4849691FEDC988743C0C271C62FDC8_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// UnityEngine.AndroidJavaClass
+struct  AndroidJavaClass_tFC9C1064BF4849691FEDC988743C0C271C62FDC8  : public AndroidJavaObject_t5B3829FB6E1DBC020F5BA17846F1351EAA982F8E
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // ANDROIDJAVACLASS_TFC9C1064BF4849691FEDC988743C0C271C62FDC8_H
+#ifndef PURCHASEFORWARDCALLBACK_TC1617A8286567EB8A6EC04207640307CDCBBB602_H
+#define PURCHASEFORWARDCALLBACK_TC1617A8286567EB8A6EC04207640307CDCBBB602_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
@@ -532,29 +380,29 @@ public:
 #endif
 
 // UnityEngine.ChannelPurchase.PurchaseForwardCallback
-struct  PurchaseForwardCallback_t3627744015  : public AndroidJavaProxy_t2835824643
+struct  PurchaseForwardCallback_tC1617A8286567EB8A6EC04207640307CDCBBB602  : public AndroidJavaProxy_tBF3E21C3639CF1A14BDC9173530DC13D45540795
 {
 public:
 	// UnityEngine.ChannelPurchase.IPurchaseListener UnityEngine.ChannelPurchase.PurchaseForwardCallback::purchaseListener
-	RuntimeObject* ___purchaseListener_4;
+	RuntimeObject* ___purchaseListener_0;
 
 public:
-	inline static int32_t get_offset_of_purchaseListener_4() { return static_cast<int32_t>(offsetof(PurchaseForwardCallback_t3627744015, ___purchaseListener_4)); }
-	inline RuntimeObject* get_purchaseListener_4() const { return ___purchaseListener_4; }
-	inline RuntimeObject** get_address_of_purchaseListener_4() { return &___purchaseListener_4; }
-	inline void set_purchaseListener_4(RuntimeObject* value)
+	inline static int32_t get_offset_of_purchaseListener_0() { return static_cast<int32_t>(offsetof(PurchaseForwardCallback_tC1617A8286567EB8A6EC04207640307CDCBBB602, ___purchaseListener_0)); }
+	inline RuntimeObject* get_purchaseListener_0() const { return ___purchaseListener_0; }
+	inline RuntimeObject** get_address_of_purchaseListener_0() { return &___purchaseListener_0; }
+	inline void set_purchaseListener_0(RuntimeObject* value)
 	{
-		___purchaseListener_4 = value;
-		Il2CppCodeGenWriteBarrier((&___purchaseListener_4), value);
+		___purchaseListener_0 = value;
+		Il2CppCodeGenWriteBarrier((&___purchaseListener_0), value);
 	}
 };
 
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // PURCHASEFORWARDCALLBACK_T3627744015_H
+#endif // PURCHASEFORWARDCALLBACK_TC1617A8286567EB8A6EC04207640307CDCBBB602_H
 // System.Object[]
-struct ObjectU5BU5D_t2843939325  : public RuntimeArray
+struct ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A  : public RuntimeArray
 {
 public:
 	ALIGN_FIELD (8) RuntimeObject * m_Items[1];
@@ -593,22 +441,25 @@ public:
 
 
 // System.Void UnityEngine.AndroidJavaObject::Set<System.Object>(System.String,!!0)
-extern "C"  void AndroidJavaObject_Set_TisRuntimeObject_m2151407540_gshared (AndroidJavaObject_t4131667876 * __this, String_t* p0, RuntimeObject * p1, const RuntimeMethod* method);
+extern "C" IL2CPP_METHOD_ATTR void AndroidJavaObject_Set_TisRuntimeObject_m3FF3F7ECA96A0D4185EC5CEF72CE143060DC4C6C_gshared (AndroidJavaObject_t5B3829FB6E1DBC020F5BA17846F1351EAA982F8E * __this, String_t* p0, RuntimeObject * p1, const RuntimeMethod* method);
 
 // System.Void UnityEngine.AndroidJavaProxy::.ctor(System.String)
-extern "C"  void AndroidJavaProxy__ctor_m545570009 (AndroidJavaProxy_t2835824643 * __this, String_t* p0, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
+extern "C" IL2CPP_METHOD_ATTR void AndroidJavaProxy__ctor_m494FCB49700BAC1D9C7CDF1C2A920335166507BA (AndroidJavaProxy_tBF3E21C3639CF1A14BDC9173530DC13D45540795 * __this, String_t* p0, const RuntimeMethod* method);
 // System.Void UnityEngine.ChannelPurchase.PurchaseForwardCallback::.ctor(UnityEngine.ChannelPurchase.IPurchaseListener)
-extern "C"  void PurchaseForwardCallback__ctor_m1221040595 (PurchaseForwardCallback_t3627744015 * __this, RuntimeObject* ___purchaseListener0, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
+extern "C" IL2CPP_METHOD_ATTR void PurchaseForwardCallback__ctor_m7CED7BDF0821630616B072DAEDB1E34EED64E8D2 (PurchaseForwardCallback_tC1617A8286567EB8A6EC04207640307CDCBBB602 * __this, RuntimeObject* ___purchaseListener0, const RuntimeMethod* method);
 // System.Void UnityEngine.AndroidJavaObject::.ctor(System.String,System.Object[])
-extern "C"  void AndroidJavaObject__ctor_m3828648572 (AndroidJavaObject_t4131667876 * __this, String_t* p0, ObjectU5BU5D_t2843939325* p1, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
+extern "C" IL2CPP_METHOD_ATTR void AndroidJavaObject__ctor_mBD417486B0BD80E4CE3677B3AC825B3EA9BC7E5C (AndroidJavaObject_t5B3829FB6E1DBC020F5BA17846F1351EAA982F8E * __this, String_t* p0, ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A* p1, const RuntimeMethod* method);
 // System.Void UnityEngine.AndroidJavaObject::Set<System.String>(System.String,!!0)
-#define AndroidJavaObject_Set_TisString_t_m2428066008(__this, p0, p1, method) ((  void (*) (AndroidJavaObject_t4131667876 *, String_t*, String_t*, const RuntimeMethod*))AndroidJavaObject_Set_TisRuntimeObject_m2151407540_gshared)(__this, p0, p1, method)
+inline void AndroidJavaObject_Set_TisString_t_mD154A1FD76D63071E5543292304A88D96DE58CF9 (AndroidJavaObject_t5B3829FB6E1DBC020F5BA17846F1351EAA982F8E * __this, String_t* p0, String_t* p1, const RuntimeMethod* method)
+{
+	((  void (*) (AndroidJavaObject_t5B3829FB6E1DBC020F5BA17846F1351EAA982F8E *, String_t*, String_t*, const RuntimeMethod*))AndroidJavaObject_Set_TisRuntimeObject_m3FF3F7ECA96A0D4185EC5CEF72CE143060DC4C6C_gshared)(__this, p0, p1, method);
+}
 // System.Boolean System.String::IsNullOrEmpty(System.String)
-extern "C"  bool String_IsNullOrEmpty_m2969720369 (RuntimeObject * __this /* static, unused */, String_t* p0, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
+extern "C" IL2CPP_METHOD_ATTR bool String_IsNullOrEmpty_m06A85A206AC2106D1982826C5665B9BD35324229 (String_t* p0, const RuntimeMethod* method);
 // System.Void UnityEngine.AndroidJavaObject::CallStatic(System.String,System.Object[])
-extern "C"  void AndroidJavaObject_CallStatic_m2922144688 (AndroidJavaObject_t4131667876 * __this, String_t* p0, ObjectU5BU5D_t2843939325* p1, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
+extern "C" IL2CPP_METHOD_ATTR void AndroidJavaObject_CallStatic_m15D79353CF1311C8F1CC4157EDE1A3FBD23C5DCE (AndroidJavaObject_t5B3829FB6E1DBC020F5BA17846F1351EAA982F8E * __this, String_t* p0, ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A* p1, const RuntimeMethod* method);
 // System.Void UnityEngine.AndroidJavaClass::.ctor(System.String)
-extern "C"  void AndroidJavaClass__ctor_m366853020 (AndroidJavaClass_t32045322 * __this, String_t* p0, const RuntimeMethod* method) IL2CPP_METHOD_ATTR;
+extern "C" IL2CPP_METHOD_ATTR void AndroidJavaClass__ctor_mFE0A07AF3670152225C146493AC0918138B81E34 (AndroidJavaClass_tFC9C1064BF4849691FEDC988743C0C271C62FDC8 * __this, String_t* p0, const RuntimeMethod* method);
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
@@ -623,19 +474,18 @@ extern "C"  void AndroidJavaClass__ctor_m366853020 (AndroidJavaClass_t32045322 *
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 // System.Void UnityEngine.ChannelPurchase.PurchaseForwardCallback::.ctor(UnityEngine.ChannelPurchase.IPurchaseListener)
-extern "C"  void PurchaseForwardCallback__ctor_m1221040595 (PurchaseForwardCallback_t3627744015 * __this, RuntimeObject* ___purchaseListener0, const RuntimeMethod* method)
+extern "C" IL2CPP_METHOD_ATTR void PurchaseForwardCallback__ctor_m7CED7BDF0821630616B072DAEDB1E34EED64E8D2 (PurchaseForwardCallback_tC1617A8286567EB8A6EC04207640307CDCBBB602 * __this, RuntimeObject* ___purchaseListener0, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_method (PurchaseForwardCallback__ctor_m1221040595_MetadataUsageId);
+		il2cpp_codegen_initialize_method (PurchaseForwardCallback__ctor_m7CED7BDF0821630616B072DAEDB1E34EED64E8D2_MetadataUsageId);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		IL2CPP_RUNTIME_CLASS_INIT(AndroidJavaProxy_t2835824643_il2cpp_TypeInfo_var);
-		AndroidJavaProxy__ctor_m545570009(__this, _stringLiteral2677875019, /*hidden argument*/NULL);
+		AndroidJavaProxy__ctor_m494FCB49700BAC1D9C7CDF1C2A920335166507BA(__this, _stringLiteral63ABAE7BC73526B86B58B1B64EADC99C5012BAD2, /*hidden argument*/NULL);
 		RuntimeObject* L_0 = ___purchaseListener0;
-		__this->set_purchaseListener_4(L_0);
+		__this->set_purchaseListener_0(L_0);
 		return;
 	}
 }
@@ -648,114 +498,116 @@ extern "C"  void PurchaseForwardCallback__ctor_m1221040595 (PurchaseForwardCallb
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 // System.Void UnityEngine.ChannelPurchase.PurchaseService::Purchase(System.String,System.String,UnityEngine.ChannelPurchase.IPurchaseListener,System.String)
-extern "C"  void PurchaseService_Purchase_m1787445135 (RuntimeObject * __this /* static, unused */, String_t* ___productCode0, String_t* ___gameOrderId1, RuntimeObject* ___listener2, String_t* ___developerPayload3, const RuntimeMethod* method)
+extern "C" IL2CPP_METHOD_ATTR void PurchaseService_Purchase_mC65FF5DFE61961585B7E1666DADBA5DC047BE46A (String_t* ___productCode0, String_t* ___gameOrderId1, RuntimeObject* ___listener2, String_t* ___developerPayload3, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_method (PurchaseService_Purchase_m1787445135_MetadataUsageId);
+		il2cpp_codegen_initialize_method (PurchaseService_Purchase_mC65FF5DFE61961585B7E1666DADBA5DC047BE46A_MetadataUsageId);
 		s_Il2CppMethodInitialized = true;
 	}
-	PurchaseForwardCallback_t3627744015 * V_0 = NULL;
-	AndroidJavaObject_t4131667876 * V_1 = NULL;
+	PurchaseForwardCallback_tC1617A8286567EB8A6EC04207640307CDCBBB602 * V_0 = NULL;
+	AndroidJavaObject_t5B3829FB6E1DBC020F5BA17846F1351EAA982F8E * V_1 = NULL;
 	bool V_2 = false;
 	{
 		RuntimeObject* L_0 = ___listener2;
-		PurchaseForwardCallback_t3627744015 * L_1 = (PurchaseForwardCallback_t3627744015 *)il2cpp_codegen_object_new(PurchaseForwardCallback_t3627744015_il2cpp_TypeInfo_var);
-		PurchaseForwardCallback__ctor_m1221040595(L_1, L_0, /*hidden argument*/NULL);
+		PurchaseForwardCallback_tC1617A8286567EB8A6EC04207640307CDCBBB602 * L_1 = (PurchaseForwardCallback_tC1617A8286567EB8A6EC04207640307CDCBBB602 *)il2cpp_codegen_object_new(PurchaseForwardCallback_tC1617A8286567EB8A6EC04207640307CDCBBB602_il2cpp_TypeInfo_var);
+		PurchaseForwardCallback__ctor_m7CED7BDF0821630616B072DAEDB1E34EED64E8D2(L_1, L_0, /*hidden argument*/NULL);
 		V_0 = L_1;
-		AndroidJavaObject_t4131667876 * L_2 = (AndroidJavaObject_t4131667876 *)il2cpp_codegen_object_new(AndroidJavaObject_t4131667876_il2cpp_TypeInfo_var);
-		AndroidJavaObject__ctor_m3828648572(L_2, _stringLiteral1729848435, ((ObjectU5BU5D_t2843939325*)SZArrayNew(ObjectU5BU5D_t2843939325_il2cpp_TypeInfo_var, (uint32_t)0)), /*hidden argument*/NULL);
-		V_1 = L_2;
-		AndroidJavaObject_t4131667876 * L_3 = V_1;
-		String_t* L_4 = ___productCode0;
-		NullCheck(L_3);
-		AndroidJavaObject_Set_TisString_t_m2428066008(L_3, _stringLiteral121570947, L_4, /*hidden argument*/AndroidJavaObject_Set_TisString_t_m2428066008_RuntimeMethod_var);
-		AndroidJavaObject_t4131667876 * L_5 = V_1;
-		String_t* L_6 = ___gameOrderId1;
-		NullCheck(L_5);
-		AndroidJavaObject_Set_TisString_t_m2428066008(L_5, _stringLiteral43791901, L_6, /*hidden argument*/AndroidJavaObject_Set_TisString_t_m2428066008_RuntimeMethod_var);
-		String_t* L_7 = ___developerPayload3;
-		IL2CPP_RUNTIME_CLASS_INIT(String_t_il2cpp_TypeInfo_var);
-		bool L_8 = String_IsNullOrEmpty_m2969720369(NULL /*static, unused*/, L_7, /*hidden argument*/NULL);
-		V_2 = (bool)((((int32_t)L_8) == ((int32_t)0))? 1 : 0);
-		bool L_9 = V_2;
-		if (!L_9)
+		ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A* L_2 = (ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A*)SZArrayNew(ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A_il2cpp_TypeInfo_var, (uint32_t)0);
+		AndroidJavaObject_t5B3829FB6E1DBC020F5BA17846F1351EAA982F8E * L_3 = (AndroidJavaObject_t5B3829FB6E1DBC020F5BA17846F1351EAA982F8E *)il2cpp_codegen_object_new(AndroidJavaObject_t5B3829FB6E1DBC020F5BA17846F1351EAA982F8E_il2cpp_TypeInfo_var);
+		AndroidJavaObject__ctor_mBD417486B0BD80E4CE3677B3AC825B3EA9BC7E5C(L_3, _stringLiteral5C38A0DB4523DB58D7037B943EE48EA52C550961, L_2, /*hidden argument*/NULL);
+		V_1 = L_3;
+		AndroidJavaObject_t5B3829FB6E1DBC020F5BA17846F1351EAA982F8E * L_4 = V_1;
+		String_t* L_5 = ___productCode0;
+		NullCheck(L_4);
+		AndroidJavaObject_Set_TisString_t_mD154A1FD76D63071E5543292304A88D96DE58CF9(L_4, _stringLiteralCDBA822F8324B05B69E1AA552687ED7C8B37C97F, L_5, /*hidden argument*/AndroidJavaObject_Set_TisString_t_mD154A1FD76D63071E5543292304A88D96DE58CF9_RuntimeMethod_var);
+		AndroidJavaObject_t5B3829FB6E1DBC020F5BA17846F1351EAA982F8E * L_6 = V_1;
+		String_t* L_7 = ___gameOrderId1;
+		NullCheck(L_6);
+		AndroidJavaObject_Set_TisString_t_mD154A1FD76D63071E5543292304A88D96DE58CF9(L_6, _stringLiteralD8556CF7451C22FF4E069B286916B24EBBF72F1F, L_7, /*hidden argument*/AndroidJavaObject_Set_TisString_t_mD154A1FD76D63071E5543292304A88D96DE58CF9_RuntimeMethod_var);
+		String_t* L_8 = ___developerPayload3;
+		bool L_9 = String_IsNullOrEmpty_m06A85A206AC2106D1982826C5665B9BD35324229(L_8, /*hidden argument*/NULL);
+		V_2 = (bool)((((int32_t)L_9) == ((int32_t)0))? 1 : 0);
+		bool L_10 = V_2;
+		if (!L_10)
 		{
 			goto IL_004f;
 		}
 	}
 	{
-		AndroidJavaObject_t4131667876 * L_10 = V_1;
-		String_t* L_11 = ___developerPayload3;
-		NullCheck(L_10);
-		AndroidJavaObject_Set_TisString_t_m2428066008(L_10, _stringLiteral3920973500, L_11, /*hidden argument*/AndroidJavaObject_Set_TisString_t_m2428066008_RuntimeMethod_var);
+		AndroidJavaObject_t5B3829FB6E1DBC020F5BA17846F1351EAA982F8E * L_11 = V_1;
+		String_t* L_12 = ___developerPayload3;
+		NullCheck(L_11);
+		AndroidJavaObject_Set_TisString_t_mD154A1FD76D63071E5543292304A88D96DE58CF9(L_11, _stringLiteral3B64CAA4AC5332E2069F86F967064FE587AF7820, L_12, /*hidden argument*/AndroidJavaObject_Set_TisString_t_mD154A1FD76D63071E5543292304A88D96DE58CF9_RuntimeMethod_var);
 	}
 
 IL_004f:
 	{
-		IL2CPP_RUNTIME_CLASS_INIT(PurchaseService_t2241894207_il2cpp_TypeInfo_var);
-		AndroidJavaClass_t32045322 * L_12 = ((PurchaseService_t2241894207_StaticFields*)il2cpp_codegen_static_fields_for(PurchaseService_t2241894207_il2cpp_TypeInfo_var))->get_serviceClass_0();
-		ObjectU5BU5D_t2843939325* L_13 = ((ObjectU5BU5D_t2843939325*)SZArrayNew(ObjectU5BU5D_t2843939325_il2cpp_TypeInfo_var, (uint32_t)2));
-		AndroidJavaObject_t4131667876 * L_14 = V_1;
-		NullCheck(L_13);
-		ArrayElementTypeCheck (L_13, L_14);
-		(L_13)->SetAt(static_cast<il2cpp_array_size_t>(0), (RuntimeObject *)L_14);
-		ObjectU5BU5D_t2843939325* L_15 = L_13;
-		PurchaseForwardCallback_t3627744015 * L_16 = V_0;
+		IL2CPP_RUNTIME_CLASS_INIT(PurchaseService_t7F12D5C55BBD81DB4420C2853172B9FED0FF3830_il2cpp_TypeInfo_var);
+		AndroidJavaClass_tFC9C1064BF4849691FEDC988743C0C271C62FDC8 * L_13 = ((PurchaseService_t7F12D5C55BBD81DB4420C2853172B9FED0FF3830_StaticFields*)il2cpp_codegen_static_fields_for(PurchaseService_t7F12D5C55BBD81DB4420C2853172B9FED0FF3830_il2cpp_TypeInfo_var))->get_serviceClass_0();
+		ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A* L_14 = (ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A*)SZArrayNew(ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A_il2cpp_TypeInfo_var, (uint32_t)2);
+		ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A* L_15 = L_14;
+		AndroidJavaObject_t5B3829FB6E1DBC020F5BA17846F1351EAA982F8E * L_16 = V_1;
 		NullCheck(L_15);
 		ArrayElementTypeCheck (L_15, L_16);
-		(L_15)->SetAt(static_cast<il2cpp_array_size_t>(1), (RuntimeObject *)L_16);
-		NullCheck(L_12);
-		AndroidJavaObject_CallStatic_m2922144688(L_12, _stringLiteral369603133, L_15, /*hidden argument*/NULL);
+		(L_15)->SetAt(static_cast<il2cpp_array_size_t>(0), (RuntimeObject *)L_16);
+		ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A* L_17 = L_15;
+		PurchaseForwardCallback_tC1617A8286567EB8A6EC04207640307CDCBBB602 * L_18 = V_0;
+		NullCheck(L_17);
+		ArrayElementTypeCheck (L_17, L_18);
+		(L_17)->SetAt(static_cast<il2cpp_array_size_t>(1), (RuntimeObject *)L_18);
+		NullCheck(L_13);
+		AndroidJavaObject_CallStatic_m15D79353CF1311C8F1CC4157EDE1A3FBD23C5DCE(L_13, _stringLiteralD376CA2995B3D140552F1BF6BC31C2EDA6C9CFC8, L_17, /*hidden argument*/NULL);
 		return;
 	}
 }
 // System.Void UnityEngine.ChannelPurchase.PurchaseService::ValidateReceipt(System.String,UnityEngine.ChannelPurchase.IPurchaseListener)
-extern "C"  void PurchaseService_ValidateReceipt_m3570238123 (RuntimeObject * __this /* static, unused */, String_t* ___gameOrderId0, RuntimeObject* ___listener1, const RuntimeMethod* method)
+extern "C" IL2CPP_METHOD_ATTR void PurchaseService_ValidateReceipt_m98B3D125BE4906AB67D40336B9F20CA5B79CED82 (String_t* ___gameOrderId0, RuntimeObject* ___listener1, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_method (PurchaseService_ValidateReceipt_m3570238123_MetadataUsageId);
+		il2cpp_codegen_initialize_method (PurchaseService_ValidateReceipt_m98B3D125BE4906AB67D40336B9F20CA5B79CED82_MetadataUsageId);
 		s_Il2CppMethodInitialized = true;
 	}
-	PurchaseForwardCallback_t3627744015 * V_0 = NULL;
+	PurchaseForwardCallback_tC1617A8286567EB8A6EC04207640307CDCBBB602 * V_0 = NULL;
 	{
 		RuntimeObject* L_0 = ___listener1;
-		PurchaseForwardCallback_t3627744015 * L_1 = (PurchaseForwardCallback_t3627744015 *)il2cpp_codegen_object_new(PurchaseForwardCallback_t3627744015_il2cpp_TypeInfo_var);
-		PurchaseForwardCallback__ctor_m1221040595(L_1, L_0, /*hidden argument*/NULL);
+		PurchaseForwardCallback_tC1617A8286567EB8A6EC04207640307CDCBBB602 * L_1 = (PurchaseForwardCallback_tC1617A8286567EB8A6EC04207640307CDCBBB602 *)il2cpp_codegen_object_new(PurchaseForwardCallback_tC1617A8286567EB8A6EC04207640307CDCBBB602_il2cpp_TypeInfo_var);
+		PurchaseForwardCallback__ctor_m7CED7BDF0821630616B072DAEDB1E34EED64E8D2(L_1, L_0, /*hidden argument*/NULL);
 		V_0 = L_1;
-		IL2CPP_RUNTIME_CLASS_INIT(PurchaseService_t2241894207_il2cpp_TypeInfo_var);
-		AndroidJavaClass_t32045322 * L_2 = ((PurchaseService_t2241894207_StaticFields*)il2cpp_codegen_static_fields_for(PurchaseService_t2241894207_il2cpp_TypeInfo_var))->get_serviceClass_0();
-		ObjectU5BU5D_t2843939325* L_3 = ((ObjectU5BU5D_t2843939325*)SZArrayNew(ObjectU5BU5D_t2843939325_il2cpp_TypeInfo_var, (uint32_t)2));
-		String_t* L_4 = ___gameOrderId0;
-		NullCheck(L_3);
-		ArrayElementTypeCheck (L_3, L_4);
-		(L_3)->SetAt(static_cast<il2cpp_array_size_t>(0), (RuntimeObject *)L_4);
-		ObjectU5BU5D_t2843939325* L_5 = L_3;
-		PurchaseForwardCallback_t3627744015 * L_6 = V_0;
-		NullCheck(L_5);
-		ArrayElementTypeCheck (L_5, L_6);
-		(L_5)->SetAt(static_cast<il2cpp_array_size_t>(1), (RuntimeObject *)L_6);
+		IL2CPP_RUNTIME_CLASS_INIT(PurchaseService_t7F12D5C55BBD81DB4420C2853172B9FED0FF3830_il2cpp_TypeInfo_var);
+		AndroidJavaClass_tFC9C1064BF4849691FEDC988743C0C271C62FDC8 * L_2 = ((PurchaseService_t7F12D5C55BBD81DB4420C2853172B9FED0FF3830_StaticFields*)il2cpp_codegen_static_fields_for(PurchaseService_t7F12D5C55BBD81DB4420C2853172B9FED0FF3830_il2cpp_TypeInfo_var))->get_serviceClass_0();
+		ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A* L_3 = (ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A*)SZArrayNew(ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A_il2cpp_TypeInfo_var, (uint32_t)2);
+		ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A* L_4 = L_3;
+		String_t* L_5 = ___gameOrderId0;
+		NullCheck(L_4);
+		ArrayElementTypeCheck (L_4, L_5);
+		(L_4)->SetAt(static_cast<il2cpp_array_size_t>(0), (RuntimeObject *)L_5);
+		ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A* L_6 = L_4;
+		PurchaseForwardCallback_tC1617A8286567EB8A6EC04207640307CDCBBB602 * L_7 = V_0;
+		NullCheck(L_6);
+		ArrayElementTypeCheck (L_6, L_7);
+		(L_6)->SetAt(static_cast<il2cpp_array_size_t>(1), (RuntimeObject *)L_7);
 		NullCheck(L_2);
-		AndroidJavaObject_CallStatic_m2922144688(L_2, _stringLiteral232548031, L_5, /*hidden argument*/NULL);
+		AndroidJavaObject_CallStatic_m15D79353CF1311C8F1CC4157EDE1A3FBD23C5DCE(L_2, _stringLiteralF0D3E5409C4E6A8E3575A0F030882EC0FB1BECEB, L_6, /*hidden argument*/NULL);
 		return;
 	}
 }
 // System.Void UnityEngine.ChannelPurchase.PurchaseService::.cctor()
-extern "C"  void PurchaseService__cctor_m2402948696 (RuntimeObject * __this /* static, unused */, const RuntimeMethod* method)
+extern "C" IL2CPP_METHOD_ATTR void PurchaseService__cctor_m93DBD5AAC9D2DA63CB15A59EF8A1F35F00855660 (const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_method (PurchaseService__cctor_m2402948696_MetadataUsageId);
+		il2cpp_codegen_initialize_method (PurchaseService__cctor_m93DBD5AAC9D2DA63CB15A59EF8A1F35F00855660_MetadataUsageId);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		AndroidJavaClass_t32045322 * L_0 = (AndroidJavaClass_t32045322 *)il2cpp_codegen_object_new(AndroidJavaClass_t32045322_il2cpp_TypeInfo_var);
-		AndroidJavaClass__ctor_m366853020(L_0, _stringLiteral1012026229, /*hidden argument*/NULL);
-		((PurchaseService_t2241894207_StaticFields*)il2cpp_codegen_static_fields_for(PurchaseService_t2241894207_il2cpp_TypeInfo_var))->set_serviceClass_0(L_0);
+		AndroidJavaClass_tFC9C1064BF4849691FEDC988743C0C271C62FDC8 * L_0 = (AndroidJavaClass_tFC9C1064BF4849691FEDC988743C0C271C62FDC8 *)il2cpp_codegen_object_new(AndroidJavaClass_tFC9C1064BF4849691FEDC988743C0C271C62FDC8_il2cpp_TypeInfo_var);
+		AndroidJavaClass__ctor_mFE0A07AF3670152225C146493AC0918138B81E34(L_0, _stringLiteral86FFD853377A99EBBCE9C80D462E6123A4B2BA88, /*hidden argument*/NULL);
+		((PurchaseService_t7F12D5C55BBD81DB4420C2853172B9FED0FF3830_StaticFields*)il2cpp_codegen_static_fields_for(PurchaseService_t7F12D5C55BBD81DB4420C2853172B9FED0FF3830_il2cpp_TypeInfo_var))->set_serviceClass_0(L_0);
 		return;
 	}
 }

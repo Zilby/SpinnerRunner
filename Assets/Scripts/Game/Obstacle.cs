@@ -59,14 +59,13 @@ public class Obstacle : Wall
 		}
 	}
 
-
-	protected void Start()
+	protected void Update()
 	{
-		
+		Rotate();
 	}
 
 
-	/// <summary>
+	// <summary>
 	/// Called when this obstacle collides with any other object. 
 	/// </summary>
 	protected override void CollisionEvent()
@@ -105,18 +104,14 @@ public class Obstacle : Wall
 	/// <summary>
 	/// Rotates this obstacle.
 	/// </summary>
-	protected IEnumerator Rotate()
+	protected void Rotate()
 	{
-		for (;;)
-		{
-			float actualRotation = ROTATION_SPEED + boostedRotation;
-			desiredRot += (rotateRight ? -actualRotation : actualRotation) * Time.smoothDeltaTime * Time.timeScale;
-			var desiredRotQ = Quaternion.Euler(transform.eulerAngles.x, transform.eulerAngles.y, desiredRot);
-			transform.rotation = Quaternion.Lerp(transform.rotation, desiredRotQ, Time.smoothDeltaTime * damping);
+		float actualRotation = ROTATION_SPEED + boostedRotation;
+		desiredRot += (rotateRight ? -actualRotation : actualRotation) * Time.smoothDeltaTime * Time.timeScale;
+		var desiredRotQ = Quaternion.Euler(transform.eulerAngles.x, transform.eulerAngles.y, desiredRot);
+		transform.rotation = Quaternion.Lerp(transform.rotation, desiredRotQ, Time.smoothDeltaTime * damping);
 
-			boostedRotation = Mathf.Abs(boostedRotation) - (750f * Time.smoothDeltaTime);
-			yield return new WaitForEndOfFrame();
-		}
+		boostedRotation = Mathf.Max(boostedRotation - (750f * Time.smoothDeltaTime), 0);
 	}
 
 	/// <summary>
@@ -136,9 +131,8 @@ public class Obstacle : Wall
 		base.Init();
 		if (!assignedRotation)
 		{
-			rotateRight = Random.Range(0, 2) == 0;
+			RotateRight = Random.Range(0, 2) == 0;
 		}
 		desiredRot = transform.eulerAngles.z;
-		StartCoroutine(Rotate());
 	}
 }
