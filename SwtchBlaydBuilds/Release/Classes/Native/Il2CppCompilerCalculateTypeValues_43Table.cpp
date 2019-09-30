@@ -2047,146 +2047,6 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // VIRTUALDEVICE_T8BDF9D6461240CCF3DEF322DCCED410EC28EC631_H
-#ifndef LOGITECHF710MODEDWINDOWSNATIVEPROFILE_TB1C356249CD79D062D39979B4CC4568427CB5F4E_H
-#define LOGITECHF710MODEDWINDOWSNATIVEPROFILE_TB1C356249CD79D062D39979B4CC4568427CB5F4E_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// InControl.NativeProfile.LogitechF710ModeDWindowsNativeProfile
-struct  LogitechF710ModeDWindowsNativeProfile_tB1C356249CD79D062D39979B4CC4568427CB5F4E  : public NativeInputDeviceProfile_t06D248889783453C74E270EDA2D59D8AD5633115
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // LOGITECHF710MODEDWINDOWSNATIVEPROFILE_TB1C356249CD79D062D39979B4CC4568427CB5F4E_H
-#ifndef LOGITECHF710MODEXWINDOWSNATIVEPROFILE_TBF83E4B7B267412ACB9D9544ABF34109DE3A6E64_H
-#define LOGITECHF710MODEXWINDOWSNATIVEPROFILE_TBF83E4B7B267412ACB9D9544ABF34109DE3A6E64_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// InControl.NativeProfile.LogitechF710ModeXWindowsNativeProfile
-struct  LogitechF710ModeXWindowsNativeProfile_tBF83E4B7B267412ACB9D9544ABF34109DE3A6E64  : public NativeInputDeviceProfile_t06D248889783453C74E270EDA2D59D8AD5633115
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // LOGITECHF710MODEXWINDOWSNATIVEPROFILE_TBF83E4B7B267412ACB9D9544ABF34109DE3A6E64_H
-#ifndef NVIDIASHIELDWINDOWSNATIVEPROFILE_T39550D3BA839A819513F343705E43219BEC140AE_H
-#define NVIDIASHIELDWINDOWSNATIVEPROFILE_T39550D3BA839A819513F343705E43219BEC140AE_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// InControl.NativeProfile.NVidiaShieldWindowsNativeProfile
-struct  NVidiaShieldWindowsNativeProfile_t39550D3BA839A819513F343705E43219BEC140AE  : public NativeInputDeviceProfile_t06D248889783453C74E270EDA2D59D8AD5633115
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // NVIDIASHIELDWINDOWSNATIVEPROFILE_T39550D3BA839A819513F343705E43219BEC140AE_H
-#ifndef PCTWINSHOCKWINDOWSNATIVEPROFILE_T81021F4248CAE0C814FDD91DCFE6329DFD46789F_H
-#define PCTWINSHOCKWINDOWSNATIVEPROFILE_T81021F4248CAE0C814FDD91DCFE6329DFD46789F_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// InControl.NativeProfile.PCTWINSHOCKWindowsNativeProfile
-struct  PCTWINSHOCKWindowsNativeProfile_t81021F4248CAE0C814FDD91DCFE6329DFD46789F  : public NativeInputDeviceProfile_t06D248889783453C74E270EDA2D59D8AD5633115
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // PCTWINSHOCKWINDOWSNATIVEPROFILE_T81021F4248CAE0C814FDD91DCFE6329DFD46789F_H
-#ifndef PLAYSTATION4WINDOWSNATIVEPROFILE_T6F9AACC6EF792FE8864816772361F8397F42A67A_H
-#define PLAYSTATION4WINDOWSNATIVEPROFILE_T6F9AACC6EF792FE8864816772361F8397F42A67A_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// InControl.NativeProfile.PlayStation4WindowsNativeProfile
-struct  PlayStation4WindowsNativeProfile_t6F9AACC6EF792FE8864816772361F8397F42A67A  : public NativeInputDeviceProfile_t06D248889783453C74E270EDA2D59D8AD5633115
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // PLAYSTATION4WINDOWSNATIVEPROFILE_T6F9AACC6EF792FE8864816772361F8397F42A67A_H
-#ifndef RAZERSERVALWINDOWSNATIVEPROFILE_T1F17BD3819D58FA850F6FED4DCA58A9C7C6F9097_H
-#define RAZERSERVALWINDOWSNATIVEPROFILE_T1F17BD3819D58FA850F6FED4DCA58A9C7C6F9097_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// InControl.NativeProfile.RazerServalWindowsNativeProfile
-struct  RazerServalWindowsNativeProfile_t1F17BD3819D58FA850F6FED4DCA58A9C7C6F9097  : public NativeInputDeviceProfile_t06D248889783453C74E270EDA2D59D8AD5633115
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // RAZERSERVALWINDOWSNATIVEPROFILE_T1F17BD3819D58FA850F6FED4DCA58A9C7C6F9097_H
-#ifndef STEAMWINDOWSNATIVEPROFILE_T60ACF65EAD3B92580515996068BDABFC40CBCB6F_H
-#define STEAMWINDOWSNATIVEPROFILE_T60ACF65EAD3B92580515996068BDABFC40CBCB6F_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// InControl.NativeProfile.SteamWindowsNativeProfile
-struct  SteamWindowsNativeProfile_t60ACF65EAD3B92580515996068BDABFC40CBCB6F  : public NativeInputDeviceProfile_t06D248889783453C74E270EDA2D59D8AD5633115
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // STEAMWINDOWSNATIVEPROFILE_T60ACF65EAD3B92580515996068BDABFC40CBCB6F_H
 #ifndef XINPUTWINDOWSNATIVEPROFILE_T8DEA22399FAEA3B0FBDF7640544410D4ABF3D434_H
 #define XINPUTWINDOWSNATIVEPROFILE_T8DEA22399FAEA3B0FBDF7640544410D4ABF3D434_H
 #ifdef __clang__
@@ -2914,24 +2774,17 @@ public:
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4300 = { sizeof (LogitechF710ModeDWindowsNativeProfile_tB1C356249CD79D062D39979B4CC4568427CB5F4E), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4301 = { sizeof (LogitechF710ModeXWindowsNativeProfile_tBF83E4B7B267412ACB9D9544ABF34109DE3A6E64), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4302 = { sizeof (NVidiaShieldWindowsNativeProfile_t39550D3BA839A819513F343705E43219BEC140AE), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4303 = { sizeof (PCTWINSHOCKWindowsNativeProfile_t81021F4248CAE0C814FDD91DCFE6329DFD46789F), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4304 = { sizeof (PlayStation4WindowsNativeProfile_t6F9AACC6EF792FE8864816772361F8397F42A67A), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4305 = { sizeof (RazerServalWindowsNativeProfile_t1F17BD3819D58FA850F6FED4DCA58A9C7C6F9097), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4306 = { sizeof (SteamWindowsNativeProfile_t60ACF65EAD3B92580515996068BDABFC40CBCB6F), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4307 = { sizeof (Xbox360WiredWindowsNativeProfile_tC30443459BEBBD8000A4DFF803EAEC4504AFB3DC), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4308 = { sizeof (Xbox360WirelessWindowsNativeProfile_tAA85D8298DD69B5335D23BB7AE3255D561BBFA10), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4309 = { sizeof (XboxOneEliteWindows10AENativeProfile_t644E5089DE45D6DE3A08659BA52E96122DDDFA97), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4310 = { sizeof (XboxOneEliteWindowsNativeProfile_t6EF5CB122F9E5062FBB45FC7E061F1BE2CEBD77D), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4311 = { sizeof (XboxOneWindows10AENativeProfile_tDC959077ECFD6C9A97D77B4792E0647B1B4A66FA), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4312 = { sizeof (XboxOneWindows10NativeProfile_t732DCDE85614D2B99A2C0A6240CE3B971FE74414), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4313 = { sizeof (XboxOneWindowsNativeProfile_t8D25FA50AF4DC067C2D97875AB9D312509135D7A), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4314 = { sizeof (XboxOneWirelessAdapterWindowsNativeProfile_t0620514A0091545144F870083390F9876220D3B3), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4315 = { sizeof (XInputWindowsNativeProfile_t8DEA22399FAEA3B0FBDF7640544410D4ABF3D434), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4316 = { sizeof (VirtualDevice_t8BDF9D6461240CCF3DEF322DCCED410EC28EC631), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable4316[6] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4300 = { sizeof (Xbox360WiredWindowsNativeProfile_tC30443459BEBBD8000A4DFF803EAEC4504AFB3DC), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4301 = { sizeof (Xbox360WirelessWindowsNativeProfile_tAA85D8298DD69B5335D23BB7AE3255D561BBFA10), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4302 = { sizeof (XboxOneEliteWindows10AENativeProfile_t644E5089DE45D6DE3A08659BA52E96122DDDFA97), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4303 = { sizeof (XboxOneEliteWindowsNativeProfile_t6EF5CB122F9E5062FBB45FC7E061F1BE2CEBD77D), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4304 = { sizeof (XboxOneWindows10AENativeProfile_tDC959077ECFD6C9A97D77B4792E0647B1B4A66FA), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4305 = { sizeof (XboxOneWindows10NativeProfile_t732DCDE85614D2B99A2C0A6240CE3B971FE74414), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4306 = { sizeof (XboxOneWindowsNativeProfile_t8D25FA50AF4DC067C2D97875AB9D312509135D7A), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4307 = { sizeof (XboxOneWirelessAdapterWindowsNativeProfile_t0620514A0091545144F870083390F9876220D3B3), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4308 = { sizeof (XInputWindowsNativeProfile_t8DEA22399FAEA3B0FBDF7640544410D4ABF3D434), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4309 = { sizeof (VirtualDevice_t8BDF9D6461240CCF3DEF322DCCED410EC28EC631), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable4309[6] = 
 {
 	0,
 	0,
@@ -2940,26 +2793,26 @@ extern const int32_t g_FieldOffsetTable4316[6] =
 	VirtualDevice_t8BDF9D6461240CCF3DEF322DCCED410EC28EC631::get_offset_of_mx_51(),
 	VirtualDevice_t8BDF9D6461240CCF3DEF322DCCED410EC28EC631::get_offset_of_my_52(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4317 = { sizeof (VirtualDeviceExample_t74EC98A69E43976A769CBCB5ED037BFF406255F5), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable4317[3] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4310 = { sizeof (VirtualDeviceExample_t74EC98A69E43976A769CBCB5ED037BFF406255F5), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable4310[3] = 
 {
 	VirtualDeviceExample_t74EC98A69E43976A769CBCB5ED037BFF406255F5::get_offset_of_leftObject_4(),
 	VirtualDeviceExample_t74EC98A69E43976A769CBCB5ED037BFF406255F5::get_offset_of_rightObject_5(),
 	VirtualDeviceExample_t74EC98A69E43976A769CBCB5ED037BFF406255F5::get_offset_of_virtualDevice_6(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4318 = { sizeof (CubeController_t212A262059A856690E5DAB59E84FEDA0A2C97FAA), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable4318[1] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4311 = { sizeof (CubeController_t212A262059A856690E5DAB59E84FEDA0A2C97FAA), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable4311[1] = 
 {
 	CubeController_t212A262059A856690E5DAB59E84FEDA0A2C97FAA::get_offset_of_cachedRenderer_4(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4319 = { sizeof (Player_t5041077949489ADADE18D68DF44C862A0B982BF0), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable4319[2] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4312 = { sizeof (Player_t5041077949489ADADE18D68DF44C862A0B982BF0), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable4312[2] = 
 {
 	Player_t5041077949489ADADE18D68DF44C862A0B982BF0::get_offset_of_U3CActionsU3Ek__BackingField_4(),
 	Player_t5041077949489ADADE18D68DF44C862A0B982BF0::get_offset_of_cachedRenderer_5(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4320 = { sizeof (PlayerActions_tD4517E56E50622689F6FA2356B9D06FA0DAA57DC), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable4320[9] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4313 = { sizeof (PlayerActions_tD4517E56E50622689F6FA2356B9D06FA0DAA57DC), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable4313[9] = 
 {
 	PlayerActions_tD4517E56E50622689F6FA2356B9D06FA0DAA57DC::get_offset_of_Green_21(),
 	PlayerActions_tD4517E56E50622689F6FA2356B9D06FA0DAA57DC::get_offset_of_Red_22(),
@@ -2971,8 +2824,8 @@ extern const int32_t g_FieldOffsetTable4320[9] =
 	PlayerActions_tD4517E56E50622689F6FA2356B9D06FA0DAA57DC::get_offset_of_Down_28(),
 	PlayerActions_tD4517E56E50622689F6FA2356B9D06FA0DAA57DC::get_offset_of_Rotate_29(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4321 = { sizeof (PlayerManager_tF9E96811D5A96CB5627D4FA5936D2A7306A7DE40), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable4321[6] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4314 = { sizeof (PlayerManager_tF9E96811D5A96CB5627D4FA5936D2A7306A7DE40), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable4314[6] = 
 {
 	PlayerManager_tF9E96811D5A96CB5627D4FA5936D2A7306A7DE40::get_offset_of_playerPrefab_4(),
 	0,
@@ -2981,23 +2834,23 @@ extern const int32_t g_FieldOffsetTable4321[6] =
 	PlayerManager_tF9E96811D5A96CB5627D4FA5936D2A7306A7DE40::get_offset_of_keyboardListener_8(),
 	PlayerManager_tF9E96811D5A96CB5627D4FA5936D2A7306A7DE40::get_offset_of_joystickListener_9(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4322 = { sizeof (Player_tB8A926CB2008A25D7650DAFC7E7961D905B9C46A), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable4322[2] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4315 = { sizeof (Player_tB8A926CB2008A25D7650DAFC7E7961D905B9C46A), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable4315[2] = 
 {
 	Player_tB8A926CB2008A25D7650DAFC7E7961D905B9C46A::get_offset_of_U3CDeviceU3Ek__BackingField_4(),
 	Player_tB8A926CB2008A25D7650DAFC7E7961D905B9C46A::get_offset_of_cachedRenderer_5(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4323 = { sizeof (PlayerManager_t5A13BDCE9040792B485B894A36549791C9287FDE), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable4323[4] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4316 = { sizeof (PlayerManager_t5A13BDCE9040792B485B894A36549791C9287FDE), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable4316[4] = 
 {
 	PlayerManager_t5A13BDCE9040792B485B894A36549791C9287FDE::get_offset_of_playerPrefab_4(),
 	0,
 	PlayerManager_t5A13BDCE9040792B485B894A36549791C9287FDE::get_offset_of_playerPositions_6(),
 	PlayerManager_t5A13BDCE9040792B485B894A36549791C9287FDE::get_offset_of_players_7(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4324 = { sizeof (CubeController_t231799AAF52BE474CDFF6410DEEFEC40119860AD), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4325 = { sizeof (Button_tDC130FAA1CC66FD93D61E4751F111233A9CB2521), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable4325[5] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4317 = { sizeof (CubeController_t231799AAF52BE474CDFF6410DEEFEC40119860AD), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4318 = { sizeof (Button_tDC130FAA1CC66FD93D61E4751F111233A9CB2521), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable4318[5] = 
 {
 	Button_tDC130FAA1CC66FD93D61E4751F111233A9CB2521::get_offset_of_cachedRenderer_4(),
 	Button_tDC130FAA1CC66FD93D61E4751F111233A9CB2521::get_offset_of_up_5(),
@@ -3005,22 +2858,22 @@ extern const int32_t g_FieldOffsetTable4325[5] =
 	Button_tDC130FAA1CC66FD93D61E4751F111233A9CB2521::get_offset_of_left_7(),
 	Button_tDC130FAA1CC66FD93D61E4751F111233A9CB2521::get_offset_of_right_8(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4326 = { sizeof (ButtonFocus_tB0A4CC31FD8353BA7399DBEBEB7C93D31477700D), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4327 = { sizeof (ButtonManager_t3F6EDC47ED3310217EBF71A00E761DC9E253E10E), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable4327[2] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4319 = { sizeof (ButtonFocus_tB0A4CC31FD8353BA7399DBEBEB7C93D31477700D), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4320 = { sizeof (ButtonManager_t3F6EDC47ED3310217EBF71A00E761DC9E253E10E), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable4320[2] = 
 {
 	ButtonManager_t3F6EDC47ED3310217EBF71A00E761DC9E253E10E::get_offset_of_focusedButton_4(),
 	ButtonManager_t3F6EDC47ED3310217EBF71A00E761DC9E253E10E::get_offset_of_filteredDirection_5(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4328 = { sizeof (BindingsExample_t6235EEFFEF162A9815B44B770EB071531A946CA1), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable4328[3] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4321 = { sizeof (BindingsExample_t6235EEFFEF162A9815B44B770EB071531A946CA1), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable4321[3] = 
 {
 	BindingsExample_t6235EEFFEF162A9815B44B770EB071531A946CA1::get_offset_of_cachedRenderer_4(),
 	BindingsExample_t6235EEFFEF162A9815B44B770EB071531A946CA1::get_offset_of_playerActions_5(),
 	BindingsExample_t6235EEFFEF162A9815B44B770EB071531A946CA1::get_offset_of_saveData_6(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4329 = { sizeof (PlayerActions_t85AC47FE5089A44FEE10CE5C013921DA2627AEB1), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable4329[7] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4322 = { sizeof (PlayerActions_t85AC47FE5089A44FEE10CE5C013921DA2627AEB1), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable4322[7] = 
 {
 	PlayerActions_t85AC47FE5089A44FEE10CE5C013921DA2627AEB1::get_offset_of_Fire_21(),
 	PlayerActions_t85AC47FE5089A44FEE10CE5C013921DA2627AEB1::get_offset_of_Jump_22(),
@@ -3030,25 +2883,25 @@ extern const int32_t g_FieldOffsetTable4329[7] =
 	PlayerActions_t85AC47FE5089A44FEE10CE5C013921DA2627AEB1::get_offset_of_Down_26(),
 	PlayerActions_t85AC47FE5089A44FEE10CE5C013921DA2627AEB1::get_offset_of_Move_27(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4330 = { sizeof (U3CU3Ec_t9D6C8F8F7D622F65D1C51CA00BAF388B63BF9537), -1, sizeof(U3CU3Ec_t9D6C8F8F7D622F65D1C51CA00BAF388B63BF9537_StaticFields), 0 };
-extern const int32_t g_FieldOffsetTable4330[4] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4323 = { sizeof (U3CU3Ec_t9D6C8F8F7D622F65D1C51CA00BAF388B63BF9537), -1, sizeof(U3CU3Ec_t9D6C8F8F7D622F65D1C51CA00BAF388B63BF9537_StaticFields), 0 };
+extern const int32_t g_FieldOffsetTable4323[4] = 
 {
 	U3CU3Ec_t9D6C8F8F7D622F65D1C51CA00BAF388B63BF9537_StaticFields::get_offset_of_U3CU3E9_0(),
 	U3CU3Ec_t9D6C8F8F7D622F65D1C51CA00BAF388B63BF9537_StaticFields::get_offset_of_U3CU3E9__8_0_1(),
 	U3CU3Ec_t9D6C8F8F7D622F65D1C51CA00BAF388B63BF9537_StaticFields::get_offset_of_U3CU3E9__8_1_2(),
 	U3CU3Ec_t9D6C8F8F7D622F65D1C51CA00BAF388B63BF9537_StaticFields::get_offset_of_U3CU3E9__8_2_3(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4331 = { sizeof (BasicExample_tFE2F11A001B5D5CBFF5C05EEE15DA3D074D71A88), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4332 = { sizeof (U3CPrivateImplementationDetailsU3E_t4846F3E0DC61BBD6AE249FF1EAAC4CB64097DE4A), -1, sizeof(U3CPrivateImplementationDetailsU3E_t4846F3E0DC61BBD6AE249FF1EAAC4CB64097DE4A_StaticFields), 0 };
-extern const int32_t g_FieldOffsetTable4332[3] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4324 = { sizeof (BasicExample_tFE2F11A001B5D5CBFF5C05EEE15DA3D074D71A88), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4325 = { sizeof (U3CPrivateImplementationDetailsU3E_t4846F3E0DC61BBD6AE249FF1EAAC4CB64097DE4A), -1, sizeof(U3CPrivateImplementationDetailsU3E_t4846F3E0DC61BBD6AE249FF1EAAC4CB64097DE4A_StaticFields), 0 };
+extern const int32_t g_FieldOffsetTable4325[3] = 
 {
 	U3CPrivateImplementationDetailsU3E_t4846F3E0DC61BBD6AE249FF1EAAC4CB64097DE4A_StaticFields::get_offset_of_U3504F4B95521811246CA965BF7A38285411AA1461_0(),
 	U3CPrivateImplementationDetailsU3E_t4846F3E0DC61BBD6AE249FF1EAAC4CB64097DE4A_StaticFields::get_offset_of_U351A7A390CD6DE245186881400B18C9D822EFE240_1(),
 	U3CPrivateImplementationDetailsU3E_t4846F3E0DC61BBD6AE249FF1EAAC4CB64097DE4A_StaticFields::get_offset_of_C90F38A020811481753795774EB5AF353F414C59_2(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4333 = { sizeof (__StaticArrayInitTypeSizeU3D12_t65235398342E0C6C387633EE4B2E7F326A539C91)+ sizeof (RuntimeObject), sizeof(__StaticArrayInitTypeSizeU3D12_t65235398342E0C6C387633EE4B2E7F326A539C91 ), 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4334 = { sizeof (__StaticArrayInitTypeSizeU3D24_t0186834C621050282F5EF637E836A6E1DC934A34)+ sizeof (RuntimeObject), sizeof(__StaticArrayInitTypeSizeU3D24_t0186834C621050282F5EF637E836A6E1DC934A34 ), 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4335 = { sizeof (__StaticArrayInitTypeSizeU3D64_t702E955CFCF83D5C66E478D1CFA07B549225E6C0)+ sizeof (RuntimeObject), sizeof(__StaticArrayInitTypeSizeU3D64_t702E955CFCF83D5C66E478D1CFA07B549225E6C0 ), 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4326 = { sizeof (__StaticArrayInitTypeSizeU3D12_t65235398342E0C6C387633EE4B2E7F326A539C91)+ sizeof (RuntimeObject), sizeof(__StaticArrayInitTypeSizeU3D12_t65235398342E0C6C387633EE4B2E7F326A539C91 ), 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4327 = { sizeof (__StaticArrayInitTypeSizeU3D24_t0186834C621050282F5EF637E836A6E1DC934A34)+ sizeof (RuntimeObject), sizeof(__StaticArrayInitTypeSizeU3D24_t0186834C621050282F5EF637E836A6E1DC934A34 ), 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4328 = { sizeof (__StaticArrayInitTypeSizeU3D64_t702E955CFCF83D5C66E478D1CFA07B549225E6C0)+ sizeof (RuntimeObject), sizeof(__StaticArrayInitTypeSizeU3D64_t702E955CFCF83D5C66E478D1CFA07B549225E6C0 ), 0, 0 };
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif

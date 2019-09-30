@@ -13410,7 +13410,7 @@ IL_0049:
 		int32_t L_18 = L_17;
 		RuntimeObject * L_19 = Box(Int32_t585191389E07734F19F3156FF88FB3EF4800D102_il2cpp_TypeInfo_var, &L_18);
 		NullCheck(L_16);
-		RuntimeObject * L_20 = VirtFuncInvoker1< RuntimeObject *, RuntimeObject * >::Invoke(23 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_16, L_19);
+		RuntimeObject * L_20 = VirtFuncInvoker1< RuntimeObject *, RuntimeObject * >::Invoke(22 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_16, L_19);
 		V_0 = ((Encoding_t7837A3C0F55EAE0E3959A53C6D6E88B113ED78A4 *)CastclassClass((RuntimeObject*)L_20, Encoding_t7837A3C0F55EAE0E3959A53C6D6E88B113ED78A4_il2cpp_TypeInfo_var));
 	}
 
@@ -13458,7 +13458,7 @@ IL_0095:
 			int32_t L_28 = L_27;
 			RuntimeObject * L_29 = Box(Int32_t585191389E07734F19F3156FF88FB3EF4800D102_il2cpp_TypeInfo_var, &L_28);
 			NullCheck(L_26);
-			RuntimeObject * L_30 = VirtFuncInvoker1< RuntimeObject *, RuntimeObject * >::Invoke(23 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_26, L_29);
+			RuntimeObject * L_30 = VirtFuncInvoker1< RuntimeObject *, RuntimeObject * >::Invoke(22 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_26, L_29);
 			Encoding_t7837A3C0F55EAE0E3959A53C6D6E88B113ED78A4 * L_31 = ((Encoding_t7837A3C0F55EAE0E3959A53C6D6E88B113ED78A4 *)CastclassClass((RuntimeObject*)L_30, Encoding_t7837A3C0F55EAE0E3959A53C6D6E88B113ED78A4_il2cpp_TypeInfo_var));
 			V_0 = L_31;
 			if (!L_31)
@@ -13805,7 +13805,7 @@ IL_0245:
 			RuntimeObject * L_91 = Box(Int32_t585191389E07734F19F3156FF88FB3EF4800D102_il2cpp_TypeInfo_var, &L_90);
 			Encoding_t7837A3C0F55EAE0E3959A53C6D6E88B113ED78A4 * L_92 = V_0;
 			NullCheck(L_88);
-			VirtActionInvoker2< RuntimeObject *, RuntimeObject * >::Invoke(17 /* System.Void System.Collections.Hashtable::Add(System.Object,System.Object) */, L_88, L_91, L_92);
+			VirtActionInvoker2< RuntimeObject *, RuntimeObject * >::Invoke(16 /* System.Void System.Collections.Hashtable::Add(System.Object,System.Object) */, L_88, L_91, L_92);
 			IL2CPP_LEAVE(0x264, FINALLY_025a);
 		}
 	} // end try (depth: 1)

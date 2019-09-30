@@ -18013,8 +18013,6 @@ extern "C" IL2CPP_METHOD_ATTR int64_t Stopwatch_get_ElapsedMilliseconds_mE39424F
 extern "C" IL2CPP_METHOD_ATTR void Stopwatch_Reset_mB73BF189F4BF781A8587C2CAAD00B2B0EBA79765 (Stopwatch_t0778B5C8DF8FE1D87FC57A2411DA695850BD64D4 * __this, const RuntimeMethod* method);
 // System.Boolean GameController::get_GameOver()
 extern "C" IL2CPP_METHOD_ATTR bool GameController_get_GameOver_m481721F0D333790A4BD56E90B465958095E5E080 (const RuntimeMethod* method);
-// System.Void UnityEngine.MonoBehaviour::print(System.Object)
-extern "C" IL2CPP_METHOD_ATTR void MonoBehaviour_print_m171D860AF3370C46648FE8F3EE3E0E6535E1C774 (RuntimeObject * p0, const RuntimeMethod* method);
 // System.Void GameController::Spawn()
 extern "C" IL2CPP_METHOD_ATTR void GameController_Spawn_m875D5AC63D4A5BFB266D0713A92C5185A0FE8D64 (GameController_t8BB0D3CE8992C95BED5FB508588730F0A74009A3 * __this, const RuntimeMethod* method);
 // System.Void UnityEngine.WaitForSeconds::.ctor(System.Single)
@@ -22337,7 +22335,7 @@ IL_0017:
 		Stopwatch__ctor_mA301E9A9D03758CBE09171E0C140CCD06BC9F860(L_5, /*hidden argument*/NULL);
 		NullCheck(L_4);
 		L_4->set_speedTimer_15(L_5);
-		goto IL_0093;
+		goto IL_0083;
 	}
 
 IL_002b:
@@ -22371,7 +22369,7 @@ IL_0053:
 		Stopwatch_t0778B5C8DF8FE1D87FC57A2411DA695850BD64D4 * L_10 = L_9->get_speedTimer_15();
 		NullCheck(L_10);
 		int64_t L_11 = Stopwatch_get_ElapsedMilliseconds_mE39424FB61C885BCFCC4B583C58A8630C3AD8177(L_10, /*hidden argument*/NULL);
-		if ((((float)(((float)((float)L_11)))) < ((float)(10000.0f))))
+		if ((((float)(((float)((float)L_11)))) < ((float)(5000.0f))))
 		{
 			goto IL_0038;
 		}
@@ -22385,21 +22383,15 @@ IL_0053:
 		L_12->set_moveSpeed_10(((float)((float)L_14/(float)(1.05f))));
 		GameController_t8BB0D3CE8992C95BED5FB508588730F0A74009A3 * L_15 = V_1;
 		NullCheck(L_15);
-		float L_16 = L_15->get_moveSpeed_10();
-		float L_17 = L_16;
-		RuntimeObject * L_18 = Box(Single_tDDDA9169C4E4E308AC6D7A824F9B28DC82204AE1_il2cpp_TypeInfo_var, &L_17);
-		MonoBehaviour_print_m171D860AF3370C46648FE8F3EE3E0E6535E1C774(L_18, /*hidden argument*/NULL);
-		GameController_t8BB0D3CE8992C95BED5FB508588730F0A74009A3 * L_19 = V_1;
-		NullCheck(L_19);
-		Stopwatch_t0778B5C8DF8FE1D87FC57A2411DA695850BD64D4 * L_20 = L_19->get_speedTimer_15();
-		NullCheck(L_20);
-		Stopwatch_Reset_mB73BF189F4BF781A8587C2CAAD00B2B0EBA79765(L_20, /*hidden argument*/NULL);
+		Stopwatch_t0778B5C8DF8FE1D87FC57A2411DA695850BD64D4 * L_16 = L_15->get_speedTimer_15();
+		NullCheck(L_16);
+		Stopwatch_Reset_mB73BF189F4BF781A8587C2CAAD00B2B0EBA79765(L_16, /*hidden argument*/NULL);
 	}
 
-IL_0093:
+IL_0083:
 	{
-		bool L_21 = GameController_get_GameOver_m481721F0D333790A4BD56E90B465958095E5E080(/*hidden argument*/NULL);
-		if (!L_21)
+		bool L_17 = GameController_get_GameOver_m481721F0D333790A4BD56E90B465958095E5E080(/*hidden argument*/NULL);
+		if (!L_17)
 		{
 			goto IL_002b;
 		}

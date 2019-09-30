@@ -23854,7 +23854,7 @@ extern "C" IL2CPP_METHOD_ATTR int32_t PathList_get_Count_m834587A0CE483A4864CAEC
 	{
 		SortedList_tC8B7CDE75652EC657C510034F127B9DFDE16BF4E * L_0 = __this->get_m_list_0();
 		NullCheck(L_0);
-		int32_t L_1 = VirtFuncInvoker0< int32_t >::Invoke(18 /* System.Int32 System.Collections.SortedList::get_Count() */, L_0);
+		int32_t L_1 = VirtFuncInvoker0< int32_t >::Invoke(17 /* System.Int32 System.Collections.SortedList::get_Count() */, L_0);
 		return L_1;
 	}
 }
@@ -23894,7 +23894,7 @@ IL_000b:
 			Monitor_Enter_mC5B353DD83A0B0155DF6FBCC4DF5A580C25534C5(L_1, (bool*)(&V_2), /*hidden argument*/NULL);
 			SortedList_tC8B7CDE75652EC657C510034F127B9DFDE16BF4E * L_2 = __this->get_m_list_0();
 			NullCheck(L_2);
-			RuntimeObject* L_3 = VirtFuncInvoker0< RuntimeObject* >::Invoke(20 /* System.Collections.ICollection System.Collections.SortedList::get_Values() */, L_2);
+			RuntimeObject* L_3 = VirtFuncInvoker0< RuntimeObject* >::Invoke(19 /* System.Collections.ICollection System.Collections.SortedList::get_Values() */, L_2);
 			NullCheck(L_3);
 			RuntimeObject* L_4 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(0 /* System.Collections.IEnumerator System.Collections.IEnumerable::GetEnumerator() */, IEnumerable_tD74549CEA1AA48E768382B94FEACBB07E2E3FA2C_il2cpp_TypeInfo_var, L_3);
 			V_3 = L_4;
@@ -24019,7 +24019,7 @@ extern "C" IL2CPP_METHOD_ATTR RuntimeObject* PathList_get_Values_mE785B5F28E224D
 	{
 		SortedList_tC8B7CDE75652EC657C510034F127B9DFDE16BF4E * L_0 = __this->get_m_list_0();
 		NullCheck(L_0);
-		RuntimeObject* L_1 = VirtFuncInvoker0< RuntimeObject* >::Invoke(20 /* System.Collections.ICollection System.Collections.SortedList::get_Values() */, L_0);
+		RuntimeObject* L_1 = VirtFuncInvoker0< RuntimeObject* >::Invoke(19 /* System.Collections.ICollection System.Collections.SortedList::get_Values() */, L_0);
 		return L_1;
 	}
 }
@@ -24030,7 +24030,7 @@ extern "C" IL2CPP_METHOD_ATTR RuntimeObject * PathList_get_Item_m5D18254EBB9626D
 		SortedList_tC8B7CDE75652EC657C510034F127B9DFDE16BF4E * L_0 = __this->get_m_list_0();
 		String_t* L_1 = ___s0;
 		NullCheck(L_0);
-		RuntimeObject * L_2 = VirtFuncInvoker1< RuntimeObject *, RuntimeObject * >::Invoke(32 /* System.Object System.Collections.SortedList::get_Item(System.Object) */, L_0, L_1);
+		RuntimeObject * L_2 = VirtFuncInvoker1< RuntimeObject *, RuntimeObject * >::Invoke(31 /* System.Object System.Collections.SortedList::get_Item(System.Object) */, L_0, L_1);
 		return L_2;
 	}
 }
@@ -24060,7 +24060,7 @@ IL_0009:
 		String_t* L_3 = ___s0;
 		RuntimeObject * L_4 = ___value1;
 		NullCheck(L_2);
-		VirtActionInvoker2< RuntimeObject *, RuntimeObject * >::Invoke(33 /* System.Void System.Collections.SortedList::set_Item(System.Object,System.Object) */, L_2, L_3, L_4);
+		VirtActionInvoker2< RuntimeObject *, RuntimeObject * >::Invoke(32 /* System.Void System.Collections.SortedList::set_Item(System.Object,System.Object) */, L_2, L_3, L_4);
 		IL2CPP_LEAVE(0x2A, FINALLY_0020);
 	} // end try (depth: 1)
 	catch(Il2CppExceptionWrapper& e)
@@ -24108,7 +24108,7 @@ extern "C" IL2CPP_METHOD_ATTR RuntimeObject* PathList_GetEnumerator_m75D1F5AD9B3
 	{
 		SortedList_tC8B7CDE75652EC657C510034F127B9DFDE16BF4E * L_0 = __this->get_m_list_0();
 		NullCheck(L_0);
-		RuntimeObject* L_1 = VirtFuncInvoker0< RuntimeObject* >::Invoke(28 /* System.Collections.IDictionaryEnumerator System.Collections.SortedList::GetEnumerator() */, L_0);
+		RuntimeObject* L_1 = VirtFuncInvoker0< RuntimeObject* >::Invoke(27 /* System.Collections.IDictionaryEnumerator System.Collections.SortedList::GetEnumerator() */, L_0);
 		return L_1;
 	}
 }
@@ -24118,7 +24118,7 @@ extern "C" IL2CPP_METHOD_ATTR RuntimeObject * PathList_get_SyncRoot_m715772A2BE6
 	{
 		SortedList_tC8B7CDE75652EC657C510034F127B9DFDE16BF4E * L_0 = __this->get_m_list_0();
 		NullCheck(L_0);
-		RuntimeObject * L_1 = VirtFuncInvoker0< RuntimeObject * >::Invoke(22 /* System.Object System.Collections.SortedList::get_SyncRoot() */, L_0);
+		RuntimeObject * L_1 = VirtFuncInvoker0< RuntimeObject * >::Invoke(21 /* System.Object System.Collections.SortedList::get_SyncRoot() */, L_0);
 		return L_1;
 	}
 }

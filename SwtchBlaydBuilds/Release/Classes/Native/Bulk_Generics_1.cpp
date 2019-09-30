@@ -12366,8 +12366,8 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // KEYVALUEPAIR_2_TD85A2E33C726647EDFB2F7F8E7EDC766E3C53B78_H
-#ifndef KEYVALUEPAIR_2_T8B7E7096D9035A9E1C41BF9B1E39EF488C7CCBF4_H
-#define KEYVALUEPAIR_2_T8B7E7096D9035A9E1C41BF9B1E39EF488C7CCBF4_H
+#ifndef KEYVALUEPAIR_2_T13A706ADD8D9CB9B6AB743697A2B3EC843824F8D_H
+#define KEYVALUEPAIR_2_T13A706ADD8D9CB9B6AB743697A2B3EC843824F8D_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
@@ -12375,7 +12375,7 @@ public:
 #endif
 
 // System.Collections.Generic.KeyValuePair`2<System.Object,System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>>
-struct  KeyValuePair_2_t8B7E7096D9035A9E1C41BF9B1E39EF488C7CCBF4 
+struct  KeyValuePair_2_t13A706ADD8D9CB9B6AB743697A2B3EC843824F8D 
 {
 public:
 	// TKey System.Collections.Generic.KeyValuePair`2::key
@@ -12384,7 +12384,7 @@ public:
 	KeyValuePair_2_t23481547E419E16E3B96A303578C1EB685C99EEE  ___value_1;
 
 public:
-	inline static int32_t get_offset_of_key_0() { return static_cast<int32_t>(offsetof(KeyValuePair_2_t8B7E7096D9035A9E1C41BF9B1E39EF488C7CCBF4, ___key_0)); }
+	inline static int32_t get_offset_of_key_0() { return static_cast<int32_t>(offsetof(KeyValuePair_2_t13A706ADD8D9CB9B6AB743697A2B3EC843824F8D, ___key_0)); }
 	inline RuntimeObject * get_key_0() const { return ___key_0; }
 	inline RuntimeObject ** get_address_of_key_0() { return &___key_0; }
 	inline void set_key_0(RuntimeObject * value)
@@ -12393,7 +12393,7 @@ public:
 		Il2CppCodeGenWriteBarrier((&___key_0), value);
 	}
 
-	inline static int32_t get_offset_of_value_1() { return static_cast<int32_t>(offsetof(KeyValuePair_2_t8B7E7096D9035A9E1C41BF9B1E39EF488C7CCBF4, ___value_1)); }
+	inline static int32_t get_offset_of_value_1() { return static_cast<int32_t>(offsetof(KeyValuePair_2_t13A706ADD8D9CB9B6AB743697A2B3EC843824F8D, ___value_1)); }
 	inline KeyValuePair_2_t23481547E419E16E3B96A303578C1EB685C99EEE  get_value_1() const { return ___value_1; }
 	inline KeyValuePair_2_t23481547E419E16E3B96A303578C1EB685C99EEE * get_address_of_value_1() { return &___value_1; }
 	inline void set_value_1(KeyValuePair_2_t23481547E419E16E3B96A303578C1EB685C99EEE  value)
@@ -12405,7 +12405,7 @@ public:
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // KEYVALUEPAIR_2_T8B7E7096D9035A9E1C41BF9B1E39EF488C7CCBF4_H
+#endif // KEYVALUEPAIR_2_T13A706ADD8D9CB9B6AB743697A2B3EC843824F8D_H
 #ifndef KEYVALUEPAIR_2_T2D8427F03B42441C4598C9D3AAB86FBA90CDF7F6_H
 #define KEYVALUEPAIR_2_T2D8427F03B42441C4598C9D3AAB86FBA90CDF7F6_H
 #ifdef __clang__
@@ -16417,7 +16417,7 @@ extern "C" IL2CPP_METHOD_ATTR void InternalEnumerator_1_Dispose_m026310D4B5128CA
 // System.Boolean System.Array/InternalEnumerator`1<System.Collections.Generic.KeyValuePair`2<System.Object,System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>>>::MoveNext()
 extern "C" IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_mD39CBD3F1C1FEC7950A97AB8A60CE1AF36A4108E_gshared (InternalEnumerator_1_tB086B536A60A1D181D18C7ADE3A8D728B6B88086 * __this, const RuntimeMethod* method);
 // T System.Array/InternalEnumerator`1<System.Collections.Generic.KeyValuePair`2<System.Object,System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>>>::get_Current()
-extern "C" IL2CPP_METHOD_ATTR KeyValuePair_2_t8B7E7096D9035A9E1C41BF9B1E39EF488C7CCBF4  InternalEnumerator_1_get_Current_mC189AB477D93BD4DE5C7086D46A33F86D0119EE3_gshared (InternalEnumerator_1_tB086B536A60A1D181D18C7ADE3A8D728B6B88086 * __this, const RuntimeMethod* method);
+extern "C" IL2CPP_METHOD_ATTR KeyValuePair_2_t13A706ADD8D9CB9B6AB743697A2B3EC843824F8D  InternalEnumerator_1_get_Current_mC189AB477D93BD4DE5C7086D46A33F86D0119EE3_gshared (InternalEnumerator_1_tB086B536A60A1D181D18C7ADE3A8D728B6B88086 * __this, const RuntimeMethod* method);
 // System.Void System.Array/InternalEnumerator`1<System.Collections.Generic.KeyValuePair`2<System.Object,System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>>>::System.Collections.IEnumerator.Reset()
 extern "C" IL2CPP_METHOD_ATTR void InternalEnumerator_1_System_Collections_IEnumerator_Reset_m406BB722410650BA8DBAF849559E291A4943E832_gshared (InternalEnumerator_1_tB086B536A60A1D181D18C7ADE3A8D728B6B88086 * __this, const RuntimeMethod* method);
 // System.Object System.Array/InternalEnumerator`1<System.Collections.Generic.KeyValuePair`2<System.Object,System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>>>::System.Collections.IEnumerator.get_Current()
@@ -18255,9 +18255,9 @@ inline bool InternalEnumerator_1_MoveNext_mD39CBD3F1C1FEC7950A97AB8A60CE1AF36A41
 	return ((  bool (*) (InternalEnumerator_1_tB086B536A60A1D181D18C7ADE3A8D728B6B88086 *, const RuntimeMethod*))InternalEnumerator_1_MoveNext_mD39CBD3F1C1FEC7950A97AB8A60CE1AF36A4108E_gshared)(__this, method);
 }
 // T System.Array/InternalEnumerator`1<System.Collections.Generic.KeyValuePair`2<System.Object,System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>>>::get_Current()
-inline KeyValuePair_2_t8B7E7096D9035A9E1C41BF9B1E39EF488C7CCBF4  InternalEnumerator_1_get_Current_mC189AB477D93BD4DE5C7086D46A33F86D0119EE3 (InternalEnumerator_1_tB086B536A60A1D181D18C7ADE3A8D728B6B88086 * __this, const RuntimeMethod* method)
+inline KeyValuePair_2_t13A706ADD8D9CB9B6AB743697A2B3EC843824F8D  InternalEnumerator_1_get_Current_mC189AB477D93BD4DE5C7086D46A33F86D0119EE3 (InternalEnumerator_1_tB086B536A60A1D181D18C7ADE3A8D728B6B88086 * __this, const RuntimeMethod* method)
 {
-	return ((  KeyValuePair_2_t8B7E7096D9035A9E1C41BF9B1E39EF488C7CCBF4  (*) (InternalEnumerator_1_tB086B536A60A1D181D18C7ADE3A8D728B6B88086 *, const RuntimeMethod*))InternalEnumerator_1_get_Current_mC189AB477D93BD4DE5C7086D46A33F86D0119EE3_gshared)(__this, method);
+	return ((  KeyValuePair_2_t13A706ADD8D9CB9B6AB743697A2B3EC843824F8D  (*) (InternalEnumerator_1_tB086B536A60A1D181D18C7ADE3A8D728B6B88086 *, const RuntimeMethod*))InternalEnumerator_1_get_Current_mC189AB477D93BD4DE5C7086D46A33F86D0119EE3_gshared)(__this, method);
 }
 // System.Void System.Array/InternalEnumerator`1<System.Collections.Generic.KeyValuePair`2<System.Object,System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>>>::System.Collections.IEnumerator.Reset()
 inline void InternalEnumerator_1_System_Collections_IEnumerator_Reset_m406BB722410650BA8DBAF849559E291A4943E832 (InternalEnumerator_1_tB086B536A60A1D181D18C7ADE3A8D728B6B88086 * __this, const RuntimeMethod* method)
@@ -25289,7 +25289,7 @@ extern "C"  bool InternalEnumerator_1_MoveNext_mD39CBD3F1C1FEC7950A97AB8A60CE1AF
 	return InternalEnumerator_1_MoveNext_mD39CBD3F1C1FEC7950A97AB8A60CE1AF36A4108E(_thisAdjusted, method);
 }
 // T System.Array_InternalEnumerator`1<System.Collections.Generic.KeyValuePair`2<System.Object,System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>>>::get_Current()
-extern "C" IL2CPP_METHOD_ATTR KeyValuePair_2_t8B7E7096D9035A9E1C41BF9B1E39EF488C7CCBF4  InternalEnumerator_1_get_Current_mC189AB477D93BD4DE5C7086D46A33F86D0119EE3_gshared (InternalEnumerator_1_tB086B536A60A1D181D18C7ADE3A8D728B6B88086 * __this, const RuntimeMethod* method)
+extern "C" IL2CPP_METHOD_ATTR KeyValuePair_2_t13A706ADD8D9CB9B6AB743697A2B3EC843824F8D  InternalEnumerator_1_get_Current_mC189AB477D93BD4DE5C7086D46A33F86D0119EE3_gshared (InternalEnumerator_1_tB086B536A60A1D181D18C7ADE3A8D728B6B88086 * __this, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -25332,11 +25332,11 @@ IL_0029:
 		int32_t L_6 = Array_get_Length_m2239B6393651C3F4631D900EFC1B05DBE8F5466D((RuntimeArray *)L_5, /*hidden argument*/NULL);
 		int32_t L_7 = (int32_t)__this->get_idx_1();
 		NullCheck((RuntimeArray *)L_4);
-		KeyValuePair_2_t8B7E7096D9035A9E1C41BF9B1E39EF488C7CCBF4  L_8 = ((  KeyValuePair_2_t8B7E7096D9035A9E1C41BF9B1E39EF488C7CCBF4  (*) (RuntimeArray *, int32_t, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 0)->methodPointer)((RuntimeArray *)L_4, (int32_t)((int32_t)il2cpp_codegen_subtract((int32_t)((int32_t)il2cpp_codegen_subtract((int32_t)L_6, (int32_t)1)), (int32_t)L_7)), /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 0));
+		KeyValuePair_2_t13A706ADD8D9CB9B6AB743697A2B3EC843824F8D  L_8 = ((  KeyValuePair_2_t13A706ADD8D9CB9B6AB743697A2B3EC843824F8D  (*) (RuntimeArray *, int32_t, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 0)->methodPointer)((RuntimeArray *)L_4, (int32_t)((int32_t)il2cpp_codegen_subtract((int32_t)((int32_t)il2cpp_codegen_subtract((int32_t)L_6, (int32_t)1)), (int32_t)L_7)), /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 0));
 		return L_8;
 	}
 }
-extern "C"  KeyValuePair_2_t8B7E7096D9035A9E1C41BF9B1E39EF488C7CCBF4  InternalEnumerator_1_get_Current_mC189AB477D93BD4DE5C7086D46A33F86D0119EE3_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
+extern "C"  KeyValuePair_2_t13A706ADD8D9CB9B6AB743697A2B3EC843824F8D  InternalEnumerator_1_get_Current_mC189AB477D93BD4DE5C7086D46A33F86D0119EE3_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
 {
 	InternalEnumerator_1_tB086B536A60A1D181D18C7ADE3A8D728B6B88086 * _thisAdjusted = reinterpret_cast<InternalEnumerator_1_tB086B536A60A1D181D18C7ADE3A8D728B6B88086 *>(__this + 1);
 	return InternalEnumerator_1_get_Current_mC189AB477D93BD4DE5C7086D46A33F86D0119EE3(_thisAdjusted, method);
@@ -25358,8 +25358,8 @@ extern "C"  void InternalEnumerator_1_System_Collections_IEnumerator_Reset_m406B
 extern "C" IL2CPP_METHOD_ATTR RuntimeObject * InternalEnumerator_1_System_Collections_IEnumerator_get_Current_m72FC004CE19E5DF8EDBBC26C380FDBCBB7359839_gshared (InternalEnumerator_1_tB086B536A60A1D181D18C7ADE3A8D728B6B88086 * __this, const RuntimeMethod* method)
 {
 	{
-		KeyValuePair_2_t8B7E7096D9035A9E1C41BF9B1E39EF488C7CCBF4  L_0 = InternalEnumerator_1_get_Current_mC189AB477D93BD4DE5C7086D46A33F86D0119EE3((InternalEnumerator_1_tB086B536A60A1D181D18C7ADE3A8D728B6B88086 *)(InternalEnumerator_1_tB086B536A60A1D181D18C7ADE3A8D728B6B88086 *)__this, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 1));
-		KeyValuePair_2_t8B7E7096D9035A9E1C41BF9B1E39EF488C7CCBF4  L_1 = L_0;
+		KeyValuePair_2_t13A706ADD8D9CB9B6AB743697A2B3EC843824F8D  L_0 = InternalEnumerator_1_get_Current_mC189AB477D93BD4DE5C7086D46A33F86D0119EE3((InternalEnumerator_1_tB086B536A60A1D181D18C7ADE3A8D728B6B88086 *)(InternalEnumerator_1_tB086B536A60A1D181D18C7ADE3A8D728B6B88086 *)__this, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 1));
+		KeyValuePair_2_t13A706ADD8D9CB9B6AB743697A2B3EC843824F8D  L_1 = L_0;
 		RuntimeObject * L_2 = Box(IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->klass)->rgctx_data, 2), &L_1);
 		return L_2;
 	}

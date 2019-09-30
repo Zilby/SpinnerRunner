@@ -614,6 +614,86 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // LOGITECHF710MODEDMACPROFILE_TD95941165ED9C2E166222F9B7F9E564D05A43BC9_H
+#ifndef LOGITECHF710MODEDWINDOWSNATIVEPROFILE_TB1C356249CD79D062D39979B4CC4568427CB5F4E_H
+#define LOGITECHF710MODEDWINDOWSNATIVEPROFILE_TB1C356249CD79D062D39979B4CC4568427CB5F4E_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// InControl.NativeProfile.LogitechF710ModeDWindowsNativeProfile
+struct  LogitechF710ModeDWindowsNativeProfile_tB1C356249CD79D062D39979B4CC4568427CB5F4E  : public NativeInputDeviceProfile_t06D248889783453C74E270EDA2D59D8AD5633115
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // LOGITECHF710MODEDWINDOWSNATIVEPROFILE_TB1C356249CD79D062D39979B4CC4568427CB5F4E_H
+#ifndef LOGITECHF710MODEXWINDOWSNATIVEPROFILE_TBF83E4B7B267412ACB9D9544ABF34109DE3A6E64_H
+#define LOGITECHF710MODEXWINDOWSNATIVEPROFILE_TBF83E4B7B267412ACB9D9544ABF34109DE3A6E64_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// InControl.NativeProfile.LogitechF710ModeXWindowsNativeProfile
+struct  LogitechF710ModeXWindowsNativeProfile_tBF83E4B7B267412ACB9D9544ABF34109DE3A6E64  : public NativeInputDeviceProfile_t06D248889783453C74E270EDA2D59D8AD5633115
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // LOGITECHF710MODEXWINDOWSNATIVEPROFILE_TBF83E4B7B267412ACB9D9544ABF34109DE3A6E64_H
+#ifndef NVIDIASHIELDWINDOWSNATIVEPROFILE_T39550D3BA839A819513F343705E43219BEC140AE_H
+#define NVIDIASHIELDWINDOWSNATIVEPROFILE_T39550D3BA839A819513F343705E43219BEC140AE_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// InControl.NativeProfile.NVidiaShieldWindowsNativeProfile
+struct  NVidiaShieldWindowsNativeProfile_t39550D3BA839A819513F343705E43219BEC140AE  : public NativeInputDeviceProfile_t06D248889783453C74E270EDA2D59D8AD5633115
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // NVIDIASHIELDWINDOWSNATIVEPROFILE_T39550D3BA839A819513F343705E43219BEC140AE_H
+#ifndef PCTWINSHOCKWINDOWSNATIVEPROFILE_T81021F4248CAE0C814FDD91DCFE6329DFD46789F_H
+#define PCTWINSHOCKWINDOWSNATIVEPROFILE_T81021F4248CAE0C814FDD91DCFE6329DFD46789F_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// InControl.NativeProfile.PCTWINSHOCKWindowsNativeProfile
+struct  PCTWINSHOCKWindowsNativeProfile_t81021F4248CAE0C814FDD91DCFE6329DFD46789F  : public NativeInputDeviceProfile_t06D248889783453C74E270EDA2D59D8AD5633115
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // PCTWINSHOCKWINDOWSNATIVEPROFILE_T81021F4248CAE0C814FDD91DCFE6329DFD46789F_H
 #ifndef PLAYSTATION3MACPROFILE_TC812C3AEC6A49C7E58A6C0D0719566FE1E8BD26C_H
 #define PLAYSTATION3MACPROFILE_TC812C3AEC6A49C7E58A6C0D0719566FE1E8BD26C_H
 #ifdef __clang__
@@ -654,6 +734,66 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // PLAYSTATION4MACPROFILE_T90AC9589E4B51BBF2CCB5B1AB036F8D0D2969CE7_H
+#ifndef PLAYSTATION4WINDOWSNATIVEPROFILE_T6F9AACC6EF792FE8864816772361F8397F42A67A_H
+#define PLAYSTATION4WINDOWSNATIVEPROFILE_T6F9AACC6EF792FE8864816772361F8397F42A67A_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// InControl.NativeProfile.PlayStation4WindowsNativeProfile
+struct  PlayStation4WindowsNativeProfile_t6F9AACC6EF792FE8864816772361F8397F42A67A  : public NativeInputDeviceProfile_t06D248889783453C74E270EDA2D59D8AD5633115
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // PLAYSTATION4WINDOWSNATIVEPROFILE_T6F9AACC6EF792FE8864816772361F8397F42A67A_H
+#ifndef RAZERSERVALWINDOWSNATIVEPROFILE_T1F17BD3819D58FA850F6FED4DCA58A9C7C6F9097_H
+#define RAZERSERVALWINDOWSNATIVEPROFILE_T1F17BD3819D58FA850F6FED4DCA58A9C7C6F9097_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// InControl.NativeProfile.RazerServalWindowsNativeProfile
+struct  RazerServalWindowsNativeProfile_t1F17BD3819D58FA850F6FED4DCA58A9C7C6F9097  : public NativeInputDeviceProfile_t06D248889783453C74E270EDA2D59D8AD5633115
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // RAZERSERVALWINDOWSNATIVEPROFILE_T1F17BD3819D58FA850F6FED4DCA58A9C7C6F9097_H
+#ifndef STEAMWINDOWSNATIVEPROFILE_T60ACF65EAD3B92580515996068BDABFC40CBCB6F_H
+#define STEAMWINDOWSNATIVEPROFILE_T60ACF65EAD3B92580515996068BDABFC40CBCB6F_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// InControl.NativeProfile.SteamWindowsNativeProfile
+struct  SteamWindowsNativeProfile_t60ACF65EAD3B92580515996068BDABFC40CBCB6F  : public NativeInputDeviceProfile_t06D248889783453C74E270EDA2D59D8AD5633115
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // STEAMWINDOWSNATIVEPROFILE_T60ACF65EAD3B92580515996068BDABFC40CBCB6F_H
 #ifndef XBOX360DRIVERMACPROFILE_T85862366C30957580596EFE6E9B710CC994FE81A_H
 #define XBOX360DRIVERMACPROFILE_T85862366C30957580596EFE6E9B710CC994FE81A_H
 #ifdef __clang__
@@ -694,146 +834,6 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // XBOXONEDRIVERMACPROFILE_TC88EA9088EE3643F43477EE604994A419B5B19A6_H
-#ifndef HORIREALARCADEPROVKAIFIGHTINGSTICKMACPROFILE_T209344328B55970D6DF912C6A1A6502AC07FDCBF_H
-#define HORIREALARCADEPROVKAIFIGHTINGSTICKMACPROFILE_T209344328B55970D6DF912C6A1A6502AC07FDCBF_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// InControl.NativeProfile.HORIRealArcadeProVKaiFightingStickMacProfile
-struct  HORIRealArcadeProVKaiFightingStickMacProfile_t209344328B55970D6DF912C6A1A6502AC07FDCBF  : public Xbox360DriverMacProfile_t85862366C30957580596EFE6E9B710CC994FE81A
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // HORIREALARCADEPROVKAIFIGHTINGSTICKMACPROFILE_T209344328B55970D6DF912C6A1A6502AC07FDCBF_H
-#ifndef HORIREALARCADEPROVXMACPROFILE_T95ECABA64E8C661F146EEBCA1D32E0B81DBA012C_H
-#define HORIREALARCADEPROVXMACPROFILE_T95ECABA64E8C661F146EEBCA1D32E0B81DBA012C_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// InControl.NativeProfile.HORIRealArcadeProVXMacProfile
-struct  HORIRealArcadeProVXMacProfile_t95ECABA64E8C661F146EEBCA1D32E0B81DBA012C  : public Xbox360DriverMacProfile_t85862366C30957580596EFE6E9B710CC994FE81A
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // HORIREALARCADEPROVXMACPROFILE_T95ECABA64E8C661F146EEBCA1D32E0B81DBA012C_H
-#ifndef HORIREALARCADEPROHAYABUSAMACPROFILE_T507DD0A3CC6115EB435CBB16E03E7FE8BDEAB421_H
-#define HORIREALARCADEPROHAYABUSAMACPROFILE_T507DD0A3CC6115EB435CBB16E03E7FE8BDEAB421_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// InControl.NativeProfile.HoriRealArcadeProHayabusaMacProfile
-struct  HoriRealArcadeProHayabusaMacProfile_t507DD0A3CC6115EB435CBB16E03E7FE8BDEAB421  : public Xbox360DriverMacProfile_t85862366C30957580596EFE6E9B710CC994FE81A
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // HORIREALARCADEPROHAYABUSAMACPROFILE_T507DD0A3CC6115EB435CBB16E03E7FE8BDEAB421_H
-#ifndef HORIREALARCADEPROVXSAMACPROFILE_T1BC8761534874AE7AC390250FFDA7E357056CC40_H
-#define HORIREALARCADEPROVXSAMACPROFILE_T1BC8761534874AE7AC390250FFDA7E357056CC40_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// InControl.NativeProfile.HoriRealArcadeProVXSAMacProfile
-struct  HoriRealArcadeProVXSAMacProfile_t1BC8761534874AE7AC390250FFDA7E357056CC40  : public Xbox360DriverMacProfile_t85862366C30957580596EFE6E9B710CC994FE81A
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // HORIREALARCADEPROVXSAMACPROFILE_T1BC8761534874AE7AC390250FFDA7E357056CC40_H
-#ifndef HORIXBOX360GEMPADEXMACPROFILE_TB52B3F047B43F9BE28AA6432DE8BEF0D7F8598C3_H
-#define HORIXBOX360GEMPADEXMACPROFILE_TB52B3F047B43F9BE28AA6432DE8BEF0D7F8598C3_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// InControl.NativeProfile.HoriXbox360GemPadExMacProfile
-struct  HoriXbox360GemPadExMacProfile_tB52B3F047B43F9BE28AA6432DE8BEF0D7F8598C3  : public Xbox360DriverMacProfile_t85862366C30957580596EFE6E9B710CC994FE81A
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // HORIXBOX360GEMPADEXMACPROFILE_TB52B3F047B43F9BE28AA6432DE8BEF0D7F8598C3_H
-#ifndef HORIXBOXONECONTROLLERMACPROFILE_T3B5A7B143AA6DFCEAB0BF74D59FB531C6F5C6344_H
-#define HORIXBOXONECONTROLLERMACPROFILE_T3B5A7B143AA6DFCEAB0BF74D59FB531C6F5C6344_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// InControl.NativeProfile.HoriXboxOneControllerMacProfile
-struct  HoriXboxOneControllerMacProfile_t3B5A7B143AA6DFCEAB0BF74D59FB531C6F5C6344  : public XboxOneDriverMacProfile_tC88EA9088EE3643F43477EE604994A419B5B19A6
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // HORIXBOXONECONTROLLERMACPROFILE_T3B5A7B143AA6DFCEAB0BF74D59FB531C6F5C6344_H
-#ifndef IONDRUMROCKERMACPROFILE_T0409C1F15451021F71DFE40E736FD677A97DD55E_H
-#define IONDRUMROCKERMACPROFILE_T0409C1F15451021F71DFE40E736FD677A97DD55E_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// InControl.NativeProfile.IonDrumRockerMacProfile
-struct  IonDrumRockerMacProfile_t0409C1F15451021F71DFE40E736FD677A97DD55E  : public Xbox360DriverMacProfile_t85862366C30957580596EFE6E9B710CC994FE81A
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // IONDRUMROCKERMACPROFILE_T0409C1F15451021F71DFE40E736FD677A97DD55E_H
 #ifndef JOYTEKXBOX360CONTROLLERMACPROFILE_T0727123E80AC50B7BE636555D7FDFC158617A172_H
 #define JOYTEKXBOX360CONTROLLERMACPROFILE_T0727123E80AC50B7BE636555D7FDFC158617A172_H
 #ifdef __clang__
@@ -2404,106 +2404,106 @@ public:
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4200 = { sizeof (HoriRealArcadeProHayabusaMacProfile_t507DD0A3CC6115EB435CBB16E03E7FE8BDEAB421), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4201 = { sizeof (HORIRealArcadeProVKaiFightingStickMacProfile_t209344328B55970D6DF912C6A1A6502AC07FDCBF), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4202 = { sizeof (HORIRealArcadeProVXMacProfile_t95ECABA64E8C661F146EEBCA1D32E0B81DBA012C), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4203 = { sizeof (HoriRealArcadeProVXSAMacProfile_t1BC8761534874AE7AC390250FFDA7E357056CC40), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4204 = { sizeof (HoriXbox360GemPadExMacProfile_tB52B3F047B43F9BE28AA6432DE8BEF0D7F8598C3), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4205 = { sizeof (HoriXboxOneControllerMacProfile_t3B5A7B143AA6DFCEAB0BF74D59FB531C6F5C6344), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4206 = { sizeof (IonDrumRockerMacProfile_t0409C1F15451021F71DFE40E736FD677A97DD55E), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4207 = { sizeof (JoytekXbox360ControllerMacProfile_t0727123E80AC50B7BE636555D7FDFC158617A172), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4208 = { sizeof (KonamiDancePadMacProfile_t079E7CE6476F9653B7294D48E0E1A3A07D5B91BD), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4209 = { sizeof (LogitechChillStreamControllerMacProfile_tDAD312D671EB9D3615A9EC2856CF5C2EED96FA0E), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4210 = { sizeof (LogitechControllerMacProfile_t3814F199153445AD2D3E24D63EF5860A93260BCF), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4211 = { sizeof (LogitechDriveFXRacingWheelMacProfile_t15AE4C5326602D16EC2457F7C1296A1F7CFF2034), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4212 = { sizeof (LogitechF310ControllerMacProfile_t9743B9DC49ABCD2B396007086BAB68E20EB9A5C2), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4213 = { sizeof (LogitechF510ControllerMacProfile_t02A974CA0B64A3BC33CBAD58978CEE4D7F949C77), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4214 = { sizeof (LogitechF710ControllerMacProfile_t38B19D3B044F3F72C857129888EFD6F83255CED7), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4215 = { sizeof (LogitechG920RacingWheelMacProfile_t34F2ECACD0C6434CB32958D43B043BD3B6939BA7), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4216 = { sizeof (MadCatzArcadeStickMacProfile_tB96AE9B6369004F974C59B50406BCDFE60B5C2E7), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4217 = { sizeof (MadCatzBrawlStickMacProfile_t29EFEA4BDC143C60FB83CD7522630099EB93ECFB), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4218 = { sizeof (MadCatzCODControllerMacProfile_t68CAF6B51B432B9D7D4B177E93C5E15C169ED29F), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4219 = { sizeof (MadCatzControllerMacProfile_t8FED60B89105D8ADC64FCCE53F341280F2DE3101), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4220 = { sizeof (MadCatzFightPadControllerMacProfile_t099B5F97EB9F2E1217C18B3A61C2F6F7669EC22C), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4221 = { sizeof (MadCatzFightPadMacProfile_t592E7CD2D6ABEA88F254DD3B5AB6618511F2A3D0), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4222 = { sizeof (MadCatzFightStickTE2MacProfile_tDA5E98BFF6E79D306AE9533C6733C0D1DB4FEF14), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4223 = { sizeof (MadCatzFightStickTESPlusMacProfile_t90370BB0DBF7989DBDE096D7BFF21199BFAE52A3), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4224 = { sizeof (MadCatzFPSProMacProfile_tE01735CA48915865A01937B6E48418D4DFD3BFDB), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4225 = { sizeof (MadCatzMicroConControllerMacProfile_tD82C1AB04F1C1D83C5499117A3392957EEF5181C), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4226 = { sizeof (MadCatzMicroControllerMacProfile_t9C9C40EE3A4D155757D278E0A18BEB274B2447A0), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4227 = { sizeof (MadCatzMLGFightStickTEMacProfile_t6D60014E9298EEE5F27CE608B8F823AC6ED4EF37), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4228 = { sizeof (MadCatzNeoFightStickMacProfile_tCC76F4F28D4B768801430D4C19C1C24F94759086), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4229 = { sizeof (MadCatzPortableDrumMacProfile_tB71A1CA849D8C2D2D9D18C798E9D22951E52EF6A), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4230 = { sizeof (MadCatzProControllerMacProfile_t48D015652ABF35CBD31775E2155CFED6F4729B19), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4231 = { sizeof (MadCatzSaitekAV8R02MacProfile_tA3E00056B1594BFDB26980E2B0D40464A4E8E073), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4232 = { sizeof (MadCatzSF4FightStickRound2TEMacProfile_t12F3D595FD4B789DAA2888EB60003743043CD9B1), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4233 = { sizeof (MadCatzSF4FightStickSEMacProfile_t668DC45F8ED5D0A6A9933C15C482F19EEE21CC64), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4234 = { sizeof (MadCatzSF4FightStickTEMacProfile_t9DFA44C692B942450A6F8ACBBDA30D385435BF30), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4235 = { sizeof (MadCatzSoulCaliberFightStickMacProfile_t6A10CD4AF062060245D2D8ED613A007EC27C11D2), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4236 = { sizeof (MadCatzSSF4ChunLiFightStickTEMacProfile_t1B2B3BCF3E2A2CC46A7C533553231F09CFD9EBEB), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4237 = { sizeof (MadCatzSSF4FightStickTEMacProfile_tDB9F832AA91DA4BDC77D56B17B1A33D65D809399), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4238 = { sizeof (MatCatzControllerMacProfile_tF54015AFE986AA2A3D6174E1B3119D97C7D972BB), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4239 = { sizeof (MicrosoftXbox360ControllerMacProfile_t80AC39609E170F7A373579B3AFD0CEE077B61287), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4240 = { sizeof (MicrosoftXboxControllerMacProfile_t21357ADEE4071DDAAC63559F0D6CB41BB0376CA7), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4241 = { sizeof (MicrosoftXboxOneControllerMacProfile_tAC2095531147EEA502E147463661D20F60FE7EF9), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4242 = { sizeof (MicrosoftXboxOneEliteControllerMacProfile_t2C22E95314E084B0D13B35C77CE06455E57890A1), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4243 = { sizeof (MKKlassikFightStickMacProfile_t0D5B7245E6358B3865045726D5B2AE247C52A424), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4244 = { sizeof (MLGControllerMacProfile_t4D8C7BFE35F4D3AD6E20169E0F0F67B026A641D1), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4245 = { sizeof (MVCTEStickMacProfile_t11C66C78BAC20DF392EEBBEF7AEE2C038A8C5AA5), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4246 = { sizeof (NaconGC100XFControllerMacProfile_t9D4FCBBB10B1A14266500A4DF6D3DA1127954829), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4247 = { sizeof (PDPAfterglowControllerMacProfile_tF1EAE8FAE0130A961ED4AFDA63C5C34686BC2EC8), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4248 = { sizeof (PDPBattlefieldXBoxOneControllerMacProfile_tF4701CC3AA805F47A71838C11D3C0B001A4D3819), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4249 = { sizeof (PDPMarvelControllerMacProfile_t0A69D4FF0807D90D86D490646977A8464A17CF1F), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4250 = { sizeof (PDPTitanfall2XboxOneControllerMacProfile_t634D193AE748B9C9E0F732FEC4847132A1F1D30E), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4251 = { sizeof (PDPTronControllerMacProfile_t145D9615D867CEF743CB6E14AE5DADC8C8DD2648), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4252 = { sizeof (PDPVersusControllerMacProfile_tD285E897C215F0D05AEB6F36E6E67D2E2161AF01), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4253 = { sizeof (PDPXbox360ControllerMacProfile_tD4D62CEFC25B356D609908A32FDD6DFB97A6AD27), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4254 = { sizeof (PDPXboxOneArcadeStickMacProfile_t8910EA57FD02FCEB22467BE95CA78395804F1408), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4255 = { sizeof (PDPXboxOneControllerMacProfile_tAFEB01B69F0D0A4BA05C5A6058D6C9D61336F39E), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4256 = { sizeof (PowerAAirflowControllerMacProfile_t6E8FFCE2D60CAEF83F6AF5F06E243FE80A250414), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4257 = { sizeof (POWERAFUS1ONTournamentControllerMacProfile_t304584B057F1A61ABE710C85D0CBBA785B92939A), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4258 = { sizeof (PowerAMiniControllerMacProfile_t42ECFE508B04BF03C758E040CDB29F047F8BCB2B), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4259 = { sizeof (PowerAMiniProExControllerMacProfile_t919EFA8E99B072972AF612E05CFF234DB7008C96), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4260 = { sizeof (PowerAMiniXboxOneControllerMacProfile_t2FC260B7383E9F2AB373AFCD485FC848093F5E74), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4261 = { sizeof (PowerASpectraIlluminatedControllerMacProfile_tD363A4FF9291C7228A4BFDB0C89C003DAEA46D47), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4262 = { sizeof (ProEXXbox360ControllerMacProfile_tD54EF5F707D746C09F36FF7C83C1D10572BAE364), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4263 = { sizeof (ProEXXboxOneControllerMacProfile_t393CCA66D052831D6BD486AFAAE4D5EBC040ABDC), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4264 = { sizeof (QanbaFightStickPlusMacProfile_tFF6C66E48AC5D23840D711C7C8715F8AFE18C130), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4265 = { sizeof (RazerAtroxArcadeStickMacProfile_t8343709D35AF39C8C6289C1F2F2B52987792AD4B), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4266 = { sizeof (RazerOnzaControllerMacProfile_t52B51392C5C14B670451D37C5A187A8CB67EA0FC), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4267 = { sizeof (RazerOnzaTEControllerMacProfile_tDADC323DD18ABE06ABB927143EF9CF597C2257EE), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4268 = { sizeof (RazerSabertoothEliteControllerMacProfile_t6B17137DF88D5EEC8C4442015444A78E47B2DEDE), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4269 = { sizeof (RazerStrikeControllerMacProfile_t216B9248A96129C64CCE6508F0D69BD17432F8C2), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4270 = { sizeof (RazerWildcatControllerMacProfile_t48FAC8700B592768C3226CAFDBCE15F59656A9C5), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4271 = { sizeof (RedOctaneControllerMacProfile_tABE1A00BD660E9788FC2DA7BCC1D0A7117053DA6), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4272 = { sizeof (RockBandDrumsMacProfile_t0633B0BA99B074663B62F277B405E077A57A80B7), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4273 = { sizeof (RockBandGuitarMacProfile_tCD0B031C3B0DC5FB9B71F3E52369E5D4C052E10C), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4274 = { sizeof (RockCandyControllerMacProfile_tF2FEA66CF2A315A7D2A267AEDEE6D0F145C79D78), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4275 = { sizeof (RockCandyXbox360ControllerMacProfile_t041F010FC8D5E1C4F4713840407CD7776259A6A1), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4276 = { sizeof (RockCandyXboxOneControllerMacProfile_t3BD33625DDD5A14CE8E5F058D4A3EA160EF7BDBC), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4277 = { sizeof (SaitekXbox360ControllerMacProfile_t2F07863A9310E6D458D17138351309730731C69D), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4278 = { sizeof (ThrustmasterFerrari458RacingWheelMacProfile_t4E2ABECC6F261F3507B708CE236EAACAB472B0D1), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4279 = { sizeof (ThrustmasterGPXControllerMacProfile_tED9E9766F87BFFF3CAB20C996B88BE2358B07691), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4280 = { sizeof (TrustPredatorJoystickMacProfile_tFC2FFD135E3179B8220E67CDA19F387B93DE43FF), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4281 = { sizeof (TSZPelicanControllerMacProfile_t58DCE058462790E000B8025CD69CB2523D410F6E), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4282 = { sizeof (Xbox360ControllerMacProfile_t6C91E7F634F2CCDF2D216873C5707695E559AD71), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4283 = { sizeof (Xbox360MortalKombatFightStickMacProfile_tBBB3CC6122AE5D6034F42F9FBD11BB1093FEE349), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4284 = { sizeof (XboxOneControllerMacProfile_t7AE3A9A425E7889155DB75DEE344A535EB531376), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4285 = { sizeof (BuffaloClassicMacProfile_t81DED8975DBAF773A21524A4B39363F6CF279054), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4286 = { sizeof (LogitechF310ModeDMacProfile_t98562700A64841EE59FB422AC8396D5BADC67071), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4287 = { sizeof (LogitechF510ModeDMacProfile_tF7835B04425945FEEEBE1C4CE9ED4692083E7661), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4288 = { sizeof (LogitechF710ModeDMacProfile_tD95941165ED9C2E166222F9B7F9E564D05A43BC9), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4289 = { sizeof (PlayStation3MacProfile_tC812C3AEC6A49C7E58A6C0D0719566FE1E8BD26C), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4290 = { sizeof (PlayStation4MacProfile_t90AC9589E4B51BBF2CCB5B1AB036F8D0D2969CE7), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4291 = { sizeof (Xbox360DriverMacProfile_t85862366C30957580596EFE6E9B710CC994FE81A), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4292 = { sizeof (XboxOneDriverMacProfile_tC88EA9088EE3643F43477EE604994A419B5B19A6), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4293 = { sizeof (AfterglowXbox360WindowsNativeProfile_t75884D1264F6AAFCC2E387DE5BBAAE19189D53BC), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4294 = { sizeof (AirFloPS3WindowsNativeProfile_t98878C2FAE8915D1C06CF5115C114369C6CCB3C2), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4295 = { sizeof (BuffaloClassicWindowsNativeProfile_t985F5C52B2D7B320134223A7651438BD12E682F7), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4296 = { sizeof (LogitechF310ModeDWindowsNativeProfile_t184694567D11D325BA161BE5F6DB26FABC76A935), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4297 = { sizeof (LogitechF310ModeXWindowsNativeProfile_tB62FF4755EFCC2E41E7AA227086E30A19808BF4C), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4298 = { sizeof (LogitechF510ModeDWindowsNativeProfile_tB477E0431B4F36741A6338EB211B7C7E224F3D03), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4299 = { sizeof (LogitechF510ModeXWindowsNativeProfile_t3AAEECBE96865E04772FE8FEBF2278ADDCBAB58D), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4200 = { sizeof (JoytekXbox360ControllerMacProfile_t0727123E80AC50B7BE636555D7FDFC158617A172), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4201 = { sizeof (KonamiDancePadMacProfile_t079E7CE6476F9653B7294D48E0E1A3A07D5B91BD), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4202 = { sizeof (LogitechChillStreamControllerMacProfile_tDAD312D671EB9D3615A9EC2856CF5C2EED96FA0E), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4203 = { sizeof (LogitechControllerMacProfile_t3814F199153445AD2D3E24D63EF5860A93260BCF), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4204 = { sizeof (LogitechDriveFXRacingWheelMacProfile_t15AE4C5326602D16EC2457F7C1296A1F7CFF2034), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4205 = { sizeof (LogitechF310ControllerMacProfile_t9743B9DC49ABCD2B396007086BAB68E20EB9A5C2), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4206 = { sizeof (LogitechF510ControllerMacProfile_t02A974CA0B64A3BC33CBAD58978CEE4D7F949C77), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4207 = { sizeof (LogitechF710ControllerMacProfile_t38B19D3B044F3F72C857129888EFD6F83255CED7), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4208 = { sizeof (LogitechG920RacingWheelMacProfile_t34F2ECACD0C6434CB32958D43B043BD3B6939BA7), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4209 = { sizeof (MadCatzArcadeStickMacProfile_tB96AE9B6369004F974C59B50406BCDFE60B5C2E7), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4210 = { sizeof (MadCatzBrawlStickMacProfile_t29EFEA4BDC143C60FB83CD7522630099EB93ECFB), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4211 = { sizeof (MadCatzCODControllerMacProfile_t68CAF6B51B432B9D7D4B177E93C5E15C169ED29F), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4212 = { sizeof (MadCatzControllerMacProfile_t8FED60B89105D8ADC64FCCE53F341280F2DE3101), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4213 = { sizeof (MadCatzFightPadControllerMacProfile_t099B5F97EB9F2E1217C18B3A61C2F6F7669EC22C), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4214 = { sizeof (MadCatzFightPadMacProfile_t592E7CD2D6ABEA88F254DD3B5AB6618511F2A3D0), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4215 = { sizeof (MadCatzFightStickTE2MacProfile_tDA5E98BFF6E79D306AE9533C6733C0D1DB4FEF14), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4216 = { sizeof (MadCatzFightStickTESPlusMacProfile_t90370BB0DBF7989DBDE096D7BFF21199BFAE52A3), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4217 = { sizeof (MadCatzFPSProMacProfile_tE01735CA48915865A01937B6E48418D4DFD3BFDB), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4218 = { sizeof (MadCatzMicroConControllerMacProfile_tD82C1AB04F1C1D83C5499117A3392957EEF5181C), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4219 = { sizeof (MadCatzMicroControllerMacProfile_t9C9C40EE3A4D155757D278E0A18BEB274B2447A0), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4220 = { sizeof (MadCatzMLGFightStickTEMacProfile_t6D60014E9298EEE5F27CE608B8F823AC6ED4EF37), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4221 = { sizeof (MadCatzNeoFightStickMacProfile_tCC76F4F28D4B768801430D4C19C1C24F94759086), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4222 = { sizeof (MadCatzPortableDrumMacProfile_tB71A1CA849D8C2D2D9D18C798E9D22951E52EF6A), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4223 = { sizeof (MadCatzProControllerMacProfile_t48D015652ABF35CBD31775E2155CFED6F4729B19), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4224 = { sizeof (MadCatzSaitekAV8R02MacProfile_tA3E00056B1594BFDB26980E2B0D40464A4E8E073), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4225 = { sizeof (MadCatzSF4FightStickRound2TEMacProfile_t12F3D595FD4B789DAA2888EB60003743043CD9B1), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4226 = { sizeof (MadCatzSF4FightStickSEMacProfile_t668DC45F8ED5D0A6A9933C15C482F19EEE21CC64), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4227 = { sizeof (MadCatzSF4FightStickTEMacProfile_t9DFA44C692B942450A6F8ACBBDA30D385435BF30), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4228 = { sizeof (MadCatzSoulCaliberFightStickMacProfile_t6A10CD4AF062060245D2D8ED613A007EC27C11D2), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4229 = { sizeof (MadCatzSSF4ChunLiFightStickTEMacProfile_t1B2B3BCF3E2A2CC46A7C533553231F09CFD9EBEB), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4230 = { sizeof (MadCatzSSF4FightStickTEMacProfile_tDB9F832AA91DA4BDC77D56B17B1A33D65D809399), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4231 = { sizeof (MatCatzControllerMacProfile_tF54015AFE986AA2A3D6174E1B3119D97C7D972BB), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4232 = { sizeof (MicrosoftXbox360ControllerMacProfile_t80AC39609E170F7A373579B3AFD0CEE077B61287), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4233 = { sizeof (MicrosoftXboxControllerMacProfile_t21357ADEE4071DDAAC63559F0D6CB41BB0376CA7), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4234 = { sizeof (MicrosoftXboxOneControllerMacProfile_tAC2095531147EEA502E147463661D20F60FE7EF9), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4235 = { sizeof (MicrosoftXboxOneEliteControllerMacProfile_t2C22E95314E084B0D13B35C77CE06455E57890A1), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4236 = { sizeof (MKKlassikFightStickMacProfile_t0D5B7245E6358B3865045726D5B2AE247C52A424), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4237 = { sizeof (MLGControllerMacProfile_t4D8C7BFE35F4D3AD6E20169E0F0F67B026A641D1), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4238 = { sizeof (MVCTEStickMacProfile_t11C66C78BAC20DF392EEBBEF7AEE2C038A8C5AA5), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4239 = { sizeof (NaconGC100XFControllerMacProfile_t9D4FCBBB10B1A14266500A4DF6D3DA1127954829), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4240 = { sizeof (PDPAfterglowControllerMacProfile_tF1EAE8FAE0130A961ED4AFDA63C5C34686BC2EC8), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4241 = { sizeof (PDPBattlefieldXBoxOneControllerMacProfile_tF4701CC3AA805F47A71838C11D3C0B001A4D3819), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4242 = { sizeof (PDPMarvelControllerMacProfile_t0A69D4FF0807D90D86D490646977A8464A17CF1F), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4243 = { sizeof (PDPTitanfall2XboxOneControllerMacProfile_t634D193AE748B9C9E0F732FEC4847132A1F1D30E), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4244 = { sizeof (PDPTronControllerMacProfile_t145D9615D867CEF743CB6E14AE5DADC8C8DD2648), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4245 = { sizeof (PDPVersusControllerMacProfile_tD285E897C215F0D05AEB6F36E6E67D2E2161AF01), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4246 = { sizeof (PDPXbox360ControllerMacProfile_tD4D62CEFC25B356D609908A32FDD6DFB97A6AD27), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4247 = { sizeof (PDPXboxOneArcadeStickMacProfile_t8910EA57FD02FCEB22467BE95CA78395804F1408), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4248 = { sizeof (PDPXboxOneControllerMacProfile_tAFEB01B69F0D0A4BA05C5A6058D6C9D61336F39E), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4249 = { sizeof (PowerAAirflowControllerMacProfile_t6E8FFCE2D60CAEF83F6AF5F06E243FE80A250414), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4250 = { sizeof (POWERAFUS1ONTournamentControllerMacProfile_t304584B057F1A61ABE710C85D0CBBA785B92939A), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4251 = { sizeof (PowerAMiniControllerMacProfile_t42ECFE508B04BF03C758E040CDB29F047F8BCB2B), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4252 = { sizeof (PowerAMiniProExControllerMacProfile_t919EFA8E99B072972AF612E05CFF234DB7008C96), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4253 = { sizeof (PowerAMiniXboxOneControllerMacProfile_t2FC260B7383E9F2AB373AFCD485FC848093F5E74), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4254 = { sizeof (PowerASpectraIlluminatedControllerMacProfile_tD363A4FF9291C7228A4BFDB0C89C003DAEA46D47), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4255 = { sizeof (ProEXXbox360ControllerMacProfile_tD54EF5F707D746C09F36FF7C83C1D10572BAE364), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4256 = { sizeof (ProEXXboxOneControllerMacProfile_t393CCA66D052831D6BD486AFAAE4D5EBC040ABDC), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4257 = { sizeof (QanbaFightStickPlusMacProfile_tFF6C66E48AC5D23840D711C7C8715F8AFE18C130), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4258 = { sizeof (RazerAtroxArcadeStickMacProfile_t8343709D35AF39C8C6289C1F2F2B52987792AD4B), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4259 = { sizeof (RazerOnzaControllerMacProfile_t52B51392C5C14B670451D37C5A187A8CB67EA0FC), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4260 = { sizeof (RazerOnzaTEControllerMacProfile_tDADC323DD18ABE06ABB927143EF9CF597C2257EE), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4261 = { sizeof (RazerSabertoothEliteControllerMacProfile_t6B17137DF88D5EEC8C4442015444A78E47B2DEDE), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4262 = { sizeof (RazerStrikeControllerMacProfile_t216B9248A96129C64CCE6508F0D69BD17432F8C2), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4263 = { sizeof (RazerWildcatControllerMacProfile_t48FAC8700B592768C3226CAFDBCE15F59656A9C5), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4264 = { sizeof (RedOctaneControllerMacProfile_tABE1A00BD660E9788FC2DA7BCC1D0A7117053DA6), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4265 = { sizeof (RockBandDrumsMacProfile_t0633B0BA99B074663B62F277B405E077A57A80B7), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4266 = { sizeof (RockBandGuitarMacProfile_tCD0B031C3B0DC5FB9B71F3E52369E5D4C052E10C), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4267 = { sizeof (RockCandyControllerMacProfile_tF2FEA66CF2A315A7D2A267AEDEE6D0F145C79D78), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4268 = { sizeof (RockCandyXbox360ControllerMacProfile_t041F010FC8D5E1C4F4713840407CD7776259A6A1), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4269 = { sizeof (RockCandyXboxOneControllerMacProfile_t3BD33625DDD5A14CE8E5F058D4A3EA160EF7BDBC), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4270 = { sizeof (SaitekXbox360ControllerMacProfile_t2F07863A9310E6D458D17138351309730731C69D), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4271 = { sizeof (ThrustmasterFerrari458RacingWheelMacProfile_t4E2ABECC6F261F3507B708CE236EAACAB472B0D1), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4272 = { sizeof (ThrustmasterGPXControllerMacProfile_tED9E9766F87BFFF3CAB20C996B88BE2358B07691), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4273 = { sizeof (TrustPredatorJoystickMacProfile_tFC2FFD135E3179B8220E67CDA19F387B93DE43FF), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4274 = { sizeof (TSZPelicanControllerMacProfile_t58DCE058462790E000B8025CD69CB2523D410F6E), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4275 = { sizeof (Xbox360ControllerMacProfile_t6C91E7F634F2CCDF2D216873C5707695E559AD71), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4276 = { sizeof (Xbox360MortalKombatFightStickMacProfile_tBBB3CC6122AE5D6034F42F9FBD11BB1093FEE349), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4277 = { sizeof (XboxOneControllerMacProfile_t7AE3A9A425E7889155DB75DEE344A535EB531376), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4278 = { sizeof (BuffaloClassicMacProfile_t81DED8975DBAF773A21524A4B39363F6CF279054), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4279 = { sizeof (LogitechF310ModeDMacProfile_t98562700A64841EE59FB422AC8396D5BADC67071), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4280 = { sizeof (LogitechF510ModeDMacProfile_tF7835B04425945FEEEBE1C4CE9ED4692083E7661), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4281 = { sizeof (LogitechF710ModeDMacProfile_tD95941165ED9C2E166222F9B7F9E564D05A43BC9), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4282 = { sizeof (PlayStation3MacProfile_tC812C3AEC6A49C7E58A6C0D0719566FE1E8BD26C), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4283 = { sizeof (PlayStation4MacProfile_t90AC9589E4B51BBF2CCB5B1AB036F8D0D2969CE7), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4284 = { sizeof (Xbox360DriverMacProfile_t85862366C30957580596EFE6E9B710CC994FE81A), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4285 = { sizeof (XboxOneDriverMacProfile_tC88EA9088EE3643F43477EE604994A419B5B19A6), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4286 = { sizeof (AfterglowXbox360WindowsNativeProfile_t75884D1264F6AAFCC2E387DE5BBAAE19189D53BC), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4287 = { sizeof (AirFloPS3WindowsNativeProfile_t98878C2FAE8915D1C06CF5115C114369C6CCB3C2), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4288 = { sizeof (BuffaloClassicWindowsNativeProfile_t985F5C52B2D7B320134223A7651438BD12E682F7), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4289 = { sizeof (LogitechF310ModeDWindowsNativeProfile_t184694567D11D325BA161BE5F6DB26FABC76A935), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4290 = { sizeof (LogitechF310ModeXWindowsNativeProfile_tB62FF4755EFCC2E41E7AA227086E30A19808BF4C), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4291 = { sizeof (LogitechF510ModeDWindowsNativeProfile_tB477E0431B4F36741A6338EB211B7C7E224F3D03), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4292 = { sizeof (LogitechF510ModeXWindowsNativeProfile_t3AAEECBE96865E04772FE8FEBF2278ADDCBAB58D), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4293 = { sizeof (LogitechF710ModeDWindowsNativeProfile_tB1C356249CD79D062D39979B4CC4568427CB5F4E), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4294 = { sizeof (LogitechF710ModeXWindowsNativeProfile_tBF83E4B7B267412ACB9D9544ABF34109DE3A6E64), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4295 = { sizeof (NVidiaShieldWindowsNativeProfile_t39550D3BA839A819513F343705E43219BEC140AE), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4296 = { sizeof (PCTWINSHOCKWindowsNativeProfile_t81021F4248CAE0C814FDD91DCFE6329DFD46789F), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4297 = { sizeof (PlayStation4WindowsNativeProfile_t6F9AACC6EF792FE8864816772361F8397F42A67A), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4298 = { sizeof (RazerServalWindowsNativeProfile_t1F17BD3819D58FA850F6FED4DCA58A9C7C6F9097), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4299 = { sizeof (SteamWindowsNativeProfile_t60ACF65EAD3B92580515996068BDABFC40CBCB6F), -1, 0, 0 };
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif

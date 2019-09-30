@@ -31075,7 +31075,7 @@ IL_005f:
 		V_4 = L_36;
 		RuntimeObject* L_37 = ___attributes1;
 		NullCheck(L_37);
-		RuntimeObject* L_38 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(4 /* System.Collections.IDictionaryEnumerator System.Collections.IDictionary::GetEnumerator() */, IDictionary_t1BD5C1546718A374EA8122FBD6C6EE45331E8CE7_il2cpp_TypeInfo_var, L_37);
+		RuntimeObject* L_38 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(3 /* System.Collections.IDictionaryEnumerator System.Collections.IDictionary::GetEnumerator() */, IDictionary_t1BD5C1546718A374EA8122FBD6C6EE45331E8CE7_il2cpp_TypeInfo_var, L_37);
 		V_5 = L_38;
 		goto IL_027f;
 	}
@@ -31467,7 +31467,7 @@ extern "C" IL2CPP_METHOD_ATTR ASN1_t2B883D12D3493F8395B31D1F0ABD93F43948B27E * P
 		V_4 = L_18;
 		RuntimeObject* L_19 = ___attributes1;
 		NullCheck(L_19);
-		RuntimeObject* L_20 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(4 /* System.Collections.IDictionaryEnumerator System.Collections.IDictionary::GetEnumerator() */, IDictionary_t1BD5C1546718A374EA8122FBD6C6EE45331E8CE7_il2cpp_TypeInfo_var, L_19);
+		RuntimeObject* L_20 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(3 /* System.Collections.IDictionaryEnumerator System.Collections.IDictionary::GetEnumerator() */, IDictionary_t1BD5C1546718A374EA8122FBD6C6EE45331E8CE7_il2cpp_TypeInfo_var, L_19);
 		V_5 = L_20;
 		goto IL_0206;
 	}

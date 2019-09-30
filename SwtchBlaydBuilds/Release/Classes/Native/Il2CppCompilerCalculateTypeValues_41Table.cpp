@@ -2651,86 +2651,6 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // MONOBEHAVIOUR_T4A60845CF505405AF8BE8C61CC07F75CADEF6429_H
-#ifndef NVIDIASHIELD2016ANDROIDPROFILE_TBBD877E2C688A67C07C881D675A60EC2589D7B2C_H
-#define NVIDIASHIELD2016ANDROIDPROFILE_TBBD877E2C688A67C07C881D675A60EC2589D7B2C_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// InControl.NVidiaShield2016AndroidProfile
-struct  NVidiaShield2016AndroidProfile_tBBD877E2C688A67C07C881D675A60EC2589D7B2C  : public UnityInputDeviceProfile_t46088AA65F1206F5214298038664CFF7EDECD80E
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // NVIDIASHIELD2016ANDROIDPROFILE_TBBD877E2C688A67C07C881D675A60EC2589D7B2C_H
-#ifndef NVIDIASHIELD2017ANDROIDPROFILE_TA82E845C0C13D395C635E6C1FB76588DEF76DE82_H
-#define NVIDIASHIELD2017ANDROIDPROFILE_TA82E845C0C13D395C635E6C1FB76588DEF76DE82_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// InControl.NVidiaShield2017AndroidProfile
-struct  NVidiaShield2017AndroidProfile_tA82E845C0C13D395C635E6C1FB76588DEF76DE82  : public UnityInputDeviceProfile_t46088AA65F1206F5214298038664CFF7EDECD80E
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // NVIDIASHIELD2017ANDROIDPROFILE_TA82E845C0C13D395C635E6C1FB76588DEF76DE82_H
-#ifndef NVIDIASHIELDWIN10PROFILE_TBBCB7C8D6D3F094CC6ECFD116FC2DEC38AA6E548_H
-#define NVIDIASHIELDWIN10PROFILE_TBBCB7C8D6D3F094CC6ECFD116FC2DEC38AA6E548_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// InControl.NVidiaShieldWin10Profile
-struct  NVidiaShieldWin10Profile_tBBCB7C8D6D3F094CC6ECFD116FC2DEC38AA6E548  : public UnityInputDeviceProfile_t46088AA65F1206F5214298038664CFF7EDECD80E
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // NVIDIASHIELDWIN10PROFILE_TBBCB7C8D6D3F094CC6ECFD116FC2DEC38AA6E548_H
-#ifndef NVIDIASHIELDWINPROFILE_TD32E3B2FD111EB562282DDBEF2B4E52739F9B394_H
-#define NVIDIASHIELDWINPROFILE_TD32E3B2FD111EB562282DDBEF2B4E52739F9B394_H
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-
-// InControl.NVidiaShieldWinProfile
-struct  NVidiaShieldWinProfile_tD32E3B2FD111EB562282DDBEF2B4E52739F9B394  : public UnityInputDeviceProfile_t46088AA65F1206F5214298038664CFF7EDECD80E
-{
-public:
-
-public:
-};
-
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#endif // NVIDIASHIELDWINPROFILE_TD32E3B2FD111EB562282DDBEF2B4E52739F9B394_H
 #ifndef APLAYCONTROLLERMACPROFILE_TC331EA0896A96AF3E066DD2632747F74D3300103_H
 #define APLAYCONTROLLERMACPROFILE_TC331EA0896A96AF3E066DD2632747F74D3300103_H
 #ifdef __clang__
@@ -2891,6 +2811,46 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // GUITARHEROCONTROLLERMACPROFILE_T4073AA15EF22F748BD541B0A9D3122ED6AD31A6F_H
+#ifndef HORIREALARCADEPROVKAIFIGHTINGSTICKMACPROFILE_T209344328B55970D6DF912C6A1A6502AC07FDCBF_H
+#define HORIREALARCADEPROVKAIFIGHTINGSTICKMACPROFILE_T209344328B55970D6DF912C6A1A6502AC07FDCBF_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// InControl.NativeProfile.HORIRealArcadeProVKaiFightingStickMacProfile
+struct  HORIRealArcadeProVKaiFightingStickMacProfile_t209344328B55970D6DF912C6A1A6502AC07FDCBF  : public Xbox360DriverMacProfile_t85862366C30957580596EFE6E9B710CC994FE81A
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // HORIREALARCADEPROVKAIFIGHTINGSTICKMACPROFILE_T209344328B55970D6DF912C6A1A6502AC07FDCBF_H
+#ifndef HORIREALARCADEPROVXMACPROFILE_T95ECABA64E8C661F146EEBCA1D32E0B81DBA012C_H
+#define HORIREALARCADEPROVXMACPROFILE_T95ECABA64E8C661F146EEBCA1D32E0B81DBA012C_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// InControl.NativeProfile.HORIRealArcadeProVXMacProfile
+struct  HORIRealArcadeProVXMacProfile_t95ECABA64E8C661F146EEBCA1D32E0B81DBA012C  : public Xbox360DriverMacProfile_t85862366C30957580596EFE6E9B710CC994FE81A
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // HORIREALARCADEPROVXMACPROFILE_T95ECABA64E8C661F146EEBCA1D32E0B81DBA012C_H
 #ifndef HORIBLUESOLOCONTROLLERMACPROFILE_TE6F84433AC8875B27D864427956197C80011CBA2_H
 #define HORIBLUESOLOCONTROLLERMACPROFILE_TE6F84433AC8875B27D864427956197C80011CBA2_H
 #ifdef __clang__
@@ -3131,16 +3091,16 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // HORIREALARCADEPROEXSEMACPROFILE_T1E893CA2C9D500434CE786B941D3638C907CF6E4_H
-#ifndef NEXUSPLAYERPROFILE_TD2C810AAC01F5D1C2785CE309680B76AC00F32E0_H
-#define NEXUSPLAYERPROFILE_TD2C810AAC01F5D1C2785CE309680B76AC00F32E0_H
+#ifndef HORIREALARCADEPROHAYABUSAMACPROFILE_T507DD0A3CC6115EB435CBB16E03E7FE8BDEAB421_H
+#define HORIREALARCADEPROHAYABUSAMACPROFILE_T507DD0A3CC6115EB435CBB16E03E7FE8BDEAB421_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 
-// InControl.NexusPlayerProfile
-struct  NexusPlayerProfile_tD2C810AAC01F5D1C2785CE309680B76AC00F32E0  : public UnityInputDeviceProfile_t46088AA65F1206F5214298038664CFF7EDECD80E
+// InControl.NativeProfile.HoriRealArcadeProHayabusaMacProfile
+struct  HoriRealArcadeProHayabusaMacProfile_t507DD0A3CC6115EB435CBB16E03E7FE8BDEAB421  : public Xbox360DriverMacProfile_t85862366C30957580596EFE6E9B710CC994FE81A
 {
 public:
 
@@ -3150,17 +3110,17 @@ public:
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // NEXUSPLAYERPROFILE_TD2C810AAC01F5D1C2785CE309680B76AC00F32E0_H
-#ifndef NEXUSPLAYERREMOTEPROFILE_T0223916BCD94D9B092188BF0B81A17E923C73951_H
-#define NEXUSPLAYERREMOTEPROFILE_T0223916BCD94D9B092188BF0B81A17E923C73951_H
+#endif // HORIREALARCADEPROHAYABUSAMACPROFILE_T507DD0A3CC6115EB435CBB16E03E7FE8BDEAB421_H
+#ifndef HORIREALARCADEPROVXSAMACPROFILE_T1BC8761534874AE7AC390250FFDA7E357056CC40_H
+#define HORIREALARCADEPROVXSAMACPROFILE_T1BC8761534874AE7AC390250FFDA7E357056CC40_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 
-// InControl.NexusPlayerRemoteProfile
-struct  NexusPlayerRemoteProfile_t0223916BCD94D9B092188BF0B81A17E923C73951  : public UnityInputDeviceProfile_t46088AA65F1206F5214298038664CFF7EDECD80E
+// InControl.NativeProfile.HoriRealArcadeProVXSAMacProfile
+struct  HoriRealArcadeProVXSAMacProfile_t1BC8761534874AE7AC390250FFDA7E357056CC40  : public Xbox360DriverMacProfile_t85862366C30957580596EFE6E9B710CC994FE81A
 {
 public:
 
@@ -3170,17 +3130,17 @@ public:
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // NEXUSPLAYERREMOTEPROFILE_T0223916BCD94D9B092188BF0B81A17E923C73951_H
-#ifndef NEXUSPLAYERWINPROFILE_T3CFC8749ACA3A8A3A19F492CA22D77680DFA2F99_H
-#define NEXUSPLAYERWINPROFILE_T3CFC8749ACA3A8A3A19F492CA22D77680DFA2F99_H
+#endif // HORIREALARCADEPROVXSAMACPROFILE_T1BC8761534874AE7AC390250FFDA7E357056CC40_H
+#ifndef HORIXBOX360GEMPADEXMACPROFILE_TB52B3F047B43F9BE28AA6432DE8BEF0D7F8598C3_H
+#define HORIXBOX360GEMPADEXMACPROFILE_TB52B3F047B43F9BE28AA6432DE8BEF0D7F8598C3_H
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 
-// InControl.NexusPlayerWinProfile
-struct  NexusPlayerWinProfile_t3CFC8749ACA3A8A3A19F492CA22D77680DFA2F99  : public UnityInputDeviceProfile_t46088AA65F1206F5214298038664CFF7EDECD80E
+// InControl.NativeProfile.HoriXbox360GemPadExMacProfile
+struct  HoriXbox360GemPadExMacProfile_tB52B3F047B43F9BE28AA6432DE8BEF0D7F8598C3  : public Xbox360DriverMacProfile_t85862366C30957580596EFE6E9B710CC994FE81A
 {
 public:
 
@@ -3190,7 +3150,47 @@ public:
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#endif // NEXUSPLAYERWINPROFILE_T3CFC8749ACA3A8A3A19F492CA22D77680DFA2F99_H
+#endif // HORIXBOX360GEMPADEXMACPROFILE_TB52B3F047B43F9BE28AA6432DE8BEF0D7F8598C3_H
+#ifndef HORIXBOXONECONTROLLERMACPROFILE_T3B5A7B143AA6DFCEAB0BF74D59FB531C6F5C6344_H
+#define HORIXBOXONECONTROLLERMACPROFILE_T3B5A7B143AA6DFCEAB0BF74D59FB531C6F5C6344_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// InControl.NativeProfile.HoriXboxOneControllerMacProfile
+struct  HoriXboxOneControllerMacProfile_t3B5A7B143AA6DFCEAB0BF74D59FB531C6F5C6344  : public XboxOneDriverMacProfile_tC88EA9088EE3643F43477EE604994A419B5B19A6
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // HORIXBOXONECONTROLLERMACPROFILE_T3B5A7B143AA6DFCEAB0BF74D59FB531C6F5C6344_H
+#ifndef IONDRUMROCKERMACPROFILE_T0409C1F15451021F71DFE40E736FD677A97DD55E_H
+#define IONDRUMROCKERMACPROFILE_T0409C1F15451021F71DFE40E736FD677A97DD55E_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// InControl.NativeProfile.IonDrumRockerMacProfile
+struct  IonDrumRockerMacProfile_t0409C1F15451021F71DFE40E736FD677A97DD55E  : public Xbox360DriverMacProfile_t85862366C30957580596EFE6E9B710CC994FE81A
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // IONDRUMROCKERMACPROFILE_T0409C1F15451021F71DFE40E736FD677A97DD55E_H
 #ifndef NYKOPLAYPADPROAMAZONPROFILE_T944B5EC06E9410653B84957892D62913F0742A81_H
 #define NYKOPLAYPADPROAMAZONPROFILE_T944B5EC06E9410653B84957892D62913F0742A81_H
 #ifdef __clang__
@@ -4323,68 +4323,61 @@ public:
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4100 = { sizeof (NexusPlayerProfile_tD2C810AAC01F5D1C2785CE309680B76AC00F32E0), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4101 = { sizeof (NexusPlayerRemoteProfile_t0223916BCD94D9B092188BF0B81A17E923C73951), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4102 = { sizeof (NexusPlayerWinProfile_t3CFC8749ACA3A8A3A19F492CA22D77680DFA2F99), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4103 = { sizeof (NVidiaShield2016AndroidProfile_tBBD877E2C688A67C07C881D675A60EC2589D7B2C), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4104 = { sizeof (NVidiaShield2017AndroidProfile_tA82E845C0C13D395C635E6C1FB76588DEF76DE82), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4105 = { sizeof (NVidiaShieldWin10Profile_tBBCB7C8D6D3F094CC6ECFD116FC2DEC38AA6E548), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4106 = { sizeof (NVidiaShieldWinProfile_tD32E3B2FD111EB562282DDBEF2B4E52739F9B394), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4107 = { sizeof (NykoPlayPadProAmazonProfile_t944B5EC06E9410653B84957892D62913F0742A81), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4108 = { sizeof (OuyaAmazonProfile_t2F6100B9BBB167FD48BB3982EBE9369A4B5E5F4D), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4109 = { sizeof (OuyaLinuxProfile_t9AB7034EB9447313941900B762DD77B5652E3276), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4110 = { sizeof (OuyaWinProfile_t275C7944EC17994445A325F2176E93F84ED79AD3), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4111 = { sizeof (PlayStation2WinProfile_tB1270C94046243A298BD53479F11E1906A9838C5), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4112 = { sizeof (PlayStation3AndroidProfile_t4D71B1064FF040414D5DEBF0F04CF492D7963BF1), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4113 = { sizeof (PlayStation3BWinProfile_t1C8EBCD65C8C3F1CE92BD9F3C71B66B40E090A06), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4114 = { sizeof (PlayStation3LinuxProfile_t94BCAA4CE2AD4310D3290C1C04CCF88B964F071E), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4115 = { sizeof (PlayStation3MacProfile_tFCC66D5B69BE75A3C27C717AF02B6198085EA8B7), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4116 = { sizeof (PlayStation3ShenghicWinProfile_tFDA24A52E30AB8608C6EE396EC64A39189641137), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4117 = { sizeof (PlayStation3WinProfile_t92762E3F75B1668F0BC91A29DEAF3D5432EBEF0A), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4118 = { sizeof (PlayStation4AmazonProfile_t595CD7F2909E00BEDB552A225CD7AB70A60393F8), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4119 = { sizeof (PlayStation4AndroidProfile_tD9119EBBB08A10BFFE19258E40ADD9C1185C68CE), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4120 = { sizeof (PlayStation4AndroidXperiaZ5Profile_t756C8CF6A928DF0AF1C6E69298C67F346D09A44C), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4121 = { sizeof (PlayStation4LinuxProfile_t2B08DBC6B8B12F622AC120DCD4444B4AAA1F9AE1), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4122 = { sizeof (PlayStation4MacBTProfile_t649B932A6A01EE85ACB0EC75BEBC113F9CFBE0EA), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4123 = { sizeof (PlayStation4MacUSBProfile_t8757D9847FDA03BC91CDEC35172469D4DAF2A42E), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4124 = { sizeof (PlayStation4Profile_tD68BF9579AA5315E06A794568B8E5315D7D7D4DE), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4125 = { sizeof (PlayStation4SteamLinkMacProfile_tFB087A3674DED6A67730FA3546800CE8BEDE1E28), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4126 = { sizeof (PlayStation4WinProfile_t93CEA9CAD266723F7674DEEC303587DE641E3509), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4127 = { sizeof (PlayStationVitaPSMProfile_t43B4EB2F219E6F102573046EF073E5642C9900A2), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4128 = { sizeof (RazerServalForgeTVProfile_t2A60D1A415FDF7E16CD1E0202372F8778983E52F), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4129 = { sizeof (RazerServalMacProfile_t007B3E0C073E09D86D2D53DE1FE45DAF06FE4EE6), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4130 = { sizeof (RedSamuraiAndroidProfile_tFE7CF0F57424FD71BB4C53F6D8616E2F6AFB7923), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4131 = { sizeof (SaitekAviatorWinProfile_t90515ECA4404417FAC4726CB2600FD5F6C8226C0), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4132 = { sizeof (SamsungGP20AndroidProfile_tA2193F2C1AEF47D19EC705A19891B1B3E80A7606), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4133 = { sizeof (SpeedlinkStrikeMacProfile_t821589F5C4D116FAAA5DEE52B4B72A750FD63B6A), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4134 = { sizeof (SpeedlinkStrikeWinProfile_t67368B1F1FFAA1574D8F93EFA60FAE12F77AC2BE), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4135 = { sizeof (SteelSeriesFreeAndroidProfile_t0606E7EC922C6C5F9C2FC28528F4C4E0F691D59F), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4136 = { sizeof (SteelSeriesFreeLinuxProfile_t21B8CFE1659305BB9027C8CB363337F49796198A), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4137 = { sizeof (SteelSeriesFreeMacProfile_tB7336D34D21CEE55B21D878596E356F8756FC9B5), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4138 = { sizeof (SteelSeriesFreeWinProfile_tBF89FD7C721999284D40F36E79A76D8206ECA027), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4139 = { sizeof (SteelSeriesStratusXLAndroidProfile_t66C2C43527C13B5BA597B8EB0EFC49366F886449), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4140 = { sizeof (SteelSeriesStratusXLWinProfile_t97690DA52DF5694080FEF0106ACCDE7C1CD93873), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4141 = { sizeof (ValveStreamingWinProfile_tF0D556412D8A6891161166186F8FE3281359ED02), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4142 = { sizeof (Xbox360AmazonProfile_t9A2F2088F4FBF3AFE512CD76584C9050BD7A6D22), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4143 = { sizeof (Xbox360AndroidProfile_tFD3C41DD0ED42873C9EDC6AF53D9736631B73688), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4144 = { sizeof (Xbox360LinuxProfile_t242A00D6A5B3A8545CCDBC43B02E282E1036EE34), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4145 = { sizeof (Xbox360MacProfile_t384EAC20252F5367FAA495EB98F5E6429F2B48FA), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4146 = { sizeof (Xbox360RockCandyAndroidProfile_t49FA8AA2DD854BC1944B1DDC606EC156A18EEFFB), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4147 = { sizeof (Xbox360WinProfile_t59982B6F1036CEA8977BADD5D9C427106FACCE33), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4148 = { sizeof (XboxOneBluetoothAndroidProfile_t11EBDE6AFD7D974BADF30DABBE7C74166228FDFF), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4149 = { sizeof (XboxOneMacProfile_t7056F7265804471D7BFBF7C1517593CEB48D1E76), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4150 = { sizeof (XboxOneProfile_t45D44875F14A26458F5BB7E0A6A813BC807A8CC4), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4151 = { sizeof (XboxOneWin10AEProfile_t594C89F380E108D892EF8B4FA42A2CC0162BB09C), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4152 = { sizeof (XboxOneWin10Profile_t617BBB4E27D09F689C64CC9B4655B5BA288322BA), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4153 = { sizeof (XboxOneWinProfile_t4C78C69AA1878B385899BCA4DA1DB21F28EB4D4C), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4154 = { sizeof (XiamoiMacProfile_t6F5118C1213CE3F241713DCA2AFF8C2BE0E7DA1B), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4155 = { sizeof (XiamoiWinProfile_tFE60E74C0872A34830E3D550302F81D68EBA031F), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4156 = { sizeof (XTR_G2_MacUnityProfile_t190F600A7B95AC3D6EF9AF6E92B8992203A12A49), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4157 = { sizeof (XTR_G2_WindowsUnityProfile_t52EBA92EC67C140D71C4885C5A395828FB6FAD4C), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4158 = { sizeof (XTR55_G2_MacUnityProfile_tA31893D0C4209618E2876EAC1965549FCBCE0811), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4159 = { sizeof (XTR55_G2_WindowsUnityProfile_t47F30C8758BB11B63185DC21053BDB400ADC2925), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4160 = { sizeof (UnityInputDevice_t78DDD3F0366FDA2266720F37476DEECD1079C392), -1, sizeof(UnityInputDevice_t78DDD3F0366FDA2266720F37476DEECD1079C392_StaticFields), 0 };
-extern const int32_t g_FieldOffsetTable4160[7] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4100 = { sizeof (NykoPlayPadProAmazonProfile_t944B5EC06E9410653B84957892D62913F0742A81), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4101 = { sizeof (OuyaAmazonProfile_t2F6100B9BBB167FD48BB3982EBE9369A4B5E5F4D), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4102 = { sizeof (OuyaLinuxProfile_t9AB7034EB9447313941900B762DD77B5652E3276), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4103 = { sizeof (OuyaWinProfile_t275C7944EC17994445A325F2176E93F84ED79AD3), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4104 = { sizeof (PlayStation2WinProfile_tB1270C94046243A298BD53479F11E1906A9838C5), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4105 = { sizeof (PlayStation3AndroidProfile_t4D71B1064FF040414D5DEBF0F04CF492D7963BF1), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4106 = { sizeof (PlayStation3BWinProfile_t1C8EBCD65C8C3F1CE92BD9F3C71B66B40E090A06), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4107 = { sizeof (PlayStation3LinuxProfile_t94BCAA4CE2AD4310D3290C1C04CCF88B964F071E), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4108 = { sizeof (PlayStation3MacProfile_tFCC66D5B69BE75A3C27C717AF02B6198085EA8B7), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4109 = { sizeof (PlayStation3ShenghicWinProfile_tFDA24A52E30AB8608C6EE396EC64A39189641137), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4110 = { sizeof (PlayStation3WinProfile_t92762E3F75B1668F0BC91A29DEAF3D5432EBEF0A), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4111 = { sizeof (PlayStation4AmazonProfile_t595CD7F2909E00BEDB552A225CD7AB70A60393F8), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4112 = { sizeof (PlayStation4AndroidProfile_tD9119EBBB08A10BFFE19258E40ADD9C1185C68CE), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4113 = { sizeof (PlayStation4AndroidXperiaZ5Profile_t756C8CF6A928DF0AF1C6E69298C67F346D09A44C), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4114 = { sizeof (PlayStation4LinuxProfile_t2B08DBC6B8B12F622AC120DCD4444B4AAA1F9AE1), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4115 = { sizeof (PlayStation4MacBTProfile_t649B932A6A01EE85ACB0EC75BEBC113F9CFBE0EA), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4116 = { sizeof (PlayStation4MacUSBProfile_t8757D9847FDA03BC91CDEC35172469D4DAF2A42E), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4117 = { sizeof (PlayStation4Profile_tD68BF9579AA5315E06A794568B8E5315D7D7D4DE), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4118 = { sizeof (PlayStation4SteamLinkMacProfile_tFB087A3674DED6A67730FA3546800CE8BEDE1E28), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4119 = { sizeof (PlayStation4WinProfile_t93CEA9CAD266723F7674DEEC303587DE641E3509), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4120 = { sizeof (PlayStationVitaPSMProfile_t43B4EB2F219E6F102573046EF073E5642C9900A2), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4121 = { sizeof (RazerServalForgeTVProfile_t2A60D1A415FDF7E16CD1E0202372F8778983E52F), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4122 = { sizeof (RazerServalMacProfile_t007B3E0C073E09D86D2D53DE1FE45DAF06FE4EE6), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4123 = { sizeof (RedSamuraiAndroidProfile_tFE7CF0F57424FD71BB4C53F6D8616E2F6AFB7923), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4124 = { sizeof (SaitekAviatorWinProfile_t90515ECA4404417FAC4726CB2600FD5F6C8226C0), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4125 = { sizeof (SamsungGP20AndroidProfile_tA2193F2C1AEF47D19EC705A19891B1B3E80A7606), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4126 = { sizeof (SpeedlinkStrikeMacProfile_t821589F5C4D116FAAA5DEE52B4B72A750FD63B6A), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4127 = { sizeof (SpeedlinkStrikeWinProfile_t67368B1F1FFAA1574D8F93EFA60FAE12F77AC2BE), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4128 = { sizeof (SteelSeriesFreeAndroidProfile_t0606E7EC922C6C5F9C2FC28528F4C4E0F691D59F), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4129 = { sizeof (SteelSeriesFreeLinuxProfile_t21B8CFE1659305BB9027C8CB363337F49796198A), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4130 = { sizeof (SteelSeriesFreeMacProfile_tB7336D34D21CEE55B21D878596E356F8756FC9B5), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4131 = { sizeof (SteelSeriesFreeWinProfile_tBF89FD7C721999284D40F36E79A76D8206ECA027), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4132 = { sizeof (SteelSeriesStratusXLAndroidProfile_t66C2C43527C13B5BA597B8EB0EFC49366F886449), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4133 = { sizeof (SteelSeriesStratusXLWinProfile_t97690DA52DF5694080FEF0106ACCDE7C1CD93873), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4134 = { sizeof (ValveStreamingWinProfile_tF0D556412D8A6891161166186F8FE3281359ED02), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4135 = { sizeof (Xbox360AmazonProfile_t9A2F2088F4FBF3AFE512CD76584C9050BD7A6D22), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4136 = { sizeof (Xbox360AndroidProfile_tFD3C41DD0ED42873C9EDC6AF53D9736631B73688), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4137 = { sizeof (Xbox360LinuxProfile_t242A00D6A5B3A8545CCDBC43B02E282E1036EE34), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4138 = { sizeof (Xbox360MacProfile_t384EAC20252F5367FAA495EB98F5E6429F2B48FA), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4139 = { sizeof (Xbox360RockCandyAndroidProfile_t49FA8AA2DD854BC1944B1DDC606EC156A18EEFFB), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4140 = { sizeof (Xbox360WinProfile_t59982B6F1036CEA8977BADD5D9C427106FACCE33), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4141 = { sizeof (XboxOneBluetoothAndroidProfile_t11EBDE6AFD7D974BADF30DABBE7C74166228FDFF), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4142 = { sizeof (XboxOneMacProfile_t7056F7265804471D7BFBF7C1517593CEB48D1E76), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4143 = { sizeof (XboxOneProfile_t45D44875F14A26458F5BB7E0A6A813BC807A8CC4), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4144 = { sizeof (XboxOneWin10AEProfile_t594C89F380E108D892EF8B4FA42A2CC0162BB09C), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4145 = { sizeof (XboxOneWin10Profile_t617BBB4E27D09F689C64CC9B4655B5BA288322BA), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4146 = { sizeof (XboxOneWinProfile_t4C78C69AA1878B385899BCA4DA1DB21F28EB4D4C), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4147 = { sizeof (XiamoiMacProfile_t6F5118C1213CE3F241713DCA2AFF8C2BE0E7DA1B), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4148 = { sizeof (XiamoiWinProfile_tFE60E74C0872A34830E3D550302F81D68EBA031F), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4149 = { sizeof (XTR_G2_MacUnityProfile_t190F600A7B95AC3D6EF9AF6E92B8992203A12A49), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4150 = { sizeof (XTR_G2_WindowsUnityProfile_t52EBA92EC67C140D71C4885C5A395828FB6FAD4C), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4151 = { sizeof (XTR55_G2_MacUnityProfile_tA31893D0C4209618E2876EAC1965549FCBCE0811), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4152 = { sizeof (XTR55_G2_WindowsUnityProfile_t47F30C8758BB11B63185DC21053BDB400ADC2925), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4153 = { sizeof (UnityInputDevice_t78DDD3F0366FDA2266720F37476DEECD1079C392), -1, sizeof(UnityInputDevice_t78DDD3F0366FDA2266720F37476DEECD1079C392_StaticFields), 0 };
+extern const int32_t g_FieldOffsetTable4153[7] = 
 {
 	UnityInputDevice_t78DDD3F0366FDA2266720F37476DEECD1079C392_StaticFields::get_offset_of_analogQueries_47(),
 	UnityInputDevice_t78DDD3F0366FDA2266720F37476DEECD1079C392_StaticFields::get_offset_of_buttonQueries_48(),
@@ -4394,8 +4387,8 @@ extern const int32_t g_FieldOffsetTable4160[7] =
 	UnityInputDevice_t78DDD3F0366FDA2266720F37476DEECD1079C392::get_offset_of_U3CJoystickIdU3Ek__BackingField_52(),
 	UnityInputDevice_t78DDD3F0366FDA2266720F37476DEECD1079C392::get_offset_of_profile_53(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4161 = { sizeof (UnityInputDeviceManager_tE7EC7845156F9889D707E1561ADA411476754539), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable4161[9] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4154 = { sizeof (UnityInputDeviceManager_tE7EC7845156F9889D707E1561ADA411476754539), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable4154[9] = 
 {
 	0,
 	UnityInputDeviceManager_tE7EC7845156F9889D707E1561ADA411476754539::get_offset_of_deviceRefreshTimer_2(),
@@ -4407,14 +4400,14 @@ extern const int32_t g_FieldOffsetTable4161[9] =
 	UnityInputDeviceManager_tE7EC7845156F9889D707E1561ADA411476754539::get_offset_of_joystickCount_8(),
 	UnityInputDeviceManager_tE7EC7845156F9889D707E1561ADA411476754539::get_offset_of_joystickHash_9(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4162 = { sizeof (U3CU3Ec__DisplayClass21_0_t6C589DAE8D37BE1B5999DDB829A3475AF72D6172), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable4162[1] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4155 = { sizeof (U3CU3Ec__DisplayClass21_0_t6C589DAE8D37BE1B5999DDB829A3475AF72D6172), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable4155[1] = 
 {
 	U3CU3Ec__DisplayClass21_0_t6C589DAE8D37BE1B5999DDB829A3475AF72D6172::get_offset_of_unityJoystickName_0(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4163 = { sizeof (AutoDiscover_t6FC3326255DC60D56A0931871A68CFEFB34D2D12), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4164 = { sizeof (UnityInputDeviceProfile_t46088AA65F1206F5214298038664CFF7EDECD80E), -1, sizeof(UnityInputDeviceProfile_t46088AA65F1206F5214298038664CFF7EDECD80E_StaticFields), 0 };
-extern const int32_t g_FieldOffsetTable4164[53] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4156 = { sizeof (AutoDiscover_t6FC3326255DC60D56A0931871A68CFEFB34D2D12), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4157 = { sizeof (UnityInputDeviceProfile_t46088AA65F1206F5214298038664CFF7EDECD80E), -1, sizeof(UnityInputDeviceProfile_t46088AA65F1206F5214298038664CFF7EDECD80E_StaticFields), 0 };
+extern const int32_t g_FieldOffsetTable4157[53] = 
 {
 	UnityInputDeviceProfile_t46088AA65F1206F5214298038664CFF7EDECD80E::get_offset_of_JoystickNames_14(),
 	UnityInputDeviceProfile_t46088AA65F1206F5214298038664CFF7EDECD80E::get_offset_of_JoystickRegex_15(),
@@ -4470,20 +4463,20 @@ extern const int32_t g_FieldOffsetTable4164[53] =
 	UnityInputDeviceProfile_t46088AA65F1206F5214298038664CFF7EDECD80E_StaticFields::get_offset_of_MouseYAxis_65(),
 	UnityInputDeviceProfile_t46088AA65F1206F5214298038664CFF7EDECD80E_StaticFields::get_offset_of_MouseScrollWheel_66(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4165 = { sizeof (UnityInputDeviceProfileBase_t0D6E446BB55E4495CED53E2842FDB5E2B6A268C6), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4166 = { sizeof (UnityInputDeviceProfileList_t60D5216147D7CEE43F8FAB6EB215DB7FFC080A5C), -1, sizeof(UnityInputDeviceProfileList_t60D5216147D7CEE43F8FAB6EB215DB7FFC080A5C_StaticFields), 0 };
-extern const int32_t g_FieldOffsetTable4166[1] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4158 = { sizeof (UnityInputDeviceProfileBase_t0D6E446BB55E4495CED53E2842FDB5E2B6A268C6), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4159 = { sizeof (UnityInputDeviceProfileList_t60D5216147D7CEE43F8FAB6EB215DB7FFC080A5C), -1, sizeof(UnityInputDeviceProfileList_t60D5216147D7CEE43F8FAB6EB215DB7FFC080A5C_StaticFields), 0 };
+extern const int32_t g_FieldOffsetTable4159[1] = 
 {
 	UnityInputDeviceProfileList_t60D5216147D7CEE43F8FAB6EB215DB7FFC080A5C_StaticFields::get_offset_of_Profiles_4(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4167 = { 0, -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4168 = { sizeof (MarshalUtility_t626CF434097CCF3570194E409E1CD82176E5570E), -1, sizeof(MarshalUtility_t626CF434097CCF3570194E409E1CD82176E5570E_StaticFields), 0 };
-extern const int32_t g_FieldOffsetTable4168[1] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4160 = { 0, -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4161 = { sizeof (MarshalUtility_t626CF434097CCF3570194E409E1CD82176E5570E), -1, sizeof(MarshalUtility_t626CF434097CCF3570194E409E1CD82176E5570E_StaticFields), 0 };
+extern const int32_t g_FieldOffsetTable4161[1] = 
 {
 	MarshalUtility_t626CF434097CCF3570194E409E1CD82176E5570E_StaticFields::get_offset_of_buffer_0(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4169 = { 0, 0, 0, 0 };
-extern const int32_t g_FieldOffsetTable4169[5] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4162 = { 0, 0, 0, 0 };
+extern const int32_t g_FieldOffsetTable4162[5] = 
 {
 	0,
 	0,
@@ -4491,40 +4484,40 @@ extern const int32_t g_FieldOffsetTable4169[5] =
 	0,
 	0,
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4170 = { sizeof (SingletonPrefabAttribute_tB86D9728B6F278A2DEE994E0FEEC4926E4D0442A), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable4170[1] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4163 = { sizeof (SingletonPrefabAttribute_tB86D9728B6F278A2DEE994E0FEEC4926E4D0442A), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable4163[1] = 
 {
 	SingletonPrefabAttribute_tB86D9728B6F278A2DEE994E0FEEC4926E4D0442A::get_offset_of_Name_0(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4171 = { 0, 0, 0, 0 };
-extern const int32_t g_FieldOffsetTable4171[3] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4164 = { 0, 0, 0, 0 };
+extern const int32_t g_FieldOffsetTable4164[3] = 
 {
 	0,
 	0,
 	0,
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4172 = { 0, 0, 0, 0 };
-extern const int32_t g_FieldOffsetTable4172[2] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4165 = { 0, 0, 0, 0 };
+extern const int32_t g_FieldOffsetTable4165[2] = 
 {
 	0,
 	0,
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4173 = { sizeof (Utility_t305955C60DA21A14A6D7B8B122194EC92F3A2B20), -1, sizeof(Utility_t305955C60DA21A14A6D7B8B122194EC92F3A2B20_StaticFields), 0 };
-extern const int32_t g_FieldOffsetTable4173[2] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4166 = { sizeof (Utility_t305955C60DA21A14A6D7B8B122194EC92F3A2B20), -1, sizeof(Utility_t305955C60DA21A14A6D7B8B122194EC92F3A2B20_StaticFields), 0 };
+extern const int32_t g_FieldOffsetTable4166[2] = 
 {
 	0,
 	Utility_t305955C60DA21A14A6D7B8B122194EC92F3A2B20_StaticFields::get_offset_of_circleVertexList_1(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4174 = { sizeof (VersionInfo_tA70ED30EB2EF7A63C1080C1D382B1FF37E13376C)+ sizeof (RuntimeObject), sizeof(VersionInfo_tA70ED30EB2EF7A63C1080C1D382B1FF37E13376C ), 0, 0 };
-extern const int32_t g_FieldOffsetTable4174[4] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4167 = { sizeof (VersionInfo_tA70ED30EB2EF7A63C1080C1D382B1FF37E13376C)+ sizeof (RuntimeObject), sizeof(VersionInfo_tA70ED30EB2EF7A63C1080C1D382B1FF37E13376C ), 0, 0 };
+extern const int32_t g_FieldOffsetTable4167[4] = 
 {
 	VersionInfo_tA70ED30EB2EF7A63C1080C1D382B1FF37E13376C::get_offset_of_Major_0() + static_cast<int32_t>(sizeof(RuntimeObject)),
 	VersionInfo_tA70ED30EB2EF7A63C1080C1D382B1FF37E13376C::get_offset_of_Minor_1() + static_cast<int32_t>(sizeof(RuntimeObject)),
 	VersionInfo_tA70ED30EB2EF7A63C1080C1D382B1FF37E13376C::get_offset_of_Patch_2() + static_cast<int32_t>(sizeof(RuntimeObject)),
 	VersionInfo_tA70ED30EB2EF7A63C1080C1D382B1FF37E13376C::get_offset_of_Build_3() + static_cast<int32_t>(sizeof(RuntimeObject)),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4175 = { sizeof (XboxOneInputDevice_t9ABA9F56C5AC16D36243F5F0C888E2DB6B4E063C), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable4175[11] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4168 = { sizeof (XboxOneInputDevice_t9ABA9F56C5AC16D36243F5F0C888E2DB6B4E063C), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable4168[11] = 
 {
 	0,
 	0,
@@ -4538,55 +4531,62 @@ extern const int32_t g_FieldOffsetTable4175[11] =
 	XboxOneInputDevice_t9ABA9F56C5AC16D36243F5F0C888E2DB6B4E063C::get_offset_of_U3CControllerIdU3Ek__BackingField_56(),
 	XboxOneInputDevice_t9ABA9F56C5AC16D36243F5F0C888E2DB6B4E063C::get_offset_of_analogAxisNameForId_57(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4176 = { sizeof (XboxOneInputDeviceManager_t8021F7FB4338CDF57C964715BAF6DB1412059B41), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable4176[2] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4169 = { sizeof (XboxOneInputDeviceManager_t8021F7FB4338CDF57C964715BAF6DB1412059B41), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable4169[2] = 
 {
 	0,
 	XboxOneInputDeviceManager_t8021F7FB4338CDF57C964715BAF6DB1412059B41::get_offset_of_deviceConnected_2(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4177 = { sizeof (TestInputManager_t1CDF138BD81F6F7D1BA84349C9BA6E88F8B4B4AE), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable4177[4] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4170 = { sizeof (TestInputManager_t1CDF138BD81F6F7D1BA84349C9BA6E88F8B4B4AE), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable4170[4] = 
 {
 	TestInputManager_t1CDF138BD81F6F7D1BA84349C9BA6E88F8B4B4AE::get_offset_of_font_4(),
 	TestInputManager_t1CDF138BD81F6F7D1BA84349C9BA6E88F8B4B4AE::get_offset_of_style_5(),
 	TestInputManager_t1CDF138BD81F6F7D1BA84349C9BA6E88F8B4B4AE::get_offset_of_logMessages_6(),
 	TestInputManager_t1CDF138BD81F6F7D1BA84349C9BA6E88F8B4B4AE::get_offset_of_isPaused_7(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4178 = { sizeof (U3CU3Ec_tE5D14339E4D58407B20461C71BA435FE9B74138A), -1, sizeof(U3CU3Ec_tE5D14339E4D58407B20461C71BA435FE9B74138A_StaticFields), 0 };
-extern const int32_t g_FieldOffsetTable4178[4] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4171 = { sizeof (U3CU3Ec_tE5D14339E4D58407B20461C71BA435FE9B74138A), -1, sizeof(U3CU3Ec_tE5D14339E4D58407B20461C71BA435FE9B74138A_StaticFields), 0 };
+extern const int32_t g_FieldOffsetTable4171[4] = 
 {
 	U3CU3Ec_tE5D14339E4D58407B20461C71BA435FE9B74138A_StaticFields::get_offset_of_U3CU3E9_0(),
 	U3CU3Ec_tE5D14339E4D58407B20461C71BA435FE9B74138A_StaticFields::get_offset_of_U3CU3E9__4_1_1(),
 	U3CU3Ec_tE5D14339E4D58407B20461C71BA435FE9B74138A_StaticFields::get_offset_of_U3CU3E9__4_2_2(),
 	U3CU3Ec_tE5D14339E4D58407B20461C71BA435FE9B74138A_StaticFields::get_offset_of_U3CU3E9__4_3_3(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4179 = { sizeof (CodeWriter_t8298A436C703758B141D75CC2C8E837282550558), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable4179[3] = 
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4172 = { sizeof (CodeWriter_t8298A436C703758B141D75CC2C8E837282550558), -1, 0, 0 };
+extern const int32_t g_FieldOffsetTable4172[3] = 
 {
 	0,
 	CodeWriter_t8298A436C703758B141D75CC2C8E837282550558::get_offset_of_indent_1(),
 	CodeWriter_t8298A436C703758B141D75CC2C8E837282550558::get_offset_of_stringBuilder_2(),
 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4180 = { sizeof (AfterglowPrismaticXboxOneControllerMacProfile_t0903E772BC7FE7A1E01ED4140238E4C50BCCCD00), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4181 = { sizeof (APlayControllerMacProfile_tC331EA0896A96AF3E066DD2632747F74D3300103), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4182 = { sizeof (BatarangControllerMacProfile_t5B3A37AA6916C234AEDDA00C016D9BAC259F572E), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4183 = { sizeof (BETAOPControllerMacProfile_tAB678960DD290CF688BD5A2161BF53A20AFD54B6), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4184 = { sizeof (BigBenControllerMacProfile_t8E227FD951ABF1BE30370EEBC062E4A76C9CC590), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4185 = { sizeof (EASportsControllerMacProfile_tFDD24CE6F689968B17CAF62F1FC63D7CF39CC704), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4186 = { sizeof (GameStopControllerMacProfile_tC2342C327E51535A05D220FFFC77026488933030), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4187 = { sizeof (GuitarHeroControllerMacProfile_t4073AA15EF22F748BD541B0A9D3122ED6AD31A6F), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4188 = { sizeof (HoriBlueSoloControllerMacProfile_tE6F84433AC8875B27D864427956197C80011CBA2), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4189 = { sizeof (HoriControllerMacProfile_tA44989B1CD5B66D7464C24A9D7482562CE1FD1FE), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4190 = { sizeof (HoriDOA4ArcadeStickMacProfile_t6A96E6F0F06F5EBC9B2AD63F87C4CCA4CF99168A), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4191 = { sizeof (HoriEX2ControllerMacProfile_t82875ABEFCD57F139AA67DFDDCACDF3178F3D8AE), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4192 = { sizeof (HoriFightingStickEX2MacProfile_t6890444B99580F221526BAD789921C73C248D8AD), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4193 = { sizeof (HoriFightingStickVXMacProfile_t2ADACB77966581631FE066BC94DC2953EE68FBB8), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4194 = { sizeof (HoriFightStickMacProfile_t73BF562DD848BF88DC1E3023A10350981A262D0B), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4195 = { sizeof (HoriPadEXTurboControllerMacProfile_t6AC183B7F0925F5E5C4B1AED0700D8920E03B236), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4196 = { sizeof (HoriPadUltimateMacProfile_t329FA8DB5B14FB0C59D84DC546F50F2524D67528), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4197 = { sizeof (HoriRealArcadeProEXMacProfile_t91CBA0D76A4DD144F2C949731E9465B703AE719B), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4198 = { sizeof (HoriRealArcadeProEXPremiumVLXMacProfile_tB2372DD7630E922892C7FBF262F51874E2B64F44), -1, 0, 0 };
-extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4199 = { sizeof (HoriRealArcadeProEXSEMacProfile_t1E893CA2C9D500434CE786B941D3638C907CF6E4), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4173 = { sizeof (AfterglowPrismaticXboxOneControllerMacProfile_t0903E772BC7FE7A1E01ED4140238E4C50BCCCD00), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4174 = { sizeof (APlayControllerMacProfile_tC331EA0896A96AF3E066DD2632747F74D3300103), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4175 = { sizeof (BatarangControllerMacProfile_t5B3A37AA6916C234AEDDA00C016D9BAC259F572E), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4176 = { sizeof (BETAOPControllerMacProfile_tAB678960DD290CF688BD5A2161BF53A20AFD54B6), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4177 = { sizeof (BigBenControllerMacProfile_t8E227FD951ABF1BE30370EEBC062E4A76C9CC590), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4178 = { sizeof (EASportsControllerMacProfile_tFDD24CE6F689968B17CAF62F1FC63D7CF39CC704), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4179 = { sizeof (GameStopControllerMacProfile_tC2342C327E51535A05D220FFFC77026488933030), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4180 = { sizeof (GuitarHeroControllerMacProfile_t4073AA15EF22F748BD541B0A9D3122ED6AD31A6F), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4181 = { sizeof (HoriBlueSoloControllerMacProfile_tE6F84433AC8875B27D864427956197C80011CBA2), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4182 = { sizeof (HoriControllerMacProfile_tA44989B1CD5B66D7464C24A9D7482562CE1FD1FE), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4183 = { sizeof (HoriDOA4ArcadeStickMacProfile_t6A96E6F0F06F5EBC9B2AD63F87C4CCA4CF99168A), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4184 = { sizeof (HoriEX2ControllerMacProfile_t82875ABEFCD57F139AA67DFDDCACDF3178F3D8AE), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4185 = { sizeof (HoriFightingStickEX2MacProfile_t6890444B99580F221526BAD789921C73C248D8AD), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4186 = { sizeof (HoriFightingStickVXMacProfile_t2ADACB77966581631FE066BC94DC2953EE68FBB8), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4187 = { sizeof (HoriFightStickMacProfile_t73BF562DD848BF88DC1E3023A10350981A262D0B), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4188 = { sizeof (HoriPadEXTurboControllerMacProfile_t6AC183B7F0925F5E5C4B1AED0700D8920E03B236), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4189 = { sizeof (HoriPadUltimateMacProfile_t329FA8DB5B14FB0C59D84DC546F50F2524D67528), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4190 = { sizeof (HoriRealArcadeProEXMacProfile_t91CBA0D76A4DD144F2C949731E9465B703AE719B), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4191 = { sizeof (HoriRealArcadeProEXPremiumVLXMacProfile_tB2372DD7630E922892C7FBF262F51874E2B64F44), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4192 = { sizeof (HoriRealArcadeProEXSEMacProfile_t1E893CA2C9D500434CE786B941D3638C907CF6E4), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4193 = { sizeof (HoriRealArcadeProHayabusaMacProfile_t507DD0A3CC6115EB435CBB16E03E7FE8BDEAB421), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4194 = { sizeof (HORIRealArcadeProVKaiFightingStickMacProfile_t209344328B55970D6DF912C6A1A6502AC07FDCBF), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4195 = { sizeof (HORIRealArcadeProVXMacProfile_t95ECABA64E8C661F146EEBCA1D32E0B81DBA012C), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4196 = { sizeof (HoriRealArcadeProVXSAMacProfile_t1BC8761534874AE7AC390250FFDA7E357056CC40), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4197 = { sizeof (HoriXbox360GemPadExMacProfile_tB52B3F047B43F9BE28AA6432DE8BEF0D7F8598C3), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4198 = { sizeof (HoriXboxOneControllerMacProfile_t3B5A7B143AA6DFCEAB0BF74D59FB531C6F5C6344), -1, 0, 0 };
+extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4199 = { sizeof (IonDrumRockerMacProfile_t0409C1F15451021F71DFE40E736FD677A97DD55E), -1, 0, 0 };
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif

@@ -32684,7 +32684,7 @@ IL_003e:
 		NullCheck(L_13);
 		String_t* L_14 = Uri_get_Scheme_m14A8F0018D8AACADBEF39600A59944F33EE39187(L_13, /*hidden argument*/NULL);
 		NullCheck(L_12);
-		RuntimeObject * L_15 = VirtFuncInvoker1< RuntimeObject *, RuntimeObject * >::Invoke(23 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_12, L_14);
+		RuntimeObject * L_15 = VirtFuncInvoker1< RuntimeObject *, RuntimeObject * >::Invoke(22 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_12, L_14);
 		G_B9_0 = ((Uri_t87E4A94B2901F5EEDD18AA72C3DB1B00E672D68E *)IsInstClass((RuntimeObject*)L_15, Uri_t87E4A94B2901F5EEDD18AA72C3DB1B00E672D68E_il2cpp_TypeInfo_var));
 	}
 
@@ -33102,7 +33102,7 @@ extern "C" IL2CPP_METHOD_ATTR bool WebProxy_IsLocalInProxyHash_mB4C405FEB5AFC016
 		NullCheck(L_3);
 		String_t* L_4 = Uri_get_Scheme_m14A8F0018D8AACADBEF39600A59944F33EE39187(L_3, /*hidden argument*/NULL);
 		NullCheck(L_2);
-		RuntimeObject * L_5 = VirtFuncInvoker1< RuntimeObject *, RuntimeObject * >::Invoke(23 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_2, L_4);
+		RuntimeObject * L_5 = VirtFuncInvoker1< RuntimeObject *, RuntimeObject * >::Invoke(22 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_2, L_4);
 		IL2CPP_RUNTIME_CLASS_INIT(Uri_t87E4A94B2901F5EEDD18AA72C3DB1B00E672D68E_il2cpp_TypeInfo_var);
 		bool L_6 = Uri_op_Equality_mFED3D4AFAB090B76D2088C485507F8F702ADA18F(((Uri_t87E4A94B2901F5EEDD18AA72C3DB1B00E672D68E *)CastclassClass((RuntimeObject*)L_5, Uri_t87E4A94B2901F5EEDD18AA72C3DB1B00E672D68E_il2cpp_TypeInfo_var)), (Uri_t87E4A94B2901F5EEDD18AA72C3DB1B00E672D68E *)NULL, /*hidden argument*/NULL);
 		if (!L_6)
@@ -42264,7 +42264,7 @@ IL_0006:
 			Hashtable_t978F65B8006C8F5504B286526AEC6608FF983FC9 * L_6 = V_1;
 			ArrayList_t4131E0C29C7E1B9BC9DFE37BEC41A5EB1481ADF4 * L_7 = V_2;
 			NullCheck(L_6);
-			VirtActionInvoker2< RuntimeObject *, RuntimeObject * >::Invoke(17 /* System.Void System.Collections.Hashtable::Add(System.Object,System.Object) */, L_6, _stringLiteral6CB177B80C57F442434FADF5878CCBB93AE352D6, L_7);
+			VirtActionInvoker2< RuntimeObject *, RuntimeObject * >::Invoke(16 /* System.Void System.Collections.Hashtable::Add(System.Object,System.Object) */, L_6, _stringLiteral6CB177B80C57F442434FADF5878CCBB93AE352D6, L_7);
 			String_t* L_8 = ___password0;
 			if (!L_8)
 			{
